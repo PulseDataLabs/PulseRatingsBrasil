@@ -1,5 +1,989 @@
-data_captura,no_entidade,link,Tipo de Rating,Rating,Data da Ação de Rating,CreditWatch/ Perspectiva,Data do CreditWatch/ Perspectiva
-2026-06-04,Petróleo Brasileiro S.A. - Petrobras,https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80124508,Local Currency LT,BB,2025-11-12,Estável,2025-11-12
-2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80123567,National Long-Term,AAA(bra),2025-10-15,Estável,2025-10-15
-2026-06-04,Vale S.A.,https://www.fitchratings.com/entity/vale-sa-80121124,Foreign Currency LT,BBB,2025-08-20,Estável,2025-08-20
-2026-06-04,Itaú Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80129988,National Long-Term,AAA(bra),2025-09-02,Estável,2025-09-02
+data_captura,no_entidade,link,Tipo de Rating,Rating,Data da Ação de Rating,Ação de Rating,CreditWatch/ Perspectiva
+2026-06-04,Multiplan Empreendimentos Imobiliarios S.A.,https://www.fitchratings.com/entity/multiplan-empreendimentos-imobiliarios-sa-96177986,National Long Term Rating,AAA(bra),2026-06-04,Review - No Action,Rating Outlook Stable
+2026-06-04,Enel Green Power Volta Grande S.A.,https://www.fitchratings.com/entity/enel-green-power-volta-grande-sa-96819597,National Long Term Rating,AAA(bra),2026-06-03,Affirmed,Rating Outlook Negative
+2026-06-04,Transportadora Associada de Gas S.A. - TAG,https://www.fitchratings.com/entity/transportadora-associada-de-gas-sa-tag-96625934,Long Term Issuer Default Rating,BB+,2026-06-03,Affirmed,Rating Outlook Stable
+2026-06-04,Transportadora Associada de Gas S.A. - TAG,https://www.fitchratings.com/entity/transportadora-associada-de-gas-sa-tag-96625934,National Long Term Rating,AAA(bra),2026-06-03,Affirmed,Rating Outlook Stable
+2026-06-04,Transportadora Associada de Gas S.A. - TAG,https://www.fitchratings.com/entity/transportadora-associada-de-gas-sa-tag-96625934,Local Currency Long Term Issuer Default Rating,BBB-,2026-06-03,Affirmed,Rating Outlook Stable
+2026-06-04,"Sao Paulo, State of",https://www.fitchratings.com/entity/sao-paulo-state-of-90237272,Long Term Issuer Default Rating,BB,2026-06-03,Affirmed,Rating Outlook Stable
+2026-06-04,"Sao Paulo, State of",https://www.fitchratings.com/entity/sao-paulo-state-of-90237272,Short Term Issuer Default Rating,B,2026-06-03,Affirmed,
+2026-06-04,"Sao Paulo, State of",https://www.fitchratings.com/entity/sao-paulo-state-of-90237272,National Long Term Rating,AAA(bra),2026-06-03,Affirmed,Rating Outlook Stable
+2026-06-04,"Sao Paulo, State of",https://www.fitchratings.com/entity/sao-paulo-state-of-90237272,Local Currency Short Term Issuer Default Rating,B,2026-06-03,Affirmed,
+2026-06-04,"Sao Paulo, State of",https://www.fitchratings.com/entity/sao-paulo-state-of-90237272,National Short Term Rating,F1+(bra),2026-06-03,Affirmed,
+2026-06-04,"Sao Paulo, State of",https://www.fitchratings.com/entity/sao-paulo-state-of-90237272,Standalone Credit Profile,bb,2026-06-03,Upgrade,
+2026-06-04,"Sao Paulo, State of",https://www.fitchratings.com/entity/sao-paulo-state-of-90237272,Local Currency Long Term Issuer Default Rating,BB,2026-06-03,Affirmed,Rating Outlook Stable
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Long Term Issuer Default Rating,BB+,2026-06-02,Affirmed,Rating Outlook Stable
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Short Term Issuer Default Rating,B,2026-06-02,Affirmed,
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,National Long Term Rating,AAA(bra),2026-06-02,Affirmed,Rating Outlook Stable
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Viability Rating,bb,2026-06-02,Affirmed,
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Local Currency Short Term Issuer Default Rating,F3,2026-06-02,Affirmed,
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,National Short Term Rating,F1+(bra),2026-06-02,Affirmed,
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Shareholder Support Rating,bb+,2026-06-02,Affirmed,
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Local Currency Long Term Issuer Default Rating,BBB-,2026-06-02,Affirmed,Rating Outlook Stable
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Long Term Issuer Default Rating (xgs),BB(xgs),2026-06-02,Affirmed,
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Short Term Issuer Default Rating (xgs),B(xgs),2026-06-02,Affirmed,
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Local Currency Long Term Issuer Default Rating (xgs),BB(xgs),2026-06-02,Affirmed,
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Local Currency Short Term Issuer Default Rating (xgs),B(xgs),2026-06-02,Affirmed,
+2026-06-04,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935,Support Rating,WD,2022-07-19,Withdrawn,
+2026-06-04,Companhia de Saneamento do Parana - SANEPAR,https://www.fitchratings.com/entity/companhia-de-saneamento-do-parana-sanepar-96358618,National Long Term Rating,AAA(bra),2026-06-02,Affirmed,Rating Outlook Stable
+2026-06-04,BR Partners Banco de Investimento S.A.,https://www.fitchratings.com/entity/br-partners-banco-de-investimento-sa-94195914,National Short Term Rating,F1+(bra),2026-06-02,Affirmed,
+2026-06-04,BR Partners Banco de Investimento S.A.,https://www.fitchratings.com/entity/br-partners-banco-de-investimento-sa-94195914,National Long Term Rating,AA(bra),2026-06-02,Affirmed,Rating Outlook Stable
+2026-06-04,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393,Long Term Issuer Default Rating,BB+,2026-06-02,Affirmed,Rating Outlook Stable
+2026-06-04,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393,Short Term Issuer Default Rating,B,2026-06-02,Affirmed,
+2026-06-04,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393,Shareholder Support Rating,bb+,2026-06-02,Affirmed,
+2026-06-04,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393,National Short Term Rating,F1+(bra),2026-06-02,Affirmed,
+2026-06-04,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393,National Long Term Rating,AAA(bra),2026-06-02,Affirmed,Rating Outlook Stable
+2026-06-04,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393,Local Currency Long Term Issuer Default Rating,BB+,2026-06-02,Affirmed,Rating Outlook Stable
+2026-06-04,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393,Local Currency Short Term Issuer Default Rating,B,2026-06-02,Affirmed,
+2026-06-04,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393,Viability Rating,bb,2026-06-02,Affirmed,
+2026-06-04,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393,Support Rating,WD,2022-07-19,Withdrawn,
+2026-06-04,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,JSL S.A.,https://www.fitchratings.com/entity/jsl-sa-90188261,National Long Term Rating,AA(bra),2026-06-01,Affirmed,Rating Outlook Stable
+2026-06-04,JSL S.A.,https://www.fitchratings.com/entity/jsl-sa-90188261,Local Currency Long Term Issuer Default Rating,WD,2026-06-01,Withdrawn,
+2026-06-04,JSL S.A.,https://www.fitchratings.com/entity/jsl-sa-90188261,Long Term Issuer Default Rating,WD,2026-06-01,Withdrawn,
+2026-06-04,Movida Participacoes S.A.,https://www.fitchratings.com/entity/movida-participacoes-sa-96487716,Long Term Issuer Default Rating,BB-,2026-06-01,Affirmed,Rating Outlook Stable
+2026-06-04,Movida Participacoes S.A.,https://www.fitchratings.com/entity/movida-participacoes-sa-96487716,Local Currency Long Term Issuer Default Rating,BB-,2026-06-01,Affirmed,Rating Outlook Stable
+2026-06-04,Movida Participacoes S.A.,https://www.fitchratings.com/entity/movida-participacoes-sa-96487716,National Long Term Rating,AA(bra),2026-06-01,Affirmed,Rating Outlook Stable
+2026-06-04,Simpar S.A.,https://www.fitchratings.com/entity/simpar-sa-97012100,Long Term Issuer Default Rating,BB-,2026-06-01,Affirmed,Rating Outlook Stable
+2026-06-04,Simpar S.A.,https://www.fitchratings.com/entity/simpar-sa-97012100,Local Currency Long Term Issuer Default Rating,BB-,2026-06-01,Affirmed,Rating Outlook Stable
+2026-06-04,Simpar S.A.,https://www.fitchratings.com/entity/simpar-sa-97012100,National Long Term Rating,AA(bra),2026-06-01,Affirmed,Rating Outlook Stable
+2026-06-04,"Vamos Locacao de Caminhoes, Maquinas e Equipamentos S.A.",https://www.fitchratings.com/entity/vamos-locacao-de-caminhoes-maquinas-e-equipamentos-sa-96704030,Long Term Issuer Default Rating,BB-,2026-06-01,Affirmed,Rating Outlook Stable
+2026-06-04,"Vamos Locacao de Caminhoes, Maquinas e Equipamentos S.A.",https://www.fitchratings.com/entity/vamos-locacao-de-caminhoes-maquinas-e-equipamentos-sa-96704030,Local Currency Long Term Issuer Default Rating,BB-,2026-06-01,Affirmed,Rating Outlook Stable
+2026-06-04,"Vamos Locacao de Caminhoes, Maquinas e Equipamentos S.A.",https://www.fitchratings.com/entity/vamos-locacao-de-caminhoes-maquinas-e-equipamentos-sa-96704030,National Long Term Rating,AA(bra),2026-06-01,Affirmed,Rating Outlook Stable
+2026-06-04,Delfinance Sociedade de Crédito Direto S.A.,https://www.fitchratings.com/entity/delcred-sociedade-de-credito-direto-sa-97711779,National Long Term Rating,BBB(bra),2026-05-29,Affirmed,Rating Outlook Stable
+2026-06-04,Delfinance Sociedade de Crédito Direto S.A.,https://www.fitchratings.com/entity/delcred-sociedade-de-credito-direto-sa-97711779,National Short Term Rating,F3(bra),2026-05-29,Affirmed,
+2026-06-04,InterCement Participacoes S.A. - Em Recuperacao Judicial,https://www.fitchratings.com/entity/intercement-participacoes-sa-92950500,Long Term Issuer Default Rating,B-,2026-05-29,New Rating,Rating Outlook Stable
+2026-06-04,InterCement Participacoes S.A. - Em Recuperacao Judicial,https://www.fitchratings.com/entity/intercement-participacoes-sa-92950500,Local Currency Long Term Issuer Default Rating,B-,2026-05-29,New Rating,Rating Outlook Stable
+2026-06-04,InterCement Participacoes S.A. - Em Recuperacao Judicial,https://www.fitchratings.com/entity/intercement-participacoes-sa-92950500,National Long Term Rating,BB+(bra),2026-05-29,New Rating,Rating Outlook Stable
+2026-06-04,Companhia de Gas do Estado do Rio Grande do Sul,https://www.fitchratings.com/entity/companhia-de-gas-do-estado-do-rio-grande-do-sul-97787579,National Long Term Rating,AA(bra),2026-05-28,Downgrade,Rating Watch Negative
+2026-06-04,Banco XP S.A,https://www.fitchratings.com/entity/banco-xp-sa-97172367,National Long Term Rating,AAA(bra),2026-05-28,Affirmed,Rating Outlook Stable
+2026-06-04,Banco XP S.A,https://www.fitchratings.com/entity/banco-xp-sa-97172367,National Short Term Rating,F1+(bra),2026-05-28,Affirmed,
+2026-06-04,Uniao Quimica Farmaceutica Nacional S.A.,https://www.fitchratings.com/entity/uniao-quimica-farmaceutica-nacional-sa-90998502,National Long Term Rating,AA-(bra),2026-05-27,Downgrade,Rating Outlook Stable
+2026-06-04,Delga Industria e Comercio S.A.,https://www.fitchratings.com/entity/delga-industria-e-comercio-sa-97840336,National Long Term Rating,WD(bra),2026-05-25,Withdrawn,
+2026-06-04,Vivara Participacoes S.A.,https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261,National Long Term Rating,AAA(bra),2026-05-22,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Catarinense de Aguas e Saneamento - CASAN,https://www.fitchratings.com/entity/companhia-catarinense-de-aguas-e-saneamento-casan-92740312,National Long Term Rating,A(bra),2026-05-21,Affirmed,Rating Outlook Stable
+2026-06-04,Andre Maggi Participacoes S.A.,https://www.fitchratings.com/entity/andre-maggi-participacoes-sa-97060206,Long Term Issuer Default Rating,BB-,2026-05-21,Rating Watch On,Rating Watch Negative
+2026-06-04,Andre Maggi Participacoes S.A.,https://www.fitchratings.com/entity/andre-maggi-participacoes-sa-97060206,Local Currency Long Term Issuer Default Rating,BB-,2026-05-21,Rating Watch On,Rating Watch Negative
+2026-06-04,Andre Maggi Participacoes S.A.,https://www.fitchratings.com/entity/andre-maggi-participacoes-sa-97060206,National Long Term Rating,AA(bra),2026-05-21,Rating Watch On,Rating Watch Negative
+2026-06-04,FS I Industria de Etanol S.A,https://www.fitchratings.com/entity/fs-i-industria-de-etanol-sa-97809918,Long Term Issuer Default Rating,BB-,2026-05-21,Affirmed,Rating Outlook Stable
+2026-06-04,FS I Industria de Etanol S.A,https://www.fitchratings.com/entity/fs-i-industria-de-etanol-sa-97809918,National Long Term Rating,AA-(bra),2026-05-21,Affirmed,Rating Outlook Stable
+2026-06-04,FS I Industria de Etanol S.A,https://www.fitchratings.com/entity/fs-i-industria-de-etanol-sa-97809918,Local Currency Long Term Issuer Default Rating,BB-,2026-05-21,Affirmed,Rating Outlook Stable
+2026-06-04,FS Industria de Biocombustiveis Ltda.,https://www.fitchratings.com/entity/fs-agrisolutions-industria-de-biocombustiveis-ltda-96862589,Long Term Issuer Default Rating,BB-,2026-05-21,Affirmed,Rating Outlook Stable
+2026-06-04,FS Industria de Biocombustiveis Ltda.,https://www.fitchratings.com/entity/fs-agrisolutions-industria-de-biocombustiveis-ltda-96862589,National Long Term Rating,AA-(bra),2026-05-21,Affirmed,Rating Outlook Stable
+2026-06-04,FS Industria de Biocombustiveis Ltda.,https://www.fitchratings.com/entity/fs-agrisolutions-industria-de-biocombustiveis-ltda-96862589,Local Currency Long Term Issuer Default Rating,BB-,2026-05-21,Affirmed,Rating Outlook Stable
+2026-06-04,Copel Distribuicao S.A.,https://www.fitchratings.com/entity/copel-distribuicao-sa-96382097,National Long Term Rating,AAA(bra),2026-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Paranaense de Energia (COPEL),https://www.fitchratings.com/entity/companhia-paranaense-de-energia-copel-80614489,National Long Term Rating,AAA(bra),2026-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Copel Geracao e Transmissao S.A.,https://www.fitchratings.com/entity/copel-geracao-e-transmissao-sa-96167039,National Long Term Rating,AAA(bra),2026-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Copel Servicos S.A.,https://www.fitchratings.com/entity/copel-servicos-sa-97607160,National Long Term Rating,AAA(bra),2026-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Crediceripa - Sicoob Crediceripa,https://www.fitchratings.com/entity/cooperativa-de-credito-crediceripa-sicoob-crediceripa-96975124,National Short Term Rating,F2(bra),2026-05-15,Affirmed,
+2026-06-04,Cooperativa de Credito Crediceripa - Sicoob Crediceripa,https://www.fitchratings.com/entity/cooperativa-de-credito-crediceripa-sicoob-crediceripa-96975124,National Long Term Rating,A-(bra),2026-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito PRO - Sicoob PRO,https://www.fitchratings.com/entity/cooperativa-de-credito-pro-97696341,National Long Term Rating,A(bra),2026-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito PRO - Sicoob PRO,https://www.fitchratings.com/entity/cooperativa-de-credito-pro-97696341,National Short Term Rating,F1(bra),2026-05-15,Affirmed,
+2026-06-04,Sicoob Cocred Cooperativa de Credito,https://www.fitchratings.com/entity/sicoob-cocred-cooperativa-de-credito-97262424,National Long Term Rating,A+(bra),2026-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Sicoob Cocred Cooperativa de Credito,https://www.fitchratings.com/entity/sicoob-cocred-cooperativa-de-credito-97262424,National Short Term Rating,F1(bra),2026-05-15,Affirmed,
+2026-06-04,Cooperativa de Credito Sicoob Engecred Ltda,https://www.fitchratings.com/entity/cooperativa-de-credito-de-livre-admissao-de-goiania-e-regiao-ltda-sicoob-engecred-go-96741018,National Long Term Rating,A+(bra),2026-05-15,Affirmed,Rating Outlook Positive
+2026-06-04,Cooperativa de Credito Sicoob Engecred Ltda,https://www.fitchratings.com/entity/cooperativa-de-credito-de-livre-admissao-de-goiania-e-regiao-ltda-sicoob-engecred-go-96741018,National Short Term Rating,F1(bra),2026-05-15,Affirmed,
+2026-06-04,Cooperativa de Credito Maxi Alfa de Livre Admissao de Associados - Sicoob Maxicredito,https://www.fitchratings.com/entity/cooperativa-de-credito-maxi-alfa-de-livre-admissao-de-associados-sicoob-maxicredito-97484132,National Short Term Rating,F1(bra),2026-05-15,Affirmed,
+2026-06-04,Cooperativa de Credito Maxi Alfa de Livre Admissao de Associados - Sicoob Maxicredito,https://www.fitchratings.com/entity/cooperativa-de-credito-maxi-alfa-de-livre-admissao-de-associados-sicoob-maxicredito-97484132,National Long Term Rating,A(bra),2026-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Credicocapec - Sicoob Credicocapec,https://www.fitchratings.com/entity/cooperativa-de-credito-credicocapec-sicoob-credicocapec-97770296,National Long Term Rating,A+(bra),2026-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Credicocapec - Sicoob Credicocapec,https://www.fitchratings.com/entity/cooperativa-de-credito-credicocapec-sicoob-credicocapec-97770296,National Short Term Rating,F1(bra),2026-05-15,Affirmed,
+2026-06-04,Cooperativa de Credito Credicitrus - Sicoob Credicitrus,https://www.fitchratings.com/entity/cooperativa-de-credito-credicitrus-sicoob-credicitrus-96730168,National Long Term Rating,AA+(bra),2026-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Credicitrus - Sicoob Credicitrus,https://www.fitchratings.com/entity/cooperativa-de-credito-credicitrus-sicoob-credicitrus-96730168,National Short Term Rating,F1+(bra),2026-05-15,Affirmed,
+2026-06-04,Brava Energia S.A.,https://www.fitchratings.com/entity/3r-petroleum-oleo-e-gas-sa-97357047,Long Term Issuer Default Rating,BB-,2026-05-13,Rating Watch On,Rating Watch Positive
+2026-06-04,Brava Energia S.A.,https://www.fitchratings.com/entity/3r-petroleum-oleo-e-gas-sa-97357047,Local Currency Long Term Issuer Default Rating,BB-,2026-05-13,Rating Watch On,Rating Watch Positive
+2026-06-04,Brava Energia S.A.,https://www.fitchratings.com/entity/3r-petroleum-oleo-e-gas-sa-97357047,National Long Term Rating,AA-(bra),2026-05-13,Rating Watch On,Rating Watch Positive
+2026-06-04,Banco do Estado de Sergipe S.A.,https://www.fitchratings.com/entity/banco-do-estado-de-sergipe-sa-90253862,National Long Term Rating,AA+(bra),2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Estado de Sergipe S.A.,https://www.fitchratings.com/entity/banco-do-estado-de-sergipe-sa-90253862,National Short Term Rating,F1+(bra),2026-05-12,Affirmed,
+2026-06-04,Banco do Estado de Sergipe S.A.,https://www.fitchratings.com/entity/banco-do-estado-de-sergipe-sa-90253862,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,JBS N.V.,https://www.fitchratings.com/entity/jbs-nv-97812999,Long Term Issuer Default Rating,BBB-,2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,JBS N.V.,https://www.fitchratings.com/entity/jbs-nv-97812999,Short Term Issuer Default Rating,F3,2026-05-12,Affirmed,
+2026-06-04,JBS N.V.,https://www.fitchratings.com/entity/jbs-nv-97812999,National Long Term Rating,AAA(bra),2026-05-12,New Rating,Rating Outlook Stable
+2026-06-04,JBS N.V.,https://www.fitchratings.com/entity/jbs-nv-97812999,Local Currency Long Term Issuer Default Rating,BBB-,2026-05-12,New Rating,Rating Outlook Stable
+2026-06-04,JBS S.A.,https://www.fitchratings.com/entity/jbs-sa-87468174,Long Term Issuer Default Rating,BBB-,2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,JBS S.A.,https://www.fitchratings.com/entity/jbs-sa-87468174,National Long Term Rating,AAA(bra),2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,JBS S.A.,https://www.fitchratings.com/entity/jbs-sa-87468174,Local Currency Long Term Issuer Default Rating,BBB-,2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,Long Term Issuer Default Rating,BB-,2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,Short Term Issuer Default Rating,B,2026-05-12,Affirmed,
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,Local Currency Long Term Issuer Default Rating,BB-,2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,National Long Term Rating,AA+(bra),2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,Shareholder Support Rating,bb-,2026-05-12,Affirmed,
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,Local Currency Short Term Issuer Default Rating,B,2026-05-12,Affirmed,
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,National Short Term Rating,F1+(bra),2026-05-12,Affirmed,
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,Viability Rating,bb-,2026-05-12,Affirmed,
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,Government Support Rating,WD,2022-07-15,Withdrawn,
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,Support Rating Floor,WD,2022-06-13,Withdrawn,
+2026-06-04,Banco do Estado do Rio Grande do Sul S.A.,https://www.fitchratings.com/entity/banco-do-estado-do-rio-grande-do-sul-sa-80480833,Support Rating,WD,2022-06-13,Withdrawn,
+2026-06-04,General Shopping e Outlets do Brasil S.A.,https://www.fitchratings.com/entity/general-shopping-e-outlets-do-brasil-sa-89879673,Long Term Issuer Default Rating,CC,2026-05-12,Affirmed,
+2026-06-04,General Shopping e Outlets do Brasil S.A.,https://www.fitchratings.com/entity/general-shopping-e-outlets-do-brasil-sa-89879673,National Long Term Rating,CC(bra),2026-05-12,Affirmed,
+2026-06-04,General Shopping e Outlets do Brasil S.A.,https://www.fitchratings.com/entity/general-shopping-e-outlets-do-brasil-sa-89879673,Local Currency Long Term Issuer Default Rating,CC,2026-05-12,Affirmed,
+2026-06-04,Banestes S.A. - Banco do Estado do Espirito Santo,https://www.fitchratings.com/entity/banestes-sa-banco-do-estado-do-espirito-santo-94984690,Long Term Issuer Default Rating,BB-,2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banestes S.A. - Banco do Estado do Espirito Santo,https://www.fitchratings.com/entity/banestes-sa-banco-do-estado-do-espirito-santo-94984690,Short Term Issuer Default Rating,B,2026-05-12,Affirmed,
+2026-06-04,Banestes S.A. - Banco do Estado do Espirito Santo,https://www.fitchratings.com/entity/banestes-sa-banco-do-estado-do-espirito-santo-94984690,National Short Term Rating,F1+(bra),2026-05-12,Affirmed,
+2026-06-04,Banestes S.A. - Banco do Estado do Espirito Santo,https://www.fitchratings.com/entity/banestes-sa-banco-do-estado-do-espirito-santo-94984690,Shareholder Support Rating,bb-,2026-05-12,Affirmed,
+2026-06-04,Banestes S.A. - Banco do Estado do Espirito Santo,https://www.fitchratings.com/entity/banestes-sa-banco-do-estado-do-espirito-santo-94984690,National Long Term Rating,AA+(bra),2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banestes S.A. - Banco do Estado do Espirito Santo,https://www.fitchratings.com/entity/banestes-sa-banco-do-estado-do-espirito-santo-94984690,Viability Rating,bb-,2026-05-12,Affirmed,
+2026-06-04,Banestes S.A. - Banco do Estado do Espirito Santo,https://www.fitchratings.com/entity/banestes-sa-banco-do-estado-do-espirito-santo-94984690,Local Currency Long Term Issuer Default Rating,BB-,2026-05-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banestes S.A. - Banco do Estado do Espirito Santo,https://www.fitchratings.com/entity/banestes-sa-banco-do-estado-do-espirito-santo-94984690,Local Currency Short Term Issuer Default Rating,B,2026-05-12,Affirmed,
+2026-06-04,Banestes S.A. - Banco do Estado do Espirito Santo,https://www.fitchratings.com/entity/banestes-sa-banco-do-estado-do-espirito-santo-94984690,Support Rating,WD,2022-06-13,Withdrawn,
+2026-06-04,Banco de Desenvolvimento do Espirito Santo S.A.,https://www.fitchratings.com/entity/banco-de-desenvolvimento-do-espirito-santo-sa-97043997,Long Term Issuer Default Rating,BB,2026-05-06,Affirmed,Rating Outlook Stable
+2026-06-04,Banco de Desenvolvimento do Espirito Santo S.A.,https://www.fitchratings.com/entity/banco-de-desenvolvimento-do-espirito-santo-sa-97043997,Short Term Issuer Default Rating,B,2026-05-06,Affirmed,
+2026-06-04,Banco de Desenvolvimento do Espirito Santo S.A.,https://www.fitchratings.com/entity/banco-de-desenvolvimento-do-espirito-santo-sa-97043997,Shareholder Support Rating,bb,2026-05-06,Affirmed,
+2026-06-04,Banco de Desenvolvimento do Espirito Santo S.A.,https://www.fitchratings.com/entity/banco-de-desenvolvimento-do-espirito-santo-sa-97043997,Local Currency Short Term Issuer Default Rating,B,2026-05-06,Affirmed,
+2026-06-04,Banco de Desenvolvimento do Espirito Santo S.A.,https://www.fitchratings.com/entity/banco-de-desenvolvimento-do-espirito-santo-sa-97043997,National Short Term Rating,F1+(bra),2026-05-06,Affirmed,
+2026-06-04,Banco de Desenvolvimento do Espirito Santo S.A.,https://www.fitchratings.com/entity/banco-de-desenvolvimento-do-espirito-santo-sa-97043997,National Long Term Rating,AAA(bra),2026-05-06,Affirmed,Rating Outlook Stable
+2026-06-04,Banco de Desenvolvimento do Espirito Santo S.A.,https://www.fitchratings.com/entity/banco-de-desenvolvimento-do-espirito-santo-sa-97043997,Local Currency Long Term Issuer Default Rating,BB,2026-05-06,Affirmed,Rating Outlook Stable
+2026-06-04,Banco de Desenvolvimento do Espirito Santo S.A.,https://www.fitchratings.com/entity/banco-de-desenvolvimento-do-espirito-santo-sa-97043997,Support Rating,WD,2022-07-28,Withdrawn,
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,Long Term Issuer Default Rating,BB,2026-05-06,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,Short Term Issuer Default Rating,B,2026-05-06,Affirmed,
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,Local Currency Long Term Issuer Default Rating,BB,2026-05-06,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,National Long Term Rating,AAA(bra),2026-05-06,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,Local Currency Short Term Issuer Default Rating,B,2026-05-06,Affirmed,
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,National Short Term Rating,F1+(bra),2026-05-06,Affirmed,
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,Shareholder Support Rating,bb,2026-05-06,Affirmed,
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,Support Rating,WD,2022-07-28,Withdrawn,
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,Support Rating Floor,WD,2012-06-26,Withdrawn,
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,Viability Rating,WD,2012-06-26,Withdrawn,
+2026-06-04,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,"Maranhao, State of",https://www.fitchratings.com/entity/maranhao-state-of-92198092,National Short Term Rating,WD(bra),2026-05-06,Withdrawn,
+2026-06-04,"Maranhao, State of",https://www.fitchratings.com/entity/maranhao-state-of-92198092,National Long Term Rating,WD(bra),2026-05-06,Withdrawn,
+2026-06-04,"Maranhao, State of",https://www.fitchratings.com/entity/maranhao-state-of-92198092,Short Term Issuer Default Rating,WD,2026-05-06,Withdrawn,
+2026-06-04,"Maranhao, State of",https://www.fitchratings.com/entity/maranhao-state-of-92198092,Local Currency Long Term Issuer Default Rating,WD,2026-05-06,Withdrawn,
+2026-06-04,"Maranhao, State of",https://www.fitchratings.com/entity/maranhao-state-of-92198092,Standalone Credit Profile,WD,2026-05-06,Withdrawn,
+2026-06-04,"Maranhao, State of",https://www.fitchratings.com/entity/maranhao-state-of-92198092,Local Currency Short Term Issuer Default Rating,WD,2026-05-06,Withdrawn,
+2026-06-04,"Maranhao, State of",https://www.fitchratings.com/entity/maranhao-state-of-92198092,Long Term Issuer Default Rating,WD,2026-05-06,Withdrawn,
+2026-06-04,Pastificio Selmi S.A.,https://www.fitchratings.com/entity/pastificio-selmi-sa-96566506,National Long Term Rating,AA-(bra),2026-05-06,Affirmed,Rating Outlook Stable
+2026-06-04,Elea Digital Infraestrutura e Redes de Telecomunicacoes S.A.,https://www.fitchratings.com/entity/drammen-rj-infraestrutura-e-redes-de-telecomunicacoes-sa-97272267,National Long Term Rating,BBB+(bra),2026-05-05,Rating Watch On,Rating Watch Positive
+2026-06-04,Saneamento Ambiental Aguas do Brasil S.A.,https://www.fitchratings.com/entity/saneamento-ambiental-aguas-do-brasil-sa-92753891,National Long Term Rating,AAA(bra),2026-05-04,Affirmed,Rating Outlook Stable
+2026-06-04,Aguas do Paraiba S.A.,https://www.fitchratings.com/entity/aguas-do-paraiba-sa-97598672,National Long Term Rating,AAA(bra),2026-05-04,Affirmed,Rating Outlook Stable
+2026-06-04,Concessionaria Aguas de Juturnaiba S.A.,https://www.fitchratings.com/entity/concessionaria-aguas-de-juturnaiba-sa-97070967,National Long Term Rating,AAA(bra),2026-05-04,Affirmed,Rating Outlook Stable
+2026-06-04,Aguas da Imperatriz S.A.,https://www.fitchratings.com/entity/aguas-da-imperatriz-sa-97766000,National Long Term Rating,AAA(bra),2026-05-04,Affirmed,Rating Outlook Stable
+2026-06-04,Smartfit Escola de Ginastica e Danca S.A.,https://www.fitchratings.com/entity/smartfit-escola-de-ginastica-e-danca-sa-96173422,National Long Term Rating,AA+(bra),2026-05-04,Affirmed,Rating Outlook Stable
+2026-06-04,Energisa Minas Rio - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868,Long Term Issuer Default Rating,BB,2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Minas Rio - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868,Local Currency Long Term Issuer Default Rating,BB,2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Minas Rio - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Paraiba - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-paraiba-distribuidora-de-energia-s-a-83215024,Long Term Issuer Default Rating,BB,2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Paraiba - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-paraiba-distribuidora-de-energia-s-a-83215024,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Paraiba - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-paraiba-distribuidora-de-energia-s-a-83215024,Local Currency Long Term Issuer Default Rating,BB,2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Tocantins - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-tocantins-distribuidora-de-energia-s-a-96689844,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa S.A.,https://www.fitchratings.com/entity/energisa-sa-83598865,Long Term Issuer Default Rating,BB,2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa S.A.,https://www.fitchratings.com/entity/energisa-sa-83598865,Local Currency Long Term Issuer Default Rating,BB,2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa S.A.,https://www.fitchratings.com/entity/energisa-sa-83598865,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Sergipe - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-sergipe-distribuidora-de-energia-s-a-83215018,Long Term Issuer Default Rating,BB,2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Sergipe - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-sergipe-distribuidora-de-energia-s-a-83215018,Local Currency Long Term Issuer Default Rating,BB,2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Sergipe - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-sergipe-distribuidora-de-energia-s-a-83215018,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Rondonia Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Mato Grosso do Sul - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-mato-grosso-do-sul-distribuidora-de-energia-sa-96223276,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Sul Sudeste - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-sul-sudeste-distribuidora-de-energia-s-a-96689833,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Transmissao de Energia S.A.,https://www.fitchratings.com/entity/energisa-transmissao-de-energia-sa-96724735,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Mato Grosso - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-mato-grosso-distribuidora-de-energia-sa-96223279,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Energisa Acre - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-acre-distribuidora-de-energia-sa-97096959,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,Alsol Energias Renovaveis S.A.,https://www.fitchratings.com/entity/alsol-energias-renovaveis-96810835,National Long Term Rating,AA+(bra),2026-04-30,Downgrade,Rating Outlook Stable
+2026-06-04,MPM Corporeos S.A.,https://www.fitchratings.com/entity/mpm-corporeos-sa-97252184,National Long Term Rating,A(bra),2026-04-30,Upgrade,Rating Outlook Stable
+2026-06-04,Corporeos Servicos Terapeuticos S.A.,https://www.fitchratings.com/entity/corporeos-servicos-terapeuticos-sa-97572161,National Long Term Rating,A(bra),2026-04-30,Upgrade,Rating Outlook Stable
+2026-06-04,Telefonica Brasil S.A.,https://www.fitchratings.com/entity/telefonica-brasil-sa-88576199,National Long Term Rating,AAA(bra),2026-04-30,Affirmed,Rating Outlook Stable
+2026-06-04,Allianca Saude e Participacoes S.A.,https://www.fitchratings.com/entity/centro-de-imagem-diagnosticos-sa-alliar-96507481,National Long Term Rating,RD(bra),2026-04-30,Affirmed,
+2026-06-04,Nexa Resources S.A.,https://www.fitchratings.com/entity/nexa-resources-sa-96494566,Long Term Issuer Default Rating,BBB-,2026-04-30,Affirmed,Rating Outlook Stable
+2026-06-04,Nexa Resources S.A.,https://www.fitchratings.com/entity/nexa-resources-sa-96494566,National Long Term Rating,AAA(bra),2026-04-30,Affirmed,Rating Outlook Stable
+2026-06-04,Nexa Resources S.A.,https://www.fitchratings.com/entity/nexa-resources-sa-96494566,Local Currency Long Term Issuer Default Rating,BBB-,2026-04-30,Affirmed,Rating Outlook Stable
+2026-06-04,Nexa Recursos Minerais S.A.,https://www.fitchratings.com/entity/nexa-recursos-minerais-sa-97886942,National Long Term Rating,AAA(bra),2026-04-30,New Rating,Rating Outlook Stable
+2026-06-04,Saber Servicos Educacionais S.A.,https://www.fitchratings.com/entity/saber-servicos-educacionais-sa-96663570,National Long Term Rating,WD(bra),2026-04-29,Withdrawn,
+2026-06-04,Cogna Educacao S.A.,https://www.fitchratings.com/entity/cogna-educacao-sa-92741290,National Long Term Rating,AA+(bra),2026-04-29,Affirmed,Rating Outlook Positive
+2026-06-04,Somos Sistemas de Ensino S.A.,https://www.fitchratings.com/entity/somos-sistemas-de-ensino-sa-97273134,National Long Term Rating,AA+(bra),2026-04-29,Affirmed,Rating Outlook Positive
+2026-06-04,"Multiplike Financeira S.A. Sociedade De Credito, Financiamento E Investimento",https://www.fitchratings.com/entity/multiplike-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97880687,National Long Term Rating,BB(bra),2026-04-29,New Rating,Rating Outlook Stable
+2026-06-04,"Multiplike Financeira S.A. Sociedade De Credito, Financiamento E Investimento",https://www.fitchratings.com/entity/multiplike-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97880687,National Short Term Rating,B(bra),2026-04-29,New Rating,
+2026-06-04,Senior Sistemas S.A.,https://www.fitchratings.com/entity/senior-sistemas-sa-97810907,National Long Term Rating,AA(bra),2026-04-28,New Rating,Rating Outlook Stable
+2026-06-04,Banco Mercedes-Benz do Brasil S.A.,https://www.fitchratings.com/entity/banco-mercedes-benz-do-brasil-sa-91896832,National Short Term Rating,WD(bra),2026-04-27,Withdrawn,
+2026-06-04,Banco Mercedes-Benz do Brasil S.A.,https://www.fitchratings.com/entity/banco-mercedes-benz-do-brasil-sa-91896832,National Long Term Rating,WD(bra),2026-04-27,Withdrawn,
+2026-06-04,Light Servicos de Eletricidade S.A.,https://www.fitchratings.com/entity/light-servicos-de-eletricidade-sa-91050690,Long Term Issuer Default Rating,D,2026-04-27,Review - No Action,
+2026-06-04,Light Servicos de Eletricidade S.A.,https://www.fitchratings.com/entity/light-servicos-de-eletricidade-sa-91050690,Local Currency Long Term Issuer Default Rating,D,2026-04-27,Review - No Action,
+2026-06-04,Light Servicos de Eletricidade S.A.,https://www.fitchratings.com/entity/light-servicos-de-eletricidade-sa-91050690,National Long Term Rating,D(bra),2026-04-27,Review - No Action,
+2026-06-04,Light S.A.,https://www.fitchratings.com/entity/light-sa-91040693,Long Term Issuer Default Rating,D,2026-04-27,Review - No Action,
+2026-06-04,Light S.A.,https://www.fitchratings.com/entity/light-sa-91040693,Local Currency Long Term Issuer Default Rating,D,2026-04-27,Review - No Action,
+2026-06-04,Light S.A.,https://www.fitchratings.com/entity/light-sa-91040693,National Long Term Rating,D(bra),2026-04-27,Review - No Action,
+2026-06-04,Light Energia S.A.,https://www.fitchratings.com/entity/light-energia-sa-91019690,Long Term Issuer Default Rating,D,2026-04-27,Review - No Action,
+2026-06-04,Light Energia S.A.,https://www.fitchratings.com/entity/light-energia-sa-91019690,Local Currency Long Term Issuer Default Rating,D,2026-04-27,Review - No Action,
+2026-06-04,Light Energia S.A.,https://www.fitchratings.com/entity/light-energia-sa-91019690,National Long Term Rating,D(bra),2026-04-27,Review - No Action,
+2026-06-04,Eletropaulo Metropolitana Eletricidade de Sao Paulo S.A.,https://www.fitchratings.com/entity/eletropaulo-metropolitana-eletricidade-de-sao-paulo-sa-80464130,National Long Term Rating,AA+(bra),2026-04-24,Downgrade,Rating Outlook Negative
+2026-06-04,Eletropaulo Metropolitana Eletricidade de Sao Paulo S.A.,https://www.fitchratings.com/entity/eletropaulo-metropolitana-eletricidade-de-sao-paulo-sa-80464130,Local Currency Long Term Issuer Default Rating,WD,2020-07-20,Withdrawn,
+2026-06-04,Eletropaulo Metropolitana Eletricidade de Sao Paulo S.A.,https://www.fitchratings.com/entity/eletropaulo-metropolitana-eletricidade-de-sao-paulo-sa-80464130,Long Term Issuer Default Rating,WD,2020-07-20,Withdrawn,
+2026-06-04,Ampla Energia e Servicos S.A.,https://www.fitchratings.com/entity/ampla-energia-e-servicos-sa-96591706,National Long Term Rating,AA+(bra),2026-04-24,Downgrade,Rating Outlook Negative
+2026-06-04,Ampla Energia e Servicos S.A.,https://www.fitchratings.com/entity/ampla-energia-e-servicos-sa-96591706,National Long Term Rating,AA+(bra),2026-04-24,Downgrade,Rating Outlook Negative
+2026-06-04,Enel Brasil S.A.,https://www.fitchratings.com/entity/enel-brasil-sa-96574575,National Long Term Rating,AA+(bra),2026-04-24,Downgrade,Rating Outlook Negative
+2026-06-04,Rede D'Or Sao Luiz S.A.,https://www.fitchratings.com/entity/rede-dor-sao-luiz-sa-96193829,Long Term Issuer Default Rating,BB+,2026-04-20,Affirmed,Rating Outlook Stable
+2026-06-04,Rede D'Or Sao Luiz S.A.,https://www.fitchratings.com/entity/rede-dor-sao-luiz-sa-96193829,National Long Term Rating,AAA(bra),2026-04-20,Affirmed,Rating Outlook Stable
+2026-06-04,Rede D'Or Sao Luiz S.A.,https://www.fitchratings.com/entity/rede-dor-sao-luiz-sa-96193829,Local Currency Long Term Issuer Default Rating,BB+,2026-04-20,Downgrade,Rating Outlook Stable
+2026-06-04,Hospital Esperanca S.A.,https://www.fitchratings.com/entity/hospital-esperanca-sa-97686959,National Long Term Rating,AAA(bra),2026-04-20,Affirmed,Rating Outlook Stable
+2026-06-04,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290,National Long Term Rating,WD(bra),2026-04-20,Withdrawn,
+2026-06-04,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290,Viability Rating,WD,2026-04-20,Withdrawn,Rating Watch Off
+2026-06-04,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290,Long Term Issuer Default Rating,WD,2026-04-20,Withdrawn,
+2026-06-04,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290,Government Support Rating,WD,2026-04-20,Withdrawn,
+2026-06-04,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290,National Short Term Rating,WD(bra),2026-04-20,Withdrawn,
+2026-06-04,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290,Local Currency Short Term Issuer Default Rating,WD,2026-04-20,Withdrawn,
+2026-06-04,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290,Local Currency Long Term Issuer Default Rating,WD,2026-04-20,Withdrawn,
+2026-06-04,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290,Short Term Issuer Default Rating,WD,2026-04-20,Withdrawn,
+2026-06-04,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290,Shareholder Support Rating,WD,2025-11-25,Withdrawn,
+2026-06-04,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290,Support Rating,WD,2022-03-11,Withdrawn,
+2026-06-04,Eurofarma Laboratorios S.A.,https://www.fitchratings.com/entity/eurofarma-laboratorios-sa-96581229,National Long Term Rating,AAA(bra),2026-04-17,Affirmed,Rating Outlook Stable
+2026-06-04,Hospital Mater Dei SA,https://www.fitchratings.com/entity/hospital-mater-dei-sa-97281888,National Long Term Rating,AA+(bra),2026-04-17,Affirmed,Rating Outlook Stable
+2026-06-04,Plural Gestao de Recursos Ltda.,https://www.fitchratings.com/entity/brasil-plural-gestao-de-recursos-ltda-91932293,Investment Management Quality Rating,Excellent,2026-04-15,Affirmed,Rating Outlook Stable
+2026-06-04,Plural Gestao de Recursos Ltda.,https://www.fitchratings.com/entity/brasil-plural-gestao-de-recursos-ltda-91932293,Asset Manager Rating,WD,2017-03-06,Withdrawn,
+2026-06-04,Plural Gestao de Recursos Ltda.,https://www.fitchratings.com/entity/brasil-plural-gestao-de-recursos-ltda-91932293,National Asset Manager Rating,WD(bra),2013-04-23,Withdrawn,
+2026-06-04,Plural Investimentos Gestao de Recursos Ltda.,https://www.fitchratings.com/entity/plural-investimentos-gestao-de-recursos-ltda-96827685,Investment Management Quality Rating,Excellent,2026-04-15,Upgrade,Rating Outlook Stable
+2026-06-04,Empreendimentos Pague Menos S.A.,https://www.fitchratings.com/entity/empreendimentos-pague-menos-sa-91480690,National Long Term Rating,AA-(bra),2026-04-14,Affirmed,Rating Outlook Positive
+2026-06-04,Engie Brasil Energia S.A.,https://www.fitchratings.com/entity/engie-brasil-energia-sa-80090870,Long Term Issuer Default Rating,BB+,2026-04-10,Affirmed,Rating Outlook Stable
+2026-06-04,Engie Brasil Energia S.A.,https://www.fitchratings.com/entity/engie-brasil-energia-sa-80090870,National Long Term Rating,AAA(bra),2026-04-10,Affirmed,Rating Outlook Stable
+2026-06-04,Engie Brasil Energia S.A.,https://www.fitchratings.com/entity/engie-brasil-energia-sa-80090870,Local Currency Long Term Issuer Default Rating,BBB-,2026-04-10,Affirmed,Rating Outlook Stable
+2026-06-04,Ribeiro Goncalves Energia Solar S.A.,https://www.fitchratings.com/entity/ribeiro-goncalves-energia-solar-spe-sa-97544021,National Long Term Rating,AA+(bra),2026-04-08,Affirmed,Rating Outlook Stable
+2026-06-04,Equatorial Para Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/equatorial-energia-para-distribuidora-de-energia-sa-83541468,National Long Term Rating,AA+(bra),2026-04-08,Affirmed,Rating Outlook Stable
+2026-06-04,Equatorial Para Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/equatorial-energia-para-distribuidora-de-energia-sa-83541468,Long Term Issuer Default Rating,WD,2014-12-30,Withdrawn,
+2026-06-04,Equatorial Para Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/equatorial-energia-para-distribuidora-de-energia-sa-83541468,Local Currency Long Term Issuer Default Rating,WD,2014-12-30,Withdrawn,
+2026-06-04,Equatorial Goias Distribuidora de Energia S.A,https://www.fitchratings.com/entity/celg-distribuicao-sa-95312890,National Long Term Rating,AA+(bra),2026-04-08,Affirmed,Rating Outlook Stable
+2026-06-04,Echoenergia Participacoes S.A.,https://www.fitchratings.com/entity/echoenergia-participacoes-sa-96662850,National Long Term Rating,AA(bra),2026-04-08,Downgrade,Rating Outlook Stable
+2026-06-04,Barreiras Holding S.A.,https://www.fitchratings.com/entity/barreiras-holding-sa-97585626,National Long Term Rating,AA+(bra),2026-04-08,Affirmed,Rating Outlook Stable
+2026-06-04,Bradseg Participacoes S.A.,https://www.fitchratings.com/entity/bradseg-participacoes-sa-97341773,Local Currency Long Term Issuer Default Rating,BB+,2026-04-08,Affirmed,Rating Outlook Stable
+2026-06-04,Bradseg Participacoes S.A.,https://www.fitchratings.com/entity/bradseg-participacoes-sa-97341773,National Long Term Rating,AAA(bra),2026-04-08,Affirmed,Rating Outlook Stable
+2026-06-04,Oncoclinicas do Brasil Servicos Medicos S.A.,https://www.fitchratings.com/entity/oncoclinicas-do-brasil-servicos-medicos-sa-97385347,National Long Term Rating,RD(bra),2026-04-07,Downgrade,
+2026-06-04,Cooperativa de Economia e Credito Mutuo dos Medicos de Porto Alegre Ltda. - Unicred Porto Alegre,https://www.fitchratings.com/entity/cooperativa-de-economia-e-credito-mutuo-dos-medicos-de-porto-alegre-ltda-unicred-porto-alegre-97402946,National Long Term Rating,A(bra),2026-04-07,Review - No Action,Rating Outlook Stable
+2026-06-04,Cooperativa de Economia e Credito Mutuo dos Medicos de Porto Alegre Ltda. - Unicred Porto Alegre,https://www.fitchratings.com/entity/cooperativa-de-economia-e-credito-mutuo-dos-medicos-de-porto-alegre-ltda-unicred-porto-alegre-97402946,National Short Term Rating,F1(bra),2026-04-07,Review - No Action,
+2026-06-04,Cooperativa De Credito Unicred Valor Capital Ltda - Unicred Valor Capital,https://www.fitchratings.com/entity/cooperativa-de-credito-unicred-da-grande-florianopolis-ltda-unicred-florianopolis-96855758,National Long Term Rating,A+(bra),2026-04-07,Review - No Action,Rating Outlook Stable
+2026-06-04,Cooperativa De Credito Unicred Valor Capital Ltda - Unicred Valor Capital,https://www.fitchratings.com/entity/cooperativa-de-credito-unicred-da-grande-florianopolis-ltda-unicred-florianopolis-96855758,National Short Term Rating,F1(bra),2026-04-07,Review - No Action,
+2026-06-04,Cooperativa de Cred dos Medicos Dentistas Prof da Area da Saude e de Livre Admissao do Estado de Sao Paulo Ltda. Unicred do Estado de Sao Paulo,https://www.fitchratings.com/entity/cooperativa-de-econ-e-cred-mutuo-dos-medicos-e-demais-profissionais-da-area-de-saude-do-estado-de-sao-paulo-ltda-unicred-do-estado-de-sao-paulo-97419789,National Short Term Rating,F1(bra),2026-04-07,Review - No Action,
+2026-06-04,Cooperativa de Cred dos Medicos Dentistas Prof da Area da Saude e de Livre Admissao do Estado de Sao Paulo Ltda. Unicred do Estado de Sao Paulo,https://www.fitchratings.com/entity/cooperativa-de-econ-e-cred-mutuo-dos-medicos-e-demais-profissionais-da-area-de-saude-do-estado-de-sao-paulo-ltda-unicred-do-estado-de-sao-paulo-97419789,National Long Term Rating,A(bra),2026-04-07,Review - No Action,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Unicred Centro-Sul Ltda. - Unicred Centro-Sul,https://www.fitchratings.com/entity/cooperativa-de-credito-unicred-sul-catarinense-ltda-unicred-sul-catarinense-96856408,National Short Term Rating,F1(bra),2026-04-07,Review - No Action,
+2026-06-04,Cooperativa de Credito Unicred Centro-Sul Ltda. - Unicred Centro-Sul,https://www.fitchratings.com/entity/cooperativa-de-credito-unicred-sul-catarinense-ltda-unicred-sul-catarinense-96856408,National Long Term Rating,A(bra),2026-04-07,Review - No Action,Rating Outlook Positive
+2026-06-04,Cooperativa de Credito Unicred Uniao Ltda - Unicred Uniao,https://www.fitchratings.com/entity/cooperativa-de-credito-unicred-uniao-ltda-unicred-uniao-96855738,National Short Term Rating,F2(bra),2026-04-07,Review - No Action,
+2026-06-04,Cooperativa de Credito Unicred Uniao Ltda - Unicred Uniao,https://www.fitchratings.com/entity/cooperativa-de-credito-unicred-uniao-ltda-unicred-uniao-96855738,National Long Term Rating,A-(bra),2026-04-07,Review - No Action,Rating Outlook Positive
+2026-06-04,"Cooperativa de Credito dos Medicos, Profissionais da Saude e Empresarios - Unicred Raizes",https://www.fitchratings.com/entity/cooperativa-de-credito-dos-medicos-profissionais-da-saude-e-empresarios-de-mato-grosso-96722694,National Long Term Rating,A+(bra),2026-04-07,Review - No Action,Rating Outlook Stable
+2026-06-04,"Cooperativa de Credito dos Medicos, Profissionais da Saude e Empresarios - Unicred Raizes",https://www.fitchratings.com/entity/cooperativa-de-credito-dos-medicos-profissionais-da-saude-e-empresarios-de-mato-grosso-96722694,National Short Term Rating,F1(bra),2026-04-07,Review - No Action,
+2026-06-04,Kora Saude Participacoes S.A.,https://www.fitchratings.com/entity/kora-saude-participacoes-sa-97357794,National Long Term Rating,RD(bra),2026-04-02,Downgrade,
+2026-06-04,Aguas Guariroba S.A.,https://www.fitchratings.com/entity/aguas-guariroba-sa-89867861,National Long Term Rating,AA(bra),2026-04-02,Rating Watch On,Rating Watch Negative
+2026-06-04,Aguas de Teresina Saneamento SPE S.A.,https://www.fitchratings.com/entity/aguas-de-teresina-saneamento-spe-sa-96568164,National Long Term Rating,AA(bra),2026-04-02,Rating Watch On,Rating Watch Negative
+2026-06-04,Companhia Riograndense de Saneamento Corsan,https://www.fitchratings.com/entity/companhia-riograndense-de-saneamento-corsan-97071542,National Long Term Rating,AA(bra),2026-04-02,Rating Watch On,Rating Watch Negative
+2026-06-04,Prolagos S.A. - Concessionaria de Servicos Publicos de Agua e Esgoto,https://www.fitchratings.com/entity/prolagos-sa-concessionaria-de-servicos-publicos-de-agua-e-esgoto-89867865,National Long Term Rating,AA(bra),2026-04-02,Rating Watch On,Rating Watch Negative
+2026-06-04,Aegea Saneamento e Participacoes S.A.,https://www.fitchratings.com/entity/aegea-saneamento-e-participacoes-sa-91565696,Long Term Issuer Default Rating,BB-,2026-04-02,Downgrade,Rating Watch Negative
+2026-06-04,Aegea Saneamento e Participacoes S.A.,https://www.fitchratings.com/entity/aegea-saneamento-e-participacoes-sa-91565696,Local Currency Long Term Issuer Default Rating,BB-,2026-04-02,Downgrade,Rating Watch Negative
+2026-06-04,Aegea Saneamento e Participacoes S.A.,https://www.fitchratings.com/entity/aegea-saneamento-e-participacoes-sa-91565696,National Long Term Rating,A+(bra),2026-04-02,Downgrade,Rating Watch Negative
+2026-06-04,Companhia de Saneamento de Minas Gerais COPASA MG,https://www.fitchratings.com/entity/companhia-de-saneamento-de-minas-gerais-copasa-94017690,National Long Term Rating,AAA(bra),2026-04-02,Affirmed,Rating Outlook Stable
+2026-06-04,CMPC Celulose Riograndense Ltda,https://www.fitchratings.com/entity/cmpc-celulose-riograndense-ltda-97326111,National Long Term Rating,AAA(bra),2026-04-01,Affirmed,Rating Outlook Stable
+2026-06-04,Impar Servicos Hospitalares S.A.,https://www.fitchratings.com/entity/impar-servicos-hospitalares-sa-96827709,National Long Term Rating,AA-(bra),2026-03-31,Review - No Action,Rating Outlook Stable
+2026-06-04,Tegma Gestao Logistica S.A.,https://www.fitchratings.com/entity/tegma-gestao-logistica-sa-96789056,National Long Term Rating,A(bra),2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,Diagnosticos da America S.A.,https://www.fitchratings.com/entity/diagnosticos-da-america-sa-dasa-86681525,National Long Term Rating,AA(bra),2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,Diagnosticos da America S.A.,https://www.fitchratings.com/entity/diagnosticos-da-america-sa-dasa-86681525,Long Term Issuer Default Rating,WD,2015-08-04,Withdrawn,
+2026-06-04,Diagnosticos da America S.A.,https://www.fitchratings.com/entity/diagnosticos-da-america-sa-dasa-86681525,Local Currency Long Term Issuer Default Rating,WD,2015-08-04,Withdrawn,
+2026-06-04,"Sergipe, State of",https://www.fitchratings.com/entity/sergipe-state-of-94875890,Long Term Issuer Default Rating,BB,2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,"Sergipe, State of",https://www.fitchratings.com/entity/sergipe-state-of-94875890,Short Term Issuer Default Rating,B,2026-03-30,Affirmed,
+2026-06-04,"Sergipe, State of",https://www.fitchratings.com/entity/sergipe-state-of-94875890,Standalone Credit Profile,bb,2026-03-30,Affirmed,
+2026-06-04,"Sergipe, State of",https://www.fitchratings.com/entity/sergipe-state-of-94875890,National Short Term Rating,F1+(bra),2026-03-30,Affirmed,
+2026-06-04,"Sergipe, State of",https://www.fitchratings.com/entity/sergipe-state-of-94875890,National Long Term Rating,AAA(bra),2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,"Sergipe, State of",https://www.fitchratings.com/entity/sergipe-state-of-94875890,Local Currency Short Term Issuer Default Rating,B,2026-03-30,Affirmed,
+2026-06-04,"Sergipe, State of",https://www.fitchratings.com/entity/sergipe-state-of-94875890,Local Currency Long Term Issuer Default Rating,BB,2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,Fundacao Petrobras de Seguridade Social - Petros,https://www.fitchratings.com/entity/fundacao-petrobras-de-seguridade-social-petros-97346837,Investment Management Quality Rating,Excellent,2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,BRF S.A.,https://www.fitchratings.com/entity/brf-sa-90455677,Long Term Issuer Default Rating,BB+,2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,BRF S.A.,https://www.fitchratings.com/entity/brf-sa-90455677,Local Currency Long Term Issuer Default Rating,BB+,2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,BRF S.A.,https://www.fitchratings.com/entity/brf-sa-90455677,National Long Term Rating,AAA(bra),2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,Marfrig Global Foods S.A.,https://www.fitchratings.com/entity/marfrig-global-foods-sa-87227374,Long Term Issuer Default Rating,BB+,2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,Marfrig Global Foods S.A.,https://www.fitchratings.com/entity/marfrig-global-foods-sa-87227374,Local Currency Long Term Issuer Default Rating,BB+,2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,Marfrig Global Foods S.A.,https://www.fitchratings.com/entity/marfrig-global-foods-sa-87227374,National Long Term Rating,AAA(bra),2026-03-30,Affirmed,Rating Outlook Stable
+2026-06-04,Cimed & Co. S.A.,https://www.fitchratings.com/entity/cimed-co-sa-97629249,National Long Term Rating,AA(bra),2026-03-26,Downgrade,Rating Outlook Stable
+2026-06-04,Banco Digimais S.A.,https://www.fitchratings.com/entity/banco-digimais-sa-89817862,National Short Term Rating,B(bra),2026-03-26,Downgrade,Rating Watch Negative
+2026-06-04,Banco Digimais S.A.,https://www.fitchratings.com/entity/banco-digimais-sa-89817862,National Long Term Rating,BB+(bra),2026-03-26,Downgrade,Rating Watch Negative
+2026-06-04,Petroleo Brasileiro S.A. (Petrobras),https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80090802,Long Term Issuer Default Rating,BB,2026-03-26,Review - No Action,Rating Outlook Stable
+2026-06-04,Petroleo Brasileiro S.A. (Petrobras),https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80090802,National Long Term Rating,AAA(bra),2026-03-26,Review - No Action,Rating Outlook Stable
+2026-06-04,Petroleo Brasileiro S.A. (Petrobras),https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80090802,Local Currency Long Term Issuer Default Rating,BB,2026-03-26,Review - No Action,Rating Outlook Stable
+2026-06-04,Petroleo Brasileiro S.A. (Petrobras),https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80090802,Standalone Credit Profile,bbb,2026-03-26,Review - No Action,
+2026-06-04,Elfa Medicamentos S.A.,https://www.fitchratings.com/entity/elfa-medicamentos-sa-97629129,National Long Term Rating,B-(bra),2026-03-25,Downgrade,Rating Outlook Negative
+2026-06-04,Klabin S.A.,https://www.fitchratings.com/entity/klabin-sa-90196280,Long Term Issuer Default Rating,BB+,2026-03-25,Affirmed,Rating Outlook Positive
+2026-06-04,Klabin S.A.,https://www.fitchratings.com/entity/klabin-sa-90196280,Local Currency Long Term Issuer Default Rating,BB+,2026-03-25,Affirmed,Rating Outlook Positive
+2026-06-04,Klabin S.A.,https://www.fitchratings.com/entity/klabin-sa-90196280,National Long Term Rating,AAA(bra),2026-03-25,Affirmed,Rating Outlook Stable
+2026-06-04,BTG Pactual Asset Management DTVM S.A.,https://www.fitchratings.com/entity/btg-pactual-asset-management-dtvm-sa-90404869,Investment Management Quality Rating,Excellent,2026-03-23,Affirmed,Rating Outlook Stable
+2026-06-04,BTG Pactual Asset Management DTVM S.A.,https://www.fitchratings.com/entity/btg-pactual-asset-management-dtvm-sa-90404869,Asset Manager Rating,WD,2017-03-06,Withdrawn,
+2026-06-04,BTG Pactual Asset Management DTVM S.A.,https://www.fitchratings.com/entity/btg-pactual-asset-management-dtvm-sa-90404869,National Asset Manager Rating,WD(bra),2013-04-23,Withdrawn,
+2026-06-04,Companhia Estadual de Geracao De Energia Eletrica - Ceee-G,https://www.fitchratings.com/entity/companhia-estadual-de-geracao-de-energia-eletrica-ceee-g-97686013,National Long Term Rating,BBB-(bra),2026-03-20,Downgrade,Rating Watch Negative
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,Long Term Issuer Default Rating,BB,2026-03-20,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,Short Term Issuer Default Rating,B,2026-03-20,Affirmed,
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,Local Currency Short Term Issuer Default Rating,B,2026-03-20,Affirmed,
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,National Short Term Rating,F1+(bra),2026-03-20,Affirmed,
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,National Long Term Rating,AA+(bra),2026-03-20,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,Local Currency Long Term Issuer Default Rating,BB,2026-03-20,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,Viability Rating,bb,2026-03-20,Affirmed,
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,Government Support Rating,ns,2026-03-20,Affirmed,
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,Support Rating,WD,2022-04-20,Withdrawn,
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,Support Rating Floor,WD,2022-04-20,Withdrawn,
+2026-06-04,Banco Daycoval S.A.,https://www.fitchratings.com/entity/banco-daycoval-sa-80543450,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,Long Term Issuer Default Rating,BB-,2026-03-20,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,Short Term Issuer Default Rating,B,2026-03-20,Affirmed,
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,Viability Rating,bb-,2026-03-20,Affirmed,
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,National Short Term Rating,F1+(bra),2026-03-20,Affirmed,
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,Government Support Rating,ns,2026-03-20,Affirmed,
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,Local Currency Short Term Issuer Default Rating,B,2026-03-20,Affirmed,
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,Local Currency Long Term Issuer Default Rating,BB-,2026-03-20,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,National Long Term Rating,AA(bra),2026-03-20,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,Support Rating Floor,WD,2018-09-17,Withdrawn,
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,Support Rating,WD,2018-09-17,Withdrawn,
+2026-06-04,Banco Industrial do Brasil S.A.,https://www.fitchratings.com/entity/banco-industrial-do-brasil-sa-80543456,Individual Rating,WD,2011-11-14,Withdrawn,
+2026-06-04,Banco Sofisa S.A.,https://www.fitchratings.com/entity/banco-sofisa-sa-80480839,National Short Term Rating,F1+(bra),2026-03-20,Affirmed,
+2026-06-04,Banco Sofisa S.A.,https://www.fitchratings.com/entity/banco-sofisa-sa-80480839,National Long Term Rating,AA-(bra),2026-03-20,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Sofisa S.A.,https://www.fitchratings.com/entity/banco-sofisa-sa-80480839,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,Grupo Salta Educacao S/A,https://www.fitchratings.com/entity/grupo-salta-educacao-s-a-97555197,National Long Term Rating,AA-(bra),2026-03-19,Affirmed,Rating Outlook Positive
+2026-06-04,Compass Gas e Energia S.A.,https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144,National Long Term Rating,AA(bra),2026-03-18,Downgrade,Rating Watch Negative
+2026-06-04,Compass Gas e Energia S.A.,https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144,Local Currency Long Term Issuer Default Rating,WD,2025-05-28,Withdrawn,
+2026-06-04,Compass Gas e Energia S.A.,https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144,Long Term Issuer Default Rating,WD,2025-05-28,Withdrawn,
+2026-06-04,TRSP - Terminal de Regaseificacao de GNL de Sao Paulo S.A,https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746,National Long Term Rating,AA(bra),2026-03-18,Downgrade,Rating Watch Negative
+2026-06-04,"MagaluPay - Sociedade de Credito, Financiamento e Investimento S.A.",https://www.fitchratings.com/entity/magalupay-sociedade-de-credito-financiamento-e-investimento-sa-97825456,National Short Term Rating,F1+(bra),2026-03-17,Publish,
+2026-06-04,"MagaluPay - Sociedade de Credito, Financiamento e Investimento S.A.",https://www.fitchratings.com/entity/magalupay-sociedade-de-credito-financiamento-e-investimento-sa-97825456,National Long Term Rating,AA-(bra),2026-03-17,Publish,Rating Outlook Stable
+2026-06-04,Aeris Industria e Comercio de Equipamentos para Geracao de Energia S.A.,https://www.fitchratings.com/entity/aeris-industria-e-comercio-de-equipamentos-para-geracao-de-energia-sa-97108213,National Long Term Rating,WD(bra),2026-03-17,Withdrawn,
+2026-06-04,Ferrovia Norte Sul S.A.,https://www.fitchratings.com/entity/ferrovia-norte-sul-sa-97592975,National Long Term Rating,AAA(bra),2026-03-16,Affirmed,Rating Outlook Stable
+2026-06-04,VLI S.A.,https://www.fitchratings.com/entity/vli-sa-94391490,National Long Term Rating,AAA(bra),2026-03-16,Affirmed,Rating Outlook Stable
+2026-06-04,Ultrafertil S.A.,https://www.fitchratings.com/entity/ultrafertil-sa-96174694,National Long Term Rating,AAA(bra),2026-03-16,Affirmed,Rating Outlook Stable
+2026-06-04,VLI Multimodal S.A.,https://www.fitchratings.com/entity/vli-multimodal-sa-96166129,National Long Term Rating,AAA(bra),2026-03-16,Affirmed,Rating Outlook Stable
+2026-06-04,Patria INFRA Credito I Fundo de Investimento EM Direitos Creditorios,https://www.fitchratings.com/entity/patria-infra-credito-i-fundo-de-investimento-em-direitos-creditorios-97432402,National Fund Credit Quality Rating,BBBf(bra),2026-03-16,Affirmed,
+2026-06-04,Copobras S.A. Industria e Comercio de Embalagens,https://www.fitchratings.com/entity/copobras-s-a-industria-e-comercio-de-embalagens-97199208,National Long Term Rating,BBB+(bra),2026-03-12,Affirmed,Rating Outlook Stable
+2026-06-04,DM Instituicao de Pagamento S.A.,https://www.fitchratings.com/entity/dmcard-cartoes-de-credito-sa-96604805,National Short Term Rating,F3(bra),2026-03-12,Upgrade,
+2026-06-04,DM Instituicao de Pagamento S.A.,https://www.fitchratings.com/entity/dmcard-cartoes-de-credito-sa-96604805,National Long Term Rating,BBB-(bra),2026-03-12,Upgrade,Rating Outlook Stable
+2026-06-04,Raizen Energia S.A.,https://www.fitchratings.com/entity/raizen-energia-s-a-91300896,Long Term Issuer Default Rating,C,2026-03-12,Downgrade,
+2026-06-04,Raizen Energia S.A.,https://www.fitchratings.com/entity/raizen-energia-s-a-91300896,National Long Term Rating,C(bra),2026-03-12,Downgrade,
+2026-06-04,Raizen Energia S.A.,https://www.fitchratings.com/entity/raizen-energia-s-a-91300896,Local Currency Long Term Issuer Default Rating,C,2026-03-12,Downgrade,
+2026-06-04,Raizen S.A.,https://www.fitchratings.com/entity/raizen-combustiveis-sa-91300899,Long Term Issuer Default Rating,C,2026-03-12,Downgrade,
+2026-06-04,Raizen S.A.,https://www.fitchratings.com/entity/raizen-combustiveis-sa-91300899,National Long Term Rating,C(bra),2026-03-12,Downgrade,
+2026-06-04,Raizen S.A.,https://www.fitchratings.com/entity/raizen-combustiveis-sa-91300899,Local Currency Long Term Issuer Default Rating,C,2026-03-12,Downgrade,
+2026-06-04,Companhia Brasileira de Distribuicao S.A. (CBD),https://www.fitchratings.com/entity/companhia-brasileira-de-distribuicao-sa-cbd-80438369,National Long Term Rating,C(bra),2026-03-11,Downgrade,
+2026-06-04,Suzano S.A.,https://www.fitchratings.com/entity/suzano-sa-80092054,Long Term Issuer Default Rating,BBB-,2026-03-10,Affirmed,Rating Outlook Positive
+2026-06-04,Suzano S.A.,https://www.fitchratings.com/entity/suzano-sa-80092054,Local Currency Long Term Issuer Default Rating,BBB-,2026-03-10,Affirmed,Rating Outlook Positive
+2026-06-04,Suzano S.A.,https://www.fitchratings.com/entity/suzano-sa-80092054,National Long Term Rating,AAA(bra),2025-12-18,Review - No Action,Rating Outlook Stable
+2026-06-04,Eldorado Brasil Celulose S.A.,https://www.fitchratings.com/entity/eldorado-brasil-celulose-sa-96152344,Long Term Issuer Default Rating,BB,2026-03-10,Affirmed,Rating Outlook Stable
+2026-06-04,Eldorado Brasil Celulose S.A.,https://www.fitchratings.com/entity/eldorado-brasil-celulose-sa-96152344,Local Currency Long Term Issuer Default Rating,BB,2026-03-10,Affirmed,Rating Outlook Stable
+2026-06-04,Eldorado Brasil Celulose S.A.,https://www.fitchratings.com/entity/eldorado-brasil-celulose-sa-96152344,National Long Term Rating,AA+(bra),2025-06-20,Affirmed,Rating Outlook Stable
+2026-06-04,LD Celulose S.A.,https://www.fitchratings.com/entity/ld-celulose-sa-97626283,Long Term Issuer Default Rating,BB-,2026-03-10,Affirmed,Rating Outlook Positive
+2026-06-04,LD Celulose S.A.,https://www.fitchratings.com/entity/ld-celulose-sa-97626283,Local Currency Long Term Issuer Default Rating,BB-,2026-03-10,Affirmed,Rating Outlook Positive
+2026-06-04,LD Celulose S.A.,https://www.fitchratings.com/entity/ld-celulose-sa-97626283,National Long Term Rating,AA(bra),2025-09-17,Affirmed,Rating Outlook Positive
+2026-06-04,Companhia de Saneamento Basico do Estado de Sao Paulo (SABESP),https://www.fitchratings.com/entity/companhia-de-saneamento-basico-do-estado-de-sao-paulo-sabesp-80614473,Long Term Issuer Default Rating,BB+,2026-03-09,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia de Saneamento Basico do Estado de Sao Paulo (SABESP),https://www.fitchratings.com/entity/companhia-de-saneamento-basico-do-estado-de-sao-paulo-sabesp-80614473,National Long Term Rating,AAA(bra),2026-03-09,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia de Saneamento Basico do Estado de Sao Paulo (SABESP),https://www.fitchratings.com/entity/companhia-de-saneamento-basico-do-estado-de-sao-paulo-sabesp-80614473,Local Currency Long Term Issuer Default Rating,BB+,2026-03-09,Affirmed,Rating Outlook Stable
+2026-06-04,Serena Desenvolvimento S.A.,https://www.fitchratings.com/entity/omega-desenvolvimento-sa-97437998,National Long Term Rating,A+(bra),2026-03-06,Affirmed,Rating Outlook Stable
+2026-06-04,Serena Geracao S.A.,https://www.fitchratings.com/entity/omega-geracao-sa-96480320,National Long Term Rating,AA(bra),2026-03-06,Affirmed,Rating Outlook Stable
+2026-06-04,J. Macedo S.A.,https://www.fitchratings.com/entity/j-macedo-sa-96481693,National Long Term Rating,AA(bra),2026-03-06,Affirmed,Rating Outlook Stable
+2026-06-04,Oi S.A.,https://www.fitchratings.com/entity/oi-sa-80090797,Long Term Issuer Default Rating,RD,2026-03-05,Downgrade,
+2026-06-04,Oi S.A.,https://www.fitchratings.com/entity/oi-sa-80090797,National Long Term Rating,RD(bra),2026-03-05,Downgrade,
+2026-06-04,Oi S.A.,https://www.fitchratings.com/entity/oi-sa-80090797,Local Currency Long Term Issuer Default Rating,RD,2026-03-05,Downgrade,
+2026-06-04,Caixa Economica Federal,https://www.fitchratings.com/entity/caixa-economica-federal-80092109,Long Term Issuer Default Rating,BB,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Caixa Economica Federal,https://www.fitchratings.com/entity/caixa-economica-federal-80092109,Short Term Issuer Default Rating,B,2026-03-05,Affirmed,
+2026-06-04,Caixa Economica Federal,https://www.fitchratings.com/entity/caixa-economica-federal-80092109,National Short Term Rating,F1+(bra),2026-03-05,Affirmed,
+2026-06-04,Caixa Economica Federal,https://www.fitchratings.com/entity/caixa-economica-federal-80092109,Government Support Rating,bb,2026-03-05,Affirmed,
+2026-06-04,Caixa Economica Federal,https://www.fitchratings.com/entity/caixa-economica-federal-80092109,Local Currency Long Term Issuer Default Rating,BB,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Caixa Economica Federal,https://www.fitchratings.com/entity/caixa-economica-federal-80092109,Local Currency Short Term Issuer Default Rating,B,2026-03-05,Affirmed,
+2026-06-04,Caixa Economica Federal,https://www.fitchratings.com/entity/caixa-economica-federal-80092109,National Long Term Rating,AAA(bra),2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Caixa Economica Federal,https://www.fitchratings.com/entity/caixa-economica-federal-80092109,Support Rating,WD,2022-06-01,Withdrawn,
+2026-06-04,Caixa Economica Federal,https://www.fitchratings.com/entity/caixa-economica-federal-80092109,Support Rating Floor,WD,2022-06-01,Withdrawn,
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,Long Term Issuer Default Rating,BB,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,Short Term Issuer Default Rating,B,2026-03-05,Affirmed,
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,Local Currency Long Term Issuer Default Rating,BB,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,National Long Term Rating,AAA(bra),2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,Government Support Rating,bb,2026-03-05,Affirmed,
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,National Short Term Rating,F1+(bra),2026-03-05,Affirmed,
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,Local Currency Short Term Issuer Default Rating,B,2026-03-05,Affirmed,
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,Support Rating Floor,WD,2022-06-01,Withdrawn,
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,Support Rating,WD,2022-06-01,Withdrawn,
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,Viability Rating,WD,2012-10-24,Withdrawn,
+2026-06-04,Banco da Amazonia S.A.,https://www.fitchratings.com/entity/banco-da-amazonia-sa-80543406,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,Long Term Issuer Default Rating,BB,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,Short Term Issuer Default Rating,B,2026-03-05,Affirmed,
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,National Short Term Rating,F1+(bra),2026-03-05,Affirmed,
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,Local Currency Short Term Issuer Default Rating,B,2026-03-05,Affirmed,
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,Government Support Rating,bb,2026-03-05,Affirmed,
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,Local Currency Long Term Issuer Default Rating,BB,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,National Long Term Rating,AAA(bra),2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,Support Rating,WD,2022-06-01,Withdrawn,
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,Support Rating Floor,WD,2022-06-01,Withdrawn,
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,Viability Rating,WD,2012-10-24,Withdrawn,
+2026-06-04,Banco do Nordeste do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-nordeste-do-brasil-sa-80092110,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,Banco Nacional de Desenvolvimento Economico e Social (BNDES),https://www.fitchratings.com/entity/banco-nacional-de-desenvolvimento-economico-e-social-bndes-80089767,Long Term Issuer Default Rating,BB,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Nacional de Desenvolvimento Economico e Social (BNDES),https://www.fitchratings.com/entity/banco-nacional-de-desenvolvimento-economico-e-social-bndes-80089767,Short Term Issuer Default Rating,B,2026-03-05,Affirmed,
+2026-06-04,Banco Nacional de Desenvolvimento Economico e Social (BNDES),https://www.fitchratings.com/entity/banco-nacional-de-desenvolvimento-economico-e-social-bndes-80089767,Local Currency Short Term Issuer Default Rating,B,2026-03-05,Affirmed,
+2026-06-04,Banco Nacional de Desenvolvimento Economico e Social (BNDES),https://www.fitchratings.com/entity/banco-nacional-de-desenvolvimento-economico-e-social-bndes-80089767,National Short Term Rating,F1+(bra),2026-03-05,Affirmed,
+2026-06-04,Banco Nacional de Desenvolvimento Economico e Social (BNDES),https://www.fitchratings.com/entity/banco-nacional-de-desenvolvimento-economico-e-social-bndes-80089767,Government Support Rating,bb,2026-03-05,Affirmed,
+2026-06-04,Banco Nacional de Desenvolvimento Economico e Social (BNDES),https://www.fitchratings.com/entity/banco-nacional-de-desenvolvimento-economico-e-social-bndes-80089767,National Long Term Rating,AAA(bra),2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Nacional de Desenvolvimento Economico e Social (BNDES),https://www.fitchratings.com/entity/banco-nacional-de-desenvolvimento-economico-e-social-bndes-80089767,Local Currency Long Term Issuer Default Rating,BB,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Nacional de Desenvolvimento Economico e Social (BNDES),https://www.fitchratings.com/entity/banco-nacional-de-desenvolvimento-economico-e-social-bndes-80089767,Support Rating Floor,WD,2022-06-01,Withdrawn,
+2026-06-04,Banco Nacional de Desenvolvimento Economico e Social (BNDES),https://www.fitchratings.com/entity/banco-nacional-de-desenvolvimento-economico-e-social-bndes-80089767,Support Rating,WD,2022-06-01,Withdrawn,
+2026-06-04,MRS Logistica S.A.,https://www.fitchratings.com/entity/mrs-logistica-sa-mrs-80091464,Long Term Issuer Default Rating,BB+,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,MRS Logistica S.A.,https://www.fitchratings.com/entity/mrs-logistica-sa-mrs-80091464,Local Currency Long Term Issuer Default Rating,BBB-,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,MRS Logistica S.A.,https://www.fitchratings.com/entity/mrs-logistica-sa-mrs-80091464,National Long Term Rating,AAA(bra),2025-12-23,Affirmed,Rating Outlook Stable
+2026-06-04,Unidas Locacoes E Servicos S/A,https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059,Long Term Issuer Default Rating,BB-,2026-03-05,Affirmed,Rating Outlook Positive
+2026-06-04,Unidas Locacoes E Servicos S/A,https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059,Local Currency Long Term Issuer Default Rating,BB-,2026-03-05,Affirmed,Rating Outlook Positive
+2026-06-04,Unidas Locacoes E Servicos S/A,https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059,National Long Term Rating,AA(bra),2025-12-08,Affirmed,Rating Outlook Positive
+2026-06-04,Cruzeiro do Sul Educacional SA,https://www.fitchratings.com/entity/cruzeiro-do-sul-educacional-sa-97709589,National Long Term Rating,AA(bra),2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Localiza Rent a Car S.A.,https://www.fitchratings.com/entity/localiza-rent-car-sa-90199061,Long Term Issuer Default Rating,BB+,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Localiza Rent a Car S.A.,https://www.fitchratings.com/entity/localiza-rent-car-sa-90199061,Local Currency Long Term Issuer Default Rating,BB+,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Localiza Rent a Car S.A.,https://www.fitchratings.com/entity/localiza-rent-car-sa-90199061,National Long Term Rating,AAA(bra),2025-10-03,Affirmed,Rating Outlook Stable
+2026-06-04,Hidrovias do Brasil S.A.,https://www.fitchratings.com/entity/hidrovias-do-brasil-sa-96584762,Long Term Issuer Default Rating,BB+,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Hidrovias do Brasil S.A.,https://www.fitchratings.com/entity/hidrovias-do-brasil-sa-96584762,Local Currency Long Term Issuer Default Rating,BB+,2026-03-05,Affirmed,Rating Outlook Stable
+2026-06-04,Hidrovias do Brasil S.A.,https://www.fitchratings.com/entity/hidrovias-do-brasil-sa-96584762,National Long Term Rating,AAA(bra),2025-07-15,Upgrade,Rating Outlook Stable
+2026-06-04,Azul S.A.,https://www.fitchratings.com/entity/azul-sa-94775300,Long Term Issuer Default Rating,B-,2026-03-04,New Rating,Rating Outlook Stable
+2026-06-04,Azul S.A.,https://www.fitchratings.com/entity/azul-sa-94775300,National Long Term Rating,BBB-(bra),2026-03-04,New Rating,Rating Outlook Stable
+2026-06-04,Azul S.A.,https://www.fitchratings.com/entity/azul-sa-94775300,Local Currency Long Term Issuer Default Rating,B-,2026-03-04,New Rating,Rating Outlook Stable
+2026-06-04,Althaia S.A. Industria Farmaceutica,https://www.fitchratings.com/entity/althaia-sa-industria-farmaceutica-97666556,National Long Term Rating,A+(bra),2026-03-04,Affirmed,Rating Outlook Stable
+2026-06-04,Rumo S.A.,https://www.fitchratings.com/entity/rumo-sa-80614433,Long Term Issuer Default Rating,BB+,2026-03-04,Rating Watch On,Rating Watch Negative
+2026-06-04,Rumo S.A.,https://www.fitchratings.com/entity/rumo-sa-80614433,National Long Term Rating,AAA(bra),2026-03-04,Rating Watch On,Rating Watch Negative
+2026-06-04,Rumo S.A.,https://www.fitchratings.com/entity/rumo-sa-80614433,Local Currency Long Term Issuer Default Rating,BB+,2026-03-04,Rating Watch On,Rating Watch Negative
+2026-06-04,Rumo Malha Norte S.A.,https://www.fitchratings.com/entity/rumo-malha-norte-sa-80614513,National Long Term Rating,AAA(bra),2026-03-04,Rating Watch On,Rating Watch Negative
+2026-06-04,Rumo Malha Paulista S.A.,https://www.fitchratings.com/entity/rumo-malha-paulista-sa-87217976,National Long Term Rating,AAA(bra),2026-03-04,Rating Watch On,Rating Watch Negative
+2026-06-04,Rumo Malha Sul S.A.,https://www.fitchratings.com/entity/rumo-malha-sul-sa-87217992,National Long Term Rating,AAA(bra),2026-03-04,Rating Watch On,Rating Watch Negative
+2026-06-04,Samarco Mineracao S.A.,https://www.fitchratings.com/entity/samarco-mineracao-sa-80089959,Long Term Issuer Default Rating,B,2026-03-04,Affirmed,Rating Outlook Positive
+2026-06-04,Samarco Mineracao S.A.,https://www.fitchratings.com/entity/samarco-mineracao-sa-80089959,Local Currency Long Term Issuer Default Rating,B,2026-03-04,Affirmed,Rating Outlook Positive
+2026-06-04,Samarco Mineracao S.A.,https://www.fitchratings.com/entity/samarco-mineracao-sa-80089959,National Long Term Rating,BBB+(bra),2025-09-04,Upgrade,Rating Outlook Positive
+2026-06-04,Vale S.A.,https://www.fitchratings.com/entity/vale-sa-80090452,Long Term Issuer Default Rating,BBB+,2026-03-04,Affirmed,Rating Outlook Stable
+2026-06-04,Vale S.A.,https://www.fitchratings.com/entity/vale-sa-80090452,Local Currency Long Term Issuer Default Rating,BBB+,2026-03-04,Affirmed,Rating Outlook Stable
+2026-06-04,Vale S.A.,https://www.fitchratings.com/entity/vale-sa-80090452,National Long Term Rating,AAA(bra),2025-10-23,Affirmed,Rating Outlook Stable
+2026-06-04,Cemig Geracao e Transmissao S.A.,https://www.fitchratings.com/entity/cemig-geracao-e-transmissao-sa-84963873,Long Term Issuer Default Rating,BB,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Cemig Geracao e Transmissao S.A.,https://www.fitchratings.com/entity/cemig-geracao-e-transmissao-sa-84963873,Local Currency Long Term Issuer Default Rating,BB,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Cemig Geracao e Transmissao S.A.,https://www.fitchratings.com/entity/cemig-geracao-e-transmissao-sa-84963873,National Long Term Rating,AAA(bra),2025-10-06,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Energetica de Minas Gerais (CEMIG),https://www.fitchratings.com/entity/companhia-energetica-de-minas-gerais-cemig-80614480,Long Term Issuer Default Rating,BB,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Energetica de Minas Gerais (CEMIG),https://www.fitchratings.com/entity/companhia-energetica-de-minas-gerais-cemig-80614480,Local Currency Long Term Issuer Default Rating,BB,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Energetica de Minas Gerais (CEMIG),https://www.fitchratings.com/entity/companhia-energetica-de-minas-gerais-cemig-80614480,National Long Term Rating,AAA(bra),2025-10-06,Affirmed,Rating Outlook Stable
+2026-06-04,Cemig Distribuicao S.A.,https://www.fitchratings.com/entity/cemig-distribuicao-sa-83827065,Long Term Issuer Default Rating,BB,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Cemig Distribuicao S.A.,https://www.fitchratings.com/entity/cemig-distribuicao-sa-83827065,Local Currency Long Term Issuer Default Rating,BB,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Cemig Distribuicao S.A.,https://www.fitchratings.com/entity/cemig-distribuicao-sa-83827065,National Long Term Rating,AAA(bra),2025-10-06,Affirmed,Rating Outlook Stable
+2026-06-04,Transmissora Alianca de Energia Eletrica S.A.,https://www.fitchratings.com/entity/transmissora-alianca-de-energia-eletrica-sa-90901890,Long Term Issuer Default Rating,BB+,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Transmissora Alianca de Energia Eletrica S.A.,https://www.fitchratings.com/entity/transmissora-alianca-de-energia-eletrica-sa-90901890,Local Currency Long Term Issuer Default Rating,BB+,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Transmissora Alianca de Energia Eletrica S.A.,https://www.fitchratings.com/entity/transmissora-alianca-de-energia-eletrica-sa-90901890,National Long Term Rating,AAA(bra),2025-12-04,Affirmed,Rating Outlook Stable
+2026-06-04,AXIA Energia S.A.,https://www.fitchratings.com/entity/centrais-eletricas-brasileiras-sa-eletrobras-80464173,Long Term Issuer Default Rating,BB-,2026-03-03,Affirmed,Rating Outlook Positive
+2026-06-04,AXIA Energia S.A.,https://www.fitchratings.com/entity/centrais-eletricas-brasileiras-sa-eletrobras-80464173,Local Currency Long Term Issuer Default Rating,BB-,2026-03-03,Affirmed,Rating Outlook Positive
+2026-06-04,AXIA Energia S.A.,https://www.fitchratings.com/entity/centrais-eletricas-brasileiras-sa-eletrobras-80464173,National Long Term Rating,AA(bra),2025-11-17,Affirmed,Rating Outlook Positive
+2026-06-04,AXIA Energia S.A.,https://www.fitchratings.com/entity/centrais-eletricas-brasileiras-sa-eletrobras-80464173,Standalone Credit Profile,WD,2022-06-15,Withdrawn,
+2026-06-04,Auren Energia S.A.,https://www.fitchratings.com/entity/vtrm-energia-participacoes-sa-97036543,Long Term Issuer Default Rating,BB+,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Auren Energia S.A.,https://www.fitchratings.com/entity/vtrm-energia-participacoes-sa-97036543,Local Currency Long Term Issuer Default Rating,BBB-,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Auren Energia S.A.,https://www.fitchratings.com/entity/vtrm-energia-participacoes-sa-97036543,Standalone Credit Profile,bb-,2025-12-30,New Rating,
+2026-06-04,Auren Energia S.A.,https://www.fitchratings.com/entity/vtrm-energia-participacoes-sa-97036543,National Long Term Rating,AAA(bra),2025-12-30,Affirmed,Rating Outlook Stable
+2026-06-04,CPFL Energia S.A.,https://www.fitchratings.com/entity/cpfl-energia-sa-80492394,Long Term Issuer Default Rating,BBB,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,CPFL Energia S.A.,https://www.fitchratings.com/entity/cpfl-energia-sa-80492394,Local Currency Long Term Issuer Default Rating,BBB,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,CPFL Energia S.A.,https://www.fitchratings.com/entity/cpfl-energia-sa-80492394,National Long Term Rating,AAA(bra),2026-01-22,Affirmed,Rating Outlook Stable
+2026-06-04,Alupar Investimento S.A.,https://www.fitchratings.com/entity/alupar-investimento-sa-86661526,Long Term Issuer Default Rating,BB+,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Alupar Investimento S.A.,https://www.fitchratings.com/entity/alupar-investimento-sa-86661526,Local Currency Long Term Issuer Default Rating,BBB-,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Alupar Investimento S.A.,https://www.fitchratings.com/entity/alupar-investimento-sa-86661526,National Long Term Rating,AAA(bra),2025-12-23,Affirmed,Rating Outlook Stable
+2026-06-04,Minerva S.A.,https://www.fitchratings.com/entity/minerva-sa-84533869,Long Term Issuer Default Rating,BB,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Minerva S.A.,https://www.fitchratings.com/entity/minerva-sa-84533869,Local Currency Long Term Issuer Default Rating,BB,2026-03-03,Affirmed,Rating Outlook Stable
+2026-06-04,Minerva S.A.,https://www.fitchratings.com/entity/minerva-sa-84533869,National Long Term Rating,AAA(bra),2025-08-20,Upgrade,Rating Outlook Stable
+2026-06-04,Gerdau S.A.,https://www.fitchratings.com/entity/gerdau-sa-82273687,Long Term Issuer Default Rating,BBB,2026-03-02,Affirmed,Rating Outlook Stable
+2026-06-04,Gerdau S.A.,https://www.fitchratings.com/entity/gerdau-sa-82273687,Local Currency Long Term Issuer Default Rating,BBB,2026-03-02,Affirmed,Rating Outlook Stable
+2026-06-04,Gerdau S.A.,https://www.fitchratings.com/entity/gerdau-sa-82273687,National Long Term Rating,AAA(bra),2025-07-11,Affirmed,Rating Outlook Stable
+2026-06-04,Embraer S.A.,https://www.fitchratings.com/entity/embraer-sa-94402890,Long Term Issuer Default Rating,BBB-,2026-03-02,Affirmed,Rating Outlook Positive
+2026-06-04,Embraer S.A.,https://www.fitchratings.com/entity/embraer-sa-94402890,Local Currency Long Term Issuer Default Rating,BBB-,2026-03-02,Affirmed,Rating Outlook Positive
+2026-06-04,Embraer S.A.,https://www.fitchratings.com/entity/embraer-sa-94402890,National Long Term Rating,AAA(bra),2025-09-16,Affirmed,Rating Outlook Stable
+2026-06-04,GOL Linhas Aereas Inteligentes S.A.,https://www.fitchratings.com/entity/gol-linhas-aereas-inteligentes-sa-83366465,Long Term Issuer Default Rating,CCC+,2026-03-02,Affirmed,Rating Outlook Positive
+2026-06-04,GOL Linhas Aereas Inteligentes S.A.,https://www.fitchratings.com/entity/gol-linhas-aereas-inteligentes-sa-83366465,Local Currency Long Term Issuer Default Rating,CCC+,2026-03-02,Affirmed,Rating Outlook Positive
+2026-06-04,GOL Linhas Aereas Inteligentes S.A.,https://www.fitchratings.com/entity/gol-linhas-aereas-inteligentes-sa-83366465,National Long Term Rating,CCC+(bra),2025-07-31,Publish,Rating Outlook Positive
+2026-06-04,Usinas Siderurgicas de Minas Gerais S.A. (Usiminas),https://www.fitchratings.com/entity/usinas-siderurgicas-de-minas-gerais-sa-usiminas-84742070,Long Term Issuer Default Rating,BB,2026-03-02,Affirmed,Rating Outlook Stable
+2026-06-04,Usinas Siderurgicas de Minas Gerais S.A. (Usiminas),https://www.fitchratings.com/entity/usinas-siderurgicas-de-minas-gerais-sa-usiminas-84742070,Local Currency Long Term Issuer Default Rating,BB,2026-03-02,Affirmed,Rating Outlook Stable
+2026-06-04,Usinas Siderurgicas de Minas Gerais S.A. (Usiminas),https://www.fitchratings.com/entity/usinas-siderurgicas-de-minas-gerais-sa-usiminas-84742070,National Long Term Rating,AA+(bra),2025-09-04,Affirmed,Rating Outlook Stable
+2026-06-04,Votorantim Cimentos S.A. (VCSA),https://www.fitchratings.com/entity/votorantim-cimentos-sa-vcsa-90449272,Long Term Issuer Default Rating,BBB,2026-02-27,Affirmed,Rating Outlook Stable
+2026-06-04,Votorantim Cimentos S.A. (VCSA),https://www.fitchratings.com/entity/votorantim-cimentos-sa-vcsa-90449272,Local Currency Long Term Issuer Default Rating,BBB,2026-02-27,Affirmed,Rating Outlook Stable
+2026-06-04,Votorantim Cimentos S.A. (VCSA),https://www.fitchratings.com/entity/votorantim-cimentos-sa-vcsa-90449272,National Long Term Rating,AAA(bra),2025-09-17,Affirmed,Rating Outlook Stable
+2026-06-04,Dexco S.A.,https://www.fitchratings.com/entity/duratex-sa-80614501,Long Term Issuer Default Rating,BB,2026-02-27,Affirmed,Rating Outlook Stable
+2026-06-04,Dexco S.A.,https://www.fitchratings.com/entity/duratex-sa-80614501,Local Currency Long Term Issuer Default Rating,BB,2026-02-27,Affirmed,Rating Outlook Stable
+2026-06-04,Dexco S.A.,https://www.fitchratings.com/entity/duratex-sa-80614501,National Long Term Rating,AAA(bra),2025-12-18,Review - No Action,Rating Outlook Stable
+2026-06-04,Votorantim S.A.,https://www.fitchratings.com/entity/votorantim-sa-82069029,Long Term Issuer Default Rating,BBB,2026-02-27,Affirmed,Rating Outlook Stable
+2026-06-04,Votorantim S.A.,https://www.fitchratings.com/entity/votorantim-sa-82069029,Local Currency Long Term Issuer Default Rating,BBB,2026-02-27,Affirmed,Rating Outlook Stable
+2026-06-04,Votorantim S.A.,https://www.fitchratings.com/entity/votorantim-sa-82069029,National Long Term Rating,AAA(bra),2025-09-17,Affirmed,Rating Outlook Stable
+2026-06-04,Cosan S.A.,https://www.fitchratings.com/entity/cosan-sa-88173461,Long Term Issuer Default Rating,BB-,2026-02-27,Downgrade,Rating Watch Negative
+2026-06-04,Cosan S.A.,https://www.fitchratings.com/entity/cosan-sa-88173461,National Long Term Rating,A+(bra),2026-02-27,Downgrade,Rating Watch Negative
+2026-06-04,Cosan S.A.,https://www.fitchratings.com/entity/cosan-sa-88173461,Local Currency Long Term Issuer Default Rating,BB-,2026-02-27,Downgrade,Rating Watch Negative
+2026-06-04,Oceanica Engenharia e Consultoria S.A.,https://www.fitchratings.com/entity/oceanica-engenharia-e-consultoria-sa-97617499,Long Term Issuer Default Rating,B-,2026-02-27,Affirmed,Rating Outlook Stable
+2026-06-04,Oceanica Engenharia e Consultoria S.A.,https://www.fitchratings.com/entity/oceanica-engenharia-e-consultoria-sa-97617499,Local Currency Long Term Issuer Default Rating,B-,2026-02-27,Affirmed,Rating Outlook Stable
+2026-06-04,PRIO S.A.,https://www.fitchratings.com/entity/petro-rio-sa-97010821,Long Term Issuer Default Rating,BB+,2026-02-26,Affirmed,Rating Outlook Stable
+2026-06-04,PRIO S.A.,https://www.fitchratings.com/entity/petro-rio-sa-97010821,Local Currency Long Term Issuer Default Rating,BB+,2026-02-26,Affirmed,Rating Outlook Stable
+2026-06-04,PRIO S.A.,https://www.fitchratings.com/entity/petro-rio-sa-97010821,National Long Term Rating,AAA(bra),2025-11-14,Affirmed,Rating Outlook Stable
+2026-06-04,Ambipar Participacoes e Empreendimentos S.A.,https://www.fitchratings.com/entity/ambipar-participacoes-e-empreendimentos-sa-97338527,Long Term Issuer Default Rating,D,2026-02-26,Affirmed,
+2026-06-04,Ambipar Participacoes e Empreendimentos S.A.,https://www.fitchratings.com/entity/ambipar-participacoes-e-empreendimentos-sa-97338527,Local Currency Long Term Issuer Default Rating,D,2026-02-26,Affirmed,
+2026-06-04,Ambipar Participacoes e Empreendimentos S.A.,https://www.fitchratings.com/entity/ambipar-participacoes-e-empreendimentos-sa-97338527,National Long Term Rating,D(bra),2025-10-22,Downgrade,
+2026-06-04,Natura Cosmeticos S.A.,https://www.fitchratings.com/entity/natura-cosmeticos-sa-90714090,Long Term Issuer Default Rating,BB+,2026-02-24,Affirmed,Rating Outlook Stable
+2026-06-04,Natura Cosmeticos S.A.,https://www.fitchratings.com/entity/natura-cosmeticos-sa-90714090,Local Currency Long Term Issuer Default Rating,BB+,2026-02-24,Affirmed,Rating Outlook Stable
+2026-06-04,Natura Cosmeticos S.A.,https://www.fitchratings.com/entity/natura-cosmeticos-sa-90714090,National Long Term Rating,AAA(bra),2025-07-16,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Siderurgica Nacional (CSN),https://www.fitchratings.com/entity/companhia-siderurgica-nacional-csn-80091767,Long Term Issuer Default Rating,B,2026-02-20,Downgrade,Rating Watch Negative
+2026-06-04,Companhia Siderurgica Nacional (CSN),https://www.fitchratings.com/entity/companhia-siderurgica-nacional-csn-80091767,Local Currency Long Term Issuer Default Rating,B,2026-02-20,Downgrade,Rating Watch Negative
+2026-06-04,Companhia Siderurgica Nacional (CSN),https://www.fitchratings.com/entity/companhia-siderurgica-nacional-csn-80091767,National Long Term Rating,BBB-(bra),2026-02-20,Downgrade,Rating Watch Negative
+2026-06-04,CSN Mineracao S.A.,https://www.fitchratings.com/entity/csn-mineracao-sa-97398072,National Long Term Rating,BBB-(bra),2026-02-20,Downgrade,Rating Watch Negative
+2026-06-04,Ache Laboratorios Farmaceuticos S.A.,https://www.fitchratings.com/entity/ache-laboratorios-farmaceuticos-sa-90982911,Long Term Issuer Default Rating,BB+,2026-02-13,Affirmed,Rating Outlook Stable
+2026-06-04,Ache Laboratorios Farmaceuticos S.A.,https://www.fitchratings.com/entity/ache-laboratorios-farmaceuticos-sa-90982911,Local Currency Long Term Issuer Default Rating,BB+,2026-02-13,Affirmed,Rating Outlook Stable
+2026-06-04,Ache Laboratorios Farmaceuticos S.A.,https://www.fitchratings.com/entity/ache-laboratorios-farmaceuticos-sa-90982911,National Long Term Rating,AAA(bra),2025-12-19,Affirmed,Rating Outlook Stable
+2026-06-04,Tupy S.A.,https://www.fitchratings.com/entity/tupy-sa-94298109,Long Term Issuer Default Rating,BB-,2026-02-13,Affirmed,Rating Outlook Stable
+2026-06-04,Tupy S.A.,https://www.fitchratings.com/entity/tupy-sa-94298109,Local Currency Long Term Issuer Default Rating,BB-,2026-02-13,Affirmed,Rating Outlook Stable
+2026-06-04,Tupy S.A.,https://www.fitchratings.com/entity/tupy-sa-94298109,National Long Term Rating,AA(bra),2025-11-13,Downgrade,Rating Outlook Stable
+2026-06-04,Braskem S.A.,https://www.fitchratings.com/entity/braskem-sa-80092141,Long Term Issuer Default Rating,CC,2026-02-12,Affirmed,
+2026-06-04,Braskem S.A.,https://www.fitchratings.com/entity/braskem-sa-80092141,Local Currency Long Term Issuer Default Rating,CC,2026-02-12,Affirmed,
+2026-06-04,Braskem S.A.,https://www.fitchratings.com/entity/braskem-sa-80092141,National Long Term Rating,CC(bra),2025-12-30,Downgrade,
+2026-06-04,EMAE - Empresa Metropolitana de Aguas e Energia S.A.,https://www.fitchratings.com/entity/emae-empresa-metropolitana-de-aguas-e-energia-sa-97685292,National Long Term Rating,AAA(bra),2026-02-10,Upgrade,Rating Outlook Stable
+2026-06-04,Refinaria de Mataripe S.A.,https://www.fitchratings.com/entity/refinaria-de-mataripe-sa-97631572,Long Term Issuer Default Rating,B+,2026-02-10,Affirmed,Rating Outlook Stable
+2026-06-04,Refinaria de Mataripe S.A.,https://www.fitchratings.com/entity/refinaria-de-mataripe-sa-97631572,Local Currency Long Term Issuer Default Rating,B+,2026-02-10,Affirmed,Rating Outlook Stable
+2026-06-04,Globo Comunicacao e Participacoes S.A.,https://www.fitchratings.com/entity/globo-comunicacao-e-participacoes-sa-87246572,Long Term Issuer Default Rating,BB+,2026-02-10,Affirmed,Rating Outlook Stable
+2026-06-04,Globo Comunicacao e Participacoes S.A.,https://www.fitchratings.com/entity/globo-comunicacao-e-participacoes-sa-87246572,Local Currency Long Term Issuer Default Rating,BB+,2026-02-10,Affirmed,Rating Outlook Stable
+2026-06-04,Globo Comunicacao e Participacoes S.A.,https://www.fitchratings.com/entity/globo-comunicacao-e-participacoes-sa-87246572,National Long Term Rating,AAA(bra),2025-11-25,Affirmed,Rating Outlook Stable
+2026-06-04,VPorts Autoridade Portuaria S.A.,https://www.fitchratings.com/entity/vports-autoridade-portuaria-sa-97598385,National Long Term Rating,AAA(bra),2026-02-06,Affirmed,Rating Outlook Stable
+2026-06-04,VIX Logistica S.A.,https://www.fitchratings.com/entity/vix-logistica-sa-96174956,National Long Term Rating,AA-(bra),2026-02-05,Affirmed,Rating Outlook Positive
+2026-06-04,Let's Rent a Car S.A.,https://www.fitchratings.com/entity/let-rent-car-sa-97516487,National Long Term Rating,AA-(bra),2026-02-05,Affirmed,Rating Outlook Positive
+2026-06-04,Companhia de Gas da Bahia - Bahiagas,https://www.fitchratings.com/entity/companhia-de-gas-da-bahia-bahiagas-96617901,National Long Term Rating,AA+(bra),2026-02-05,Affirmed,Rating Outlook Stable
+2026-06-04,J&F S.A.,https://www.fitchratings.com/entity/j-f-sa-91849894,Long Term Issuer Default Rating,BB+,2026-02-03,Publish,Rating Outlook Stable
+2026-06-04,J&F S.A.,https://www.fitchratings.com/entity/j-f-sa-91849894,Local Currency Long Term Issuer Default Rating,BB+,2026-02-03,Publish,Rating Outlook Stable
+2026-06-04,J&F S.A.,https://www.fitchratings.com/entity/j-f-sa-91849894,National Long Term Rating,AAA(bra),2026-02-03,Publish,Rating Outlook Stable
+2026-06-04,Reag Asset Management Ltda.,https://www.fitchratings.com/entity/reag-gestora-de-recursos-ltda-96552069,Investment Management Quality Rating,WD,2026-01-30,Withdrawn,
+2026-06-04,Elekeiroz S/A,https://www.fitchratings.com/entity/elekeiroz-s-a-97577951,National Long Term Rating,WD(bra),2026-01-30,Withdrawn,
+2026-06-04,Sicredi Asset Management,https://www.fitchratings.com/entity/sicredi-asset-management-96720179,Investment Management Quality Rating,Strong,2026-01-23,Affirmed,Rating Outlook Stable
+2026-06-04,CPFL Transmissao S.A.,https://www.fitchratings.com/entity/companhia-estadual-de-transmissao-de-energia-eletrica-ceee-t-97453517,National Long Term Rating,AAA(bra),2026-01-22,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Paulista de Forca e Luz (CPFL),https://www.fitchratings.com/entity/companhia-paulista-de-forca-e-luz-cpfl-80614495,National Long Term Rating,AAA(bra),2026-01-22,Affirmed,Rating Outlook Stable
+2026-06-04,RGE Sul Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/rge-sul-distribuidora-de-energia-sa-96554699,National Long Term Rating,AAA(bra),2026-01-22,Affirmed,Rating Outlook Stable
+2026-06-04,CPFL Geracao de Energia S.A.,https://www.fitchratings.com/entity/cpfl-geracao-de-energia-sa-94139890,National Long Term Rating,AAA(bra),2026-01-22,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Piratininga de Forca e Luz,https://www.fitchratings.com/entity/cia-piratininga-de-forca-e-luz-sa-91549891,National Long Term Rating,AAA(bra),2026-01-22,Affirmed,Rating Outlook Stable
+2026-06-04,CPFL Energias Renovaveis S.A.,https://www.fitchratings.com/entity/cpfl-energias-renovaveis-sa-96223356,National Long Term Rating,AAA(bra),2026-01-22,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Jaguari de Energia,https://www.fitchratings.com/entity/companhia-jaguari-de-energia-97453053,National Long Term Rating,AAA(bra),2026-01-22,Affirmed,Rating Outlook Stable
+2026-06-04,CPFL Comercializacao Brasil S.A.,https://www.fitchratings.com/entity/cpfl-comercializacao-brasil-sa-96953770,National Long Term Rating,AAA(bra),2026-01-22,Affirmed,Rating Outlook Stable
+2026-06-04,RC Holding S.A.,https://www.fitchratings.com/entity/reag-capital-holding-sa-97502100,National Long Term Rating,WD(bra),2026-01-21,Withdrawn,
+2026-06-04,RC Holding S.A.,https://www.fitchratings.com/entity/reag-capital-holding-sa-97502100,National Short Term Rating,WD(bra),2026-01-21,Withdrawn,
+2026-06-04,BRK Ambiental Participacoes S.A.,https://www.fitchratings.com/entity/brk-ambiental-participacoes-sa-96495926,National Long Term Rating,WD(bra),2026-01-19,Withdrawn,
+2026-06-04,Guararapes Confeccoes S.A.,https://www.fitchratings.com/entity/guararapes-confeccoes-sa-95232490,National Long Term Rating,AA-(bra),2026-01-19,Upgrade,Rating Outlook Stable
+2026-06-04,Municipality of Niteroi,https://www.fitchratings.com/entity/municipality-of-niteroi-96700906,Long Term Issuer Default Rating,BB,2026-01-13,Affirmed,Rating Outlook Stable
+2026-06-04,Municipality of Niteroi,https://www.fitchratings.com/entity/municipality-of-niteroi-96700906,Short Term Issuer Default Rating,B,2026-01-13,Affirmed,
+2026-06-04,Municipality of Niteroi,https://www.fitchratings.com/entity/municipality-of-niteroi-96700906,Local Currency Long Term Issuer Default Rating,BB,2026-01-13,Affirmed,Rating Outlook Stable
+2026-06-04,Municipality of Niteroi,https://www.fitchratings.com/entity/municipality-of-niteroi-96700906,Standalone Credit Profile,a,2026-01-13,Affirmed,
+2026-06-04,Municipality of Niteroi,https://www.fitchratings.com/entity/municipality-of-niteroi-96700906,National Long Term Rating,AAA(bra),2026-01-13,Affirmed,Rating Outlook Stable
+2026-06-04,Municipality of Niteroi,https://www.fitchratings.com/entity/municipality-of-niteroi-96700906,Local Currency Short Term Issuer Default Rating,B,2026-01-13,Affirmed,
+2026-06-04,Municipality of Niteroi,https://www.fitchratings.com/entity/municipality-of-niteroi-96700906,National Short Term Rating,F1+(bra),2026-01-13,Affirmed,
+2026-06-04,TECP - Transmissora de Energia Central Paulistana S.A.,https://www.fitchratings.com/entity/tecp-transmissora-de-energia-central-paulistana-sa-97814493,National Long Term Rating,AAA(bra),2026-01-09,New Rating,Rating Outlook Stable
+2026-06-04,Rodobens Administradora de Consorcios Ltda,https://www.fitchratings.com/entity/rodobens-administradora-de-consorcios-ltda-96165833,National Long Term Rating,AA+(bra),2026-01-09,Publish,Rating Outlook Stable
+2026-06-04,Rodobens Administradora de Consorcios Ltda,https://www.fitchratings.com/entity/rodobens-administradora-de-consorcios-ltda-96165833,National Short Term Rating,F1+(bra),2026-01-09,Publish,
+2026-06-04,PBG S/A,https://www.fitchratings.com/entity/pbg-s-a-97027261,National Long Term Rating,BBB(bra),2026-01-09,Review - No Action,Rating Outlook Stable
+2026-06-04,Bradespar S.A.,https://www.fitchratings.com/entity/bradespar-sa-87072170,National Long Term Rating,AAA(bra),2026-01-06,Affirmed,Rating Outlook Stable
+2026-06-04,Auren Participacoes S.A.,https://www.fitchratings.com/entity/aes-brasil-energia-sa-97281499,National Long Term Rating,AAA(bra),2025-12-30,Affirmed,Rating Outlook Stable
+2026-06-04,Potengi Holdings S.A.,https://www.fitchratings.com/entity/potengi-holdings-sa-97542650,National Long Term Rating,AAA(bra),2025-12-30,Affirmed,Rating Outlook Stable
+2026-06-04,Ventos de Santa Tereza 07 Energias Renovaveis S.A.,https://www.fitchratings.com/entity/ventos-de-santa-tereza-07-energias-renovaveis-sa-97591492,National Long Term Rating,AAA(bra),2025-12-30,Affirmed,Rating Outlook Stable
+2026-06-04,AES Tucano Holding II S.A.,https://www.fitchratings.com/entity/aes-tucano-holding-ii-sa-97281834,National Long Term Rating,AAA(bra),2025-12-30,Affirmed,Rating Outlook Stable
+2026-06-04,Veleiros Holdings S.A.,https://www.fitchratings.com/entity/veleiros-holdings-sa-97542659,National Long Term Rating,AAA(bra),2025-12-30,Affirmed,Rating Outlook Stable
+2026-06-04,CESP - Companhia Energetica de Sao Paulo,https://www.fitchratings.com/entity/cesp-companhia-energetica-de-sao-paulo-97003909,National Long Term Rating,AAA(bra),2025-12-30,Affirmed,Rating Outlook Stable
+2026-06-04,CESP - Companhia Energetica de Sao Paulo,https://www.fitchratings.com/entity/cesp-companhia-energetica-de-sao-paulo-97003909,Long Term Issuer Default Rating,WD,2023-10-24,Withdrawn,
+2026-06-04,CESP - Companhia Energetica de Sao Paulo,https://www.fitchratings.com/entity/cesp-companhia-energetica-de-sao-paulo-97003909,Local Currency Long Term Issuer Default Rating,WD,2023-10-24,Withdrawn,
+2026-06-04,Foz do Rio Claro Energia S.A.,https://www.fitchratings.com/entity/foz-do-rio-claro-energia-sa-97281038,National Long Term Rating,WD(bra),2025-12-23,Withdrawn,
+2026-06-04,AETE - Amazonia Empresa Transmissora de Energia S.A.,https://www.fitchratings.com/entity/aete-amazonia-empresa-transmissora-de-energia-sa-97129815,National Long Term Rating,WD(bra),2025-12-23,Withdrawn,
+2026-06-04,Sociedade de Abastecimento de Agua e Saneamento S.A.,https://www.fitchratings.com/entity/sociedade-de-abastecimento-de-agua-e-saneamento-sa-96230976,National Long Term Rating,BB+(bra),2025-12-22,Downgrade,Rating Watch Negative
+2026-06-04,BNP Paribas Asset Management Brasil Ltda.,https://www.fitchratings.com/entity/bnp-paribas-asset-management-brasil-ltda-95356890,Investment Management Quality Rating,Excellent,2025-12-22,Affirmed,Rating Outlook Stable
+2026-06-04,BNP Paribas Asset Management Brasil Ltda.,https://www.fitchratings.com/entity/bnp-paribas-asset-management-brasil-ltda-95356890,Asset Manager Rating,WD,2017-03-06,Withdrawn,
+2026-06-04,Tucano Holding III S.A.,https://www.fitchratings.com/entity/tucano-holdings-iii-sa-97282626,National Long Term Rating,AA+(bra),2025-12-19,Affirmed,Rating Outlook Positive
+2026-06-04,SBF Comercio de Produtos Esportivos S.A.,https://www.fitchratings.com/entity/sbf-comercio-de-produtos-esportivos-sa-97028200,National Long Term Rating,AA(bra),2025-12-19,Upgrade,Rating Outlook Stable
+2026-06-04,Fisia Comercio de Produtos Esportivos S.A.,https://www.fitchratings.com/entity/fisia-comercio-de-produtos-esportivos-sa-97462128,National Long Term Rating,AA(bra),2025-12-19,Upgrade,Rating Outlook Stable
+2026-06-04,Grupo SBF S.A.,https://www.fitchratings.com/entity/grupo-sbf-sa-96660728,National Long Term Rating,AA(bra),2025-12-19,Upgrade,Rating Outlook Stable
+2026-06-04,C&A Modas S.A.,https://www.fitchratings.com/entity/c-a-modas-sa-97131987,National Long Term Rating,AA(bra),2025-12-19,Upgrade,Rating Outlook Stable
+2026-06-04,Vinci Credito Infra Institucional Fundo Incentivado de Investimento em Infraestrutura Renda Fixa,https://www.fitchratings.com/entity/vinci-credito-infra-institucional-fundo-incentivado-de-investimento-em-infraestrutura-renda-fixa-97432394,National Fund Credit Quality Rating,AAf(bra),2025-12-19,Affirmed,
+2026-06-04,Vinci Energia Sustentavel Fundo de Investimento em Direitos Creditorios,https://www.fitchratings.com/entity/vinci-energia-sustentavel-fundo-de-investimento-em-direitos-creditorios-96577741,National Fund Credit Quality Rating,AAf(bra),2025-12-19,Affirmed,
+2026-06-04,"Portoseg S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/portoseg-sa-credito-financiamento-e-investimento-96477909,National Short Term Rating,F1+(bra),2025-12-18,Affirmed,
+2026-06-04,"Portoseg S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/portoseg-sa-credito-financiamento-e-investimento-96477909,National Long Term Rating,AAA(bra),2025-12-18,Upgrade,Rating Outlook Stable
+2026-06-04,Estado de Alagoas,https://www.fitchratings.com/entity/estado-de-alagoas-97074243,Long Term Issuer Default Rating,BB,2025-12-17,Affirmed,Rating Outlook Stable
+2026-06-04,Estado de Alagoas,https://www.fitchratings.com/entity/estado-de-alagoas-97074243,Short Term Issuer Default Rating,B,2025-12-17,Affirmed,
+2026-06-04,Estado de Alagoas,https://www.fitchratings.com/entity/estado-de-alagoas-97074243,National Long Term Rating,AAA(bra),2025-12-17,Affirmed,Rating Outlook Stable
+2026-06-04,Estado de Alagoas,https://www.fitchratings.com/entity/estado-de-alagoas-97074243,Local Currency Short Term Issuer Default Rating,B,2025-12-17,Affirmed,
+2026-06-04,Estado de Alagoas,https://www.fitchratings.com/entity/estado-de-alagoas-97074243,Standalone Credit Profile,b+,2025-12-17,Affirmed,
+2026-06-04,Estado de Alagoas,https://www.fitchratings.com/entity/estado-de-alagoas-97074243,National Short Term Rating,F1+(bra),2025-12-17,Affirmed,
+2026-06-04,Estado de Alagoas,https://www.fitchratings.com/entity/estado-de-alagoas-97074243,Local Currency Long Term Issuer Default Rating,BB,2025-12-17,Affirmed,Rating Outlook Stable
+2026-06-04,Banco C6 S.A.,https://www.fitchratings.com/entity/banco-c6-sa-97531837,Long Term Issuer Default Rating,BB-,2025-12-16,Publish,Rating Outlook Stable
+2026-06-04,Banco C6 S.A.,https://www.fitchratings.com/entity/banco-c6-sa-97531837,Short Term Issuer Default Rating,B,2025-12-16,Publish,
+2026-06-04,Banco C6 S.A.,https://www.fitchratings.com/entity/banco-c6-sa-97531837,Local Currency Long Term Issuer Default Rating,BB-,2025-12-16,Publish,Rating Outlook Stable
+2026-06-04,Banco C6 S.A.,https://www.fitchratings.com/entity/banco-c6-sa-97531837,Local Currency Short Term Issuer Default Rating,B,2025-12-16,Publish,
+2026-06-04,Banco C6 S.A.,https://www.fitchratings.com/entity/banco-c6-sa-97531837,Government Support Rating,ns,2025-12-16,Publish,
+2026-06-04,Banco C6 S.A.,https://www.fitchratings.com/entity/banco-c6-sa-97531837,Viability Rating,bb-,2025-12-16,Publish,
+2026-06-04,Banco C6 S.A.,https://www.fitchratings.com/entity/banco-c6-sa-97531837,National Short Term Rating,F1(bra),2025-10-08,Affirmed,
+2026-06-04,Banco C6 S.A.,https://www.fitchratings.com/entity/banco-c6-sa-97531837,National Long Term Rating,A+(bra),2025-10-08,Upgrade,Rating Outlook Positive
+2026-06-04,"Qista S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/qista-sa-credito-financiamento-e-investimento-97651529,National Short Term Rating,F3(bra),2025-12-16,Affirmed,
+2026-06-04,"Qista S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/qista-sa-credito-financiamento-e-investimento-97651529,National Long Term Rating,BBB(bra),2025-12-16,Upgrade,Rating Outlook Stable
+2026-06-04,Athena Saude Brasil S.A.,https://www.fitchratings.com/entity/athena-saude-brasil-sa-97268134,National Long Term Rating,A(bra),2025-12-16,Affirmed,Rating Outlook Stable
+2026-06-04,Farmacia e Drogaria Nissei S.A.,https://www.fitchratings.com/entity/farmacia-e-drogaria-nissei-sa-97127704,National Long Term Rating,A-(bra),2025-12-16,Affirmed,Rating Outlook Stable
+2026-06-04,Hapvida Participacoes e Investimentos S.A.,https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531,National Long Term Rating,AA+(bra),2025-12-15,Downgrade,Rating Outlook Stable
+2026-06-04,BancoSeguro S.A.,https://www.fitchratings.com/entity/bancoseguro-sa-97320721,National Long Term Rating,AAA(bra),2025-12-15,New Rating,Rating Outlook Stable
+2026-06-04,BancoSeguro S.A.,https://www.fitchratings.com/entity/bancoseguro-sa-97320721,National Short Term Rating,F1+(bra),2025-12-15,New Rating,
+2026-06-04,BTG Pactual Holding S.A.,https://www.fitchratings.com/entity/btg-pactual-holding-sa-92310290,Long Term Issuer Default Rating,BB+,2025-12-12,Upgrade,Rating Outlook Stable
+2026-06-04,BTG Pactual Holding S.A.,https://www.fitchratings.com/entity/btg-pactual-holding-sa-92310290,Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,BTG Pactual Holding S.A.,https://www.fitchratings.com/entity/btg-pactual-holding-sa-92310290,National Long Term Rating,AAA(bra),2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,BTG Pactual Holding S.A.,https://www.fitchratings.com/entity/btg-pactual-holding-sa-92310290,Local Currency Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,BTG Pactual Holding S.A.,https://www.fitchratings.com/entity/btg-pactual-holding-sa-92310290,Government Support Rating,ns,2025-12-12,Affirmed,
+2026-06-04,BTG Pactual Holding S.A.,https://www.fitchratings.com/entity/btg-pactual-holding-sa-92310290,Local Currency Long Term Issuer Default Rating,BB+,2025-12-12,Upgrade,Rating Outlook Stable
+2026-06-04,BTG Pactual Holding S.A.,https://www.fitchratings.com/entity/btg-pactual-holding-sa-92310290,National Short Term Rating,F1+(bra),2025-12-12,Affirmed,
+2026-06-04,BTG Pactual Holding S.A.,https://www.fitchratings.com/entity/btg-pactual-holding-sa-92310290,Support Rating Floor,WD,2022-06-28,Withdrawn,
+2026-06-04,BTG Pactual Holding S.A.,https://www.fitchratings.com/entity/btg-pactual-holding-sa-92310290,Support Rating,WD,2022-06-28,Withdrawn,
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,Long Term Issuer Default Rating,BB+,2025-12-12,Upgrade,Rating Outlook Stable
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,Viability Rating,bb+,2025-12-12,Upgrade,
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,Local Currency Long Term Issuer Default Rating,BB+,2025-12-12,Upgrade,Rating Outlook Stable
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,National Short Term Rating,F1+(bra),2025-12-12,Affirmed,
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,Government Support Rating,b+,2025-12-12,Upgrade,
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,Local Currency Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,National Long Term Rating,AAA(bra),2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,Support Rating,WD,2022-06-28,Withdrawn,
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,Support Rating Floor,WD,2022-06-28,Withdrawn,
+2026-06-04,Banco BTG Pactual S.A.,https://www.fitchratings.com/entity/banco-btg-pactual-sa-80543465,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,Long Term Issuer Default Rating,BB+,2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,Local Currency Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,Government Support Rating,bb-,2025-12-12,Affirmed,
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,National Short Term Rating,F1+(bra),2025-12-12,Affirmed,
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,National Long Term Rating,AAA(bra),2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,Viability Rating,bb+,2025-12-12,Affirmed,
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,Local Currency Long Term Issuer Default Rating,BB+,2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,Support Rating Floor,WD,2022-01-24,Withdrawn,
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,Support Rating,WD,2022-01-24,Withdrawn,
+2026-06-04,Itau Unibanco S.A.,https://www.fitchratings.com/entity/itau-unibanco-sa-80089723,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,Long Term Issuer Default Rating,BB+,2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,Local Currency Long Term Issuer Default Rating,BB+,2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,Government Support Rating,bb-,2025-12-12,Affirmed,
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,National Short Term Rating,F1+(bra),2025-12-12,Affirmed,
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,Viability Rating,bb+,2025-12-12,Affirmed,
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,National Long Term Rating,AAA(bra),2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,Local Currency Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,Support Rating Floor,WD,2022-01-24,Withdrawn,
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,Support Rating,WD,2022-01-24,Withdrawn,
+2026-06-04,Itau Unibanco Holding S.A.,https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80609415,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,Long Term Issuer Default Rating,BB+,2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,National Short Term Rating,F1+(bra),2025-12-12,Affirmed,
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,Government Support Rating,bb-,2025-12-12,Affirmed,
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,Viability Rating,bb+,2025-12-12,Affirmed,
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,Local Currency Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,Local Currency Long Term Issuer Default Rating,BB+,2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,National Long Term Rating,AAA(bra),2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,Support Rating,WD,2022-01-24,Withdrawn,
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,Support Rating Floor,WD,2022-01-24,Withdrawn,
+2026-06-04,Banco Bradesco S.A.,https://www.fitchratings.com/entity/banco-bradesco-sa-80089720,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,Long Term Issuer Default Rating,BB,2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,National Long Term Rating,AAA(bra),2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,Government Support Rating,bb,2025-12-12,Affirmed,
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,Local Currency Short Term Issuer Default Rating,B,2025-12-12,Affirmed,
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,Local Currency Long Term Issuer Default Rating,BB,2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,Viability Rating,bb,2025-12-12,Affirmed,
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,National Short Term Rating,F1+(bra),2025-12-12,Affirmed,
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,Support Rating Floor,WD,2022-06-01,Withdrawn,
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,Support Rating,WD,2022-06-01,Withdrawn,
+2026-06-04,Banco do Brasil S.A.,https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,TOTVS S.A.,https://www.fitchratings.com/entity/totvs-sa-96738486,National Long Term Rating,AAA(bra),2025-12-12,Affirmed,Rating Outlook Stable
+2026-06-04,Grupo Fartura de Hortifrut S.A.,https://www.fitchratings.com/entity/grupo-fartura-de-hortifrut-sa-97263297,National Long Term Rating,A-(bra),2025-12-11,Review - No Action,Rating Outlook Stable
+2026-06-04,Nova Transportadora do Sudeste S.A. - NTS,https://www.fitchratings.com/entity/nova-transportadora-do-sudeste-sa-nts-96606450,National Long Term Rating,AAA(bra),2025-12-11,Affirmed,Rating Outlook Stable
+2026-06-04,Equatorial Transmissao S.A.,https://www.fitchratings.com/entity/equatorial-transmissao-sa-97153792,National Long Term Rating,AAA(bra),2025-12-05,Upgrade,Rating Outlook Stable
+2026-06-04,Unipar Carbocloro S.A.,https://www.fitchratings.com/entity/unipar-carbocloro-sa-96594045,National Long Term Rating,AA+(bra),2025-12-05,Affirmed,Rating Outlook Positive
+2026-06-04,"B3 S.A. Brasil, Bolsa, Balcao",https://www.fitchratings.com/entity/b3-sa-brasil-bolsa-balcao-97156065,Long Term Issuer Default Rating,BB+,2025-12-05,Affirmed,Rating Outlook Stable
+2026-06-04,"B3 S.A. Brasil, Bolsa, Balcao",https://www.fitchratings.com/entity/b3-sa-brasil-bolsa-balcao-97156065,Short Term Issuer Default Rating,B,2025-12-05,Affirmed,
+2026-06-04,"B3 S.A. Brasil, Bolsa, Balcao",https://www.fitchratings.com/entity/b3-sa-brasil-bolsa-balcao-97156065,National Long Term Rating,AAA(bra),2025-12-05,Affirmed,Rating Outlook Stable
+2026-06-04,"B3 S.A. Brasil, Bolsa, Balcao",https://www.fitchratings.com/entity/b3-sa-brasil-bolsa-balcao-97156065,Local Currency Short Term Issuer Default Rating,B,2025-12-05,Affirmed,
+2026-06-04,"B3 S.A. Brasil, Bolsa, Balcao",https://www.fitchratings.com/entity/b3-sa-brasil-bolsa-balcao-97156065,National Short Term Rating,F1+(bra),2025-12-05,Affirmed,
+2026-06-04,"B3 S.A. Brasil, Bolsa, Balcao",https://www.fitchratings.com/entity/b3-sa-brasil-bolsa-balcao-97156065,Local Currency Long Term Issuer Default Rating,BB+,2025-12-05,Affirmed,Rating Outlook Stable
+2026-06-04,Lar Cooperativa Agroindustrial,https://www.fitchratings.com/entity/lar-cooperativa-agroindustrial-97224267,National Long Term Rating,A(bra),2025-12-04,Affirmed,Rating Outlook Stable
+2026-06-04,Saneamento de Goias S.A. (Saneago),https://www.fitchratings.com/entity/saneamento-de-goias-sa-saneago-80361245,National Long Term Rating,AA(bra),2025-12-04,Affirmed,Rating Outlook Stable
+2026-06-04,Saneamento de Goias S.A. (Saneago),https://www.fitchratings.com/entity/saneamento-de-goias-sa-saneago-80361245,National Short Term Rating,NR,2003-03-26,Withdrawn,
+2026-06-04,GSH Corp Participacoes S.A.,https://www.fitchratings.com/entity/gsh-corp-participacoes-sa-97344983,National Long Term Rating,A+(bra),2025-11-26,Downgrade,Rating Outlook Stable
+2026-06-04,UHE Sao Simao Energia S.A.,https://www.fitchratings.com/entity/uhe-sao-simao-energia-sa-97786623,National Long Term Rating,AAA(bra),2025-11-26,New Rating,Rating Outlook Stable
+2026-06-04,Spic Brasil Energia Participacoes S.A.,https://www.fitchratings.com/entity/spic-brasil-energia-participacoes-sa-97786085,National Long Term Rating,AAA(bra),2025-11-26,New Rating,Rating Outlook Stable
+2026-06-04,Ser Educacional S.A.,https://www.fitchratings.com/entity/ser-educacional-sa-96163650,National Long Term Rating,AA(bra),2025-11-25,Affirmed,Rating Outlook Stable
+2026-06-04,Vertera Holding S.A.,https://www.fitchratings.com/entity/vertera-holding-sa-97587318,National Short Term Rating,F1+(bra),2025-11-24,Publish,
+2026-06-04,Vertera Holding S.A.,https://www.fitchratings.com/entity/vertera-holding-sa-97587318,National Long Term Rating,A+(bra),2025-11-24,Publish,Rating Outlook Positive
+2026-06-04,Origem Energia S.A,https://www.fitchratings.com/entity/origem-energia-sa-97554715,National Long Term Rating,A(bra),2025-11-24,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Andbank (Brasil) S.A.,https://www.fitchratings.com/entity/banco-andbank-brasil-sa-97051967,National Long Term Rating,WD(bra),2025-11-21,Withdrawn,
+2026-06-04,Banco Andbank (Brasil) S.A.,https://www.fitchratings.com/entity/banco-andbank-brasil-sa-97051967,National Short Term Rating,WD(bra),2025-11-21,Withdrawn,
+2026-06-04,Banco Master S.A.,https://www.fitchratings.com/entity/banco-master-sa-97092715,Local Currency Short Term Issuer Default Rating,WD,2025-11-19,Withdrawn,
+2026-06-04,Banco Master S.A.,https://www.fitchratings.com/entity/banco-master-sa-97092715,Long Term Issuer Default Rating,WD,2025-11-19,Withdrawn,
+2026-06-04,Banco Master S.A.,https://www.fitchratings.com/entity/banco-master-sa-97092715,Viability Rating,WD,2025-11-19,Withdrawn,
+2026-06-04,Banco Master S.A.,https://www.fitchratings.com/entity/banco-master-sa-97092715,National Short Term Rating,WD(bra),2025-11-19,Withdrawn,
+2026-06-04,Banco Master S.A.,https://www.fitchratings.com/entity/banco-master-sa-97092715,National Long Term Rating,WD(bra),2025-11-19,Withdrawn,
+2026-06-04,Banco Master S.A.,https://www.fitchratings.com/entity/banco-master-sa-97092715,Government Support Rating,WD,2025-11-19,Withdrawn,
+2026-06-04,Banco Master S.A.,https://www.fitchratings.com/entity/banco-master-sa-97092715,Short Term Issuer Default Rating,WD,2025-11-19,Withdrawn,
+2026-06-04,Banco Master S.A.,https://www.fitchratings.com/entity/banco-master-sa-97092715,Local Currency Long Term Issuer Default Rating,WD,2025-11-19,Withdrawn,
+2026-06-04,Sicoob Distribuidora de Titulos e Valores Mobiliarios Ltda.,https://www.fitchratings.com/entity/bancoob-distribuidora-de-titulos-e-valores-mobiliarios-ltda-94430690,Investment Management Quality Rating,Strong,2025-11-19,Affirmed,Rating Outlook Stable
+2026-06-04,Sicoob Distribuidora de Titulos e Valores Mobiliarios Ltda.,https://www.fitchratings.com/entity/bancoob-distribuidora-de-titulos-e-valores-mobiliarios-ltda-94430690,Asset Manager Rating,WD,2017-03-06,Withdrawn,
+2026-06-04,AXIA Energia Nordeste S.A.,https://www.fitchratings.com/entity/companhia-hidro-eletrica-do-sao-francisco-sa-95763491,National Long Term Rating,AA(bra),2025-11-17,Affirmed,Rating Outlook Positive
+2026-06-04,Norsa Refrigerantes S.A.,https://www.fitchratings.com/entity/norsa-refrigerantes-sa-96784265,National Long Term Rating,AAA(bra),2025-11-17,Review - No Action,Rating Outlook Stable
+2026-06-04,Solar Bebidas S.A.,https://www.fitchratings.com/entity/solar-bebidas-sa-97327228,National Long Term Rating,AAA(bra),2025-11-17,Review - No Action,Rating Outlook Stable
+2026-06-04,Prio Forte S.A.,https://www.fitchratings.com/entity/prio-forte-sa-97708380,National Long Term Rating,AAA(bra),2025-11-14,Affirmed,Rating Outlook Stable
+2026-06-04,Bradesco Asset Management,https://www.fitchratings.com/entity/bram-bradesco-asset-management-sa-distribuidora-de-titulos-e-valores-mobiliarios-96509631,Investment Management Quality Rating,Excellent,2025-11-04,Affirmed,Rating Outlook Stable
+2026-06-04,Motiva Infraestrutura de Mobilidade S.A.,https://www.fitchratings.com/entity/ccr-sa-80614467,National Long Term Rating,AAA(bra),2025-10-31,Affirmed,Rating Outlook Stable
+2026-06-04,Igua Saneamento S.A.,https://www.fitchratings.com/entity/igua-saneamento-sa-92892096,National Long Term Rating,A+(bra),2025-10-30,New Rating,Rating Outlook Stable
+2026-06-04,Itausa S.A.,https://www.fitchratings.com/entity/itausa-sa-97407242,National Long Term Rating,AAA(bra),2025-10-30,Affirmed,Rating Outlook Stable
+2026-06-04,Itausa S.A.,https://www.fitchratings.com/entity/itausa-sa-97407242,National Short Term Rating,F1+(bra),2025-10-30,Affirmed,
+2026-06-04,Companhia de Agua e Esgoto do Ceara - CAGECE,https://www.fitchratings.com/entity/companhia-de-agua-e-esgoto-do-ceara-cagece-97073066,National Long Term Rating,AA-(bra),2025-10-30,Affirmed,Rating Outlook Stable
+2026-06-04,"Mercado Credito Sociedade de Credito, Financiamento e Investimento S.A.",https://www.fitchratings.com/entity/mercado-credito-sociedade-de-credito-financiamento-e-investimento-sa-97173030,National Short Term Rating,F1+(bra),2025-10-29,Affirmed,
+2026-06-04,"Mercado Credito Sociedade de Credito, Financiamento e Investimento S.A.",https://www.fitchratings.com/entity/mercado-credito-sociedade-de-credito-financiamento-e-investimento-sa-97173030,National Long Term Rating,AAA(bra),2025-10-29,Affirmed,Rating Outlook Stable
+2026-06-04,Mercado Pago Instituicao de Pagamento Ltda.,https://www.fitchratings.com/entity/mercadopagocom-representacoes-ltda-97074397,National Short Term Rating,F1+(bra),2025-10-29,New Rating,
+2026-06-04,Mercado Pago Instituicao de Pagamento Ltda.,https://www.fitchratings.com/entity/mercadopagocom-representacoes-ltda-97074397,National Long Term Rating,AAA(bra),2025-10-29,Affirmed,Rating Outlook Stable
+2026-06-04,Centrais Eletricas de Santa Catarina S.A.,https://www.fitchratings.com/entity/centrais-eletricas-de-santa-catarina-sa-88576124,National Long Term Rating,AA(bra),2025-10-27,Affirmed,Rating Outlook Stable
+2026-06-04,Celesc Geracao S.A.,https://www.fitchratings.com/entity/celesc-geracao-sa-96258686,National Long Term Rating,AA(bra),2025-10-27,Affirmed,Rating Outlook Stable
+2026-06-04,Celesc Distribuicao S.A,https://www.fitchratings.com/entity/celesc-distribuicao-sa-90866490,National Long Term Rating,AA(bra),2025-10-27,Affirmed,Rating Outlook Stable
+2026-06-04,Veste S.A. Estilo,https://www.fitchratings.com/entity/restoque-comercio-e-confeccoes-de-roupas-sa-93935490,National Long Term Rating,BBB(bra),2025-10-24,Affirmed,Rating Outlook Negative
+2026-06-04,CP Comercial S.A.,https://www.fitchratings.com/entity/cp-comercial-sa-97294985,National Long Term Rating,A-(bra),2025-10-24,Affirmed,Rating Outlook Positive
+2026-06-04,CPX Distribuidora S.A.,https://www.fitchratings.com/entity/cpx-distribuidora-sa-97294988,National Long Term Rating,A-(bra),2025-10-24,Affirmed,Rating Outlook Positive
+2026-06-04,ITR Comercio de Pneus e Pecas S.A.,https://www.fitchratings.com/entity/itr-comercio-de-pneus-e-pecas-sa-97295033,National Long Term Rating,A-(bra),2025-10-24,Affirmed,Rating Outlook Positive
+2026-06-04,MercadoLivre.com Atividades de Internet Ltda.,https://www.fitchratings.com/entity/mercadolivrecom-atividades-de-internet-ltda-97074420,National Long Term Rating,AAA(bra),2025-10-23,Affirmed,Rating Outlook Stable
+2026-06-04,Emergencia Participacoes S.A.,https://www.fitchratings.com/entity/emergencia-participacoes-sa-97417637,National Long Term Rating,D(bra),2025-10-22,Downgrade,
+2026-06-04,Environmental ESG Participacoes S.A.,https://www.fitchratings.com/entity/environmental-esg-participacoes-sa-97452640,National Long Term Rating,D(bra),2025-10-22,Downgrade,
+2026-06-04,Highline do Brasil II Infraestrutura de Telecomunicacoes S.A.,https://www.fitchratings.com/entity/highline-do-brasil-ii-infraestrutura-de-telecomunicacoes-sa-97294139,National Long Term Rating,A-(bra),2025-10-22,Affirmed,Rating Outlook Negative
+2026-06-04,Banco Cooperativo Sicoob S.A. - Banco Sicoob,https://www.fitchratings.com/entity/banco-cooperativo-do-brasil-sa-80543444,National Long Term Rating,AAA(bra),2025-10-20,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Cooperativo Sicoob S.A. - Banco Sicoob,https://www.fitchratings.com/entity/banco-cooperativo-do-brasil-sa-80543444,National Short Term Rating,F1+(bra),2025-10-20,Affirmed,
+2026-06-04,Banco Cooperativo Sicoob S.A. - Banco Sicoob,https://www.fitchratings.com/entity/banco-cooperativo-do-brasil-sa-80543444,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,Banco Cooperativo Sicredi S.A.,https://www.fitchratings.com/entity/banco-cooperativo-sicredi-sa-93581090,National Long Term Rating,AAA(bra),2025-10-20,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Cooperativo Sicredi S.A.,https://www.fitchratings.com/entity/banco-cooperativo-sicredi-sa-93581090,National Short Term Rating,F1+(bra),2025-10-20,Affirmed,
+2026-06-04,Companhia de Aguas e Esgotos do Rio Grande do Norte,https://www.fitchratings.com/entity/companhia-de-aguas-e-esgotos-do-rio-grande-do-norte-97435040,National Long Term Rating,A+(bra),2025-10-17,Affirmed,Rating Outlook Stable
+2026-06-04,Eneva S.A.,https://www.fitchratings.com/entity/eneva-sa-96740180,National Long Term Rating,AAA(bra),2025-10-16,Affirmed,Rating Outlook Stable
+2026-06-04,Banco C6 Consignado S.A.,https://www.fitchratings.com/entity/banco-ficsa-sa-80543453,National Short Term Rating,F1(bra),2025-10-14,New Rating,
+2026-06-04,Banco C6 Consignado S.A.,https://www.fitchratings.com/entity/banco-ficsa-sa-80543453,National Long Term Rating,A+(bra),2025-10-14,New Rating,Rating Outlook Positive
+2026-06-04,Banco C6 Consignado S.A.,https://www.fitchratings.com/entity/banco-ficsa-sa-80543453,Support Rating,NR,2004-11-25,Withdrawn,
+2026-06-04,Travelex Banco de Cambio S.A.,https://www.fitchratings.com/entity/travelex-banco-de-cambio-sa-97542103,National Long Term Rating,BBB(bra),2025-10-09,Affirmed,Rating Outlook Stable
+2026-06-04,Travelex Banco de Cambio S.A.,https://www.fitchratings.com/entity/travelex-banco-de-cambio-sa-97542103,National Short Term Rating,F2(bra),2025-10-09,Affirmed,
+2026-06-04,Banco Rendimento S.A.,https://www.fitchratings.com/entity/banco-rendimento-sa-80543471,National Short Term Rating,F1+(bra),2025-10-09,Affirmed,
+2026-06-04,Banco Rendimento S.A.,https://www.fitchratings.com/entity/banco-rendimento-sa-80543471,National Long Term Rating,AA-(bra),2025-10-09,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Rendimento S.A.,https://www.fitchratings.com/entity/banco-rendimento-sa-80543471,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,Banco Fibra S.A.,https://www.fitchratings.com/entity/banco-fibra-sa-80360734,Long Term Issuer Default Rating,B+,2025-10-09,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Fibra S.A.,https://www.fitchratings.com/entity/banco-fibra-sa-80360734,Short Term Issuer Default Rating,B,2025-10-09,Affirmed,
+2026-06-04,Banco Fibra S.A.,https://www.fitchratings.com/entity/banco-fibra-sa-80360734,Local Currency Long Term Issuer Default Rating,B+,2025-10-09,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Fibra S.A.,https://www.fitchratings.com/entity/banco-fibra-sa-80360734,Local Currency Short Term Issuer Default Rating,B,2025-10-09,Affirmed,
+2026-06-04,Banco Fibra S.A.,https://www.fitchratings.com/entity/banco-fibra-sa-80360734,National Long Term Rating,BBB+(bra),2025-10-09,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Fibra S.A.,https://www.fitchratings.com/entity/banco-fibra-sa-80360734,Viability Rating,b+,2025-10-09,Affirmed,
+2026-06-04,Banco Fibra S.A.,https://www.fitchratings.com/entity/banco-fibra-sa-80360734,National Short Term Rating,F2(bra),2025-10-09,Affirmed,
+2026-06-04,Banco Fibra S.A.,https://www.fitchratings.com/entity/banco-fibra-sa-80360734,Government Support Rating,ns,2025-10-09,Affirmed,
+2026-06-04,Banco Fibra S.A.,https://www.fitchratings.com/entity/banco-fibra-sa-80360734,Support Rating,WD,2022-03-11,Withdrawn,
+2026-06-04,Banco Fibra S.A.,https://www.fitchratings.com/entity/banco-fibra-sa-80360734,Support Rating Floor,WD,2022-03-11,Withdrawn,
+2026-06-04,Vitru Educacao S.A.,https://www.fitchratings.com/entity/vitru-brasil-empreendimentos-participacoes-e-comercio-sa-97548344,National Long Term Rating,AA(bra),2025-10-08,Review - No Action,Rating Outlook Stable
+2026-06-04,"Parana, State of",https://www.fitchratings.com/entity/parana-state-of-91781290,Long Term Issuer Default Rating,BB,2025-10-08,Affirmed,Rating Outlook Stable
+2026-06-04,"Parana, State of",https://www.fitchratings.com/entity/parana-state-of-91781290,Short Term Issuer Default Rating,B,2025-10-08,Affirmed,
+2026-06-04,"Parana, State of",https://www.fitchratings.com/entity/parana-state-of-91781290,National Short Term Rating,F1+(bra),2025-10-08,Affirmed,
+2026-06-04,"Parana, State of",https://www.fitchratings.com/entity/parana-state-of-91781290,Standalone Credit Profile,bbb,2025-10-08,Affirmed,
+2026-06-04,"Parana, State of",https://www.fitchratings.com/entity/parana-state-of-91781290,National Long Term Rating,AAA(bra),2025-10-08,Affirmed,Rating Outlook Stable
+2026-06-04,"Parana, State of",https://www.fitchratings.com/entity/parana-state-of-91781290,Local Currency Long Term Issuer Default Rating,BB,2025-10-08,Affirmed,Rating Outlook Stable
+2026-06-04,"Parana, State of",https://www.fitchratings.com/entity/parana-state-of-91781290,Local Currency Short Term Issuer Default Rating,B,2025-10-08,Affirmed,
+2026-06-04,Acucareira Quata S.A.,https://www.fitchratings.com/entity/acucareira-quata-sa-96624023,National Long Term Rating,A+(bra),2025-10-06,Upgrade,Rating Outlook Stable
+2026-06-04,QI Participacoes S.A.,https://www.fitchratings.com/entity/qi-participacoes-sa-97525815,National Short Term Rating,F1+(bra),2025-10-03,Affirmed,
+2026-06-04,QI Participacoes S.A.,https://www.fitchratings.com/entity/qi-participacoes-sa-97525815,National Long Term Rating,AA-(bra),2025-10-03,Upgrade,Rating Outlook Positive
+2026-06-04,QI Sociedade de Credito Direto S.A.,https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532,National Short Term Rating,F1+(bra),2025-10-03,Affirmed,
+2026-06-04,QI Sociedade de Credito Direto S.A.,https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532,National Long Term Rating,AA-(bra),2025-10-03,Upgrade,Rating Outlook Positive
+2026-06-04,Localiza Fleet S.A.,https://www.fitchratings.com/entity/localiza-fleet-sa-96673245,National Long Term Rating,AAA(bra),2025-10-03,Affirmed,Rating Outlook Stable
+2026-06-04,BB Gestao de Recursos - Distribuidora de Titulos e Valores Mobiliarios S.A.,https://www.fitchratings.com/entity/bb-gestao-de-recursos-distribuidora-de-titulos-e-valores-mobiliarios-sa-96221299,Investment Management Quality Rating,Excellent,2025-10-01,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Brasileiro de Credito S.A,https://www.fitchratings.com/entity/banco-brasileiro-de-credito-sa-97563747,National Long Term Rating,AA-(bra),2025-09-30,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Brasileiro de Credito S.A,https://www.fitchratings.com/entity/banco-brasileiro-de-credito-sa-97563747,National Short Term Rating,F1+(bra),2025-09-30,Affirmed,
+2026-06-04,CVC Brasil Operadora e Agencia de Viagens S.A.,https://www.fitchratings.com/entity/cvc-brasil-operadora-e-agencia-de-viagens-sa-96551609,National Long Term Rating,BBB(bra),2025-09-29,Affirmed,Rating Outlook Positive
+2026-06-04,"Armac Locacao, Logistica e Servicos S.A.",https://www.fitchratings.com/entity/armac-locacao-logistica-e-servicos-sa-97292519,National Long Term Rating,AA-(bra),2025-09-25,Affirmed,Rating Outlook Stable
+2026-06-04,BR Malls Participacoes S.A.,https://www.fitchratings.com/entity/br-malls-participacoes-sa-87213182,National Long Term Rating,AAA(bra),2025-09-25,Affirmed,Rating Outlook Stable
+2026-06-04,BR Malls Participacoes S.A.,https://www.fitchratings.com/entity/br-malls-participacoes-sa-87213182,Long Term Issuer Default Rating,WD,2024-02-29,Withdrawn,
+2026-06-04,BR Malls Participacoes S.A.,https://www.fitchratings.com/entity/br-malls-participacoes-sa-87213182,Local Currency Long Term Issuer Default Rating,WD,2024-02-29,Withdrawn,
+2026-06-04,ALLOS S.A.,https://www.fitchratings.com/entity/aliansce-sonae-shopping-centers-sa-96177979,National Long Term Rating,AAA(bra),2025-09-25,Affirmed,Rating Outlook Stable
+2026-06-04,Alianca Geracao de Energia S.A.,https://www.fitchratings.com/entity/alianca-geracao-de-energia-sa-96605787,National Long Term Rating,AAA(bra),2025-09-24,Affirmed,Rating Outlook Stable
+2026-06-04,Cielo S.A. - Instituicao de Pagamento,https://www.fitchratings.com/entity/cielo-sa-90377667,National Long Term Rating,AAA(bra),2025-09-22,Affirmed,Rating Outlook Stable
+2026-06-04,Cielo S.A. - Instituicao de Pagamento,https://www.fitchratings.com/entity/cielo-sa-90377667,Local Currency Long Term Issuer Default Rating,WD,2025-04-01,Withdrawn,
+2026-06-04,Cielo S.A. - Instituicao de Pagamento,https://www.fitchratings.com/entity/cielo-sa-90377667,Long Term Issuer Default Rating,WD,2025-04-01,Withdrawn,
+2026-06-04,Cooperativa de Credito Vale do Itajai - Viacredi,https://www.fitchratings.com/entity/cooperativa-de-credito-vale-do-itajai-viacredi-97229249,National Short Term Rating,F1+(bra),2025-09-19,Affirmed,
+2026-06-04,Cooperativa de Credito Vale do Itajai - Viacredi,https://www.fitchratings.com/entity/cooperativa-de-credito-vale-do-itajai-viacredi-97229249,National Long Term Rating,AA-(bra),2025-09-19,Affirmed,Rating Outlook Positive
+2026-06-04,Efi S.A. - Instituicao de Pagamento,https://www.fitchratings.com/entity/efi-sa-instituicao-de-pagamento-97765709,National Short Term Rating,F1(bra),2025-09-19,New Rating,
+2026-06-04,Efi S.A. - Instituicao de Pagamento,https://www.fitchratings.com/entity/efi-sa-instituicao-de-pagamento-97765709,National Long Term Rating,A(bra),2025-09-19,New Rating,Rating Outlook Stable
+2026-06-04,Sisprime do Brasil - Cooperativa de Credito,https://www.fitchratings.com/entity/uniprime-norte-do-parana-cooperativa-de-credito-ltda-96207048,National Long Term Rating,AA-(bra),2025-09-19,Upgrade,Rating Outlook Stable
+2026-06-04,Sisprime do Brasil - Cooperativa de Credito,https://www.fitchratings.com/entity/uniprime-norte-do-parana-cooperativa-de-credito-ltda-96207048,National Short Term Rating,F1+(bra),2025-09-19,Upgrade,
+2026-06-04,Daycoval Seguros S.A.,https://www.fitchratings.com/entity/bmg-seguros-sa-97541371,National Long Term Insurer Financial Strength,AA+(bra),2025-09-19,Upgrade,Rating Outlook Stable
+2026-06-04,Omni Banco S.A.,https://www.fitchratings.com/entity/omni-banco-sa-80543468,National Long Term Rating,BBB(bra),2025-09-18,Affirmed,Rating Outlook Stable
+2026-06-04,Omni Banco S.A.,https://www.fitchratings.com/entity/omni-banco-sa-80543468,National Short Term Rating,F2(bra),2025-09-18,Affirmed,
+2026-06-04,Omni Banco S.A.,https://www.fitchratings.com/entity/omni-banco-sa-80543468,Support Rating,WD,2015-09-09,Withdrawn,
+2026-06-04,Omni Banco S.A.,https://www.fitchratings.com/entity/omni-banco-sa-80543468,Local Currency Short Term Issuer Default Rating,WD,2015-09-09,Withdrawn,
+2026-06-04,Omni Banco S.A.,https://www.fitchratings.com/entity/omni-banco-sa-80543468,Local Currency Long Term Issuer Default Rating,WD,2015-09-09,Withdrawn,
+2026-06-04,Omni Banco S.A.,https://www.fitchratings.com/entity/omni-banco-sa-80543468,Long Term Issuer Default Rating,WD,2015-09-09,Withdrawn,
+2026-06-04,Omni Banco S.A.,https://www.fitchratings.com/entity/omni-banco-sa-80543468,Short Term Issuer Default Rating,WD,2015-09-09,Withdrawn,
+2026-06-04,Omni Banco S.A.,https://www.fitchratings.com/entity/omni-banco-sa-80543468,Viability Rating,WD,2012-03-28,Withdrawn,
+2026-06-04,Omni Banco S.A.,https://www.fitchratings.com/entity/omni-banco-sa-80543468,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,"Omni S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/omni-sa-credito-financiamento-e-investimento-89593461,National Short Term Rating,F2(bra),2025-09-18,Affirmed,
+2026-06-04,"Omni S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/omni-sa-credito-financiamento-e-investimento-89593461,National Long Term Rating,BBB(bra),2025-09-18,Affirmed,Rating Outlook Stable
+2026-06-04,"Omni S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/omni-sa-credito-financiamento-e-investimento-89593461,Long Term Issuer Default Rating,WD,2017-05-04,Withdrawn,
+2026-06-04,"Omni S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/omni-sa-credito-financiamento-e-investimento-89593461,Short Term Issuer Default Rating,WD,2017-05-04,Withdrawn,
+2026-06-04,"Omni S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/omni-sa-credito-financiamento-e-investimento-89593461,Local Currency Long Term Issuer Default Rating,WD,2017-05-04,Withdrawn,
+2026-06-04,"Omni S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/omni-sa-credito-financiamento-e-investimento-89593461,Local Currency Short Term Issuer Default Rating,WD,2017-05-04,Withdrawn,
+2026-06-04,"Omni S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/omni-sa-credito-financiamento-e-investimento-89593461,Support Rating,WD,2016-09-27,Withdrawn,
+2026-06-04,"Omni S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/omni-sa-credito-financiamento-e-investimento-89593461,Support Rating Floor,WD,2016-09-27,Withdrawn,
+2026-06-04,"Omni S.A. - Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/omni-sa-credito-financiamento-e-investimento-89593461,Viability Rating,WD,2014-05-28,Withdrawn,
+2026-06-04,Porto Seguro Investimentos Ltda.,https://www.fitchratings.com/entity/porto-seguro-investimentos-ltda-96510346,Investment Management Quality Rating,Excellent,2025-09-18,Affirmed,Rating Outlook Stable
+2026-06-04,"Sao Paulo, Municipality of",https://www.fitchratings.com/entity/sao-paulo-municipality-of-93835890,Long Term Issuer Default Rating,BB,2025-09-18,Review - No Action,Rating Outlook Stable
+2026-06-04,"Sao Paulo, Municipality of",https://www.fitchratings.com/entity/sao-paulo-municipality-of-93835890,Short Term Issuer Default Rating,B,2025-09-18,Review - No Action,
+2026-06-04,"Sao Paulo, Municipality of",https://www.fitchratings.com/entity/sao-paulo-municipality-of-93835890,Local Currency Short Term Issuer Default Rating,B,2025-09-18,Review - No Action,
+2026-06-04,"Sao Paulo, Municipality of",https://www.fitchratings.com/entity/sao-paulo-municipality-of-93835890,Local Currency Long Term Issuer Default Rating,BB,2025-09-18,Review - No Action,Rating Outlook Stable
+2026-06-04,"Sao Paulo, Municipality of",https://www.fitchratings.com/entity/sao-paulo-municipality-of-93835890,National Long Term Rating,AAA(bra),2025-09-18,Review - No Action,Rating Outlook Stable
+2026-06-04,"Sao Paulo, Municipality of",https://www.fitchratings.com/entity/sao-paulo-municipality-of-93835890,National Short Term Rating,F1+(bra),2025-09-18,Review - No Action,
+2026-06-04,"Sao Paulo, Municipality of",https://www.fitchratings.com/entity/sao-paulo-municipality-of-93835890,Standalone Credit Profile,bbb+,2025-09-18,Review - No Action,
+2026-06-04,Havan S.A.,https://www.fitchratings.com/entity/havan-sa-96189218,National Long Term Rating,AAA(bra),2025-09-16,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Imobiliaria de Brasilia (Terracap),https://www.fitchratings.com/entity/companhia-imobiliaria-de-brasilia-terracap-97616237,National Long Term Rating,A+(bra),2025-09-16,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia Imobiliaria de Brasilia (Terracap),https://www.fitchratings.com/entity/companhia-imobiliaria-de-brasilia-terracap-97616237,National Short Term Rating,F1(bra),2025-09-16,Affirmed,
+2026-06-04,Banco Triangulo S.A.,https://www.fitchratings.com/entity/banco-triangulo-sa-80543474,National Long Term Rating,A-(bra),2025-09-12,Affirmed,Rating Outlook Positive
+2026-06-04,Banco Triangulo S.A.,https://www.fitchratings.com/entity/banco-triangulo-sa-80543474,National Short Term Rating,F2(bra),2025-09-12,Affirmed,
+2026-06-04,Banco Triangulo S.A.,https://www.fitchratings.com/entity/banco-triangulo-sa-80543474,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,V2i Energia S.A.,https://www.fitchratings.com/entity/v2i-energia-sa-97576213,National Long Term Rating,A(bra),2025-09-08,Affirmed,Rating Outlook Stable
+2026-06-04,Anima Holding S.A.,https://www.fitchratings.com/entity/anima-holding-sa-94141490,National Long Term Rating,AA(bra),2025-09-03,Review - No Action,Rating Outlook Stable
+2026-06-04,ESSENTIA PCHs S.A.,https://www.fitchratings.com/entity/contour-global-do-brasil-participacoes-sa-96630805,National Long Term Rating,WD(bra),2025-09-03,Withdrawn,
+2026-06-04,"Mills Locacao, Servicos e Logistica S.A.",https://www.fitchratings.com/entity/mills-estruturas-e-servicos-de-engenharia-sa-96795007,National Long Term Rating,WD(bra),2025-08-29,Withdrawn,
+2026-06-04,Alubar Metais e Cabos S.A.,https://www.fitchratings.com/entity/alubar-metais-e-cabos-sa-97322864,National Long Term Rating,A-(bra),2025-08-28,Publish,Rating Outlook Stable
+2026-06-04,CloudWalk Instituicao de Pagamento e Servicos Ltda.,https://www.fitchratings.com/entity/cloudwalk-instituicao-de-pagamento-e-servicos-ltda-97764117,National Long Term Rating,AA-(bra),2025-08-27,New Rating,Rating Outlook Positive
+2026-06-04,CloudWalk Instituicao de Pagamento e Servicos Ltda.,https://www.fitchratings.com/entity/cloudwalk-instituicao-de-pagamento-e-servicos-ltda-97764117,National Short Term Rating,F1+(bra),2025-08-27,New Rating,
+2026-06-04,"CloudWalk Financeira S.A. Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/cloudwalk-financeira-sa-credito-financiamento-e-investimento-97784613,National Long Term Rating,AA-(bra),2025-08-27,New Rating,Rating Outlook Positive
+2026-06-04,"CloudWalk Financeira S.A. Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/cloudwalk-financeira-sa-credito-financiamento-e-investimento-97784613,National Short Term Rating,F1+(bra),2025-08-27,New Rating,
+2026-06-04,Cooperativa de Credito Sul-Serrana do Espirito Santo - Sicoob Sul-Serrano,https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697,National Short Term Rating,F1+(bra),2025-08-26,Affirmed,
+2026-06-04,Cooperativa de Credito Sul-Serrana do Espirito Santo - Sicoob Sul-Serrano,https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697,National Long Term Rating,AA+(bra),2025-08-26,Upgrade,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Sul do Espirito Santo - Sicoob Sul,https://www.fitchratings.com/entity/cooperativa-de-credito-sul-do-espirito-santo-sicoob-sul-96790661,National Short Term Rating,F1+(bra),2025-08-26,Affirmed,
+2026-06-04,Cooperativa de Credito Sul do Espirito Santo - Sicoob Sul,https://www.fitchratings.com/entity/cooperativa-de-credito-sul-do-espirito-santo-sicoob-sul-96790661,National Long Term Rating,AA+(bra),2025-08-26,Upgrade,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Coopermais - Sicoob Coopermais,https://www.fitchratings.com/entity/cooperativa-de-credito-centro-serrana-do-espirito-santo-sicoob-centro-serrano-96790672,National Short Term Rating,F1+(bra),2025-08-26,Affirmed,
+2026-06-04,Cooperativa de Credito Coopermais - Sicoob Coopermais,https://www.fitchratings.com/entity/cooperativa-de-credito-centro-serrana-do-espirito-santo-sicoob-centro-serrano-96790672,National Long Term Rating,AA+(bra),2025-08-26,Upgrade,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Sul-Litoranea do Espirito Santo - Sicoob Sul-Litoraneo,https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669,National Long Term Rating,AA+(bra),2025-08-26,Upgrade,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Sul-Litoranea do Espirito Santo - Sicoob Sul-Litoraneo,https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669,National Short Term Rating,F1+(bra),2025-08-26,Affirmed,
+2026-06-04,Cooperativa de Credito Credirochas - Sicoob Credirochas,https://www.fitchratings.com/entity/cooperativa-de-credito-dos-proprietarios-da-industria-de-rochas-ornamentais-cal-e-calcarios-do-estado-do-espirito-santo-sicoob-credirochas-96790654,National Short Term Rating,F1+(bra),2025-08-26,Affirmed,
+2026-06-04,Cooperativa de Credito Credirochas - Sicoob Credirochas,https://www.fitchratings.com/entity/cooperativa-de-credito-dos-proprietarios-da-industria-de-rochas-ornamentais-cal-e-calcarios-do-estado-do-espirito-santo-sicoob-credirochas-96790654,National Long Term Rating,AA+(bra),2025-08-26,Upgrade,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Conexao - Sicoob Conexao,https://www.fitchratings.com/entity/cooperativa-de-credito-leste-capixaba-sicoob-leste-capixaba-96790658,National Long Term Rating,AA+(bra),2025-08-26,Upgrade,Rating Outlook Stable
+2026-06-04,Cooperativa de Credito Conexao - Sicoob Conexao,https://www.fitchratings.com/entity/cooperativa-de-credito-leste-capixaba-sicoob-leste-capixaba-96790658,National Short Term Rating,F1+(bra),2025-08-26,Affirmed,
+2026-06-04,Cooperativa Central de Credito do Espirito Santo - Sicoob Central ES,https://www.fitchratings.com/entity/cooperativa-central-de-credito-do-espirito-santo-sicoob-central-es-96743383,National Long Term Rating,AA+(bra),2025-08-26,Upgrade,Rating Outlook Stable
+2026-06-04,Cooperativa Central de Credito do Espirito Santo - Sicoob Central ES,https://www.fitchratings.com/entity/cooperativa-central-de-credito-do-espirito-santo-sicoob-central-es-96743383,National Short Term Rating,F1+(bra),2025-08-26,Affirmed,
+2026-06-04,Sendas Distribuidora S/A,https://www.fitchratings.com/entity/sendas-distribuidora-s-a-97205339,National Long Term Rating,AAA(bra),2025-08-26,Affirmed,Rating Outlook Stable
+2026-06-04,Icred Solucoes Financeiras S.A,https://www.fitchratings.com/entity/icred-solucoes-financeiras-sa-97585696,ABS Primary Servicer Rating,ABPS3,2025-08-25,Publish,Rating Outlook Stable
+2026-06-04,Banco Rodobens S.A.,https://www.fitchratings.com/entity/banco-rodobens-sa-89100264,National Short Term Rating,F1+(bra),2025-08-22,Affirmed,
+2026-06-04,Banco Rodobens S.A.,https://www.fitchratings.com/entity/banco-rodobens-sa-89100264,National Long Term Rating,AA+(bra),2025-08-22,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Rodobens S.A.,https://www.fitchratings.com/entity/banco-rodobens-sa-89100264,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,M Dias Branco S.A. Industria e Comercio de Alimentos,https://www.fitchratings.com/entity/m-dias-branco-sa-industria-e-comercio-de-alimentos-96568122,National Long Term Rating,AAA(bra),2025-08-22,Affirmed,Rating Outlook Stable
+2026-06-04,Stark Bank S.A. - Instituicao de Pagamento,https://www.fitchratings.com/entity/stark-bank-sa-instituicao-de-pagamento-97502050,National Short Term Rating,F1(bra),2025-08-20,Affirmed,
+2026-06-04,Stark Bank S.A. - Instituicao de Pagamento,https://www.fitchratings.com/entity/stark-bank-sa-instituicao-de-pagamento-97502050,National Long Term Rating,A-(bra),2025-08-20,Affirmed,Rating Outlook Positive
+2026-06-04,Companhia Pernambucana de Gas - Copergas,https://www.fitchratings.com/entity/companhia-pernambucana-de-gas-copergas-96353577,National Long Term Rating,AA(bra),2025-08-19,Affirmed,Rating Outlook Stable
+2026-06-04,Intesa Sanpaolo Brasil S.A. - Banco Multiplo,https://www.fitchratings.com/entity/intesa-sanpaolo-brasil-sa-banco-multiplo-97233617,National Short Term Rating,F1+(bra),2025-08-15,Affirmed,
+2026-06-04,Intesa Sanpaolo Brasil S.A. - Banco Multiplo,https://www.fitchratings.com/entity/intesa-sanpaolo-brasil-sa-banco-multiplo-97233617,National Long Term Rating,AAA(bra),2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Credit Agricole Brasil S.A.,https://www.fitchratings.com/entity/banco-credit-agricole-brasil-sa-90520083,National Short Term Rating,F1+(bra),2025-08-15,Affirmed,
+2026-06-04,Banco Credit Agricole Brasil S.A.,https://www.fitchratings.com/entity/banco-credit-agricole-brasil-sa-90520083,National Long Term Rating,AAA(bra),2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Credit Agricole Brasil S.A.,https://www.fitchratings.com/entity/banco-credit-agricole-brasil-sa-90520083,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,Deutsche Bank S.A. - Banco Alemao,https://www.fitchratings.com/entity/deutsche-bank-sa-banco-alemao-80362444,National Short Term Rating,F1+(bra),2025-08-15,Affirmed,
+2026-06-04,Deutsche Bank S.A. - Banco Alemao,https://www.fitchratings.com/entity/deutsche-bank-sa-banco-alemao-80362444,National Long Term Rating,AAA(bra),2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,Deutsche Bank S.A. - Banco Alemao,https://www.fitchratings.com/entity/deutsche-bank-sa-banco-alemao-80362444,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,"Rio de Janeiro, City of",https://www.fitchratings.com/entity/rio-de-janeiro-city-of-90518082,Long Term Issuer Default Rating,BB,2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,"Rio de Janeiro, City of",https://www.fitchratings.com/entity/rio-de-janeiro-city-of-90518082,Short Term Issuer Default Rating,B,2025-08-15,Affirmed,
+2026-06-04,"Rio de Janeiro, City of",https://www.fitchratings.com/entity/rio-de-janeiro-city-of-90518082,National Short Term Rating,F1+(bra),2025-08-15,Affirmed,
+2026-06-04,"Rio de Janeiro, City of",https://www.fitchratings.com/entity/rio-de-janeiro-city-of-90518082,Local Currency Long Term Issuer Default Rating,BB,2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,"Rio de Janeiro, City of",https://www.fitchratings.com/entity/rio-de-janeiro-city-of-90518082,Local Currency Short Term Issuer Default Rating,B,2025-08-15,Affirmed,
+2026-06-04,"Rio de Janeiro, City of",https://www.fitchratings.com/entity/rio-de-janeiro-city-of-90518082,Standalone Credit Profile,bb,2025-08-15,Affirmed,
+2026-06-04,"Rio de Janeiro, City of",https://www.fitchratings.com/entity/rio-de-janeiro-city-of-90518082,National Long Term Rating,AA+(bra),2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,Rio de Janeiro. State of,https://www.fitchratings.com/entity/rio-de-janeiro-state-of-90803890,Long Term Issuer Default Rating,BB,2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,Rio de Janeiro. State of,https://www.fitchratings.com/entity/rio-de-janeiro-state-of-90803890,Short Term Issuer Default Rating,B,2025-08-15,Affirmed,
+2026-06-04,Rio de Janeiro. State of,https://www.fitchratings.com/entity/rio-de-janeiro-state-of-90803890,Local Currency Long Term Issuer Default Rating,BB,2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,Rio de Janeiro. State of,https://www.fitchratings.com/entity/rio-de-janeiro-state-of-90803890,National Short Term Rating,F1+(bra),2025-08-15,Affirmed,
+2026-06-04,Rio de Janeiro. State of,https://www.fitchratings.com/entity/rio-de-janeiro-state-of-90803890,Local Currency Short Term Issuer Default Rating,B,2025-08-15,Affirmed,
+2026-06-04,Rio de Janeiro. State of,https://www.fitchratings.com/entity/rio-de-janeiro-state-of-90803890,Standalone Credit Profile,ccc-,2025-08-15,Affirmed,
+2026-06-04,Rio de Janeiro. State of,https://www.fitchratings.com/entity/rio-de-janeiro-state-of-90803890,National Long Term Rating,AAA(bra),2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Societe Generale Brasil S.A.,https://www.fitchratings.com/entity/banco-societe-generale-brasil-sa-88390855,National Short Term Rating,F1+(bra),2025-08-15,Affirmed,
+2026-06-04,Banco Societe Generale Brasil S.A.,https://www.fitchratings.com/entity/banco-societe-generale-brasil-sa-88390855,National Long Term Rating,AAA(bra),2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Societe Generale Brasil S.A.,https://www.fitchratings.com/entity/banco-societe-generale-brasil-sa-88390855,Support Rating,WD,2015-10-21,Withdrawn,
+2026-06-04,Banco Societe Generale Brasil S.A.,https://www.fitchratings.com/entity/banco-societe-generale-brasil-sa-88390855,Long Term Issuer Default Rating,WD,2015-10-21,Withdrawn,
+2026-06-04,Banco Societe Generale Brasil S.A.,https://www.fitchratings.com/entity/banco-societe-generale-brasil-sa-88390855,Short Term Issuer Default Rating,WD,2015-10-21,Withdrawn,
+2026-06-04,Banco Societe Generale Brasil S.A.,https://www.fitchratings.com/entity/banco-societe-generale-brasil-sa-88390855,Local Currency Long Term Issuer Default Rating,WD,2015-10-21,Withdrawn,
+2026-06-04,Banco Societe Generale Brasil S.A.,https://www.fitchratings.com/entity/banco-societe-generale-brasil-sa-88390855,Local Currency Short Term Issuer Default Rating,WD,2015-10-21,Withdrawn,
+2026-06-04,Banco Societe Generale Brasil S.A.,https://www.fitchratings.com/entity/banco-societe-generale-brasil-sa-88390855,Viability Rating,WD,2012-03-28,Withdrawn,
+2026-06-04,Banco Societe Generale Brasil S.A.,https://www.fitchratings.com/entity/banco-societe-generale-brasil-sa-88390855,Individual Rating,WD,2012-01-25,Withdrawn,
+2026-06-04,Banco BNP Paribas Brasil S.A.,https://www.fitchratings.com/entity/banco-bnp-paribas-brasil-sa-96216745,National Short Term Rating,F1+(bra),2025-08-15,Affirmed,
+2026-06-04,Banco BNP Paribas Brasil S.A.,https://www.fitchratings.com/entity/banco-bnp-paribas-brasil-sa-96216745,National Long Term Rating,AAA(bra),2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,Banco De Investimentos UBS (Brasil) S.A.,https://www.fitchratings.com/entity/banco-de-investimentos-credit-suisse-brasil-sa-82443519,National Short Term Rating,F1+(bra),2025-08-15,Affirmed,
+2026-06-04,Banco De Investimentos UBS (Brasil) S.A.,https://www.fitchratings.com/entity/banco-de-investimentos-credit-suisse-brasil-sa-82443519,National Long Term Rating,AAA(bra),2025-08-15,Affirmed,Rating Outlook Stable
+2026-06-04,Banco De Investimentos UBS (Brasil) S.A.,https://www.fitchratings.com/entity/banco-de-investimentos-credit-suisse-brasil-sa-82443519,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,Pottencial Seguradora S.A.,https://www.fitchratings.com/entity/pottencial-seguradora-s-a-91880919,National Long Term Insurer Financial Strength,A+(bra),2025-08-14,Affirmed,Rating Outlook Stable
+2026-06-04,OZN Health SPE S.A.,https://www.fitchratings.com/entity/ozn-health-spe-sa-97757731,National Long Term Rating,A(bra),2025-08-13,New Rating,Rating Outlook Stable
+2026-06-04,Opy Healthcare Gestao de Ativos e Investimentos S.A.,https://www.fitchratings.com/entity/opy-healthcare-gestao-de-ativos-e-investimentos-sa-97757705,National Long Term Rating,A(bra),2025-08-13,New Rating,Rating Outlook Stable
+2026-06-04,Parana Banco S.A.,https://www.fitchratings.com/entity/parana-banco-sa-87015752,National Short Term Rating,F1+(bra),2025-08-12,Affirmed,
+2026-06-04,Parana Banco S.A.,https://www.fitchratings.com/entity/parana-banco-sa-87015752,National Long Term Rating,AA-(bra),2025-08-12,Affirmed,Rating Outlook Stable
+2026-06-04,Parana Banco S.A.,https://www.fitchratings.com/entity/parana-banco-sa-87015752,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,Companhia Paraibana de Gas PBGAS,https://www.fitchratings.com/entity/companhia-paraibana-de-gas-pbgas-97518314,National Long Term Rating,A(bra),2025-08-11,Affirmed,Rating Outlook Negative
+2026-06-04,Iguatemi S.A.,https://www.fitchratings.com/entity/iguatemi-sa-97371311,National Long Term Rating,AAA(bra),2025-08-11,Affirmed,Rating Outlook Stable
+2026-06-04,Iguatemi Empresa de Shopping Centers S.A.,https://www.fitchratings.com/entity/iguatemi-empresa-de-shopping-centers-sa-91834892,National Long Term Rating,AAA(bra),2025-08-11,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Agibank S.A.,https://www.fitchratings.com/entity/banco-agibank-sa-96590852,National Long Term Rating,AA-(bra),2025-08-08,Upgrade,Rating Outlook Positive
+2026-06-04,Banco Agibank S.A.,https://www.fitchratings.com/entity/banco-agibank-sa-96590852,National Short Term Rating,F1+(bra),2025-08-08,Upgrade,
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,Long Term Issuer Default Rating,BB-,2025-08-08,Affirmed,Rating Outlook Stable
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,Short Term Issuer Default Rating,B,2025-08-08,Affirmed,
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,Government Support Rating,ns,2025-08-08,Affirmed,
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,National Long Term Rating,A(bra),2025-08-08,Affirmed,Rating Outlook Positive
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,Local Currency Short Term Issuer Default Rating,B,2025-08-08,Affirmed,
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,Viability Rating,bb-,2025-08-08,Affirmed,
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,National Short Term Rating,F1(bra),2025-08-08,Affirmed,
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,Local Currency Long Term Issuer Default Rating,BB-,2025-08-08,Affirmed,Rating Outlook Stable
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,Support Rating,WD,2022-10-20,Withdrawn,
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,Support Rating Floor,WD,2022-10-20,Withdrawn,
+2026-06-04,Banco BMG S.A.,https://www.fitchratings.com/entity/banco-bmg-sa-80543435,Individual Rating,WD,2012-01-25,Withdrawn,Rating Watch Off
+2026-06-04,Banco Mercantil do Brasil S.A.,https://www.fitchratings.com/entity/banco-mercantil-do-brasil-sa-80360917,National Short Term Rating,F1+(bra),2025-08-08,Upgrade,
+2026-06-04,Banco Mercantil do Brasil S.A.,https://www.fitchratings.com/entity/banco-mercantil-do-brasil-sa-80360917,National Long Term Rating,AA-(bra),2025-08-08,Upgrade,Rating Outlook Positive
+2026-06-04,Banco Mercantil do Brasil S.A.,https://www.fitchratings.com/entity/banco-mercantil-do-brasil-sa-80360917,Support Rating,WD,2009-02-19,Affirmed,
+2026-06-04,Zamp S.A.,https://www.fitchratings.com/entity/bk-brasil-operacao-e-assessoria-restaurantes-sa-96269281,National Long Term Rating,AA(bra),2025-08-08,Affirmed,Rating Outlook Stable
+2026-06-04,Intelbras S.A. Industria de Telecomunicacao Eletronica Brasileira,https://www.fitchratings.com/entity/intelbras-sa-industria-de-telecomunicacao-eletronica-brasileira-97503302,National Long Term Rating,AA-(bra),2025-08-08,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia de Locacao das Americas - LOCAMERICA,https://www.fitchratings.com/entity/companhia-de-locacao-das-americas-locamerica-89286661,National Long Term Rating,WD(bra),2025-08-07,Withdrawn,
+2026-06-04,Mateus Supermercados S.A.,https://www.fitchratings.com/entity/mateus-supermercados-sa-96026490,National Long Term Rating,AAA(bra),2025-08-07,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia de Gas de Sao Paulo - COMGAS,https://www.fitchratings.com/entity/companhia-de-gas-de-sao-paulo-comgas-91325765,National Long Term Rating,AAA(bra),2025-08-07,Affirmed,Rating Outlook Stable
+2026-06-04,Companhia de Gas de Sao Paulo - COMGAS,https://www.fitchratings.com/entity/companhia-de-gas-de-sao-paulo-comgas-91325765,Long Term Issuer Default Rating,WD,2025-08-07,Withdrawn,
+2026-06-04,Companhia de Gas de Sao Paulo - COMGAS,https://www.fitchratings.com/entity/companhia-de-gas-de-sao-paulo-comgas-91325765,Local Currency Long Term Issuer Default Rating,WD,2025-08-07,Withdrawn,
+2026-06-04,Movida Locacao de Veiculos S.A.,https://www.fitchratings.com/entity/movida-locacao-de-veiculos-sa-97423224,National Long Term Rating,WD(bra),2025-08-06,Withdrawn,
+2026-06-04,Laboratorio Sabin de Analises Clinicas S.A.,https://www.fitchratings.com/entity/laboratorio-sabin-de-analises-clinicas-ltda-96350585,National Long Term Rating,AA-(bra),2025-08-01,Affirmed,Rating Outlook Positive
+2026-06-04,Caixa Distribuidora de Titulos e Valores Mobiliarios S.A.,https://www.fitchratings.com/entity/caixa-distribuidora-de-titulos-e-valores-mobiliarios-sa-97327792,Investment Management Quality Rating,Excellent,2025-08-01,Affirmed,Rating Outlook Stable
+2026-06-04,Mantiqueira Alimentos S.A.,https://www.fitchratings.com/entity/mantiqueira-alimentos-sa-97753425,National Long Term Rating,AA+(bra),2025-07-31,New Rating,Rating Outlook Stable
+2026-06-04,Banco GM S.A.,https://www.fitchratings.com/entity/banco-gmac-sa-90420088,National Short Term Rating,F1+(bra),2025-07-28,Affirmed,
+2026-06-04,Banco GM S.A.,https://www.fitchratings.com/entity/banco-gmac-sa-90420088,National Long Term Rating,AAA(bra),2025-07-28,Affirmed,Rating Outlook Stable
+2026-06-04,Banco GM S.A.,https://www.fitchratings.com/entity/banco-gmac-sa-90420088,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,Banco de Lage Landen Brasil S.A.,https://www.fitchratings.com/entity/banco-de-lage-landen-brasil-sa-96897877,National Short Term Rating,F1+(bra),2025-07-28,Affirmed,
+2026-06-04,Banco de Lage Landen Brasil S.A.,https://www.fitchratings.com/entity/banco-de-lage-landen-brasil-sa-96897877,National Long Term Rating,AAA(bra),2025-07-28,Affirmed,Rating Outlook Stable
+2026-06-04,Banco CNH Industrial Capital S.A.,https://www.fitchratings.com/entity/banco-cnh-industrial-capital-sa-80597992,National Long Term Rating,AAA(bra),2025-07-28,Affirmed,Rating Outlook Stable
+2026-06-04,Banco CNH Industrial Capital S.A.,https://www.fitchratings.com/entity/banco-cnh-industrial-capital-sa-80597992,National Short Term Rating,F1+(bra),2025-07-28,Affirmed,
+2026-06-04,Banco CNH Industrial Capital S.A.,https://www.fitchratings.com/entity/banco-cnh-industrial-capital-sa-80597992,Support Rating,WD,2011-12-15,Withdrawn,
+2026-06-04,T V V - Terminal de Vila Velha S.A.,https://www.fitchratings.com/entity/t-v-v-terminal-de-vila-velha-sa-97292252,National Long Term Rating,AA+(bra),2025-07-28,Affirmed,Rating Outlook Stable
+2026-06-04,Banco John Deere S.A.,https://www.fitchratings.com/entity/banco-john-deere-sa-96800840,National Long Term Rating,AAA(bra),2025-07-28,Affirmed,Rating Outlook Stable
+2026-06-04,Banco John Deere S.A.,https://www.fitchratings.com/entity/banco-john-deere-sa-96800840,National Short Term Rating,F1+(bra),2025-07-28,Affirmed,
+2026-06-04,Companhia de Gas de Minas Gerais - Gasmig,https://www.fitchratings.com/entity/companhia-de-gas-de-minas-gerais-gasmig-96692279,National Long Term Rating,AA+(bra),2025-07-25,Affirmed,Rating Outlook Stable
+2026-06-04,QMC Telecom do Brasil Cessao de Infraestrutura S.A.,https://www.fitchratings.com/entity/qmc-telecom-do-brasil-cessao-de-infraestrutura-sa-97527625,National Long Term Rating,A(bra),2025-07-25,Publish,Rating Outlook Stable
+2026-06-04,Goldman Sachs do Brasil Banco Multiplo S.A.,https://www.fitchratings.com/entity/goldman-sachs-do-brasil-banco-multiplo-sa-96473435,National Long Term Rating,AAA(bra),2025-07-23,Affirmed,Rating Outlook Stable
+2026-06-04,Goldman Sachs do Brasil Banco Multiplo S.A.,https://www.fitchratings.com/entity/goldman-sachs-do-brasil-banco-multiplo-sa-96473435,National Short Term Rating,F1+(bra),2025-07-23,Affirmed,
+2026-06-04,Banco Sumitomo Mitsui Brasileiro S.A.,https://www.fitchratings.com/entity/banco-sumitomo-mitsui-brasileiro-sa-97252790,National Short Term Rating,F1+(bra),2025-07-23,Affirmed,
+2026-06-04,Banco Sumitomo Mitsui Brasileiro S.A.,https://www.fitchratings.com/entity/banco-sumitomo-mitsui-brasileiro-sa-97252790,National Long Term Rating,AAA(bra),2025-07-23,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Citibank S.A.,https://www.fitchratings.com/entity/banco-citibank-sa-80362437,National Long Term Rating,AAA(bra),2025-07-23,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Citibank S.A.,https://www.fitchratings.com/entity/banco-citibank-sa-80362437,National Short Term Rating,F1+(bra),2025-07-23,Affirmed,
+2026-06-04,Banco Citibank S.A.,https://www.fitchratings.com/entity/banco-citibank-sa-80362437,Support Rating,NR,2003-07-17,Withdrawn,
+2026-06-04,Bank of America Merrill Lynch Banco Multiplo S.A.,https://www.fitchratings.com/entity/bank-of-america-merrill-lynch-banco-multiplo-sa-93524890,National Short Term Rating,F1+(bra),2025-07-23,Affirmed,
+2026-06-04,Bank of America Merrill Lynch Banco Multiplo S.A.,https://www.fitchratings.com/entity/bank-of-america-merrill-lynch-banco-multiplo-sa-93524890,National Long Term Rating,AAA(bra),2025-07-23,Affirmed,Rating Outlook Stable
+2026-06-04,Novo Banco Continental S.A. - Banco Multiplo,https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767,National Long Term Rating,AAA(bra),2025-07-23,Affirmed,Rating Outlook Stable
+2026-06-04,Novo Banco Continental S.A. - Banco Multiplo,https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767,National Short Term Rating,F1+(bra),2025-07-23,Affirmed,
+2026-06-04,Banco Inbursa S.A.,https://www.fitchratings.com/entity/banco-inbursa-sa-96672806,National Long Term Rating,AAA(bra),2025-07-23,Affirmed,Rating Outlook Stable
+2026-06-04,Banco Inbursa S.A.,https://www.fitchratings.com/entity/banco-inbursa-sa-96672806,National Short Term Rating,F1+(bra),2025-07-23,Affirmed,
+2026-06-04,Alares Internet Participacoes S.A.,https://www.fitchratings.com/entity/alares-internet-participacoes-s-a-97182126,National Long Term Rating,A(bra),2025-07-18,New Rating,Rating Outlook Stable
+2026-06-04,Cooperativa Central de Credito do Estado de Sao Paulo - Sicoob Sao Paulo,https://www.fitchratings.com/entity/cooperativa-central-de-credito-do-estado-de-sao-paulo-sicoob-sao-paulo-97706538,National Long Term Rating,AA-(bra),2025-07-15,New Rating,Rating Outlook Stable
+2026-06-04,Cooperativa Central de Credito do Estado de Sao Paulo - Sicoob Sao Paulo,https://www.fitchratings.com/entity/cooperativa-central-de-credito-do-estado-de-sao-paulo-sicoob-sao-paulo-97706538,National Short Term Rating,F1+(bra),2025-07-15,New Rating,
+2026-06-04,Cooperativa Central de Credito Rural com Interacao Solidaria - Central Cresol Sicoper,https://www.fitchratings.com/entity/cooperativa-central-de-credito-rural-com-interacao-solidaria-central-cresol-sicoper-97361361,National Long Term Rating,A-(bra),2025-07-15,Publish,Rating Outlook Stable
+2026-06-04,Cooperativa Central de Credito Rural com Interacao Solidaria - Central Cresol Sicoper,https://www.fitchratings.com/entity/cooperativa-central-de-credito-rural-com-interacao-solidaria-central-cresol-sicoper-97361361,National Short Term Rating,F2(bra),2025-07-15,Publish,
+2026-06-04,RNI Negocios Imobiliarios S.A.,https://www.fitchratings.com/entity/rni-negocios-imobiliarios-sa-89317063,National Long Term Rating,A-(bra),2025-07-11,Affirmed,Rating Outlook Stable
+2026-06-04,Sociedade Beneficente Israelita Brasileira - Hospital Albert Einstein,https://www.fitchratings.com/entity/sociedade-beneficente-israelita-brasileira-hospital-albert-einstein-96628807,National Long Term Rating,AAA(bra),2025-07-11,Affirmed,Rating Outlook Stable
+2026-06-04,Isa Energia Brasil S.A.,https://www.fitchratings.com/entity/companhia-de-transmissao-de-energia-eletrica-paulista-sa-cteep-87797443,National Long Term Rating,AAA(bra),2025-07-10,Affirmed,Rating Outlook Stable
+2026-06-04,Estado de Mato Grosso do Sul,https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435,Long Term Issuer Default Rating,BB,2025-07-02,New Rating,Rating Outlook Stable
+2026-06-04,Estado de Mato Grosso do Sul,https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435,Short Term Issuer Default Rating,B,2025-07-02,New Rating,
+2026-06-04,Estado de Mato Grosso do Sul,https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435,Local Currency Short Term Issuer Default Rating,B,2025-07-02,New Rating,
+2026-06-04,Estado de Mato Grosso do Sul,https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435,Local Currency Long Term Issuer Default Rating,BB,2025-07-02,New Rating,Rating Outlook Stable
+2026-06-04,Estado de Mato Grosso do Sul,https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435,National Short Term Rating,F1+(bra),2025-07-02,New Rating,
+2026-06-04,Estado de Mato Grosso do Sul,https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435,National Long Term Rating,AAA(bra),2025-07-02,New Rating,Rating Outlook Stable
+2026-06-04,Estado de Mato Grosso do Sul,https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435,Standalone Credit Profile,b+,2025-07-02,New Rating,
+2026-06-04,EDP Energias do Brasil S.A.,https://www.fitchratings.com/entity/edp-energias-do-brasil-sa-94762090,National Long Term Rating,AAA(bra),2025-06-30,Affirmed,Rating Outlook Stable
+2026-06-04,Cooperativa Central de Credito com Interacao Solidaria - Central Cresol Baser,https://www.fitchratings.com/entity/cooperativa-central-de-credito-com-interacao-solidaria-central-cresol-baser-97078781,National Short Term Rating,F1+(bra),2025-06-26,Upgrade,
+2026-06-04,Cooperativa Central de Credito com Interacao Solidaria - Central Cresol Baser,https://www.fitchratings.com/entity/cooperativa-central-de-credito-com-interacao-solidaria-central-cresol-baser-97078781,National Long Term Rating,AA-(bra),2025-06-26,Upgrade,Rating Outlook Stable
+2026-06-04,Cooperativa Central de Credito Ailos,https://www.fitchratings.com/entity/cooperativa-central-de-credito-ailos-97229433,National Short Term Rating,F1(bra),2025-06-26,Affirmed,
+2026-06-04,Cooperativa Central de Credito Ailos,https://www.fitchratings.com/entity/cooperativa-central-de-credito-ailos-97229433,National Long Term Rating,A+(bra),2025-06-26,Affirmed,Rating Outlook Positive
+2026-06-04,Brazil,https://www.fitchratings.com/entity/brazil-80442191,Long Term Issuer Default Rating,BB,2025-06-25,Affirmed,Rating Outlook Stable
+2026-06-04,Brazil,https://www.fitchratings.com/entity/brazil-80442191,Short Term Issuer Default Rating,B,2025-06-25,Affirmed,
+2026-06-04,Brazil,https://www.fitchratings.com/entity/brazil-80442191,Local Currency Short Term Issuer Default Rating,B,2025-06-25,Affirmed,
+2026-06-04,Brazil,https://www.fitchratings.com/entity/brazil-80442191,Local Currency Long Term Issuer Default Rating,BB,2025-06-25,Affirmed,Rating Outlook Stable
+2026-06-04,Brazil,https://www.fitchratings.com/entity/brazil-80442191,Country Ceiling,BB+,2025-06-25,Affirmed,
+2026-06-04,TIM S.A.,https://www.fitchratings.com/entity/tim-sa-97088596,National Long Term Rating,AAA(bra),2025-06-23,Affirmed,Rating Outlook Stable
+2026-06-04,TIM Brasil Servicos e Participacoes S.A.,https://www.fitchratings.com/entity/tim-brasil-servicos-e-participacoes-sa-97462270,National Long Term Rating,AAA(bra),2025-06-23,Affirmed,Rating Outlook Stable
+2026-06-04,Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570,Long Term Issuer Default Rating,BB,2025-06-18,Review - No Action,Rating Outlook Stable
+2026-06-04,Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570,Short Term Issuer Default Rating,B,2025-06-18,Review - No Action,
+2026-06-04,Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570,National Long Term Rating,AAA(bra),2025-06-18,Review - No Action,Rating Outlook Stable
+2026-06-04,Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570,Local Currency Long Term Issuer Default Rating,BB,2025-06-18,Review - No Action,Rating Outlook Stable
+2026-06-04,Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570,National Short Term Rating,F1+(bra),2025-06-18,Review - No Action,
+2026-06-04,Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570,Shareholder Support Rating,bb,2025-06-18,Review - No Action,
+2026-06-04,Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570,Local Currency Short Term Issuer Default Rating,B,2025-06-18,Review - No Action,
+2026-06-04,Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570,Support Rating,WD,2022-07-28,Withdrawn,
+2026-06-04,Desenvolve SP - Agencia de Fomento do Estado de Sao Paulo S.A.,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-sao-paulo-desenvolve-sp-96165830,Long Term Issuer Default Rating,BB,2025-06-18,Review - No Action,Rating Outlook Stable
+2026-06-04,Desenvolve SP - Agencia de Fomento do Estado de Sao Paulo S.A.,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-sao-paulo-desenvolve-sp-96165830,Short Term Issuer Default Rating,B,2025-06-18,Review - No Action,
+2026-06-04,Desenvolve SP - Agencia de Fomento do Estado de Sao Paulo S.A.,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-sao-paulo-desenvolve-sp-96165830,National Long Term Rating,AAA(bra),2025-06-18,Review - No Action,Rating Outlook Stable
+2026-06-04,Desenvolve SP - Agencia de Fomento do Estado de Sao Paulo S.A.,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-sao-paulo-desenvolve-sp-96165830,Local Currency Long Term Issuer Default Rating,BB,2025-06-18,Review - No Action,Rating Outlook Stable
+2026-06-04,Desenvolve SP - Agencia de Fomento do Estado de Sao Paulo S.A.,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-sao-paulo-desenvolve-sp-96165830,Shareholder Support Rating,bb,2025-06-18,Review - No Action,
+2026-06-04,Desenvolve SP - Agencia de Fomento do Estado de Sao Paulo S.A.,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-sao-paulo-desenvolve-sp-96165830,National Short Term Rating,F1+(bra),2025-06-18,Review - No Action,
+2026-06-04,Desenvolve SP - Agencia de Fomento do Estado de Sao Paulo S.A.,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-sao-paulo-desenvolve-sp-96165830,Local Currency Short Term Issuer Default Rating,B,2025-06-18,Review - No Action,
+2026-06-04,Desenvolve SP - Agencia de Fomento do Estado de Sao Paulo S.A.,https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-sao-paulo-desenvolve-sp-96165830,Support Rating,WD,2022-07-28,Withdrawn,
+2026-06-04,Rodobens S.A.,https://www.fitchratings.com/entity/rodobens-sa-97239694,National Long Term Rating,AA+(bra),2025-06-17,Affirmed,Rating Outlook Stable
+2026-06-04,Blau Farmaceutica S.A.,https://www.fitchratings.com/entity/blau-farmaceutica-sa-96789775,National Long Term Rating,AA+(bra),2025-06-16,Affirmed,Rating Outlook Stable
+2026-06-04,Log-In Logistica Intermodal S.A.,https://www.fitchratings.com/entity/log-in-logistica-intermodal-sa-96910097,National Long Term Rating,WD(bra),2025-06-05,Withdrawn,
+2026-06-04,Occam Brasil Gestao de Recursos Ltda.,https://www.fitchratings.com/entity/occam-brasil-gestao-de-recursos-ltda-96672817,Investment Management Quality Rating,Strong,2025-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,Nova Occam Brasil Gestao de Recursos Ltda,https://www.fitchratings.com/entity/nova-occam-brasil-gestao-de-recursos-ltda-97491611,Investment Management Quality Rating,Strong,2025-05-15,Affirmed,Rating Outlook Stable
+2026-06-04,General Shopping Investment Limited,https://www.fitchratings.com/entity/general-shopping-investment-limited-90748293,Long Term Issuer Default Rating,WD,2014-10-21,Withdrawn,
+2026-06-04,General Shopping Finance Limited (GSF),https://www.fitchratings.com/entity/general-shopping-finance-limited-gsf-89880061,Long Term Issuer Default Rating,WD,2014-10-21,Withdrawn,
