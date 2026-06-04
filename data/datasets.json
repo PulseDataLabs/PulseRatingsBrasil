@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Fitch Ratings — Emissores Brasil",
+    "file": "fitch_ratings_brasil.csv",
+    "description": "Ratings de crédito de longo e curto prazo atribuídos pela Fitch Ratings a emissores corporativos, financeiros e soberanos no Brasil.",
+    "icon": "F",
+    "iconClass": "icon-fitch",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
+    "tags": [
+      "ratings",
+      "fitch",
+      "crédito",
+      "emissores",
+      "corporativos"
+    ],
+    "source": "Fitch Ratings",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_ratings_brasil.csv"
+  },
+  {
+    "title": "Moodys Local Ratings",
+    "file": "moodys_local_ratings.csv",
+    "description": "Sem descrição fornecida.",
+    "icon": "M",
+    "iconClass": "icon-moodys",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
+    "tags": [
+      "ratings"
+    ],
+    "source": "RATINGS",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_local_ratings.csv"
+  },
+  {
+    "title": "S P Entidades Brasil",
+    "file": "s_p_entidades_brasil.csv",
+    "description": "Sem descrição fornecida.",
+    "icon": "S&P",
+    "iconClass": "icon-sp",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
+    "tags": [
+      "ratings"
+    ],
+    "source": "RATINGS",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/s_p_entidades_brasil.csv"
+  },
+  {
+    "title": "S P Ratings Brasil",
+    "file": "s_p_ratings_brasil.csv",
+    "description": "Sem descrição fornecida.",
+    "icon": "S&P",
+    "iconClass": "icon-sp",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
+    "tags": [
+      "ratings"
+    ],
+    "source": "RATINGS",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/s_p_ratings_brasil.csv"
+  }
+]

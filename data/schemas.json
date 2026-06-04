@@ -1,0 +1,185 @@
+[
+  {
+    "title": "Moodys Local Ratings",
+    "files": "moodys_local_ratings.csv",
+    "source": "moodys",
+    "fields": [
+      {
+        "name": "data_captura",
+        "type": "date",
+        "example": "2026-06-04"
+      },
+      {
+        "name": "no_setor",
+        "type": "str",
+        "example": ""
+      },
+      {
+        "name": "no_entidade",
+        "type": "str",
+        "example": "Western Asset Management DTVM Ltda."
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "Avaliações de Qualidade de Gestor de Investimentos"
+      },
+      {
+        "name": "de_instrumento",
+        "type": "str",
+        "example": "N/A"
+      },
+      {
+        "name": "de_objeto",
+        "type": "str",
+        "example": "Avaliação de Qualidade de Gestor de Investimentos (MQ)"
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "MQ1.br"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": "-"
+      },
+      {
+        "name": "dt_rating",
+        "type": "date",
+        "example": "2021-06-24"
+      },
+      {
+        "name": "dh_atu_arquivo",
+        "type": "str",
+        "example": "2026-06-04"
+      }
+    ]
+  },
+  {
+    "title": "Fitch Ratings Brasil",
+    "files": "fitch_ratings_brasil.csv",
+    "source": "fitch",
+    "fields": [
+      {
+        "name": "data_captura",
+        "type": "date",
+        "example": "2026-06-04"
+      },
+      {
+        "name": "nome",
+        "type": "str",
+        "example": "Petróleo Brasileiro S.A. - Petrobras"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80124508"
+      },
+      {
+        "name": "Tipo de Rating",
+        "type": "str",
+        "example": "Local Currency LT"
+      },
+      {
+        "name": "Rating",
+        "type": "str",
+        "example": "BB"
+      },
+      {
+        "name": "Data da Ação de Rating",
+        "type": "date",
+        "example": "2025-11-12"
+      },
+      {
+        "name": "CreditWatch/ Perspectiva",
+        "type": "str",
+        "example": "Estável"
+      },
+      {
+        "name": "Data do CreditWatch/ Perspectiva",
+        "type": "date",
+        "example": "2025-11-12"
+      }
+    ]
+  },
+  {
+    "title": "S P Entidades Brasil",
+    "files": "s_p_entidades_brasil.csv",
+    "source": "s_p",
+    "fields": [
+      {
+        "name": "data_captura",
+        "type": "date",
+        "example": "2026-06-04"
+      },
+      {
+        "name": "nome",
+        "type": "str",
+        "example": "AEGEA Saneamento e Participacoes S.A."
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1001151"
+      }
+    ]
+  },
+  {
+    "title": "S P Ratings Brasil",
+    "files": "s_p_ratings_brasil.csv",
+    "source": "s_p",
+    "fields": [
+      {
+        "name": "data_captura",
+        "type": "date",
+        "example": "2026-06-04"
+      },
+      {
+        "name": "Tipo de Rating",
+        "type": "str",
+        "example": "Escala Nacional Brasil de Longo Prazo"
+      },
+      {
+        "name": "Rating",
+        "type": "str",
+        "example": "brA"
+      },
+      {
+        "name": "Data da Ação de Rating",
+        "type": "date",
+        "example": "2026-04-20"
+      },
+      {
+        "name": "Data da ÚltimaRevisão",
+        "type": "date",
+        "example": "2026-04-20"
+      },
+      {
+        "name": "Identifica­dores Regulatórios",
+        "type": "str",
+        "example": "--"
+      },
+      {
+        "name": "CreditWatch/ Perspectiva",
+        "type": "str",
+        "example": "Negative"
+      },
+      {
+        "name": "Data do CreditWatch/ Perspectiva",
+        "type": "date",
+        "example": "2026-04-20"
+      },
+      {
+        "name": "nome",
+        "type": "str",
+        "example": "AEGEA Saneamento e Participacoes S.A."
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1001151"
+      }
+    ]
+  }
+]
