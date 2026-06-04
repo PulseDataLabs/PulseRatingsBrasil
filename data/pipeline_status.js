@@ -1,12 +1,12 @@
 window.PULSERATINGS_PIPELINE_STATUS = {
-  "timestamp": "2026-06-04T18:03:46.153639",
-  "elapsed_seconds": 500.1984100341797,
+  "timestamp": "2026-06-04T19:23:27.197601",
+  "elapsed_seconds": 415.28751492500305,
   "status": "warning",
   "summary": {
     "total": 6,
     "success": 6,
     "failed": 0,
-    "drifts": 5
+    "drifts": 1
   },
   "scrapers": {
     "moodys_local_ratings": {
@@ -35,81 +35,50 @@ window.PULSERATINGS_PIPELINE_STATUS = {
     },
     "fitch_entidades": {
       "status": "success",
-      "elapsed_seconds": 1.117807149887085,
+      "elapsed_seconds": 13.410743236541748,
       "error": null,
-      "timestamp": "2026-06-04T18:03:46.153729"
+      "timestamp": "2026-06-04T19:23:27.197722"
     },
     "standard_and_poors_entidades": {
       "status": "success",
-      "elapsed_seconds": 28.68364381790161,
+      "elapsed_seconds": 25.185792446136475,
       "error": null,
-      "timestamp": "2026-06-04T18:03:46.153732"
+      "timestamp": "2026-06-04T19:23:27.197725"
     },
     "moodys_entidades": {
       "status": "success",
-      "elapsed_seconds": 41.72172713279724,
+      "elapsed_seconds": 0.6822593212127686,
       "error": null,
-      "timestamp": "2026-06-04T18:03:46.153734"
+      "timestamp": "2026-06-04T19:23:27.197716"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 1.5129508972167969,
+      "elapsed_seconds": 12.977855205535889,
       "error": null,
-      "timestamp": "2026-06-04T18:03:46.153735"
+      "timestamp": "2026-06-04T19:23:27.197729"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 41.42584800720215,
+      "elapsed_seconds": 0.053072452545166016,
       "error": null,
-      "timestamp": "2026-06-04T18:03:46.153736"
+      "timestamp": "2026-06-04T19:23:27.197727"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 458.47558665275574,
+      "elapsed_seconds": 390.0986797809601,
       "error": null,
-      "timestamp": "2026-06-04T18:03:46.153737"
+      "timestamp": "2026-06-04T19:23:27.197731"
     }
   },
   "drifts": {
-    "fitch_entidades.csv": {
-      "added": [],
-      "removed": [
-        "data_captura"
-      ],
-      "timestamp": "2026-06-04T17:55:27.071524"
-    },
-    "standard_and_poors_entidades.csv": {
-      "added": [],
-      "removed": [
-        "data_captura"
-      ],
-      "timestamp": "2026-06-04T17:55:54.600220"
-    },
-    "moodys_entidades.csv": {
-      "added": [],
-      "removed": [
-        "data_captura"
-      ],
-      "timestamp": "2026-06-04T17:56:07.675585"
-    },
     "fitch_ratings.csv": {
       "added": [
-        "no_entidade"
+        "Ação de Rating"
       ],
       "removed": [
-        "nome"
+        "Data do CreditWatch/ Perspectiva"
       ],
-      "timestamp": "2026-06-04T17:56:09.168159"
-    },
-    "standard_and_poors_ratings.csv": {
-      "added": [
-        "no_entidade"
-      ],
-      "removed": [
-        "data_captura",
-        "nome"
-      ],
-      "timestamp": "2026-06-04T18:03:46.150781"
+      "timestamp": "2026-06-04T19:17:10.068664"
     }
   }
 };

@@ -69,37 +69,37 @@
       {
         "name": "no_entidade",
         "type": "str",
-        "example": "Petróleo Brasileiro S.A. - Petrobras"
+        "example": "Multiplan Empreendimentos Imobiliarios S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80124508"
+        "example": "https://www.fitchratings.com/entity/multiplan-empreendimentos-imobiliarios-sa-96177986"
       },
       {
         "name": "Tipo de Rating",
         "type": "str",
-        "example": "Local Currency LT"
+        "example": "National Long Term Rating"
       },
       {
         "name": "Rating",
         "type": "str",
-        "example": "BB"
+        "example": "AAA(bra)"
       },
       {
         "name": "Data da Ação de Rating",
         "type": "date",
-        "example": "2025-11-12"
+        "example": "2026-06-04"
+      },
+      {
+        "name": "Ação de Rating",
+        "type": "str",
+        "example": "Review - No Action"
       },
       {
         "name": "CreditWatch/ Perspectiva",
         "type": "str",
-        "example": "Estável"
-      },
-      {
-        "name": "Data do CreditWatch/ Perspectiva",
-        "type": "date",
-        "example": "2025-11-12"
+        "example": "Rating Outlook Stable"
       }
     ]
   },
@@ -197,12 +197,12 @@
       {
         "name": "no_entidade",
         "type": "str",
-        "example": "Petróleo Brasileiro S.A. - Petrobras"
+        "example": "Multiplan Empreendimentos Imobiliarios S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80124508"
+        "example": "https://www.fitchratings.com/entity/multiplan-empreendimentos-imobiliarios-sa-96177986"
       }
     ]
   }
