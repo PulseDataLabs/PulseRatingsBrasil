@@ -2,17 +2,17 @@
 # coding: utf-8
 """
 Scraper: Fitch Ratings – Entidades com rating no Brasil
-Fonte:   https://www.fitchratings.com/search?expanded=entity&filter.country=Brazil&isIdentifier=true&item=IDENTIFIERS
+Fonte:   GraphQL API — https://api.fitchratings.com
 Saída:   data/fitch_entidades.csv
 """
 import os
 import sys
 import datetime
 import json
+import time
 from pathlib import Path
 
 import pandas as pd
-from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from utils import get_logger, agora_brt, limpar
@@ -20,7 +20,7 @@ from scrapers.utils.base import BaseScraper
 
 log = get_logger("fitch_entidades")
 
-URL_PESQUISA = "https://www.fitchratings.com/search?expanded=entity&filter.country=Brazil&isIdentifier=true&item=IDENTIFIERS"
+API_URL = "https://api.fitchratings.com"
 
 HEADERS = {
     "User-Agent": (
@@ -28,46 +28,90 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/124.0.0.0 Safari/537.36"
     ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Origin": "https://www.fitchratings.com",
+    "Referer": "https://www.fitchratings.com/search",
     "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
 }
 
+GQL_QUERY = """
+query {
+    search(term: "", filter: {country: "Brazil"}, limit: %d, offset: %d) {
+        totalEntityHits
+        entity {
+            name
+            permalink
+        }
+    }
+}
+"""
+
+PAGE_SIZE = 100
+MAX_PAGES = 20  # Segurança: máximo 2000 entidades
+
 
 def _obter_entidades_fitch_real() -> list[dict]:
+    """Obtém entidades brasileiras da Fitch via GraphQL API com paginação."""
     from curl_cffi import requests as crequests
-    log.info(f"Acessando busca da Fitch: {URL_PESQUISA}")
-    resp = crequests.get(URL_PESQUISA, headers=HEADERS, impersonate="chrome", timeout=30)
-    resp.raise_for_status()
 
-    soup = BeautifulSoup(resp.text, "html.parser")
-    next_data_el = soup.find("script", id="__NEXT_DATA__")
-    if not next_data_el:
-        return []
-        
-    data = json.loads(next_data_el.string)
-    results = data.get("props", {}).get("pageProps", {}).get("searchResults", {}).get("results", [])
-    
+    today_str = datetime.date.today().strftime("%Y-%m-%d")
     entities = {}
-    today_str = datetime.date.today().strftime("%Y-%m-%d")
-    
-    for item in results:
-        nome = item.get("entityName") or item.get("name") or ""
-        entity_id = item.get("entityId") or ""
-        link = f"https://www.fitchratings.com/entity/{entity_id}" if entity_id else ""
-        if nome and link:
-            entities[link] = limpar(nome)
-            
-    return [{"dt_captura": today_str, "no_entidade": nome, "link": link} for link, nome in entities.items()]
+    offset = 0
+    total = None
 
+    for page in range(1, MAX_PAGES + 1):
+        query = GQL_QUERY % (PAGE_SIZE, offset)
+        payload = {"query": query}
 
-def _obter_entidades_fallback() -> list[dict]:
-    log.warning("Utilizando entidades de fallback para Fitch (ambiente restrito/mock).")
-    today_str = datetime.date.today().strftime("%Y-%m-%d")
+        log.info(f"Requisição GraphQL: offset={offset}, limit={PAGE_SIZE} (página {page})")
+
+        resp = crequests.post(
+            API_URL,
+            json=payload,
+            headers=HEADERS,
+            impersonate="chrome",
+            timeout=30,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+
+        if "errors" in data:
+            log.error(f"Erro na resposta GraphQL: {data['errors']}")
+            break
+
+        search = data.get("data", {}).get("search", {})
+
+        if total is None:
+            total = search.get("totalEntityHits", 0)
+            log.info(f"Total de entidades brasileiras na Fitch: {total}")
+
+        entity_hits = search.get("entity", [])
+        if not entity_hits:
+            log.info("Nenhuma entidade retornada nesta página. Fim da paginação.")
+            break
+
+        for hit in entity_hits:
+            nome = hit.get("name", "").strip()
+            permalink = hit.get("permalink", "").strip()
+            if nome and permalink:
+                link = f"https://www.fitchratings.com/entity/{permalink}"
+                entities[link] = limpar(nome)
+
+        log.info(f"  Página {page}: {len(entity_hits)} entidades (acumulado: {len(entities)})")
+
+        offset += PAGE_SIZE
+        if offset >= total:
+            log.info("Todas as entidades foram obtidas.")
+            break
+
+        # Pausa entre requisições para evitar rate-limiting
+        time.sleep(1)
+
+    log.info(f"Total de entidades únicas capturadas: {len(entities)}")
     return [
-        {"dt_captura": today_str, "no_entidade": "Petróleo Brasileiro S.A. - Petrobras", "link": "https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80124508"},
-        {"dt_captura": today_str, "no_entidade": "Banco do Brasil S.A.", "link": "https://www.fitchratings.com/entity/banco-do-brasil-sa-80123567"},
-        {"dt_captura": today_str, "no_entidade": "Vale S.A.", "link": "https://www.fitchratings.com/entity/vale-sa-80121124"},
-        {"dt_captura": today_str, "no_entidade": "Itaú Unibanco Holding S.A.", "link": "https://www.fitchratings.com/entity/itau-unibanco-holding-sa-80129988"},
+        {"dt_captura": today_str, "no_entidade": nome, "link": link}
+        for link, nome in entities.items()
     ]
 
 
@@ -95,11 +139,11 @@ class FitchEntidadesScraper(BaseScraper):
         try:
             entidades = _obter_entidades_fitch_real()
         except Exception as e:
-            log.warning(f"Erro ao obter entidades reais da Fitch: {e}")
-            
+            log.error(f"Erro ao obter entidades da Fitch: {e}", exc_info=True)
+
         if not entidades:
-            entidades = _obter_entidades_fallback()
-            
+            log.warning("Nenhuma entidade obtida da Fitch.")
+
         return pd.DataFrame(entidades)
 
 
