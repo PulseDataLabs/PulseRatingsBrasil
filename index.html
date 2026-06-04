@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PulseRatings — Notas de Rating do Mercado Brasileiro</title>
+  <title>Pulse Ratings — Notas de Rating do Mercado Brasileiro</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -1251,8 +1251,8 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <img src="logo.png" alt="PulseRatings Logo" style="height: 24px; border-radius: 4px;">
-    PulseRatings <span style="font-size: 0.65rem; padding: 0.1rem 0.4rem; background: rgba(0, 212, 255, 0.15); color: var(--accent); border-radius: 10px; margin-left: 0.4rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Brasil</span>
+    <img src="assets/logo.png" alt="Pulse Ratings Logo" style="height: 24px; border-radius: 4px;">
+    Pulse Ratings <span style="font-size: 0.65rem; padding: 0.1rem 0.4rem; background: rgba(0, 212, 255, 0.15); color: var(--accent); border-radius: 10px; margin-left: 0.4rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Brasil</span>
   </a>
   <ul class="nav-links">
     <li><a href="#como-funciona">Pipeline</a></li>
@@ -1283,7 +1283,7 @@
   <div class="hero-orb hero-orb-3"></div>
 
   <div class="hero-logo-container" style="display: flex; justify-content: center; margin-bottom: 2rem; animation: float 6s ease-in-out infinite;">
-    <img src="logo.png" alt="PulseRatings Logo" style="width: 120px; height: 120px; border-radius: 16px; box-shadow: 0 0 30px rgba(0, 212, 255, 0.25); border: 1px solid rgba(0, 212, 255, 0.15);">
+    <img src="assets/logo.png" alt="Pulse Ratings Logo" style="width: 120px; height: 120px; border-radius: 16px; box-shadow: 0 0 30px rgba(0, 212, 255, 0.25); border: 1px solid rgba(0, 212, 255, 0.15);">
   </div>
 
   <div class="ticker-bar">
@@ -1521,13 +1521,13 @@
 <span class="kw">python</span> run_all.py
 
 <span class="cm"># Ou rode um scraper específico</span>
-<span class="kw">python</span> run_all.py --scraper moodys_local_ratings
-<span class="kw">python</span> run_all.py --scraper s_p_ratings_brasil
+<span class="kw">python</span> run_all.py --scraper moodys_ratings
+<span class="kw">python</span> run_all.py --scraper standard_and_poors_ratings
 
 <span class="cm"># 5. URL raw para importar direto no seu BI:</span>
 <span class="str">https://raw.githubusercontent.com/PulseDataLabs/
   PulseRatingsBrasil/main/data/
-  moodys_local_ratings.csv</span>
+  moodys_ratings.csv</span>
         </div>
       </div>
     </div>
@@ -1540,7 +1540,7 @@
     <div class="footer-inner">
       <div class="footer-logo">
         <span class="pulse-dot" style="width:7px;height:7px;"></span>
-        PulseRatings
+        Pulse Ratings
       </div>
       <ul class="footer-links">
         <li><a href="#como-funciona">Pipeline</a></li>
@@ -1607,7 +1607,7 @@
     allDatasets.forEach(dataset => {
       let cardClass = '';
       const lowerFile = dataset.file.toLowerCase();
-      if (lowerFile.includes('s_p_') || lowerFile.includes('spglobal')) {
+      if (lowerFile.includes('standard_and_poors_') || lowerFile.includes('s_p_') || lowerFile.includes('spglobal')) {
         cardClass = 'sp-card';
       } else if (lowerFile.includes('moody')) {
         cardClass = 'moodys-card';
@@ -1738,9 +1738,11 @@
     
     // Map each card to its data source based on file name prefix and add accumulation badges
     const nonAccumulating = new Set([
-      's_p_entidades_brasil.csv',
-      'moodys_local_ratings.csv',
-      'fitch_ratings_brasil.csv'
+      'standard_and_poors_entidades.csv',
+      'fitch_entidades.csv',
+      'moodys_entidades.csv',
+      'moodys_ratings.csv',
+      'fitch_ratings.csv'
     ]);
 
     cards.forEach(card => {
@@ -1750,7 +1752,7 @@
       const fileName = fileElement.textContent.trim().toLowerCase();
       let source = 'other';
 
-      if (fileName.startsWith('s_p_')) {
+      if (fileName.startsWith('standard_and_poors_') || fileName.startsWith('s_p_')) {
         source = 's_p';
       } else if (fileName.startsWith('moodys_')) {
         source = 'moodys';

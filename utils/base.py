@@ -187,7 +187,7 @@ def salvar_csv(
         cabecalho = merged
 
     # Determina datas presentes nos novos dados (para dedup simples)
-    datas_novas = {r.get("data_captura") for r in registros}
+    datas_novas = {r.get("data_captura") or r.get("dt_captura") for r in registros}
 
     # Determina chaves compostas dos novos dados (para dedup preciso)
     chaves_novas: set[tuple] | None = None
@@ -210,7 +210,8 @@ def salvar_csv(
                         substituidas += 1
                         continue
                 else:
-                    if linha.get("data_captura") in datas_novas:
+                    date_val = linha.get("data_captura") or linha.get("dt_captura")
+                    if date_val in datas_novas:
                         substituidas += 1
                         continue
                 linhas_anteriores.append(linha)
@@ -236,7 +237,7 @@ def salvar_csv(
         if registros:
             # Identifica a coluna de data no cabeçalho
             date_col = None
-            for candidate in ["data_captura", "data_referencia", "data", "rpt_dt"]:
+            for candidate in ["data_captura", "dt_captura", "data_referencia", "data", "rpt_dt"]:
                 if candidate in cabecalho:
                     date_col = candidate
                     break
@@ -320,7 +321,7 @@ def salvar_csv(
             # Adiciona nova entrada
             def get_source_from_filename(filename: str) -> str:
                 filename = filename.lower()
-                if filename.startswith('s_p_'):
+                if filename.startswith('standard_and_poors_') or filename.startswith('s_p_'):
                     return 's_p'
                 elif filename.startswith('moodys_'):
                     return 'moodys'

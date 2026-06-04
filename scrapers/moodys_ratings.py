@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-Scraper: Moody's Local – Lista de Classificações Vigentes (Brasil)
+Scraper: Moody's – Lista de Classificações Vigentes (Brasil)
 Fonte:   https://moodyslocal.com.br/
-Saída:   data/moodys_local_ratings.csv
+Saída:   data/moodys_ratings.csv
 
 A página disponibiliza um link direto para download do Excel de ratings.
 O scraper faz parse do HTML para encontrar o link usando curl_cffi para contornar
@@ -20,7 +20,6 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.utils.base import BaseScraper
-
 
 BASE_URL = "https://moodyslocal.com.br"
 
@@ -46,12 +45,22 @@ RENAME_MAP = {
 }
 
 
-class MoodysLocalRatingsScraper(BaseScraper):
-    name = "moodys_local_ratings"
+class MoodysRatingsScraper(BaseScraper):
+    name = "moodys_ratings"
     group = "ratings"
     enabled = True
-    phase = 1
+    phase = 2
     accumulate = False  # Sobrescreve o arquivo com a lista vigente atualizada
+
+    # Catálogo de Metadados
+    title = "Moody's — Emissores Brasil"
+    description = "Ratings de crédito atribuídos pela Moody's Local a emissores corporativos, financeiros, de financiamento estruturado e públicos no Brasil."
+    icon = "M"
+    icon_class = "icon-moodys"
+    badge = "Diário"
+    badge_class = "badge-daily"
+    tags = ["ratings", "moodys", "crédito", "emissores", "corporativos"]
+    source = "Moody's"
 
     def fetch(self) -> pd.DataFrame:
         from curl_cffi import requests
@@ -155,6 +164,5 @@ class MoodysLocalRatingsScraper(BaseScraper):
 
 
 if __name__ == "__main__":
-    scraper = MoodysLocalRatingsScraper()
+    scraper = MoodysRatingsScraper()
     scraper.run()
-

@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://github.com/PulseDataLabs/PulseRatingsBrasil">
-    <img src="logo.png" alt="PulseRatings Logo" width="220">
+    <img src="assets/full-logo.png" alt="Pulse Ratings Logo" width="220">
   </a>
 </p>
 
-<h1 align="center">PulseRatings Brasil</h1>
+<h1 align="center">Pulse Ratings Brasil</h1>
 
 <p align="center">
   <strong>Pipeline Serverless e Automatizado de Captura de Ratings de Crédito Brasileiros</strong>
@@ -20,7 +20,7 @@
 
 <hr>
 
-O **PulseRatings Brasil** é um pipeline de ETL (Extração, Transformação e Carga) serverless projetado para coletar, tratar e disponibilizar dados de ratings de crédito (corporativos e soberanos) das principais agências de classificação de risco em atuação no Brasil: **S&P Global**, **Moody's Local** e **Fitch Ratings** (em breve).
+O **Pulse Ratings Brasil** é um pipeline de ETL (Extração, Transformação e Carga) serverless projetado para coletar, tratar e disponibilizar dados de ratings de crédito (corporativos e soberanos) das principais agências de classificação de risco em atuação no Brasil: **S&P Global**, **Moody's Local** e **Fitch Ratings**.
 
 Ele funciona 100% de forma automatizada via **GitHub Actions**, salvando o histórico consolidado diretamente no repositório em formato CSV plano, sem custos com banco de dados ou servidores. Os dados tratados alimentam um dashboard interativo servido via **GitHub Pages**.
 
@@ -42,8 +42,8 @@ Ele funciona 100% de forma automatizada via **GitHub Actions**, salvando o hist�
 graph TD
     A[GitHub Actions Cron / Trigger] --> B[run_all.py Orchestrator]
     B -->|Dynamic Discovery| C[scrapers/ folder]
-    B -->|Executes Phase 1| D[Independent Scrapers: Moody's, S&P Entities]
-    B -->|Executes Phase 2| E[Dependent Scrapers: S&P Ratings]
+    B -->|Executes Phase 1| D[Independent Scrapers: Entities (Moody's, S&P, Fitch)]
+    B -->|Executes Phase 2| E[Dependent Scrapers: Ratings (Moody's, S&P, Fitch)]
     D --> F[data/*.csv files]
     E --> F
     B -->|Calls generate_catalog.py| G[data/datasets.json]
@@ -70,7 +70,7 @@ PulseRatingsBrasil/
 │   ├── utils/
 │   │   ├── __init__.py
 │   │   └── base.py                  # Classe base BaseScraper
-│   └── *.py                         # Scripts de coleta (S&P, Moody's, Fitch)
+│   └── *.py                         # Scripts de coleta (duplas entidades/ratings por fonte)
 ├── utils/                           # Utilitários compartilhados auxiliares
 │   ├── __init__.py
 │   ├── base.py                      # Salvamento de CSVs e helpers HTTP
@@ -121,7 +121,7 @@ PulseRatingsBrasil/
 
 *   **Executar apenas um scraper específico:**
     ```bash
-    python run_all.py --scraper moodys_local_ratings
+    python run_all.py --scraper moodys_ratings
     ```
 
 *   **Regenerar apenas o catálogo `datasets.json`:**

@@ -119,8 +119,8 @@ def _parse_ratings_next_data(html: str) -> list[dict]:
         return []
 
 
-class SPRatingsBrasilScraper(BaseScraper):
-    name = "s_p_ratings_brasil"
+class StandardAndPoorsRatingsScraper(BaseScraper):
+    name = "standard_and_poors_ratings"
     group = "ratings"
     enabled = True
     phase = 2
@@ -132,16 +132,26 @@ class SPRatingsBrasilScraper(BaseScraper):
     ]
     accumulate = True
 
+    # Catálogo de Metadados
+    title = 'S&P Global — Emissores Brasil'
+    description = 'Histórico consolidado de notas de rating atribuídas pela S&P Global Ratings a emissores corporativos, soberanos e de infraestrutura no Brasil.'
+    icon = 'S&P'
+    icon_class = 'icon-sp'
+    badge = 'Acumulativo'
+    badge_class = 'badge-cumulative'
+    tags = ['ratings', 's&p', 'crédito', 'emissores', 'corporativos']
+    source = 'S&P Global'
+
     def fetch(self) -> pd.DataFrame:
         entidades_csv = os.path.join(
             os.path.dirname(os.path.dirname(__file__)),
             "data",
-            "s_p_entidades_brasil.csv",
+            "standard_and_poors_entidades.csv",
         )
         if not os.path.exists(entidades_csv):
             self.logger.warning(
                 f"Arquivo de entidades não encontrado: {entidades_csv}. "
-                "Execute s_p_entidades_brasil.py antes."
+                "Execute standard_and_poors_entidades.py antes."
             )
             return pd.DataFrame()
 
@@ -157,7 +167,7 @@ class SPRatingsBrasilScraper(BaseScraper):
         total = len(df_entidades)
 
         for i, row in df_entidades.iterrows():
-            nome = row.get("nome", "")
+            nome = row.get("no_entidade", "")
             link = row.get("link", "")
             self.logger.info(f"[{i+1}/{total}] {nome}")
 
@@ -182,7 +192,7 @@ class SPRatingsBrasilScraper(BaseScraper):
                     continue
                 
                 df_table = pd.DataFrame(ratings_list)
-                df_table["nome"] = nome
+                df_table["no_entidade"] = nome
                 df_table["link"] = link
                 frames.append(df_table)
                 
@@ -200,6 +210,6 @@ class SPRatingsBrasilScraper(BaseScraper):
 
 
 if __name__ == "__main__":
-    scraper = SPRatingsBrasilScraper()
+    scraper = StandardAndPoorsRatingsScraper()
     scraper.run()
 

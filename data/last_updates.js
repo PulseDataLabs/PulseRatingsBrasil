@@ -14,5 +14,29 @@ window.PULSERATINGS_LAST_UPDATES = {
   "s_p_ratings_brasil.csv": {
     "min": "2026-06-04",
     "max": "2026-06-04"
+  },
+  "fitch_entidades.csv": {
+    "min": "2026-06-04",
+    "max": "2026-06-04"
+  },
+  "standard_and_poors_entidades.csv": {
+    "min": "2026-06-04",
+    "max": "2026-06-04"
+  },
+  "moodys_entidades.csv": {
+    "min": "2026-06-04",
+    "max": "2026-06-04"
+  },
+  "fitch_ratings.csv": {
+    "min": "2026-06-04",
+    "max": "2026-06-04"
+  },
+  "moodys_ratings.csv": {
+    "min": "2026-06-04",
+    "max": "2026-06-04"
+  },
+  "standard_and_poors_ratings.csv": {
+    "min": "2026-06-04",
+    "max": "2026-06-04"
   }
 };

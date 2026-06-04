@@ -89,17 +89,11 @@ class BaseScraper:
             registros = df_cleaned.to_dict(orient="records")
             cabecalho = list(df_cleaned.columns)
 
-            # Garante que data_captura esteja preenchido para salvamento correto
+            # Garante que a coluna de data esteja preenchida para salvamento correto
             data_captura, _ = agora_brt()
             for r in registros:
-                if "data_captura" not in r:
-                    if "dt_captura" in r:
-                        r["data_captura"] = r["dt_captura"]
-                    else:
-                        r["data_captura"] = data_captura
-
-            if "data_captura" not in cabecalho:
-                cabecalho.insert(0, "data_captura")
+                if "data_captura" not in r and "dt_captura" not in r:
+                    r["data_captura"] = data_captura
 
             salvar_csv(
                 arquivo=self.output_file,

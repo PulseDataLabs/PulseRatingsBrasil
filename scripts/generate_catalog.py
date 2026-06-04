@@ -127,7 +127,7 @@ def generate():
             fallback = old_datasets.get(f"{module_name}.csv", {})
 
         # Determina o ícone e a classe do ícone com base no module_name
-        if "s_p" in module_name:
+        if "standard_and_poors" in module_name or "s_p" in module_name:
             default_icon = "S&P"
             default_icon_class = "icon-sp"
         elif "moody" in module_name:

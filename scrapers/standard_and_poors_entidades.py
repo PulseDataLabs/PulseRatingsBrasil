@@ -44,13 +44,23 @@ EMISSORES_FIXOS = [
 ]
 
 
-class SPEntidadesBrasilScraper(BaseScraper):
-    name = "s_p_entidades_brasil"
+class StandardAndPoorsEntidadesScraper(BaseScraper):
+    name = "standard_and_poors_entidades"
     group = "ratings"
     enabled = True
     phase = 1
     chaves_dedup = ["link"]
     accumulate = False
+
+    # Catálogo de Metadados
+    title = 'S&P Global — Entidades Brasil'
+    description = 'Entidades com rating de crédito ativo ou histórico de classificação regulatória pela S&P Global Ratings no Brasil.'
+    icon = 'S&P'
+    icon_class = 'icon-sp'
+    badge = 'Diário'
+    badge_class = 'badge-daily'
+    tags = ['ratings', 's&p', 'entidades', 'emissores']
+    source = 'S&P Global'
 
     def _get_api_key(self) -> str:
         """
@@ -182,7 +192,7 @@ class SPEntidadesBrasilScraper(BaseScraper):
         for link, nome in resultados.items():
             rows.append({
                 "dt_captura": today_str,
-                "nome": nome,
+                "no_entidade": nome,
                 "link": link
             })
 
@@ -190,6 +200,6 @@ class SPEntidadesBrasilScraper(BaseScraper):
 
 
 if __name__ == "__main__":
-    scraper = SPEntidadesBrasilScraper()
+    scraper = StandardAndPoorsEntidadesScraper()
     scraper.run()
 

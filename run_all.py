@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-PulseFlat – Orquestrador de scrapers
+Pulse Ratings Brasil – Orquestrador de scrapers
 Uso:
     python run_all.py                        # executa todos os scrapers
     python run_all.py --group anbima         # apenas o grupo anbima
@@ -9,7 +9,7 @@ Uso:
     python run_all.py --group bcb            # apenas o grupo bcb
     python run_all.py --group cvm            # apenas o grupo cvm
     python run_all.py --group ibge           # apenas o grupo ibge
-    python run_all.py --group ratings        # apenas o grupo ratings (S&P, Moody's)
+    python run_all.py --group ratings        # apenas o grupo ratings (S&P, Moody's, Fitch)
     python run_all.py --group misc           # Yahoo Finance, Investing, B3 séries
     python run_all.py --scraper anbima_idka  # apenas um scraper específico
 """
@@ -273,8 +273,8 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
     # Executa Fase 2
     if phase2_targets:
         logger.info(f"=== FASE 2: Executando {len(phase2_targets)} scrapers dependentes ===")
-        if "s_p_entidades_brasil" in results and not results["s_p_entidades_brasil"][0]:
-            logger.warning("Aviso: s_p_entidades_brasil falhou na Fase 1. A Fase 2 pode falhar ou usar dados antigos.")
+        if "standard_and_poors_entidades" in results and not results["standard_and_poors_entidades"][0]:
+            logger.warning("Aviso: standard_and_poors_entidades falhou na Fase 1. A Fase 2 de S&P pode falhar ou usar dados antigos.")
             
         phase2_results = run_scrapers_subset(phase2_targets, parallel, max_workers)
         results.update(phase2_results)
@@ -305,7 +305,7 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="PulseFlat – orquestrador de scrapers")
+    parser = argparse.ArgumentParser(description="Pulse Ratings Brasil – orquestrador de scrapers")
     
     # Carrega metadados dinamicamente para definir opções da linha de comando
     scrapers_registry = discover_scrapers()

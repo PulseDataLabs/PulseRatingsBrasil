@@ -1,7 +1,7 @@
 [
   {
-    "title": "Moodys Local Ratings",
-    "files": "moodys_local_ratings.csv",
+    "title": "Moodys Ratings",
+    "files": "moodys_ratings.csv",
     "source": "moodys",
     "fields": [
       {
@@ -57,8 +57,8 @@
     ]
   },
   {
-    "title": "Fitch Ratings Brasil",
-    "files": "fitch_ratings_brasil.csv",
+    "title": "Fitch Ratings",
+    "files": "fitch_ratings.csv",
     "source": "fitch",
     "fields": [
       {
@@ -67,7 +67,7 @@
         "example": "2026-06-04"
       },
       {
-        "name": "nome",
+        "name": "no_entidade",
         "type": "str",
         "example": "Petróleo Brasileiro S.A. - Petrobras"
       },
@@ -104,17 +104,12 @@
     ]
   },
   {
-    "title": "S P Entidades Brasil",
-    "files": "s_p_entidades_brasil.csv",
+    "title": "Standard And Poors Entidades",
+    "files": "standard_and_poors_entidades.csv",
     "source": "s_p",
     "fields": [
       {
-        "name": "data_captura",
-        "type": "date",
-        "example": "2026-06-04"
-      },
-      {
-        "name": "nome",
+        "name": "no_entidade",
         "type": "str",
         "example": "AEGEA Saneamento e Participacoes S.A."
       },
@@ -126,15 +121,10 @@
     ]
   },
   {
-    "title": "S P Ratings Brasil",
-    "files": "s_p_ratings_brasil.csv",
+    "title": "Standard And Poors Ratings",
+    "files": "standard_and_poors_ratings.csv",
     "source": "s_p",
     "fields": [
-      {
-        "name": "data_captura",
-        "type": "date",
-        "example": "2026-06-04"
-      },
       {
         "name": "Tipo de Rating",
         "type": "str",
@@ -171,7 +161,7 @@
         "example": "2026-04-20"
       },
       {
-        "name": "nome",
+        "name": "no_entidade",
         "type": "str",
         "example": "AEGEA Saneamento e Participacoes S.A."
       },
@@ -179,6 +169,40 @@
         "name": "link",
         "type": "str",
         "example": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1001151"
+      }
+    ]
+  },
+  {
+    "title": "Moodys Entidades",
+    "files": "moodys_entidades.csv",
+    "source": "moodys",
+    "fields": [
+      {
+        "name": "no_entidade",
+        "type": "str",
+        "example": "Western Asset Management DTVM Ltda."
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": ""
+      }
+    ]
+  },
+  {
+    "title": "Fitch Entidades",
+    "files": "fitch_entidades.csv",
+    "source": "fitch",
+    "fields": [
+      {
+        "name": "no_entidade",
+        "type": "str",
+        "example": "Petróleo Brasileiro S.A. - Petrobras"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80124508"
       }
     ]
   }

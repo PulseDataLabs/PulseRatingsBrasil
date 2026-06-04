@@ -1,7 +1,7 @@
 [
   {
     "title": "Fitch Ratings — Emissores Brasil",
-    "file": "fitch_ratings_brasil.csv",
+    "file": "fitch_ratings.csv",
     "description": "Ratings de crédito de longo e curto prazo atribuídos pela Fitch Ratings a emissores corporativos, financeiros e soberanos no Brasil.",
     "icon": "F",
     "iconClass": "icon-fitch",
@@ -15,48 +15,93 @@
       "corporativos"
     ],
     "source": "Fitch Ratings",
-    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_ratings_brasil.csv"
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_ratings.csv"
   },
   {
-    "title": "Moodys Local Ratings",
-    "file": "moodys_local_ratings.csv",
-    "description": "Sem descrição fornecida.",
+    "title": "Fitch Ratings — Entidades Brasil",
+    "file": "fitch_entidades.csv",
+    "description": "Entidades brasileiras com rating de crédito ativo atribuído pela Fitch Ratings.",
+    "icon": "F",
+    "iconClass": "icon-fitch",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
+    "tags": [
+      "ratings",
+      "fitch",
+      "entidades",
+      "emissores"
+    ],
+    "source": "Fitch Ratings",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_entidades.csv"
+  },
+  {
+    "title": "Moody's — Emissores Brasil",
+    "file": "moodys_ratings.csv",
+    "description": "Ratings de crédito atribuídos pela Moody's Local a emissores corporativos, financeiros, de financiamento estruturado e públicos no Brasil.",
     "icon": "M",
     "iconClass": "icon-moodys",
     "badge": "Diário",
     "badgeClass": "badge-daily",
     "tags": [
-      "ratings"
+      "ratings",
+      "moodys",
+      "crédito",
+      "emissores",
+      "corporativos"
     ],
-    "source": "RATINGS",
-    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_local_ratings.csv"
+    "source": "Moody's",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_ratings.csv"
   },
   {
-    "title": "S P Entidades Brasil",
-    "file": "s_p_entidades_brasil.csv",
-    "description": "Sem descrição fornecida.",
+    "title": "Moody's — Entidades Brasil",
+    "file": "moodys_entidades.csv",
+    "description": "Lista de entidades (emissores corporativos, financeiros e públicos) com rating vigente pela Moody's no Brasil.",
+    "icon": "M",
+    "iconClass": "icon-moodys",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
+    "tags": [
+      "ratings",
+      "moodys",
+      "entidades",
+      "emissores"
+    ],
+    "source": "Moody's",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_entidades.csv"
+  },
+  {
+    "title": "S&P Global — Emissores Brasil",
+    "file": "standard_and_poors_ratings.csv",
+    "description": "Histórico consolidado de notas de rating atribuídas pela S&P Global Ratings a emissores corporativos, soberanos e de infraestrutura no Brasil.",
+    "icon": "S&P",
+    "iconClass": "icon-sp",
+    "badge": "Acumulativo",
+    "badgeClass": "badge-cumulative",
+    "tags": [
+      "ratings",
+      "s&p",
+      "crédito",
+      "emissores",
+      "corporativos"
+    ],
+    "source": "S&P Global",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/standard_and_poors_ratings.csv"
+  },
+  {
+    "title": "S&P Global — Entidades Brasil",
+    "file": "standard_and_poors_entidades.csv",
+    "description": "Entidades com rating de crédito ativo ou histórico de classificação regulatória pela S&P Global Ratings no Brasil.",
     "icon": "S&P",
     "iconClass": "icon-sp",
     "badge": "Diário",
     "badgeClass": "badge-daily",
     "tags": [
-      "ratings"
+      "ratings",
+      "s&p",
+      "entidades",
+      "emissores"
     ],
-    "source": "RATINGS",
-    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/s_p_entidades_brasil.csv"
-  },
-  {
-    "title": "S P Ratings Brasil",
-    "file": "s_p_ratings_brasil.csv",
-    "description": "Sem descrição fornecida.",
-    "icon": "S&P",
-    "iconClass": "icon-sp",
-    "badge": "Diário",
-    "badgeClass": "badge-daily",
-    "tags": [
-      "ratings"
-    ],
-    "source": "RATINGS",
-    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/s_p_ratings_brasil.csv"
+    "source": "S&P Global",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/standard_and_poors_entidades.csv"
   }
 ]
