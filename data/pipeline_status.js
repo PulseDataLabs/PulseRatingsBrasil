@@ -1,6 +1,6 @@
 window.PULSERATINGS_PIPELINE_STATUS = {
-  "timestamp": "2026-06-04T14:58:46.511583",
-  "elapsed_seconds": 461.63968205451965,
+  "timestamp": "2026-06-04T15:32:28.058221",
+  "elapsed_seconds": 593.307012796402,
   "status": "success",
   "summary": {
     "total": 4,
@@ -11,27 +11,27 @@ window.PULSERATINGS_PIPELINE_STATUS = {
   "scrapers": {
     "moodys_local_ratings": {
       "status": "success",
-      "elapsed_seconds": 41.638246059417725,
+      "elapsed_seconds": 68.37548398971558,
       "error": null,
-      "timestamp": "2026-06-04T14:58:46.511817"
+      "timestamp": "2026-06-04T15:32:28.058319"
     },
     "s_p_ratings_brasil": {
       "status": "success",
-      "elapsed_seconds": 420.0004382133484,
+      "elapsed_seconds": 524.9290347099304,
       "error": null,
-      "timestamp": "2026-06-04T14:58:46.511818"
+      "timestamp": "2026-06-04T15:32:28.058321"
     },
     "s_p_entidades_brasil": {
       "status": "success",
-      "elapsed_seconds": 29.04500389099121,
+      "elapsed_seconds": 26.259451389312744,
       "error": null,
-      "timestamp": "2026-06-04T14:58:46.511815"
+      "timestamp": "2026-06-04T15:32:28.058317"
     },
     "fitch_ratings_brasil": {
       "status": "success",
-      "elapsed_seconds": 2.383815050125122,
+      "elapsed_seconds": 0.8589105606079102,
       "error": null,
-      "timestamp": "2026-06-04T14:58:46.511811"
+      "timestamp": "2026-06-04T15:32:28.058312"
     }
   },
   "drifts": {}
