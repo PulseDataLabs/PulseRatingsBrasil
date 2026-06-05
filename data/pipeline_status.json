@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-04T19:23:27.197601",
-  "elapsed_seconds": 415.28751492500305,
-  "status": "warning",
+  "timestamp": "2026-06-05T09:14:58.184907",
+  "elapsed_seconds": 392.57956552505493,
+  "status": "success",
   "summary": {
     "total": 6,
     "success": 6,
     "failed": 0,
-    "drifts": 1
+    "drifts": 0
   },
   "scrapers": {
     "moodys_local_ratings": {
@@ -35,50 +35,40 @@
     },
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 13.410743236541748,
+      "elapsed_seconds": 13.564257860183716,
       "error": null,
-      "timestamp": "2026-06-04T19:23:27.197722"
+      "timestamp": "2026-06-05T09:14:58.185013"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 25.185792446136475,
+      "elapsed_seconds": 25.4663827419281,
       "error": null,
-      "timestamp": "2026-06-04T19:23:27.197725"
+      "timestamp": "2026-06-05T09:14:58.185016"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 0.6822593212127686,
+      "elapsed_seconds": 0.40715837478637695,
       "error": null,
-      "timestamp": "2026-06-04T19:23:27.197716"
+      "timestamp": "2026-06-05T09:14:58.185008"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 12.977855205535889,
+      "elapsed_seconds": 11.118546485900879,
       "error": null,
-      "timestamp": "2026-06-04T19:23:27.197729"
+      "timestamp": "2026-06-05T09:14:58.185019"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 0.053072452545166016,
+      "elapsed_seconds": 0.029089689254760742,
       "error": null,
-      "timestamp": "2026-06-04T19:23:27.197727"
+      "timestamp": "2026-06-05T09:14:58.185017"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 390.0986797809601,
+      "elapsed_seconds": 367.10951352119446,
       "error": null,
-      "timestamp": "2026-06-04T19:23:27.197731"
+      "timestamp": "2026-06-05T09:14:58.185021"
     }
   },
-  "drifts": {
-    "fitch_ratings.csv": {
-      "added": [
-        "Ação de Rating"
-      ],
-      "removed": [
-        "Data do CreditWatch/ Perspectiva"
-      ],
-      "timestamp": "2026-06-04T19:17:10.068664"
-    }
-  }
+  "drifts": {}
 }

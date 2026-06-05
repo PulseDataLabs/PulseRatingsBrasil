@@ -16,27 +16,27 @@ window.PULSERATINGS_LAST_UPDATES = {
     "max": "2026-06-04"
   },
   "fitch_emissores.csv": {
-    "min": "2026-06-04",
-    "max": "2026-06-04"
+    "min": "2026-06-05",
+    "max": "2026-06-05"
   },
   "standard_and_poors_emissores.csv": {
-    "min": "2026-06-04",
-    "max": "2026-06-04"
+    "min": "2026-06-05",
+    "max": "2026-06-05"
   },
   "moodys_emissores.csv": {
     "min": "2026-06-04",
     "max": "2026-06-04"
   },
   "fitch_ratings.csv": {
-    "min": "2026-06-04",
-    "max": "2026-06-04"
+    "min": "2026-06-05",
+    "max": "2026-06-05"
   },
   "moodys_ratings.csv": {
     "min": "2026-06-04",
     "max": "2026-06-04"
   },
   "standard_and_poors_ratings.csv": {
-    "min": "2026-06-04",
-    "max": "2026-06-04"
+    "min": "2026-06-05",
+    "max": "2026-06-05"
   }
 };

@@ -57,6 +57,11 @@
     "source": "fitch",
     "fields": [
       {
+        "name": "data_captura",
+        "type": "date",
+        "example": ""
+      },
+      {
         "name": "no_entidade",
         "type": "str",
         "example": "Multiplan Empreendimentos Imobiliarios S.A."
