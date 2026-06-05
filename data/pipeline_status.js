@@ -1,12 +1,12 @@
 window.PULSERATINGS_PIPELINE_STATUS = {
-  "timestamp": "2026-06-05T09:14:58.184907",
-  "elapsed_seconds": 392.57956552505493,
-  "status": "success",
+  "timestamp": "2026-06-05T14:29:09.530319",
+  "elapsed_seconds": 403.2877748012543,
+  "status": "warning",
   "summary": {
     "total": 6,
     "success": 6,
     "failed": 0,
-    "drifts": 0
+    "drifts": 1
   },
   "scrapers": {
     "moodys_local_ratings": {
@@ -35,40 +35,48 @@ window.PULSERATINGS_PIPELINE_STATUS = {
     },
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 13.564257860183716,
+      "elapsed_seconds": 11.432933807373047,
       "error": null,
-      "timestamp": "2026-06-05T09:14:58.185013"
+      "timestamp": "2026-06-05T14:29:09.530426"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 25.4663827419281,
+      "elapsed_seconds": 20.34323525428772,
       "error": null,
-      "timestamp": "2026-06-05T09:14:58.185016"
+      "timestamp": "2026-06-05T14:29:09.530429"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 0.40715837478637695,
+      "elapsed_seconds": 0.6216001510620117,
       "error": null,
-      "timestamp": "2026-06-05T09:14:58.185008"
+      "timestamp": "2026-06-05T14:29:09.530421"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 11.118546485900879,
+      "elapsed_seconds": 10.833322286605835,
       "error": null,
-      "timestamp": "2026-06-05T09:14:58.185019"
+      "timestamp": "2026-06-05T14:29:09.530433"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 0.029089689254760742,
+      "elapsed_seconds": 0.03149008750915527,
       "error": null,
-      "timestamp": "2026-06-05T09:14:58.185017"
+      "timestamp": "2026-06-05T14:29:09.530431"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 367.10951352119446,
+      "elapsed_seconds": 382.94111919403076,
       "error": null,
-      "timestamp": "2026-06-05T09:14:58.185021"
+      "timestamp": "2026-06-05T14:29:09.530434"
     }
   },
-  "drifts": {}
+  "drifts": {
+    "fitch_ratings.csv": {
+      "added": [],
+      "removed": [
+        "data_captura"
+      ],
+      "timestamp": "2026-06-05T14:22:57.409870"
+    }
+  }
 };
