@@ -95,7 +95,7 @@
   },
   {
     "title": "S&P — Emissores",
-    "files": "standard_and_poors_entidades.csv",
+    "files": "standard_and_poors_emissores.csv",
     "source": "s_p",
     "fields": [
       {
@@ -164,7 +164,7 @@
   },
   {
     "title": "Moody's — Emissores",
-    "files": "moodys_entidades.csv",
+    "files": "moodys_emissores.csv",
     "source": "moodys",
     "fields": [
       {
@@ -181,7 +181,7 @@
   },
   {
     "title": "Fitch — Ratings Emissores",
-    "files": "fitch_entidades.csv",
+    "files": "fitch_emissores.csv",
     "source": "fitch",
     "fields": [
       {

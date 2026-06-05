@@ -139,7 +139,7 @@ O orquestrador `run_all.py` organiza os scrapers em grupos. Este repositório co
 
 | Grupo | Descrição | Scrapers |
 |-------|-----------|----------|
-| `ratings` | Ratings de crédito (S&P, Moody's, Fitch) | `standard_and_poors_ratings`, `standard_and_poors_entidades`, `moodys_ratings`, `moodys_entidades`, `fitch_ratings`, `fitch_entidades` |
+| `ratings` | Ratings de crédito (S&P, Moody's, Fitch) | `standard_and_poors_ratings`, `standard_and_poors_emissores`, `moodys_ratings`, `moodys_emissores`, `fitch_ratings`, `fitch_emissores` |
 | `anbima` | Dados ANBIMA | *(implementação externa)* |
 | `b3` | Dados B3 | *(implementação externa)* |
 | `bcb` | Dados Banco Central | *(implementação externa)* |

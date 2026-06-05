@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-Scraper: Moody's – Lista de Entidades Vigentes (Brasil)
+Scraper: Moody's – Lista de Emissores Vigentes (Brasil)
 Fonte:   https://moodyslocal.com.br/
-Saída:   data/moodys_entidades.csv
+Saída:   data/moodys_emissores.csv
 """
 import os
 import sys
@@ -20,8 +20,8 @@ from scrapers.utils.base import BaseScraper
 BASE_URL = "https://moodyslocal.com.br"
 
 
-class MoodysEntidadesScraper(BaseScraper):
-    name = "moodys_entidades"
+class MoodysEmissoresScraper(BaseScraper):
+    name = "moodys_emissores"
     group = "ratings"
     enabled = True
     phase = 1
@@ -30,12 +30,12 @@ class MoodysEntidadesScraper(BaseScraper):
 
     # Catálogo de Metadados
     title = "Moody's — Emissores"
-    description = "Lista de entidades (emissores corporativos, financeiros e públicos) com rating vigente pela Moody's no Brasil."
+    description = "Lista de emissores (emissores corporativos, financeiros e públicos) com rating vigente pela Moody's no Brasil."
     icon = "M"
     icon_class = "icon-moodys"
     badge = "Diário"
     badge_class = "badge-daily"
-    tags = ["ratings", "moodys", "entidades", "emissores"]
+    tags = ["ratings", "moodys", "emissores", "emissores"]
     source = "Moody's"
 
     def fetch(self) -> pd.DataFrame:
@@ -84,7 +84,7 @@ class MoodysEntidadesScraper(BaseScraper):
             self.logger.error(f"Erro ao carregar planilha: {e}")
             return pd.DataFrame()
 
-        self.logger.info("Processando linhas da planilha de entidades...")
+        self.logger.info("Processando linhas da planilha de emissores...")
         headers = None
         data_rows = []
 
@@ -126,4 +126,4 @@ class MoodysEntidadesScraper(BaseScraper):
 
 
 if __name__ == "__main__":
-    MoodysEntidadesScraper().run()
+    MoodysEmissoresScraper().run()

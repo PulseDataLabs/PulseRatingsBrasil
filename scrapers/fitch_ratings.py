@@ -64,7 +64,7 @@ CABECALHO = [
 ]
 
 PAGE_SIZE = 100
-MAX_PAGES = 20  # Segurança: máximo 2000 entidades
+MAX_PAGES = 20  # Segurança: máximo 2000 emissores
 
 
 def _formatar_data(iso_str: str) -> str:
@@ -78,7 +78,7 @@ def _formatar_data(iso_str: str) -> str:
 
 
 def _obter_ratings_via_api() -> list[dict]:
-    """Obtém todos os ratings de entidades brasileiras da Fitch via GraphQL API."""
+    """Obtém todos os ratings de emissores brasileiros da Fitch via GraphQL API."""
     from curl_cffi import requests as crequests
 
     dt_captura, _ = agora_brt()
@@ -110,14 +110,14 @@ def _obter_ratings_via_api() -> list[dict]:
 
         if total is None:
             total = search.get("totalEntityHits", 0)
-            log.info(f"Total de entidades brasileiras na Fitch: {total}")
+            log.info(f"Total de emissores brasileiros na Fitch: {total}")
 
         entity_hits = search.get("entity", [])
         if not entity_hits:
-            log.info("Nenhuma entidade retornada nesta página. Fim da paginação.")
+            log.info("Nenhum emissor retornado nesta página. Fim da paginação.")
             break
 
-        entidades_com_rating = 0
+        emissores_com_rating = 0
         for hit in entity_hits:
             nome = limpar(hit.get("name", "").strip())
             permalink = hit.get("permalink", "").strip()
@@ -130,7 +130,7 @@ def _obter_ratings_via_api() -> list[dict]:
             if not ratings:
                 continue
 
-            entidades_com_rating += 1
+            emissores_com_rating += 1
             for r in ratings:
                 alert_desc = r.get("ratingAlertDescription") or ""
                 if alert_desc == "-":
@@ -148,13 +148,13 @@ def _obter_ratings_via_api() -> list[dict]:
                 })
 
         log.info(
-            f"  Página {page}: {len(entity_hits)} entidades, "
-            f"{entidades_com_rating} com ratings (acumulado: {len(rows)} ratings)"
+            f"  Página {page}: {len(entity_hits)} emissores, "
+            f"{emissores_com_rating} com ratings (acumulado: {len(rows)} ratings)"
         )
 
         offset += PAGE_SIZE
         if offset >= total:
-            log.info("Todas as entidades foram processadas.")
+            log.info("Todos os emissores foram processados.")
             break
 
         # Pausa entre requisições para evitar rate-limiting

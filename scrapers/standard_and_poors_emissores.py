@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-Scraper: S&P Global – Entidades com rating no Brasil
+Scraper: S&P Global – Emissores com rating no Brasil
 Fonte:   https://brazil.ratings.spglobal.com/ratings/pt/regulatory/consolidated-search-entity/
-Saída:   data/s_p_entidades_brasil.csv
+Saída:   data/s_p_emissores_brasil.csv
 
 Busca todos os emissores utilizando a API de busca da S&P Brasil.
 """
@@ -44,8 +44,8 @@ EMISSORES_FIXOS = [
 ]
 
 
-class StandardAndPoorsEntidadesScraper(BaseScraper):
-    name = "standard_and_poors_entidades"
+class StandardAndPoorsEmissoresScraper(BaseScraper):
+    name = "standard_and_poors_emissores"
     group = "ratings"
     enabled = True
     phase = 1
@@ -54,12 +54,12 @@ class StandardAndPoorsEntidadesScraper(BaseScraper):
 
     # Catálogo de Metadados
     title = 'S&P — Emissores'
-    description = 'Entidades com rating de crédito ativo ou histórico de classificação regulatória pela S&P Global Ratings no Brasil.'
+    description = 'Emissores com rating de crédito ativo ou histórico de classificação regulatória pela S&P Global Ratings no Brasil.'
     icon = 'S&P'
     icon_class = 'icon-sp'
     badge = 'Diário'
     badge_class = 'badge-daily'
-    tags = ['ratings', 's&p', 'entidades', 'emissores']
+    tags = ['ratings', 's&p', 'emissores', 'emissores']
     source = 'S&P'
 
     def _get_api_key(self) -> str:
@@ -184,7 +184,7 @@ class StandardAndPoorsEntidadesScraper(BaseScraper):
             if link not in resultados:
                 resultados[link] = emissor["nome"]
 
-        self.logger.info(f"Busca finalizada. Total de entidades únicas encontradas: {len(resultados)}")
+        self.logger.info(f"Busca finalizada. Total de emissores únicas encontradas: {len(resultados)}")
 
         # Converte para DataFrame no formato esperado
         rows = []
@@ -200,6 +200,6 @@ class StandardAndPoorsEntidadesScraper(BaseScraper):
 
 
 if __name__ == "__main__":
-    scraper = StandardAndPoorsEntidadesScraper()
+    scraper = StandardAndPoorsEmissoresScraper()
     scraper.run()
 

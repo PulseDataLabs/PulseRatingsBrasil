@@ -5,7 +5,7 @@ Scraper: S&P Global – Ratings de emissores brasileiros
 Fonte:   https://brazil.ratings.spglobal.com/
 Saída:   data/s_p_ratings_brasil.csv
 
-Para cada entidade listada em data/s_p_entidades_brasil.csv,
+Para cada emissor listado em data/s_p_emissores_brasil.csv,
 acessa a página de detalhes e extrai a tabela de ratings usando a estrutura Next.js (__NEXT_DATA__).
 """
 import os
@@ -143,30 +143,30 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
     source = 'S&P'
 
     def fetch(self) -> pd.DataFrame:
-        entidades_csv = os.path.join(
+        emissores_csv = os.path.join(
             os.path.dirname(os.path.dirname(__file__)),
             "data",
-            "standard_and_poors_entidades.csv",
+            "standard_and_poors_emissores.csv",
         )
-        if not os.path.exists(entidades_csv):
+        if not os.path.exists(emissores_csv):
             self.logger.warning(
-                f"Arquivo de entidades não encontrado: {entidades_csv}. "
-                "Execute standard_and_poors_entidades.py antes."
+                f"Arquivo de emissores não encontrado: {emissores_csv}. "
+                "Execute standard_and_poors_emissores.py antes."
             )
             return pd.DataFrame()
 
-        df_entidades = pd.read_csv(entidades_csv)
-        if "link" not in df_entidades.columns:
+        df_emissores = pd.read_csv(emissores_csv)
+        if "link" not in df_emissores.columns:
             self.logger.warning(
-                "Coluna 'link' não encontrada no CSV de entidades."
+                "Coluna 'link' não encontrada no CSV de emissores."
             )
             return pd.DataFrame()
 
         session = requests.Session()
         frames = []
-        total = len(df_entidades)
+        total = len(df_emissores)
 
-        for i, row in df_entidades.iterrows():
+        for i, row in df_emissores.iterrows():
             nome = row.get("no_entidade", "")
             link = row.get("link", "")
             self.logger.info(f"[{i+1}/{total}] {nome}")

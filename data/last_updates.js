@@ -7,7 +7,7 @@ window.PULSERATINGS_LAST_UPDATES = {
     "min": "2026-06-04",
     "max": "2026-06-04"
   },
-  "s_p_entidades_brasil.csv": {
+  "s_p_emissores_brasil.csv": {
     "min": "2026-06-04",
     "max": "2026-06-04"
   },
@@ -15,15 +15,15 @@ window.PULSERATINGS_LAST_UPDATES = {
     "min": "2026-06-04",
     "max": "2026-06-04"
   },
-  "fitch_entidades.csv": {
+  "fitch_emissores.csv": {
     "min": "2026-06-04",
     "max": "2026-06-04"
   },
-  "standard_and_poors_entidades.csv": {
+  "standard_and_poors_emissores.csv": {
     "min": "2026-06-04",
     "max": "2026-06-04"
   },
-  "moodys_entidades.csv": {
+  "moodys_emissores.csv": {
     "min": "2026-06-04",
     "max": "2026-06-04"
   },

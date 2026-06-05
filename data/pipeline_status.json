@@ -21,7 +21,7 @@
       "error": null,
       "timestamp": "2026-06-04T17:35:16.936756"
     },
-    "s_p_entidades_brasil": {
+    "s_p_emissores_brasil": {
       "status": "success",
       "elapsed_seconds": 29.869667053222656,
       "error": null,
@@ -33,19 +33,19 @@
       "error": null,
       "timestamp": "2026-06-04T17:35:16.936746"
     },
-    "fitch_entidades": {
+    "fitch_emissores": {
       "status": "success",
       "elapsed_seconds": 13.410743236541748,
       "error": null,
       "timestamp": "2026-06-04T19:23:27.197722"
     },
-    "standard_and_poors_entidades": {
+    "standard_and_poors_emissores": {
       "status": "success",
       "elapsed_seconds": 25.185792446136475,
       "error": null,
       "timestamp": "2026-06-04T19:23:27.197725"
     },
-    "moodys_entidades": {
+    "moodys_emissores": {
       "status": "success",
       "elapsed_seconds": 0.6822593212127686,
       "error": null,

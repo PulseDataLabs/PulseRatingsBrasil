@@ -273,9 +273,9 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
     # Executa Fase 2
     if phase2_targets:
         logger.info(f"=== FASE 2: Executando {len(phase2_targets)} scrapers dependentes ===")
-        if "standard_and_poors_entidades" in results and not results["standard_and_poors_entidades"][0]:
-            logger.warning("Aviso: standard_and_poors_entidades falhou na Fase 1. A Fase 2 de S&P pode falhar ou usar dados antigos.")
-            
+        if "standard_and_poors_emissores" in results and not results["standard_and_poors_emissores"][0]:
+
+            logger.warning("Aviso: standard_and_poors_emissores falhou na Fase 1. A Fase 2 de S&P pode falhar ou usar dados antigos.")
         phase2_results = run_scrapers_subset(phase2_targets, parallel, max_workers)
         results.update(phase2_results)
 
