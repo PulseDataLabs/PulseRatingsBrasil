@@ -35,7 +35,7 @@ class MoodysEmissoresScraper(BaseScraper):
     icon_class = "icon-moodys"
     badge = "Diário"
     badge_class = "badge-daily"
-    tags = ["ratings", "moodys", "emissores", "emissores"]
+    tags = ["ratings", "moodys", "emissores"]
     source = "Moody's"
 
     def fetch(self) -> pd.DataFrame:

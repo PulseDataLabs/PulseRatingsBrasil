@@ -139,7 +139,7 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
     icon_class = 'icon-sp'
     badge = ''
     badge_class = ''
-    tags = ['ratings', 's&p', 'crédito', 'emissores', 'corporativos']
+    tags = ['ratings', 's&p', 'emissores']
     source = 'S&P'
 
     def fetch(self) -> pd.DataFrame:

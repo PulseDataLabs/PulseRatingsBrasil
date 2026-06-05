@@ -182,7 +182,7 @@ class FitchRatingsScraper(BaseScraper):
     icon_class = "icon-fitch"
     badge = "Diário"
     badge_class = "badge-daily"
-    tags = ["ratings", "fitch", "crédito", "emissores", "corporativos"]
+    tags = ["ratings", "fitch", "emissores"]
     source = "Fitch"
 
     def fetch(self) -> pd.DataFrame:

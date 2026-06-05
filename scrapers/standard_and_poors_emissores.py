@@ -59,7 +59,7 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
     icon_class = 'icon-sp'
     badge = 'Diário'
     badge_class = 'badge-daily'
-    tags = ['ratings', 's&p', 'emissores', 'emissores']
+    tags = ['ratings', 's&p', 'emissores']
     source = 'S&P'
 
     def _get_api_key(self) -> str:

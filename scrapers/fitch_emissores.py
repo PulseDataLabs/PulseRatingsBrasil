@@ -125,12 +125,12 @@ class FitchEmissoresScraper(BaseScraper):
 
     # Catálogo de Metadados
     title = "Fitch — Ratings Emissores"
-    description = "Emissores brasileiras com rating de crédito ativo atribuído pela Fitch Ratings."
+    description = "Emissores brasileiros com rating de crédito ativo atribuído pela Fitch Ratings."
     icon = "F"
     icon_class = "icon-fitch"
     badge = "Diário"
     badge_class = "badge-daily"
-    tags = ["ratings", "fitch", "emissores", "emissores"]
+    tags = ["ratings", "fitch", "emissores"]
     source = "Fitch"
 
     def fetch(self) -> pd.DataFrame:
