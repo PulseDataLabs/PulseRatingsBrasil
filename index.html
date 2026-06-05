@@ -1786,6 +1786,14 @@
       return;
     }
 
+    const snapshotFiles = new Set([
+      'standard_and_poors_emissores.csv',
+      'fitch_emissores.csv',
+      'moodys_emissores.csv',
+      'moodys_ratings.csv',
+      'fitch_ratings.csv'
+    ]);
+
     let html = '';
     allDatasets.forEach(dataset => {
       let cardClass = '';
@@ -1808,16 +1816,19 @@
       }
 
       const tagsHtml = (dataset.tags || []).map(t => `<span class="field-tag">${t}</span>`).join('');
-      const badgeClass = dataset.badgeClass || 'badge-daily';
-      const badgeText = dataset.badge || 'Diário';
       const iconClass = dataset.iconClass || '';
       const iconText = dataset.icon || '📊';
+      const isSnapshot = snapshotFiles.has(dataset.file);
+      const accBadgeClass = isSnapshot ? 'badge-snapshot' : 'badge-cumulative';
+      const accBadgeText = isSnapshot ? 'Snapshot' : 'Acumulado';
+      const scraperBadge = dataset.badge ? `<span class="card-badge ${dataset.badgeClass || 'badge-daily'}">${dataset.badge}</span>` : '';
       html += `
         <div class="dataset-card ${cardClass}" data-source-mapped="${mappedSource}">
           <div class="card-top">
             <div class="card-icon ${iconClass}">${iconText}</div>
             <div class="card-badges">
-              <span class="card-badge ${badgeClass}">${badgeText}</span>
+              ${scraperBadge}
+              <span class="card-badge ${accBadgeClass}">${accBadgeText}</span>
             </div>
           </div>
           <div class="card-title">${dataset.title}</div>

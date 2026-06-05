@@ -137,8 +137,8 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
     description = 'Histórico consolidado de notas de rating atribuídas pela S&P Global Ratings a emissores corporativos, soberanos e de infraestrutura no Brasil.'
     icon = 'S&P'
     icon_class = 'icon-sp'
-    badge = 'Acumulativo'
-    badge_class = 'badge-cumulative'
+    badge = ''
+    badge_class = ''
     tags = ['ratings', 's&p', 'crédito', 'emissores', 'corporativos']
     source = 'S&P'
 

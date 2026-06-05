@@ -92,8 +92,8 @@
     "description": "Histórico consolidado de notas de rating atribuídas pela S&P Global Ratings a emissores corporativos, soberanos e de infraestrutura no Brasil.",
     "icon": "S&P",
     "iconClass": "icon-sp",
-    "badge": "Acumulativo",
-    "badgeClass": "badge-cumulative",
+    "badge": "",
+    "badgeClass": "",
     "tags": [
       "ratings",
       "s&p",

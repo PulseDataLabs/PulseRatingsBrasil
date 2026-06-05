@@ -146,8 +146,12 @@ def generate():
         if icon == "📊":
             icon = default_icon
 
-        badge = badge or fallback.get("badge") or "Diário"
-        badge_class = badge_class or fallback.get("badgeClass") or "badge-daily"
+        if 'badge' in cls.__dict__:
+            badge = badge
+            badge_class = badge_class
+        else:
+            badge = badge or fallback.get("badge") or "Diário"
+            badge_class = badge_class or fallback.get("badgeClass") or "badge-daily"
         tags = tags or fallback.get("tags") or [group]
         source = source or fallback.get("source") or group.upper()
 
