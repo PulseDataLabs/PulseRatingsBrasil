@@ -124,7 +124,7 @@ class FitchEmissoresScraper(BaseScraper):
     chaves_dedup = ["link"]
 
     # Catálogo de Metadados
-    title = "Fitch — Ratings Emissores"
+    title = "Fitch — Ratings"
     description = "Emissores brasileiros com rating de crédito ativo atribuído pela Fitch Ratings."
     icon = "F"
     icon_class = "icon-fitch"
