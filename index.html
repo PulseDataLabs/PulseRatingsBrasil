@@ -1786,14 +1786,6 @@
       return;
     }
 
-    const nonAccumulating = new Set([
-      'standard_and_poors_emissores.csv',
-      'fitch_emissores.csv',
-      'moodys_emissores.csv',
-      'moodys_ratings.csv',
-      'fitch_ratings.csv'
-    ]);
-
     let html = '';
     allDatasets.forEach(dataset => {
       let cardClass = '';
@@ -1820,17 +1812,12 @@
       const badgeText = dataset.badge || 'Diário';
       const iconClass = dataset.iconClass || '';
       const iconText = dataset.icon || '📊';
-      const isSnapshot = nonAccumulating.has(dataset.file);
-      const accBadgeClass = isSnapshot ? 'badge-snapshot' : 'badge-cumulative';
-      const accBadgeText = isSnapshot ? 'Snapshot' : 'Acumulado';
-
       html += `
         <div class="dataset-card ${cardClass}" data-source-mapped="${mappedSource}">
           <div class="card-top">
             <div class="card-icon ${iconClass}">${iconText}</div>
             <div class="card-badges">
               <span class="card-badge ${badgeClass}">${badgeText}</span>
-              <span class="card-badge ${accBadgeClass}">${accBadgeText}</span>
             </div>
           </div>
           <div class="card-title">${dataset.title}</div>
