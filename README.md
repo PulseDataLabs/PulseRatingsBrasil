@@ -43,12 +43,12 @@ Ele funciona 100% de forma automatizada via **GitHub Actions**, salvando o histÃ
 ```mermaid
 graph TD
     A[GitHub Actions Cron / Trigger] --> B[run_all.py Orchestrator]
-    B -->|Dynamic Discovery| C[scrapers/ folder]
-    B -->|Executes Phase 1| D[Independent Scrapers: Entities (Moody's, S&P, Fitch)]
-    B -->|Executes Phase 2| E[Dependent Scrapers: Ratings (Moody's, S&P, Fitch)]
-    D --> F[data/*.csv files]
+    B -->|Dynamic Discovery| C["scrapers/ folder"]
+    B -->|Executes Phase 1| D["Independent Scrapers: Entities (Moody's, S&P, Fitch)"]
+    B -->|Executes Phase 2| E["Dependent Scrapers: Ratings (Moody's, S&P, Fitch)"]
+    D --> F["data/*.csv files"]
     E --> F
-    B -->|Calls generate_catalog.py| G[data/datasets.json]
+    B -->|Calls generate_catalog.py| G["data/datasets.json"]
     F & G --> H[git push origin main]
     H --> I[GitHub Pages / index.html]
 ```
