@@ -50,15 +50,15 @@ class MoodysRatingsScraper(BaseScraper):
     group = "ratings"
     enabled = True
     phase = 2
-    accumulate = False  # Sobrescreve o arquivo com a lista vigente atualizada
+    accumulate = True
 
     # Catálogo de Metadados
     title = "Moody's — Ratings"
     description = "Ratings de crédito atribuídos pela Moody's Local a emissores corporativos, financeiros, de financiamento estruturado e públicos no Brasil."
     icon = "M"
     icon_class = "icon-moodys"
-    badge = "Diário"
-    badge_class = "badge-daily"
+    badge = ""
+    badge_class = ""
     tags = ["ratings", "moodys", "emissores"]
     source = "Moody's"
 

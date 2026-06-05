@@ -169,7 +169,7 @@ class FitchRatingsScraper(BaseScraper):
     group = "ratings"
     enabled = True
     phase = 2
-    accumulate = False
+    accumulate = True
     chaves_dedup = ["link", "Tipo de Rating"]
 
     # Catálogo de Metadados
@@ -180,8 +180,8 @@ class FitchRatingsScraper(BaseScraper):
     )
     icon = "F"
     icon_class = "icon-fitch"
-    badge = "Diário"
-    badge_class = "badge-daily"
+    badge = ""
+    badge_class = ""
     tags = ["ratings", "fitch", "emissores"]
     source = "Fitch"
 

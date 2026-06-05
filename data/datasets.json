@@ -5,14 +5,12 @@
     "description": "Ratings de crédito de longo e curto prazo atribuídos pela Fitch Ratings a emissores corporativos, financeiros e soberanos no Brasil.",
     "icon": "F",
     "iconClass": "icon-fitch",
-    "badge": "Diário",
-    "badgeClass": "badge-daily",
+    "badge": "",
+    "badgeClass": "",
     "tags": [
       "ratings",
       "fitch",
-      "crédito",
-      "emissores",
-      "corporativos"
+      "emissores"
     ],
     "source": "Fitch",
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_ratings.csv"
@@ -20,7 +18,7 @@
   {
     "title": "Fitch — Ratings Emissores",
     "file": "fitch_emissores.csv",
-    "description": "Emissores brasileiras com rating de crédito ativo atribuído pela Fitch Ratings.",
+    "description": "Emissores brasileiros com rating de crédito ativo atribuído pela Fitch Ratings.",
     "icon": "F",
     "iconClass": "icon-fitch",
     "badge": "Diário",
@@ -28,7 +26,6 @@
     "tags": [
       "ratings",
       "fitch",
-      "emissores",
       "emissores"
     ],
     "source": "Fitch",
@@ -45,7 +42,6 @@
     "tags": [
       "ratings",
       "moodys",
-      "emissores",
       "emissores"
     ],
     "source": "Moody's",
@@ -57,14 +53,12 @@
     "description": "Ratings de crédito atribuídos pela Moody's Local a emissores corporativos, financeiros, de financiamento estruturado e públicos no Brasil.",
     "icon": "M",
     "iconClass": "icon-moodys",
-    "badge": "Diário",
-    "badgeClass": "badge-daily",
+    "badge": "",
+    "badgeClass": "",
     "tags": [
       "ratings",
       "moodys",
-      "crédito",
-      "emissores",
-      "corporativos"
+      "emissores"
     ],
     "source": "Moody's",
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_ratings.csv"
@@ -80,7 +74,6 @@
     "tags": [
       "ratings",
       "s&p",
-      "emissores",
       "emissores"
     ],
     "source": "S&P",
@@ -97,9 +90,7 @@
     "tags": [
       "ratings",
       "s&p",
-      "crédito",
-      "emissores",
-      "corporativos"
+      "emissores"
     ],
     "source": "S&P",
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/standard_and_poors_ratings.csv"
