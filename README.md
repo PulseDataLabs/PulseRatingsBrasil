@@ -14,13 +14,15 @@
   <a href="https://github.com/PulseDataLabs/PulseRatingsBrasil/actions/workflows/main.yml">
     <img src="https://github.com/PulseDataLabs/PulseRatingsBrasil/actions/workflows/main.yml/badge.svg" alt="Build Status">
   </a>
-  <img src="https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue.svg" alt="Python Versions">
+  <img src="https://img.shields.io/badge/python-3.13-blue.svg" alt="Python Version">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/github/last-commit/PulseDataLabs/PulseRatingsBrasil" alt="Last Commit">
+  <img src="https://img.shields.io/github/stars/PulseDataLabs/PulseRatingsBrasil" alt="Stars">
 </p>
 
 <hr>
 
-O **Pulse Ratings Brasil** é um pipeline de ETL (Extração, Transformação e Carga) serverless projetado para coletar, tratar e disponibilizar dados de ratings de crédito (corporativos e soberanos) das principais agências de classificação de risco em atuação no Brasil: **S&P Global**, **Moody's Local** e **Fitch Ratings**.
+O **Pulse Ratings Brasil** é um pipeline de ETL (Extração, Transformação e Carga) serverless projetado para coletar, tratar e disponibilizar dados de ratings de crédito (corporativos e soberanos) das principais agências de classificação de risco em atuação no Brasil: **S&P Global**, **Moody's** e **Fitch Ratings**.
 
 Ele funciona 100% de forma automatizada via **GitHub Actions**, salvando o histórico consolidado diretamente no repositório em formato CSV plano, sem custos com banco de dados ou servidores. Os dados tratados alimentam um dashboard interativo servido via **GitHub Pages**.
 
@@ -70,7 +72,7 @@ PulseRatingsBrasil/
 │   ├── utils/
 │   │   ├── __init__.py
 │   │   └── base.py                  # Classe base BaseScraper
-│   └── *.py                         # Scripts de coleta (duplas entidades/ratings por fonte)
+│   └── *.py                         # Scripts de coleta (duplas emissores/ratings por fonte)
 ├── utils/                           # Utilitários compartilhados auxiliares
 │   ├── __init__.py
 │   ├── base.py                      # Salvamento de CSVs e helpers HTTP
@@ -131,8 +133,116 @@ PulseRatingsBrasil/
 
 ---
 
+## 🧩 Grupos de Scrapers
+
+O orquestrador `run_all.py` organiza os scrapers em grupos. Este repositório contém scrapers de múltiplos domínios:
+
+| Grupo | Descrição | Scrapers |
+|-------|-----------|----------|
+| `ratings` | Ratings de crédito (S&P, Moody's, Fitch) | `standard_and_poors_ratings`, `standard_and_poors_entidades`, `moodys_ratings`, `moodys_entidades`, `fitch_ratings`, `fitch_entidades` |
+| `anbima` | Dados ANBIMA | *(implementação externa)* |
+| `b3` | Dados B3 | *(implementação externa)* |
+| `bcb` | Dados Banco Central | *(implementação externa)* |
+| `cvm` | Dados CVM | *(implementação externa)* |
+| `ibge` | Dados IBGE | *(implementação externa)* |
+| `misc` | Outras fontes | *(implementação externa)* |
+
+Apenas o grupo `ratings` está ativo por padrão neste repositório público.
+
+---
+
+## 📡 Fontes de Dados
+
+### S&P Global Ratings
+- **Tipo:** Scraper web com extração dinâmica de chave pública
+- **Autenticação:** Opcional (`SP_GLOBAL_API_KEY`). Sem a chave, o scraper extrai a chave pública dinamicamente.
+- **Dados coletados:** Ratings de emissor e lista de emissores
+- **Frequência:** Cada execução do pipeline
+
+### Moody's
+- **Tipo:** Planilhas Excel (.xlsx) e dados estruturados
+- **Autenticação:** Pública (sem chave)
+- **Dados coletados:** Ratings de emissor e lista de emissores
+- **Frequência:** Cada execução do pipeline
+
+### Fitch Ratings
+- **Tipo:** API GraphQL pública
+- **Autenticação:** Pública (sem chave)
+- **Dados coletados:** Ratings de emissor e lista de emissores
+- **Frequência:** Cada execução do pipeline
+
+---
+
+## 📊 Schema dos Dados
+
+Cada arquivo CSV segue o padrão: **UTF-8**, separador **vírgula**, decimal **ponto**, datas **YYYY-MM-DD**.
+
+Os campos comuns a todos os datasets:
+
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `dt_captura` | date | Data da captura pelo pipeline |
+| `no_entidade` | str | Nome do emissor |
+
+As definições completas de campos e tipos são geradas automaticamente em [`data/schemas.json`](data/schemas.json) a cada execução e exibidas no [dashboard](https://pulsedatalabs.github.io/PulseRatingsBrasil/).
+
+---
+
+## 🤝 Como Contribuir
+
+1. Faça um **fork** do repositório
+2. Crie uma **branch** para sua feature: `git checkout -b minha-feature`
+3. Faça o **commit** das alterações: `git commit -m "feat: descrição concisa"`
+4. Envie para o **remote**: `git push origin minha-feature`
+5. Abra um **Pull Request**
+
+### Convenções
+- Commits seguem [Conventional Commits](https://www.conventionalcommits.org/)
+- Código Python segue [PEP 8](https://peps.python.org/pep-0008/)
+- Docstrings no formato Google style
+
+---
+
+## ❓ Troubleshooting
+
+| Problema | Causa | Solução |
+|----------|-------|---------|
+| S&P retorna dados vazios | Chave pública expirada ou bloqueada | Executar novamente — o scraper tenta extrair nova chave automaticamente |
+| Schema drift alerta | Agência modificou colunas do layout | Revisar o drift em `pipeline_status.json` e atualizar se necessário |
+| Pipeline timeout no GH Actions | Execução excede 6h | Verificar scraper específico com `--sequential` localmente |
+| Erro `xlrd.biffh.XLRDError` | Arquivo Excel no formato `.xlsx` | O fallback para `openpyxl` é automático |
+
+---
+
+## 📋 Changelog
+
+### 2026-06
+- Padronização do campo de captura para `dt_captura`
+- Dashboard com busca, filtros e schema dinâmico
+- Suporte a 6 datasets de ratings (3 agências × ratings + emissores)
+- Detecção automática de schema drift
+
+### 2026-05
+- Pipeline inicial com scrapers S&P, Moody's e Fitch
+- Schema drift detection
+- Catálogo dinâmico de datasets
+
+---
+
+## 🔒 Segurança
+
+Para reportar vulnerabilidades, abra uma [issue](https://github.com/PulseDataLabs/PulseRatingsBrasil/issues) com o label `security` ou entre em contato pelo GitHub.
+
+---
+
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
 
 Desenvolvido com 💙 por **[PulseDataLabs](https://github.com/PulseDataLabs)**.
+
+---
+
+<p align="center">
+  <sub>Dados públicos de rating — S&P Global, Moody's e Fitch Ratings · Open-source</sub>
+</p>

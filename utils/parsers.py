@@ -27,7 +27,7 @@ import xlrd
 
 from .base import FUSO, agora_brt, get_logger, limpar
 
-FIXOS = ["data_captura", "conjunto", "arquivo_origem", "registro_hash"]
+FIXOS = ["dt_captura", "conjunto", "arquivo_origem", "registro_hash"]
 
 _CAL = Calendar(holidays=[], weekdays=["Saturday", "Sunday"])
 
@@ -307,15 +307,15 @@ def read_existing_header(arquivo) -> list[str]:
 
 
 def enriquecer(dataset_id: str, rows: list[dict]) -> tuple[list[dict], list[str]]:
-    data_captura, _ = agora_brt()
+    dt_captura, _ = agora_brt()
     enriched = []
     campos = set()
     for row in rows:
         item = {k: limpar(v) for k, v in row.items()}
-        item["data_captura"] = data_captura
+        item["dt_captura"] = dt_captura
         item["conjunto"] = dataset_id
         item.setdefault("arquivo_origem", "")
-        item["registro_hash"] = hash_row({k: v for k, v in item.items() if k != "data_captura"})
+        item["registro_hash"] = hash_row({k: v for k, v in item.items() if k != "dt_captura"})
         campos.update(item.keys())
         enriched.append(item)
 

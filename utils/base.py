@@ -79,7 +79,7 @@ def get_logger(name: str) -> logging.Logger:
 
 
 def agora_brt() -> tuple[str, str]:
-    """Retorna (data_captura YYYY-MM-DD, hora_captura HH:MM:SS) em BRT."""
+    """Retorna (dt_captura YYYY-MM-DD, hora_captura HH:MM:SS) em BRT."""
     now = datetime.now(FUSO)
     return now.strftime("%Y-%m-%d"), now.strftime("%H:%M:%S")
 
@@ -129,10 +129,10 @@ def salvar_csv(
     - Se `acumular` for False, sobrescreve o arquivo existente apenas com os novos registros.
     - Se `chaves_dedup` for fornecido, remove do CSV existente qualquer linha
       cujo conjunto de chaves coincida com algum novo registro (ex: mesma
-      data_captura + mesmo indicador). Assim, re-execuções no mesmo dia
+      dt_captura + mesmo indicador). Assim, re-execuções no mesmo dia
       substituem a captura anterior em vez de duplicar.
     - Se `chaves_dedup` for None, remove todas as linhas com a mesma
-      `data_captura` dos novos dados (dedup simples por dia).
+      `dt_captura` dos novos dados (dedup simples por dia).
       - O histórico de dias anteriores é sempre preservado integralmente.
     """
     log = get_logger("utils.salvar_csv")
@@ -187,7 +187,7 @@ def salvar_csv(
         cabecalho = merged
 
     # Determina datas presentes nos novos dados (para dedup simples)
-    datas_novas = {r.get("data_captura") or r.get("dt_captura") for r in registros}
+    datas_novas = {r.get("dt_captura") for r in registros}
 
     # Determina chaves compostas dos novos dados (para dedup preciso)
     chaves_novas: set[tuple] | None = None
@@ -210,7 +210,7 @@ def salvar_csv(
                         substituidas += 1
                         continue
                 else:
-                    date_val = linha.get("data_captura") or linha.get("dt_captura")
+                    date_val = linha.get("dt_captura")
                     if date_val in datas_novas:
                         substituidas += 1
                         continue
@@ -237,7 +237,7 @@ def salvar_csv(
         if registros:
             # Identifica a coluna de data no cabeçalho
             date_col = None
-            for candidate in ["data_captura", "dt_captura", "data_referencia", "data", "rpt_dt"]:
+            for candidate in ["dt_captura", "data_referencia", "data", "rpt_dt"]:
                 if candidate in cabecalho:
                     date_col = candidate
                     break

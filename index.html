@@ -2,11 +2,22 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pulse Ratings — Notas de Rating do Mercado Brasileiro</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pipeline automatizado de ratings de crédito brasileiros (S&P, Moody's, Fitch) — CSVs diários, schema documentado, open source." />
+    <meta property="og:title" content="Pulse Ratings — Ratings de Crédito do Mercado Brasileiro" />
+    <meta property="og:description" content="Pipeline automatizado de ratings de crédito brasileiros (S&P, Moody's, Fitch) — CSVs diários, schema documentado, open source." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pulsedatalabs.github.io/PulseRatingsBrasil/" />
+    <meta property="og:image" content="https://pulsedatalabs.github.io/PulseRatingsBrasil/assets/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pulse Ratings — Ratings de Crédito do Mercado Brasileiro" />
+    <meta name="twitter:description" content="Pipeline automatizado de ratings de crédito brasileiros (S&P, Moody's, Fitch) — CSVs diários, schema documentado, open source." />
+    <meta name="twitter:image" content="https://pulsedatalabs.github.io/PulseRatingsBrasil/assets/og-image.png" />
+    <title>Pulse Ratings — Notas de Rating do Mercado Brasileiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+    <link rel="canonical" href="https://pulsedatalabs.github.io/PulseRatingsBrasil/" />
   
   <!-- Preloads para dados do pipeline -->
   <link rel="preload" href="./data/datasets.json" as="fetch" crossorigin />
@@ -33,13 +44,94 @@
       --red:       #ff4d6d;
       --text:      #e8eef4;
       --text2:     #8fa3b8;
-      --text3:     #4d6070;
+      --text3:     #7a8fa3;
       --font-head: 'Syne', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
       --font-body: 'Lora', serif;
     }
 
     html { scroll-behavior: smooth; }
+
+    /* Skip link for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: var(--bg);
+      padding: 0.75rem 1.5rem;
+      border-radius: 0 0 8px 8px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 500;
+      z-index: 1000;
+      text-decoration: none;
+      transition: top 0.2s;
+    }
+    .skip-link:focus {
+      top: 0;
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* Focus visible for keyboard navigation */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* Visually hidden but accessible */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Toast notifications */
+    .toast-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      pointer-events: none;
+    }
+    .toast {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.875rem 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      animation: toast-in 0.3s ease;
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      max-width: 320px;
+    }
+    .toast.success { border-color: var(--green); }
+    .toast.error { border-color: var(--red); }
+    .toast.info { border-color: var(--accent); }
+    @keyframes toast-in {
+      from { opacity: 0; transform: translateX(100%); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .toast .toast-icon { font-size: 1rem; }
+    .toast.success .toast-icon { color: var(--green); }
+    .toast.error .toast-icon { color: var(--red); }
+    .toast.info .toast-icon { color: var(--accent); }
 
     body {
       background: var(--bg);
@@ -1076,11 +1168,27 @@
     /* ── RESPONSIVE ─────────────────────────────────────── */
     @media (max-width: 900px) {
       nav { padding: 1rem 1.5rem; }
-      .nav-links { display: none; }
+      .mobile-menu-btn { display: block !important; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgba(8,12,16,0.98);
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 2rem;
+        gap: 1rem;
+      }
+      .nav-links.nav-open { display: flex; }
       .how-grid, .setup-grid, .schema-grid { grid-template-columns: 1fr; }
       .hero-stats { flex-wrap: wrap; }
       .stat-item { min-width: 50%; border-right: none; border-bottom: 1px solid var(--border); }
       .datasets-header { flex-direction: column; align-items: flex-start; }
+      .schedule-row { flex-wrap: wrap; gap: 0.5rem; }
+      .toast-container { right: 1rem; left: 1rem; bottom: 1rem; }
+      .toast { max-width: 100%; }
     }
 
     @media (max-width: 600px) {
@@ -1088,6 +1196,12 @@
       .container { padding: 0 1.25rem; }
       .hero { padding: 7rem 1.25rem 4rem; }
       .stat-item { min-width: 100%; }
+      .hero-ctas { flex-direction: column; align-items: center; }
+      .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+      nav { gap: 0.5rem; }
+      .nav-cta { display: none; }
+      .search-wrapper { max-width: 100% !important; }
+      .stat-value { font-size: 1.4rem; }
     }
 
     /* Last capture date indicator */
@@ -1114,6 +1228,35 @@
       background-color: var(--accent);
       border-radius: 50%;
       box-shadow: 0 0 6px var(--accent);
+    }
+
+    /* ── NO RESULTS ─────────────────────────────────────── */
+    .no-results {
+      grid-column: 1 / -1;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .no-results.visible { display: flex; }
+    .no-results-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      opacity: 0.4;
+    }
+    .no-results-title {
+      font-family: var(--font-head);
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--text2);
+      margin-bottom: 0.3rem;
+    }
+    .no-results-desc {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text3);
     }
 
     /* Floating animation for logo */
@@ -1159,6 +1302,12 @@
       transform: translateY(0);
     }
 
+    .copy-url-btn:hover {
+      border-color: var(--accent) !important;
+      color: var(--accent) !important;
+      background: rgba(0,212,255,0.05) !important;
+    }
+
     /* ── PIPELINE HEALTH DROPDOWN ───────────────────────── */
     .pipeline-health-container {
       position: relative;
@@ -1176,7 +1325,7 @@
       min-width: 250px;
       z-index: 100;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
-      font-family: var(--font-sans);
+      font-family: var(--font-body);
     }
     
     .pipeline-health-container:hover .health-dropdown-content {
@@ -1247,9 +1396,11 @@
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
 
 <!-- NAV -->
-<nav>
+<nav role="navigation" aria-label="Navegação principal">
   <a href="#" class="nav-logo">
     <img src="assets/logo.png" alt="Pulse Ratings Logo" style="height: 24px; border-radius: 4px;">
     Pulse Ratings <span style="font-size: 0.65rem; padding: 0.1rem 0.4rem; background: rgba(0, 212, 255, 0.15); color: var(--accent); border-radius: 10px; margin-left: 0.4rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Brasil</span>
@@ -1260,24 +1411,27 @@
     <li><a href="#schema">Schema</a></li>
     <li><a href="#setup">Instalação</a></li>
   </ul>
-  <div style="display: flex; align-items: center; gap: 1rem;">
-    <!-- PIPELINE HEALTH BADGE -->
-    <div id="pipeline-health" class="pipeline-health-container" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0.8rem; border-radius: 20px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); font-family: var(--font-mono); font-size: 0.7rem; cursor: pointer;">
-      <span id="health-dot" style="width: 8px; height: 8px; border-radius: 50%; background: #999; display: inline-block; box-shadow: 0 0 8px #999; transition: all 0.3s;"></span>
-      <span id="health-text" style="color: var(--text2); transition: all 0.3s;">Pipeline: offline</span>
-      <div id="health-dropdown" class="health-dropdown-content">
-        <div class="dropdown-header">Status Geral</div>
-        <div id="health-details">Carregando informações...</div>
+  <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" style="display:none;background:none;border:none;color:var(--text);font-size:1.5rem;cursor:pointer;">☰</button>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <!-- PIPELINE HEALTH BADGE -->
+      <div id="pipeline-health" class="pipeline-health-container" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0.8rem; border-radius: 20px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); font-family: var(--font-mono); font-size: 0.7rem; cursor: pointer;">
+        <button id="health-trigger" aria-label="Status do pipeline" aria-expanded="false" aria-controls="health-dropdown" style="display:flex;align-items:center;gap:0.5rem;background:none;border:none;color:inherit;cursor:pointer;padding:0;font:inherit;">
+          <span id="health-dot" style="width: 8px; height: 8px; border-radius: 50%; background: #999; display: inline-block; box-shadow: 0 0 8px #999; transition: all 0.3s;" aria-hidden="true"></span>
+          <span id="health-text" style="color: var(--text2); transition: all 0.3s;">Pipeline: carregando...</span>
+        </button>
+        <div id="health-dropdown" class="health-dropdown-content" role="menu" hidden>
+          <div class="dropdown-header">Status Geral</div>
+          <div id="health-details">Carregando informações...</div>
+        </div>
       </div>
+      <a href="https://github.com/PulseDataLabs/PulseRatingsBrasil" class="nav-cta" target="_blank">
+        GitHub ↗
+      </a>
     </div>
-    <a href="https://github.com/PulseDataLabs/PulseRatingsBrasil" class="nav-cta" target="_blank">
-      GitHub ↗
-    </a>
-  </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="main-content">
   <div class="hero-orb hero-orb-1"></div>
   <div class="hero-orb hero-orb-2"></div>
   <div class="hero-orb hero-orb-3"></div>
@@ -1288,7 +1442,7 @@
 
   <div class="ticker-bar">
     <span class="status-dot"></span>
-    Atualização automática · Seg–Sex · Execução periódica BRT
+    Atualização automática · Seg–Sex · Execuções periódicas ao longo do dia BRT
   </div>
 
   <h1 class="hero-title">
@@ -1299,8 +1453,8 @@
   <span class="hero-subtitle">Brazilian Corporate & Sovereign Credit Ratings</span>
 
   <p class="hero-description">
-    Pipeline serverless de captura diária das notas de rating corporativo e soberano no Brasil.
-    Dados consolidados da S&P Global, Moody's Local e Fitch Ratings, processados de forma
+    Pipeline serverless de captura periódica das notas de rating corporativo e soberano no Brasil.
+    Dados consolidados da S&P Global, Moody's e Fitch Ratings, processados de forma
     automatizada via GitHub Actions e disponibilizados em formato CSV estruturado.
   </p>
 
@@ -1313,11 +1467,11 @@
 <!-- STATS STRIP -->
 <div class="hero-stats reveal">
   <div class="stat-item">
-    <span class="stat-value">3+</span>
-    <span class="stat-label">Bases de dados CSV</span>
+    <span class="stat-value">—</span>
+    <span class="stat-label">Datasets CSV</span>
   </div>
   <div class="stat-item">
-    <span class="stat-value">3</span>
+    <span class="stat-value">—</span>
     <span class="stat-label">Agências de Rating</span>
   </div>
   <div class="stat-item">
@@ -1339,35 +1493,35 @@
     <div class="how-grid reveal">
       <div class="pipeline">
         <div class="pipeline-step">
-          <div class="step-icon">⏰</div>
+          <div class="step-icon" aria-hidden="true">⏰</div>
           <div class="step-content">
             <div class="step-title">GitHub Actions dispara o job</div>
             <div class="step-desc">Cron agendado periodicamente no horário de Brasília, rodando scrapers paralelos de forma serverless.</div>
           </div>
         </div>
         <div class="pipeline-step">
-          <div class="step-icon">🔗</div>
+          <div class="step-icon" aria-hidden="true">🔗</div>
           <div class="step-content">
             <div class="step-title">Scraper acessa a fonte</div>
-            <div class="step-desc">Coleta via APIs internas, decodificação de páginas Next.js e download otimizado de planilhas Excel das agências.</div>
+            <div class="step-desc">Coleta via APIs internas e download otimizado de planilhas Excel das plataformas web das agências.</div>
           </div>
         </div>
         <div class="pipeline-step">
-          <div class="step-icon">🧹</div>
+          <div class="step-icon" aria-hidden="true">🧹</div>
           <div class="step-content">
             <div class="step-title">Dados são normalizados</div>
             <div class="step-desc">Encoding, datas no padrão ISO e decimais padronizados. Remoção inteligente de linhas duplicadas.</div>
           </div>
         </div>
         <div class="pipeline-step">
-          <div class="step-icon">📄</div>
+          <div class="step-icon" aria-hidden="true">📄</div>
           <div class="step-content">
             <div class="step-title">Atualização dos arquivos CSV</div>
             <div class="step-desc">Persistência em CSVs planos (UTF-8, separador vírgula). Históricos acumulados ou snapshots vigentes.</div>
           </div>
         </div>
         <div class="pipeline-step">
-          <div class="step-icon">✅</div>
+          <div class="step-icon" aria-hidden="true">✅</div>
           <div class="step-content">
             <div class="step-title">Commit automático no repositório</div>
             <div class="step-desc">git add → git commit → git push. O CSV atualizado fica disponível imediatamente no GitHub Pages.</div>
@@ -1377,20 +1531,49 @@
 
       <div class="schedule-card">
         <div class="schedule-header">
-          🕐 &nbsp;Agenda de execução
+          🕐 &nbsp;Agenda de execução (Seg–Sex, BRT)
         </div>
         <div class="schedule-row">
           <span class="schedule-time">06h00</span>
-          <span class="schedule-name">Execução Diária</span>
+          <span class="schedule-name">Manhã cedo</span>
           <span class="schedule-tag" style="background: rgba(255, 77, 109, 0.15); color: var(--red);">S&P Global</span>
-          <span class="schedule-tag" style="background: rgba(0, 212, 255, 0.15); color: var(--accent);">Moody's Local</span>
+          <span class="schedule-tag" style="background: rgba(0, 212, 255, 0.15); color: var(--accent);">Moody's</span>
           <span class="schedule-tag" style="background: rgba(0, 229, 160, 0.15); color: var(--green);">Fitch Ratings</span>
         </div>
         <div class="schedule-row">
-          <span class="schedule-time">18h00</span>
-          <span class="schedule-name">Execução de Fechamento</span>
+          <span class="schedule-time">08h00</span>
+          <span class="schedule-name">Início do pregão</span>
+          <span class="schedule-tag" style="background: rgba(0, 212, 255, 0.15); color: var(--accent);">Moody's</span>
+          <span class="schedule-tag" style="background: rgba(0, 229, 160, 0.15); color: var(--green);">Fitch Ratings</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">09h00</span>
+          <span class="schedule-name">Abertura B3</span>
           <span class="schedule-tag" style="background: rgba(255, 77, 109, 0.15); color: var(--red);">S&P Global</span>
-          <span class="schedule-tag" style="background: rgba(0, 212, 255, 0.15); color: var(--accent);">Moody's Local</span>
+          <span class="schedule-tag" style="background: rgba(0, 212, 255, 0.15); color: var(--accent);">Moody's</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">09h30</span>
+          <span class="schedule-name">Pós-abertura</span>
+          <span class="schedule-tag" style="background: rgba(255, 77, 109, 0.15); color: var(--red);">S&P Global</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">18h00</span>
+          <span class="schedule-name">Fechamento</span>
+          <span class="schedule-tag" style="background: rgba(255, 77, 109, 0.15); color: var(--red);">S&P Global</span>
+          <span class="schedule-tag" style="background: rgba(0, 212, 255, 0.15); color: var(--accent);">Moody's</span>
+          <span class="schedule-tag" style="background: rgba(0, 229, 160, 0.15); color: var(--green);">Fitch Ratings</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">21h00</span>
+          <span class="schedule-name">Noturno 1</span>
+          <span class="schedule-tag" style="background: rgba(0, 212, 255, 0.15); color: var(--accent);">Moody's</span>
+          <span class="schedule-tag" style="background: rgba(0, 229, 160, 0.15); color: var(--green);">Fitch Ratings</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">23h00</span>
+          <span class="schedule-name">Noturno 2</span>
+          <span class="schedule-tag" style="background: rgba(0, 212, 255, 0.15); color: var(--accent);">Moody's</span>
           <span class="schedule-tag" style="background: rgba(0, 229, 160, 0.15); color: var(--green);">Fitch Ratings</span>
         </div>
       </div>
@@ -1403,7 +1586,7 @@
   <div class="container">
     <div class="datasets-header reveal">
       <div>
-        <div class="section-label">Downloads</div>
+        <div class="section-label">Datasets</div>
         <h2 class="section-title">Datasets disponíveis</h2>
         <p class="section-desc">CSVs atualizados diariamente. Clique em Download para baixar o arquivo mais recente.</p>
       </div>
@@ -1412,7 +1595,9 @@
     <!-- Busca de Datasets -->
     <div class="datasets-search-container reveal" style="margin-top: 1.5rem; margin-bottom: 2rem; display: flex; justify-content: center; width: 100%;">
       <div class="search-wrapper" style="position: relative; width: 100%; max-width: 500px;">
-        <input type="text" id="dataset-search" placeholder="🔍 Pesquisar datasets por nome, arquivo, descrição ou tags..." style="width: 100%; padding: 0.75rem 1.5rem; border-radius: 30px; border: 1px solid var(--border); background: var(--bg2); color: var(--text1); font-size: 0.95rem; outline: none; transition: all 0.3s;" />
+        <label for="dataset-search" class="visually-hidden">Buscar datasets</label>
+        <input type="text" id="dataset-search" placeholder="Buscar datasets..." aria-label="Buscar datasets" style="width: 100%; padding: 0.75rem 1.5rem; border-radius: 30px; border: 1px solid var(--border); background: var(--bg2); color: var(--text1); font-size: 0.95rem; outline: none; transition: all 0.3s;" />
+        <button type="button" id="dataset-search-clear" aria-label="Limpar busca" style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--text3);cursor:pointer;display:none;font-size:1rem;line-height:1;" aria-hidden="true">✕</button>
       </div>
     </div>
 
@@ -1425,7 +1610,12 @@
 
     <div class="datasets-grid reveal" id="datasets-container">
       <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--text2);">
-        <p>Carregando catálogo de datasets...</p>
+        <p id="datasets-loading">Carregando catálogo de datasets...</p>
+      </div>
+      <div class="no-results" id="datasets-no-results">
+        <div class="no-results-icon">🔍</div>
+        <div class="no-results-title">Nenhum dataset encontrado</div>
+        <div class="no-results-desc">Tente alterar os filtros ou buscar por outro termo.</div>
       </div>
     </div>
     </div>
@@ -1442,12 +1632,21 @@
     <!-- Busca de Schemas -->
     <div class="schema-search-container reveal" style="margin-bottom: 2rem; display: flex; justify-content: center; width: 100%;">
       <div class="search-wrapper" style="position: relative; width: 100%; max-width: 500px;">
-        <input type="text" id="schema-search" placeholder="🔍 Pesquisar colunas (ex: cnpj, taxa, valor, data...)" style="width: 100%; padding: 0.75rem 1.5rem; border-radius: 30px; border: 1px solid var(--border); background: var(--bg2); color: var(--text1); font-size: 0.95rem; outline: none; transition: all 0.3s;" />
+        <label for="schema-search" class="visually-hidden">Buscar colunas</label>
+        <input type="text" id="schema-search" placeholder="Buscar colunas (ex: cnpj, rating, data...)" aria-label="Buscar colunas" style="width: 100%; padding: 0.75rem 1.5rem; border-radius: 30px; border: 1px solid var(--border); background: var(--bg2); color: var(--text1); font-size: 0.95rem; outline: none; transition: all 0.3s;" />
+        <button type="button" id="schema-search-clear" aria-label="Limpar busca" style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--text3);cursor:pointer;display:none;font-size:1rem;line-height:1;" aria-hidden="true">✕</button>
       </div>
     </div>
 
     <div class="schema-grid reveal" id="schema-grid">
-      <!-- Carregado dinamicamente via JS -->
+      <div id="schema-loading" style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--text2);">
+        <p>Carregando estrutura dos dados...</p>
+      </div>
+      <div class="no-results" id="schema-no-results">
+        <div class="no-results-icon">🔍</div>
+        <div class="no-results-title">Nenhuma coluna encontrada</div>
+        <div class="no-results-desc">Tente alterar os filtros ou buscar por outro termo.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -1457,7 +1656,7 @@
   <div class="container">
     <div class="section-label reveal">Instalação</div>
     <h2 class="section-title reveal">Comece em minutos</h2>
-    <p class="section-desc reveal">Clone, configure as secrets e os dados chegam sozinhos de forma automatizada.</p>
+    <p class="section-desc reveal">Clone, configure as secrets e os dados serão atualizados automaticamente pelo pipeline.</p>
 
     <div class="setup-grid reveal">
       <div class="steps-list">
@@ -1525,9 +1724,7 @@
 <span class="kw">python</span> run_all.py --scraper standard_and_poors_ratings
 
 <span class="cm"># 5. URL raw para importar direto no seu BI:</span>
-<span class="str">https://raw.githubusercontent.com/PulseDataLabs/
-  PulseRatingsBrasil/main/data/
-  moodys_ratings.csv</span>
+<span class="str">https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_ratings.csv</span>
         </div>
       </div>
     </div>
@@ -1548,7 +1745,7 @@
         <li><a href="#schema">Schema</a></li>
         <li><a href="https://github.com/PulseDataLabs/PulseRatingsBrasil" target="_blank">GitHub</a></li>
       </ul>
-      <span class="footer-copy">Dados públicos de Ratings · S&P, Moody's e Fitch · Open-source</span>
+      <span class="footer-copy">© 2026 Pulse Data Labs · Dados de rating público — S&P, Moody's e Fitch · Open-source</span>
     </div>
   </div>
 </footer>
@@ -1579,6 +1776,14 @@
       if (response.ok) {
         allDatasets = await response.json();
         renderDatasets();
+
+        // Atualiza stats do hero dinamicamente
+        const statValues = document.querySelectorAll('.stat-value');
+        if (statValues.length >= 2) {
+          statValues[0].textContent = allDatasets.length;
+          const uniqueSources = new Set(allDatasets.map(d => d.source)).size;
+          statValues[1].textContent = uniqueSources;
+        }
       } else {
         throw new Error('Falha ao carregar datasets.json');
       }
@@ -1603,6 +1808,14 @@
       return;
     }
 
+    const nonAccumulating = new Set([
+      'standard_and_poors_entidades.csv',
+      'fitch_entidades.csv',
+      'moodys_entidades.csv',
+      'moodys_ratings.csv',
+      'fitch_ratings.csv'
+    ]);
+
     let html = '';
     allDatasets.forEach(dataset => {
       let cardClass = '';
@@ -1615,17 +1828,32 @@
         cardClass = 'fitch-card';
       }
 
+      let mappedSource = 'other';
+      if (lowerFile.startsWith('standard_and_poors_') || lowerFile.startsWith('s_p_')) {
+        mappedSource = 's_p';
+      } else if (lowerFile.startsWith('moodys_')) {
+        mappedSource = 'moodys';
+      } else if (lowerFile.startsWith('fitch_')) {
+        mappedSource = 'fitch';
+      }
+
       const tagsHtml = (dataset.tags || []).map(t => `<span class="field-tag">${t}</span>`).join('');
       const badgeClass = dataset.badgeClass || 'badge-daily';
       const badgeText = dataset.badge || 'Diário';
       const iconClass = dataset.iconClass || '';
       const iconText = dataset.icon || '📊';
+      const isSnapshot = nonAccumulating.has(dataset.file);
+      const accBadgeClass = isSnapshot ? 'badge-snapshot' : 'badge-cumulative';
+      const accBadgeText = isSnapshot ? 'Snapshot' : 'Acumulado';
 
       html += `
-        <div class="dataset-card ${cardClass}">
+        <div class="dataset-card ${cardClass}" data-source-mapped="${mappedSource}">
           <div class="card-top">
             <div class="card-icon ${iconClass}">${iconText}</div>
-            <span class="card-badge ${badgeClass}">${badgeText}</span>
+            <div class="card-badges">
+              <span class="card-badge ${badgeClass}">${badgeText}</span>
+              <span class="card-badge ${accBadgeClass}">${accBadgeText}</span>
+            </div>
           </div>
           <div class="card-title">${dataset.title}</div>
           <div class="card-file">${dataset.file}</div>
@@ -1644,7 +1872,12 @@
       `;
     });
 
-    container.innerHTML = html;
+    container.innerHTML = html + `
+      <div class="no-results" id="datasets-no-results">
+        <div class="no-results-icon">🔍</div>
+        <div class="no-results-title">Nenhum dataset encontrado</div>
+        <div class="no-results-desc">Tente alterar os filtros ou buscar por outro termo.</div>
+      </div>`;
   }
   // Reveal on scroll
   const observer = new IntersectionObserver((entries) => {
@@ -1732,61 +1965,94 @@
     });
   }
 
-  // Initialize dataset filtering by source
-  function initDatasetFilters() {
-    const cards = document.querySelectorAll('.dataset-card');
-    
-    // Map each card to its data source based on file name prefix and add accumulation badges
-    const nonAccumulating = new Set([
-      'standard_and_poors_entidades.csv',
-      'fitch_entidades.csv',
-      'moodys_entidades.csv',
-      'moodys_ratings.csv',
-      'fitch_ratings.csv'
-    ]);
+  // Add copy URL button to dataset cards
+  function initCopyUrlButtons() {
+    document.querySelectorAll('.dataset-card').forEach(card => {
+      const downloadBtn = card.querySelector('.download-btn');
+      if (!downloadBtn) return;
+      
+      const csvUrl = downloadBtn.getAttribute('href');
+      if (!csvUrl) return;
 
-    cards.forEach(card => {
-      const fileElement = card.querySelector('.card-file');
-      if (!fileElement) return;
+      // Check if copy URL button already exists
+      if (card.querySelector('.copy-url-btn')) return;
 
-      const fileName = fileElement.textContent.trim().toLowerCase();
-      let source = 'other';
+      const copyUrlBtn = document.createElement('button');
+      copyUrlBtn.className = 'copy-url-btn';
+      copyUrlBtn.title = 'Copiar URL do CSV';
+      copyUrlBtn.style.cssText = `
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        color: var(--text2);
+        padding: 0.45rem 0.7rem;
+        border-radius: 4px;
+        font-size: 0.7rem;
+        font-family: var(--font-mono);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        transition: all 0.2s;
+      `;
+      copyUrlBtn.innerHTML = `
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 12px; height: 12px;">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+        </svg>
+        Link
+      `;
+      copyUrlBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        navigator.clipboard.writeText(csvUrl).then(() => {
+          showToast('URL do CSV copiada!', 'success');
+        }).catch(() => {
+          showToast('Erro ao copiar URL', 'error');
+        });
+      });
 
-      if (fileName.startsWith('standard_and_poors_') || fileName.startsWith('s_p_')) {
-        source = 's_p';
-      } else if (fileName.startsWith('moodys_')) {
-        source = 'moodys';
-      } else if (fileName.startsWith('fitch_')) {
-        source = 'fitch';
-      }
-
-      card.setAttribute('data-source-mapped', source);
-
-      // Add cumulative or snapshot badge
-      const cardTop = card.querySelector('.card-top');
-      if (cardTop) {
-        const badgesContainer = document.createElement('div');
-        badgesContainer.className = 'card-badges';
-
-        const existingBadges = cardTop.querySelectorAll('.card-badge');
-        existingBadges.forEach(badge => badgesContainer.appendChild(badge));
-
-        const accBadge = document.createElement('span');
-        accBadge.className = 'card-badge';
-        if (nonAccumulating.has(fileName)) {
-          accBadge.textContent = 'Snapshot';
-          accBadge.classList.add('badge-snapshot');
-        } else {
-          accBadge.textContent = 'Acumulado';
-          accBadge.classList.add('badge-cumulative');
-        }
-        badgesContainer.appendChild(accBadge);
-        cardTop.appendChild(badgesContainer);
+      // Insert after download button
+      const wrapper = downloadBtn.parentElement;
+      if (wrapper && wrapper.style.display === 'flex') {
+        wrapper.appendChild(copyUrlBtn);
+      } else {
+        downloadBtn.parentNode.insertBefore(copyUrlBtn, downloadBtn.nextSibling);
       }
     });
+  }
+
+  // Toast notification system
+  function showToast(message, type = 'info') {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    const icons = { success: '✅', error: '❌', info: 'ℹ️' };
+    toast.innerHTML = `<span class="toast-icon" aria-hidden="true">${icons[type] || icons.info}</span><span>${message}</span>`;
+    container.appendChild(toast);
+    setTimeout(() => {
+      toast.style.animation = 'toast-in 0.3s ease reverse';
+      setTimeout(() => toast.remove(), 300);
+    }, 3000);
+  }
+
+  // Initialize dataset filtering by source
+  function initDatasetFilters() {
+    // Debounce helper
+    function debounce(fn, delay) {
+      let timeoutId;
+      return (...args) => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => fn(...args), delay);
+      };
+    }
 
     // Filter functions
     function applyDatasetFilters() {
+      const cards = document.querySelectorAll('.dataset-card');
+      const noResults = document.getElementById('datasets-no-results');
+      const clearFiltersBtn = document.getElementById('clear-filters');
+      let visibleCount = 0;
+
       cards.forEach(card => {
         const cardSource = card.getAttribute('data-source-mapped');
         const sourceMatch = (activeSourceFilter === 'all' || cardSource === activeSourceFilter);
@@ -1810,10 +2076,18 @@
             card.style.opacity = '1';
             card.style.transition = 'opacity 0.3s ease';
           }, 10);
+          visibleCount++;
         } else {
           card.classList.add('filtered-out');
         }
       });
+
+      if (noResults) {
+        noResults.classList.toggle('visible', visibleCount === 0);
+      }
+      if (clearFiltersBtn) {
+        clearFiltersBtn.style.display = (activeSourceFilter !== 'all' || activeSearchQuery) ? 'flex' : 'none';
+      }
     }
 
     // Handle filter button clicks
@@ -1827,21 +2101,86 @@
         applyDatasetFilters();
         applySchemaFilters();
       });
+      // Keyboard support
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          btn.click();
+        }
+      });
     });
 
-    // Handle dataset search input
+    // Clear filters button
+    const clearFiltersBtn = document.createElement('button');
+    clearFiltersBtn.id = 'clear-filters';
+    clearFiltersBtn.type = 'button';
+    clearFiltersBtn.className = 'filter-btn';
+    clearFiltersBtn.style.display = 'none';
+    clearFiltersBtn.innerHTML = '✕ Limpar filtros';
+    clearFiltersBtn.addEventListener('click', () => {
+      activeSourceFilter = 'all';
+      activeSearchQuery = '';
+      activeSchemaSearchQuery = '';
+      filterButtons.forEach(b => b.classList.remove('active'));
+      const allBtn = document.querySelector('.filter-btn[data-source="all"]');
+      if (allBtn) allBtn.classList.add('active');
+      const datasetSearchInput = document.getElementById('dataset-search');
+      const schemaSearchInput = document.getElementById('schema-search');
+      if (datasetSearchInput) { datasetSearchInput.value = ''; document.getElementById('dataset-search-clear').style.display = 'none'; }
+      if (schemaSearchInput) { schemaSearchInput.value = ''; document.getElementById('schema-search-clear').style.display = 'none'; }
+      applyDatasetFilters();
+      applySchemaFilters();
+    });
+    const filterContainer = document.querySelector('.datasets-filter');
+    if (filterContainer) filterContainer.appendChild(clearFiltersBtn);
+
+    // Handle dataset search input with debounce and clear button
     const datasetSearchInput = document.getElementById('dataset-search');
+    const datasetSearchClear = document.getElementById('dataset-search-clear');
     if (datasetSearchInput) {
-      datasetSearchInput.addEventListener('input', (e) => {
-        activeSearchQuery = e.target.value.toLowerCase().trim();
+      const debouncedFilter = debounce(() => {
+        activeSearchQuery = datasetSearchInput.value.toLowerCase().trim();
+        if (datasetSearchClear) datasetSearchClear.style.display = activeSearchQuery ? 'block' : 'none';
         applyDatasetFilters();
-      });
+      }, 200);
+      datasetSearchInput.addEventListener('input', debouncedFilter);
+      if (datasetSearchClear) {
+        datasetSearchClear.addEventListener('click', () => {
+          datasetSearchInput.value = '';
+          datasetSearchClear.style.display = 'none';
+          activeSearchQuery = '';
+          applyDatasetFilters();
+        });
+      }
+    }
+
+    // Handle schema search input with debounce and clear button
+    const schemaSearchInput = document.getElementById('schema-search');
+    const schemaSearchClear = document.getElementById('schema-search-clear');
+    if (schemaSearchInput) {
+      const debouncedFilter = debounce(() => {
+        activeSchemaSearchQuery = schemaSearchInput.value.toLowerCase().trim();
+        if (schemaSearchClear) schemaSearchClear.style.display = activeSchemaSearchQuery ? 'block' : 'none';
+        applySchemaFilters();
+      }, 200);
+      schemaSearchInput.addEventListener('input', debouncedFilter);
+      if (schemaSearchClear) {
+        schemaSearchClear.addEventListener('click', () => {
+          schemaSearchInput.value = '';
+          schemaSearchClear.style.display = 'none';
+          activeSchemaSearchQuery = '';
+          applySchemaFilters();
+        });
+      }
     }
   }
 
-  // Schema filter function
+  // Schema filter function (standalone for schemas-only usage)
   function applySchemaFilters() {
     const schemaCards = document.querySelectorAll('.schema-card');
+    const noResults = document.getElementById('schema-no-results');
+    let visibleCount = 0;
+
     schemaCards.forEach(card => {
       const cardSource = card.getAttribute('data-source-mapped');
       const sourceMatch = (activeSourceFilter === 'all' || cardSource === activeSourceFilter);
@@ -1863,10 +2202,15 @@
           card.style.opacity = '1';
           card.style.transition = 'opacity 0.3s ease';
         }, 10);
+        visibleCount++;
       } else {
         card.classList.add('filtered-out');
       }
     });
+
+    if (noResults) {
+      noResults.classList.toggle('visible', visibleCount === 0);
+    }
   }
 
   // Load and render schemas dynamically
@@ -1906,16 +2250,13 @@
               </tbody>
             </table>
           </div>`;
-      }).join('');
+      }).join('') + `
+        <div class="no-results" id="schema-no-results">
+          <div class="no-results-icon">🔍</div>
+          <div class="no-results-title">Nenhuma coluna encontrada</div>
+          <div class="no-results-desc">Tente alterar os filtros ou buscar por outro termo.</div>
+        </div>`;
 
-      // Wire schema search event listener and initial filter
-      const schemaSearchInput = document.getElementById('schema-search');
-      if (schemaSearchInput) {
-        schemaSearchInput.addEventListener('input', (e) => {
-          activeSchemaSearchQuery = e.target.value.toLowerCase().trim();
-          applySchemaFilters();
-        });
-      }
       applySchemaFilters();
 
     } catch (err) {
@@ -2087,14 +2428,101 @@
     }
   }
 
+  // Pipeline health dropdown toggle (accessible: click + keyboard)
+  function initPipelineHealth() {
+    const trigger = document.getElementById('health-trigger');
+    const dropdown = document.getElementById('health-dropdown');
+    if (!trigger || !dropdown) return;
+
+    function toggleDropdown(expanded) {
+      dropdown.hidden = !expanded;
+      trigger.setAttribute('aria-expanded', expanded);
+    }
+
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleDropdown(dropdown.hidden);
+    });
+
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleDropdown(dropdown.hidden);
+      }
+      if (e.key === 'Escape' && !dropdown.hidden) {
+        toggleDropdown(false);
+        trigger.focus();
+      }
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!dropdown.hidden && !e.target.closest('.pipeline-health-container')) {
+        toggleDropdown(false);
+      }
+    });
+  }
+
+  // Mobile hamburger menu
+  function initMobileMenu() {
+    const btn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    if (!btn || !navLinks) return;
+
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('nav-open');
+    });
+  }
+
+  // Footer year dynamic
+  function setFooterYear() {
+    const year = new Date().getFullYear();
+    document.querySelectorAll('.footer-copy').forEach(el => {
+      el.textContent = el.textContent.replace('2026', year);
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', async () => {
     await loadAndRenderDatasets();
     await loadLastUpdates();
     await loadSchemas();
     initDatasetFilters();
     initPandasCopyButtons();
+    initCopyUrlButtons();
+    initPipelineHealth();
     await loadPipelineStatus();
+    initMobileMenu();
+    setFooterYear();
   });
+</script>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Pulse Ratings — Brazilian Corporate & Sovereign Credit Ratings",
+  "description": "Pipeline serverless de captura periódica das notas de rating corporativo e soberano no Brasil. Dados consolidados da S&P Global, Moody's e Fitch Ratings.",
+  "url": "https://pulsedatalabs.github.io/PulseRatingsBrasil/",
+  "sameAs": "https://github.com/PulseDataLabs/PulseRatingsBrasil",
+  "creator": {
+    "@type": "Organization",
+    "name": "Pulse Data Labs",
+    "url": "https://github.com/PulseDataLabs"
+  },
+  "distribution": [
+    {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_ratings.csv"},
+    {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_entidades.csv"},
+    {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_ratings.csv"},
+    {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_entidades.csv"},
+    {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/standard_and_poors_ratings.csv"},
+    {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/standard_and_poors_entidades.csv"}
+  ],
+  "temporalCoverage": "2025/2026",
+  "spatialCoverage": "Brazil",
+  "inLanguage": "pt-BR"
+}
 </script>
 </body>
 </html>

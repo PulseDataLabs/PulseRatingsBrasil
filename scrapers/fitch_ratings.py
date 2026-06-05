@@ -53,7 +53,7 @@ query {
 """
 
 CABECALHO = [
-    "data_captura",
+    "dt_captura",
     "no_entidade",
     "link",
     "Tipo de Rating",
@@ -81,7 +81,7 @@ def _obter_ratings_via_api() -> list[dict]:
     """Obtém todos os ratings de entidades brasileiras da Fitch via GraphQL API."""
     from curl_cffi import requests as crequests
 
-    data_captura, _ = agora_brt()
+    dt_captura, _ = agora_brt()
     rows = []
     offset = 0
     total = None
@@ -137,7 +137,7 @@ def _obter_ratings_via_api() -> list[dict]:
                     alert_desc = ""
 
                 rows.append({
-                    "data_captura": data_captura,
+                    "dt_captura": dt_captura,
                     "no_entidade": nome,
                     "link": link,
                     "Tipo de Rating": limpar(r.get("ratingTypeDescription") or ""),

@@ -1,14 +1,9 @@
 [
   {
-    "title": "Moodys Ratings",
+    "title": "Moody's — Ratings",
     "files": "moodys_ratings.csv",
     "source": "moodys",
     "fields": [
-      {
-        "name": "data_captura",
-        "type": "date",
-        "example": "2026-06-04"
-      },
       {
         "name": "no_setor",
         "type": "str",
@@ -57,15 +52,10 @@
     ]
   },
   {
-    "title": "Fitch Ratings",
+    "title": "Fitch — Ratings",
     "files": "fitch_ratings.csv",
     "source": "fitch",
     "fields": [
-      {
-        "name": "data_captura",
-        "type": "date",
-        "example": "2026-06-04"
-      },
       {
         "name": "no_entidade",
         "type": "str",
@@ -104,7 +94,7 @@
     ]
   },
   {
-    "title": "Standard And Poors Entidades",
+    "title": "S&P — Emissores",
     "files": "standard_and_poors_entidades.csv",
     "source": "s_p",
     "fields": [
@@ -121,7 +111,7 @@
     ]
   },
   {
-    "title": "Standard And Poors Ratings",
+    "title": "S&P — Ratings",
     "files": "standard_and_poors_ratings.csv",
     "source": "s_p",
     "fields": [
@@ -173,7 +163,7 @@
     ]
   },
   {
-    "title": "Moodys Entidades",
+    "title": "Moody's — Emissores",
     "files": "moodys_entidades.csv",
     "source": "moodys",
     "fields": [
@@ -190,7 +180,7 @@
     ]
   },
   {
-    "title": "Fitch Entidades",
+    "title": "Fitch — Emissores",
     "files": "fitch_entidades.csv",
     "source": "fitch",
     "fields": [

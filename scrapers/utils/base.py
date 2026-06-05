@@ -42,9 +42,9 @@ class BaseScraper:
                 return
 
             # Certifica de que a coluna de data de captura existe
-            if "data_captura" not in df.columns and "dt_captura" not in df.columns:
-                data_captura, _ = agora_brt()
-                df.insert(0, "data_captura", data_captura)
+            if "dt_captura" not in df.columns:
+                dt_captura, _ = agora_brt()
+                df.insert(0, "dt_captura", dt_captura)
 
             # Limpa NaN para strings vazias
             df_cleaned = df.fillna("")
@@ -90,10 +90,10 @@ class BaseScraper:
             cabecalho = list(df_cleaned.columns)
 
             # Garante que a coluna de data esteja preenchida para salvamento correto
-            data_captura, _ = agora_brt()
+            dt_captura, _ = agora_brt()
             for r in registros:
-                if "data_captura" not in r and "dt_captura" not in r:
-                    r["data_captura"] = data_captura
+                if "dt_captura" not in r:
+                    r["dt_captura"] = dt_captura
 
             salvar_csv(
                 arquivo=self.output_file,
