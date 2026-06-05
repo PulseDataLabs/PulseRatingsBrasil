@@ -14,13 +14,13 @@
       "emissores",
       "corporativos"
     ],
-    "source": "Fitch Ratings",
+    "source": "Fitch",
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_ratings.csv"
   },
   {
     "title": "Fitch — Ratings Emissores",
     "file": "fitch_entidades.csv",
-    "description": "Emissores brasileiros com rating de crédito ativo atribuído pela Fitch Ratings.",
+    "description": "Entidades brasileiras com rating de crédito ativo atribuído pela Fitch Ratings.",
     "icon": "F",
     "iconClass": "icon-fitch",
     "badge": "Diário",
@@ -28,10 +28,28 @@
     "tags": [
       "ratings",
       "fitch",
+      "entidades",
       "emissores"
     ],
-    "source": "Fitch Ratings",
+    "source": "Fitch",
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_entidades.csv"
+  },
+  {
+    "title": "Moody's — Emissores",
+    "file": "moodys_entidades.csv",
+    "description": "Lista de entidades (emissores corporativos, financeiros e públicos) com rating vigente pela Moody's no Brasil.",
+    "icon": "M",
+    "iconClass": "icon-moodys",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
+    "tags": [
+      "ratings",
+      "moodys",
+      "entidades",
+      "emissores"
+    ],
+    "source": "Moody's",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_entidades.csv"
   },
   {
     "title": "Moody's — Ratings",
@@ -52,20 +70,21 @@
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_ratings.csv"
   },
   {
-    "title": "Moody's — Emissores",
-    "file": "moodys_entidades.csv",
-    "description": "Lista de emissores (corporativos, financeiros e públicos) com rating vigente pela Moody's no Brasil.",
-    "icon": "M",
-    "iconClass": "icon-moodys",
+    "title": "S&P — Emissores",
+    "file": "standard_and_poors_entidades.csv",
+    "description": "Entidades com rating de crédito ativo ou histórico de classificação regulatória pela S&P Global Ratings no Brasil.",
+    "icon": "S&P",
+    "iconClass": "icon-sp",
     "badge": "Diário",
     "badgeClass": "badge-daily",
     "tags": [
       "ratings",
-      "moodys",
+      "s&p",
+      "entidades",
       "emissores"
     ],
-    "source": "Moody's",
-    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_entidades.csv"
+    "source": "S&P",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/standard_and_poors_entidades.csv"
   },
   {
     "title": "S&P — Ratings",
@@ -82,23 +101,7 @@
       "emissores",
       "corporativos"
     ],
-    "source": "S&P Global",
+    "source": "S&P",
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/standard_and_poors_ratings.csv"
-  },
-  {
-    "title": "S&P — Emissores",
-    "file": "standard_and_poors_entidades.csv",
-    "description": "Emissores com rating de crédito ativo ou histórico de classificação regulatória pela S&P Global Ratings no Brasil.",
-    "icon": "S&P",
-    "iconClass": "icon-sp",
-    "badge": "Diário",
-    "badgeClass": "badge-daily",
-    "tags": [
-      "ratings",
-      "s&p",
-      "emissores"
-    ],
-    "source": "S&P Global",
-    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/standard_and_poors_entidades.csv"
   }
 ]

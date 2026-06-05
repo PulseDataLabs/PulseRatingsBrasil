@@ -53,14 +53,14 @@ class StandardAndPoorsEntidadesScraper(BaseScraper):
     accumulate = False
 
     # Catálogo de Metadados
-    title = 'S&P Global — Entidades Brasil'
+    title = 'S&P — Emissores'
     description = 'Entidades com rating de crédito ativo ou histórico de classificação regulatória pela S&P Global Ratings no Brasil.'
     icon = 'S&P'
     icon_class = 'icon-sp'
     badge = 'Diário'
     badge_class = 'badge-daily'
     tags = ['ratings', 's&p', 'entidades', 'emissores']
-    source = 'S&P Global'
+    source = 'S&P'
 
     def _get_api_key(self) -> str:
         """

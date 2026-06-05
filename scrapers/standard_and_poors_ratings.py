@@ -133,14 +133,14 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
     accumulate = True
 
     # Catálogo de Metadados
-    title = 'S&P Global — Emissores Brasil'
+    title = 'S&P — Ratings'
     description = 'Histórico consolidado de notas de rating atribuídas pela S&P Global Ratings a emissores corporativos, soberanos e de infraestrutura no Brasil.'
     icon = 'S&P'
     icon_class = 'icon-sp'
     badge = 'Acumulativo'
     badge_class = 'badge-cumulative'
     tags = ['ratings', 's&p', 'crédito', 'emissores', 'corporativos']
-    source = 'S&P Global'
+    source = 'S&P'
 
     def fetch(self) -> pd.DataFrame:
         entidades_csv = os.path.join(

@@ -29,7 +29,7 @@ class MoodysEntidadesScraper(BaseScraper):
     chaves_dedup = ["no_entidade"]
 
     # Catálogo de Metadados
-    title = "Moody's — Entidades Brasil"
+    title = "Moody's — Emissores"
     description = "Lista de entidades (emissores corporativos, financeiros e públicos) com rating vigente pela Moody's no Brasil."
     icon = "M"
     icon_class = "icon-moodys"

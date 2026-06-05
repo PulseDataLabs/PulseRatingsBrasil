@@ -53,7 +53,7 @@ class MoodysRatingsScraper(BaseScraper):
     accumulate = False  # Sobrescreve o arquivo com a lista vigente atualizada
 
     # Catálogo de Metadados
-    title = "Moody's — Emissores Brasil"
+    title = "Moody's — Ratings"
     description = "Ratings de crédito atribuídos pela Moody's Local a emissores corporativos, financeiros, de financiamento estruturado e públicos no Brasil."
     icon = "M"
     icon_class = "icon-moodys"

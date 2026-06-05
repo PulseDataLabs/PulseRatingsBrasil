@@ -124,14 +124,14 @@ class FitchEntidadesScraper(BaseScraper):
     chaves_dedup = ["link"]
 
     # Catálogo de Metadados
-    title = "Fitch Ratings — Entidades Brasil"
+    title = "Fitch — Ratings Emissores"
     description = "Entidades brasileiras com rating de crédito ativo atribuído pela Fitch Ratings."
     icon = "F"
     icon_class = "icon-fitch"
     badge = "Diário"
     badge_class = "badge-daily"
     tags = ["ratings", "fitch", "entidades", "emissores"]
-    source = "Fitch Ratings"
+    source = "Fitch"
 
     def fetch(self) -> pd.DataFrame:
         log.info("=== Fitch Ratings — Entidades Brasil ===")

@@ -320,16 +320,32 @@ def salvar_csv(
         if not found:
             # Adiciona nova entrada
             def get_source_from_filename(filename: str) -> str:
-                filename = filename.lower()
-                if filename.startswith('standard_and_poors_') or filename.startswith('s_p_'):
-                    return 's_p'
-                elif filename.startswith('moodys_'):
-                    return 'moodys'
-                elif filename.startswith('fitch_'):
-                    return 'fitch'
+                fn = filename.lower()
+                if fn.startswith('standard_and_poors_') or fn.startswith('s_p_'):
+                    return 'S&P'
+                elif fn.startswith('moodys_'):
+                    return "Moody's"
+                elif fn.startswith('fitch_'):
+                    return 'Fitch'
                 return 'other'
 
-            guessed_title = arquivo.name.replace(".csv", "").replace("_", " ").title()
+            def get_title_from_filename(filename: str) -> str:
+                fn = filename.lower()
+                if 'standard_and_poors' in fn or 's_p' in fn:
+                    ag = 'S&P'
+                elif 'moodys' in fn:
+                    ag = "Moody's"
+                elif 'fitch' in fn:
+                    ag = 'Fitch'
+                else:
+                    ag = filename.replace('.csv', '').replace('_', ' ').title()
+                if 'entidades' in fn or 'emissores' in fn:
+                    suf = 'Emissores'
+                else:
+                    suf = 'Ratings'
+                return f'{ag} — {suf}'
+
+            guessed_title = get_title_from_filename(arquivo.name)
             schemas.append({
                 "title": guessed_title,
                 "files": arquivo.name,
