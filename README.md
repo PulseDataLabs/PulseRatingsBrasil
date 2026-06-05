@@ -24,7 +24,7 @@
 
 O **Pulse Ratings Brasil** é um pipeline de ETL (Extração, Transformação e Carga) serverless projetado para coletar, tratar e disponibilizar dados de ratings de crédito (corporativos e soberanos) das principais agências de classificação de risco em atuação no Brasil: **S&P**, **Moody's** e **Fitch**.
 
-Ele funciona 100% de forma automatizada via **GitHub Actions**, salvando o histórico consolidado diretamente no repositório em formato CSV plano, sem custos com banco de dados ou servidores. Os dados tratados alimentam um dashboard interativo servido via **GitHub Pages**.
+Ele funciona 100% de forma automatizada via **GitHub Actions**, salvando o histórico consolidado diretamente no repositório em formato CSV plano. Os dados tratados alimentam um dashboard interativo servido via **GitHub Pages**.
 
 ---
 
@@ -244,5 +244,5 @@ Desenvolvido com 💙 por **[PulseDataLabs](https://github.com/PulseDataLabs)**.
 ---
 
 <p align="center">
-  <sub>Dados públicos de rating — S&P, Moody's e Fitch · Open-source</sub>
+  <sub>Dados públicos de rating — S&P, Moody's e Fitch</sub>
 </p>
