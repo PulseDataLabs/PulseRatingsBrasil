@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pipeline automatizado de ratings de crédito brasileiros (S&P, Moody's, Fitch) — CSVs diários, schema documentado." />
-    <meta property="og:title" content="Pulse Ratings — Ratings de Crédito do Mercado Brasileiro" />
-    <meta property="og:description" content="Pipeline automatizado de ratings de crédito brasileiros (S&P, Moody's, Fitch) — CSVs diários, schema documentado." />
+    <meta name="description" content="Ratings de crédito corporativo e soberano do Brasil (S&P, Moody's, Fitch) prontos para uso — sem scraping, sem manutenção. Consultoria em dados financeiros brasileiros." />
+    <meta property="og:title" content="Pulse Ratings — Dados de Rating Prontos para o Mercado Brasileiro" />
+    <meta property="og:description" content="Ratings de crédito corporativo e soberano do Brasil (S&P, Moody's, Fitch) prontos para uso — sem scraping, sem manutenção. Consultoria em dados financeiros brasileiros." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pulsedatalabs.github.io/PulseRatingsBrasil/" />
     <meta property="og:image" content="https://pulsedatalabs.github.io/PulseRatingsBrasil/assets/og-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Pulse Ratings — Ratings de Crédito do Mercado Brasileiro" />
-    <meta name="twitter:description" content="Pipeline automatizado de ratings de crédito brasileiros (S&P, Moody's, Fitch) — CSVs diários, schema documentado." />
+    <meta name="twitter:title" content="Pulse Ratings — Dados de Rating Prontos para o Mercado Brasileiro" />
+    <meta name="twitter:description" content="Ratings de crédito corporativo e soberano do Brasil (S&P, Moody's, Fitch) estruturados e atualizados diariamente — prontos para uso em BI, ETL ou modelos de risco." />
     <meta name="twitter:image" content="https://pulsedatalabs.github.io/PulseRatingsBrasil/assets/og-image.png" />
-    <title>Pulse Ratings — Notas de Rating do Mercado Brasileiro</title>
+    <title>Pulse Ratings — Dados de Rating do Mercado Brasileiro | Pulse Data Labs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -1409,7 +1409,7 @@
     <li><a href="#como-funciona">Pipeline</a></li>
     <li><a href="#datasets">Datasets</a></li>
     <li><a href="#schema">Schema</a></li>
-    <li><a href="#setup">Instalação</a></li>
+    <li><a href="#uso-comercial">Uso Comercial</a></li>
   </ul>
   <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" style="display:none;background:none;border:none;color:var(--text);font-size:1.5rem;cursor:pointer;">☰</button>
     <div style="display: flex; align-items: center; gap: 1rem;">
@@ -1424,9 +1424,7 @@
           <div id="health-details">Carregando informações...</div>
         </div>
       </div>
-      <a href="https://github.com/PulseDataLabs/PulseRatingsBrasil" class="nav-cta" target="_blank">
-        GitHub ↗
-      </a>
+      <a href="mailto:pulsedatalabs@gmail.com?subject=Pulse Ratings — Interesse Comercial" class="nav-cta">Fale Conosco ↗</a>
     </div>
 </nav>
 
@@ -1453,14 +1451,15 @@
   <span class="hero-subtitle">Brazilian Corporate & Sovereign Credit Ratings</span>
 
   <p class="hero-description">
-    Pipeline serverless de captura periódica das notas de rating corporativo e soberano no Brasil.
-    Dados consolidados da S&P Global, Moody's e Fitch Ratings, processados de forma
-    automatizada via GitHub Actions e disponibilizados em formato CSV estruturado.
+    Ratings de crédito corporativo e soberano do Brasil consolidados em um único lugar —
+    <strong style="color: var(--text);">S&P Global, Moody's e Fitch</strong>, atualizados automaticamente três vezes ao dia.
+    Dados estruturados, prontos para integrar diretamente ao seu BI, ETL ou modelo de risco.
+    Sem scraping, sem manutenção, sem dor de cabeça.
   </p>
 
   <div class="hero-ctas">
     <a href="#datasets" class="btn-primary">Explorar ratings</a>
-    <a href="https://github.com/PulseDataLabs/PulseRatingsBrasil" class="btn-secondary" target="_blank">Ver no GitHub</a>
+    <a href="mailto:pulsedatalabs@gmail.com?subject=Pulse Ratings — Solicito Acesso Comercial" class="btn-secondary">Solicitar Acesso Comercial</a>
   </div>
 </section>
 
@@ -1629,80 +1628,88 @@
   </div>
 </section>
 
-<!-- SETUP -->
-<section class="setup-section" id="setup">
+<!-- USO COMERCIAL -->
+<section class="setup-section" id="uso-comercial">
   <div class="container">
-    <div class="section-label reveal">Instalação</div>
-    <h2 class="section-title reveal">Comece em minutos</h2>
-    <p class="section-desc reveal">Clone, configure as secrets e os dados serão atualizados automaticamente pelo pipeline.</p>
+    <div class="section-label reveal">Uso Comercial</div>
+    <h2 class="section-title reveal">Quer usar esses dados no seu negócio?</h2>
+    <p class="section-desc reveal">
+      O Pulse Ratings é desenvolvido e mantido pela <strong style="color: var(--text);">Pulse Data Labs</strong>,
+      uma consultoria especializada em dados financeiros brasileiros. Atendemos gestoras,
+      fintechs, escritórios de análise e equipes de risco que precisam de dados estruturados
+      e confiáveis — sem precisar montar e manter a própria infraestrutura de coleta.
+    </p>
 
     <div class="setup-grid reveal">
       <div class="steps-list">
         <div class="setup-step">
           <div class="step-num">1</div>
           <div>
-            <h4>Clone o repositório</h4>
-            <p>Faça o fork ou clone direto do <code>PulseRatingsBrasil</code> para sua conta GitHub.</p>
+            <h4>Acesso aos dados estruturados</h4>
+            <p>Entregamos os CSVs diretamente para o seu BI, ETL ou modelo de risco — via URL, e-mail ou repositório privado. Você consome, nós mantemos.</p>
           </div>
         </div>
         <div class="setup-step">
           <div class="step-num">2</div>
           <div>
-            <h4>Configure os Secrets (opcional)</h4>
-            <p>Se as APIs das agências exigirem chaves ou tokens, configure em: <code>Settings → Secrets → Actions</code>. Por exemplo: <code>SP_GLOBAL_API_KEY</code>. Sem isso, o scraper S&P tentará capturar a chave pública dinamicamente.</p>
+            <h4>Consultoria em dados financeiros</h4>
+            <p>Precisa de um scraper customizado, integração com uma fonte específica ou um pipeline completo? Desenvolvemos sob demanda, com entregas rápidas e documentação incluída.</p>
           </div>
         </div>
         <div class="setup-step">
           <div class="step-num">3</div>
           <div>
-            <h4>Habilite o GitHub Actions</h4>
-            <p>Na aba <code>Actions</code> do repositório, clique em <em>"Enable Actions"</em>. O pipeline já está configurado para rodar de forma automática.</p>
+            <h4>Customização e fontes adicionais</h4>
+            <p>Além de S&P, Moody's e Fitch, podemos incluir outras fontes conforme sua necessidade — ANBIMA, BCB, CVM, B3 e mais. O escopo é definido junto com você.</p>
           </div>
         </div>
         <div class="setup-step">
           <div class="step-num">4</div>
           <div>
-            <h4>Rode manualmente para testar</h4>
-            <p><code>Actions → Executar Automação de Dados Diária → Run workflow</code> para verificar se a coleta de ratings funciona.</p>
-          </div>
-        </div>
-        <div class="setup-step">
-          <div class="step-num">5</div>
-          <div>
-            <h4>Consuma os CSVs</h4>
-            <p>Aponte sua ferramenta de BI ou ETL para as URLs raw do GitHub. Os dados são atualizados automaticamente conforme a agenda.</p>
+            <h4>Sem compromisso para conversar</h4>
+            <p>Mande um e-mail contando o que você precisa. Respondemos em até 1 dia útil com uma proposta ou uma conversa para entender melhor o seu caso.</p>
           </div>
         </div>
       </div>
 
-      <div class="code-block">
-        <div class="code-header">
-          <span class="code-dot cd-red"></span>
-          <span class="code-dot cd-yellow"></span>
-          <span class="code-dot cd-green"></span>
-          <span class="code-filename">terminal</span>
+      <div style="display: flex; flex-direction: column; gap: 1.5rem; justify-content: center;">
+        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem; text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">✉️</div>
+          <h3 style="font-family: var(--font-head); font-weight: 700; font-size: 1.2rem; margin-bottom: 0.75rem;">Fale com a Pulse Data Labs</h3>
+          <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text2); line-height: 1.7; margin-bottom: 1.75rem;">
+            Seja para acesso comercial aos dados, consultoria pontual<br>ou desenvolvimento de pipelines customizados — estamos aqui.
+          </p>
+          <a href="mailto:pulsedatalabs@gmail.com?subject=Pulse Ratings — Interesse Comercial"
+             style="display: inline-block; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 500;
+                    letter-spacing: 0.06em; text-transform: uppercase; color: var(--bg);
+                    background: var(--accent); padding: 0.9rem 2rem; border-radius: 4px;
+                    text-decoration: none; transition: background 0.2s; box-shadow: 0 0 30px rgba(0,212,255,0.2);">
+            pulsedatalabs@gmail.com
+          </a>
+          <p style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text3); margin-top: 1rem;">
+            Resposta em até 1 dia útil · Sem compromisso
+          </p>
         </div>
-        <div class="code-body">
-<span class="cm"># 1. Clone o repositório</span>
-<span class="kw">git</span> clone https://github.com/PulseDataLabs/PulseRatingsBrasil.git
-<span class="kw">cd</span> PulseRatingsBrasil
 
-<span class="cm"># 2. Instale as dependências</span>
-<span class="kw">pip</span> install <span class="op">-r</span> requirements.txt
-
-<span class="cm"># 3. Configure as credenciais (opcional)</span>
-<span class="kw">cp</span> .env.example .env
-<span class="cm"># Edite .env com suas chaves se necessário</span>
-
-<span class="cm"># 4. Teste localmente — todos os scrapers de ratings</span>
-<span class="kw">python</span> run_all.py
-
-<span class="cm"># Ou rode um scraper específico</span>
-<span class="kw">python</span> run_all.py --scraper moodys_ratings
-<span class="kw">python</span> run_all.py --scraper standard_and_poors_ratings
-
-<span class="cm"># 5. URL raw para importar direto no seu BI:</span>
-<span class="str">https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_ratings.csv</span>
+        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem;">
+          <p style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text3); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Também disponível para</p>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text2); display: flex; gap: 0.5rem; align-items: center;">
+              <span style="color: var(--green);">›</span> Integração com Excel, Power BI e Python
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text2); display: flex; gap: 0.5rem; align-items: center;">
+              <span style="color: var(--green);">›</span> Entrega via repositório privado
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text2); display: flex; gap: 0.5rem; align-items: center;">
+              <span style="color: var(--green);">›</span> Acesso a dados históricos completos
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text2); display: flex; gap: 0.5rem; align-items: center;">
+              <span style="color: var(--green);">›</span> Desenvolvimento de pipelines customizados
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text2); display: flex; gap: 0.5rem; align-items: center;">
+              <span style="color: var(--green);">›</span> Outras fontes: ANBIMA, BCB, CVM, B3
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1721,9 +1728,11 @@
         <li><a href="#como-funciona">Pipeline</a></li>
         <li><a href="#datasets">Datasets</a></li>
         <li><a href="#schema">Schema</a></li>
+        <li><a href="#uso-comercial">Uso Comercial</a></li>
+        <li><a href="https://pulsedatalabs.github.io" target="_blank">Pulse Data Labs</a></li>
         <li><a href="https://github.com/PulseDataLabs/PulseRatingsBrasil" target="_blank">GitHub</a></li>
       </ul>
-      <span class="footer-copy">© 2026 Pulse Data Labs · Dados de rating público — S&P, Moody's e Fitch</span>
+      <span class="footer-copy">© 2026 Pulse Data Labs · <a href="mailto:pulsedatalabs@gmail.com" style="color: var(--text3); text-decoration: none;">pulsedatalabs@gmail.com</a></span>
     </div>
   </div>
 </footer>
@@ -2477,7 +2486,7 @@
   "@context": "https://schema.org",
   "@type": "Dataset",
   "name": "Pulse Ratings — Brazilian Corporate & Sovereign Credit Ratings",
-  "description": "Pipeline serverless de captura periódica das notas de rating corporativo e soberano no Brasil. Dados consolidados da S&P Global, Moody's e Fitch Ratings.",
+  "description": "Ratings de crédito corporativo e soberano do Brasil (S&P, Moody's e Fitch) estruturados, atualizados diariamente e prontos para uso em BI, ETL e modelos de risco. Desenvolvido pela Pulse Data Labs.",
   "url": "https://pulsedatalabs.github.io/PulseRatingsBrasil/",
   "sameAs": "https://github.com/PulseDataLabs/PulseRatingsBrasil",
   "creator": {
