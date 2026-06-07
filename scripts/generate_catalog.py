@@ -183,7 +183,25 @@ def generate():
         new_catalog.append(dataset_entry)
         processed_files.add(filename)
 
-    # 4. Adiciona quaisquer itens do datasets.json antigo que não foram mapeados em run_all.py (ex: datasets secundários do mesmo scraper)
+    # 4. Adiciona entrada fixa para o dataset de emissores consolidados
+    consolidated_entry = {
+        "title": "Emissores Consolidados",
+        "file": "emissores_consolidado.csv",
+        "description": "Emissores das 3 agências (Fitch, Moody's, S&P) consolidados em uma linha por emissor, com nomes padronizados e campo para CNPJ.",
+        "icon": "CR",
+        "iconClass": "icon-consolidated",
+        "badge": "Acumulado",
+        "badgeClass": "badge-cumulative",
+        "tags": ["emissores", "consolidado", "cnpj"],
+        "source": "Consolidado",
+        "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/emissores_consolidado.csv",
+    }
+    if consolidated_entry["file"] not in processed_files:
+        new_catalog.append(consolidated_entry)
+        processed_files.add(consolidated_entry["file"])
+        logger.info("Adicionado dataset de emissores consolidados ao catálogo.")
+
+    # 5. Adiciona quaisquer itens do datasets.json antigo que não foram mapeados em run_all.py (ex: datasets secundários do mesmo scraper)
     for file, old_item in old_datasets.items():
         if file not in processed_files:
             logger.info(f"Mantendo dataset secundário do datasets.json original: {file}")

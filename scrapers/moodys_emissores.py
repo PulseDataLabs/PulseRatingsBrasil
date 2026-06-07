@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.utils.base import BaseScraper
+from scripts.utils import print_done, print_info, print_warn, print_start, print_fail
 
 BASE_URL = "https://moodyslocal.com.br"
 
@@ -45,11 +46,13 @@ class MoodysEmissoresScraper(BaseScraper):
         session = requests.Session()
 
         self.logger.info(f"Acessando {BASE_URL} para buscar o link do Excel...")
+        print_start("Acessando moodyslocal.com.br...")
         try:
             resp = session.get(BASE_URL, impersonate="chrome", timeout=60)
             resp.raise_for_status()
         except Exception as e:
             self.logger.error(f"Erro ao acessar Moody's Local: {e}")
+            print_fail(f"Erro ao acessar Moody's Local: {e}")
             return pd.DataFrame()
 
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -64,27 +67,34 @@ class MoodysEmissoresScraper(BaseScraper):
 
         if not download_url:
             self.logger.error("Link de download da Moody's Local não encontrado.")
+            print_fail("Link do Excel não encontrado na página")
             return pd.DataFrame()
 
         self.logger.info(f"Baixando arquivo Excel: {download_url}")
+        print_start(f"Baixando Excel...")
         try:
             resp_file = session.get(download_url, impersonate="chrome", timeout=120)
             resp_file.raise_for_status()
         except Exception as e:
             self.logger.error(f"Erro ao baixar o Excel: {e}")
+            print_fail(f"Erro ao baixar Excel: {e}")
             return pd.DataFrame()
+        print_done("Excel baixado")
 
         xlsx_bytes = BytesIO(resp_file.content)
 
         self.logger.info("Carregando planilha...")
+        print_start("Carregando planilha...")
         try:
             wb = load_workbook(filename=xlsx_bytes, read_only=True, data_only=True)
             sheet = wb.active
         except Exception as e:
             self.logger.error(f"Erro ao carregar planilha: {e}")
+            print_fail(f"Erro ao carregar planilha: {e}")
             return pd.DataFrame()
 
         self.logger.info("Processando linhas da planilha de emissores...")
+        print_start("Processando emissores...")
         headers = None
         data_rows = []
 
@@ -122,6 +132,8 @@ class MoodysEmissoresScraper(BaseScraper):
 
         # Mantém apenas as colunas unificadas
         df = df[["dt_captura", "no_entidade", "link"]]
+
+        print_done(f"{len(df)} emissores extraídos")
         return df
 
 

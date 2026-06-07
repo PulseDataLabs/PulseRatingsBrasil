@@ -15,6 +15,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from utils import get_logger, agora_brt, limpar
 from scrapers.utils.base import BaseScraper
+from scripts.utils import print_done, print_info, print_warn, print_start, progress_bar
 
 log = get_logger("fitch_ratings")
 
@@ -111,6 +112,7 @@ def _obter_ratings_via_api() -> list[dict]:
         if total is None:
             total = search.get("totalEntityHits", 0)
             log.info(f"Total de emissores brasileiros na Fitch: {total}")
+            print_info(f"Total de emissores: {total}", "chart")
 
         entity_hits = search.get("entity", [])
         if not entity_hits:
@@ -151,16 +153,19 @@ def _obter_ratings_via_api() -> list[dict]:
             f"  Página {page}: {len(entity_hits)} emissores, "
             f"{emissores_com_rating} com ratings (acumulado: {len(rows)} ratings)"
         )
+        bar = progress_bar(offset + PAGE_SIZE, total) if total else ""
+        print(f"    {bar}")
 
         offset += PAGE_SIZE
         if offset >= total:
             log.info("Todos os emissores foram processados.")
+            print_done("Todos os emissores processados")
             break
 
-        # Pausa entre requisições para evitar rate-limiting
         time.sleep(1)
 
     log.info(f"Total de ratings capturados: {len(rows)}")
+    print_done(f"{len(rows)} ratings capturados")
     return rows
 
 
@@ -187,15 +192,18 @@ class FitchRatingsScraper(BaseScraper):
 
     def fetch(self) -> pd.DataFrame:
         log.info("=== Fitch Ratings — Emissores Brasil ===")
+        print_start("Buscando ratings na API GraphQL da Fitch...")
 
         todos = []
         try:
             todos = _obter_ratings_via_api()
         except Exception as e:
             log.error(f"Erro ao obter ratings da Fitch: {e}", exc_info=True)
+            print_fail(f"Erro ao obter ratings: {e}")
 
         if not todos:
             log.warning("Nenhum rating obtido da Fitch.")
+            print_warn("Nenhum rating obtido")
 
         df = pd.DataFrame(todos)
         if not df.empty:

@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-06-04"
+        "example": "2026-06-05"
       }
     ]
   },
@@ -198,6 +198,43 @@
         "name": "link",
         "type": "str",
         "example": "https://www.fitchratings.com/entity/multiplan-empreendimentos-imobiliarios-sa-96177986"
+      }
+    ]
+  },
+  {
+    "title": "Emissores Consolidados (CNPJ + Nomes por Agência)",
+    "files": "emissores_consolidado.csv",
+    "source": "consolidated",
+    "fields": [
+      {
+        "name": "nome_emissor_padronizado",
+        "type": "str",
+        "example": "AMBEV"
+      },
+      {
+        "name": "nome_emissor_fitch",
+        "type": "str",
+        "example": "Ambev S.A."
+      },
+      {
+        "name": "nome_emissor_moodys",
+        "type": "str",
+        "example": ""
+      },
+      {
+        "name": "nome_emissor_standard_and_poors",
+        "type": "str",
+        "example": "AMBEV S.A."
+      },
+      {
+        "name": "cnpj_emissor",
+        "type": "str",
+        "example": ""
+      },
+      {
+        "name": "dt_geracao",
+        "type": "date",
+        "example": "2026-06-07"
       }
     ]
   }

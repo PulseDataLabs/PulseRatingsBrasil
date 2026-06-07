@@ -17,6 +17,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from utils import get_logger, agora_brt, limpar
 from scrapers.utils.base import BaseScraper
+from scripts.utils import print_done, print_info, print_warn, print_start
 
 log = get_logger("fitch_emissores")
 
@@ -85,6 +86,7 @@ def _obter_emissores_fitch_real() -> list[dict]:
         if total is None:
             total = search.get("totalEntityHits", 0)
             log.info(f"Total de emissores brasileiras na Fitch: {total}")
+            print_info(f"Total de emissores: {total}", "chart")
 
         entity_hits = search.get("entity", [])
         if not entity_hits:
@@ -98,17 +100,22 @@ def _obter_emissores_fitch_real() -> list[dict]:
                 link = f"https://www.fitchratings.com/entity/{permalink}"
                 entities[link] = limpar(nome)
 
-        log.info(f"  Página {page}: {len(entity_hits)} emissores (acumulado: {len(entities)})")
+        msg = f"Página {page}: {len(entity_hits)} emissores (acumulado: {len(entities)})"
+        log.info(f"  {msg}")
+        from scripts.utils import progress_bar
+        bar = progress_bar(len(entities), total) if total else ""
+        print(f"    {bar}")
 
         offset += PAGE_SIZE
         if offset >= total:
             log.info("Todas as emissores foram obtidas.")
+            print_done("Todas as páginas obtidas")
             break
 
-        # Pausa entre requisições para evitar rate-limiting
         time.sleep(1)
 
     log.info(f"Total de emissores únicas capturadas: {len(entities)}")
+    print_done(f"{len(entities)} emissores únicas capturadas")
     return [
         {"dt_captura": today_str, "no_entidade": nome, "link": link}
         for link, nome in entities.items()
@@ -135,14 +142,17 @@ class FitchEmissoresScraper(BaseScraper):
 
     def fetch(self) -> pd.DataFrame:
         log.info("=== Fitch Ratings — Emissores Brasil ===")
+        print_start("Buscando emissores na API GraphQL da Fitch...")
         emissores = []
         try:
             emissores = _obter_emissores_fitch_real()
         except Exception as e:
             log.error(f"Erro ao obter emissores da Fitch: {e}", exc_info=True)
+            print_fail(f"Erro ao obter emissores: {e}")
 
         if not emissores:
             log.warning("Nenhum emissor obtido da Fitch.")
+            print_warn("Nenhum emissor obtido")
 
         return pd.DataFrame(emissores)
 

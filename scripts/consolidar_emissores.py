@@ -1,0 +1,176 @@
+"""
+Consolida emissores das 3 agências (Fitch, Moody's, S&P) em um CSV único:
+uma linha por emissor, com colunas de nome por fonte + CNPJ.
+"""
+
+import csv
+import logging
+import re
+import unicodedata
+from datetime import datetime
+from pathlib import Path
+
+logger = logging.getLogger("consolidar_emissores")
+
+COLUNAS = [
+    "nome_emissor_padronizado",
+    "nome_emissor_fitch",
+    "nome_emissor_moodys",
+    "nome_emissor_standard_and_poors",
+    "cnpj_emissor",
+    "dt_geracao",
+]
+
+_SUFIXOS = [
+    r"\bS\.?\s*A\b\.?",
+    r"\bS/A\b",
+    r"\bLTDA?\b\.?",
+    r"\bEIRELI\b\.?",
+    r"\bME\b",
+    r"\bLTD\b\.?",
+    r"\bLIMITED\b",
+    r"\bINC\b\.?",
+    r"\bLLC\b",
+    r"\bCORP\b\.?",
+]
+
+_PALAVRAS_GENERICAS = [
+    r"\bDO\b", r"\bDA\b", r"\bDOS\b", r"\bDAS\b",
+    r"\bDE\b", r"\bEM\b", r"\bCOM\b", r"\bE\b", r"\bOU\b",
+    r"\bA\b", r"\bAO\b", r"\bAOS\b", r"\bAS\b",
+    r"\bO\b", r"\bOS\b", r"\bNO\b", r"\bNA\b",
+    r"\bPELO\b", r"\bPELA\b", r"\bUM\b", r"\bUMA\b",
+    r"\bBRASIL\b",
+]
+
+
+def normalizar(nome: str) -> str:
+    if not nome or not nome.strip():
+        return ""
+
+    result = nome.upper().strip()
+    result = result.replace("\u2013", "-").replace("\u2014", "-")
+    result = result.replace("&", " ")
+
+    result = unicodedata.normalize("NFKD", result)
+    result = result.encode("ascii", "ignore").decode("ascii")
+
+    result = re.sub(r"\([^)]*\)", "", result)
+
+    for pattern in _SUFIXOS:
+        result = re.sub(pattern, "", result)
+
+    result = re.split(r"\s*[,–\-—;]\s*", result)[0]
+
+    for pattern in _PALAVRAS_GENERICAS:
+        result = re.sub(pattern, "", result)
+
+    result = re.sub(r"\s+", " ", result).strip()
+
+    return result
+
+
+def carregar_emissores_fonte(caminho: Path) -> dict[str, str]:
+    if not caminho.exists():
+        logger.warning(f"Arquivo não encontrado: {caminho}")
+        return {}
+
+    result: dict[str, str] = {}
+    with open(caminho, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            nome = (row.get("no_entidade") or "").strip()
+            if nome:
+                result[nome] = normalizar(nome)
+    return result
+
+
+def carregar_consolidado_existente(caminho: Path) -> dict[str, dict]:
+    if not caminho.exists():
+        return {}
+
+    result: dict[str, dict] = {}
+    try:
+        with open(caminho, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                key = (row.get("nome_emissor_padronizado") or "").strip()
+                if key:
+                    result[key] = dict(row)
+    except Exception as e:
+        logger.warning(f"Erro ao ler consolidado existente: {e}")
+
+    return result
+
+
+def consolidar(
+    fitch_path: Path,
+    moodys_path: Path,
+    sp_path: Path,
+    output_path: Path,
+) -> None:
+    sources = {
+        "fitch": carregar_emissores_fonte(fitch_path),
+        "moodys": carregar_emissores_fonte(moodys_path),
+        "standard_and_poors": carregar_emissores_fonte(sp_path),
+    }
+
+    source_padronizados: dict[str, dict[str, str]] = {}
+    for source_key, emissor_dict in sources.items():
+        pad_map: dict[str, str] = {}
+        for original, padronizado in emissor_dict.items():
+            if padronizado:
+                if padronizado not in pad_map:
+                    pad_map[padronizado] = original
+        source_padronizados[source_key] = pad_map
+
+    all_padronizados: set[str] = set()
+    for pad_map in source_padronizados.values():
+        all_padronizados.update(pad_map.keys())
+
+    existing = carregar_consolidado_existente(output_path)
+
+    source_cols = [
+        ("fitch", "nome_emissor_fitch"),
+        ("moodys", "nome_emissor_moodys"),
+        ("standard_and_poors", "nome_emissor_standard_and_poors"),
+    ]
+
+    dt_geracao = datetime.now().strftime("%Y-%m-%d")
+
+    rows: list[dict[str, str]] = []
+    for padronizado in sorted(all_padronizados):
+        row: dict[str, str] = {col: "" for col in COLUNAS}
+        row["nome_emissor_padronizado"] = padronizado
+
+        for source_key, col_name in source_cols:
+            if padronizado in source_padronizados[source_key]:
+                row[col_name] = source_padronizados[source_key][padronizado]
+
+        if padronizado in existing:
+            cnpj = (existing[padronizado].get("cnpj_emissor") or "").strip()
+            if cnpj:
+                row["cnpj_emissor"] = cnpj
+
+        row["dt_geracao"] = dt_geracao
+        rows.append(row)
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=COLUNAS)
+        writer.writeheader()
+        writer.writerows(rows)
+
+    logger.info(
+        f"Consolidado gerado: {len(rows)} emissores em {output_path}"
+    )
+
+
+def generate() -> None:
+    data_dir = Path(__file__).resolve().parents[1] / "data"
+    consolidar(
+        fitch_path=data_dir / "fitch_emissores.csv",
+        moodys_path=data_dir / "moodys_emissores.csv",
+        sp_path=data_dir / "standard_and_poors_emissores.csv",
+        output_path=data_dir / "emissores_consolidado.csv",
+    )

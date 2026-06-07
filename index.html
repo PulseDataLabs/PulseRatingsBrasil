@@ -761,6 +761,7 @@
     .dataset-card.sp-card::after { background: radial-gradient(circle at top right, rgba(227, 83, 89, 0.08), transparent 60%); }
     .dataset-card.moodys-card::after { background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.08), transparent 60%); }
     .dataset-card.fitch-card::after { background: radial-gradient(circle at top right, rgba(234, 179, 8, 0.08), transparent 60%); }
+    .dataset-card.consolidated-card::after { background: radial-gradient(circle at top right, rgba(187, 134, 252, 0.08), transparent 60%); }
 
     .dataset-card:hover { background: var(--surface); }
     .dataset-card:hover::after { opacity: 1; }
@@ -804,6 +805,14 @@
       color: #eab308;
       font-weight: 800;
       font-size: 1.1rem !important;
+      font-family: 'Outfit', sans-serif;
+    }
+    .icon-consolidated {
+      background: rgba(187, 134, 252, 0.1);
+      border: 1px solid rgba(187, 134, 252, 0.25);
+      color: #bb86fc;
+      font-weight: 800;
+      font-size: 0.85rem !important;
       font-family: 'Outfit', sans-serif;
     }
 
@@ -1809,8 +1818,10 @@
         cardClass = 'sp-card';
       } else if (lowerFile.includes('moody')) {
         cardClass = 'moodys-card';
-      } else if (lowerFile.includes('fitch')) {
+      } else       if (lowerFile.includes('fitch')) {
         cardClass = 'fitch-card';
+      } else if (lowerFile === 'emissores_consolidado.csv') {
+        cardClass = 'consolidated-card';
       }
 
       let mappedSource = 'other';
@@ -1820,6 +1831,8 @@
         mappedSource = 'moodys';
       } else if (lowerFile.startsWith('fitch_')) {
         mappedSource = 'fitch';
+      } else if (lowerFile === 'emissores_consolidado.csv') {
+        mappedSource = 'consolidated';
       }
 
       const tagsHtml = (dataset.tags || []).map(t => `<span class="field-tag">${t}</span>`).join('');
@@ -2038,7 +2051,8 @@
 
       cards.forEach(card => {
         const cardSource = card.getAttribute('data-source-mapped');
-        const sourceMatch = (activeSourceFilter === 'all' || cardSource === activeSourceFilter);
+        const isConsolidated = cardSource === 'consolidated';
+        const sourceMatch = isConsolidated || (activeSourceFilter === 'all' || cardSource === activeSourceFilter);
         
         let searchMatch = true;
         if (activeSearchQuery) {
@@ -2498,7 +2512,8 @@
     {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_ratings.csv"},
     {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_emissores.csv"},
     {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/moodys_emissores.csv"},
-    {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/standard_and_poors_emissores.csv"}
+    {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/standard_and_poors_emissores.csv"},
+    {"@type": "DataDownload", "encodingFormat": "CSV", "contentUrl": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/emissores_consolidado.csv"}
   ],
   "temporalCoverage": "2025/2026",
   "spatialCoverage": "Brazil",

@@ -20,6 +20,7 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.utils.base import BaseScraper
+from scripts.utils import print_done, print_info, print_warn, print_start, print_fail
 
 BASE_URL = "https://moodyslocal.com.br"
 
@@ -69,11 +70,13 @@ class MoodysRatingsScraper(BaseScraper):
         session = requests.Session()
 
         self.logger.info(f"Acessando {BASE_URL} para buscar o link do Excel...")
+        print_start("Acessando moodyslocal.com.br...")
         try:
             resp = session.get(BASE_URL, impersonate="chrome", timeout=60)
             resp.raise_for_status()
         except Exception as e:
             self.logger.error(f"Erro ao acessar Moody's Local: {e}")
+            print_fail(f"Erro ao acessar Moody's Local: {e}")
             return pd.DataFrame()
 
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -88,27 +91,34 @@ class MoodysRatingsScraper(BaseScraper):
 
         if not download_url:
             self.logger.error("Link de download da Moody's Local não encontrado na página principal.")
+            print_fail("Link do Excel não encontrado")
             return pd.DataFrame()
 
         self.logger.info(f"Baixando arquivo Excel: {download_url}")
+        print_start("Baixando Excel...")
         try:
             resp_file = session.get(download_url, impersonate="chrome", timeout=120)
             resp_file.raise_for_status()
         except Exception as e:
             self.logger.error(f"Erro ao baixar o Excel: {e}")
+            print_fail(f"Erro ao baixar Excel: {e}")
             return pd.DataFrame()
+        print_done("Excel baixado")
 
         xlsx_bytes = BytesIO(resp_file.content)
 
         self.logger.info("Carregando planilha em modo read_only...")
+        print_start("Carregando planilha...")
         try:
             wb = load_workbook(filename=xlsx_bytes, read_only=True, data_only=True)
             sheet = wb.active
         except Exception as e:
             self.logger.error(f"Erro ao carregar planilha com openpyxl: {e}")
+            print_fail(f"Erro ao carregar planilha: {e}")
             return pd.DataFrame()
 
         self.logger.info("Processando linhas da planilha de ratings...")
+        print_start("Processando ratings...")
         headers = None
         data_rows = []
         file_date = None
@@ -151,6 +161,7 @@ class MoodysRatingsScraper(BaseScraper):
             return pd.DataFrame()
 
         self.logger.info(f"Total de {len(data_rows)} ratings extraídos.")
+        print_done(f"{len(data_rows)} ratings extraídos")
 
         df = pd.DataFrame(data_rows, columns=headers)
         df["dh_atu_arquivo"] = file_date or datetime.date.today().strftime("%Y-%m-%d")

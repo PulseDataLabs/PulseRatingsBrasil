@@ -48,9 +48,11 @@ graph TD
     B -->|Executes Phase 2| E["Dependent Scrapers: Ratings (Moody's, S&P, Fitch)"]
     D --> F["data/*.csv files"]
     E --> F
-    B -->|Calls generate_catalog.py| G["data/datasets.json"]
-    F & G --> H[git push origin main]
-    H --> I[GitHub Pages / index.html]
+    F --> G["scripts/consolidar_emissores.py"]
+    G --> H["data/emissores_consolidado.csv"]
+    F & H --> I["data/datasets.json (generate_catalog.py)"]
+    I --> J[git push origin main]
+    J --> K[GitHub Pages / index.html]
 ```
 
 ---
@@ -67,7 +69,11 @@ PulseRatingsBrasil/
 │   ├── schemas.json                 # Definição e mapeamento de campos e tipos
 │   ├── pipeline_status.json / .js   # Logs de saúde e duração da última execução
 │   ├── last_updates.json / .js      # Período de cobertura temporal de cada CSV
+│   ├── emissores_consolidado.csv    # Emissores consolidados (1 linha por emissor + CNPJ)
 │   └── *.csv                        # Séries temporais de ratings de crédito
+├── tests/                           # Testes automatizados
+│   ├── __init__.py
+│   └── test_consolidar_emissores.py # Testes do script de consolidação
 ├── scrapers/                        # Módulos de captura
 │   ├── utils/
 │   │   ├── __init__.py
@@ -78,7 +84,11 @@ PulseRatingsBrasil/
 │   ├── base.py                      # Salvamento de CSVs e helpers HTTP
 │   └── parsers.py                   # Parsers auxiliares para formatos especiais
 ├── scripts/                         # Scripts de ciclo de vida
-│   └── generate_catalog.py          # Gerador automatizado do catálogo de datasets
+│   ├── consolidar_emissores.py      # Consolida emissores das 3 agências em 1 CSV
+│   ├── generate_catalog.py          # Gerador automatizado do catálogo de datasets
+│   └── utils/
+│       ├── __init__.py
+│       └── ux.py                    # Utilitários de UX (cores, ícones, progresso)
 ├── run_all.py                       # Orquestrador CLI central do projeto
 ├── requirements.txt                 # Dependências do Python
 ├── .env.example                     # Template de variáveis de ambiente
@@ -140,6 +150,7 @@ O orquestrador `run_all.py` organiza os scrapers em grupos. Este repositório co
 | Grupo | Descrição | Scrapers |
 |-------|-----------|----------|
 | `ratings` | Ratings de crédito (S&P, Moody's, Fitch) | `standard_and_poors_ratings`, `standard_and_poors_emissores`, `moodys_ratings`, `moodys_emissores`, `fitch_ratings`, `fitch_emissores` |
+| `consolidated` | Emissores consolidados (1 linha por emissor) | `emissores_consolidado` |
 | `anbima` | Dados ANBIMA | *(implementação externa)* |
 | `b3` | Dados B3 | *(implementação externa)* |
 | `bcb` | Dados Banco Central | *(implementação externa)* |
@@ -184,6 +195,17 @@ Os campos comuns a todos os datasets:
 | `dt_captura` | date | Data da captura pelo pipeline |
 | `no_entidade` | str | Nome do emissor |
 
+O dataset `emissores_consolidado.csv` possui estrutura própria:
+
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `nome_emissor_padronizado` | str | Nome normalizado (uppercase, sem acentos, sem sufixos) |
+| `nome_emissor_fitch` | str | Nome original na fonte Fitch |
+| `nome_emissor_moodys` | str | Nome original na fonte Moody's |
+| `nome_emissor_standard_and_poors` | str | Nome original na fonte S&P |
+| `cnpj_emissor` | str | CNPJ do emissor (preenchimento manual futuro) |
+| `dt_geracao` | date | Data da geração do consolidado |
+
 As definições completas de campos e tipos são geradas automaticamente em [`data/schemas.json`](data/schemas.json) a cada execução e exibidas no [dashboard](https://pulsedatalabs.github.io/PulseRatingsBrasil/).
 
 ---
@@ -221,6 +243,8 @@ As definições completas de campos e tipos são geradas automaticamente em [`da
 - Dashboard com busca, filtros e schema dinâmico
 - Suporte a 6 datasets de ratings (3 agências × ratings + emissores)
 - Detecção automática de schema drift
+- Consolidação de emissores: script + testes + dataset `emissores_consolidado.csv`
+- Sistema de UX unificado (cores, progresso, logging) nos scrapers e orquestrador
 
 ### 2026-05
 - Pipeline inicial com scrapers S&P, Moody's e Fitch

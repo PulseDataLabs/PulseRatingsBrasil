@@ -18,6 +18,7 @@ import requests
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.utils.base import BaseScraper
+from scripts.utils import print_done, print_info, print_warn, print_start, print_fail, progress_bar, IS_TTY
 
 
 import re
@@ -67,14 +68,13 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
         Recupera a API Key a partir do ambiente ou do HTML da página pública da S&P.
         Isso elimina chaves hardcodadas no código e protege contra vazamento de credenciais.
         """
-        # 1. Tenta obter da variável de ambiente
         api_key = os.environ.get("SP_GLOBAL_API_KEY")
         if api_key:
             self.logger.info("Utilizando SP_GLOBAL_API_KEY da variável de ambiente.")
             return api_key
 
-        # 2. Busca dinamicamente do HTML da página pública
         self.logger.info("Buscando API Key de forma dinâmica da página pública...")
+        print_start("Obtendo API Key da S&P...")
         try:
             r = requests.get(
                 BASE_URL,
@@ -88,12 +88,13 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
                 if match:
                     key = match.group(1)
                     self.logger.info("API Key obtida dinamicamente com sucesso.")
+                    print_done("API Key obtida")
                     return key
         except Exception as e:
             self.logger.error(f"Erro ao obter API Key dinamicamente: {e}")
 
-        # Se falhar, retorna string vazia
         self.logger.warning("Não foi possível carregar a API Key.")
+        print_warn("API Key não disponível")
         return ""
 
     def fetch(self) -> pd.DataFrame:
@@ -107,14 +108,18 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
         api_url = f"https://api.use1.prod.ratings.spglobal.com/rbz-nsrbrazilapi/extoauthv2/brazilRatings/getEntitySearchRequest?apikey={api_key}"
 
         self.logger.info("Obtendo token de autorização da S&P...")
+        print_start("Obtendo token de autorização...")
         try:
             token_resp = session.get(TOKEN_URL, headers=HEADERS_BASE, timeout=30)
             if token_resp.status_code != 200:
                 self.logger.error(f"Falha ao obter token: status {token_resp.status_code}")
+                print_fail(f"Falha ao obter token: status {token_resp.status_code}")
                 return pd.DataFrame()
             token = token_resp.json().get("token")
+            print_done("Token obtido")
         except Exception as e:
             self.logger.error(f"Erro ao obter token: {e}")
+            print_fail(f"Erro ao obter token: {e}")
             return pd.DataFrame()
 
         if not token:
@@ -133,8 +138,9 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
         resultados = {}
 
         self.logger.info(f"Iniciando busca abrangente por {len(search_terms)} termos...")
-        
-        for term in search_terms:
+        print_start(f"Buscando em {len(search_terms)} termos (A-Z, 0-9)...")
+
+        for idx, term in enumerate(search_terms, 1):
             page = 0
             page_length = 100
             
@@ -178,6 +184,9 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
                     self.logger.error(f"Erro ao processar termo {term} página {page}: {e}")
                     break
 
+            bar = progress_bar(idx, len(search_terms))
+            print(f"    [{term}] {bar}", end="\r" if IS_TTY else "\n")
+
         # Mescla os emissores fixos como garantia
         for emissor in EMISSORES_FIXOS:
             link = f"{BASE_URL}/ratings/pt/regulatory/org-details/sectorCode/{emissor['sector_code']}/entityId/{emissor['entity_id']}"
@@ -185,6 +194,7 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
                 resultados[link] = emissor["nome"]
 
         self.logger.info(f"Busca finalizada. Total de emissores únicas encontradas: {len(resultados)}")
+        print_done(f"{len(resultados)} emissores únicas encontradas")
 
         # Converte para DataFrame no formato esperado
         rows = []

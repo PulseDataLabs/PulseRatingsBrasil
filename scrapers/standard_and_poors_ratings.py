@@ -20,6 +20,7 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.utils.base import BaseScraper
+from scripts.utils import print_done, print_info, print_warn, print_start, print_fail, progress_bar, IS_TTY, dim
 
 
 HEADERS = {
@@ -153,6 +154,7 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
                 f"Arquivo de emissores não encontrado: {emissores_csv}. "
                 "Execute standard_and_poors_emissores.py antes."
             )
+            print_fail("CSV de emissores não encontrado")
             return pd.DataFrame()
 
         df_emissores = pd.read_csv(emissores_csv)
@@ -160,16 +162,21 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
             self.logger.warning(
                 "Coluna 'link' não encontrada no CSV de emissores."
             )
+            print_fail("Coluna 'link' não encontrada no CSV")
             return pd.DataFrame()
 
         session = requests.Session()
         frames = []
         total = len(df_emissores)
 
+        print_start(f"Processando {total} emissores da S&P...")
+
         for i, row in df_emissores.iterrows():
             nome = row.get("no_entidade", "")
             link = row.get("link", "")
             self.logger.info(f"[{i+1}/{total}] {nome}")
+            bar = progress_bar(i + 1, total)
+            print(f"  {bar}  {dim(nome[:72])}", end="\r" if IS_TTY else "\n")
 
             try:
                 resp = session.get(link, headers=HEADERS, timeout=30)
@@ -202,10 +209,12 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
 
         if not frames:
             self.logger.warning("Nenhum rating capturado.")
+            print_warn("Nenhum rating capturado")
             return pd.DataFrame()
 
         df = pd.concat(frames, ignore_index=True)
         df.insert(0, "dt_captura", datetime.date.today().strftime("%Y-%m-%d"))
+        print_done(f"{len(df)} ratings capturados de {len(frames)} emissores")
         return df
 
 
