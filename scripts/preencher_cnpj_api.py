@@ -114,6 +114,15 @@ def generate(
 
     section("Progresso", "search")
 
+    nomes_pendentes = []
+    for row in rows:
+        if (row.get("cnpj_emissor") or "").strip():
+            continue
+        n = _obter_nome_busca(row)
+        if n:
+            nomes_pendentes.append(n)
+    max_width = min(max(len(n) for n in nomes_pendentes), 60)
+
     matched = 0
     unmatched = 0
     errors = 0
@@ -138,7 +147,7 @@ def generate(
                 resp = client.search(nome_busca, per_page=5)
             except Exception as e:
                 if not quiet:
-                    print(f"  {red('✖')}  {dim(nome_busca[:50]):50s}  {red('erro')}  {dim(str(e)[:40])}")
+                    print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('erro')}  {dim(str(e)[:40])}")
                 errors += 1
                 if i < len(rows) - 1:
                     time.sleep(rate_limit)
@@ -160,12 +169,12 @@ def generate(
                 row["cnpj_emissor"] = cnpj
                 matched += 1
                 if not quiet:
-                    print(f"  {green('✔')}  {dim(nome_busca[:50]):50s}  {green(cnpj)}")
+                    print(f"  {green('✔')}  {dim(nome_busca):{max_width}s}  {green(cnpj)}")
                 _salvar_csv(consolidado_path, rows)
             else:
                 unmatched += 1
                 if not quiet:
-                    print(f"  {yellow('⚠')}  {dim(nome_busca[:50]):50s}  {yellow('não encontrado')}")
+                    print(f"  {yellow('⚠')}  {dim(nome_busca):{max_width}s}  {yellow('não encontrado')}")
 
             if i < len(rows) - 1:
                 time.sleep(rate_limit)
