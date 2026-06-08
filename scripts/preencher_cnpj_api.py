@@ -50,6 +50,14 @@ def _obter_nome_busca(row: dict) -> str:
     return (row.get("nome_emissor_padronizado") or "").strip()
 
 
+def _salvar_csv(path: Path, rows: list[dict]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=COLUNAS_CONSOLIDADO)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def generate(
     consolidado_path: Optional[Path] = None,
     rate_limit: float = 1.0,
@@ -154,6 +162,7 @@ def generate(
                 matched += 1
                 if not quiet:
                     print(f"  {green('✔')}  {dim(nome_busca[:50]):50s}  {green(cnpj)}")
+                _salvar_csv(consolidado_path, rows)
             else:
                 unmatched += 1
                 if not quiet:
@@ -161,12 +170,6 @@ def generate(
 
             if i < len(rows) - 1:
                 time.sleep(rate_limit)
-
-    consolidado_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(consolidado_path, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=COLUNAS_CONSOLIDADO)
-        writer.writeheader()
-        writer.writerows(rows)
 
     print()
     section("Resumo", "chart")
