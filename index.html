@@ -1777,7 +1777,7 @@
         const statValues = document.querySelectorAll('.stat-value');
         if (statValues.length >= 2) {
           statValues[0].textContent = allDatasets.length;
-          const uniqueSources = new Set(allDatasets.map(d => d.source)).size;
+          const uniqueSources = new Set(allDatasets.map(d => d.source).filter(s => s !== 'Consolidado')).size;
           statValues[1].textContent = uniqueSources;
         }
       } else {
