@@ -64,37 +64,37 @@
       {
         "name": "no_entidade",
         "type": "str",
-        "example": "Multiplan Empreendimentos Imobiliarios S.A."
+        "example": "General Shopping e Outlets do Brasil S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/multiplan-empreendimentos-imobiliarios-sa-96177986"
+        "example": "https://www.fitchratings.com/entity/general-shopping-e-outlets-do-brasil-sa-89879673"
       },
       {
         "name": "Tipo de Rating",
         "type": "str",
-        "example": "National Long Term Rating"
+        "example": "Long Term Issuer Default Rating"
       },
       {
         "name": "Rating",
         "type": "str",
-        "example": "AAA(bra)"
+        "example": "C"
       },
       {
         "name": "Data da Ação de Rating",
         "type": "date",
-        "example": "2026-06-04"
+        "example": "2026-06-08"
       },
       {
         "name": "Ação de Rating",
         "type": "str",
-        "example": "Review - No Action"
+        "example": "Downgrade"
       },
       {
         "name": "CreditWatch/ Perspectiva",
         "type": "str",
-        "example": "Rating Outlook Stable"
+        "example": ""
       }
     ]
   },
@@ -192,12 +192,12 @@
       {
         "name": "no_entidade",
         "type": "str",
-        "example": "Multiplan Empreendimentos Imobiliarios S.A."
+        "example": "General Shopping e Outlets do Brasil S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/multiplan-empreendimentos-imobiliarios-sa-96177986"
+        "example": "https://www.fitchratings.com/entity/general-shopping-e-outlets-do-brasil-sa-89879673"
       }
     ]
   },
