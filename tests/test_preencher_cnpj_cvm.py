@@ -110,7 +110,6 @@ def consolidado_path(tmp_path):
             "nome_emissor_moodys": "",
             "nome_emissor_standard_and_poors": "",
             "cnpj_emissor": "",
-            "dt_geracao": "2026-06-07",
         },
         {
             "nome_emissor_padronizado": "VALE",
@@ -118,7 +117,6 @@ def consolidado_path(tmp_path):
             "nome_emissor_moodys": "Vale S.A.",
             "nome_emissor_standard_and_poors": "",
             "cnpj_emissor": "",
-            "dt_geracao": "2026-06-07",
         },
         {
             "nome_emissor_padronizado": "BANCO BRADESCO",
@@ -126,7 +124,6 @@ def consolidado_path(tmp_path):
             "nome_emissor_moodys": "",
             "nome_emissor_standard_and_poors": "Banco Bradesco S.A.",
             "cnpj_emissor": "",
-            "dt_geracao": "2026-06-07",
         },
         {
             "nome_emissor_padronizado": "EMPRESA",
@@ -134,7 +131,6 @@ def consolidado_path(tmp_path):
             "nome_emissor_moodys": "",
             "nome_emissor_standard_and_poors": "",
             "cnpj_emissor": "",
-            "dt_geracao": "2026-06-07",
         },
     ])
     return path
@@ -201,7 +197,6 @@ def test_generate_preserva_cnpj_existente(mock_get, consolidado_path, tmp_path):
             "nome_emissor_moodys": "",
             "nome_emissor_standard_and_poors": "",
             "cnpj_emissor": "99999999000199",
-            "dt_geracao": "2026-06-07",
         },
     ])
 

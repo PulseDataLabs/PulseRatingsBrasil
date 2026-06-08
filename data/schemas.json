@@ -230,11 +230,6 @@
         "name": "cnpj_emissor",
         "type": "str",
         "example": ""
-      },
-      {
-        "name": "dt_geracao",
-        "type": "date",
-        "example": "2026-06-07"
       }
     ]
   }

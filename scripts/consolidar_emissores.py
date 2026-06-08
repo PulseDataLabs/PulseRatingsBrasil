@@ -7,7 +7,6 @@ import csv
 import logging
 import re
 import unicodedata
-from datetime import datetime
 from pathlib import Path
 
 logger = logging.getLogger("consolidar_emissores")
@@ -18,7 +17,6 @@ COLUNAS = [
     "nome_emissor_moodys",
     "nome_emissor_standard_and_poors",
     "cnpj_emissor",
-    "dt_geracao",
 ]
 
 _SUFIXOS = [
@@ -136,8 +134,6 @@ def consolidar(
         ("standard_and_poors", "nome_emissor_standard_and_poors"),
     ]
 
-    dt_geracao = datetime.now().strftime("%Y-%m-%d")
-
     rows: list[dict[str, str]] = []
     for padronizado in sorted(all_padronizados):
         row: dict[str, str] = {col: "" for col in COLUNAS}
@@ -152,7 +148,6 @@ def consolidar(
             if cnpj:
                 row["cnpj_emissor"] = cnpj
 
-        row["dt_geracao"] = dt_geracao
         rows.append(row)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)

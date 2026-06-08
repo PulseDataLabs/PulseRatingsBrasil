@@ -33,7 +33,6 @@ COLUNAS_CONSOLIDADO = [
     "nome_emissor_moodys",
     "nome_emissor_standard_and_poors",
     "cnpj_emissor",
-    "dt_geracao",
 ]
 
 

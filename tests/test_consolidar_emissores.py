@@ -115,7 +115,6 @@ def test_carregar_consolidado_existente_normal(tmp_path):
             "nome_emissor_moodys": "",
             "nome_emissor_standard_and_poors": "",
             "cnpj_emissor": "12345678000199",
-            "dt_geracao": "2026-06-07",
         },
     ])
     result = carregar_consolidado_existente(path)
@@ -184,7 +183,6 @@ def test_consolidar_merge_preserva_cnpj(tmp_path):
             "nome_emissor_moodys": "",
             "nome_emissor_standard_and_poors": "",
             "cnpj_emissor": "12345678000199",
-            "dt_geracao": "2026-06-06",
         },
     ])
 
@@ -241,7 +239,6 @@ def test_consolidar_emissor_novo_adicionado(tmp_path):
             "nome_emissor_moodys": "",
             "nome_emissor_standard_and_poors": "",
             "cnpj_emissor": "",
-            "dt_geracao": "2026-06-06",
         },
     ])
 

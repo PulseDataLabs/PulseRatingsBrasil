@@ -1,5 +1,21 @@
 [
   {
+    "title": "Emissores Consolidados",
+    "file": "emissores_consolidado.csv",
+    "description": "Emissores das 3 agências (Fitch, Moody's, S&P) consolidados em uma linha por emissor, com nomes padronizados e campo para CNPJ.",
+    "icon": "CR",
+    "iconClass": "icon-consolidated",
+    "badge": "Acumulado",
+    "badgeClass": "badge-cumulative",
+    "tags": [
+      "emissores",
+      "consolidado",
+      "cnpj"
+    ],
+    "source": "Consolidado",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/emissores_consolidado.csv"
+  },
+  {
     "title": "Fitch — Ratings",
     "file": "fitch_ratings.csv",
     "description": "Ratings de crédito de longo e curto prazo atribuídos pela Fitch Ratings a emissores corporativos, financeiros e soberanos no Brasil.",

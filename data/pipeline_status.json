@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-07T19:30:33.668384",
-  "elapsed_seconds": 473.75060534477234,
+  "timestamp": "2026-06-07T20:38:15.662777",
+  "elapsed_seconds": 516.3025872707367,
   "status": "warning",
   "summary": {
     "total": 6,
@@ -35,39 +35,39 @@
     },
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 18.60708451271057,
+      "elapsed_seconds": 19.541152954101562,
       "error": null,
-      "timestamp": "2026-06-07T19:30:33.668464"
+      "timestamp": "2026-06-07T20:38:15.662878"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 32.41471600532532,
+      "elapsed_seconds": 34.67689895629883,
       "error": null,
-      "timestamp": "2026-06-07T19:30:33.668468"
+      "timestamp": "2026-06-07T20:38:15.662883"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 73.68769526481628,
+      "elapsed_seconds": 79.36445188522339,
       "error": null,
-      "timestamp": "2026-06-07T19:30:33.668470"
+      "timestamp": "2026-06-07T20:38:15.662885"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 19.860557556152344,
+      "elapsed_seconds": 20.142500400543213,
       "error": null,
-      "timestamp": "2026-06-07T19:30:33.668471"
+      "timestamp": "2026-06-07T20:38:15.662886"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 74.36679172515869,
+      "elapsed_seconds": 77.49078440666199,
       "error": null,
-      "timestamp": "2026-06-07T19:30:33.668473"
+      "timestamp": "2026-06-07T20:38:15.662887"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 400.06105160713196,
+      "elapsed_seconds": 436.9366431236267,
       "error": null,
-      "timestamp": "2026-06-07T19:30:33.668474"
+      "timestamp": "2026-06-07T20:38:15.662889"
     }
   },
   "drifts": {
@@ -76,7 +76,7 @@
       "removed": [
         "data_captura"
       ],
-      "timestamp": "2026-06-07T19:24:13.350038"
+      "timestamp": "2026-06-07T20:31:18.809391"
     }
   }
 }
