@@ -1,0 +1,51 @@
+name: Preenchimento de CNPJ
+
+on:
+  schedule:
+    # 01h00 BRT = 04h00 UTC (madrugada, fora do run_all)
+    - cron: '0 4 * * 1-5'
+
+  workflow_dispatch:
+
+jobs:
+  preencher-cnpj:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v6
+
+    - name: Configurar Fuso Horário Local
+      run: sudo timedatectl set-timezone America/Sao_Paulo
+
+    - name: Configurar Python
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.13'
+
+    - name: Instalar dependências
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Consolidar emissores (se necessário)
+      run: python -m scripts.consolidar_emissores
+
+    - name: Preencher CNPJ via CVM (offline)
+      run: python -m scripts.preencher_cnpj_cvm
+
+    - name: Preencher CNPJ via API CNPJ Aberto
+      env:
+        CNPJABERTO_API_KEY: ${{ secrets.CNPJABERTO_API_KEY }}
+      run: python -m scripts.preencher_cnpj_api
+
+    - name: Commitar e enviar alterações
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add data/emissores_consolidado.csv
+        git commit -m "Bot: Atualização de CNPJ [skip ci]" || echo "Nenhuma alteração"
+        git push origin main
