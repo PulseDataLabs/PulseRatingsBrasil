@@ -1,6 +1,6 @@
 window.PULSERATINGS_PIPELINE_STATUS = {
-  "timestamp": "2026-06-07T21:41:54.425755",
-  "elapsed_seconds": 463.3837888240814,
+  "timestamp": "2026-06-08T15:05:02.542894",
+  "elapsed_seconds": 330.6443018913269,
   "status": "warning",
   "summary": {
     "total": 6,
@@ -35,39 +35,39 @@ window.PULSERATINGS_PIPELINE_STATUS = {
     },
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 13.598687887191772,
+      "elapsed_seconds": 11.590646982192993,
       "error": null,
-      "timestamp": "2026-06-07T21:41:54.425842"
+      "timestamp": "2026-06-08T15:05:02.543006"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 33.035163164138794,
+      "elapsed_seconds": 20.464314699172974,
       "error": null,
-      "timestamp": "2026-06-07T21:41:54.425846"
+      "timestamp": "2026-06-08T15:05:02.543010"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 66.98304581642151,
+      "elapsed_seconds": 0.8023688793182373,
       "error": null,
-      "timestamp": "2026-06-07T21:41:54.425849"
+      "timestamp": "2026-06-08T15:05:02.543000"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 14.777239799499512,
+      "elapsed_seconds": 11.229688882827759,
       "error": null,
-      "timestamp": "2026-06-07T21:41:54.425850"
+      "timestamp": "2026-06-08T15:05:02.543015"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 70.57882022857666,
+      "elapsed_seconds": 0.04314446449279785,
       "error": null,
-      "timestamp": "2026-06-07T21:41:54.425851"
+      "timestamp": "2026-06-08T15:05:02.543012"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 396.39916014671326,
+      "elapsed_seconds": 310.1747465133667,
       "error": null,
-      "timestamp": "2026-06-07T21:41:54.425853"
+      "timestamp": "2026-06-08T15:05:02.543017"
     }
   },
   "drifts": {
@@ -76,7 +76,7 @@ window.PULSERATINGS_PIPELINE_STATUS = {
       "removed": [
         "data_captura"
       ],
-      "timestamp": "2026-06-07T21:35:32.675665"
+      "timestamp": "2026-06-08T15:00:03.583115"
     }
   }
 };
