@@ -143,33 +143,50 @@ def generate(
                 unmatched += 1
                 continue
 
+            cnpj = None
+            query_usada = nome_busca
+
+            # 1ª tentativa: busca pelo nome original (Fitch/Moody's/S&P)
             try:
                 resp = client.search(nome_busca, per_page=5)
+                hits = (resp or {}).get("results") or []
+                for hit in hits:
+                    hit_nome = (hit.get("razao_social") or "").strip()
+                    hit_cnpj = _limpar_cnpj(hit.get("cnpj") or "")
+                    if not hit_nome or not hit_cnpj or len(hit_cnpj) != 14:
+                        continue
+                    if normalizar(hit_nome) == nome_pad:
+                        cnpj = hit_cnpj
+                        break
             except Exception as e:
                 if not quiet:
                     print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('erro')}  {dim(str(e)[:40])}")
                 errors += 1
-                if i < len(rows) - 1:
-                    time.sleep(rate_limit)
-                continue
 
-            hits = (resp or {}).get("results") or []
-            cnpj = None
-
-            for hit in hits:
-                hit_nome = (hit.get("razao_social") or "").strip()
-                hit_cnpj = _limpar_cnpj(hit.get("cnpj") or "")
-                if not hit_nome or not hit_cnpj or len(hit_cnpj) != 14:
-                    continue
-                if normalizar(hit_nome) == nome_pad:
-                    cnpj = hit_cnpj
-                    break
+            # 2ª tentativa (fallback): busca pelo nome padronizado
+            if not cnpj and nome_pad != nome_busca and len(nome_pad) >= 3:
+                try:
+                    resp = client.search(nome_pad, per_page=5)
+                    hits = (resp or {}).get("results") or []
+                    for hit in hits:
+                        hit_nome = (hit.get("razao_social") or "").strip()
+                        hit_cnpj = _limpar_cnpj(hit.get("cnpj") or "")
+                        if not hit_nome or not hit_cnpj or len(hit_cnpj) != 14:
+                            continue
+                        if normalizar(hit_nome) == nome_pad:
+                            cnpj = hit_cnpj
+                            query_usada = nome_pad
+                            break
+                except Exception as e:
+                    if not quiet:
+                        print(f"  {red('✖')}  {dim(nome_pad):{max_width}s}  {red('erro')}  {dim(str(e)[:40])}")
+                    errors += 1
 
             if cnpj:
                 row["cnpj_emissor"] = cnpj
                 matched += 1
                 if not quiet:
-                    print(f"  {green('✔')}  {dim(nome_busca):{max_width}s}  {green(cnpj)}")
+                    print(f"  {green('✔')}  {dim(query_usada):{max_width}s}  {green(cnpj)}")
                 _salvar_csv(consolidado_path, rows)
             else:
                 unmatched += 1
