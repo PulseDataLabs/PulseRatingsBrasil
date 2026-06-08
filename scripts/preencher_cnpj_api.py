@@ -1,7 +1,7 @@
 """
 Preenche coluna cnpj_emissor no consolidado usando CNPJ Aberto API.
 Requer: pip install cnpjaberto
-Requer: env var CNPJABERTO_API_KEY (free: 1.000 req/dia)
+Requer: CNPJABERTO_API_KEY no .env ou environment (free: 1.000 req/dia)
 """
 
 import csv
@@ -12,7 +12,11 @@ import time
 from pathlib import Path
 from typing import Optional
 
+from dotenv import load_dotenv
+
 from scripts.consolidar_emissores import normalizar
+
+load_dotenv()
 
 logger = logging.getLogger("preencher_cnpj_api")
 
