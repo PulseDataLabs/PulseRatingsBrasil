@@ -8,6 +8,8 @@ import pytest
 from scripts.preencher_cnpj_api import (
     _limpar_cnpj,
     _obter_nome_busca,
+    _gerar_variantes_busca,
+    _matches,
     generate,
 )
 
@@ -60,6 +62,71 @@ def test_obter_nome_busca_somente_padronizado():
         "nome_emissor_standard_and_poors": "",
     }
     assert _obter_nome_busca(row) == "EMPRESA"
+
+
+# ── _gerar_variantes_busca ─────────────────────────────────────────────────────
+
+
+def test_gerar_variantes_ordem():
+    """Nome original primeiro, depois sem sufixos, depois +curto, depois nome_pad."""
+    v = _gerar_variantes_busca("Ambev S.A.", "AMBEV")
+    assert v[0] == "Ambev S.A."
+    assert "Ambev" in v
+    assert "AMBEV" in v
+
+
+def test_gerar_variantes_dedup():
+    """Remove duplicatas e strings muito curtas."""
+    v = _gerar_variantes_busca("Ab", "AMBEV")
+    assert "Ab" not in v  # len < 3 descartado
+
+
+def test_gerar_variantes_nome_curto():
+    """Nome com 2 palavras: só original + sem sufixo + nome_pad."""
+    v = _gerar_variantes_busca("Vale S.A.", "VALE")
+    assert len(v) >= 2
+    assert v[0] == "Vale S.A."
+
+
+def test_gerar_variantes_nome_longo():
+    """Nome com 4+ palavras: inclui variante com 2 e 3 palavras."""
+    v = _gerar_variantes_busca("Coca Cola FEMSA Brasil Ltda.", "COCA COLA FEMSA")
+    first_words = [x for x in v if len(x.split()) <= 3]
+    assert any(x == "Coca Cola" for x in first_words)
+    assert any("Coca Cola FEMSA" in x for x in first_words)
+
+
+# ── _matches ────────────────────────────────────────────────────────────────────
+
+
+def test_matches_exato():
+    """normalizar exato bate."""
+    assert _matches("Ambev S.A.", "AMBEV") is True
+
+
+def test_matches_startswith():
+    """hit normalizado começa com nome_pad."""
+    assert _matches("Ambev Brasil Bebidas Ltda.", "AMBEV") is True
+
+
+def test_matches_startswith_reverso():
+    """nome_pad começa com hit normalizado."""
+    assert _matches("AMBEV", "AMBEV S.A.") is True
+
+
+def test_matches_token_overlap():
+    """Todas as palavras de nome_pad estão no hit."""
+    assert _matches("Coca Cola FEMSA Brasil Ltda.", "COCA COLA FEMSA") is True
+
+
+def test_matches_token_overlap_insuficiente():
+    """Token único não basta para overlap."""
+    assert _matches("Qualquer Coisa Ltda.", "EMPRESA") is False
+
+
+def test_matches_vazio():
+    assert _matches("", "AMBEV") is False
+    assert _matches("Ambev S.A.", "") is False
 
 
 # ── generate ───────────────────────────────────────────────────────────────────

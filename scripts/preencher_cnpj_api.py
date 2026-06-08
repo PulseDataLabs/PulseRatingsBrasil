@@ -37,12 +37,75 @@ def _limpar_cnpj(valor: Optional[str]) -> str:
     return re.sub(r"\D", "", valor)
 
 
+_SUFIXOS_BUSCA = [
+    r"\s+S\.?\s*A\.?\b\.?",
+    r"\s+S/A\b",
+    r"\s+LTDA?\b\.?",
+    r"\s+EIRELI\b\.?",
+    r"\s+ME\b",
+    r"\s+LTD\b\.?",
+    r"\s+LIMITED\b",
+    r"\s+INC\b\.?",
+    r"\s+LLC\b",
+    r"\s+CORP\b\.?",
+]
+
+
 def _obter_nome_busca(row: dict) -> str:
     for col in ["nome_emissor_fitch", "nome_emissor_moodys", "nome_emissor_standard_and_poors"]:
         nome = (row.get(col) or "").strip()
         if nome:
             return nome
     return (row.get("nome_emissor_padronizado") or "").strip()
+
+
+def _gerar_variantes_busca(nome: str, nome_pad: str) -> list[str]:
+    """Gera variantes de busca do nome mais específico ao mais genérico."""
+    variantes = [nome]
+
+    for suf in _SUFIXOS_BUSCA:
+        nome_sem = re.sub(suf, "", nome, flags=re.IGNORECASE).strip()
+        if nome_sem and nome_sem != nome:
+            variantes.append(nome_sem)
+
+    parts = nome.split()
+    if len(parts) > 3:
+        variantes.append(" ".join(parts[:2]))
+        variantes.append(" ".join(parts[:3]))
+    elif len(parts) == 3:
+        variantes.append(" ".join(parts[:2]))
+
+    if nome_pad not in variantes:
+        variantes.append(nome_pad)
+
+    vistos: set[str] = set()
+    resultado = []
+    for v in variantes:
+        v_norm = v.strip()
+        if v_norm and v_norm not in vistos and len(v_norm) >= 3:
+            vistos.add(v_norm)
+            resultado.append(v_norm)
+    return resultado
+
+
+def _matches(hit_nome: str, nome_pad: str) -> bool:
+    """Matching flexível: normalizado exato → startswith → overlap de tokens."""
+    hit_norm = normalizar(hit_nome)
+    if not hit_norm or not nome_pad:
+        return False
+
+    if hit_norm == nome_pad:
+        return True
+
+    if hit_norm.startswith(nome_pad) or nome_pad.startswith(hit_norm):
+        return True
+
+    pad_tokens = set(nome_pad.split())
+    hit_tokens = set(hit_norm.split())
+    if len(pad_tokens) >= 2 and pad_tokens.issubset(hit_tokens):
+        return True
+
+    return False
 
 
 def _salvar_csv(path: Path, rows: list[dict]) -> None:
@@ -160,49 +223,32 @@ def generate(
             cnpj = None
             query_usada = nome_busca
 
-            # 1ª tentativa: busca pelo nome original (Fitch/Moody's/S&P)
-            try:
-                resp = client.search(nome_busca, per_page=5)
-                hits = (resp or {}).get("results") or []
-                for hit in hits:
-                    hit_nome = (hit.get("razao_social") or "").strip()
-                    hit_cnpj = _limpar_cnpj(hit.get("cnpj") or "")
-                    if not hit_nome or not hit_cnpj or len(hit_cnpj) != 14:
-                        continue
-                    if normalizar(hit_nome) == nome_pad:
-                        cnpj = hit_cnpj
-                        break
-            except RateLimitError:
-                if not quiet:
-                    print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('rate limit esgotado')}")
-                errors += 1
-            except Exception as e:
-                if not quiet:
-                    print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('erro')}  {dim(str(e)[:40])}")
-                errors += 1
-
-            # 2ª tentativa (fallback): busca pelo nome padronizado
-            if not cnpj and nome_pad != nome_busca and len(nome_pad) >= 3:
+            variantes = _gerar_variantes_busca(nome_busca, nome_pad)
+            for variante in variantes:
+                if cnpj:
+                    break
                 try:
-                    resp = client.search(nome_pad, per_page=5)
+                    resp = client.search(variante, per_page=5)
                     hits = (resp or {}).get("results") or []
                     for hit in hits:
                         hit_nome = (hit.get("razao_social") or "").strip()
                         hit_cnpj = _limpar_cnpj(hit.get("cnpj") or "")
                         if not hit_nome or not hit_cnpj or len(hit_cnpj) != 14:
                             continue
-                        if normalizar(hit_nome) == nome_pad:
+                        if _matches(hit_nome, nome_pad):
                             cnpj = hit_cnpj
-                            query_usada = nome_pad
+                            query_usada = variante
                             break
                 except RateLimitError:
                     if not quiet:
-                        print(f"  {red('✖')}  {dim(nome_pad):{max_width}s}  {red('rate limit esgotado')}")
+                        print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('rate limit')}")
                     errors += 1
+                    break
                 except Exception as e:
                     if not quiet:
-                        print(f"  {red('✖')}  {dim(nome_pad):{max_width}s}  {red('erro')}  {dim(str(e)[:40])}")
+                        print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('erro')}  {dim(str(e)[:40])}")
                     errors += 1
+                    break
 
             if cnpj:
                 row["cnpj_emissor"] = cnpj

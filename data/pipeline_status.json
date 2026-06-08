@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-08T10:14:49.268344",
-  "elapsed_seconds": 438.09557247161865,
+  "timestamp": "2026-06-07T21:41:54.425755",
+  "elapsed_seconds": 463.3837888240814,
   "status": "warning",
   "summary": {
     "total": 6,
@@ -35,39 +35,39 @@
     },
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 12.348283290863037,
+      "elapsed_seconds": 13.598687887191772,
       "error": null,
-      "timestamp": "2026-06-08T10:14:49.268445"
+      "timestamp": "2026-06-07T21:41:54.425842"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 23.572049617767334,
+      "elapsed_seconds": 33.035163164138794,
       "error": null,
-      "timestamp": "2026-06-08T10:14:49.268447"
+      "timestamp": "2026-06-07T21:41:54.425846"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 0.7756924629211426,
+      "elapsed_seconds": 66.98304581642151,
       "error": null,
-      "timestamp": "2026-06-08T10:14:49.268439"
+      "timestamp": "2026-06-07T21:41:54.425849"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 11.97620964050293,
+      "elapsed_seconds": 14.777239799499512,
       "error": null,
-      "timestamp": "2026-06-08T10:14:49.268451"
+      "timestamp": "2026-06-07T21:41:54.425850"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 0.0252072811126709,
+      "elapsed_seconds": 70.57882022857666,
       "error": null,
-      "timestamp": "2026-06-08T10:14:49.268449"
+      "timestamp": "2026-06-07T21:41:54.425851"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 414.5189142227173,
+      "elapsed_seconds": 396.39916014671326,
       "error": null,
-      "timestamp": "2026-06-08T10:14:49.268453"
+      "timestamp": "2026-06-07T21:41:54.425853"
     }
   },
   "drifts": {
@@ -76,7 +76,7 @@
       "removed": [
         "data_captura"
       ],
-      "timestamp": "2026-06-08T10:08:06.713057"
+      "timestamp": "2026-06-07T21:35:32.675665"
     }
   }
 }
