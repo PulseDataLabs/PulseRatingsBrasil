@@ -86,6 +86,9 @@ PulseRatingsBrasil/
 ├── scripts/                         # Scripts de ciclo de vida
 │   ├── consolidar_emissores.py      # Consolida emissores das 3 agências em 1 CSV
 │   ├── generate_catalog.py          # Gerador automatizado do catálogo de datasets
+│   ├── preencher_cnpj_cvm.py        # Preenche CNPJ via dados offline da CVM
+│   ├── preencher_cnpj_api.py        # Preenche CNPJ via CNPJ Aberto API (1.000 req/dia)
+│   ├── preencher_cnpj_rfb.py        # Preenche CNPJ via base local da Receita Federal
 │   └── utils/
 │       ├── __init__.py
 │       └── ux.py                    # Utilitários de UX (cores, ícones, progresso)
@@ -140,6 +143,35 @@ PulseRatingsBrasil/
     ```bash
     python run_all.py --generate-catalog
     ```
+
+### Preenchimento de CNPJ
+
+O campo `cnpj_emissor` do consolidado é preenchido por 3 scripts, executados em ordem:
+
+| Script | Fonte | Onde roda | Limitação |
+|--------|-------|-----------|-----------|
+| `preencher_cnpj_cvm.py` | CVM (cias abertas + fundos) | GitHub Actions (automático) | ~400-500 matches |
+| `preencher_cnpj_api.py` | [CNPJ Aberto API](https://cnpjaberto.com) | GitHub Actions (automático) | 1.000 req/dia free |
+| `preencher_cnpj_rfb.py` | Receita Federal (base completa) | **Local apenas** | ~500MB download |
+
+**RFB (local):**
+```bash
+# 1. Baixar o DADOS_ABERTOS_CNPJ.zip manualmente (~500MB)
+#    Fonte: https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj
+
+# 2. Salvar no diretório de cache:
+mkdir -p data/rfb_cache
+cp ~/Downloads/DADOS_ABERTOS_CNPJ.zip data/rfb_cache/
+
+# 3. Executar:
+python scripts/preencher_cnpj_rfb.py
+
+# Para recriar o banco SQLite do zero (útil após atualizar o zip):
+python scripts/preencher_cnpj_rfb.py --rebuild-db
+```
+
+O script da RFB constrói um banco SQLite local com índice de nomes normalizados,
+permitindo busca exata e fallback por palavras significativas.
 
 ---
 
@@ -203,7 +235,7 @@ O dataset `emissores_consolidado.csv` possui estrutura própria:
 | `nome_emissor_fitch` | str | Nome original na fonte Fitch |
 | `nome_emissor_moodys` | str | Nome original na fonte Moody's |
 | `nome_emissor_standard_and_poors` | str | Nome original na fonte S&P |
-| `cnpj_emissor` | str | CNPJ do emissor (preenchido via CVM + CNPJ Aberto API) |
+| `cnpj_emissor` | str | CNPJ do emissor (preenchido via CVM + CNPJ Aberto API + base RFB) |
 
 As definições completas de campos e tipos são geradas automaticamente em [`data/schemas.json`](data/schemas.json) a cada execução e exibidas no [dashboard](https://pulsedatalabs.github.io/PulseRatingsBrasil/).
 
