@@ -229,3 +229,36 @@ def test_generate_sem_cvm_data(mock_get, consolidado_path, tmp_path):
     )
     assert result["matched"] == 0
     assert result["unmatched"] == 4
+
+
+@patch("scripts.preencher_cnpj_cvm.requests.get")
+def test_generate_com_trailing_comma(mock_get, consolidado_path, tmp_path):
+    """CSV com coluna extra (trailing comma) não deve crashar no Py3.13."""
+    path = consolidado_path
+    path.write_text(
+        "nome_emissor_padronizado,nome_emissor_fitch,nome_emissor_moodys,nome_emissor_standard_and_poors,cnpj_emissor,\n"
+        "AMBEV,Ambev S.A.,,,,\n"
+        "VALE,,Vale S.A.,,,\n"
+        "EMPRESA,Empresa X Ltda.,,,,\n",
+        encoding="utf-8",
+    )
+
+    def side_effect(url, **kwargs):
+        if "cad_cia_aberta" in url:
+            return _mock_response(CIA_CSV.encode("latin-1"))
+        return _mock_response(b"", 404)
+
+    mock_get.side_effect = side_effect
+
+    result = generate(
+        consolidado_path=path,
+        cache_dir=tmp_path / "cvm_cache",
+    )
+
+    assert result["matched"] == 2
+    assert result["unmatched"] == 1
+
+    with open(path, "r", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    assert rows[0]["cnpj_emissor"] == "00000000000191"
+    assert rows[1]["cnpj_emissor"] == "11111111000111"

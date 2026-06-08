@@ -229,3 +229,6 @@ data/b3_titulos_negociaveis.csv
 
 # CVM cache (downloads temporários para preenchimento de CNPJ)
 data/cvm_cache/
+
+# RFB cache (base CNPJ da Receita Federal para preenchimento local)
+data/rfb_cache/

@@ -172,6 +172,9 @@ def generate(
 
     with open(consolidado_path, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
+    for r in rows:
+        r.pop(None, None)
+        r.pop("", None)
 
     total = len(rows)
     matched = 0

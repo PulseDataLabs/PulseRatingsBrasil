@@ -175,6 +175,38 @@ def test_generate_preserva_cnpj_existente(mock_environ_get, consolidado_path):
 
 
 @patch("scripts.preencher_cnpj_api.os.environ.get")
+@patch("cnpjaberto.Client")
+def test_generate_com_trailing_comma(mock_client_cls, mock_environ_get, tmp_path):
+    """CSV com coluna extra (trailing comma) não deve crashar no Py3.13."""
+    mock_environ_get.return_value = "fake-key"
+    path = tmp_path / "emissores_consolidado.csv"
+    path.write_text(
+        "nome_emissor_padronizado,nome_emissor_fitch,nome_emissor_moodys,nome_emissor_standard_and_poors,cnpj_emissor,\n"
+        "AMBEV,Ambev S.A.,,,,\n"
+        "EMPRESA,Empresa X Ltda.,,,,\n",
+        encoding="utf-8",
+    )
+
+    mock_client_instance = _fake_client([
+        {"cnpj": "00.000.000/0001-91", "razao_social": "Ambev S.A."},
+    ])
+    mock_client_cls.return_value.__enter__.return_value = mock_client_instance
+
+    result = generate(
+        consolidado_path=path,
+        rate_limit=0.0,
+    )
+
+    assert result["matched"] == 1
+    assert result["unmatched"] == 1
+    assert result["errors"] == 0
+
+    with open(path, "r", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    assert rows[0]["cnpj_emissor"] == "00000000000191"
+
+
+@patch("scripts.preencher_cnpj_api.os.environ.get")
 def test_generate_dry_run(mock_environ_get, consolidado_path):
     mock_environ_get.return_value = "fake-key"
     result = generate(

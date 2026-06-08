@@ -51,6 +51,9 @@ def _obter_nome_busca(row: dict) -> str:
 
 def _salvar_csv(path: Path, rows: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    for r in rows:
+        r.pop(None, None)
+        r.pop("", None)
     with open(path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=COLUNAS_CONSOLIDADO)
         writer.writeheader()
@@ -82,6 +85,9 @@ def generate(
 
     with open(consolidado_path, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
+    for r in rows:
+        r.pop(None, None)
+        r.pop("", None)
 
     pendentes = [r for r in rows if not (r.get("cnpj_emissor") or "").strip()]
     ja_preenchidos = len(rows) - len(pendentes)
