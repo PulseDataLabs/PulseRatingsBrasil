@@ -8,6 +8,7 @@ import csv
 import logging
 import os
 import re
+import sys
 import time
 from pathlib import Path
 from typing import Optional
@@ -15,6 +16,11 @@ from typing import Optional
 from dotenv import load_dotenv
 
 from scripts.consolidar_emissores import normalizar
+from scripts.utils.ux import (
+    banner, section, line, bold, dim, green, red, yellow, cyan, white,
+    print_start, print_done, print_fail, print_warn, print_skip, print_info,
+    print_summary, print_table, progress_bar,
+)
 
 load_dotenv()
 
@@ -48,31 +54,39 @@ def generate(
     consolidado_path: Optional[Path] = None,
     rate_limit: float = 1.0,
     dry_run: bool = False,
+    quiet: bool = False,
 ) -> dict:
     if consolidado_path is None:
         consolidado_path = (
             Path(__file__).resolve().parents[1] / "data" / "emissores_consolidado.csv"
         )
 
-    logger.info("=" * 50)
-    logger.info("PREENCHE CNPJ (API CNPJ Aberto)")
-    logger.info("=" * 50)
+    banner("Preenchimento de CNPJ via API CNPJ Aberto", "1 requisição/segundo · 1.000 req/dia (free)")
 
     api_key = os.environ.get("CNPJABERTO_API_KEY")
     if not api_key:
-        logger.warning("CNPJABERTO_API_KEY não definida. Pulando preenchimento via API.")
+        print_warn("CNPJABERTO_API_KEY não definida no .env nem no ambiente")
+        print_skip("Preenchimento via API pulado")
         return {"matched": 0, "unmatched": 0, "errors": 0, "total": 0, "skipped_no_key": True}
 
     if not consolidado_path.exists():
-        logger.warning(f"Consolidado não encontrado: {consolidado_path}")
+        print_fail(f"Consolidado não encontrado: {consolidado_path}")
         return {"matched": 0, "unmatched": 0, "errors": 0, "total": 0}
 
     with open(consolidado_path, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
+    pendentes = [r for r in rows if not (r.get("cnpj_emissor") or "").strip()]
+    ja_preenchidos = len(rows) - len(pendentes)
+
+    print_info(f"Consolidado: {len(rows)} emissores · {green(str(ja_preenchidos))} já preenchidos · {yellow(str(len(pendentes)))} pendentes")
+
+    if not pendentes:
+        print_done("Nenhum emissor pendente — consolidado já completo")
+        return {"matched": 0, "unmatched": 0, "errors": 0, "total": len(rows)}
+
     if dry_run:
-        pendentes = [r for r in rows if not (r.get("cnpj_emissor") or "").strip()]
-        logger.info(f"Dry-run: {len(pendentes)} emissores pendentes de {len(rows)} total")
+        print_skip(f"Dry-run: {len(pendentes)} emissores seriam consultados")
         return {
             "matched": 0,
             "unmatched": len(pendentes),
@@ -85,41 +99,42 @@ def generate(
     try:
         from cnpjaberto import Client
     except ImportError:
-        logger.error("cnpjaberto não instalado. Execute: pip install cnpjaberto")
+        print_fail("cnpjaberto não instalado. Execute: pip install cnpjaberto")
         return {"matched": 0, "unmatched": 0, "errors": 0, "total": 0, "missing_dep": True}
 
-    total = len(rows)
+    print_start(f"Consultando {len(pendentes)} emissores na API CNPJ Aberto...")
+    print()
+
+    section("Progresso", "search")
+
     matched = 0
     unmatched = 0
     errors = 0
-
-    updated_rows: list[dict] = []
 
     with Client() as client:
         for i, row in enumerate(rows):
             cnpj_existente = (row.get("cnpj_emissor") or "").strip()
             if cnpj_existente:
-                updated_rows.append(row)
                 continue
 
             nome_busca = _obter_nome_busca(row)
             if not nome_busca:
-                updated_rows.append(row)
                 unmatched += 1
                 continue
 
             nome_pad = (row.get("nome_emissor_padronizado") or "").strip()
             if not nome_pad:
-                updated_rows.append(row)
                 unmatched += 1
                 continue
 
             try:
                 resp = client.search(nome_busca, per_page=5)
             except Exception as e:
-                logger.warning(f"Erro na busca por '{nome_busca}': {e}")
-                updated_rows.append(row)
+                if not quiet:
+                    print(f"  {red('✖')}  {dim(nome_busca[:50]):50s}  {red('erro')}  {dim(str(e)[:40])}")
                 errors += 1
+                if i < len(rows) - 1:
+                    time.sleep(rate_limit)
                 continue
 
             hits = (resp or {}).get("results") or []
@@ -137,10 +152,12 @@ def generate(
             if cnpj:
                 row["cnpj_emissor"] = cnpj
                 matched += 1
+                if not quiet:
+                    print(f"  {green('✔')}  {dim(nome_busca[:50]):50s}  {green(cnpj)}")
             else:
                 unmatched += 1
-
-            updated_rows.append(row)
+                if not quiet:
+                    print(f"  {yellow('⚠')}  {dim(nome_busca[:50]):50s}  {yellow('não encontrado')}")
 
             if i < len(rows) - 1:
                 time.sleep(rate_limit)
@@ -149,15 +166,42 @@ def generate(
     with open(consolidado_path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=COLUNAS_CONSOLIDADO)
         writer.writeheader()
-        writer.writerows(updated_rows)
+        writer.writerows(rows)
 
-    logger.info(
-        f"Total: {total} | Preenchidos: {matched} | "
-        f"Não encontrados: {unmatched} | Erros: {errors}"
+    print()
+    section("Resumo", "chart")
+
+    rows_table = [
+        (green("✔"), "Preenchidos", str(matched)),
+        (yellow("⚠"), "Não encontrados", str(unmatched)),
+        (red("✖"), "Erros", str(errors)),
+        (cyan("ℹ"), "Total processados", str(matched + unmatched + errors)),
+    ]
+    print_table(
+        [(label, val) for _, label, val in rows_table],
+        ["", "Quantidade"],
+        title="CNPJs via API",
     )
 
+    print_summary(
+        "Preenchimento via API",
+        total=len(rows),
+        success=matched,
+        failed=errors,
+        skipped=0,
+        elapsed=0,
+        details=[
+            ("file", "CSV", str(consolidado_path)),
+        ],
+    )
+
+    if errors:
+        print_warn(f"{errors} erro(s) durante a consulta — verifique rede e cota diária")
+    if unmatched:
+        print_info(f"{unmatched} emissor(es) não encontrado(s) — podem precisar de busca manual")
+
     return {
-        "total": total,
+        "total": len(rows),
         "matched": matched,
         "unmatched": unmatched,
         "errors": errors,
@@ -166,12 +210,26 @@ def generate(
 
 def main():
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.WARNING,
         format="%(asctime)s [%(levelname)s] %(name)s - %(message)s",
     )
     result = generate()
-    key_status = " (sem API key)" if result.get("skipped_no_key") else ""
-    print(f"Resultado: {result['matched']} CNPJs preenchidos de {result['total']} emissores{key_status}")
+
+    if result.get("skipped_no_key"):
+        sys.exit(1)
+    elif result.get("missing_dep"):
+        sys.exit(1)
+
+    print()
+    if result["matched"] > 0:
+        print(f"  {green('✔')}  {result['matched']} CNPJs preenchidos")
+    if result["unmatched"] > 0:
+        print(f"  {yellow('⚠')}  {result['unmatched']} não encontrados")
+    if result["errors"] > 0:
+        print(f"  {red('✖')}  {result['errors']} erro(s)")
+    total_encontrados = result["matched"] + result.get("pre_existing", 0)
+    print(f"  {dim('─')}")
+    print(f"  {bold('Total no consolidado:')} {result['total']} emissores")
 
 
 if __name__ == "__main__":
