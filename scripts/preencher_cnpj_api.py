@@ -13,16 +13,12 @@ import time
 from pathlib import Path
 from typing import Optional
 
-from dotenv import load_dotenv
-
 from scripts.consolidar_emissores import normalizar
 from scripts.utils.ux import (
     banner, section, line, bold, dim, green, red, yellow, cyan, white,
     print_start, print_done, print_fail, print_warn, print_skip, print_info,
     print_summary, print_table, progress_bar,
 )
-
-load_dotenv()
 
 logger = logging.getLogger("preencher_cnpj_api")
 
@@ -66,18 +62,25 @@ def generate(
     dry_run: bool = False,
     quiet: bool = False,
 ) -> dict:
+    from dotenv import load_dotenv
+    load_dotenv()
+
     if consolidado_path is None:
         consolidado_path = (
             Path(__file__).resolve().parents[1] / "data" / "emissores_consolidado.csv"
         )
 
-    banner("Preenchimento de CNPJ via API CNPJ Aberto", "1 requisição/segundo · 1.000 req/dia (free)")
-
     api_key = os.environ.get("CNPJABERTO_API_KEY")
+    proxy_url = os.environ.get("CNPJABERTO_PROXY")
     if not api_key:
         print_warn("CNPJABERTO_API_KEY não definida no .env nem no ambiente")
         print_skip("Preenchimento via API pulado")
         return {"matched": 0, "unmatched": 0, "errors": 0, "total": 0, "skipped_no_key": True}
+
+    subtitle = "1 requisição/segundo · 1.000 req/dia (free)"
+    if proxy_url:
+        subtitle += f" · proxy {proxy_url}"
+    banner("Preenchimento de CNPJ via API CNPJ Aberto", subtitle)
 
     if not consolidado_path.exists():
         print_fail(f"Consolidado não encontrado: {consolidado_path}")
@@ -110,10 +113,15 @@ def generate(
         }
 
     try:
-        from cnpjaberto import Client
+        from cnpjaberto import Client, RateLimitError
     except ImportError:
         print_fail("cnpjaberto não instalado. Execute: pip install cnpjaberto")
         return {"matched": 0, "unmatched": 0, "errors": 0, "total": 0, "missing_dep": True}
+
+    if proxy_url:
+        os.environ["HTTP_PROXY"] = proxy_url
+        os.environ["HTTPS_PROXY"] = proxy_url
+    cnpj_client = Client(api_key=api_key)
 
     print_start(f"Consultando {len(pendentes)} emissores na API CNPJ Aberto...")
     print()
@@ -133,7 +141,7 @@ def generate(
     unmatched = 0
     errors = 0
 
-    with Client() as client:
+    with cnpj_client as client:
         for i, row in enumerate(rows):
             cnpj_existente = (row.get("cnpj_emissor") or "").strip()
             if cnpj_existente:
@@ -164,6 +172,10 @@ def generate(
                     if normalizar(hit_nome) == nome_pad:
                         cnpj = hit_cnpj
                         break
+            except RateLimitError:
+                if not quiet:
+                    print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('rate limit esgotado')}")
+                errors += 1
             except Exception as e:
                 if not quiet:
                     print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('erro')}  {dim(str(e)[:40])}")
@@ -183,6 +195,10 @@ def generate(
                             cnpj = hit_cnpj
                             query_usada = nome_pad
                             break
+                except RateLimitError:
+                    if not quiet:
+                        print(f"  {red('✖')}  {dim(nome_pad):{max_width}s}  {red('rate limit esgotado')}")
+                    errors += 1
                 except Exception as e:
                     if not quiet:
                         print(f"  {red('✖')}  {dim(nome_pad):{max_width}s}  {red('erro')}  {dim(str(e)[:40])}")

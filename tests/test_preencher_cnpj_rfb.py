@@ -9,7 +9,7 @@ from scripts.preencher_cnpj_rfb import (
     _calcular_dv,
     _montar_cnpj,
     _extrair_palavras,
-    _build_db,
+    _construir_db,
     _search,
     generate,
     COLUNAS_CONSOLIDADO,
@@ -43,7 +43,7 @@ def test_montar_cnpj_base_curta():
     assert _montar_cnpj("1") == "00000001000136"
 
 
-# ── _extrair_palavras ────────────────────────────────────────────────────
+# ── _extrair_palavras ───────────────────────────────────────────────────
 
 
 def test_extrair_palavras_filtra_stopwords():
@@ -53,6 +53,7 @@ def test_extrair_palavras_filtra_stopwords():
     assert "DO" not in palavras
     assert "SA" not in palavras
     assert palavras == set()
+
 
 def test_extrair_palavras_curtas_ignoradas():
     palavras = _extrair_palavras("ABC LTDA")
@@ -67,27 +68,27 @@ def test_extrair_palavras_mantem_significativas():
     assert "SA" not in palavras
 
 
-# ── _build_db ────────────────────────────────────────────────────────────
+# ── _construir_db ───────────────────────────────────────────────────────
 
 
 def _criar_zip_emprcsv(zip_path: Path, lines: list[str]):
-    """Cria um zip com EMPRECSV content."""
+    """Cria um zip com EMPRECSV content (formato RFB: ; delimitador)."""
     zip_path.parent.mkdir(parents=True, exist_ok=True)
     content = "\n".join(lines)
     with zipfile.ZipFile(zip_path, "w") as z:
         z.writestr("K3241.K03200Y0.D40000.EMPRECSV", content.encode("latin-1"))
 
 
-def test_build_db_basico(tmp_path):
+def test_construir_db_basico(tmp_path):
     zip_path = tmp_path / "test.zip"
     db_path = tmp_path / "test.db"
 
     _criar_zip_emprcsv(zip_path, [
-        "00000000|Ambev S.A.|",
-        "11111111|Vale S.A.|",
+        '00000000;"Ambev S.A.";;',
+        '11111111;"Vale S.A.";;',
     ])
 
-    _build_db(zip_path, db_path)
+    _construir_db([zip_path], db_path)
     assert db_path.exists()
 
     conn = sqlite3.connect(str(db_path))
@@ -100,17 +101,22 @@ def test_build_db_basico(tmp_path):
     assert "11111111" in bases
 
 
-def test_build_db_zip_sem_emprcsv(tmp_path):
+def test_construir_db_zip_sem_emprcsv(tmp_path):
     zip_path = tmp_path / "vazio.zip"
     db_path = tmp_path / "test.db"
     with zipfile.ZipFile(zip_path, "w"):
         pass
 
-    with pytest.raises(FileNotFoundError, match="EMPRECSV"):
-        _build_db(zip_path, db_path)
+    # _construir_db apenas ignora zips sem EMPRECSV, sem erro
+    _construir_db([zip_path], db_path)
+    assert db_path.exists()
+    conn = sqlite3.connect(str(db_path))
+    count = conn.execute("SELECT COUNT(*) FROM empresas").fetchone()[0]
+    conn.close()
+    assert count == 0
 
 
-# ── _search ──────────────────────────────────────────────────────────────
+# ── _search ─────────────────────────────────────────────────────────────
 
 
 def _criar_db_com_empresas(db_path: Path, empresas: list[tuple[str, str]]):
@@ -174,9 +180,6 @@ def test_search_fallback_palavras(tmp_path):
     ])
 
     from scripts.consolidar_emissores import normalizar
-    # normalizar("Bebidas São Paulo Ltda.") → "BEBIDAS SAO PAULO"
-    # exact match: DB has "COMPANHIA BEBIDAS SAO PAULO" → no match
-    # fallback LIKE '%BEBIDAS%' AND LIKE '%SAO%' AND LIKE '%PAULO%' → match!
     cnpj = _search(normalizar("Bebidas São Paulo Ltda."), db_path)
     assert cnpj == "00000000000191"
 
@@ -190,16 +193,11 @@ def test_search_fallback_evita_falso_positivo(tmp_path):
     ])
 
     from scripts.consolidar_emissores import normalizar
-    # normalizar("Transportes ABC Ltda.") → "TRANSPORTES ABC"
-    # exact match: only "TRANSPORTES ABC" matches → 1 result → would succeed
-    # To test ambiguous, search for something with fewer words
-    # normalizar("ABC Transportes Ltda.") → "ABC TRANSPORTES"
-    # exact: no match. fallback: LIKE '%ABC%' AND LIKE '%TRANSPORTES%' → 2 results → None
     cnpj = _search(normalizar("ABC Transportes Ltda."), db_path)
     assert cnpj is None
 
 
-# ── generate ──────────────────────────────────────────────────────────────
+# ── generate ────────────────────────────────────────────────────────────
 
 
 def _escrever_csv(path: Path, rows: list[dict]):
@@ -211,12 +209,12 @@ def _escrever_csv(path: Path, rows: list[dict]):
 
 
 def test_generate_preenche(tmp_path):
-    zip_path = tmp_path / "DADOS_ABERTOS_CNPJ.zip"
     db_path = tmp_path / "empresas.db"
-
+    zip_path = tmp_path / "empresas0.zip"
     _criar_zip_emprcsv(zip_path, [
-        "00000000|Ambev S.A.|",
+        '00000000;"Ambev S.A.";;',
     ])
+    _construir_db([zip_path], db_path)
 
     consolidado_path = tmp_path / "emissores_consolidado.csv"
     _escrever_csv(consolidado_path, [
@@ -238,9 +236,8 @@ def test_generate_preenche(tmp_path):
 
     result = generate(
         consolidado_path=consolidado_path,
-        zip_path=zip_path,
         db_path=db_path,
-        rebuild_db=True,
+        rebuild_db=False,
         quiet=True,
     )
 
@@ -255,30 +252,25 @@ def test_generate_preenche(tmp_path):
     assert cnpjs["VALE"] == ""
 
 
-def test_generate_zip_inexistente(tmp_path):
-    zip_path = tmp_path / "inexistente.zip"
+def test_generate_consolidado_inexistente(tmp_path):
+    """Consolidado não encontrado → erro sem crash."""
     db_path = tmp_path / "empresas.db"
-    consolidado_path = tmp_path / "emissores_consolidado.csv"
-    _escrever_csv(consolidado_path, [{"nome_emissor_padronizado": "AMBEV", "cnpj_emissor": ""}])
-
+    consolidado_path = tmp_path / "inexistente.csv"
     result = generate(
         consolidado_path=consolidado_path,
-        zip_path=zip_path,
         db_path=db_path,
         quiet=True,
     )
-
-    assert result.get("missing_zip") is True
-    assert result["matched"] == 0
+    assert result["errors"] > 0 or result["total"] == 0
 
 
 def test_generate_preserva_cnpj_existente(tmp_path):
-    zip_path = tmp_path / "DADOS_ABERTOS_CNPJ.zip"
     db_path = tmp_path / "empresas.db"
-
+    zip_path = tmp_path / "empresas0.zip"
     _criar_zip_emprcsv(zip_path, [
-        "00000000|Ambev S.A.|",
+        '00000000;"Ambev S.A.";;',
     ])
+    _construir_db([zip_path], db_path)
 
     consolidado_path = tmp_path / "emissores_consolidado.csv"
     _escrever_csv(consolidado_path, [
@@ -293,9 +285,8 @@ def test_generate_preserva_cnpj_existente(tmp_path):
 
     result = generate(
         consolidado_path=consolidado_path,
-        zip_path=zip_path,
         db_path=db_path,
-        rebuild_db=True,
+        rebuild_db=False,
         quiet=True,
     )
 
@@ -308,12 +299,12 @@ def test_generate_preserva_cnpj_existente(tmp_path):
 
 def test_generate_trailing_comma_no_crash(tmp_path):
     """CSV com coluna extra não crasha."""
-    zip_path = tmp_path / "DADOS_ABERTOS_CNPJ.zip"
     db_path = tmp_path / "empresas.db"
-
+    zip_path = tmp_path / "empresas0.zip"
     _criar_zip_emprcsv(zip_path, [
-        "00000000|Ambev S.A.|",
+        '00000000;"Ambev S.A.";;',
     ])
+    _construir_db([zip_path], db_path)
 
     consolidado_path = tmp_path / "emissores_consolidado.csv"
     consolidado_path.write_text(
@@ -324,9 +315,8 @@ def test_generate_trailing_comma_no_crash(tmp_path):
 
     result = generate(
         consolidado_path=consolidado_path,
-        zip_path=zip_path,
         db_path=db_path,
-        rebuild_db=True,
+        rebuild_db=False,
         quiet=True,
     )
 

@@ -152,26 +152,32 @@ O campo `cnpj_emissor` do consolidado é preenchido por 3 scripts, executados em
 |--------|-------|-----------|-----------|
 | `preencher_cnpj_cvm.py` | CVM (cias abertas + fundos) | GitHub Actions (automático) | ~400-500 matches |
 | `preencher_cnpj_api.py` | [CNPJ Aberto API](https://cnpjaberto.com) | GitHub Actions (automático) | 1.000 req/dia free |
-| `preencher_cnpj_rfb.py` | Receita Federal (base completa) | **Local apenas** | ~500MB download |
+| `preencher_cnpj_api_proxy.py` | Idem + proxy automático | Local (quando API bate rate limit) | Depende dos proxies públicos |
+| `preencher_cnpj_rfb.py` | Receita Federal (base completa) | **Local apenas** | ~1.4GB download |
 
-**RFB (local):**
+**RFB (local — download automático via WebDAV):**
 ```bash
-# 1. Baixar o DADOS_ABERTOS_CNPJ.zip manualmente (~500MB)
-#    Fonte: https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj
-
-# 2. Salvar no diretório de cache:
-mkdir -p data/rfb_cache
-cp ~/Downloads/DADOS_ABERTOS_CNPJ.zip data/rfb_cache/
-
-# 3. Executar:
+# Executar (baixa Empresas*.zip do mês mais recente automaticamente):
 python scripts/preencher_cnpj_rfb.py
 
-# Para recriar o banco SQLite do zero (útil após atualizar o zip):
+# Para recriar o banco SQLite do zero (útil para atualizar a base):
 python scripts/preencher_cnpj_rfb.py --rebuild-db
 ```
 
-O script da RFB constrói um banco SQLite local com índice de nomes normalizados,
-permitindo busca exata e fallback por palavras significativas.
+O script descobre o mês mais recente via WebDAV no repositório oficial da
+Receita Federal, baixa os 10 arquivos `Empresas0.zip`..`Empresas9.zip`
+(~1.4GB total), extrai as empresas para um banco SQLite local com índice
+de nomes normalizados, e busca cada emissor pendente por nome exato ou
+fallback por palavras significativas.
+
+**Proxy automático (quando a API bater rate limit):**
+```bash
+python scripts/preencher_cnpj_api_proxy.py
+```
+
+Raspa proxies gratuitos de 4 fontes públicas, valida o primeiro
+funcionando contra `httpbin.org`, e delega o preenchimento à API
+com o proxy setado automaticamente via `CNPJABERTO_PROXY`.
 
 ---
 
