@@ -2,6 +2,7 @@ import logging
 from pathlib import Path
 import pandas as pd
 from utils import salvar_csv, agora_brt
+from utils.paths import get_data_dir
 
 class BaseScraper:
     name: str = ""
@@ -27,8 +28,7 @@ class BaseScraper:
         if not self.name:
             self.name = self.__class__.__name__.lower().replace("scraper", "")
         self.logger = logging.getLogger(self.name)
-        root_dir = Path(__file__).resolve().parents[2]
-        self.output_file = root_dir / "data" / f"{self.name}.csv"
+        self.output_file = get_data_dir() / f"{self.name}.csv"
 
     def fetch(self) -> pd.DataFrame:
         raise NotImplementedError("Cada scraper deve implementar o método fetch.")

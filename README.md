@@ -101,6 +101,50 @@ PulseRatingsBrasil/
 
 ---
 
+## ☁️ Deploy no Databricks (Opcional)
+
+O pipeline pode ser executado em um cluster Databricks para armazenar os CSVs no DBFS e alimentar dashboards via Databricks SQL.
+
+### Setup
+
+1. Crie um cluster Databricks (runtime 15.4 LTS ou superior).
+2. Configure o **init script** do cluster para instalar o `curl-cffi`:
+   - Cluster → Advanced → Init Scripts → adicione o caminho para `databricks/init.sh` no DBFS ou Workspace.
+3. Instale as demais dependências:
+   ```bash
+   pip install -r databricks/requirements.txt
+   ```
+4. Defina a variável de ambiente `DATABRICKS_DATA_PATH` no cluster ou job:
+   ```
+   DATABRICKS_DATA_PATH=/dbfs/FileStore/pulse_ratings/data
+   ```
+   Se não definida, o pipeline salva os dados em `data/` (comportamento padrão local).
+
+### Execução
+
+```bash
+# Pipeline completo
+python databricks/run_pipeline.py
+
+# Apenas um scraper
+python databricks/run_pipeline.py --scraper fitch_emissores
+
+# Dry-run (apenas log, não salva)
+python databricks/run_pipeline.py --dry-run
+```
+
+O script respeita o mesmo sistema de descoberta de scrapers e fases do `run_all.py`.
+
+### Como funciona
+
+- `databricks/run_pipeline.py` orquestra os scrapers, escrevendo os CSVs no diretório definido por `DATABRICKS_DATA_PATH`.
+- O diretório de saída é resolvido por `utils/paths.get_data_dir()`, que prioriza a variável de ambiente com fallback para `data/`.
+- O `BaseScraper` em `scrapers/utils/base.py` usa `get_data_dir()` para determinar onde salvar, sem alterar o comportamento local.
+
+> **Nota:** O deploy no Databricks é adicional e não interfere no pipeline GitHub Actions. Ambos compartilham o mesmo código de scrapers.
+
+---
+
 ## 💻 Guia do Desenvolvedor
 
 ### Instalação Local
