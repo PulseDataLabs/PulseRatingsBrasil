@@ -30,10 +30,10 @@ from scripts.utils.ux import (
 logger = logging.getLogger("preencher_cnpj_web")
 
 COLUNAS_CONSOLIDADO = [
-    "nome_emissor_padronizado",
-    "nome_emissor_fitch",
-    "nome_emissor_moodys",
-    "nome_emissor_standard_and_poors",
+    "no_emissor_padronizado",
+    "no_emissor_fitch",
+    "no_emissor_moodys",
+    "no_emissor_standard_and_poors",
     "cnpj_emissor",
 ]
 
@@ -52,11 +52,11 @@ def _limpar_cnpj(valor: Optional[str]) -> str:
 
 
 def _obter_nome_busca(row: dict) -> str:
-    for col in ["nome_emissor_fitch", "nome_emissor_moodys", "nome_emissor_standard_and_poors"]:
+    for col in ["no_emissor_fitch", "no_emissor_moodys", "no_emissor_standard_and_poors"]:
         nome = (row.get(col) or "").strip()
         if nome:
             return nome
-    return (row.get("nome_emissor_padronizado") or "").strip()
+    return (row.get("no_emissor_padronizado") or "").strip()
 
 
 def _salvar_csv(path: Path, rows: list[dict]) -> None:
@@ -145,7 +145,7 @@ def generate(
                 unmatched += 1
                 continue
 
-            nome_pad = (row.get("nome_emissor_padronizado") or "").strip()
+            nome_pad = (row.get("no_emissor_padronizado") or "").strip()
             if not nome_pad:
                 unmatched += 1
                 continue
@@ -199,7 +199,8 @@ def generate(
                 if not cnpj:
                     unmatched += 1
                     if not quiet:
-                        print(f"  {yellow('⚠')}  {dim(nome_busca):{max_width}s}  {yellow(f'{len(cnpjs_encontrados)} CNPJs, ambíguo')}")
+                        cnpjs_str = ", ".join(sorted(cnpjs_encontrados))
+                        print(f"  {yellow('⚠')}  {dim(nome_busca):{max_width}s}  {yellow(f'{len(cnpjs_encontrados)} CNPJs, ambíguo: {cnpjs_str}')}")
                     if i < len(rows) - 1:
                         time.sleep(rate_limit)
                     continue

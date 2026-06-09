@@ -12,10 +12,10 @@ from pathlib import Path
 logger = logging.getLogger("consolidar_emissores")
 
 COLUNAS = [
-    "nome_emissor_padronizado",
-    "nome_emissor_fitch",
-    "nome_emissor_moodys",
-    "nome_emissor_standard_and_poors",
+    "no_emissor_padronizado",
+    "no_emissor_fitch",
+    "no_emissor_moodys",
+    "no_emissor_standard_and_poors",
     "cnpj_emissor",
 ]
 
@@ -77,7 +77,7 @@ def carregar_emissores_fonte(caminho: Path) -> dict[str, str]:
     with open(caminho, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            nome = (row.get("no_entidade") or "").strip()
+            nome = (row.get("no_emissor") or "").strip()
             if nome:
                 result[nome] = normalizar(nome)
     return result
@@ -92,7 +92,7 @@ def carregar_consolidado_existente(caminho: Path) -> dict[str, dict]:
         with open(caminho, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                key = (row.get("nome_emissor_padronizado") or "").strip()
+                key = (row.get("no_emissor_padronizado") or "").strip()
                 if key:
                     result[key] = dict(row)
     except Exception as e:
@@ -129,15 +129,15 @@ def consolidar(
     existing = carregar_consolidado_existente(output_path)
 
     source_cols = [
-        ("fitch", "nome_emissor_fitch"),
-        ("moodys", "nome_emissor_moodys"),
-        ("standard_and_poors", "nome_emissor_standard_and_poors"),
+        ("fitch", "no_emissor_fitch"),
+        ("moodys", "no_emissor_moodys"),
+        ("standard_and_poors", "no_emissor_standard_and_poors"),
     ]
 
     rows: list[dict[str, str]] = []
     for padronizado in sorted(all_padronizados):
         row: dict[str, str] = {col: "" for col in COLUNAS}
-        row["nome_emissor_padronizado"] = padronizado
+        row["no_emissor_padronizado"] = padronizado
 
         for source_key, col_name in source_cols:
             if padronizado in source_padronizados[source_key]:

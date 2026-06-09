@@ -231,16 +231,16 @@ Os campos comuns a todos os datasets:
 | Campo | Tipo | Descrição |
 |-------|------|-----------|
 | `dt_captura` | date | Data da captura pelo pipeline |
-| `no_entidade` | str | Nome do emissor |
+| `no_emissor` | str | Nome do emissor |
 
 O dataset `emissores_consolidado.csv` possui estrutura própria:
 
 | Campo | Tipo | Descrição |
 |-------|------|-----------|
-| `nome_emissor_padronizado` | str | Nome normalizado (uppercase, sem acentos, sem sufixos) |
-| `nome_emissor_fitch` | str | Nome original na fonte Fitch |
-| `nome_emissor_moodys` | str | Nome original na fonte Moody's |
-| `nome_emissor_standard_and_poors` | str | Nome original na fonte S&P |
+| `no_emissor_padronizado` | str | Nome normalizado (uppercase, sem acentos, sem sufixos) |
+| `no_emissor_fitch` | str | Nome original na fonte Fitch |
+| `no_emissor_moodys` | str | Nome original na fonte Moody's |
+| `no_emissor_standard_and_poors` | str | Nome original na fonte S&P |
 | `cnpj_emissor` | str | CNPJ do emissor (preenchido via CVM + CNPJ Aberto API + base RFB) |
 
 As definições completas de campos e tipos são geradas automaticamente em [`data/schemas.json`](data/schemas.json) a cada execução e exibidas no [dashboard](https://pulsedatalabs.github.io/PulseRatingsBrasil/).

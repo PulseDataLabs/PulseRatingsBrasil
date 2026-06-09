@@ -202,7 +202,7 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
         for link, nome in resultados.items():
             rows.append({
                 "dt_captura": today_str,
-                "no_entidade": nome,
+                "no_emissor": nome,
                 "link": link
             })
 

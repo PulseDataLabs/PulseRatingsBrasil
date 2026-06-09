@@ -74,7 +74,7 @@ window.PULSERATINGS_PIPELINE_STATUS = {
     "fitch_ratings.csv": {
       "added": [],
       "removed": [
-        "data_captura"
+        "dt_captura"
       ],
       "timestamp": "2026-06-08T23:36:49.240184"
     }

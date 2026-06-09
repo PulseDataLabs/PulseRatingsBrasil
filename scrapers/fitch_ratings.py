@@ -55,13 +55,13 @@ query {
 
 CABECALHO = [
     "dt_captura",
-    "no_entidade",
+    "no_emissor",
     "link",
-    "Tipo de Rating",
-    "Rating",
-    "Data da Ação de Rating",
-    "Ação de Rating",
-    "CreditWatch/ Perspectiva",
+    "no_tipo_rating",
+    "de_rating_br",
+    "dt_acao_rating",
+    "de_acao_rating",
+    "de_outlook",
 ]
 
 PAGE_SIZE = 100
@@ -140,13 +140,13 @@ def _obter_ratings_via_api() -> list[dict]:
 
                 rows.append({
                     "dt_captura": dt_captura,
-                    "no_entidade": nome,
+                    "no_emissor": nome,
                     "link": link,
-                    "Tipo de Rating": limpar(r.get("ratingTypeDescription") or ""),
-                    "Rating": limpar(r.get("ratingCode") or ""),
-                    "Data da Ação de Rating": _formatar_data(r.get("ratingEffectiveDate") or ""),
-                    "Ação de Rating": limpar(r.get("ratingActionDescription") or ""),
-                    "CreditWatch/ Perspectiva": limpar(alert_desc),
+                    "no_tipo_rating": limpar(r.get("ratingTypeDescription") or ""),
+                    "de_rating_br": limpar(r.get("ratingCode") or ""),
+                    "dt_acao_rating": _formatar_data(r.get("ratingEffectiveDate") or ""),
+                    "de_acao_rating": limpar(r.get("ratingActionDescription") or ""),
+                    "de_outlook": limpar(alert_desc),
                 })
 
         log.info(
@@ -175,7 +175,7 @@ class FitchRatingsScraper(BaseScraper):
     enabled = True
     phase = 2
     accumulate = True
-    chaves_dedup = ["link", "Tipo de Rating"]
+    chaves_dedup = ["link", "no_tipo_rating"]
 
     # Catálogo de Metadados
     title = "Fitch — Ratings"

@@ -83,8 +83,8 @@ def test_normalizar_vazios():
 def test_carregar_csv_normal(tmp_path):
     path = tmp_path / "fonte.csv"
     _escrever_csv(path, [
-        {"no_entidade": "Ambev S.A.", "link": "http://a"},
-        {"no_entidade": "Vale S.A.", "link": "http://b"},
+        {"no_emissor": "Ambev S.A.", "link": "http://a"},
+        {"no_emissor": "Vale S.A.", "link": "http://b"},
     ])
     result = carregar_emissores_fonte(path)
     assert result == {"Ambev S.A.": "AMBEV", "Vale S.A.": "VALE"}
@@ -92,7 +92,7 @@ def test_carregar_csv_normal(tmp_path):
 
 def test_carregar_csv_vazio(tmp_path):
     path = tmp_path / "vazio.csv"
-    _escrever_csv(path, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(path, [{"no_emissor": "", "link": ""}])
     result = carregar_emissores_fonte(path)
     assert result == {}
 
@@ -110,10 +110,10 @@ def test_carregar_consolidado_existente_normal(tmp_path):
     path = tmp_path / "consolidado.csv"
     _escrever_csv(path, [
         {
-            "nome_emissor_padronizado": "AMBEV",
-            "nome_emissor_fitch": "Ambev S.A.",
-            "nome_emissor_moodys": "",
-            "nome_emissor_standard_and_poors": "",
+            "no_emissor_padronizado": "AMBEV",
+            "no_emissor_fitch": "Ambev S.A.",
+            "no_emissor_moodys": "",
+            "no_emissor_standard_and_poors": "",
             "cnpj_emissor": "12345678000199",
         },
     ])
@@ -132,13 +132,13 @@ def test_carregar_consolidado_inexistente(tmp_path):
 
 def test_consolidar_simples(tmp_path):
     fitch = tmp_path / "fitch.csv"
-    _escrever_csv(fitch, [{"no_entidade": "Ambev S.A.", "link": ""}])
+    _escrever_csv(fitch, [{"no_emissor": "Ambev S.A.", "link": ""}])
 
     moodys = tmp_path / "moodys.csv"
-    _escrever_csv(moodys, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(moodys, [{"no_emissor": "", "link": ""}])
 
     sp = tmp_path / "sp.csv"
-    _escrever_csv(sp, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(sp, [{"no_emissor": "", "link": ""}])
 
     output = tmp_path / "out.csv"
     consolidar(fitch, moodys, sp, output)
@@ -148,20 +148,20 @@ def test_consolidar_simples(tmp_path):
         rows = list(reader)
 
     assert len(rows) == 1
-    assert rows[0]["nome_emissor_padronizado"] == "AMBEV"
-    assert rows[0]["nome_emissor_fitch"] == "Ambev S.A."
-    assert rows[0]["nome_emissor_moodys"] == ""
+    assert rows[0]["no_emissor_padronizado"] == "AMBEV"
+    assert rows[0]["no_emissor_fitch"] == "Ambev S.A."
+    assert rows[0]["no_emissor_moodys"] == ""
 
 
 def test_consolidar_mesmo_emissor_2_fontes(tmp_path):
     fitch = tmp_path / "fitch.csv"
-    _escrever_csv(fitch, [{"no_entidade": "Ambev S.A.", "link": ""}])
+    _escrever_csv(fitch, [{"no_emissor": "Ambev S.A.", "link": ""}])
 
     moodys = tmp_path / "moodys.csv"
-    _escrever_csv(moodys, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(moodys, [{"no_emissor": "", "link": ""}])
 
     sp = tmp_path / "sp.csv"
-    _escrever_csv(sp, [{"no_entidade": "AMBEV S.A.", "link": ""}])
+    _escrever_csv(sp, [{"no_emissor": "AMBEV S.A.", "link": ""}])
 
     output = tmp_path / "out.csv"
     consolidar(fitch, moodys, sp, output)
@@ -170,30 +170,30 @@ def test_consolidar_mesmo_emissor_2_fontes(tmp_path):
         rows = list(csv.DictReader(f))
 
     assert len(rows) == 1
-    assert rows[0]["nome_emissor_fitch"] == "Ambev S.A."
-    assert rows[0]["nome_emissor_standard_and_poors"] == "AMBEV S.A."
+    assert rows[0]["no_emissor_fitch"] == "Ambev S.A."
+    assert rows[0]["no_emissor_standard_and_poors"] == "AMBEV S.A."
 
 
 def test_consolidar_merge_preserva_cnpj(tmp_path):
     output = tmp_path / "out.csv"
     _escrever_csv(output, [
         {
-            "nome_emissor_padronizado": "AMBEV",
-            "nome_emissor_fitch": "Ambev S.A. (antigo)",
-            "nome_emissor_moodys": "",
-            "nome_emissor_standard_and_poors": "",
+            "no_emissor_padronizado": "AMBEV",
+            "no_emissor_fitch": "Ambev S.A. (antigo)",
+            "no_emissor_moodys": "",
+            "no_emissor_standard_and_poors": "",
             "cnpj_emissor": "12345678000199",
         },
     ])
 
     fitch = tmp_path / "fitch.csv"
-    _escrever_csv(fitch, [{"no_entidade": "Ambev S.A.", "link": ""}])
+    _escrever_csv(fitch, [{"no_emissor": "Ambev S.A.", "link": ""}])
 
     moodys = tmp_path / "moodys.csv"
-    _escrever_csv(moodys, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(moodys, [{"no_emissor": "", "link": ""}])
 
     sp = tmp_path / "sp.csv"
-    _escrever_csv(sp, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(sp, [{"no_emissor": "", "link": ""}])
 
     consolidar(fitch, moodys, sp, output)
 
@@ -202,22 +202,22 @@ def test_consolidar_merge_preserva_cnpj(tmp_path):
 
     assert len(rows) == 1
     assert rows[0]["cnpj_emissor"] == "12345678000199"
-    assert rows[0]["nome_emissor_fitch"] == "Ambev S.A."
+    assert rows[0]["no_emissor_fitch"] == "Ambev S.A."
 
 
 def test_consolidar_ordem_alfabetica(tmp_path):
     fitch = tmp_path / "fitch.csv"
     _escrever_csv(fitch, [
-        {"no_entidade": "Vale S.A.", "link": ""},
-        {"no_entidade": "Ambev S.A.", "link": ""},
-        {"no_entidade": "Banco Bradesco S.A.", "link": ""},
+        {"no_emissor": "Vale S.A.", "link": ""},
+        {"no_emissor": "Ambev S.A.", "link": ""},
+        {"no_emissor": "Banco Bradesco S.A.", "link": ""},
     ])
 
     moodys = tmp_path / "moodys.csv"
-    _escrever_csv(moodys, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(moodys, [{"no_emissor": "", "link": ""}])
 
     sp = tmp_path / "sp.csv"
-    _escrever_csv(sp, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(sp, [{"no_emissor": "", "link": ""}])
 
     output = tmp_path / "out.csv"
     consolidar(fitch, moodys, sp, output)
@@ -225,7 +225,7 @@ def test_consolidar_ordem_alfabetica(tmp_path):
     with open(output, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
-    padronizados = [r["nome_emissor_padronizado"] for r in rows]
+    padronizados = [r["no_emissor_padronizado"] for r in rows]
     assert padronizados == sorted(padronizados)
     assert padronizados == ["AMBEV", "BANCO BRADESCO", "VALE"]
 
@@ -234,25 +234,25 @@ def test_consolidar_emissor_novo_adicionado(tmp_path):
     output = tmp_path / "out.csv"
     _escrever_csv(output, [
         {
-            "nome_emissor_padronizado": "AMBEV",
-            "nome_emissor_fitch": "Ambev S.A.",
-            "nome_emissor_moodys": "",
-            "nome_emissor_standard_and_poors": "",
+            "no_emissor_padronizado": "AMBEV",
+            "no_emissor_fitch": "Ambev S.A.",
+            "no_emissor_moodys": "",
+            "no_emissor_standard_and_poors": "",
             "cnpj_emissor": "",
         },
     ])
 
     fitch = tmp_path / "fitch.csv"
     _escrever_csv(fitch, [
-        {"no_entidade": "Ambev S.A.", "link": ""},
-        {"no_entidade": "Vale S.A.", "link": ""},
+        {"no_emissor": "Ambev S.A.", "link": ""},
+        {"no_emissor": "Vale S.A.", "link": ""},
     ])
 
     moodys = tmp_path / "moodys.csv"
-    _escrever_csv(moodys, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(moodys, [{"no_emissor": "", "link": ""}])
 
     sp = tmp_path / "sp.csv"
-    _escrever_csv(sp, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(sp, [{"no_emissor": "", "link": ""}])
 
     consolidar(fitch, moodys, sp, output)
 
@@ -260,16 +260,16 @@ def test_consolidar_emissor_novo_adicionado(tmp_path):
         rows = list(csv.DictReader(f))
 
     assert len(rows) == 2
-    assert rows[0]["nome_emissor_padronizado"] == "AMBEV"
-    assert rows[1]["nome_emissor_padronizado"] == "VALE"
+    assert rows[0]["no_emissor_padronizado"] == "AMBEV"
+    assert rows[1]["no_emissor_padronizado"] == "VALE"
 
 
 def test_consolidar_sem_nenhuma_fonte(tmp_path):
     moodys = tmp_path / "moodys.csv"
-    _escrever_csv(moodys, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(moodys, [{"no_emissor": "", "link": ""}])
 
     sp = tmp_path / "sp.csv"
-    _escrever_csv(sp, [{"no_entidade": "", "link": ""}])
+    _escrever_csv(sp, [{"no_emissor": "", "link": ""}])
 
     output = tmp_path / "out.csv"
     consolidar(tmp_path / "inexistente.csv", moodys, sp, output)

@@ -117,7 +117,7 @@ def _obter_emissores_fitch_real() -> list[dict]:
     log.info(f"Total de emissores únicas capturadas: {len(entities)}")
     print_done(f"{len(entities)} emissores únicas capturadas")
     return [
-        {"dt_captura": today_str, "no_entidade": nome, "link": link}
+        {"dt_captura": today_str, "no_emissor": nome, "link": link}
         for link, nome in entities.items()
     ]
 

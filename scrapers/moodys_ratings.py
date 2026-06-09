@@ -36,7 +36,7 @@ HEADERS = {
 
 RENAME_MAP = {
     "Setor": "no_setor",
-    "Emissor": "no_entidade",
+    "Emissor": "no_emissor",
     "Produto": "no_tipo_rating",
     "Instrumento": "de_instrumento",
     "Objeto": "de_objeto",

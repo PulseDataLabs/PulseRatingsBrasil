@@ -27,7 +27,7 @@ class MoodysEmissoresScraper(BaseScraper):
     enabled = True
     phase = 1
     accumulate = False
-    chaves_dedup = ["no_entidade"]
+    chaves_dedup = ["no_emissor"]
 
     # Catálogo de Metadados
     title = "Moody's — Emissores"
@@ -123,15 +123,15 @@ class MoodysEmissoresScraper(BaseScraper):
             return pd.DataFrame()
 
         df = pd.DataFrame(data_rows, columns=headers)
-        df.rename(columns={"Emissor": "no_entidade"}, inplace=True)
-        df.drop_duplicates(subset=["no_entidade"], inplace=True)
+        df.rename(columns={"Emissor": "no_emissor"}, inplace=True)
+        df.drop_duplicates(subset=["no_emissor"], inplace=True)
         
         today_str = datetime.date.today().strftime("%Y-%m-%d")
         df.insert(0, "dt_captura", today_str)
         df["link"] = ""
 
         # Mantém apenas as colunas unificadas
-        df = df[["dt_captura", "no_entidade", "link"]]
+        df = df[["dt_captura", "no_emissor", "link"]]
 
         print_done(f"{len(df)} emissores extraídos")
         return df

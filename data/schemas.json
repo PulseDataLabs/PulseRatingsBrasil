@@ -10,7 +10,7 @@
         "example": ""
       },
       {
-        "name": "no_entidade",
+        "name": "no_emissor",
         "type": "str",
         "example": "Western Asset Management DTVM Ltda."
       },
@@ -57,12 +57,12 @@
     "source": "fitch",
     "fields": [
       {
-        "name": "data_captura",
+        "name": "dt_captura",
         "type": "date",
-        "example": ""
+        "example": "2026-06-08"
       },
       {
-        "name": "no_entidade",
+        "name": "no_emissor",
         "type": "str",
         "example": "General Shopping e Outlets do Brasil S.A."
       },
@@ -72,27 +72,27 @@
         "example": "https://www.fitchratings.com/entity/general-shopping-e-outlets-do-brasil-sa-89879673"
       },
       {
-        "name": "Tipo de Rating",
+        "name": "no_tipo_rating",
         "type": "str",
         "example": "Long Term Issuer Default Rating"
       },
       {
-        "name": "Rating",
+        "name": "de_rating_br",
         "type": "str",
         "example": "C"
       },
       {
-        "name": "Data da Ação de Rating",
+        "name": "dt_acao_rating",
         "type": "date",
         "example": "2026-06-08"
       },
       {
-        "name": "Ação de Rating",
+        "name": "de_acao_rating",
         "type": "str",
         "example": "Downgrade"
       },
       {
-        "name": "CreditWatch/ Perspectiva",
+        "name": "de_outlook",
         "type": "str",
         "example": ""
       }
@@ -104,7 +104,12 @@
     "source": "s_p",
     "fields": [
       {
-        "name": "no_entidade",
+        "name": "dt_captura",
+        "type": "date",
+        "example": "2026-06-08"
+      },
+      {
+        "name": "no_emissor",
         "type": "str",
         "example": "AEGEA Saneamento e Participacoes S.A."
       },
@@ -121,42 +126,12 @@
     "source": "s_p",
     "fields": [
       {
-        "name": "Tipo de Rating",
-        "type": "str",
-        "example": "Escala Nacional Brasil de Longo Prazo"
-      },
-      {
-        "name": "Rating",
-        "type": "str",
-        "example": "brA"
-      },
-      {
-        "name": "Data da Ação de Rating",
+        "name": "dt_captura",
         "type": "date",
-        "example": "2026-04-20"
+        "example": "2026-06-08"
       },
       {
-        "name": "Data da ÚltimaRevisão",
-        "type": "date",
-        "example": "2026-04-20"
-      },
-      {
-        "name": "Identifica­dores Regulatórios",
-        "type": "str",
-        "example": "--"
-      },
-      {
-        "name": "CreditWatch/ Perspectiva",
-        "type": "str",
-        "example": "Negative"
-      },
-      {
-        "name": "Data do CreditWatch/ Perspectiva",
-        "type": "date",
-        "example": "2026-04-20"
-      },
-      {
-        "name": "no_entidade",
+        "name": "no_emissor",
         "type": "str",
         "example": "AEGEA Saneamento e Participacoes S.A."
       },
@@ -164,6 +139,41 @@
         "name": "link",
         "type": "str",
         "example": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1001151"
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "Escala Nacional Brasil de Longo Prazo"
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "brA"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2026-04-20"
+      },
+      {
+        "name": "dt_ultima_revisao",
+        "type": "date",
+        "example": "2026-04-20"
+      },
+      {
+        "name": "de_id_regulatorio",
+        "type": "str",
+        "example": "--"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": "Negative"
+      },
+      {
+        "name": "dt_outlook",
+        "type": "date",
+        "example": "2026-04-20"
       }
     ]
   },
@@ -173,7 +183,12 @@
     "source": "moodys",
     "fields": [
       {
-        "name": "no_entidade",
+        "name": "dt_captura",
+        "type": "date",
+        "example": "2026-06-08"
+      },
+      {
+        "name": "no_emissor",
         "type": "str",
         "example": "Western Asset Management DTVM Ltda."
       },
@@ -190,7 +205,12 @@
     "source": "fitch",
     "fields": [
       {
-        "name": "no_entidade",
+        "name": "dt_captura",
+        "type": "date",
+        "example": "2026-06-08"
+      },
+      {
+        "name": "no_emissor",
         "type": "str",
         "example": "General Shopping e Outlets do Brasil S.A."
       },
@@ -207,22 +227,22 @@
     "source": "consolidated",
     "fields": [
       {
-        "name": "nome_emissor_padronizado",
+        "name": "no_emissor_padronizado",
         "type": "str",
         "example": "AMBEV"
       },
       {
-        "name": "nome_emissor_fitch",
+        "name": "no_emissor_fitch",
         "type": "str",
         "example": "Ambev S.A."
       },
       {
-        "name": "nome_emissor_moodys",
+        "name": "no_emissor_moodys",
         "type": "str",
         "example": ""
       },
       {
-        "name": "nome_emissor_standard_and_poors",
+        "name": "no_emissor_standard_and_poors",
         "type": "str",
         "example": "AMBEV S.A."
       },

@@ -107,13 +107,13 @@ def _parse_ratings_next_data(html: str) -> list[dict]:
             data_cw = parse_sp_date(r.get("currentCwOlDate"))
 
             rows.append({
-                "Tipo de Rating": tipo_rating,
-                "Rating": rating_val,
-                "Data da Ação de Rating": data_acao,
-                "Data da ÚltimaRevisão": data_revisao,
-                "Identifica\xaddores Regulatórios": identificadores,
-                "CreditWatch/ Perspectiva": cw_perspectiva,
-                "Data do CreditWatch/ Perspectiva": data_cw
+                "no_tipo_rating": tipo_rating,
+                "de_rating_br": rating_val,
+                "dt_acao_rating": data_acao,
+                "dt_ultima_revisao": data_revisao,
+                "de_id_regulatorio": identificadores,
+                "de_outlook": cw_perspectiva,
+                "dt_outlook": data_cw,
             })
         return rows
     except Exception:
@@ -127,9 +127,9 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
     phase = 2
     chaves_dedup = [
         "link",
-        "Tipo de Rating",
-        "Rating",
-        "Data da Ação de Rating"
+        "no_tipo_rating",
+        "de_rating_br",
+        "dt_acao_rating",
     ]
     accumulate = True
 
@@ -172,7 +172,7 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
         print_start(f"Processando {total} emissores da S&P...")
 
         for i, row in df_emissores.iterrows():
-            nome = row.get("no_entidade", "")
+            nome = row.get("no_emissor", "")
             link = row.get("link", "")
             self.logger.info(f"[{i+1}/{total}] {nome}")
             bar = progress_bar(i + 1, total)
@@ -199,7 +199,7 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
                     continue
                 
                 df_table = pd.DataFrame(ratings_list)
-                df_table["no_entidade"] = nome
+                df_table["no_emissor"] = nome
                 df_table["link"] = link
                 frames.append(df_table)
                 
@@ -214,6 +214,8 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
 
         df = pd.concat(frames, ignore_index=True)
         df.insert(0, "dt_captura", datetime.date.today().strftime("%Y-%m-%d"))
+        col_order = ["dt_captura", "no_emissor", "link", "no_tipo_rating", "de_rating_br", "dt_acao_rating", "dt_ultima_revisao", "de_id_regulatorio", "de_outlook", "dt_outlook"]
+        df = df[[c for c in col_order if c in df.columns]]
         print_done(f"{len(df)} ratings capturados de {len(frames)} emissores")
         return df
 
