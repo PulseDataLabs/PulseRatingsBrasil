@@ -21,6 +21,7 @@ from typing import Optional
 from dotenv import load_dotenv
 
 from scripts.consolidar_emissores import normalizar
+from scripts.preencher_cnpj_api import _matches
 from scripts.utils.ux import (
     banner, section, bold, dim, green, red, yellow, cyan,
     print_start, print_done, print_fail, print_warn, print_skip, print_info,
@@ -68,6 +69,68 @@ def _salvar_csv(path: Path, rows: list[dict]) -> None:
         writer = csv.DictWriter(f, fieldnames=COLUNAS_CONSOLIDADO)
         writer.writeheader()
         writer.writerows(rows)
+
+
+def _consultar_cnpj_reverso(cnpj_base: str) -> tuple[str | None, bool | None]:
+    """Consulta o nome da empresa a partir do CNPJ em sites externos.
+
+    Returns:
+        Tupla (nome, is_matriz):
+          - nome: nome da empresa ou None se não encontrado
+          - is_matriz: True se matriz, False se filial, None se desconhecido
+    """
+    try:
+        from curl_cffi import requests as cffi_requests
+    except ImportError:
+        return None, None
+
+    # 1. cnpja.com — SSR via SvelteKit __data.json (contém info matriz/filial)
+    try:
+        r = cffi_requests.get(
+            f"https://cnpja.com/office/{cnpj_base}/__data.json",
+            impersonate="chrome",
+            timeout=10,
+        )
+        if r.status_code == 200:
+            data = r.json()
+            nodes = data.get("nodes", [])
+            if len(nodes) >= 3:
+                office_node = nodes[2]
+                if isinstance(office_node, dict) and office_node.get("type") == "data":
+                    d = office_node.get("data", [])
+                    if len(d) >= 3:
+                        fields = d[1]
+                        if isinstance(fields, dict) and isinstance(fields.get("company"), int):
+                            company_obj = d[fields["company"]]
+                            if isinstance(company_obj, dict) and isinstance(company_obj.get("name"), int):
+                                name = d[company_obj["name"]]
+                                head_index = fields.get("head")
+                                is_matriz = None
+                                if isinstance(head_index, int) and head_index < len(d):
+                                    is_matriz = bool(d[head_index])
+                                if isinstance(name, str) and name.strip():
+                                    return name.strip(), is_matriz
+    except Exception:
+        pass
+
+    # 2. cnpj.biz — fallback, parser do <title> (não distingue matriz/filial)
+    try:
+        r = cffi_requests.get(
+            f"https://cnpj.biz/{cnpj_base}",
+            impersonate="chrome",
+            timeout=10,
+        )
+        if r.status_code == 200:
+            m = re.search(r"<title>(.*?)</title>", r.text, re.DOTALL)
+            if m:
+                title = m.group(1)
+                nome = re.sub(r"\s*\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}\s*$", "", title).strip()
+                if nome and "|" not in nome:
+                    return nome, None
+    except Exception:
+        pass
+
+    return None, None
 
 
 def generate(
@@ -196,6 +259,22 @@ def generate(
                             break
                     if cnpj:
                         break
+
+                # consulta reversa: confirma cada candidato em sites externos
+                if not cnpj:
+                    matching: list[tuple[str, bool | None]] = []
+                    for candidato in sorted(cnpjs_encontrados):
+                        nome_rv, is_matriz = _consultar_cnpj_reverso(candidato)
+                        if nome_rv and _matches(nome_rv, nome_pad):
+                            matching.append((candidato, is_matriz))
+                    # Prioriza CNPJ da matriz sobre filiais
+                    for candidato, is_matriz in matching:
+                        if is_matriz:
+                            cnpj = candidato
+                            break
+                    if not cnpj and matching:
+                        cnpj = matching[0][0]
+
                 if not cnpj:
                     unmatched += 1
                     if not quiet:

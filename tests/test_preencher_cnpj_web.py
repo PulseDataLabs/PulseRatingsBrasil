@@ -7,6 +7,7 @@ import pytest
 from scripts.preencher_cnpj_web import (
     _limpar_cnpj,
     _obter_nome_busca,
+    _consultar_cnpj_reverso,
     generate,
 )
 
@@ -59,6 +60,239 @@ def test_obter_nome_busca_somente_padronizado():
         "no_emissor_standard_and_poors": "",
     }
     assert _obter_nome_busca(row) == "EMPRESA"
+
+
+# ── _consultar_cnpj_reverso ─────────────────────────────────────────────────────
+
+
+def _mock_cffi_get(status: int, content):
+    """Retorna um mock para curl_cffi.requests.get.
+    content é str (para text) ou dict (para json)."""
+    mock_resp = MagicMock()
+    mock_resp.status_code = status
+    if isinstance(content, dict):
+        mock_resp.text = ""
+        mock_resp.json.return_value = content
+    else:
+        mock_resp.text = content
+        mock_resp.json.return_value = {}
+    return mock_resp
+
+
+@patch("curl_cffi.requests.get")
+def test_consultar_reverso_por_cnpja(mock_get):
+    """Parser do __data.json do cnpja.com."""
+    mock_get.side_effect = [
+        _mock_cffi_get(200, {
+            "type": "data",
+            "nodes": [None, None, {
+                "type": "data",
+                "data": [
+                    {"office": 1},
+                    {"updated": 2, "taxId": 3, "alias": 4, "founded": 5, "head": 6, "company": 7},
+                    "2026-06-07T00:00:00",
+                    "07526557000100",
+                    "Filial Teste",
+                    "2023-01-01",
+                    False,
+                    {"id": 8, "name": 9, "equity": 10},
+                    None,
+                    "AMBEV S.A.",
+                    None,
+                ]
+            }]
+        }),
+    ]
+    nome, is_matriz = _consultar_cnpj_reverso("07526557000100")
+    assert nome == "AMBEV S.A."
+    assert is_matriz is False  # head=False no mock
+
+
+@patch("curl_cffi.requests.get")
+def test_consultar_reverso_por_cnpjbiz(mock_get):
+    """Fallback: parser do <title> do cnpj.biz quando cnpja.com falha."""
+    mock_get.side_effect = [
+        _mock_cffi_get(404, "not found"),  # cnpja.com → 404
+        _mock_cffi_get(200, "<html><title>Ambev S.A. 07.526.557/0001-00</title></html>"),  # cnpj.biz
+    ]
+    nome, is_matriz = _consultar_cnpj_reverso("07526557000100")
+    assert nome == "Ambev S.A."
+    assert is_matriz is None
+
+
+@patch("curl_cffi.requests.get")
+def test_consultar_reverso_erro(mock_get):
+    """Erro de rede → (None, None)."""
+    mock_get.side_effect = Exception("network error")
+    nome, is_matriz = _consultar_cnpj_reverso("07526557000100")
+    assert nome is None
+    assert is_matriz is None
+
+
+@patch("curl_cffi.requests.get")
+def test_consultar_reverso_404(mock_get):
+    """404 em ambos → (None, None)."""
+    mock_get.side_effect = [
+        _mock_cffi_get(404, ""),
+        _mock_cffi_get(404, ""),
+    ]
+    nome, is_matriz = _consultar_cnpj_reverso("07526557000100")
+    assert nome is None
+    assert is_matriz is None
+
+
+@patch("curl_cffi.requests.get")
+def test_consultar_reverso_matriz(mock_get):
+    """head=True no __data.json → is_matriz True."""
+    mock_get.side_effect = [
+        _mock_cffi_get(200, {
+            "type": "data",
+            "nodes": [None, None, {
+                "type": "data",
+                "data": [
+                    {"office": 1},
+                    {"updated": 2, "taxId": 3, "alias": 4, "founded": 5, "head": 6, "company": 7},
+                    "2026-06-07T00:00:00",
+                    "00000000000191",
+                    "Matriz Teste",
+                    "2000-01-01",
+                    True,
+                    {"id": 8, "name": 9, "equity": 10},
+                    None,
+                    "EMPRESA S.A.",
+                    None,
+                ]
+            }]
+        }),
+    ]
+    nome, is_matriz = _consultar_cnpj_reverso("00000000000191")
+    assert nome == "EMPRESA S.A."
+    assert is_matriz is True
+
+
+@patch("ddgs.DDGS")
+@patch("scripts.preencher_cnpj_web._consultar_cnpj_reverso")
+def test_generate_ambiguo_resolvido_por_reverso(mock_reverso, mock_ddgs_cls, consolidado_path):
+    """Ambiguidade resolvida via consulta reversa (normalização não resolve)."""
+    mock_ddgs_cls.return_value.__enter__.return_value = _fake_search_results({
+        '"Petrobras" CNPJ': [
+            {"title": "CNPJ Info", "body": "Petrobras: CNPJ 00.000.000/0001-91 | Outra: CNPJ 11.111.111/0001-00", "href": ""},
+        ],
+    })
+    # normaliza "CNPJ INFO" → "CNPJINFO" ≠ "PETROBRAS", então reverso é chamado
+    # primeiro candidato não bate (fora de match), segundo bate e é matriz
+    mock_reverso.side_effect = lambda c: {
+        "00000000000191": ("Outra Empresa Ltda.", False),
+        "11111111000100": ("Petrobras", True),
+    }.get(c, (None, None))
+
+    result = generate(
+        consolidado_path=consolidado_path,
+        rate_limit=0.0,
+    )
+
+    assert result["matched"] == 1
+    assert result["unmatched"] == 3
+
+    with open(consolidado_path, "r", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    cnpjs = {r["no_emissor_padronizado"]: r["cnpj_emissor"] for r in rows}
+    assert cnpjs["PETROBRAS"] == "11111111000100"
+
+
+@patch("ddgs.DDGS")
+@patch("scripts.preencher_cnpj_web._consultar_cnpj_reverso")
+def test_generate_ambiguo_reverso_sem_match(mock_reverso, mock_ddgs_cls, consolidado_path):
+    """Reverso consulta mas nenhum candidato bate → unmatched."""
+    mock_ddgs_cls.return_value.__enter__.return_value = _fake_search_results({
+        '"Ambev S.A." CNPJ': [
+            {"title": "SomeSite", "body": "CNPJ 00.000.000/0001-91 e 11.111.111/0001-00", "href": ""},
+        ],
+    })
+    mock_reverso.return_value = ("Outra Empresa Ltda.", None)
+
+    result = generate(
+        consolidado_path=consolidado_path,
+        rate_limit=0.0,
+    )
+
+    assert result["matched"] == 0
+    assert result["unmatched"] == 4
+
+
+@patch("ddgs.DDGS")
+@patch("scripts.preencher_cnpj_web._consultar_cnpj_reverso")
+def test_generate_ambiguo_reverso_prefere_matriz(mock_reverso, mock_ddgs_cls, consolidado_path):
+    """Reverso acha dois matches: filial + matriz → escolhe matriz."""
+    mock_ddgs_cls.return_value.__enter__.return_value = _fake_search_results({
+        '"Vale S.A." CNPJ': [
+            {"title": "CNPJ Site", "body": "CNPJ 00.000.000/0001-91 (Filial) e 11.111.111/0001-00 (Matriz)", "href": ""},
+        ],
+    })
+    mock_reverso.side_effect = lambda c: {
+        "00000000000191": ("Vale S.A.", False),   # filial
+        "11111111000100": ("Vale S.A.", True),     # matriz
+    }.get(c, (None, None))
+
+    result = generate(
+        consolidado_path=consolidado_path,
+        rate_limit=0.0,
+    )
+
+    assert result["matched"] == 1
+    assert result["unmatched"] == 3
+
+    with open(consolidado_path, "r", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    cnpjs = {r["no_emissor_padronizado"]: r["cnpj_emissor"] for r in rows}
+    assert cnpjs["VALE"] == "11111111000100"
+
+
+@patch("ddgs.DDGS")
+@patch("scripts.preencher_cnpj_web._consultar_cnpj_reverso")
+def test_generate_ambiguo_reverso_sem_matriz(mock_reverso, mock_ddgs_cls, consolidado_path):
+    """Reverso acha só filiais → aceita a primeira."""
+    mock_ddgs_cls.return_value.__enter__.return_value = _fake_search_results({
+        '"Vale S.A." CNPJ': [
+            {"title": "CNPJ Site", "body": "CNPJ 00.000.000/0001-91 e 11.111.111/0001-00", "href": ""},
+        ],
+    })
+    mock_reverso.side_effect = lambda c: {
+        "00000000000191": ("Vale S.A.", False),    # filial
+        "11111111000100": ("Vale S.A.", False),     # filial
+    }.get(c, (None, None))
+
+    result = generate(
+        consolidado_path=consolidado_path,
+        rate_limit=0.0,
+    )
+
+    assert result["matched"] == 1
+    assert result["unmatched"] == 3
+
+    with open(consolidado_path, "r", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    cnpjs = {r["no_emissor_padronizado"]: r["cnpj_emissor"] for r in rows}
+    assert cnpjs["VALE"] == "00000000000191"
+
+
+@patch("ddgs.DDGS")
+@patch("scripts.preencher_cnpj_web._consultar_cnpj_reverso")
+def test_generate_reverso_ja_tem_match_normalizacao(mock_reverso, mock_ddgs_cls, consolidado_path):
+    """Se normalização já resolveu, reverso não é chamado."""
+    mock_ddgs_cls.return_value.__enter__.return_value = _fake_search_results({
+        '"Ambev S.A." CNPJ': [
+            {"title": "Ambev S.A.", "body": "CNPJ 00.000.000/0001-91", "href": ""},
+        ],
+    })
+
+    result = generate(
+        consolidado_path=consolidado_path,
+        rate_limit=0.0,
+    )
+
+    assert result["matched"] == 1
+    assert mock_reverso.call_count == 0
 
 
 # ── generate ───────────────────────────────────────────────────────────────────
