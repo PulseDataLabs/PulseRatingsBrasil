@@ -27,6 +27,7 @@ from typing import Optional
 import requests
 
 from scripts.consolidar_emissores import normalizar
+from utils.paths import get_data_dir
 from scripts.utils.ux import (
     banner,
     bold,
@@ -56,9 +57,8 @@ COLUNAS_CONSOLIDADO = [
     "cnpj_emissor",
 ]
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-CONSOLIDADO_PATH = PROJECT_ROOT / "data" / "emissores_consolidado.csv"
-CACHE_DIR = PROJECT_ROOT / "data" / "rfb_cache"
+CONSOLIDADO_PATH = get_data_dir() / "emissores_consolidado.csv"
+CACHE_DIR = get_data_dir() / "rfb_cache"
 DB_PATH = CACHE_DIR / "empresas.db"
 
 RFB_BASE_URL = (

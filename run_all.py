@@ -20,6 +20,8 @@ from typing import Optional
 import concurrent.futures
 from concurrent.futures import ThreadPoolExecutor
 
+from utils.paths import get_data_dir
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s – %(message)s",
@@ -136,8 +138,8 @@ def save_pipeline_status(results: dict[str, tuple[bool, float, Optional[str]]], 
     from pathlib import Path
 
     root_dir = Path(__file__).resolve().parent
-    status_path = root_dir / "data" / "pipeline_status.json"
-    status_js_path = root_dir / "data" / "pipeline_status.js"
+    status_path = get_data_dir() / "pipeline_status.json"
+    status_js_path = get_data_dir() / "pipeline_status.js"
 
     scrapers_registry = discover_scrapers()
     active_scrapers = {k: v for k, v in scrapers_registry.items() if v["enabled"]}

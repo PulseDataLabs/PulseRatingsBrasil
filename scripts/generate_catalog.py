@@ -17,6 +17,7 @@ sys.path.insert(0, str(ROOT_DIR))
 
 from run_all import discover_scrapers
 from scrapers.utils.base import BaseScraper
+from utils.paths import get_data_dir
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("generate_catalog")
@@ -41,7 +42,7 @@ def get_source_class(source_name: str) -> str:
 
 
 def generate():
-    datasets_json_path = ROOT_DIR / "data" / "datasets.json"
+    datasets_json_path = get_data_dir() / "datasets.json"
 
     # 1. Carrega o datasets.json existente como fallback
     old_datasets = {}

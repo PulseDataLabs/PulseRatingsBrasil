@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Optional
 
 import requests
+from utils.paths import get_data_dir
 
 from scripts.consolidar_emissores import normalizar
 
@@ -24,7 +25,7 @@ CVM_CIA_URL = (
 )
 CVM_FI_URL = "https://dados.cvm.gov.br/dados/FI/CAD/DADOS/cad_fi.csv"
 
-CACHE_DIR = Path(__file__).resolve().parents[1] / "data" / "cvm_cache"
+CACHE_DIR = get_data_dir() / "cvm_cache"
 CACHE_TTL = timedelta(hours=24)
 
 COLUNAS_CONSOLIDADO = [
@@ -138,9 +139,7 @@ def generate(
     cache_dir: Optional[Path] = None,
 ) -> dict:
     if consolidado_path is None:
-        consolidado_path = (
-            Path(__file__).resolve().parents[1] / "data" / "emissores_consolidado.csv"
-        )
+        consolidado_path = get_data_dir() / "emissores_consolidado.csv"
     if cache_dir is None:
         cache_dir = CACHE_DIR
 

@@ -19,6 +19,7 @@ from pathlib import Path
 from typing import Optional
 
 from dotenv import load_dotenv
+from utils.paths import get_data_dir
 
 from scripts.consolidar_emissores import normalizar
 from scripts.preencher_cnpj_api import _matches
@@ -141,9 +142,7 @@ def generate(
     load_dotenv()
 
     if consolidado_path is None:
-        consolidado_path = (
-            Path(__file__).resolve().parents[1] / "data" / "emissores_consolidado.csv"
-        )
+        consolidado_path = get_data_dir() / "emissores_consolidado.csv"
 
     banner(
         "Preenchimento de CNPJ via DuckDuckGo",

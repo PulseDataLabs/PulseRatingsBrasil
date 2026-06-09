@@ -9,6 +9,8 @@ import re
 import unicodedata
 from pathlib import Path
 
+from utils.paths import get_data_dir
+
 logger = logging.getLogger("consolidar_emissores")
 
 COLUNAS = [
@@ -162,7 +164,7 @@ def consolidar(
 
 
 def generate() -> None:
-    data_dir = Path(__file__).resolve().parents[1] / "data"
+    data_dir = get_data_dir()
     consolidar(
         fitch_path=data_dir / "fitch_emissores.csv",
         moodys_path=data_dir / "moodys_emissores.csv",
