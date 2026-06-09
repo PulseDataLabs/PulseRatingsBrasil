@@ -57,11 +57,6 @@
     "source": "fitch",
     "fields": [
       {
-        "name": "dt_captura",
-        "type": "date",
-        "example": "2026-06-08"
-      },
-      {
         "name": "no_emissor",
         "type": "str",
         "example": "General Shopping e Outlets do Brasil S.A."
@@ -104,11 +99,6 @@
     "source": "s_p",
     "fields": [
       {
-        "name": "dt_captura",
-        "type": "date",
-        "example": "2026-06-08"
-      },
-      {
         "name": "no_emissor",
         "type": "str",
         "example": "AEGEA Saneamento e Participacoes S.A."
@@ -125,11 +115,6 @@
     "files": "standard_and_poors_ratings.csv",
     "source": "s_p",
     "fields": [
-      {
-        "name": "dt_captura",
-        "type": "date",
-        "example": "2026-06-08"
-      },
       {
         "name": "no_emissor",
         "type": "str",
@@ -204,11 +189,6 @@
     "files": "fitch_emissores.csv",
     "source": "fitch",
     "fields": [
-      {
-        "name": "dt_captura",
-        "type": "date",
-        "example": "2026-06-08"
-      },
       {
         "name": "no_emissor",
         "type": "str",
