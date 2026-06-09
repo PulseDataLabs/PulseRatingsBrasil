@@ -1,4 +1,5 @@
 import csv
+import os
 from pathlib import Path
 from unittest.mock import patch, MagicMock
 
@@ -8,6 +9,10 @@ from scripts.preencher_cnpj_web import (
     _limpar_cnpj,
     _obter_nome_busca,
     _consultar_cnpj_reverso,
+    _brave,
+    _bing,
+    _searxng,
+    _buscar,
     generate,
 )
 
@@ -295,6 +300,252 @@ def test_generate_reverso_ja_tem_match_normalizacao(mock_reverso, mock_ddgs_cls,
     assert mock_reverso.call_count == 0
 
 
+# ── Buscadores (Brave, Bing, Fallback) ──────────────────────────────────────────
+
+
+@patch("scripts.preencher_cnpj_web.requests.get")
+def test_brave_sucesso(mock_get):
+    """Brave retorna resultados formatados corretamente."""
+    mock_get.return_value.status_code = 200
+    mock_get.return_value.json.return_value = {
+        "web": {
+            "results": [
+                {"title": "Empresa X", "description": "CNPJ 00.000.000/0001-91", "url": "https://exemplo.com"},
+                {"title": "Outro", "description": "sem cnpj", "url": "https://outro.com"},
+            ]
+        }
+    }
+    with patch.dict(os.environ, {"BRAVE_SEARCH_API_KEY": "fake_key"}):
+        results = _brave("Empresa X CNPJ")
+    assert len(results) == 2
+    assert results[0]["title"] == "Empresa X"
+    assert results[0]["body"] == "CNPJ 00.000.000/0001-91"
+    assert results[0]["href"] == "https://exemplo.com"
+
+
+@patch("scripts.preencher_cnpj_web.requests.get")
+def test_brave_sem_chave(mock_get):
+    """Sem BRAVE_SEARCH_API_KEY, retorna vazio sem fazer requisição."""
+    with patch.dict(os.environ, {}, clear=True):
+        results = _brave("Empresa X CNPJ")
+    assert results == []
+    mock_get.assert_not_called()
+
+
+@patch("scripts.preencher_cnpj_web.requests.get")
+def test_brave_erro(mock_get):
+    """Erro de rede no Brave retorna vazio."""
+    mock_get.side_effect = Exception("timeout")
+    with patch.dict(os.environ, {"BRAVE_SEARCH_API_KEY": "fake"}):
+        results = _brave("Empresa X CNPJ")
+    assert results == []
+
+
+@patch("scripts.preencher_cnpj_web.requests.get")
+def test_bing_sucesso(mock_get):
+    """Bing retorna resultados formatados corretamente."""
+    mock_get.return_value.status_code = 200
+    mock_get.return_value.json.return_value = {
+        "webPages": {
+            "value": [
+                {"name": "Empresa Y", "snippet": "CNPJ 11.111.111/0001-00", "url": "https://exemplo.com/y"},
+            ]
+        }
+    }
+    with patch.dict(os.environ, {"BING_SEARCH_API_KEY": "fake_key"}):
+        results = _bing("Empresa Y CNPJ")
+    assert len(results) == 1
+    assert results[0]["title"] == "Empresa Y"
+    assert results[0]["body"] == "CNPJ 11.111.111/0001-00"
+
+
+@patch("scripts.preencher_cnpj_web.requests.get")
+def test_bing_sem_chave(mock_get):
+    """Sem BING_SEARCH_API_KEY, retorna vazio sem fazer requisição."""
+    with patch.dict(os.environ, {}, clear=True):
+        results = _bing("Empresa X CNPJ")
+    assert results == []
+    mock_get.assert_not_called()
+
+
+@patch("scripts.preencher_cnpj_web.requests.get")
+def test_bing_erro(mock_get):
+    """Erro de rede no Bing retorna vazio."""
+    mock_get.side_effect = Exception("timeout")
+    with patch.dict(os.environ, {"BING_SEARCH_API_KEY": "fake"}):
+        results = _bing("Empresa X CNPJ")
+    assert results == []
+
+
+# ── SearXNG ────────────────────────────────────────────────────────────────────
+
+
+@patch("scripts.preencher_cnpj_web.requests.get")
+def test_searxng_sucesso(mock_get):
+    """SearXNG retorna resultados formatados corretamente."""
+    mock_get.return_value.status_code = 200
+    mock_get.return_value.json.return_value = {
+        "results": [
+            {"title": "Empresa Z", "content": "CNPJ 22.222.222/0001-00", "url": "https://exemplo.com/z"},
+        ]
+    }
+    results = _searxng("Empresa Z CNPJ")
+    assert len(results) == 1
+    assert results[0]["title"] == "Empresa Z"
+    assert results[0]["body"] == "CNPJ 22.222.222/0001-00"
+    assert results[0]["href"] == "https://exemplo.com/z"
+
+
+@patch("scripts.preencher_cnpj_web.requests.get")
+def test_searxng_erro(mock_get):
+    """Erro de conexão no SearXNG retorna vazio."""
+    mock_get.side_effect = Exception("connection refused")
+    results = _searxng("Empresa Z CNPJ")
+    assert results == []
+
+
+@patch("scripts.preencher_cnpj_web.requests.get")
+def test_searxng_url_personalizada(mock_get):
+    """URL personalizada via SEARXNG_URL é usada."""
+    mock_get.return_value.status_code = 200
+    mock_get.return_value.json.return_value = {"results": []}
+    with patch.dict(os.environ, {"SEARXNG_URL": "http://meu-searxng:8888/search"}):
+        _searxng("teste")
+    called_url = mock_get.call_args[0][0]
+    assert called_url == "http://meu-searxng:8888/search"
+
+
+# ── _buscar (fallback) ─────────────────────────────────────────────────────────
+
+
+def test_buscar_ddgs_ok():
+    """DDGS retorna resultados → fallback usa DuckDuckGo."""
+    ddgs = MagicMock()
+    ddgs.text.return_value = [{"title": "OK", "body": "CNPJ 00.000.000/0001-91", "href": ""}]
+    results, engine = _buscar("teste", ddgs=ddgs)
+    assert engine == "DuckDuckGo"
+    assert len(results) == 1
+
+
+@patch("scripts.preencher_cnpj_web._brave")
+@patch("scripts.preencher_cnpj_web._searxng")
+def test_buscar_ddgs_falha_searxng_vazio_brave_ok(mock_searxng, mock_brave):
+    """DDGS falha, SearXNG vazio → Brave é tentado e retorna resultados."""
+    ddgs = MagicMock()
+    ddgs.text.side_effect = Exception("timeout")
+    mock_searxng.return_value = []
+    mock_brave.return_value = [{"title": "Brave OK", "body": "CNPJ 00.000.000/0001-91", "href": ""}]
+    results, engine = _buscar("teste", ddgs=ddgs)
+    assert engine == "Brave"
+    assert len(results) == 1
+    mock_brave.assert_called_once()
+
+
+@patch("scripts.preencher_cnpj_web._brave")
+@patch("scripts.preencher_cnpj_web._bing")
+@patch("scripts.preencher_cnpj_web._searxng")
+def test_buscar_todos_falham(mock_searxng, mock_bing, mock_brave):
+    """Todos os buscadores falham → retorna vazio."""
+    ddgs = MagicMock()
+    ddgs.text.side_effect = Exception("timeout")
+    mock_searxng.return_value = []
+    mock_brave.return_value = []
+    mock_bing.return_value = []
+    results, engine = _buscar("teste", ddgs=ddgs)
+    assert results == []
+    assert engine == ""
+
+
+@patch("scripts.preencher_cnpj_web._brave")
+@patch("scripts.preencher_cnpj_web._searxng")
+def test_buscar_ddgs_vazio_searxng_vazio_brave_ok(mock_searxng, mock_brave):
+    """DDGS vazio, SearXNG vazio → Brave é tentado."""
+    ddgs = MagicMock()
+    ddgs.text.return_value = []
+    mock_searxng.return_value = []
+    mock_brave.return_value = [{"title": "Brave OK", "body": "CNPJ 00.000.000/0001-91", "href": ""}]
+    results, engine = _buscar("teste", ddgs=ddgs)
+    assert engine == "Brave"
+    assert len(results) == 1
+
+
+@patch("ddgs.DDGS")
+@patch("scripts.preencher_cnpj_web._brave")
+def test_generate_fallback_brave_quando_ddgs_vazio(mock_brave, mock_ddgs_cls, consolidado_path):
+    """generate usa Brave quando DuckDuckGo não retorna resultados."""
+    ddgs = MagicMock()
+    ddgs.text.return_value = []
+    mock_ddgs_cls.return_value.__enter__.return_value = ddgs
+    mock_brave.side_effect = lambda query, max_results=5: {
+        '"Ambev S.A." CNPJ': [
+            {"title": "Ambev S.A.", "body": "CNPJ 00.000.000/0001-91", "href": ""},
+        ],
+    }.get(query, [])
+
+    result = generate(
+        consolidado_path=consolidado_path,
+        rate_limit=0.0,
+    )
+
+    assert result["matched"] == 1
+    assert result["errors"] == 0
+    mock_brave.assert_called()
+
+
+@patch("ddgs.DDGS")
+@patch("scripts.preencher_cnpj_web._brave")
+@patch("scripts.preencher_cnpj_web._bing")
+def test_generate_fallback_todos_falham(mock_bing, mock_brave, mock_ddgs_cls, consolidado_path):
+    """Todos os buscadores retornam vazio → contabilizado como não encontrado."""
+    ddgs = MagicMock()
+    ddgs.text.side_effect = Exception("timeout")
+    mock_ddgs_cls.return_value.__enter__.return_value = ddgs
+    mock_brave.return_value = []
+    mock_bing.return_value = []
+
+    result = generate(
+        consolidado_path=consolidado_path,
+        rate_limit=0.0,
+    )
+
+    assert result["matched"] == 0
+    assert result["unmatched"] == 4
+    assert result["errors"] == 0
+
+
+@patch("ddgs.DDGS")
+@patch("scripts.preencher_cnpj_web._brave")
+def test_generate_fallback_brave_desambiguacao(mock_brave, mock_ddgs_cls, consolidado_path):
+    """Fallback no Brave com desambiguação via reverso funciona."""
+    ddgs = MagicMock()
+    ddgs.text.return_value = []
+    mock_ddgs_cls.return_value.__enter__.return_value = ddgs
+    mock_brave.return_value = [
+        {"title": "CNPJ Info", "body": "Petrobras: CNPJ 00.000.000/0001-91 e 11.111.111/0001-00", "href": ""},
+    ]
+
+    # A desambiguação por normalização não resolve (title não normaliza p/ PETROBRAS),
+    # então o reverso será chamado
+    with patch("scripts.preencher_cnpj_web._consultar_cnpj_reverso") as mock_reverso:
+        mock_reverso.side_effect = lambda c: {
+            "00000000000191": ("Outra Empresa", False),
+            "11111111000100": ("Petrobras", True),
+        }.get(c, (None, None))
+
+        result = generate(
+            consolidado_path=consolidado_path,
+            rate_limit=0.0,
+        )
+
+    assert result["matched"] == 1
+    assert result["errors"] == 0
+
+    with open(consolidado_path, "r", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    cnpjs = {r["no_emissor_padronizado"]: r["cnpj_emissor"] for r in rows}
+    assert cnpjs["PETROBRAS"] == "11111111000100"
+
+
 # ── generate ───────────────────────────────────────────────────────────────────
 
 
@@ -410,7 +661,7 @@ def test_generate_sem_resultados(mock_ddgs_cls, consolidado_path):
 
 @patch("ddgs.DDGS")
 def test_generate_erro_busca(mock_ddgs_cls, consolidado_path):
-    """Erro na busca → contabilizado como erro."""
+    """Erro no DDGS com fallback vazio → contabilizado como não encontrado."""
     ddgs = MagicMock()
     ddgs.text = MagicMock(side_effect=Exception("timeout"))
     mock_ddgs_cls.return_value.__enter__.return_value = ddgs
@@ -421,7 +672,8 @@ def test_generate_erro_busca(mock_ddgs_cls, consolidado_path):
     )
 
     assert result["matched"] == 0
-    assert result["errors"] == 4
+    assert result["unmatched"] == 4
+    assert result["errors"] == 0
 
 
 @patch("ddgs.DDGS")

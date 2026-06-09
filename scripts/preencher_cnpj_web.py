@@ -1,12 +1,14 @@
 """
-Preenche coluna cnpj_emissor no consolidado usando busca no DuckDuckGo.
+Preenche coluna cnpj_emissor no consolidado usando múltiplos buscadores.
 
-Raspagem de snippets em busca de CNPJs. Último recurso após CVM, API e RFB.
+Tenta DuckDuckGo primeiro (sem chave), depois Brave Search API (se BRAVE_SEARCH_API_KEY
+estiver definida), e por fim Bing Web Search API (se BING_SEARCH_API_KEY estiver definida).
+Último recurso após CVM, API e RFB.
 
 Uso:
     python scripts/preencher_cnpj_web.py
 
-Requer: pip install ddgs
+Requer: pip install ddgs requests
 """
 
 import csv
@@ -18,6 +20,7 @@ import time
 from pathlib import Path
 from typing import Optional
 
+import requests
 from dotenv import load_dotenv
 from utils.paths import get_data_dir
 
@@ -41,9 +44,120 @@ COLUNAS_CONSOLIDADO = [
 
 _RE_CNPJ = re.compile(r"\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}")
 
+_SEARCH_APIS: dict[str, dict] = {
+    "brave": {
+        "env_key": "BRAVE_SEARCH_API_KEY",
+        "url": "https://api.search.brave.com/res/v1/web/search",
+        "headers": ["X-Subscription-Token"],
+        "results_path": ["web", "results"],
+        "title_field": "title",
+        "body_field": "description",
+        "href_field": "url",
+    },
+    "bing": {
+        "env_key": "BING_SEARCH_API_KEY",
+        "url": "https://api.bing.microsoft.com/v7.0/search",
+        "headers": ["Ocp-Apim-Subscription-Key"],
+        "results_path": ["webPages", "value"],
+        "title_field": "name",
+        "body_field": "snippet",
+        "href_field": "url",
+    },
+    "searxng": {
+        "env_key": None,
+        "url": None,
+        "headers": [],
+        "results_path": ["results"],
+        "title_field": "title",
+        "body_field": "content",
+        "href_field": "url",
+    },
+}
+
+
+def _api_search(query: str, api_name: str, max_results: int = 5) -> list[dict]:
+    """Consulta uma API de busca configurada em _SEARCH_APIS. Retorna [{title, body, href}, ...]."""
+    config = _SEARCH_APIS.get(api_name)
+    if not config:
+        return []
+    if config.get("env_key"):
+        api_key = os.environ.get(config["env_key"])
+        if not api_key:
+            return []
+        headers = {k: api_key for k in config["headers"]}
+    else:
+        headers = {}
+    url = config["url"] or os.environ.get("SEARXNG_URL", "http://localhost:8888/search")
+    try:
+        resp = requests.get(
+            url,
+            params={"q": query, "count": max_results, "format": "json"},
+            headers={**headers, "Accept": "application/json"},
+            timeout=15,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception:
+        return []
+    items = data
+    for key in config["results_path"]:
+        if isinstance(items, dict):
+            items = items.get(key, {}) if isinstance(items.get(key), (dict, list)) else {}
+        elif isinstance(items, list) and isinstance(key, int):
+            items = items[key] if key < len(items) else {}
+        else:
+            items = {}
+    if not isinstance(items, list):
+        items = []
+    return [
+        {
+            "title": item.get(config["title_field"], ""),
+            "body": item.get(config["body_field"], ""),
+            "href": item.get(config["href_field"], ""),
+        }
+        for item in items
+    ]
+
+
+def _brave(query: str, max_results: int = 5) -> list[dict]:
+    return _api_search(query, "brave", max_results)
+
+
+def _bing(query: str, max_results: int = 5) -> list[dict]:
+    return _api_search(query, "bing", max_results)
+
+
+def _searxng(query: str, max_results: int = 5) -> list[dict]:
+    return _api_search(query, "searxng", max_results)
+
+
+def _buscar(
+    query: str,
+    max_results: int = 5,
+    ddgs=None,
+) -> tuple[list[dict], str]:
+    """Tenta DuckDuckGo → SearXNG → Brave → Bing. Retorna (resultados, nome_do_buscador)."""
+    if ddgs is not None:
+        try:
+            results = ddgs.text(query, max_results=max_results)
+            if results:
+                return (results or []), "DuckDuckGo"
+        except Exception:
+            pass
+
+    for nome_buscador, funcao in [
+        ("SearXNG", _searxng),
+        ("Brave", _brave),
+        ("Bing", _bing),
+    ]:
+        results = funcao(query, max_results)
+        if results:
+            return results, nome_buscador
+
+    return [], ""
+
 
 def _texto_sem_cnpj(texto: str) -> str:
-    """Remove CNPJs do texto antes de normalizar para comparação."""
     return _RE_CNPJ.sub(" ", texto)
 
 
@@ -145,8 +259,8 @@ def generate(
         consolidado_path = get_data_dir() / "emissores_consolidado.csv"
 
     banner(
-        "Preenchimento de CNPJ via DuckDuckGo",
-        "Busca em snippets · último recurso",
+        "Preenchimento de CNPJ via Busca Web",
+        "DuckDuckGo → Brave → Bing · último recurso",
     )
 
     if not consolidado_path.exists():
@@ -178,7 +292,7 @@ def generate(
 
     proxy_url = os.environ.get("CNPJABERTO_PROXY")
 
-    print_start(f"Buscando {len(pendentes)} emissores no DuckDuckGo...")
+    print_start(f"Buscando {len(pendentes)} emissores (DuckDuckGo → Brave → Bing)...")
     print()
 
     section("Progresso", "search")
@@ -195,6 +309,7 @@ def generate(
     matched = 0
     unmatched = 0
     errors = 0
+    engine_usage: dict[str, int] = {}
 
     with DDGS(proxy=proxy_url, timeout=15) as ddgs:
         for i, row in enumerate(rows):
@@ -216,14 +331,24 @@ def generate(
             query = f'"{nome_busca}" CNPJ'
 
             try:
-                results = ddgs.text(query, max_results=5)
+                results, engine = _buscar(query, max_results=5, ddgs=ddgs)
             except Exception as e:
+                errors += 1
                 if not quiet:
                     print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('erro busca')}  {dim(str(e)[:40])}")
-                errors += 1
                 if i < len(rows) - 1:
                     time.sleep(rate_limit)
                 continue
+
+            if not results:
+                unmatched += 1
+                if not quiet:
+                    print(f"  {yellow('⚠')}  {dim(nome_busca):{max_width}s}  {yellow('não encontrado nos buscadores')}")
+                if i < len(rows) - 1:
+                    time.sleep(rate_limit)
+                continue
+
+            engine_usage[engine] = engine_usage.get(engine, 0) + 1
 
             cnpjs_encontrados: set[str] = set()
             for result in results or []:
@@ -306,14 +431,17 @@ def generate(
         (red("✖"), "Erros", str(errors)),
         (cyan("ℹ"), "Total processados", str(matched + unmatched + errors)),
     ]
+    if engine_usage:
+        for eng, cnt in sorted(engine_usage.items()):
+            rows_table.append((dim("ℹ"), f"  via {eng}", str(cnt)))
     print_table(
         [(label, val) for _, label, val in rows_table],
         ["", "Quantidade"],
-        title="CNPJs via DuckDuckGo",
+        title="CNPJs via Busca Web",
     )
 
     print_summary(
-        "Preenchimento via DuckDuckGo",
+        "Preenchimento via Busca Web",
         total=len(rows),
         success=matched,
         failed=errors,
