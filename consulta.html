@@ -484,6 +484,9 @@
         if (this.checked) selected.push(this.value);
       });
 
+      // Normaliza string removendo não-dígitos (para busca por CNPJ)
+      function onlyDigits(s) { return s.replace(/\D/g, ''); }
+
       // Custom filter function
       $.fn.dataTable.ext.search = [];
       $.fn.dataTable.ext.search.push(function (settings, data) {
@@ -495,10 +498,20 @@
         // Text search
         if (query) {
           const q = query.toLowerCase();
-          const match = data[0].toLowerCase().includes(q)  // emissor
-            || data[1].toLowerCase().includes(q)           // cnpj
-            || data[3].toLowerCase().includes(q)           // tipo rating
-            || data[4].toLowerCase().includes(q);          // rating
+          const qDigits = onlyDigits(q);
+
+          // Tenta match normal ou match por dígitos (CNPJ)
+          const emissor   = data[0].toLowerCase();
+          const cnpj      = data[1].toLowerCase();
+          const cnpjDigit = onlyDigits(data[1]);
+          const tipo      = data[3].toLowerCase();
+          const rating    = data[4].toLowerCase();
+
+          const match = emissor.includes(q)
+            || cnpj.includes(q)
+            || cnpjDigit.includes(qDigits)
+            || tipo.includes(q)
+            || rating.includes(q);
           if (!match) return false;
         }
 
