@@ -1,12 +1,12 @@
 window.PULSERATINGS_PIPELINE_STATUS = {
-  "timestamp": "2026-06-09T14:35:07.796301",
-  "elapsed_seconds": 505.4012920856476,
-  "status": "warning",
+  "timestamp": "2026-06-09T23:56:10.802864",
+  "elapsed_seconds": 371.4938907623291,
+  "status": "success",
   "summary": {
     "total": 6,
     "success": 6,
     "failed": 0,
-    "drifts": 4
+    "drifts": 0
   },
   "scrapers": {
     "moodys_local_ratings": {
@@ -35,69 +35,40 @@ window.PULSERATINGS_PIPELINE_STATUS = {
     },
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 11.602556943893433,
+      "elapsed_seconds": 11.744926452636719,
       "error": null,
-      "timestamp": "2026-06-09T14:35:07.796411"
+      "timestamp": "2026-06-09T23:56:10.802975"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 25.09007740020752,
+      "elapsed_seconds": 25.50688123703003,
       "error": null,
-      "timestamp": "2026-06-09T14:35:07.796414"
+      "timestamp": "2026-06-09T23:56:10.802977"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 0.8099946975708008,
+      "elapsed_seconds": 1.1167986392974854,
       "error": null,
-      "timestamp": "2026-06-09T14:35:07.796407"
+      "timestamp": "2026-06-09T23:56:10.802970"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 11.233355045318604,
+      "elapsed_seconds": 10.910266399383545,
       "error": null,
-      "timestamp": "2026-06-09T14:35:07.796418"
+      "timestamp": "2026-06-09T23:56:10.802981"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 0.05711627006530762,
+      "elapsed_seconds": 0.023497343063354492,
       "error": null,
-      "timestamp": "2026-06-09T14:35:07.796416"
+      "timestamp": "2026-06-09T23:56:10.802979"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 480.30747175216675,
+      "elapsed_seconds": 345.98437881469727,
       "error": null,
-      "timestamp": "2026-06-09T14:35:07.796419"
+      "timestamp": "2026-06-09T23:56:10.802983"
     }
   },
-  "drifts": {
-    "fitch_emissores.csv": {
-      "added": [],
-      "removed": [
-        "dt_captura"
-      ],
-      "timestamp": "2026-06-09T14:26:53.994257"
-    },
-    "standard_and_poors_emissores.csv": {
-      "added": [],
-      "removed": [
-        "dt_captura"
-      ],
-      "timestamp": "2026-06-09T14:27:07.483535"
-    },
-    "fitch_ratings.csv": {
-      "added": [],
-      "removed": [
-        "dt_captura"
-      ],
-      "timestamp": "2026-06-09T14:27:18.709915"
-    },
-    "standard_and_poors_ratings.csv": {
-      "added": [],
-      "removed": [
-        "dt_captura"
-      ],
-      "timestamp": "2026-06-09T14:35:07.790424"
-    }
-  }
+  "drifts": {}
 };

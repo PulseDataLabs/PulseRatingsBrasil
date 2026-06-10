@@ -59,37 +59,37 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "General Shopping e Outlets do Brasil S.A."
+        "example": "Rodobens S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/general-shopping-e-outlets-do-brasil-sa-89879673"
+        "example": "https://www.fitchratings.com/entity/rodobens-sa-97239694"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Long Term Issuer Default Rating"
+        "example": "National Long Term Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "C"
+        "example": "AA+(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-08"
+        "example": "2026-06-09"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Downgrade"
+        "example": "Affirmed"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Rating Outlook Stable"
       }
     ]
   },
@@ -192,12 +192,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "General Shopping e Outlets do Brasil S.A."
+        "example": "RNI Negocios Imobiliarios S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/general-shopping-e-outlets-do-brasil-sa-89879673"
+        "example": "https://www.fitchratings.com/entity/rni-negocios-imobiliarios-sa-89317063"
       }
     ]
   },
