@@ -776,41 +776,72 @@
     document.getElementById('stat-moodys').textContent    = moodysN.toLocaleString('pt-BR');
     document.getElementById('stat-sp').textContent        = spN.toLocaleString('pt-BR');
 
-    /* ── Build rows ── */
-    for (const r of allData) {
+    /* ── Init DataTable com data array (orthogonal) ── */
+    function onlyDigits(s) { return s.replace(/\D/g, ''); }
+
+    // Converte YYYY-MM-DD → dd/mm/yyyy; retorna '—' se vazio/inválido
+    function fmtDate(d) {
+      if (!d) return '—';
+      const m = String(d).match(/^(\d{4})-(\d{2})-(\d{2})/);
+      return m ? `${m[3]}/${m[2]}/${m[1]}` : d;
+    }
+
+    const tableData = allData.map(r => {
       const outlook = r.outlook || '';
       const rating  = r.rating  || '';
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td class="emissor-cell">${r.emissor || '—'}</td>
-        <td class="cnpj-cell">${r.cnpj || '—'}</td>
-        <td>${agencyBadge(r.agencia)}</td>
-        <td class="tipo-cell">${r.tipo_rating || '—'}</td>
-        <td><span class="rating-chip ${ratingClass(rating)}">${rating || '—'}</span></td>
-        <td><span class="outlook-chip ${outlookClass(outlook)}">${outlook || '—'}</span></td>
-        <td class="date-cell">${r.dt_acao || '—'}</td>
-      `;
-      $tbody.append(tr);
-    }
+      const cnpj    = r.cnpj    || '';
+      const ag      = r.agencia || '';
+      // valor de busca do CNPJ inclui versão só-dígitos para facilitar busca
+      const cnpjSearch = cnpj + ' ' + onlyDigits(cnpj);
+      return [
+        { display: `<span class="emissor-cell">${r.emissor || '—'}</span>`,   filter: r.emissor    || '' },
+        { display: `<span class="cnpj-cell">${cnpj || '—'}</span>`,           filter: cnpjSearch },
+        { display: agencyBadge(ag),                                            filter: ag },
+        { display: `<span class="tipo-cell">${r.tipo_rating || '—'}</span>`,  filter: r.tipo_rating || '' },
+        { display: `<span class="rating-chip ${ratingClass(rating)}">${rating || '—'}</span>`, filter: rating },
+        { display: `<span class="outlook-chip ${outlookClass(outlook)}">${outlook || '—'}</span>`, filter: outlook },
+        { display: `<span class="date-cell">${fmtDate(r.dt_acao)}</span>`,     filter: fmtDate(r.dt_acao), sort: r.dt_acao || '' },
+      ];
+    });
 
     $loading.hide();
     $table.show();
 
-    /* ── Init DataTable ── */
     tableApi = $table.DataTable({
       responsive: true,
       pageLength: 50,
       lengthMenu: [[25, 50, 100, 250, -1], [25, 50, 100, 250, 'Todos']],
       order: [[0, 'asc']],
+      data: tableData,
       language: {
         url: 'https://cdn.datatables.net/plug-ins/2.2.2/i18n/pt-BR.json'
       },
       buttons: [
-        { extend: 'excelHtml5', text: '↓ Excel', title: 'pulse_ratings_consulta' }
+        { extend: 'excelHtml5', text: '↓ Excel', title: 'pulse_ratings_consulta',
+          exportOptions: { columns: ':all', orthogonal: 'filter' } }
       ],
       dom: '<"dt-layout-row"<"dt-layout-cell"B><"dt-layout-cell"l>>' +
            '<"dt-layout-row"tr>' +
            '<"dt-layout-row"<"dt-layout-cell"i><"dt-layout-cell"p>>',
+      columnDefs: [{
+        targets: '_all',
+        render: function(data) {
+          // data é o objeto {display, filter} — retorna display para tela, filter para busca
+          if (data && typeof data === 'object') {
+            return data.display !== undefined ? data.display : data;
+          }
+          return data;
+        }
+      }],
+      columns: [
+        { data: 0, render: { _: 'display', filter: 'filter', sort: 'filter' } },
+        { data: 1, render: { _: 'display', filter: 'filter', sort: 'filter' } },
+        { data: 2, render: { _: 'display', filter: 'filter', sort: 'filter' } },
+        { data: 3, render: { _: 'display', filter: 'filter', sort: 'filter' } },
+        { data: 4, render: { _: 'display', filter: 'filter', sort: 'filter' } },
+        { data: 5, render: { _: 'display', filter: 'filter', sort: 'filter' } },
+        { data: 6, render: { _: 'display', filter: 'filter', sort: 'sort' } },
+      ],
     });
 
     /* ── Update filter count ── */
@@ -822,40 +853,18 @@
     updateCount();
 
     /* ── Filters ── */
-    function onlyDigits(s) { return s.replace(/\D/g, ''); }
-
-    // Extrai texto puro de uma célula que pode conter HTML
-    function cellText(raw) {
-      const tmp = document.createElement('span');
-      tmp.innerHTML = raw;
-      return tmp.textContent || tmp.innerText || '';
-    }
-
-    function applyFilters() {
-      const q = ($search.val() || '').trim().toLowerCase();
-      const qd = onlyDigits(q);
+    // Filtro de agência via ext.search (opera sobre orthogonal 'filter' da coluna 2)
+    $.fn.dataTable.ext.search.push(function (_settings, _display, _idx, rowData) {
       const selected = [];
       $checks.each(function () { if (this.checked) selected.push(this.value); });
+      if (!selected.length) return true;
+      const ag = rowData[2] && rowData[2].filter ? rowData[2].filter : '';
+      return selected.includes(ag);
+    });
 
-      $.fn.dataTable.ext.search = [];
-      $.fn.dataTable.ext.search.push(function (_s, data) {
-        const ag = cellText(data[2]).trim();
-        if (selected.length && !selected.includes(ag)) return false;
-        if (q) {
-          const emissor = data[0].toLowerCase();
-          const cnpj    = data[1].toLowerCase();
-          const tipo    = data[3].toLowerCase();
-          const rating  = cellText(data[4]).toLowerCase();
-          const m = emissor.includes(q)
-            || cnpj.includes(q)
-            || onlyDigits(cnpj).includes(qd)
-            || tipo.includes(q)
-            || rating.includes(q);
-          if (!m) return false;
-        }
-        return true;
-      });
-      tableApi.draw();
+    function applyFilters() {
+      const q = ($search.val() || '').trim();
+      tableApi.search(q).draw();
     }
 
     $search.on('input', applyFilters);
