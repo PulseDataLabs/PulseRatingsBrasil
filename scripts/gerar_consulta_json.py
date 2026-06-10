@@ -59,6 +59,15 @@ def carregar_ratings(path: str) -> list[dict]:
     return ratings
 
 
+def dedup_ratings(ratings: list[dict], key_cols: list[str]) -> list[dict]:
+    seen: dict[tuple, dict] = {}
+    for r in ratings:
+        key = tuple(r.get(c, "") for c in key_cols)
+        if key not in seen or r.get("dt_captura", "") > seen[key].get("dt_captura", ""):
+            seen[key] = r
+    return list(seen.values())
+
+
 def build_index(ratings: list[dict], key: str) -> dict[str, list[dict]]:
     idx = defaultdict(list)
     for r in ratings:
@@ -75,7 +84,13 @@ def main() -> None:
     fitch_ratings = carregar_ratings(FITCH_RATINGS_PATH)
     moodys_ratings = carregar_ratings(MOODYS_RATINGS_PATH)
     sp_ratings = carregar_ratings(SP_RATINGS_PATH)
-    print(f"Ratings carregados: Fitch={len(fitch_ratings)}, Moody's={len(moodys_ratings)}, S&P={len(sp_ratings)}")
+    total_antes = len(fitch_ratings) + len(moodys_ratings) + len(sp_ratings)
+
+    fitch_ratings = dedup_ratings(fitch_ratings, ["no_emissor", "no_tipo_rating", "de_rating_br", "de_outlook"])
+    moodys_ratings = dedup_ratings(moodys_ratings, ["no_emissor", "no_tipo_rating", "de_instrumento", "de_rating_br", "de_outlook", "dt_rating"])
+    sp_ratings = dedup_ratings(sp_ratings, ["no_emissor", "no_tipo_rating", "de_rating_br", "de_outlook"])
+    total_depois = len(fitch_ratings) + len(moodys_ratings) + len(sp_ratings)
+    print(f"Ratings carregados: Fitch={len(fitch_ratings)}, Moody's={len(moodys_ratings)}, S&P={len(sp_ratings)} (dedup: {total_antes} → {total_depois}, -{total_antes - total_depois})")
 
     fitch_idx = build_index(fitch_ratings, "no_emissor")
     moodys_idx = build_index(moodys_ratings, "no_emissor")
