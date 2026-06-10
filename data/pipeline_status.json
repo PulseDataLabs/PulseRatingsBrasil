@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-10T09:27:41.610835",
-  "elapsed_seconds": 424.0663387775421,
+  "timestamp": "2026-06-10T15:13:41.916260",
+  "elapsed_seconds": 434.42264914512634,
   "status": "success",
   "summary": {
     "total": 6,
@@ -35,39 +35,39 @@
     },
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 11.653068780899048,
+      "elapsed_seconds": 10.956407308578491,
       "error": null,
-      "timestamp": "2026-06-10T09:27:41.610953"
+      "timestamp": "2026-06-10T15:13:41.916363"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 21.44981098175049,
+      "elapsed_seconds": 21.423402786254883,
       "error": null,
-      "timestamp": "2026-06-10T09:27:41.610956"
+      "timestamp": "2026-06-10T15:13:41.916366"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 0.7946789264678955,
+      "elapsed_seconds": 0.6587839126586914,
       "error": null,
-      "timestamp": "2026-06-10T09:27:41.610948"
+      "timestamp": "2026-06-10T15:13:41.916359"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 11.036844491958618,
+      "elapsed_seconds": 11.291167736053467,
       "error": null,
-      "timestamp": "2026-06-10T09:27:41.610960"
+      "timestamp": "2026-06-10T15:13:41.916370"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 0.028795957565307617,
+      "elapsed_seconds": 0.04009389877319336,
       "error": null,
-      "timestamp": "2026-06-10T09:27:41.610958"
+      "timestamp": "2026-06-10T15:13:41.916368"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 402.61169052124023,
+      "elapsed_seconds": 412.99624824523926,
       "error": null,
-      "timestamp": "2026-06-10T09:27:41.610962"
+      "timestamp": "2026-06-10T15:13:41.916372"
     }
   },
   "drifts": {}

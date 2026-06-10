@@ -59,32 +59,32 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Rodobens S.A."
+        "example": "Refinaria de Mataripe S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/rodobens-sa-97239694"
+        "example": "https://www.fitchratings.com/entity/refinaria-de-mataripe-sa-97631572"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "National Long Term Rating"
+        "example": "Long Term Issuer Default Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AA+(bra)"
+        "example": "B+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-09"
+        "example": "2026-06-10"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Affirmed"
+        "example": "Review - No Action"
       },
       {
         "name": "de_outlook",
@@ -192,12 +192,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Rodobens S.A."
+        "example": "Refinaria de Mataripe S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/rodobens-sa-97239694"
+        "example": "https://www.fitchratings.com/entity/refinaria-de-mataripe-sa-97631572"
       }
     ]
   },

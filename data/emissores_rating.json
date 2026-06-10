@@ -1512,6 +1512,30 @@
     "link": "https://www.fitchratings.com/entity/centrais-eletricas-brasileiras-sa-eletrobras-80464173"
   },
   {
+    "emissor": "AXIA ENERGIA",
+    "cnpj": "00.001.180/0001-26",
+    "agencia": "S&P",
+    "tipo_rating": "Escala Nacional Brasil de Longo Prazo",
+    "rating": "brAAA",
+    "outlook": "Stable",
+    "dt_acao": "2019-04-25",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1000689"
+  },
+  {
+    "emissor": "AXIA ENERGIA",
+    "cnpj": "00.001.180/0001-26",
+    "agencia": "S&P",
+    "tipo_rating": "Escala Nacional Brasil de Curto Prazo",
+    "rating": "brA-1+",
+    "outlook": "",
+    "dt_acao": "2017-08-16",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1000689"
+  },
+  {
     "emissor": "AXIA ENERGIA NORDESTE",
     "cnpj": "33.541.368/0001-16",
     "agencia": "Fitch",
@@ -12447,25 +12471,25 @@
     "emissor": "COOPERATIVA CREDITO SUL",
     "cnpj": "32.474.884/0001-02",
     "agencia": "Fitch",
-    "tipo_rating": "National Short Term Rating",
-    "rating": "F1+(bra)",
-    "outlook": "",
-    "dt_acao": "2025-08-26",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697"
-  },
-  {
-    "emissor": "COOPERATIVA CREDITO SUL",
-    "cnpj": "32.474.884/0001-02",
-    "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2025-08-26",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697"
+    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669"
+  },
+  {
+    "emissor": "COOPERATIVA CREDITO SUL",
+    "cnpj": "32.474.884/0001-02",
+    "agencia": "Fitch",
+    "tipo_rating": "National Short Term Rating",
+    "rating": "F1+(bra)",
+    "outlook": "",
+    "dt_acao": "2025-08-26",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669"
   },
   {
     "emissor": "COOPERATIVA CREDITO SUL ESPIRITO SANTO",
@@ -14050,30 +14074,6 @@
     "setor": "",
     "instrumento": "",
     "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1000633"
-  },
-  {
-    "emissor": "ELETROBRAS",
-    "cnpj": "00.001.180/0001-26",
-    "agencia": "S&P",
-    "tipo_rating": "Escala Nacional Brasil de Longo Prazo",
-    "rating": "brAAA",
-    "outlook": "Stable",
-    "dt_acao": "2019-04-25",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1000689"
-  },
-  {
-    "emissor": "ELETROBRAS",
-    "cnpj": "00.001.180/0001-26",
-    "agencia": "S&P",
-    "tipo_rating": "Escala Nacional Brasil de Curto Prazo",
-    "rating": "brA-1+",
-    "outlook": "",
-    "dt_acao": "2017-08-16",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1000689"
   },
   {
     "emissor": "ELETROMIDIA",
@@ -24054,7 +24054,7 @@
     "tipo_rating": "Long Term Issuer Default Rating",
     "rating": "B+",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-02-10",
+    "dt_acao": "2026-06-10",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/refinaria-de-mataripe-sa-97631572"
@@ -24066,7 +24066,7 @@
     "tipo_rating": "Local Currency Long Term Issuer Default Rating",
     "rating": "B+",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-02-10",
+    "dt_acao": "2026-06-10",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/refinaria-de-mataripe-sa-97631572"
