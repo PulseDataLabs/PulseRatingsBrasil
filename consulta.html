@@ -9,7 +9,7 @@
   <title>Consulta — Pulse Ratings | Pulse Data Labs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="preload" href="./data/emissores_rating.json" as="fetch" crossorigin />
   <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.4/css/responsive.dataTables.min.css" />
@@ -19,26 +19,36 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --bg:        #080c10;
-      --bg2:       #0d1218;
-      --bg3:       #111820;
-      --surface:   #141c26;
+      --bg2:       #0a1020;
+      --bg3:       #0d1520;
+      --surface:   #111c2a;
+      --surface2:  #162030;
       --border:    #1e2d3d;
       --border2:   #243444;
       --accent:    #00d4ff;
       --accent2:   #0095c8;
+      --accent-dim: rgba(0,212,255,0.08);
       --gold:      #f0b429;
       --gold2:     #c8902a;
+      --gold-dim:  rgba(240,180,41,0.1);
       --green:     #00e5a0;
+      --green-dim: rgba(0,229,160,0.1);
       --red:       #ff4d6d;
+      --red-dim:   rgba(255,77,109,0.1);
       --text:      #e8eef4;
       --text2:     #8fa3b8;
-      --text3:     #7a8fa3;
+      --text3:     #566878;
+      --fitch:     #00e5a0;
+      --fitch-dim: rgba(0,229,160,0.12);
+      --moodys:    #5b9bd5;
+      --moodys-dim:rgba(91,155,213,0.12);
+      --sp:        #f0b429;
+      --sp-dim:    rgba(240,180,41,0.12);
       --font-head: 'Syne', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
-      --font-body: 'Lora', serif;
-      --fitch:     #00e5a0;
-      --moodys:    #5b9bd5;
-      --sp:        #f0b429;
+      --font-body: 'Inter', sans-serif;
+      --radius:    8px;
+      --radius-sm: 5px;
     }
     html { scroll-behavior: smooth; }
     body {
@@ -51,211 +61,339 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { color: #66e5ff; }
 
-    /* ── Nav ────────────────────────────── */
+    /* ── Skip link ── */
+    .skip-link {
+      position: absolute; top: -100%; left: 50%; transform: translateX(-50%);
+      background: var(--accent); color: var(--bg);
+      padding: 0.75rem 1.5rem; border-radius: 0 0 var(--radius) var(--radius);
+      font-family: var(--font-mono); font-size: 0.8rem; font-weight: 500;
+      z-index: 1000; transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ── Nav ── */
     nav {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0.75rem 2rem;
-      background: var(--bg2);
+      padding: 0 2rem; height: 60px;
+      background: rgba(8,12,16,0.92);
+      backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       position: sticky; top: 0; z-index: 100;
     }
     .nav-logo {
-      display: flex; align-items: center; gap: 0.5rem;
+      display: flex; align-items: center; gap: 0.6rem;
       font-family: var(--font-head); font-weight: 700; font-size: 1rem;
       color: var(--text); text-decoration: none;
+      letter-spacing: -0.01em;
     }
-    .nav-logo .pulse-dot {
-      width: 10px; height: 10px; border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 8px var(--accent2);
-    }
-    .nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
+    .nav-logo img { height: 28px; width: auto; }
+    .nav-logo-text .pulse { color: #fff; }
+    .nav-logo-text .ratings { color: var(--gold); }
+
+    .nav-links { display: flex; gap: 0.25rem; list-style: none; align-items: center; }
     .nav-links a {
-      font-family: var(--font-mono); font-size: 0.8rem;
-      color: var(--text2); transition: color 0.2s;
+      font-family: var(--font-mono); font-size: 0.78rem;
+      color: var(--text2); padding: 0.4rem 0.75rem; border-radius: var(--radius-sm);
+      transition: color 0.2s, background 0.2s;
     }
-    .nav-links a:hover { color: var(--accent); }
+    .nav-links a:hover { color: var(--text); background: var(--surface); }
     .nav-links a.active { color: var(--accent); }
+
+    .nav-back {
+      display: flex; align-items: center; gap: 0.4rem;
+      font-family: var(--font-mono); font-size: 0.75rem;
+      color: var(--text3); padding: 0.4rem 0.75rem; border-radius: var(--radius-sm);
+      border: 1px solid var(--border); transition: all 0.2s;
+    }
+    .nav-back:hover { color: var(--text2); border-color: var(--border2); background: var(--surface); }
+
     .nav-cta {
-      display: inline-block; padding: 0.4rem 1rem;
-      background: var(--accent); color: var(--bg); border-radius: 6px;
-      font-family: var(--font-mono); font-size: 0.75rem; font-weight: 500;
-      transition: background 0.2s, transform 0.2s;
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      padding: 0.4rem 1rem;
+      background: var(--accent); color: var(--bg); border-radius: var(--radius-sm);
+      font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 0 0 0 rgba(0,212,255,0);
     }
-    .nav-cta:hover { background: #33ddff; color: var(--bg); transform: translateY(-1px); }
-
-    /* ── Hero ────────────────────────────── */
-    .hero {
-      text-align: center; padding: 2.5rem 1rem 1.5rem;
-    }
-    .hero h1 {
-      font-family: var(--font-head); font-size: 1.8rem; font-weight: 700;
-      background: linear-gradient(135deg, var(--accent), #66e5ff);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .hero p {
-      color: var(--text2); font-size: 0.95rem; margin-top: 0.3rem;
+    .nav-cta:hover {
+      background: #33ddff; color: var(--bg);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(0,212,255,0.25);
     }
 
-    /* ── Stats ───────────────────────────── */
-    .stats-bar {
-      display: flex; justify-content: center; gap: 2rem;
-      padding: 0.75rem 1rem; flex-wrap: wrap;
+    /* ── Page header ── */
+    .page-header {
+      background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 2rem 2rem;
     }
-    .stat-item {
-      font-family: var(--font-mono); text-align: center;
+    .page-header-inner {
+      max-width: 1300px; margin: 0 auto;
+      display: flex; align-items: flex-end; justify-content: space-between;
+      flex-wrap: wrap; gap: 1.5rem;
     }
+    .page-title-group {}
+    .page-eyebrow {
+      font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500;
+      color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      display: flex; align-items: center; gap: 0.4rem;
+    }
+    .page-eyebrow::before {
+      content: ''; display: inline-block;
+      width: 20px; height: 1px; background: var(--accent);
+    }
+    .page-header h1 {
+      font-family: var(--font-head); font-size: 2rem; font-weight: 800;
+      color: var(--text); line-height: 1.1; letter-spacing: -0.02em;
+    }
+    .page-header p {
+      color: var(--text2); font-size: 0.9rem; margin-top: 0.4rem;
+      max-width: 480px;
+    }
+
+    /* ── Stats cards ── */
+    .stats-row {
+      display: flex; gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .stat-card {
+      flex: 1; background: var(--surface);
+      padding: 0.875rem 1.25rem;
+      display: flex; flex-direction: column; gap: 0.1rem;
+      position: relative; overflow: hidden;
+      transition: background 0.2s;
+    }
+    .stat-card::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 2px; background: currentColor; opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .stat-card:hover { background: var(--surface2); }
+    .stat-card:hover::after { opacity: 0.4; }
+    .stat-card.fitch { color: var(--fitch); }
+    .stat-card.moodys { color: var(--moodys); }
+    .stat-card.sp { color: var(--sp); }
+    .stat-card.total { color: var(--accent); }
+    .stat-card.emissores { color: var(--text2); }
+
     .stat-value {
-      font-size: 1.3rem; font-weight: 600; color: var(--accent);
+      font-family: var(--font-mono); font-size: 1.35rem; font-weight: 600;
+      color: currentColor; line-height: 1;
     }
     .stat-label {
-      font-size: 0.7rem; color: var(--text3); text-transform: uppercase;
-      letter-spacing: 0.06em;
+      font-family: var(--font-mono); font-size: 0.65rem; font-weight: 500;
+      color: var(--text3); text-transform: uppercase; letter-spacing: 0.07em;
+    }
+    .stat-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: currentColor; opacity: 0.6;
+      position: absolute; top: 0.875rem; right: 0.875rem;
     }
 
-    /* ── Filters ─────────────────────────── */
-    .filters {
-      max-width: 1100px; margin: 0 auto; padding: 0 1rem 1.5rem;
-      display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;
+    /* ── Filter bar ── */
+    .filter-section {
+      max-width: 1300px; margin: 0 auto;
+      padding: 1.5rem 2rem 0;
     }
-    .filters input, .filters select {
-      background: var(--surface); border: 1px solid var(--border);
-      color: var(--text); padding: 0.5rem 0.75rem; border-radius: 6px;
+    .filter-bar {
+      display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;
+      padding: 1rem 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .search-wrapper {
+      flex: 1; min-width: 220px;
+      position: relative;
+    }
+    .search-icon {
+      position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%);
+      color: var(--text3); pointer-events: none;
+      display: flex; align-items: center;
+    }
+    .search-wrapper input {
+      width: 100%;
+      background: var(--bg3); border: 1px solid var(--border);
+      color: var(--text); padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+      border-radius: var(--radius-sm);
       font-family: var(--font-mono); font-size: 0.8rem;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, box-shadow 0.2s;
     }
-    .filters input:focus, .filters select:focus {
+    .search-wrapper input:focus {
       outline: none; border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(0,212,255,0.1);
     }
-    .filters input { flex: 1; min-width: 200px; }
-    .filters input::placeholder { color: var(--text3); }
-    .filters label {
-      font-family: var(--font-mono); font-size: 0.75rem; color: var(--text2);
-    }
-    .agency-checkboxes {
-      display: flex; gap: 0.75rem; align-items: center;
-      font-family: var(--font-mono); font-size: 0.8rem;
-    }
-    .agency-checkboxes label {
-      display: flex; align-items: center; gap: 0.3rem; cursor: pointer;
-    }
-    .agency-checkboxes input[type="checkbox"] {
-      accent-color: var(--accent); width: 14px; height: 14px; cursor: pointer;
-    }
-    .badge {
-      display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px;
-      font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500;
-    }
-    .badge-fitch  { background: rgba(0,229,160,0.15); color: var(--fitch); }
-    .badge-moodys { background: rgba(91,155,213,0.15); color: var(--moodys); }
-    .badge-sp     { background: rgba(240,180,41,0.15);  color: var(--sp); }
+    .search-wrapper input::placeholder { color: var(--text3); }
 
-    /* ── Table ───────────────────────────── */
-    .table-wrap {
-      max-width: 1400px; margin: 0 auto; padding: 0 1rem 3rem;
+    .filter-divider {
+      width: 1px; height: 28px; background: var(--border);
+      flex-shrink: 0;
     }
+    .agency-filters {
+      display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap;
+    }
+    .agency-chip {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid transparent; border-radius: 999px;
+      font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500;
+      cursor: pointer; transition: all 0.15s; user-select: none;
+    }
+    .agency-chip input[type="checkbox"] { display: none; }
+    .agency-chip .chip-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+    }
+    .agency-chip.fitch  { color: var(--fitch);  border-color: var(--border); background: transparent; }
+    .agency-chip.moodys { color: var(--moodys); border-color: var(--border); background: transparent; }
+    .agency-chip.sp     { color: var(--sp);     border-color: var(--border); background: transparent; }
+    .agency-chip.fitch  .chip-dot { background: var(--fitch); }
+    .agency-chip.moodys .chip-dot { background: var(--moodys); }
+    .agency-chip.sp     .chip-dot { background: var(--sp); }
+    .agency-chip.fitch.checked  { background: var(--fitch-dim);  border-color: var(--fitch); }
+    .agency-chip.moodys.checked { background: var(--moodys-dim); border-color: var(--moodys); }
+    .agency-chip.sp.checked     { background: var(--sp-dim);     border-color: var(--sp); }
+    .agency-chip:hover { opacity: 0.85; }
+
+    .filter-count {
+      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);
+      margin-left: auto; white-space: nowrap;
+    }
+    .filter-count span { color: var(--accent); font-weight: 500; }
+
+    /* ── Table section ── */
+    .table-section {
+      max-width: 1300px; margin: 0 auto;
+      padding: 1rem 2rem 4rem;
+    }
+    .table-container {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .table-toolbar {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.75rem 1rem; border-bottom: 1px solid var(--border);
+      flex-wrap: wrap; gap: 0.5rem;
+    }
+    .table-toolbar-left {
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .table-label {
+      font-family: var(--font-mono); font-size: 0.72rem;
+      color: var(--text3); text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    /* DataTables overrides */
     table.dataTable {
       background: transparent !important;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
+      border-collapse: collapse !important;
+      margin: 0 !important;
     }
     table.dataTable thead th {
-      background: var(--surface) !important;
-      color: var(--text2) !important;
-      border-bottom: 2px solid var(--border) !important;
-      font-family: var(--font-mono); font-size: 0.75rem;
-      text-transform: uppercase; letter-spacing: 0.04em;
-      padding: 0.65rem 0.5rem !important;
+      background: var(--bg3) !important;
+      color: var(--text3) !important;
+      border-bottom: 1px solid var(--border2) !important;
+      border-top: none !important;
+      font-family: var(--font-mono); font-size: 0.68rem;
+      text-transform: uppercase; letter-spacing: 0.07em;
+      padding: 0.65rem 1rem !important;
+      font-weight: 500;
+      white-space: nowrap;
     }
+    table.dataTable thead th.sorting::after,
+    table.dataTable thead th.sorting_asc::after,
+    table.dataTable thead th.sorting_desc::after {
+      opacity: 0.4 !important;
+    }
+    table.dataTable thead th.sorting_asc::after { opacity: 0.9 !important; color: var(--accent) !important; }
+    table.dataTable thead th.sorting_desc::after { opacity: 0.9 !important; color: var(--accent) !important; }
+
     table.dataTable tbody td {
-      border-bottom: 1px solid var(--border) !important;
-      padding: 0.5rem !important;
+      border-bottom: 1px solid rgba(30,45,61,0.5) !important;
+      border-top: none !important;
+      padding: 0.6rem 1rem !important;
       vertical-align: middle;
     }
     table.dataTable tbody tr { background: transparent !important; }
-    table.dataTable tbody tr:hover { background: rgba(0,212,255,0.03) !important; }
-    table.dataTable tbody td {
-      color: var(--text);
+    table.dataTable tbody tr:last-child td { border-bottom: none !important; }
+    table.dataTable tbody tr:hover td { background: rgba(0,212,255,0.025) !important; }
+
+    .dataTables_wrapper {
+      color: var(--text) !important;
     }
-    .dataTables_wrapper .dataTables_filter input,
+    .dataTables_wrapper .dataTables_filter { display: none !important; } /* use our own search */
+    .dataTables_wrapper .dataTables_length label {
+      color: var(--text3) !important;
+      font-family: var(--font-mono); font-size: 0.72rem;
+      display: flex; align-items: center; gap: 0.4rem;
+    }
     .dataTables_wrapper .dataTables_length select {
-      background: var(--surface) !important;
+      background: var(--bg3) !important;
       border: 1px solid var(--border) !important;
       color: var(--text) !important;
-      border-radius: 6px;
-      padding: 0.35rem 0.6rem !important;
-      font-family: var(--font-mono); font-size: 0.8rem;
+      border-radius: var(--radius-sm);
+      padding: 0.25rem 0.4rem !important;
+      font-family: var(--font-mono); font-size: 0.72rem;
     }
-    .dataTables_wrapper .dataTables_filter input:focus,
-    .dataTables_wrapper .dataTables_length select:focus {
-      outline: none; border-color: var(--accent) !important;
-    }
-    .dataTables_wrapper .dataTables_info,
-    .dataTables_wrapper .dataTables_length label {
-      color: var(--text2) !important;
-      font-family: var(--font-mono); font-size: 0.75rem !important;
+    .dataTables_wrapper .dataTables_info {
+      color: var(--text3) !important;
+      font-family: var(--font-mono); font-size: 0.7rem !important;
     }
     .dataTables_wrapper .dataTables_paginate {
-      font-family: var(--font-mono); font-size: 0.8rem;
+      font-family: var(--font-mono); font-size: 0.75rem;
     }
     .dataTables_wrapper .dataTables_paginate .paginate_button {
-      background: var(--surface) !important;
+      background: transparent !important;
       color: var(--text2) !important;
       border: 1px solid var(--border) !important;
-      border-radius: 4px !important;
-      margin: 0 0.15rem;
-      padding: 0.3rem 0.6rem !important;
-      transition: all 0.2s;
+      border-radius: var(--radius-sm) !important;
+      margin: 0 0.1rem; padding: 0.3rem 0.65rem !important;
+      transition: all 0.15s;
     }
     .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-      background: var(--border2) !important;
+      background: var(--surface2) !important;
       color: var(--accent) !important;
-      border-color: var(--accent2) !important;
+      border-color: var(--border2) !important;
     }
-    .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-      background: var(--accent2) !important;
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+      background: var(--accent) !important;
       color: var(--bg) !important;
       border-color: var(--accent) !important;
+      font-weight: 600;
     }
     .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
-      opacity: 0.4; cursor: default !important;
+      opacity: 0.3; cursor: default !important;
     }
-    .dataTables_wrapper .dt-layout-row { margin: 0.5rem 0; }
-    .dataTables_wrapper .dt-layout-cell { padding: 0; }
+    .dataTables_wrapper .dt-layout-row {
+      margin: 0 !important;
+      padding: 0.6rem 1rem;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 0.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .dataTables_wrapper .dt-layout-row:first-child {
+      border-top: none; border-bottom: 1px solid var(--border);
+      background: var(--bg3);
+    }
+    .dataTables_wrapper .dt-layout-cell { padding: 0 !important; }
 
-    .cnpj-cell {
-      font-family: var(--font-mono); font-size: 0.75rem; color: var(--text3);
-      white-space: nowrap;
-    }
-    .emissor-cell {
-      font-weight: 500; color: var(--text);
-    }
-    .rating-cell {
-      font-family: var(--font-mono); font-weight: 600; font-size: 0.85rem;
-    }
-    .outlook-cell {
-      font-size: 0.8rem;
-    }
-    .outlook-stable    { color: var(--green); }
-    .outlook-positive  { color: var(--accent); }
-    .outlook-negative  { color: var(--red); }
-    .outlook-developing { color: var(--gold); }
-    .outlook-withdrawn  { color: var(--text3); }
-
-    /* ── Export buttons ───────────────────── */
-    .dt-buttons {
-      display: flex; gap: 0.5rem; flex-wrap: wrap;
-    }
+    /* dt-buttons */
+    .dt-buttons { display: flex; gap: 0.4rem; }
     .dt-button {
-      background: var(--surface) !important;
+      background: var(--surface2) !important;
       color: var(--text2) !important;
       border: 1px solid var(--border) !important;
-      border-radius: 6px !important;
-      padding: 0.4rem 0.8rem !important;
-      font-family: var(--font-mono) !important;
-      font-size: 0.75rem !important;
-      cursor: pointer;
-      transition: all 0.2s;
+      border-radius: var(--radius-sm) !important;
+      padding: 0.3rem 0.75rem !important;
+      font-family: var(--font-mono) !important; font-size: 0.72rem !important;
+      cursor: pointer; transition: all 0.15s;
     }
     .dt-button:hover {
       background: var(--border2) !important;
@@ -263,125 +401,280 @@
       border-color: var(--accent2) !important;
     }
 
-    /* ── Footer ──────────────────────────── */
-    footer {
-      text-align: center; padding: 2rem 1rem;
-      border-top: 1px solid var(--border);
-      font-family: var(--font-mono); font-size: 0.75rem; color: var(--text3);
+    /* ── Cell styles ── */
+    .emissor-cell {
+      font-weight: 500; color: var(--text); font-size: 0.84rem;
     }
-    footer a { color: var(--text2); }
-    footer a:hover { color: var(--accent); }
+    .cnpj-cell {
+      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);
+      white-space: nowrap;
+    }
+    .agency-badge {
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px;
+      font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500;
+      white-space: nowrap;
+    }
+    .agency-badge .badge-dot { width: 5px; height: 5px; border-radius: 50%; }
+    .agency-badge.fitch  { background: var(--fitch-dim);  color: var(--fitch); }
+    .agency-badge.moodys { background: var(--moodys-dim); color: var(--moodys); }
+    .agency-badge.sp     { background: var(--sp-dim);     color: var(--sp); }
+    .agency-badge.fitch  .badge-dot { background: var(--fitch); }
+    .agency-badge.moodys .badge-dot { background: var(--moodys); }
+    .agency-badge.sp     .badge-dot { background: var(--sp); }
 
-    /* ── Loading ─────────────────────────── */
-    .loading {
-      text-align: center; padding: 4rem 1rem;
-      font-family: var(--font-mono); color: var(--text2);
+    .rating-chip {
+      display: inline-block;
+      padding: 0.2rem 0.55rem; border-radius: 4px;
+      font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 0.02em;
     }
-    .loading .spinner {
-      width: 32px; height: 32px; border: 3px solid var(--border);
-      border-top-color: var(--accent); border-radius: 50%;
-      animation: spin 0.8s linear infinite;
+    .rating-ig   { background: rgba(0,229,160,0.1); color: #00e5a0; border: 1px solid rgba(0,229,160,0.2); }
+    .rating-spec { background: rgba(255,180,41,0.1); color: #ffb429; border: 1px solid rgba(255,180,41,0.2); }
+    .rating-def  { background: rgba(255,77,109,0.1); color: #ff4d6d; border: 1px solid rgba(255,77,109,0.2); }
+    .rating-nr   { background: rgba(100,120,140,0.1); color: var(--text3); border: 1px solid var(--border); }
+
+    .tipo-cell {
+      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text2);
+    }
+
+    .outlook-chip {
+      display: inline-flex; align-items: center; gap: 0.25rem;
+      font-size: 0.78rem; font-family: var(--font-mono);
+    }
+    .outlook-chip::before {
+      content: ''; width: 5px; height: 5px; border-radius: 50%;
+      display: inline-block; background: currentColor; opacity: 0.7;
+    }
+    .outlook-stable    { color: var(--green); }
+    .outlook-positive  { color: var(--accent); }
+    .outlook-negative  { color: var(--red); }
+    .outlook-developing { color: var(--gold); }
+    .outlook-withdrawn  { color: var(--text3); }
+    .outlook-na        { color: var(--text3); }
+
+    .date-cell {
+      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);
+      white-space: nowrap;
+    }
+
+    /* ── Loading / error ── */
+    .loading-state {
+      text-align: center; padding: 5rem 1rem;
+    }
+    .spinner {
+      width: 32px; height: 32px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
       margin: 0 auto 1rem;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
-
-    .error {
-      text-align: center; padding: 3rem 1rem; color: var(--red);
-      font-family: var(--font-mono);
+    .loading-text {
+      font-family: var(--font-mono); font-size: 0.8rem; color: var(--text3);
+    }
+    .error-state {
+      text-align: center; padding: 4rem 1rem;
+    }
+    .error-icon {
+      font-size: 2rem; margin-bottom: 0.75rem;
+    }
+    .error-msg {
+      font-family: var(--font-mono); font-size: 0.82rem; color: var(--red);
     }
 
-    /* ── Responsive ──────────────────────── */
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.75rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-brand {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);
+    }
+    .footer-brand-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--accent); opacity: 0.5;
+    }
+    .footer-links {
+      display: flex; gap: 1.25rem;
+      font-family: var(--font-mono); font-size: 0.72rem;
+    }
+    .footer-links a { color: var(--text3); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .page-header-inner { flex-direction: column; align-items: flex-start; }
+      .stats-row { flex-wrap: wrap; }
+      .stat-card { min-width: calc(50% - 1px); }
+    }
     @media (max-width: 768px) {
-      nav { padding: 0.5rem 1rem; }
-      .nav-links { gap: 0.8rem; }
-      .nav-links a { font-size: 0.7rem; }
-      .hero h1 { font-size: 1.3rem; }
-      .stats-bar { gap: 1rem; }
-      .filters { flex-direction: column; align-items: stretch; }
-      .filters input { min-width: auto; }
-      .table-wrap { padding: 0 0.5rem 2rem; }
-      table.dataTable { font-size: 0.75rem; }
-      table.dataTable thead th { font-size: 0.65rem; padding: 0.4rem !important; }
-      table.dataTable tbody td { padding: 0.35rem !important; }
+      nav { padding: 0 1rem; }
+      .nav-links { gap: 0; }
+      .nav-links li:not(:last-child) { display: none; }
+      .page-header { padding: 1.75rem 1rem 1.5rem; }
+      .page-header h1 { font-size: 1.5rem; }
+      .filter-section { padding: 1rem 1rem 0; }
+      .table-section { padding: 0.75rem 1rem 3rem; }
+      .filter-divider { display: none; }
+      .filter-count { display: none; }
+      footer { flex-direction: column; align-items: flex-start; padding: 1.5rem 1rem; }
     }
-
     @media (max-width: 480px) {
-      .agency-checkboxes { flex-wrap: wrap; }
-      .hero { padding: 1.5rem 0.5rem 1rem; }
-      .hero h1 { font-size: 1.1rem; }
+      .stat-card { min-width: calc(50% - 1px); }
+      .agency-filters { gap: 0.3rem; }
+      .agency-chip { padding: 0.3rem 0.55rem; font-size: 0.68rem; }
     }
   </style>
 </head>
 <body>
 
-  <a href="#main-content" class="skip-link" style="
-    position: absolute; top: -100%; left: 50%; transform: translateX(-50%);
-    background: var(--accent); color: var(--bg); padding: 0.75rem 1.5rem;
-    border-radius: 0 0 8px 8px; font-family: var(--font-mono); font-size: 0.8rem;
-    font-weight: 500; z-index: 1000; text-decoration: none; transition: top 0.2s;
-  " onfocus="this.style.top='0'" onblur="this.style.top='-100%'">Pular para o conteúdo principal</a>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
   <nav>
-    <a href="index.html" class="nav-logo">
-      <span class="pulse-dot"></span>
-      Pulse Ratings
+    <a href="index.html" class="nav-logo" aria-label="Pulse Ratings — Página inicial">
+      <img src="./assets/logo.png" alt="" onerror="this.style.display='none'" />
+      <span class="nav-logo-text"><span class="pulse">Pulse</span><span class="ratings">Ratings</span></span>
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Início</a></li>
-      <li><a href="consulta.html" class="active">Consulta</a></li>
-      <li><a href="mailto:pulsedatalabs@gmail.com?subject=Pulse Ratings — Interesse Comercial" class="nav-cta">Fale Conosco ↗</a></li>
+      <li><a href="consulta.html" class="active" aria-current="page">Consulta</a></li>
+      <li>
+        <a href="mailto:pulsedatalabs@gmail.com?subject=Pulse Ratings — Interesse Comercial" class="nav-cta">
+          Fale Conosco
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+            <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </li>
     </ul>
   </nav>
 
   <main id="main-content">
-    <section class="hero">
-      <h1>Consulta de Ratings</h1>
-      <p>Busque ratings de crédito por emissor, CNPJ ou agência — S&P, Moody's, Fitch</p>
+
+    <!-- ── Page header ── -->
+    <header class="page-header">
+      <div class="page-header-inner">
+        <div class="page-title-group">
+          <div class="page-eyebrow">Ratings de crédito</div>
+          <h1>Consulta de Emissores</h1>
+          <p>S&amp;P, Moody's e Fitch — mercado brasileiro consolidado</p>
+        </div>
+        <div class="stats-row" id="stats-row" aria-label="Estatísticas da base">
+          <div class="stat-card emissores">
+            <div class="stat-dot"></div>
+            <div class="stat-value" id="stat-emissores">—</div>
+            <div class="stat-label">Emissores</div>
+          </div>
+          <div class="stat-card total">
+            <div class="stat-dot"></div>
+            <div class="stat-value" id="stat-ratings">—</div>
+            <div class="stat-label">Ratings</div>
+          </div>
+          <div class="stat-card fitch">
+            <div class="stat-dot"></div>
+            <div class="stat-value" id="stat-fitch">—</div>
+            <div class="stat-label">Fitch</div>
+          </div>
+          <div class="stat-card moodys">
+            <div class="stat-dot"></div>
+            <div class="stat-value" id="stat-moodys">—</div>
+            <div class="stat-label">Moody's</div>
+          </div>
+          <div class="stat-card sp">
+            <div class="stat-dot"></div>
+            <div class="stat-value" id="stat-sp">—</div>
+            <div class="stat-label">S&amp;P</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── Filters ── -->
+    <section class="filter-section" aria-label="Filtros">
+      <div class="filter-bar">
+        <div class="search-wrapper">
+          <span class="search-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <circle cx="6.5" cy="6.5" r="5" stroke="#566878" stroke-width="1.5"/>
+              <path d="M10 10L14 14" stroke="#566878" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <input type="text" id="search-input"
+            placeholder="Buscar por emissor, CNPJ, rating, tipo…"
+            autocomplete="off"
+            aria-label="Buscar emissores"
+          />
+        </div>
+        <div class="filter-divider" aria-hidden="true"></div>
+        <div class="agency-filters" role="group" aria-label="Filtrar por agência">
+          <label class="agency-chip fitch checked">
+            <input type="checkbox" value="Fitch" checked />
+            <span class="chip-dot"></span>
+            Fitch
+          </label>
+          <label class="agency-chip moodys checked">
+            <input type="checkbox" value="Moody's" checked />
+            <span class="chip-dot"></span>
+            Moody's
+          </label>
+          <label class="agency-chip sp checked">
+            <input type="checkbox" value="S&P" checked />
+            <span class="chip-dot"></span>
+            S&amp;P
+          </label>
+        </div>
+        <div class="filter-count" id="filter-count" aria-live="polite">
+          <span id="filtered-n">—</span> resultado(s)
+        </div>
+      </div>
     </section>
 
-    <div class="stats-bar" id="stats-bar">
-      <div class="stat-item"><div class="stat-value" id="stat-emissores">—</div><div class="stat-label">Emissores</div></div>
-      <div class="stat-item"><div class="stat-value" id="stat-ratings">—</div><div class="stat-label">Ratings</div></div>
-      <div class="stat-item"><div class="stat-value" id="stat-fitch">—</div><div class="stat-label">Fitch</div></div>
-      <div class="stat-item"><div class="stat-value" id="stat-moodys">—</div><div class="stat-label">Moody's</div></div>
-      <div class="stat-item"><div class="stat-value" id="stat-sp">—</div><div class="stat-label">S&amp;P</div></div>
-    </div>
-
-    <div class="filters">
-      <input type="text" id="search-input" placeholder="Buscar por nome do emissor, CNPJ, tipo rating..." />
-      <div class="agency-checkboxes">
-        <label><input type="checkbox" value="Fitch" checked /><span class="badge badge-fitch">Fitch</span></label>
-        <label><input type="checkbox" value="Moody's" checked /><span class="badge badge-moodys">Moody's</span></label>
-        <label><input type="checkbox" value="S&P" checked /><span class="badge badge-sp">S&amp;P</span></label>
+    <!-- ── Table ── -->
+    <section class="table-section" aria-label="Tabela de ratings">
+      <div class="table-container">
+        <div id="loading" class="loading-state">
+          <div class="spinner" role="status" aria-label="Carregando"></div>
+          <p class="loading-text">Carregando dados…</p>
+        </div>
+        <div id="error" class="error-state" style="display:none;">
+          <div class="error-icon" aria-hidden="true">⚠</div>
+          <p class="error-msg" id="error-msg"></p>
+        </div>
+        <table id="ratings-table" class="display responsive" style="width:100%; display:none;">
+          <thead>
+            <tr>
+              <th>Emissor</th>
+              <th>CNPJ</th>
+              <th>Agência</th>
+              <th>Tipo</th>
+              <th>Rating</th>
+              <th>Outlook</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </div>
-    </div>
+    </section>
 
-    <div class="table-wrap">
-      <div id="loading" class="loading">
-        <div class="spinner"></div>
-        Carregando dados...
-      </div>
-      <div id="error" class="error" style="display:none;"></div>
-      <table id="ratings-table" class="display responsive" style="width:100%; display:none;">
-        <thead>
-          <tr>
-            <th>Emissor</th>
-            <th>CNPJ</th>
-            <th>Agência</th>
-            <th>Tipo Rating</th>
-            <th>Rating</th>
-            <th>Outlook</th>
-            <th>Data</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
   </main>
 
   <footer>
-    <span>&copy; 2026 Pulse Data Labs &middot; <a href="mailto:pulsedatalabs@gmail.com">pulsedatalabs@gmail.com</a></span>
-    <span style="margin-left: 1rem;"><a href="https://github.com/PulseDataLabs/PulseRatingsBrasil" target="_blank">GitHub</a></span>
+    <div class="footer-brand">
+      <div class="footer-brand-dot"></div>
+      © 2026 Pulse Data Labs
+    </div>
+    <div class="footer-links">
+      <a href="index.html">PulseRatings</a>
+      <a href="https://pulsedatalabs.github.io" target="_blank" rel="noopener">pulsedatalabs.github.io</a>
+      <a href="mailto:pulsedatalabs@gmail.com">Contato</a>
+      <a href="https://github.com/PulseDataLabs/PulseRatingsBrasil" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -392,91 +685,106 @@
   <script src="https://cdn.datatables.net/buttons/3.2.2/js/buttons.html5.min.js"></script>
   <script>
   (async function () {
-    const $table = $('#ratings-table');
-    const $tbody = $table.find('tbody');
+    const $table   = $('#ratings-table');
+    const $tbody   = $table.find('tbody');
     const $loading = $('#loading');
-    const $error = $('#error');
-    const $searchInput = $('#search-input');
-    const $agencyChecks = $('.agency-checkboxes input[type="checkbox"]');
+    const $error   = $('#error');
+    const $errMsg  = $('#error-msg');
+    const $search  = $('#search-input');
+    const $chips   = $('.agency-chip');
+    const $checks  = $('.agency-chip input[type="checkbox"]');
 
     let tableApi = null;
-    let allData = [];
+    let allData  = [];
 
-    // ── Load data ──────────────────────────
+    /* ── chip toggle style ── */
+    $chips.on('click', function () {
+      const $chip = $(this);
+      const checked = $chip.find('input')[0].checked;
+      $chip.toggleClass('checked', checked);
+    });
+
+    /* ── Rating grade ── */
+    const IG_RATINGS = new Set([
+      'AAA','AA+','AA','AA-','A+','A','A-','BBB+','BBB','BBB-',
+      'Aaa','Aa1','Aa2','Aa3','A1','A2','A3','Baa1','Baa2','Baa3'
+    ]);
+    const SPEC_RATINGS = new Set([
+      'BB+','BB','BB-','B+','B','B-','CCC+','CCC','CCC-','CC','C',
+      'Ba1','Ba2','Ba3','B1','B2','B3','Caa1','Caa2','Caa3','Ca'
+    ]);
+    const DEF_RATINGS = new Set(['D','DDD','DD','RD','SD','C']);
+
+    function ratingClass(r) {
+      const base = (r||'').replace(/\(.*\)/,'').trim();
+      if (IG_RATINGS.has(base))   return 'rating-ig';
+      if (SPEC_RATINGS.has(base)) return 'rating-spec';
+      if (DEF_RATINGS.has(base))  return 'rating-def';
+      return 'rating-nr';
+    }
+
+    /* ── Outlook ── */
+    function outlookClass(o) {
+      const s = (o||'').toLowerCase();
+      if (s.includes('estável') || s.includes('stable'))  return 'outlook-stable';
+      if (s.includes('positiva') || s.includes('positive')) return 'outlook-positive';
+      if (s.includes('negativa') || s.includes('negative')) return 'outlook-negative';
+      if (s.includes('develop'))   return 'outlook-developing';
+      if (s.includes('withdrawn') || s.includes('retirado')) return 'outlook-withdrawn';
+      if (!o || o === '—')         return 'outlook-na';
+      return '';
+    }
+
+    /* ── Agency badge ── */
+    function agencyBadge(ag) {
+      const cls = ag === 'Fitch' ? 'fitch' : (ag === "Moody's" ? 'moodys' : 'sp');
+      return `<span class="agency-badge ${cls}"><span class="badge-dot"></span>${ag}</span>`;
+    }
+
+    /* ── Load data ── */
     try {
       const resp = await fetch('./data/emissores_rating.json');
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       allData = await resp.json();
     } catch (err) {
       $loading.hide();
-      $error.text('Erro ao carregar dados: ' + err.message).show();
+      $errMsg.text('Erro ao carregar dados: ' + err.message);
+      $error.show();
       return;
     }
 
     if (!allData.length) {
       $loading.hide();
-      $error.text('Nenhum dado encontrado.').show();
+      $errMsg.text('Nenhum dado encontrado.');
+      $error.show();
       return;
     }
 
-    // ── Stats ──────────────────────────────
-    const emissores = new Set(allData.map(r => r.emissor));
-    const fitchCount = allData.filter(r => r.agencia === 'Fitch').length;
-    const moodysCount = allData.filter(r => r.agencia === "Moody's").length;
-    const spCount = allData.filter(r => r.agencia === 'S&P').length;
+    /* ── Stats ── */
+    const emissores  = new Set(allData.map(r => r.emissor));
+    const fitchN     = allData.filter(r => r.agencia === 'Fitch').length;
+    const moodysN    = allData.filter(r => r.agencia === "Moody's").length;
+    const spN        = allData.filter(r => r.agencia === 'S&P').length;
 
     document.getElementById('stat-emissores').textContent = emissores.size.toLocaleString('pt-BR');
-    document.getElementById('stat-ratings').textContent = allData.length.toLocaleString('pt-BR');
-    document.getElementById('stat-fitch').textContent = fitchCount.toLocaleString('pt-BR');
-    document.getElementById('stat-moodys').textContent = moodysCount.toLocaleString('pt-BR');
-    document.getElementById('stat-sp').textContent = spCount.toLocaleString('pt-BR');
+    document.getElementById('stat-ratings').textContent   = allData.length.toLocaleString('pt-BR');
+    document.getElementById('stat-fitch').textContent     = fitchN.toLocaleString('pt-BR');
+    document.getElementById('stat-moodys').textContent    = moodysN.toLocaleString('pt-BR');
+    document.getElementById('stat-sp').textContent        = spN.toLocaleString('pt-BR');
 
-    // ── Render table ───────────────────────
-    function outlookClass(outlook) {
-      const o = (outlook || '').toLowerCase();
-      if (o.includes('estável') || o.includes('stable')) return 'outlook-stable';
-      if (o.includes('positiva') || o.includes('positive')) return 'outlook-positive';
-      if (o.includes('negativa') || o.includes('negative')) return 'outlook-negative';
-      if (o.includes('developing') || o.includes('em desenvolvimento')) return 'outlook-developing';
-      if (o.includes('withdrawn') || o.includes('retirado')) return 'outlook-withdrawn';
-      return '';
-    }
-
-    function agencyBadge(agencia) {
-      const cls = agencia === 'Fitch' ? 'badge-fitch' : (agencia === "Moody's" ? 'badge-moodys' : 'badge-sp');
-      return `<span class="badge ${cls}">${agencia}</span>`;
-    }
-
-    function buildRows(data) {
-      return data.map(r => {
-        const outlook = r.outlook || '';
-        const dt = r.dt_acao || '';
-        return [
-          r.emissor,
-          r.cnpj || '',
-          r.agencia,
-          r.tipo_rating || '',
-          r.rating || '',
-          outlook,
-          dt
-        ];
-      });
-    }
-
-    const rows = buildRows(allData);
-
-    // Build the rows as HTML once and init DataTable
-    for (const row of rows) {
-      const outlook = row[5];
+    /* ── Build rows ── */
+    for (const r of allData) {
+      const outlook = r.outlook || '';
+      const rating  = r.rating  || '';
       const tr = document.createElement('tr');
       tr.innerHTML = `
-        <td class="emissor-cell">${row[0]}</td>
-        <td class="cnpj-cell">${row[1]}</td>
-        <td>${agencyBadge(row[2])}</td>
-        <td>${row[3]}</td>
-        <td class="rating-cell">${row[4]}</td>
-        <td class="outlook-cell ${outlookClass(outlook)}">${outlook || '—'}</td>
-        <td>${row[6] || '—'}</td>
+        <td class="emissor-cell">${r.emissor || '—'}</td>
+        <td class="cnpj-cell">${r.cnpj || '—'}</td>
+        <td>${agencyBadge(r.agencia)}</td>
+        <td class="tipo-cell">${r.tipo_rating || '—'}</td>
+        <td><span class="rating-chip ${ratingClass(rating)}">${rating || '—'}</span></td>
+        <td><span class="outlook-chip ${outlookClass(outlook)}">${outlook || '—'}</span></td>
+        <td class="date-cell">${r.dt_acao || '—'}</td>
       `;
       $tbody.append(tr);
     }
@@ -484,7 +792,7 @@
     $loading.hide();
     $table.show();
 
-    // ── Init DataTable ─────────────────────
+    /* ── Init DataTable ── */
     tableApi = $table.DataTable({
       responsive: true,
       pageLength: 50,
@@ -494,66 +802,60 @@
         url: 'https://cdn.datatables.net/plug-ins/2.2.2/i18n/pt-BR.json'
       },
       buttons: [
-        { extend: 'excelHtml5', text: '📥 Excel', title: 'pulse_ratings_consulta' },
+        { extend: 'excelHtml5', text: '↓ Excel', title: 'pulse_ratings_consulta' }
       ],
-      dom: '<"dt-layout-row"<"dt-layout-cell"B><"dt-layout-cell"f>>' +
+      dom: '<"dt-layout-row"<"dt-layout-cell"B><"dt-layout-cell"l>>' +
            '<"dt-layout-row"tr>' +
            '<"dt-layout-row"<"dt-layout-cell"i><"dt-layout-cell"p>>',
-      columnDefs: [
-        { targets: 1, className: 'cnpj-cell' },
-        { targets: 4, className: 'rating-cell' },
-      ]
     });
 
-    // ── Custom search ──────────────────────
+    /* ── Update filter count ── */
+    function updateCount() {
+      const n = tableApi ? tableApi.rows({ search: 'applied' }).count() : allData.length;
+      document.getElementById('filtered-n').textContent = n.toLocaleString('pt-BR');
+    }
+    tableApi.on('draw', updateCount);
+    updateCount();
+
+    /* ── Filters ── */
+    function onlyDigits(s) { return s.replace(/\D/g, ''); }
+
+    // Extrai texto puro de uma célula que pode conter HTML
+    function cellText(raw) {
+      const tmp = document.createElement('span');
+      tmp.innerHTML = raw;
+      return tmp.textContent || tmp.innerText || '';
+    }
+
     function applyFilters() {
-      if (!tableApi) return;
-
-      const query = $searchInput.val().trim();
+      const q = ($search.val() || '').trim().toLowerCase();
+      const qd = onlyDigits(q);
       const selected = [];
-      $agencyChecks.each(function () {
-        if (this.checked) selected.push(this.value);
-      });
+      $checks.each(function () { if (this.checked) selected.push(this.value); });
 
-      // Normaliza string removendo não-dígitos (para busca por CNPJ)
-      function onlyDigits(s) { return s.replace(/\D/g, ''); }
-
-      // Custom filter function
       $.fn.dataTable.ext.search = [];
-      $.fn.dataTable.ext.search.push(function (settings, data) {
-        const agencia = data[2];
-
-        // Agency filter
-        if (selected.length && !selected.includes(agencia)) return false;
-
-        // Text search
-        if (query) {
-          const q = query.toLowerCase();
-          const qDigits = onlyDigits(q);
-
-          // Tenta match normal ou match por dígitos (CNPJ)
-          const emissor   = data[0].toLowerCase();
-          const cnpj      = data[1].toLowerCase();
-          const cnpjDigit = onlyDigits(data[1]);
-          const tipo      = data[3].toLowerCase();
-          const rating    = data[4].toLowerCase();
-
-          const match = emissor.includes(q)
+      $.fn.dataTable.ext.search.push(function (_s, data) {
+        const ag = cellText(data[2]).trim();
+        if (selected.length && !selected.includes(ag)) return false;
+        if (q) {
+          const emissor = data[0].toLowerCase();
+          const cnpj    = data[1].toLowerCase();
+          const tipo    = data[3].toLowerCase();
+          const rating  = cellText(data[4]).toLowerCase();
+          const m = emissor.includes(q)
             || cnpj.includes(q)
-            || cnpjDigit.includes(qDigits)
+            || onlyDigits(cnpj).includes(qd)
             || tipo.includes(q)
             || rating.includes(q);
-          if (!match) return false;
+          if (!m) return false;
         }
-
         return true;
       });
-
       tableApi.draw();
     }
 
-    $searchInput.on('input', applyFilters);
-    $agencyChecks.on('change', applyFilters);
+    $search.on('input', applyFilters);
+    $checks.on('change', applyFilters);
 
   })();
   </script>
