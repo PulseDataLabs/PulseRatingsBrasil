@@ -13,6 +13,7 @@
   <link rel="preload" href="./data/emissores_rating.json" as="fetch" crossorigin />
   <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.4/css/responsive.dataTables.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.2.2/css/buttons.dataTables.min.css" />
   <link rel="canonical" href="https://pulsedatalabs.github.io/PulseRatingsBrasil/consulta.html" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -241,6 +242,27 @@
     .outlook-developing { color: var(--gold); }
     .outlook-withdrawn  { color: var(--text3); }
 
+    /* ── Export buttons ───────────────────── */
+    .dt-buttons {
+      display: flex; gap: 0.5rem; flex-wrap: wrap;
+    }
+    .dt-button {
+      background: var(--surface) !important;
+      color: var(--text2) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 6px !important;
+      padding: 0.4rem 0.8rem !important;
+      font-family: var(--font-mono) !important;
+      font-size: 0.75rem !important;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .dt-button:hover {
+      background: var(--border2) !important;
+      color: var(--accent) !important;
+      border-color: var(--accent2) !important;
+    }
+
     /* ── Footer ──────────────────────────── */
     footer {
       text-align: center; padding: 2rem 1rem;
@@ -365,6 +387,9 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.2.2/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.2.2/js/buttons.html5.min.js"></script>
   <script>
   (async function () {
     const $table = $('#ratings-table');
@@ -468,6 +493,13 @@
       language: {
         url: 'https://cdn.datatables.net/plug-ins/2.2.2/i18n/pt-BR.json'
       },
+      buttons: [
+        { extend: 'excelHtml5', text: '📥 Excel', title: 'pulse_ratings_consulta' },
+        { extend: 'csvHtml5',   text: '📄 CSV',   title: 'pulse_ratings_consulta' },
+      ],
+      dom: '<"dt-layout-row"<"dt-layout-cell"B><"dt-layout-cell"f>>' +
+           '<"dt-layout-row"tr>' +
+           '<"dt-layout-row"<"dt-layout-cell"i><"dt-layout-cell"p>>',
       columnDefs: [
         { targets: 1, className: 'cnpj-cell' },
         { targets: 4, className: 'rating-cell' },
