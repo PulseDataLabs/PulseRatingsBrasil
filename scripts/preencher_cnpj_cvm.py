@@ -29,10 +29,10 @@ CACHE_DIR = get_data_dir() / "cvm_cache"
 CACHE_TTL = timedelta(hours=24)
 
 COLUNAS_CONSOLIDADO = [
-    "nome_emissor_padronizado",
-    "nome_emissor_fitch",
-    "nome_emissor_moodys",
-    "nome_emissor_standard_and_poors",
+    "no_emissor_padronizado",
+    "no_emissor_fitch",
+    "no_emissor_moodys",
+    "no_emissor_standard_and_poors",
     "cnpj_emissor",
 ]
 
@@ -187,7 +187,7 @@ def generate(
             updated_rows.append(row)
             continue
 
-        nome_pad = (row.get("nome_emissor_padronizado") or "").strip()
+        nome_pad = (row.get("no_emissor_padronizado") or "").strip()
         if not nome_pad:
             updated_rows.append(row)
             unmatched += 1
