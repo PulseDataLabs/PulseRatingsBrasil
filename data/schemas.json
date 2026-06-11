@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-06-05"
+        "example": "2026-06-09"
       }
     ]
   },
@@ -59,22 +59,22 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Refinaria de Mataripe S.A."
+        "example": "Nova Occam Brasil Gestao de Recursos Ltda"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/refinaria-de-mataripe-sa-97631572"
+        "example": "https://www.fitchratings.com/entity/nova-occam-brasil-gestao-de-recursos-ltda-97491611"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Long Term Issuer Default Rating"
+        "example": "Investment Management Quality Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "B+"
+        "example": "Strong"
       },
       {
         "name": "dt_acao_rating",
@@ -84,7 +84,7 @@
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Review - No Action"
+        "example": "Affirmed"
       },
       {
         "name": "de_outlook",
@@ -168,11 +168,6 @@
     "source": "moodys",
     "fields": [
       {
-        "name": "dt_captura",
-        "type": "date",
-        "example": "2026-06-08"
-      },
-      {
         "name": "no_emissor",
         "type": "str",
         "example": "Western Asset Management DTVM Ltda."
@@ -192,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Refinaria de Mataripe S.A."
+        "example": "Nova Occam Brasil Gestao de Recursos Ltda"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/refinaria-de-mataripe-sa-97631572"
+        "example": "https://www.fitchratings.com/entity/nova-occam-brasil-gestao-de-recursos-ltda-97491611"
       }
     ]
   },

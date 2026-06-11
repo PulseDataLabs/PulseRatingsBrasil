@@ -9763,7 +9763,7 @@
     "rating": "AAA.br",
     "outlook": "Perspectiva estável",
     "dt_acao": "2025-11-19",
-    "setor": "Empresas Não-Financeiras",
+    "setor": "Instituições Financeiras",
     "instrumento": "N/A",
     "link": ""
   },
@@ -9775,7 +9775,7 @@
     "rating": "AAA.br",
     "outlook": "Perspectiva estável",
     "dt_acao": "2021-06-24",
-    "setor": "Empresas Não-Financeiras",
+    "setor": "Instituições Financeiras",
     "instrumento": "5ª Emissão de Debêntures - Série Única",
     "link": ""
   },
@@ -11258,6 +11258,18 @@
   {
     "emissor": "COMPANHIA SIDERURGICA NACIONAL",
     "cnpj": "33.042.730/0001-04",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating Corporativo",
+    "rating": "BBB.br",
+    "outlook": "RUR para Rebaixamento",
+    "dt_acao": "2026-06-08",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "COMPANHIA SIDERURGICA NACIONAL",
+    "cnpj": "33.042.730/0001-04",
     "agencia": "S&P",
     "tipo_rating": "Escala Nacional Brasil de Longo Prazo",
     "rating": "brA-",
@@ -12471,25 +12483,25 @@
     "emissor": "COOPERATIVA CREDITO SUL",
     "cnpj": "32.474.884/0001-02",
     "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AA+(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-08-26",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669"
-  },
-  {
-    "emissor": "COOPERATIVA CREDITO SUL",
-    "cnpj": "32.474.884/0001-02",
-    "agencia": "Fitch",
     "tipo_rating": "National Short Term Rating",
     "rating": "F1+(bra)",
     "outlook": "",
     "dt_acao": "2025-08-26",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669"
+    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697"
+  },
+  {
+    "emissor": "COOPERATIVA CREDITO SUL",
+    "cnpj": "32.474.884/0001-02",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AA+(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2025-08-26",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697"
   },
   {
     "emissor": "COOPERATIVA CREDITO SUL ESPIRITO SANTO",
@@ -15322,18 +15334,6 @@
     "setor": "Finanças Estruturadas",
     "instrumento": "Cotas Seniores",
     "link": ""
-  },
-  {
-    "emissor": "FISIA COMERCIO PRODUTOS ESPORTIVOS",
-    "cnpj": "59.546.515/0001-34",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-12-19",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/fisia-comercio-de-produtos-esportivos-sa-97462128"
   },
   {
     "emissor": "FLEURY",
@@ -21762,7 +21762,7 @@
     "tipo_rating": "Investment Management Quality Rating",
     "rating": "Strong",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-05-15",
+    "dt_acao": "2026-06-10",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/nova-occam-brasil-gestao-de-recursos-ltda-97491611"
@@ -21918,7 +21918,7 @@
     "tipo_rating": "Investment Management Quality Rating",
     "rating": "Strong",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-05-15",
+    "dt_acao": "2026-06-10",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/occam-brasil-gestao-de-recursos-ltda-96672817"
@@ -22567,6 +22567,42 @@
     "rating": "AAA.br",
     "outlook": "Perspectiva estável",
     "dt_acao": "2025-05-30",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "PACAEMBU CONSTRUTORA",
+    "cnpj": "96.298.013/0001-68",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-08",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "2ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "PACAEMBU CONSTRUTORA",
+    "cnpj": "96.298.013/0001-68",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-08",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "3ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "PACAEMBU CONSTRUTORA",
+    "cnpj": "96.298.013/0001-68",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Emissor",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-08",
     "setor": "Empresas Não-Financeiras",
     "instrumento": "N/A",
     "link": ""
@@ -26532,6 +26568,18 @@
     "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000165"
   },
   {
+    "emissor": "TEREOS ACUCAR ENERGIA",
+    "cnpj": "47.080.619/0001-17",
+    "agencia": "S&P",
+    "tipo_rating": "Escala Nacional Brasil de Longo Prazo",
+    "rating": "brAA-",
+    "outlook": "Stable",
+    "dt_acao": "2026-06-10",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000165"
+  },
+  {
     "emissor": "TERP GLBL I PARTICIPACOES",
     "cnpj": "21.748.188/0001-20",
     "agencia": "Moody's",
@@ -28278,9 +28326,9 @@
     "tipo_rating": "Rating de Operação Estruturada",
     "rating": "AAA.br (sf)",
     "outlook": "-",
-    "dt_acao": "2025-12-11",
+    "dt_acao": "2026-01-19",
     "setor": "Finanças Estruturadas",
-    "instrumento": "Série Única da 166ª Emissão de CRIs",
+    "instrumento": "1ª Série da 4ª Emissão de CRIs",
     "link": ""
   },
   {
