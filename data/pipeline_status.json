@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-11T00:06:01.601828",
-  "elapsed_seconds": 372.389075756073,
-  "status": "warning",
+  "timestamp": "2026-06-11T09:52:53.122141",
+  "elapsed_seconds": 360.28408789634705,
+  "status": "success",
   "summary": {
     "total": 6,
     "success": 6,
     "failed": 0,
-    "drifts": 1
+    "drifts": 0
   },
   "scrapers": {
     "moodys_local_ratings": {
@@ -35,48 +35,40 @@
     },
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 12.449946165084839,
+      "elapsed_seconds": 11.200362920761108,
       "error": null,
-      "timestamp": "2026-06-11T00:06:01.601930"
+      "timestamp": "2026-06-11T09:52:53.122228"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 25.03345537185669,
+      "elapsed_seconds": 23.417037963867188,
       "error": null,
-      "timestamp": "2026-06-11T00:06:01.601935"
+      "timestamp": "2026-06-11T09:52:53.122230"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 68.48661828041077,
+      "elapsed_seconds": 0.6511709690093994,
       "error": null,
-      "timestamp": "2026-06-11T00:06:01.601938"
+      "timestamp": "2026-06-11T09:52:53.122224"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 13.234545230865479,
+      "elapsed_seconds": 11.540645360946655,
       "error": null,
-      "timestamp": "2026-06-11T00:06:01.601940"
+      "timestamp": "2026-06-11T09:52:53.122233"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 66.88324546813965,
+      "elapsed_seconds": 0.023096323013305664,
       "error": null,
-      "timestamp": "2026-06-11T00:06:01.601942"
+      "timestamp": "2026-06-11T09:52:53.122232"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 303.9001040458679,
+      "elapsed_seconds": 336.8639316558838,
       "error": null,
-      "timestamp": "2026-06-11T00:06:01.601943"
+      "timestamp": "2026-06-11T09:52:53.122234"
     }
   },
-  "drifts": {
-    "moodys_emissores.csv": {
-      "added": [],
-      "removed": [
-        "dt_captura"
-      ],
-      "timestamp": "2026-06-11T00:00:57.696648"
-    }
-  }
+  "drifts": {}
 }
