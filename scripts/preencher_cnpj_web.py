@@ -39,6 +39,8 @@ COLUNAS_CONSOLIDADO = [
     "no_emissor_fitch",
     "no_emissor_moodys",
     "no_emissor_standard_and_poors",
+    "no_emissor_austin",
+    "no_emissor_liberum",
     "cnpj_emissor",
 ]
 
@@ -168,7 +170,7 @@ def _limpar_cnpj(valor: Optional[str]) -> str:
 
 
 def _obter_nome_busca(row: dict) -> str:
-    for col in ["no_emissor_fitch", "no_emissor_moodys", "no_emissor_standard_and_poors"]:
+    for col in ["no_emissor_fitch", "no_emissor_moodys", "no_emissor_standard_and_poors", "no_emissor_austin", "no_emissor_liberum"]:
         nome = (row.get(col) or "").strip()
         if nome:
             return nome

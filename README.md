@@ -22,7 +22,7 @@
 
 <hr>
 
-O **Pulse Ratings Brasil** é um pipeline de ETL (Extração, Transformação e Carga) serverless projetado para coletar, tratar e disponibilizar dados de ratings de crédito (corporativos e soberanos) das principais agências de classificação de risco em atuação no Brasil: **S&P**, **Moody's** e **Fitch**.
+O **Pulse Ratings Brasil** é um pipeline de ETL (Extração, Transformação e Carga) serverless projetado para coletar, tratar e disponibilizar dados de ratings de crédito (corporativos e soberanos) das principais agências de classificação de risco em atuação no Brasil: **S&P**, **Moody's**, **Fitch**, **Austin Rating** e **Liberum Ratings**.
 
 Ele funciona 100% de forma automatizada via **GitHub Actions**, salvando o histórico consolidado diretamente no repositório em formato CSV plano. Os dados tratados alimentam um dashboard interativo servido via **GitHub Pages**.
 
@@ -44,8 +44,8 @@ Ele funciona 100% de forma automatizada via **GitHub Actions**, salvando o hist�
 graph TD
     A[GitHub Actions Cron / Trigger] --> B[run_all.py Orchestrator]
     B -->|Dynamic Discovery| C["scrapers/ folder"]
-    B -->|Executes Phase 1| D["Independent Scrapers: Entities (Moody's, S&P, Fitch)"]
-    B -->|Executes Phase 2| E["Dependent Scrapers: Ratings (Moody's, S&P, Fitch)"]
+    B -->|Executes Phase 1| D["Independent Scrapers: Entities (Moody's, S&P, Fitch, Austin, Liberum)"]
+    B -->|Executes Phase 2| E["Dependent Scrapers: Ratings (Moody's, S&P, Fitch, Austin, Liberum)"]
     D --> F["data/*.csv files"]
     E --> F
     F --> G["scripts/consolidar_emissores.py"]
@@ -84,7 +84,7 @@ PulseRatingsBrasil/
 │   ├── base.py                      # Salvamento de CSVs e helpers HTTP
 │   └── parsers.py                   # Parsers auxiliares para formatos especiais
 ├── scripts/                         # Scripts de ciclo de vida
-│   ├── consolidar_emissores.py      # Consolida emissores das 3 agências em 1 CSV
+│   ├── consolidar_emissores.py      # Consolida emissores das agências em 1 CSV
 │   ├── generate_catalog.py          # Gerador automatizado do catálogo de datasets
 │   ├── preencher_cnpj_cvm.py        # Preenche CNPJ via dados offline da CVM
 │   ├── preencher_cnpj_api.py        # Preenche CNPJ via CNPJ Aberto API (1.000 req/dia)
@@ -231,7 +231,7 @@ O orquestrador `run_all.py` organiza os scrapers em grupos. Este repositório co
 
 | Grupo | Descrição | Scrapers |
 |-------|-----------|----------|
-| `ratings` | Ratings de crédito (S&P, Moody's, Fitch) | `standard_and_poors_ratings`, `standard_and_poors_emissores`, `moodys_ratings`, `moodys_emissores`, `fitch_ratings`, `fitch_emissores` |
+| `ratings` | Ratings de crédito (S&P, Moody's, Fitch, Austin, Liberum) | `standard_and_poors_ratings`, `standard_and_poors_emissores`, `moodys_ratings`, `moodys_emissores`, `fitch_ratings`, `fitch_emissores`, `austin_ratings`, `austin_emissores`, `liberum_ratings`, `liberum_emissores` |
 | `consolidated` | Emissores consolidados (1 linha por emissor) | `emissores_consolidado` |
 | `anbima` | Dados ANBIMA | *(implementação externa)* |
 | `b3` | Dados B3 | *(implementação externa)* |
@@ -264,6 +264,18 @@ Apenas o grupo `ratings` está ativo por padrão neste repositório público.
 - **Dados coletados:** Ratings de emissor e lista de emissores
 - **Frequência:** Cada execução do pipeline
 
+### Austin Rating
+- **Tipo:** Web scraper concorrente baseado em requisições HTTP e tabelas HTML
+- **Autenticação:** Pública (sem chave)
+- **Dados coletados:** Ratings de emissor e lista de emissores
+- **Frequência:** Cada execução do pipeline
+
+### Liberum Ratings
+- **Tipo:** Consumo direto da API pública de listagem do painel em React
+- **Autenticação:** Pública (sem chave para listagem de ratings ativos / arrays internos)
+- **Dados coletados:** Ratings por classe/escala e lista de emissores
+- **Frequência:** Cada execução do pipeline
+
 ---
 
 ## 📊 Schema dos Dados
@@ -285,6 +297,8 @@ O dataset `emissores_consolidado.csv` possui estrutura própria:
 | `no_emissor_fitch` | str | Nome original na fonte Fitch |
 | `no_emissor_moodys` | str | Nome original na fonte Moody's |
 | `no_emissor_standard_and_poors` | str | Nome original na fonte S&P |
+| `no_emissor_austin` | str | Nome original na fonte Austin Rating |
+| `no_emissor_liberum` | str | Nome original na fonte Liberum Ratings |
 | `cnpj_emissor` | str | CNPJ do emissor (preenchido via CVM + CNPJ Aberto API + base RFB) |
 
 As definições completas de campos e tipos são geradas automaticamente em [`data/schemas.json`](data/schemas.json) a cada execução e exibidas no [dashboard](https://pulsedatalabs.github.io/PulseRatingsBrasil/).
@@ -322,9 +336,10 @@ As definições completas de campos e tipos são geradas automaticamente em [`da
 ### 2026-06
 - Padronização do campo de captura para `dt_captura`
 - Dashboard com busca, filtros e schema dinâmico
-- Suporte a 6 datasets de ratings (3 agências × ratings + emissores)
+- Suporte a 10 datasets de ratings (5 agências × ratings + emissores)
+- Integração da **Austin Rating** e da **Liberum Ratings** (incluindo tratamento de timeouts e retries na API)
 - Detecção automática de schema drift
-- Consolidação de emissores: script + testes + dataset `emissores_consolidado.csv`
+- Consolidação de emissores: script + testes + dataset `emissores_consolidado.csv` com suporte a 5 agências
 - Sistema de UX unificado (cores, progresso, logging) nos scrapers e orquestrador
 
 ### 2026-05
@@ -349,5 +364,5 @@ Desenvolvido com 💙 por **[PulseDataLabs](https://github.com/PulseDataLabs)**.
 ---
 
 <p align="center">
-  <sub>Dados públicos de rating — S&P, Moody's e Fitch</sub>
+  <sub>Dados públicos de rating — S&P, Moody's, Fitch, Austin e Liberum</sub>
 </p>

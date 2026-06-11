@@ -137,6 +137,9 @@ def generate():
         elif "fitch" in module_name:
             default_icon = "F"
             default_icon_class = "icon-fitch"
+        elif "liberum" in module_name:
+            default_icon = "L"
+            default_icon_class = "icon-liberum"
         else:
             default_icon = "📊"
             default_icon_class = "icon-ratings"
@@ -188,7 +191,7 @@ def generate():
     consolidated_entry = {
         "title": "Emissores Consolidados",
         "file": "emissores_consolidado.csv",
-        "description": "Emissores das 3 agências (Fitch, Moody's, S&P) consolidados em uma linha por emissor, com nomes padronizados e campo para CNPJ.",
+        "description": "Emissores das agências (Fitch, Moody's, S&P, Austin, Liberum) consolidados em uma linha por emissor, com nomes padronizados e campo para CNPJ.",
         "icon": "CR",
         "iconClass": "icon-consolidated",
         "badge": "Acumulado",

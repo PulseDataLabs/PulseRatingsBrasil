@@ -1,8 +1,40 @@
 [
   {
+    "title": "Austin — Emissores",
+    "file": "austin_emissores.csv",
+    "description": "Emissores com rating de crédito ativo ou histórico de classificação regulatória pela Austin Rating no Brasil.",
+    "icon": "A",
+    "iconClass": "icon-austin",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
+    "tags": [
+      "ratings",
+      "austin",
+      "emissores"
+    ],
+    "source": "Austin",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/austin_emissores.csv"
+  },
+  {
+    "title": "Austin — Ratings",
+    "file": "austin_ratings.csv",
+    "description": "Histórico de ratings de crédito atribuídos pela Austin Rating a emissores e emissões estruturadas (FIDCs, CRIs, debêntures e bancos) no Brasil.",
+    "icon": "A",
+    "iconClass": "icon-austin",
+    "badge": "",
+    "badgeClass": "",
+    "tags": [
+      "ratings",
+      "austin",
+      "emissores"
+    ],
+    "source": "Austin",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/austin_ratings.csv"
+  },
+  {
     "title": "Emissores Consolidados",
     "file": "emissores_consolidado.csv",
-    "description": "Emissores das 3 agências (Fitch, Moody's, S&P) consolidados em uma linha por emissor, com nomes padronizados e campo para CNPJ.",
+    "description": "Emissores das agências (Fitch, Moody's, S&P, Austin, Liberum) consolidados em uma linha por emissor, com nomes padronizados e campo para CNPJ.",
     "icon": "CR",
     "iconClass": "icon-consolidated",
     "badge": "Acumulado",
@@ -14,6 +46,22 @@
     ],
     "source": "Consolidado",
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/emissores_consolidado.csv"
+  },
+  {
+    "title": "Fitch — Ratings",
+    "file": "fitch_ratings.csv",
+    "description": "Ratings de crédito de longo e curto prazo atribuídos pela Fitch Ratings a emissores corporativos, financeiros e soberanos no Brasil.",
+    "icon": "F",
+    "iconClass": "icon-fitch",
+    "badge": "",
+    "badgeClass": "",
+    "tags": [
+      "ratings",
+      "fitch",
+      "emissores"
+    ],
+    "source": "Fitch",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_ratings.csv"
   },
   {
     "title": "Fitch — Ratings",
@@ -32,20 +80,36 @@
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_emissores.csv"
   },
   {
-    "title": "Fitch — Ratings",
-    "file": "fitch_ratings.csv",
-    "description": "Ratings de crédito de longo e curto prazo atribuídos pela Fitch Ratings a emissores corporativos, financeiros e soberanos no Brasil.",
-    "icon": "F",
-    "iconClass": "icon-fitch",
-    "badge": "",
-    "badgeClass": "",
+    "title": "Liberum — Emissores",
+    "file": "liberum_emissores.csv",
+    "description": "Emissores com classificação de risco ativa ou monitorada pela Liberum Ratings no Brasil.",
+    "icon": "L",
+    "iconClass": "icon-liberum",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
     "tags": [
       "ratings",
-      "fitch",
+      "liberum",
       "emissores"
     ],
-    "source": "Fitch",
-    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_ratings.csv"
+    "source": "Liberum",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/liberum_emissores.csv"
+  },
+  {
+    "title": "Liberum — Ratings",
+    "file": "liberum_ratings.csv",
+    "description": "Ratings de crédito de longo e curto prazo e perspectivas atribuídas pela Liberum Ratings no Brasil.",
+    "icon": "L",
+    "iconClass": "icon-liberum",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
+    "tags": [
+      "ratings",
+      "liberum",
+      "emissores"
+    ],
+    "source": "Liberum",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/liberum_ratings.csv"
   },
   {
     "title": "Moody's — Emissores",

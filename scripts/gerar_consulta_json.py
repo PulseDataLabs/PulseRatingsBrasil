@@ -16,6 +16,8 @@ EMISSORES_PATH = os.path.join(DATA_DIR, "emissores_consolidado.csv")
 FITCH_RATINGS_PATH = os.path.join(DATA_DIR, "fitch_ratings.csv")
 MOODYS_RATINGS_PATH = os.path.join(DATA_DIR, "moodys_ratings.csv")
 SP_RATINGS_PATH = os.path.join(DATA_DIR, "standard_and_poors_ratings.csv")
+AUSTIN_RATINGS_PATH = os.path.join(DATA_DIR, "austin_ratings.csv")
+LIBERUM_RATINGS_PATH = os.path.join(DATA_DIR, "liberum_ratings.csv")
 OUTPUT_PATH = os.path.join(DATA_DIR, "emissores_rating.json")
 
 
@@ -45,6 +47,8 @@ def carregar_emissores() -> list[dict]:
                 "no_emissor_fitch": _trim(row.get("no_emissor_fitch", "")),
                 "no_emissor_moodys": _trim(row.get("no_emissor_moodys", "")),
                 "no_emissor_standard_and_poors": _trim(row.get("no_emissor_standard_and_poors", "")),
+                "no_emissor_austin": _trim(row.get("no_emissor_austin", "")),
+                "no_emissor_liberum": _trim(row.get("no_emissor_liberum", "")),
                 "cnpj": _cnpj_fmt(row.get("cnpj_emissor", "")),
             })
     return emissores
@@ -84,17 +88,23 @@ def main() -> None:
     fitch_ratings = carregar_ratings(FITCH_RATINGS_PATH)
     moodys_ratings = carregar_ratings(MOODYS_RATINGS_PATH)
     sp_ratings = carregar_ratings(SP_RATINGS_PATH)
-    total_antes = len(fitch_ratings) + len(moodys_ratings) + len(sp_ratings)
+    austin_ratings = carregar_ratings(AUSTIN_RATINGS_PATH)
+    liberum_ratings = carregar_ratings(LIBERUM_RATINGS_PATH)
+    total_antes = len(fitch_ratings) + len(moodys_ratings) + len(sp_ratings) + len(austin_ratings) + len(liberum_ratings)
 
     fitch_ratings = dedup_ratings(fitch_ratings, ["no_emissor", "no_tipo_rating", "de_rating_br", "de_outlook"])
     moodys_ratings = dedup_ratings(moodys_ratings, ["no_emissor", "no_tipo_rating", "de_instrumento", "de_rating_br", "de_outlook", "dt_rating"])
     sp_ratings = dedup_ratings(sp_ratings, ["no_emissor", "no_tipo_rating", "de_rating_br", "de_outlook"])
-    total_depois = len(fitch_ratings) + len(moodys_ratings) + len(sp_ratings)
-    print(f"Ratings carregados: Fitch={len(fitch_ratings)}, Moody's={len(moodys_ratings)}, S&P={len(sp_ratings)} (dedup: {total_antes} → {total_depois}, -{total_antes - total_depois})")
+    austin_ratings = dedup_ratings(austin_ratings, ["no_emissor", "no_tipo_rating", "de_rating_br", "de_outlook"])
+    liberum_ratings = dedup_ratings(liberum_ratings, ["no_emissor", "no_tipo_rating", "de_rating_br", "de_outlook", "de_classe", "de_escala"])
+    total_depois = len(fitch_ratings) + len(moodys_ratings) + len(sp_ratings) + len(austin_ratings) + len(liberum_ratings)
+    print(f"Ratings carregados: Fitch={len(fitch_ratings)}, Moody's={len(moodys_ratings)}, S&P={len(sp_ratings)}, Austin={len(austin_ratings)}, Liberum={len(liberum_ratings)} (dedup: {total_antes} → {total_depois}, -{total_antes - total_depois})")
 
     fitch_idx = build_index(fitch_ratings, "no_emissor")
     moodys_idx = build_index(moodys_ratings, "no_emissor")
     sp_idx = build_index(sp_ratings, "no_emissor")
+    austin_idx = build_index(austin_ratings, "no_emissor")
+    liberum_idx = build_index(liberum_ratings, "no_emissor")
 
     resultados = []
     sem_match_fitch = 0
@@ -110,6 +120,8 @@ def main() -> None:
             ("Fitch", em["no_emissor_fitch"], fitch_idx),
             ("Moody's", em["no_emissor_moodys"], moodys_idx),
             ("S&P", em["no_emissor_standard_and_poors"], sp_idx),
+            ("Austin", em["no_emissor_austin"], austin_idx),
+            ("Liberum", em["no_emissor_liberum"], liberum_idx),
         ]
 
         tem_rating = False
@@ -123,8 +135,11 @@ def main() -> None:
                     sem_match_fitch += 1
                 elif nome_agencia == "Moody's":
                     sem_match_moodys += 1
-                else:
+                elif nome_agencia == "S&P":
                     sem_match_sp += 1
+                else:
+                    # Austin
+                    pass
                 continue
 
             tem_rating = True
@@ -155,6 +170,32 @@ def main() -> None:
                         "instrumento": "",
                         "link": r.get("link", ""),
                     }
+                elif nome_agencia == "Austin":
+                     row = {
+                         "emissor": nome_padrao,
+                         "cnpj": cnpj,
+                         "agencia": "Austin",
+                         "tipo_rating": r.get("no_tipo_rating", ""),
+                         "rating": r.get("de_rating_br", ""),
+                         "outlook": r.get("de_outlook", ""),
+                         "dt_acao": r.get("dt_acao_rating", ""),
+                         "setor": "",
+                         "instrumento": "",
+                         "link": r.get("link", ""),
+                     }
+                elif nome_agencia == "Liberum":
+                     row = {
+                         "emissor": nome_padrao,
+                         "cnpj": cnpj,
+                         "agencia": "Liberum",
+                         "tipo_rating": r.get("no_tipo_rating", ""),
+                         "rating": r.get("de_rating_br", ""),
+                         "outlook": r.get("de_outlook", ""),
+                         "dt_acao": r.get("dt_acao_rating", ""),
+                         "setor": "",
+                         "instrumento": f"{r.get('de_classe', '')} - {r.get('de_escala', '')}".strip(" -"),
+                         "link": r.get("link", ""),
+                     }
                 else:
                     row = {
                         "emissor": nome_padrao,

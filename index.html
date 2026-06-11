@@ -713,6 +713,8 @@
     .btn-dot.dot-sp { background: #ff5c62; box-shadow: 0 0 6px rgba(255, 92, 98, 0.4); }
     .btn-dot.dot-moodys { background: #38bdf8; box-shadow: 0 0 6px rgba(56, 189, 248, 0.4); }
     .btn-dot.dot-fitch { background: #eab308; box-shadow: 0 0 6px rgba(234, 179, 8, 0.4); }
+    .btn-dot.dot-austin { background: #c084fc; box-shadow: 0 0 6px rgba(192, 132, 252, 0.4); }
+    .btn-dot.dot-liberum { background: #f97316; box-shadow: 0 0 6px rgba(249, 115, 22, 0.4); }
 
     .filter-btn.active[data-source="all"] .btn-dot.dot-all { background: var(--accent); box-shadow: 0 0 6px var(--accent); }
 
@@ -735,6 +737,20 @@
       border-color: #eab308;
       color: #eab308;
       box-shadow: 0 0 15px rgba(234, 179, 8, 0.15);
+    }
+
+    .filter-btn.active[data-source="austin"] {
+      background: rgba(168, 85, 247, 0.1);
+      border-color: #c084fc;
+      color: #c084fc;
+      box-shadow: 0 0 15px rgba(168, 85, 247, 0.15);
+    }
+
+    .filter-btn.active[data-source="liberum"] {
+      background: rgba(249, 115, 22, 0.1);
+      border-color: #f97316;
+      color: #f97316;
+      box-shadow: 0 0 15px rgba(249, 115, 22, 0.15);
     }
 
     .dataset-card.filtered-out, .schema-card.filtered-out {
@@ -761,6 +777,8 @@
     .dataset-card.sp-card::after { background: radial-gradient(circle at top right, rgba(227, 83, 89, 0.08), transparent 60%); }
     .dataset-card.moodys-card::after { background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.08), transparent 60%); }
     .dataset-card.fitch-card::after { background: radial-gradient(circle at top right, rgba(234, 179, 8, 0.08), transparent 60%); }
+    .dataset-card.austin-card::after { background: radial-gradient(circle at top right, rgba(168, 85, 247, 0.08), transparent 60%); }
+    .dataset-card.liberum-card::after { background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.08), transparent 60%); }
     .dataset-card.consolidated-card::after { background: radial-gradient(circle at top right, rgba(187, 134, 252, 0.08), transparent 60%); }
 
     .dataset-card:hover { background: var(--surface); }
@@ -803,6 +821,22 @@
       background: rgba(234, 179, 8, 0.1);
       border: 1px solid rgba(234, 179, 8, 0.25);
       color: #eab308;
+      font-weight: 800;
+      font-size: 1.1rem !important;
+      font-family: 'Outfit', sans-serif;
+    }
+    .icon-austin {
+      background: rgba(168, 85, 247, 0.1);
+      border: 1px solid rgba(168, 85, 247, 0.25);
+      color: #c084fc;
+      font-weight: 800;
+      font-size: 1.1rem !important;
+      font-family: 'Outfit', sans-serif;
+    }
+    .icon-liberum {
+      background: rgba(249, 115, 22, 0.1);
+      border: 1px solid rgba(249, 115, 22, 0.25);
+      color: #f97316;
       font-weight: 800;
       font-size: 1.1rem !important;
       font-family: 'Outfit', sans-serif;
@@ -1593,6 +1627,8 @@
       <button class="filter-btn" data-source="s_p"><span class="btn-dot dot-sp"></span> S&P Global</button>
       <button class="filter-btn" data-source="moodys"><span class="btn-dot dot-moodys"></span> Moody's Local</button>
       <button class="filter-btn" data-source="fitch"><span class="btn-dot dot-fitch"></span> Fitch Ratings</button>
+      <button class="filter-btn" data-source="austin"><span class="btn-dot dot-austin"></span> Austin Rating</button>
+      <button class="filter-btn" data-source="liberum"><span class="btn-dot dot-liberum"></span> Liberum Ratings</button>
     </div>
 
     <div class="datasets-grid reveal" id="datasets-container">
@@ -1822,6 +1858,10 @@
         cardClass = 'moodys-card';
       } else       if (lowerFile.includes('fitch')) {
         cardClass = 'fitch-card';
+      } else       if (lowerFile.includes('austin')) {
+        cardClass = 'austin-card';
+      } else       if (lowerFile.includes('liberum')) {
+        cardClass = 'liberum-card';
       } else if (lowerFile === 'emissores_consolidado.csv') {
         cardClass = 'consolidated-card';
       }
@@ -1833,6 +1873,10 @@
         mappedSource = 'moodys';
       } else if (lowerFile.startsWith('fitch_')) {
         mappedSource = 'fitch';
+      } else if (lowerFile.startsWith('austin_')) {
+        mappedSource = 'austin';
+      } else if (lowerFile.startsWith('liberum_')) {
+        mappedSource = 'liberum';
       } else if (lowerFile === 'emissores_consolidado.csv') {
         mappedSource = 'consolidated';
       }

@@ -18,6 +18,8 @@ COLUNAS = [
     "no_emissor_fitch",
     "no_emissor_moodys",
     "no_emissor_standard_and_poors",
+    "no_emissor_austin",
+    "no_emissor_liberum",
     "cnpj_emissor",
 ]
 
@@ -107,12 +109,16 @@ def consolidar(
     fitch_path: Path,
     moodys_path: Path,
     sp_path: Path,
+    austin_path: Path,
+    liberum_path: Path,
     output_path: Path,
 ) -> None:
     sources = {
         "fitch": carregar_emissores_fonte(fitch_path),
         "moodys": carregar_emissores_fonte(moodys_path),
         "standard_and_poors": carregar_emissores_fonte(sp_path),
+        "austin": carregar_emissores_fonte(austin_path),
+        "liberum": carregar_emissores_fonte(liberum_path),
     }
 
     source_padronizados: dict[str, dict[str, str]] = {}
@@ -134,6 +140,8 @@ def consolidar(
         ("fitch", "no_emissor_fitch"),
         ("moodys", "no_emissor_moodys"),
         ("standard_and_poors", "no_emissor_standard_and_poors"),
+        ("austin", "no_emissor_austin"),
+        ("liberum", "no_emissor_liberum"),
     ]
 
     rows: list[dict[str, str]] = []
@@ -169,5 +177,11 @@ def generate() -> None:
         fitch_path=data_dir / "fitch_emissores.csv",
         moodys_path=data_dir / "moodys_emissores.csv",
         sp_path=data_dir / "standard_and_poors_emissores.csv",
+        austin_path=data_dir / "austin_emissores.csv",
+        liberum_path=data_dir / "liberum_emissores.csv",
         output_path=data_dir / "emissores_consolidado.csv",
     )
+
+
+if __name__ == "__main__":
+    generate()

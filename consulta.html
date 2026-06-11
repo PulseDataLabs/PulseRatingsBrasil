@@ -44,6 +44,10 @@
       --moodys-dim:rgba(91,155,213,0.12);
       --sp:        #f0b429;
       --sp-dim:    rgba(240,180,41,0.12);
+      --austin:    #a855f7;
+      --austin-dim:rgba(168,85,247,0.12);
+      --liberum:   #f97316;
+      --liberum-dim:rgba(249,115,22,0.12);
       --font-head: 'Syne', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
       --font-body: 'Inter', sans-serif;
@@ -177,6 +181,8 @@
     .stat-card.fitch { color: var(--fitch); }
     .stat-card.moodys { color: var(--moodys); }
     .stat-card.sp { color: var(--sp); }
+    .stat-card.austin { color: var(--austin); }
+    .stat-card.liberum { color: var(--liberum); }
     .stat-card.total { color: var(--accent); }
     .stat-card.emissores { color: var(--text2); }
 
@@ -250,12 +256,18 @@
     .agency-chip.fitch  { color: var(--fitch);  border-color: var(--border); background: transparent; }
     .agency-chip.moodys { color: var(--moodys); border-color: var(--border); background: transparent; }
     .agency-chip.sp     { color: var(--sp);     border-color: var(--border); background: transparent; }
+    .agency-chip.austin { color: var(--austin); border-color: var(--border); background: transparent; }
+    .agency-chip.liberum { color: var(--liberum); border-color: var(--border); background: transparent; }
     .agency-chip.fitch  .chip-dot { background: var(--fitch); }
     .agency-chip.moodys .chip-dot { background: var(--moodys); }
     .agency-chip.sp     .chip-dot { background: var(--sp); }
+    .agency-chip.austin .chip-dot { background: var(--austin); }
+    .agency-chip.liberum .chip-dot { background: var(--liberum); }
     .agency-chip.fitch.checked  { background: var(--fitch-dim);  border-color: var(--fitch); }
     .agency-chip.moodys.checked { background: var(--moodys-dim); border-color: var(--moodys); }
     .agency-chip.sp.checked     { background: var(--sp-dim);     border-color: var(--sp); }
+    .agency-chip.austin.checked { background: var(--austin-dim); border-color: var(--austin); }
+    .agency-chip.liberum.checked { background: var(--liberum-dim); border-color: var(--liberum); }
     .agency-chip:hover { opacity: 0.85; }
 
     .filter-count {
@@ -423,9 +435,13 @@
     .agency-badge.fitch  { background: var(--fitch-dim);  color: var(--fitch); }
     .agency-badge.moodys { background: var(--moodys-dim); color: var(--moodys); }
     .agency-badge.sp     { background: var(--sp-dim);     color: var(--sp); }
+    .agency-badge.austin { background: var(--austin-dim); color: var(--austin); }
+    .agency-badge.liberum { background: var(--liberum-dim); color: var(--liberum); }
     .agency-badge.fitch  .badge-dot { background: var(--fitch); }
     .agency-badge.moodys .badge-dot { background: var(--moodys); }
     .agency-badge.sp     .badge-dot { background: var(--sp); }
+    .agency-badge.austin .badge-dot { background: var(--austin); }
+    .agency-badge.liberum .badge-dot { background: var(--liberum); }
 
     .rating-chip {
       display: inline-block;
@@ -594,6 +610,16 @@
             <div class="stat-value" id="stat-sp">—</div>
             <div class="stat-label">S&amp;P</div>
           </div>
+          <div class="stat-card austin">
+            <div class="stat-dot"></div>
+            <div class="stat-value" id="stat-austin">—</div>
+            <div class="stat-label">Austin</div>
+          </div>
+          <div class="stat-card liberum">
+            <div class="stat-dot"></div>
+            <div class="stat-value" id="stat-liberum">—</div>
+            <div class="stat-label">Liberum</div>
+          </div>
         </div>
       </div>
     </header>
@@ -630,6 +656,16 @@
             <input type="checkbox" value="S&P" checked />
             <span class="chip-dot"></span>
             S&amp;P
+          </label>
+          <label class="agency-chip austin checked">
+            <input type="checkbox" value="Austin" checked />
+            <span class="chip-dot"></span>
+            Austin
+          </label>
+          <label class="agency-chip liberum checked">
+            <input type="checkbox" value="Liberum" checked />
+            <span class="chip-dot"></span>
+            Liberum
           </label>
         </div>
         <div class="filter-count" id="filter-count" aria-live="polite">
@@ -741,7 +777,7 @@
 
     /* ── Agency badge ── */
     function agencyBadge(ag) {
-      const cls = ag === 'Fitch' ? 'fitch' : (ag === "Moody's" ? 'moodys' : 'sp');
+      const cls = ag === 'Fitch' ? 'fitch' : (ag === "Moody's" ? 'moodys' : (ag === 'S&P' ? 'sp' : (ag === 'Austin' ? 'austin' : 'liberum')));
       return `<span class="agency-badge ${cls}"><span class="badge-dot"></span>${ag}</span>`;
     }
 
@@ -769,12 +805,16 @@
     const fitchN     = allData.filter(r => r.agencia === 'Fitch').length;
     const moodysN    = allData.filter(r => r.agencia === "Moody's").length;
     const spN        = allData.filter(r => r.agencia === 'S&P').length;
+    const austinN    = allData.filter(r => r.agencia === 'Austin').length;
+    const liberumN   = allData.filter(r => r.agencia === 'Liberum').length;
 
     document.getElementById('stat-emissores').textContent = emissores.size.toLocaleString('pt-BR');
     document.getElementById('stat-ratings').textContent   = allData.length.toLocaleString('pt-BR');
     document.getElementById('stat-fitch').textContent     = fitchN.toLocaleString('pt-BR');
     document.getElementById('stat-moodys').textContent    = moodysN.toLocaleString('pt-BR');
     document.getElementById('stat-sp').textContent        = spN.toLocaleString('pt-BR');
+    document.getElementById('stat-austin').textContent    = austinN.toLocaleString('pt-BR');
+    document.getElementById('stat-liberum').textContent   = liberumN.toLocaleString('pt-BR');
 
     /* ── Init DataTable com data array (orthogonal) ── */
     function onlyDigits(s) { return s.replace(/\D/g, ''); }

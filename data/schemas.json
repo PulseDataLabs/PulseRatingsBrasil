@@ -227,5 +227,158 @@
         "example": ""
       }
     ]
+  },
+  {
+    "title": "Austin Emissores — Emissores",
+    "files": "austin_emissores.csv",
+    "source": "other",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "ACCESS FIDC - SENIORES ÚNICA"
+      },
+      {
+        "name": "no_setor",
+        "type": "str",
+        "example": "FIDCs"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
+      }
+    ]
+  },
+  {
+    "title": "Austin Ratings — Ratings",
+    "files": "austin_ratings.csv",
+    "source": "other",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "FIDCs"
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "brA"
+      },
+      {
+        "name": "de_rating_cp",
+        "type": "str",
+        "example": ""
+      },
+      {
+        "name": "de_rating_lp",
+        "type": "str",
+        "example": "brA"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2025-04-01"
+      },
+      {
+        "name": "de_acao_rating",
+        "type": "str",
+        "example": "Rating Preliminar"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": ""
+      },
+      {
+        "name": "link_relatorio",
+        "type": "str",
+        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
+      }
+    ]
+  },
+  {
+    "title": "Liberum Emissores — Emissores",
+    "files": "liberum_emissores.csv",
+    "source": "other",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "CERUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+      },
+      {
+        "name": "no_setor",
+        "type": "str",
+        "example": "FIDC"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/28971"
+      }
+    ]
+  },
+  {
+    "title": "Liberum Ratings — Ratings",
+    "files": "liberum_ratings.csv",
+    "source": "other",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "CERUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/28971"
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "FIDC"
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "CP2"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2026-06-08"
+      },
+      {
+        "name": "de_acao_rating",
+        "type": "str",
+        "example": "Atribuição"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": "Estável"
+      },
+      {
+        "name": "de_classe",
+        "type": "str",
+        "example": "Senior"
+      },
+      {
+        "name": "de_escala",
+        "type": "str",
+        "example": "Curto prazo"
+      }
+    ]
   }
 ]

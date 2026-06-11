@@ -329,7 +329,7 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
     if not group and not scraper:
         try:
             section("Consolidação de Emissores", "gear")
-            print_start("Consolidando emissores das 3 agências...")
+            print_start("Consolidando emissores das agências...")
             from scripts.consolidar_emissores import generate as consolidate
             consolidate()
             print_done("Emissores consolidados")

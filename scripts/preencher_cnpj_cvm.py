@@ -33,6 +33,8 @@ COLUNAS_CONSOLIDADO = [
     "no_emissor_fitch",
     "no_emissor_moodys",
     "no_emissor_standard_and_poors",
+    "no_emissor_austin",
+    "no_emissor_liberum",
     "cnpj_emissor",
 ]
 
