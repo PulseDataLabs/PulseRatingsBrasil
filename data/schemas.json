@@ -59,27 +59,27 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Nova Occam Brasil Gestao de Recursos Ltda"
+        "example": "Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/nova-occam-brasil-gestao-de-recursos-ltda-97491611"
+        "example": "https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Investment Management Quality Rating"
+        "example": "Long Term Issuer Default Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "Strong"
+        "example": "BB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-10"
+        "example": "2026-06-11"
       },
       {
         "name": "de_acao_rating",
@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Fortbrasil Securitizadora S.A."
+        "example": "Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/fortbrasil-administradora-de-cartoes-de-credito-sa-97172463"
+        "example": "https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AFINITTY FIC FIDC - SUBORDINADAS JÚNIOR"
+        "example": "ACCESS FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4529/Afinitty_FIC_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brCC"
+        "example": "brBBB+"
       },
       {
         "name": "de_rating_cp",
@@ -283,12 +283,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brCC"
+        "example": "brBBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-05-15"
+        "example": "2024-08-15"
       },
       {
         "name": "de_acao_rating",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10866"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11202"
       }
     ]
   },
