@@ -547,7 +547,156 @@
     @media (max-width: 480px) {
       .stat-card { min-width: calc(50% - 1px); }
       .agency-filters { gap: 0.3rem; }
-      .agency-chip { padding: 0.3rem 0.55rem; font-size: 0.68rem; }
+    }
+
+    /* ── Custom modifications for UX enhancement ── */
+    #search-clear:hover {
+      color: var(--accent) !important;
+    }
+    .search-wrapper input {
+      padding-right: 2.25rem !important;
+    }
+    
+    /* Child control styling */
+    table.dataTable tbody td.dt-control {
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+    }
+    table.dataTable tbody td.dt-control::before {
+      content: '▶';
+      display: inline-block;
+      font-size: 0.7rem;
+      color: var(--text3);
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+    table.dataTable tbody tr.dt-hasChild td.dt-control::before {
+      transform: rotate(90deg);
+      color: var(--accent);
+    }
+    
+    /* Row details styling */
+    .row-detail-container {
+      background: linear-gradient(135deg, var(--bg3) 0%, var(--surface) 100%);
+      border: 1px solid var(--border2);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin: 0.5rem 1rem;
+      box-shadow: inset 0 0 12px rgba(0, 212, 255, 0.03);
+      animation: fadeIn 0.25s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+    .detail-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .detail-label {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text3);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .detail-value {
+      font-size: 0.88rem;
+      color: var(--text);
+      font-weight: 500;
+      word-break: break-all;
+    }
+    .detail-actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.25rem;
+    }
+    .detail-link-btn, .cnpj-copy-btn, .cnpj-external-btn {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .detail-link-btn {
+      background: var(--accent);
+      color: var(--bg);
+      border: none;
+      font-weight: 600;
+    }
+    .detail-link-btn:hover {
+      background: #33ddff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
+      color: var(--bg);
+    }
+    .detail-link-na {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text3);
+      padding: 0.4rem 0;
+      display: inline-block;
+    }
+    .cnpj-copy-btn {
+      background: transparent;
+      color: var(--text2);
+      border: 1px solid var(--border);
+    }
+    .cnpj-copy-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(0, 212, 255, 0.03);
+    }
+    .cnpj-external-btn {
+      background: transparent;
+      color: var(--text3);
+      border: 1px solid var(--border);
+    }
+    .cnpj-external-btn:hover {
+      color: var(--text2);
+      border-color: var(--border2);
+      background: var(--surface2);
+    }
+    
+    /* Search Highlight */
+    .search-highlight {
+      background-color: rgba(0, 212, 255, 0.22);
+      color: #fff;
+      border-radius: 2px;
+      padding: 0 2px;
+    }
+    
+    /* Skeleton Loader */
+    .skeleton-wrapper {
+      padding: 0.5rem 0;
+    }
+    .skeleton-row {
+      display: flex; gap: 1rem; padding: 0.9rem 1.25rem; border-bottom: 1px solid var(--border);
+      align-items: center;
+    }
+    .skeleton-row:last-child { border-bottom: none; }
+    .skeleton-cell {
+      height: 14px;
+      background: linear-gradient(90deg, var(--bg3) 25%, var(--border2) 50%, var(--bg3) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite linear;
+      border-radius: 3px;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
     }
   </style>
 </head>
@@ -639,6 +788,7 @@
             autocomplete="off"
             aria-label="Buscar emissores"
           />
+          <button type="button" id="search-clear" aria-label="Limpar busca" style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text3); cursor: pointer; display: none; font-size: 1.1rem; line-height: 1; padding: 0.2rem; outline: none; transition: color 0.2s;">✕</button>
         </div>
         <div class="filter-divider" aria-hidden="true"></div>
         <div class="agency-filters" role="group" aria-label="Filtrar por agência">
@@ -677,9 +827,18 @@
     <!-- ── Table ── -->
     <section class="table-section" aria-label="Tabela de ratings">
       <div class="table-container">
-        <div id="loading" class="loading-state">
-          <div class="spinner" role="status" aria-label="Carregando"></div>
-          <p class="loading-text">Carregando dados…</p>
+        <div id="loading" class="loading-state" style="padding: 1rem 0;">
+          <div style="padding: 1rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
+            <div class="spinner-small" style="width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.7s linear infinite;"></div>
+            <p class="loading-text" style="margin: 0; font-family: var(--font-mono); font-size: 0.75rem;">Carregando ratings estruturados...</p>
+          </div>
+          <div class="skeleton-wrapper">
+            <div class="skeleton-row"><div class="skeleton-cell" style="width: 5%"></div><div class="skeleton-cell" style="width: 30%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 5%"></div></div>
+            <div class="skeleton-row"><div class="skeleton-cell" style="width: 5%"></div><div class="skeleton-cell" style="width: 25%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 20%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 5%"></div></div>
+            <div class="skeleton-row"><div class="skeleton-cell" style="width: 5%"></div><div class="skeleton-cell" style="width: 35%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 5%"></div></div>
+            <div class="skeleton-row"><div class="skeleton-cell" style="width: 5%"></div><div class="skeleton-cell" style="width: 28%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 18%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 5%"></div></div>
+            <div class="skeleton-row"><div class="skeleton-cell" style="width: 5%"></div><div class="skeleton-cell" style="width: 32%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 5%"></div></div>
+          </div>
         </div>
         <div id="error" class="error-state" style="display:none;">
           <div class="error-icon" aria-hidden="true">⚠</div>
@@ -688,6 +847,7 @@
         <table id="ratings-table" class="display responsive" style="width:100%; display:none;">
           <thead>
             <tr>
+              <th style="width: 30px; text-align: center;"></th>
               <th>Emissor</th>
               <th>CNPJ</th>
               <th>Agência</th>
@@ -718,6 +878,7 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
   <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/3.2.2/js/dataTables.buttons.min.js"></script>
@@ -731,6 +892,7 @@
     const $error   = $('#error');
     const $errMsg  = $('#error-msg');
     const $search  = $('#search-input');
+    const $searchClear = $('#search-clear');
     const $chips   = $('.agency-chip');
     const $checks  = $('.agency-chip input[type="checkbox"]');
 
@@ -779,6 +941,106 @@
     function agencyBadge(ag) {
       const cls = ag === 'Fitch' ? 'fitch' : (ag === "Moody's" ? 'moodys' : (ag === 'S&P' ? 'sp' : (ag === 'Austin' ? 'austin' : 'liberum')));
       return `<span class="agency-badge ${cls}"><span class="badge-dot"></span>${ag}</span>`;
+    }
+
+    // Copiar CNPJ para clipboard
+    window.copyToClipboard = function(text, btn) {
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = btn.textContent;
+        btn.textContent = 'Copiado!';
+        btn.style.color = 'var(--green)';
+        btn.style.borderColor = 'var(--green)';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.color = '';
+          btn.style.borderColor = '';
+        }, 1500);
+      }).catch(err => {
+        console.error('Erro ao copiar:', err);
+      });
+    };
+
+    // Formatar os detalhes expandidos (child row)
+    function formatDetail(rowData) {
+      const extra = rowData[8];
+      const setor = extra.setor || '—';
+      const instrumento = extra.instrumento || '—';
+      const link = extra.link || '';
+      const cnpjRaw = extra.cnpjRaw || '—';
+      
+      let linkButtonHtml = '';
+      if (link) {
+        linkButtonHtml = `
+          <a href="${link}" target="_blank" rel="noopener" class="detail-link-btn">
+            Acessar Relatório Original ↗
+          </a>
+        `;
+      } else {
+        linkButtonHtml = `
+          <span class="detail-link-na">Relatório indisponível</span>
+        `;
+      }
+      
+      let cnpjActionsHtml = '';
+      if (cnpjRaw && cnpjRaw !== '—') {
+        cnpjActionsHtml = `
+          <button class="cnpj-copy-btn" onclick="copyToClipboard('${cnpjRaw}', this)">
+            Copiar CNPJ
+          </button>
+          <a href="https://cvmweb.cvm.gov.br/swb/default.asp?sg_sistema=cadgeral" target="_blank" rel="noopener" class="cnpj-external-btn">
+            Consultar CVM ↗
+          </a>
+        `;
+      }
+
+      // Se colunas estiverem ocultadas no layout responsivo, renderizamos elas também
+      let collapsedHtml = '';
+      if (tableApi) {
+        const hiddenIndices = tableApi.columns().indexes().filter(idx => !tableApi.column(idx).visible() && idx !== 0);
+        if (hiddenIndices.length > 0) {
+          collapsedHtml = `
+            <div class="collapsed-cols-container" style="margin-top: 1rem; border-top: 1px solid var(--border); padding-top: 0.75rem;">
+              <span class="detail-label" style="display:block; margin-bottom: 0.5rem;">Colunas Ocultadas (Tela Pequena)</span>
+              <table class="collapsed-cols-table" style="width:100%; font-size:0.75rem; border-collapse: collapse;">
+                ${hiddenIndices.toArray().map(idx => {
+                  const title = tableApi.column(idx).header().textContent;
+                  const displayVal = rowData[idx];
+                  const val = (displayVal && typeof displayVal === 'object') ? displayVal.display : displayVal;
+                  return `
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
+                      <td style="padding: 0.35rem 0; color: var(--text3); font-family: var(--font-mono); width: 30%; font-weight: 500;">${title}:</td>
+                      <td style="padding: 0.35rem 0; color: var(--text2);">${val}</td>
+                    </tr>
+                  `;
+                }).join('')}
+              </table>
+            </div>
+          `;
+        }
+      }
+      
+      return `
+        <div class="row-detail-container">
+          <div class="detail-grid">
+            <div class="detail-item">
+              <span class="detail-label">Setor / Segmento</span>
+              <span class="detail-value">${setor}</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Ativo / Instrumento / Classe</span>
+              <span class="detail-value">${instrumento}</span>
+            </div>
+            <div class="detail-item actions-item">
+              <span class="detail-label">Ações & Links</span>
+              <div class="detail-actions">
+                ${linkButtonHtml}
+                ${cnpjActionsHtml}
+              </div>
+            </div>
+          </div>
+          ${collapsedHtml}
+        </div>
+      `;
     }
 
     /* ── Load data ── */
@@ -831,9 +1093,9 @@
       const rating  = r.rating  || '';
       const cnpj    = r.cnpj    || '';
       const ag      = r.agencia || '';
-      // valor de busca do CNPJ inclui versão só-dígitos para facilitar busca
       const cnpjSearch = cnpj + ' ' + onlyDigits(cnpj);
       return [
+        '', // Coluna 0: controle de expansão
         { display: `<span class="emissor-cell">${r.emissor || '—'}</span>`,   filter: r.emissor    || '' },
         { display: `<span class="cnpj-cell">${cnpj || '—'}</span>`,           filter: cnpjSearch },
         { display: agencyBadge(ag),                                            filter: ag },
@@ -841,6 +1103,13 @@
         { display: `<span class="rating-chip ${ratingClass(rating)}">${rating || '—'}</span>`, filter: rating },
         { display: `<span class="outlook-chip ${outlookClass(outlook)}">${outlook || '—'}</span>`, filter: outlook },
         { display: `<span class="date-cell">${fmtDate(r.dt_acao)}</span>`,     filter: fmtDate(r.dt_acao), sort: r.dt_acao || '' },
+        {
+          setor: r.setor || '',
+          instrumento: r.instrumento || '',
+          link: r.link || '',
+          cnpjRaw: cnpj,
+          emissorRaw: r.emissor || ''
+        }
       ];
     });
 
@@ -848,25 +1117,26 @@
     $table.show();
 
     tableApi = $table.DataTable({
-      responsive: true,
+      responsive: {
+        details: false // desabilita o comportamento responsivo automático de child row
+      },
       pageLength: 50,
       lengthMenu: [[25, 50, 100, 250, -1], [25, 50, 100, 250, 'Todos']],
-      order: [[0, 'asc']],
+      order: [[1, 'asc']], // ordena pela coluna 1 (Emissor)
       data: tableData,
       language: {
         url: 'https://cdn.datatables.net/plug-ins/2.2.2/i18n/pt-BR.json'
       },
       buttons: [
         { extend: 'excelHtml5', text: '↓ Excel', title: 'pulse_ratings_consulta',
-          exportOptions: { columns: ':all', orthogonal: 'filter' } }
+          exportOptions: { columns: [1, 2, 3, 4, 5, 6, 7], orthogonal: 'filter' } }
       ],
       dom: '<"dt-layout-row"<"dt-layout-cell"B><"dt-layout-cell"l>>' +
            '<"dt-layout-row"tr>' +
            '<"dt-layout-row"<"dt-layout-cell"i><"dt-layout-cell"p>>',
       columnDefs: [{
-        targets: '_all',
+        targets: [1, 2, 3, 4, 5, 6, 7],
         render: function(data) {
-          // data é o objeto {display, filter} — retorna display para tela, filter para busca
           if (data && typeof data === 'object') {
             return data.display !== undefined ? data.display : data;
           }
@@ -874,13 +1144,14 @@
         }
       }],
       columns: [
-        { data: 0, render: { _: 'display', filter: 'filter', sort: 'filter' } },
+        { data: 0, className: 'dt-control', orderable: false, searchable: false },
         { data: 1, render: { _: 'display', filter: 'filter', sort: 'filter' } },
         { data: 2, render: { _: 'display', filter: 'filter', sort: 'filter' } },
         { data: 3, render: { _: 'display', filter: 'filter', sort: 'filter' } },
         { data: 4, render: { _: 'display', filter: 'filter', sort: 'filter' } },
         { data: 5, render: { _: 'display', filter: 'filter', sort: 'filter' } },
-        { data: 6, render: { _: 'display', filter: 'filter', sort: 'sort' } },
+        { data: 6, render: { _: 'display', filter: 'filter', sort: 'filter' } },
+        { data: 7, render: { _: 'display', filter: 'filter', sort: 'sort' } },
       ],
     });
 
@@ -892,23 +1163,61 @@
     tableApi.on('draw', updateCount);
     updateCount();
 
+    /* ── Highlight da Busca ── */
+    tableApi.on('draw', function () {
+      const body = tableApi.table().body();
+      $(body).unmark();
+      
+      const term = ($search.val() || '').trim();
+      if (term) {
+        $(body).mark(term, {
+          className: 'search-highlight',
+          accuracy: 'partially',
+          exclude: ['td.dt-control', '.agency-badge']
+        });
+      }
+    });
+
+    /* ── Event handler para expandir/colapsar detalhes ── */
+    $tbody.on('click', 'td.dt-control', function (e) {
+      e.stopPropagation();
+      const tr = $(this).closest('tr');
+      const row = tableApi.row(tr);
+
+      if (row.child.isShown()) {
+        row.child.hide();
+        tr.removeClass('dt-hasChild');
+      } else {
+        row.child(formatDetail(row.data())).show();
+        tr.addClass('dt-hasChild');
+      }
+    });
+
     /* ── Filters ── */
-    // Filtro de agência via ext.search (opera sobre orthogonal 'filter' da coluna 2)
+    // Filtro de agência via ext.search (opera sobre orthogonal 'filter' da coluna 3)
     $.fn.dataTable.ext.search.push(function (_settings, _display, _idx, rowData) {
       const selected = [];
       $checks.each(function () { if (this.checked) selected.push(this.value); });
       if (!selected.length) return true;
-      const ag = rowData[2] && rowData[2].filter ? rowData[2].filter : '';
+      const ag = rowData[3] && rowData[3].filter ? rowData[3].filter : '';
       return selected.includes(ag);
     });
 
     function applyFilters() {
       const q = ($search.val() || '').trim();
+      $searchClear.toggle(!!q);
       tableApi.search(q).draw();
     }
 
     $search.on('input', applyFilters);
     $checks.on('change', applyFilters);
+
+    $searchClear.on('click', function() {
+      $search.val('');
+      $searchClear.hide();
+      applyFilters();
+      $search.focus();
+    });
 
   })();
   </script>

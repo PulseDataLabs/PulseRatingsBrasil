@@ -231,7 +231,7 @@
   {
     "title": "Austin Emissores — Emissores",
     "files": "austin_emissores.csv",
-    "source": "other",
+    "source": "austin",
     "fields": [
       {
         "name": "no_emissor",
@@ -253,7 +253,7 @@
   {
     "title": "Austin Ratings — Ratings",
     "files": "austin_ratings.csv",
-    "source": "other",
+    "source": "austin",
     "fields": [
       {
         "name": "no_emissor",
@@ -310,7 +310,7 @@
   {
     "title": "Liberum Emissores — Emissores",
     "files": "liberum_emissores.csv",
-    "source": "other",
+    "source": "liberum",
     "fields": [
       {
         "name": "no_emissor",
@@ -332,7 +332,7 @@
   {
     "title": "Liberum Ratings — Ratings",
     "files": "liberum_ratings.csv",
-    "source": "other",
+    "source": "liberum",
     "fields": [
       {
         "name": "no_emissor",
