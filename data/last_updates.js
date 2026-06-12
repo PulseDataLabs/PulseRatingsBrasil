@@ -44,7 +44,7 @@ window.PULSERATINGS_LAST_UPDATES = {
     "max": "2026-06-12"
   },
   "austin_ratings.csv": {
-    "min": "2026-06-11",
+    "min": "2026-06-12",
     "max": "2026-06-12"
   },
   "liberum_emissores.csv": {
