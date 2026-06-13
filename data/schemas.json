@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-06-09"
+        "example": "2026-06-12"
       }
     ]
   },
@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc"
+        "example": "Facta INSS CB FIDC"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570"
+        "example": "https://www.fitchratings.com/entity/facta-inss-cb-fidc-97441991"
       }
     ]
   },
@@ -315,7 +315,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "CERUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "CISS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS PRESTACAO DE SERVICOS"
       },
       {
         "name": "no_setor",
@@ -325,7 +325,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/28971"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29019"
       }
     ]
   },
@@ -337,12 +337,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "CERUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "CISS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS PRESTACAO DE SERVICOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/28971"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29019"
       },
       {
         "name": "no_tipo_rating",
@@ -352,12 +352,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP2"
+        "example": "A"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-08"
+        "example": "2026-06-12"
       },
       {
         "name": "de_acao_rating",
@@ -377,7 +377,7 @@
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Curto prazo"
+        "example": "Longo prazo"
       }
     ]
   }
