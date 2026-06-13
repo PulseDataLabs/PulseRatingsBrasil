@@ -698,6 +698,397 @@
       0% { background-position: 200% 0; }
       100% { background-position: -200% 0; }
     }
+
+    /* ── Connected elements for dynamic query tools ── */
+    .filter-bar {
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+    
+    .analytics-summary {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 var(--radius) var(--radius);
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text2);
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+    
+    .analytics-segment {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .analytics-label {
+      color: var(--text3);
+      text-transform: uppercase;
+      font-size: 0.62rem;
+      letter-spacing: 0.05em;
+    }
+    
+    .analytics-bar-bg {
+      width: 100px;
+      height: 6px;
+      background: var(--bg3);
+      border-radius: 3px;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid var(--border);
+    }
+    
+    .analytics-bar-fill {
+      height: 100%;
+      background: var(--accent);
+      width: 0%;
+      transition: width 0.4s ease;
+    }
+    .analytics-bar-fill.ig { background: var(--green); }
+    .analytics-bar-fill.spec { background: var(--gold); }
+    
+    /* Toggle switch design */
+    .view-toggle-container {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      user-select: none;
+    }
+    .toggle-label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text2);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 38px;
+      height: 18px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: var(--bg3);
+      border: 1px solid var(--border);
+      transition: .25s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 20px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 10px;
+      width: 10px;
+      left: 3px;
+      bottom: 3px;
+      background-color: var(--text3);
+      transition: .25s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: rgba(0, 212, 255, 0.1);
+      border-color: var(--accent);
+    }
+    input:checked + .slider:before {
+      transform: translateX(20px);
+      background-color: var(--accent);
+      box-shadow: 0 0 6px var(--accent);
+    }
+    
+    /* Risk filters styles */
+    .risk-filters {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .risk-btn {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 500;
+      padding: 0.35rem 0.65rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--bg3);
+      color: var(--text2);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      user-select: none;
+    }
+    .risk-btn:hover {
+      border-color: var(--border2);
+      color: var(--text);
+    }
+    .risk-btn.active.ig {
+      background: var(--green-dim);
+      color: var(--green);
+      border-color: rgba(0, 229, 160, 0.4);
+    }
+    .risk-btn.active.spec {
+      background: var(--gold-dim);
+      color: var(--gold);
+      border-color: rgba(240, 180, 41, 0.4);
+    }
+    .risk-btn.active.def {
+      background: var(--red-dim);
+      color: var(--red);
+      border-color: rgba(255, 77, 109, 0.4);
+    }
+    .risk-count {
+      font-size: 0.6rem;
+      opacity: 0.6;
+      padding: 0.02rem 0.25rem;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.05);
+      font-weight: 600;
+    }
+    .risk-btn.active .risk-count {
+      background: rgba(255, 255, 255, 0.15);
+      opacity: 1;
+    }
+    
+    /* Sector select styling */
+    .sector-filter-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .sector-filter-wrapper select {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text2);
+      padding: 0.35rem 0.65rem;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      outline: none;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      max-width: 170px;
+    }
+    .sector-filter-wrapper select:focus {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+    
+    /* Nested table styling */
+    .nested-ratings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.78rem;
+      margin-top: 0.5rem;
+    }
+    .nested-ratings-table th {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: var(--text3);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.4rem 0.6rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border2);
+      background: rgba(255, 255, 255, 0.01);
+    }
+    .nested-ratings-table td {
+      padding: 0.4rem 0.6rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      vertical-align: middle;
+    }
+    .nested-ratings-table tr:last-child td {
+      border-bottom: none;
+    }
+    .nested-ratings-table tr:hover td {
+      background: rgba(0, 212, 255, 0.015);
+    }
+
+    /* ── Recent Credit Movements Widget ── */
+    .updates-section {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .updates-container {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    }
+    .updates-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .updates-title {
+      margin: 0;
+      font-size: 0.85rem;
+      font-family: var(--font-mono);
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .updates-tabs {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .update-tab-btn {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 500;
+      padding: 0.35rem 0.65rem;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text2);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      user-select: none;
+    }
+    .update-tab-btn:hover {
+      border-color: var(--border2);
+      color: var(--text);
+    }
+    .update-tab-btn.active {
+      background: rgba(0, 212, 255, 0.08);
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: 0 0 8px rgba(0, 212, 255, 0.15);
+    }
+    .updates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 0.75rem;
+      transition: opacity 0.2s ease;
+    }
+    .update-card {
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+    .update-card:hover {
+      background: rgba(255, 255, 255, 0.02);
+      border-color: rgba(255, 255, 255, 0.08);
+      transform: translateY(-2px);
+    }
+    .update-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.62rem;
+      font-family: var(--font-mono);
+      color: var(--text3);
+    }
+    .update-card-emitter {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      text-decoration: underline dotted var(--border2);
+      text-underline-offset: 3px;
+      transition: color 0.15s ease, text-decoration-color 0.15s ease;
+      line-height: 1.25;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .update-card-emitter:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+    }
+    .update-card-inst {
+      font-size: 0.65rem;
+      color: var(--text3);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .update-card-transition {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    .rating-badge-inline {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.15rem 0.35rem;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    .rating-badge-inline.ig {
+      background: var(--green-dim);
+      color: var(--green);
+      border: 1px solid rgba(0, 229, 160, 0.2);
+    }
+    .rating-badge-inline.spec {
+      background: var(--gold-dim);
+      color: var(--gold);
+      border: 1px solid rgba(240, 180, 41, 0.2);
+    }
+    .rating-badge-inline.def {
+      background: var(--red-dim);
+      color: var(--red);
+      border: 1px solid rgba(255, 77, 109, 0.2);
+    }
+    .rating-badge-inline.nr {
+      background: var(--bg3);
+      color: var(--text3);
+      border: 1px solid var(--border);
+    }
+    .transition-arrow {
+      font-size: 0.75rem;
+      color: var(--text3);
+    }
+    .transition-badge {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 0.1rem 0.3rem;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    .transition-badge.upgrade {
+      background: rgba(0, 229, 160, 0.15);
+      color: var(--green);
+    }
+    .transition-badge.downgrade {
+      background: rgba(255, 77, 109, 0.15);
+      color: var(--red);
+    }
   </style>
 </head>
 <body>
@@ -818,8 +1209,86 @@
             Liberum
           </label>
         </div>
+        <div class="filter-divider" aria-hidden="true"></div>
+        
+        <!-- Toggle Switch de Visualização -->
+        <div class="view-toggle-container">
+          <span class="toggle-label">Agrupar Emissores</span>
+          <label class="switch" title="Alternar entre visualização de ratings individuais e emissores únicos consolidados">
+            <input type="checkbox" id="toggle-view">
+            <span class="slider"></span>
+          </label>
+        </div>
+        
         <div class="filter-count" id="filter-count" aria-live="polite">
           <span id="filtered-n">—</span> resultado(s)
+        </div>
+      </div>
+
+      <!-- Barra de Filtros Avançados e Analytics Conectada -->
+      <div class="analytics-summary">
+        <!-- Filtros Rápidos de Risco -->
+        <div class="risk-filters">
+          <span class="analytics-label">Qualidade de Risco:</span>
+          <button class="risk-btn ig" data-risk="ig" title="Filtrar Grau de Investimento (AAA a BBB-)">
+            🟢 Grau de Investimento <span class="risk-count" id="count-ig">0</span>
+          </button>
+          <button class="risk-btn spec" data-risk="spec" title="Filtrar Grau de Especulação (BB a C)">
+            🟡 Especulativo <span class="risk-count" id="count-spec">0</span>
+          </button>
+          <button class="risk-btn def" data-risk="def" title="Filtrar Inadimplência / Default (D / SD)">
+            🔴 Default <span class="risk-count" id="count-def">0</span>
+          </button>
+        </div>
+        
+        <!-- Filtro por Setor -->
+        <div class="sector-filter-wrapper">
+          <span class="analytics-label">Setor:</span>
+          <select id="sector-select" aria-label="Filtrar por setor">
+            <option value="">Todos os Setores</option>
+          </select>
+        </div>
+
+        <!-- Estatísticas Rápidas -->
+        <div class="analytics-segment" id="analytics-ig-ratio">
+          <span class="analytics-label">Grau de Investimento:</span>
+          <span class="analytics-bar-bg">
+            <span class="analytics-bar-fill ig" id="bar-ig-ratio" style="width: 0%;"></span>
+          </span>
+          <strong id="label-ig-ratio" style="color: var(--green); margin-left: 0.25rem;">0%</strong>
+        </div>
+
+        <div class="analytics-segment" id="analytics-outlook-ratio">
+          <span class="analytics-label">Perspectiva Estável:</span>
+          <span class="analytics-bar-bg">
+            <span class="analytics-bar-fill spec" id="bar-stable-ratio" style="width: 0%;"></span>
+          </span>
+          <strong id="label-stable-ratio" style="color: var(--gold); margin-left: 0.25rem;">0%</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Seção de Movimentações Recentes ── -->
+    <section class="updates-section" aria-label="Movimentações Recentes de Crédito">
+      <div class="updates-container">
+        <div class="updates-header">
+          <h2 class="updates-title">
+            <span>⚡</span> Movimentações Recentes de Crédito
+          </h2>
+          <div class="updates-tabs" role="tablist">
+            <button class="update-tab-btn active" data-tab="actions" role="tab" aria-selected="true">
+              Últimas Ações
+            </button>
+            <button class="update-tab-btn" data-tab="downgrades" role="tab" aria-selected="false">
+              🔻 Rebaixamentos
+            </button>
+            <button class="update-tab-btn" data-tab="upgrades" role="tab" aria-selected="false">
+              🔺 Aumentos
+            </button>
+          </div>
+        </div>
+        <div class="updates-grid" id="updates-content-list">
+          <!-- Gerado dinamicamente via JS -->
         </div>
       </div>
     </section>
@@ -898,6 +1367,7 @@
 
     let tableApi = null;
     let allData  = [];
+    let activeRiskFilter = null; // 'ig', 'spec', 'def', or null
 
     /* ── chip toggle style ── */
     $chips.on('click', function () {
@@ -909,19 +1379,38 @@
     /* ── Rating grade ── */
     const IG_RATINGS = new Set([
       'AAA','AA+','AA','AA-','A+','A','A-','BBB+','BBB','BBB-',
-      'Aaa','Aa1','Aa2','Aa3','A1','A2','A3','Baa1','Baa2','Baa3'
+      'Aaa','Aa1','Aa2','Aa3','A1','A2','A3','Baa1','Baa2','Baa3',
+      'A-1+','A-1','A-2','A-3','F1+','F1','F2','F3','A1+','P-1','P-2','P-3'
     ]);
     const SPEC_RATINGS = new Set([
       'BB+','BB','BB-','B+','B','B-','CCC+','CCC','CCC-','CC','C',
-      'Ba1','Ba2','Ba3','B1','B2','B3','Caa1','Caa2','Caa3','Ca'
+      'Ba1','Ba2','Ba3','B1','B2','B3','Caa1','Caa2','Caa3','Ca',
+      'B-1','B-2','B-3','C-1','C-2','C-3','NP','F-1','F-2','F-3'
     ]);
-    const DEF_RATINGS = new Set(['D','DDD','DD','RD','SD','C']);
+    const DEF_RATINGS = new Set(['D','DDD','DD','RD','SD']);
+
+    function getNormalizedRating(r) {
+      if (!r) return '';
+      return r.replace(/\(.*\)/g, '')   // remove parentheses contents
+              .replace(/\.br$/i, '')     // remove trailing .br
+              .replace(/^br/i, '')       // remove leading br
+              .trim();
+    }
+
+    function getRiskCategory(rating) {
+      if (!rating) return 'nr';
+      const base = getNormalizedRating(rating);
+      if (IG_RATINGS.has(base))   return 'ig';
+      if (SPEC_RATINGS.has(base)) return 'spec';
+      if (DEF_RATINGS.has(base))  return 'def';
+      return 'nr';
+    }
 
     function ratingClass(r) {
-      const base = (r||'').replace(/\(.*\)/,'').trim();
-      if (IG_RATINGS.has(base))   return 'rating-ig';
-      if (SPEC_RATINGS.has(base)) return 'rating-spec';
-      if (DEF_RATINGS.has(base))  return 'rating-def';
+      const cat = getRiskCategory(r);
+      if (cat === 'ig')   return 'rating-ig';
+      if (cat === 'spec') return 'rating-spec';
+      if (cat === 'def')  return 'rating-def';
       return 'rating-nr';
     }
 
@@ -943,6 +1432,30 @@
       return `<span class="agency-badge ${cls}"><span class="badge-dot"></span>${ag}</span>`;
     }
 
+    // Normalização setorial
+    function getNormalizedSector(setor, tipoRating) {
+      const s = (setor || '').trim();
+      const tr = (tipoRating || '').trim().toLowerCase();
+      
+      if (tr === 'fidc' || tr === 'fidcs' || tr === 'cri' || tr === 'cris' || tr === 'cra' || s === 'Finanças Estruturadas') {
+        return 'FIDCs / Finanças Estruturadas';
+      }
+      if (s === 'Empresas Não-Financeiras') {
+        return 'Empresas (Corporativo)';
+      }
+      if (s === 'Instituições Financeiras') {
+        return 'Instituições Financeiras';
+      }
+      if (s === 'Projetos de Infraestrutura') {
+        return 'Infraestrutura / Projetos';
+      }
+      if (s === 'Subsoberanos') {
+        return 'Subsoberanos (Estados / Municípios)';
+      }
+      if (!s) return 'Outros';
+      return s;
+    }
+
     // Copiar CNPJ para clipboard
     window.copyToClipboard = function(text, btn) {
       navigator.clipboard.writeText(text).then(() => {
@@ -960,7 +1473,7 @@
       });
     };
 
-    // Formatar os detalhes expandidos (child row)
+    // Formatar os detalhes expandidos (child row individual)
     function formatDetail(rowData) {
       const extra = rowData[8];
       const setor = extra.setor || '—';
@@ -1008,8 +1521,8 @@
                   const val = (displayVal && typeof displayVal === 'object') ? displayVal.display : displayVal;
                   return `
                     <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
-                      <td style="padding: 0.35rem 0; color: var(--text3); font-family: var(--font-mono); width: 30%; font-weight: 500;">${title}:</td>
-                      <td style="padding: 0.35rem 0; color: var(--text2);">${val}</td>
+                       <td style="padding: 0.35rem 0; color: var(--text3); font-family: var(--font-mono); width: 30%; font-weight: 500;">${title}:</td>
+                       <td style="padding: 0.35rem 0; color: var(--text2);">${val}</td>
                     </tr>
                   `;
                 }).join('')}
@@ -1043,6 +1556,69 @@
       `;
     }
 
+    // Formatar os detalhes expandidos (child row por emissor consolidado)
+    function formatEmitterRatings(extra) {
+      const ratings = extra.allRatings || [];
+      const rowsHtml = ratings.map(r => {
+        const o = r.outlook || '';
+        const rat = r.rating || '';
+        const link = r.link ? `<a href="${r.link}" target="_blank" rel="noopener" class="detail-link-btn" style="padding: 0.2rem 0.5rem; font-size: 0.65rem; display: inline-flex;">Relatório ↗</a>` : '<span class="detail-link-na" style="padding: 0.2rem 0.5rem; font-size: 0.65rem;">Indisponível</span>';
+        return `
+          <tr>
+            <td style="width: 15%;">${agencyBadge(r.agencia)}</td>
+            <td style="width: 35%; color: var(--text2); font-weight: 500;">
+              <div style="font-size: 0.75rem;">${r.tipo_rating || '—'}</div>
+              <div style="font-size: 0.65rem; color: var(--text3); font-family: var(--font-mono);">${r.instrumento || '—'}</div>
+            </td>
+            <td style="width: 15%;"><span class="rating-chip ${ratingClass(rat)}" style="padding: 0.15rem 0.4rem; font-size: 0.7rem;">${rat || '—'}</span></td>
+            <td style="width: 15%;"><span class="outlook-chip ${outlookClass(o)}" style="padding: 0.15rem 0.4rem; font-size: 0.7rem;">${o || '—'}</span></td>
+            <td style="width: 12%; color: var(--text3); font-family: var(--font-mono); font-size: 0.7rem;">${fmtDate(r.dt_acao)}</td>
+            <td style="text-align: right; width: 8%;">${link}</td>
+          </tr>
+        `;
+      }).join('');
+
+      let cnpjActionsHtml = '';
+      if (extra.cnpjRaw && extra.cnpjRaw !== '—') {
+        cnpjActionsHtml = `
+          <div style="margin-top: 0.75rem; display: flex; gap: 0.5rem; justify-content: flex-end;">
+            <button class="cnpj-copy-btn" onclick="copyToClipboard('${extra.cnpjRaw}', this)" style="padding: 0.25rem 0.6rem; font-size: 0.65rem;">
+              Copiar CNPJ
+            </button>
+            <a href="https://cvmweb.cvm.gov.br/swb/default.asp?sg_sistema=cadgeral" target="_blank" rel="noopener" class="cnpj-external-btn" style="padding: 0.25rem 0.6rem; font-size: 0.65rem;">
+              Consultar CVM ↗
+            </a>
+          </div>
+        `;
+      }
+
+      return `
+        <div class="row-detail-container" style="padding: 1rem; background: rgba(255,255,255,0.01); border-radius: var(--radius-sm); border: 1px solid var(--border);">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text3); text-transform: uppercase; margin-bottom: 0.6rem; letter-spacing: 0.05em;">
+            Ratings Ativos de <strong>${extra.emissorRaw}</strong> (${ratings.length} registros)
+          </div>
+          <div style="overflow-x: auto;">
+            <table class="nested-ratings-table">
+              <thead>
+                <tr>
+                  <th>Agência</th>
+                  <th>Tipo / Instrumento</th>
+                  <th>Rating</th>
+                  <th>Outlook</th>
+                  <th>Data</th>
+                  <th style="text-align: right;">Ação</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rowsHtml}
+              </tbody>
+            </table>
+          </div>
+          ${cnpjActionsHtml}
+        </div>
+      `;
+    }
+
     /* ── Load data ── */
     try {
       const resp = await fetch('./data/emissores_rating.json');
@@ -1062,7 +1638,7 @@
       return;
     }
 
-    /* ── Stats ── */
+    /* ── Populating overall database stats (Static) ── */
     const emissores  = new Set(allData.map(r => r.emissor));
     const fitchN     = allData.filter(r => r.agencia === 'Fitch').length;
     const moodysN    = allData.filter(r => r.agencia === "Moody's").length;
@@ -1078,8 +1654,20 @@
     document.getElementById('stat-austin').textContent    = austinN.toLocaleString('pt-BR');
     document.getElementById('stat-liberum').textContent   = liberumN.toLocaleString('pt-BR');
 
-    /* ── Init DataTable com data array (orthogonal) ── */
-    function onlyDigits(s) { return s.replace(/\D/g, ''); }
+    /* ── Populating dynamic Sector Filter ── */
+    const sectorsSet = new Set();
+    allData.forEach(r => {
+      sectorsSet.add(getNormalizedSector(r.setor, r.tipo_rating));
+    });
+    const sortedSectors = Array.from(sectorsSet).sort();
+    const $sectorSelect = $('#sector-select');
+    $sectorSelect.empty().append('<option value="">Todos os Setores</option>');
+    sortedSectors.forEach(sec => {
+      $sectorSelect.append(`<option value="${sec}">${sec}</option>`);
+    });
+
+    /* ── Helper utilities for date & strings ── */
+    function onlyDigits(s) { return (s || '').replace(/\D/g, ''); }
 
     // Converte YYYY-MM-DD → dd/mm/yyyy; retorna '—' se vazio/inválido
     function fmtDate(d) {
@@ -1088,14 +1676,15 @@
       return m ? `${m[3]}/${m[2]}/${m[1]}` : d;
     }
 
-    const tableData = allData.map(r => {
+    /* ── Mapping logic for DataTable compatibility ── */
+    function mapIndividualRow(r) {
       const outlook = r.outlook || '';
       const rating  = r.rating  || '';
       const cnpj    = r.cnpj    || '';
       const ag      = r.agencia || '';
       const cnpjSearch = cnpj + ' ' + onlyDigits(cnpj);
       return [
-        '', // Coluna 0: controle de expansão
+        '', // Col 0: controle de expansão
         { display: `<span class="emissor-cell">${r.emissor || '—'}</span>`,   filter: r.emissor    || '' },
         { display: `<span class="cnpj-cell">${cnpj || '—'}</span>`,           filter: cnpjSearch },
         { display: agencyBadge(ag),                                            filter: ag },
@@ -1104,32 +1693,207 @@
         { display: `<span class="outlook-chip ${outlookClass(outlook)}">${outlook || '—'}</span>`, filter: outlook },
         { display: `<span class="date-cell">${fmtDate(r.dt_acao)}</span>`,     filter: fmtDate(r.dt_acao), sort: r.dt_acao || '' },
         {
-          setor: r.setor || '',
+          setor: getNormalizedSector(r.setor, r.tipo_rating),
           instrumento: r.instrumento || '',
           link: r.link || '',
           cnpjRaw: cnpj,
-          emissorRaw: r.emissor || ''
+          emissorRaw: r.emissor || '',
+          isConsolidated: false
         }
       ];
-    });
+    }
+
+    function getConsolidatedEmitters(data) {
+      const emitters = {};
+      data.forEach(r => {
+        const key = (r.emissor || '').trim();
+        if (!key) return;
+        
+        if (!emitters[key]) {
+          emitters[key] = {
+            emissor: key,
+            cnpj: r.cnpj || '',
+            agencias: new Set(),
+            ratingsCount: 0,
+            lastDate: '',
+            allRatings: []
+          };
+        }
+        
+        emitters[key].ratingsCount++;
+        if (r.agencia) {
+          emitters[key].agencias.add(r.agencia);
+        }
+        if (r.dt_acao && (!emitters[key].lastDate || r.dt_acao > emitters[key].lastDate)) {
+          emitters[key].lastDate = r.dt_acao;
+        }
+        emitters[key].allRatings.push(r);
+      });
+      
+      return Object.values(emitters).map(em => {
+        const agList = Array.from(em.agencias).sort();
+        const displayAgencias = agList.map(agencyBadge).join(' ');
+        
+        // Sort ratings by date descending
+        em.allRatings.sort((a, b) => {
+          const dA = a.dt_acao || '';
+          const dB = b.dt_acao || '';
+          return dB.localeCompare(dA);
+        });
+        
+        return [
+          '', // Col 0: dt-control
+          { display: `<span class="emissor-cell" style="font-weight: 600;">${em.emissor}</span>`, filter: em.emissor },
+          { display: `<span class="cnpj-cell">${em.cnpj || '—'}</span>`, filter: em.cnpj + ' ' + onlyDigits(em.cnpj) },
+          { display: displayAgencias, filter: agList.join(' ') },
+          { display: `<span class="tipo-cell">${em.ratingsCount} rating(s) ativo(s)</span>`, filter: `${em.ratingsCount} ratings` },
+          { display: `<span class="rating-chip rating-nr">Múltiplos</span>`, filter: 'Múltiplos' },
+          { display: `<span class="outlook-chip outlook-na">—</span>`, filter: '—' },
+          { display: `<span class="date-cell">${fmtDate(em.lastDate)}</span>`, filter: fmtDate(em.lastDate), sort: em.lastDate },
+          {
+            isConsolidated: true,
+            emissorRaw: em.emissor,
+            cnpjRaw: em.cnpj,
+            allRatings: em.allRatings
+          }
+        ];
+      });
+    }
+
+    /* ── Dynamic Analytics Update ── */
+    function updateAnalytics(baseFiltered) {
+      let countIg = 0;
+      let countSpec = 0;
+      let countDef = 0;
+      
+      let stableCount = 0;
+      let hasOutlookCount = 0;
+      
+      baseFiltered.forEach(r => {
+        const cat = getRiskCategory(r.rating);
+        if (cat === 'ig') countIg++;
+        else if (cat === 'spec') countSpec++;
+        else if (cat === 'def') countDef++;
+        
+        const o = (r.outlook || '').toLowerCase();
+        if (o && o !== '—' && !o.includes('retirado') && !o.includes('withdrawn')) {
+          hasOutlookCount++;
+          if (o.includes('estável') || o.includes('stable')) {
+            stableCount++;
+          }
+        }
+      });
+      
+      // Update counters in filters
+      $('#count-ig').text(countIg.toLocaleString('pt-BR'));
+      $('#count-spec').text(countSpec.toLocaleString('pt-BR'));
+      $('#count-def').text(countDef.toLocaleString('pt-BR'));
+      
+      // Compute ratios
+      const totalRisk = countIg + countSpec + countDef;
+      const igRatio = totalRisk > 0 ? Math.round((countIg / totalRisk) * 100) : 0;
+      const stableRatio = hasOutlookCount > 0 ? Math.round((stableCount / hasOutlookCount) * 100) : 0;
+      
+      // Update bars
+      $('#bar-ig-ratio').css('width', `${igRatio}%`);
+      $('#label-ig-ratio').text(`${igRatio}%`);
+      
+      $('#bar-stable-ratio').css('width', `${stableRatio}%`);
+      $('#label-stable-ratio').text(`${stableRatio}%`);
+    }
+
+    /* ── Decoupled Search/Filter Orchestration ── */
+    function applyFilters() {
+      const q = ($search.val() || '').trim().toLowerCase();
+      $searchClear.toggle(!!q);
+      
+      // 1. Gather active agency checks
+      const selectedAgencies = [];
+      $checks.each(function () { if (this.checked) selectedAgencies.push(this.value); });
+      
+      // 2. Base Filtered (excluding Risk Filters for faceted counts)
+      const baseFiltered = allData.filter(r => {
+        // Agency Filter
+        if (selectedAgencies.length > 0 && !selectedAgencies.includes(r.agencia)) {
+          return false;
+        }
+        
+        // Sector Filter
+        const selectedSector = $sectorSelect.val();
+        if (selectedSector && getNormalizedSector(r.setor, r.tipo_rating) !== selectedSector) {
+          return false;
+        }
+        
+        // Text Search Filter
+        if (q) {
+          const emissor = (r.emissor || '').toLowerCase();
+          const cnpj = (r.cnpj || '').toLowerCase();
+          const cnpjDigits = onlyDigits(cnpj);
+          const rating = (r.rating || '').toLowerCase();
+          const tipo = (r.tipo_rating || '').toLowerCase();
+          const inst = (r.instrumento || '').toLowerCase();
+          
+          const matches = emissor.includes(q) ||
+                          cnpj.includes(q) ||
+                          cnpjDigits.includes(q) ||
+                          rating.includes(q) ||
+                          tipo.includes(q) ||
+                          inst.includes(q);
+          if (!matches) return false;
+        }
+        
+        return true;
+      });
+      
+      // Update stats and analytics widgets using the base filtered dataset
+      updateAnalytics(baseFiltered);
+
+      // 3. Final Filtered (including the active Risk Filter, if any)
+      const filteredData = baseFiltered.filter(r => {
+        if (!activeRiskFilter) return true;
+        return getRiskCategory(r.rating) === activeRiskFilter;
+      });
+
+      // 4. Map data based on Consolidated Switch
+      const isConsolidated = $('#toggle-view').is(':checked');
+      let mappedRows = [];
+      if (isConsolidated) {
+        mappedRows = getConsolidatedEmitters(filteredData);
+      } else {
+        mappedRows = filteredData.map(mapIndividualRow);
+      }
+
+      // Update counters in UI
+      $('#filtered-n').text(mappedRows.length.toLocaleString('pt-BR'));
+
+      // 5. Redraw DataTable
+      if (tableApi) {
+        tableApi.clear().rows.add(mappedRows).draw();
+      }
+    }
 
     $loading.hide();
     $table.show();
 
+    /* ── Initialize DataTable ── */
     tableApi = $table.DataTable({
       responsive: {
-        details: false // desabilita o comportamento responsivo automático de child row
+        details: false // disable default responsive behavior
       },
       pageLength: 50,
       lengthMenu: [[25, 50, 100, 250, -1], [25, 50, 100, 250, 'Todos']],
-      order: [[1, 'asc']], // ordena pela coluna 1 (Emissor)
-      data: tableData,
+      order: [[1, 'asc']], // Order by Emitter (Col 1)
+      data: [],
       language: {
         url: 'https://cdn.datatables.net/plug-ins/2.2.2/i18n/pt-BR.json'
       },
       buttons: [
-        { extend: 'excelHtml5', text: '↓ Excel', title: 'pulse_ratings_consulta',
-          exportOptions: { columns: [1, 2, 3, 4, 5, 6, 7], orthogonal: 'filter' } }
+        { 
+          extend: 'excelHtml5', 
+          text: '↓ Excel', 
+          title: 'pulse_ratings_consulta',
+          exportOptions: { columns: [1, 2, 3, 4, 5, 6, 7], orthogonal: 'filter' } 
+        }
       ],
       dom: '<"dt-layout-row"<"dt-layout-cell"B><"dt-layout-cell"l>>' +
            '<"dt-layout-row"tr>' +
@@ -1155,15 +1919,7 @@
       ],
     });
 
-    /* ── Update filter count ── */
-    function updateCount() {
-      const n = tableApi ? tableApi.rows({ search: 'applied' }).count() : allData.length;
-      document.getElementById('filtered-n').textContent = n.toLocaleString('pt-BR');
-    }
-    tableApi.on('draw', updateCount);
-    updateCount();
-
-    /* ── Highlight da Busca ── */
+    /* ── Highlighting Search Term with mark.js ── */
     tableApi.on('draw', function () {
       const body = tableApi.table().body();
       $(body).unmark();
@@ -1178,7 +1934,7 @@
       }
     });
 
-    /* ── Event handler para expandir/colapsar detalhes ── */
+    /* ── Child row event handling ── */
     $tbody.on('click', 'td.dt-control', function (e) {
       e.stopPropagation();
       const tr = $(this).closest('tr');
@@ -1188,29 +1944,202 @@
         row.child.hide();
         tr.removeClass('dt-hasChild');
       } else {
-        row.child(formatDetail(row.data())).show();
+        const data = row.data();
+        const extra = data[8];
+        if (extra && extra.isConsolidated) {
+          row.child(formatEmitterRatings(extra)).show();
+        } else {
+          row.child(formatDetail(data)).show();
+        }
         tr.addClass('dt-hasChild');
       }
     });
 
-    /* ── Filters ── */
-    // Filtro de agência via ext.search (opera sobre orthogonal 'filter' da coluna 3)
-    $.fn.dataTable.ext.search.push(function (_settings, _display, _idx, rowData) {
-      const selected = [];
-      $checks.each(function () { if (this.checked) selected.push(this.value); });
-      if (!selected.length) return true;
-      const ag = rowData[3] && rowData[3].filter ? rowData[3].filter : '';
-      return selected.includes(ag);
-    });
+    /* ── Credit rating score mapping for transitions ── */
+    const ratingScores = {
+      'AAA': 22, 'AA+': 21, 'AA': 20, 'AA-': 19, 'A+': 18, 'A': 17, 'A-': 16,
+      'BBB+': 15, 'BBB': 14, 'BBB-': 13, 'BB+': 12, 'BB': 11, 'BB-': 10,
+      'B+': 9, 'B': 8, 'B-': 7, 'CCC+': 6, 'CCC': 5, 'CCC-': 4, 'CC': 3, 'C': 2, 'D': 1,
+      // Moody's scales
+      'Aaa': 22, 'Aa1': 21, 'Aa2': 20, 'Aa3': 19, 'A1': 18, 'A2': 17, 'A3': 16,
+      'Baa1': 15, 'Baa2': 14, 'Baa3': 13, 'Ba1': 12, 'Ba2': 11, 'Ba3': 10,
+      'B1': 9, 'B2': 8, 'B3': 7, 'Caa1': 6, 'Caa2': 5, 'Caa3': 4, 'Ca': 3
+    };
 
-    function applyFilters() {
-      const q = ($search.val() || '').trim();
-      $searchClear.toggle(!!q);
-      tableApi.search(q).draw();
+    function getRatingScore(r) {
+      const base = getNormalizedRating(r);
+      return ratingScores[base] || 0;
     }
 
+    let upgrades = [];
+    let downgrades = [];
+    let latestActions = [];
+
+    function computeCreditMovements() {
+      const groups = {};
+      allData.forEach(r => {
+        if (!r.dt_acao) return;
+        const key = `${r.emissor || ''}|${r.agencia || ''}|${r.instrumento || ''}`;
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(r);
+      });
+
+      Object.values(groups).forEach(list => {
+        if (list.length < 2) return;
+        list.sort((a, b) => (a.dt_acao || '').localeCompare(b.dt_acao || ''));
+
+        for (let i = 1; i < list.length; i++) {
+          const prev = list[i - 1];
+          const curr = list[i];
+          const prevScore = getRatingScore(prev.rating);
+          const currScore = getRatingScore(curr.rating);
+
+          if (prevScore > 0 && currScore > 0 && prev.rating !== curr.rating) {
+            const transition = {
+              emissor: curr.emissor,
+              agencia: curr.agencia,
+              instrumento: curr.instrumento || curr.tipo_rating || 'Instrumento',
+              prevRating: prev.rating,
+              currRating: curr.rating,
+              dt_acao: curr.dt_acao,
+              link: curr.link
+            };
+
+            if (currScore > prevScore) {
+              upgrades.push(transition);
+            } else {
+              downgrades.push(transition);
+            }
+          }
+        }
+      });
+
+      upgrades.sort((a, b) => (b.dt_acao || '').localeCompare(a.dt_acao || ''));
+      downgrades.sort((a, b) => (b.dt_acao || '').localeCompare(a.dt_acao || ''));
+
+      // Latest actions
+      latestActions = allData
+        .filter(r => r.dt_acao)
+        .sort((a, b) => (b.dt_acao || '').localeCompare(a.dt_acao || ''))
+        .map(r => ({
+          emissor: r.emissor,
+          agencia: r.agencia,
+          instrumento: r.instrumento || r.tipo_rating || 'Instrumento',
+          rating: r.rating,
+          dt_acao: r.dt_acao,
+          link: r.link
+        }))
+        .slice(0, 8);
+    }
+
+    function renderCreditMovements(tab) {
+      const $list = $('#updates-content-list');
+      $list.css('opacity', '0');
+
+      setTimeout(() => {
+        $list.empty();
+        let itemsToShow = [];
+        if (tab === 'actions') itemsToShow = latestActions;
+        else if (tab === 'downgrades') itemsToShow = downgrades.slice(0, 8);
+        else if (tab === 'upgrades') itemsToShow = upgrades.slice(0, 8);
+
+        if (!itemsToShow.length) {
+          $list.append(`
+            <div style="grid-column: 1/-1; padding: 1.5rem; text-align: center; color: var(--text3); font-family: var(--font-mono); font-size: 0.75rem;">
+              Nenhuma movimentação registrada nesta categoria.
+            </div>
+          `);
+          $list.css('opacity', '1');
+          return;
+        }
+
+        itemsToShow.forEach(item => {
+          const formattedDate = fmtDate(item.dt_acao);
+          const isTransition = item.prevRating !== undefined;
+
+          let transitionHtml = '';
+          if (isTransition) {
+            const prevCat = getRiskCategory(item.prevRating);
+            const currCat = getRiskCategory(item.currRating);
+            const changeCls = tab === 'upgrades' ? 'upgrade' : 'downgrade';
+            const changeText = tab === 'upgrades' ? 'Upgrade' : 'Downgrade';
+
+            transitionHtml = `
+              <div class="update-card-transition">
+                <span class="rating-badge-inline ${prevCat}">${item.prevRating}</span>
+                <span class="transition-arrow">➔</span>
+                <span class="rating-badge-inline ${currCat}">${item.currRating}</span>
+                <span class="transition-badge ${changeCls}">${changeText}</span>
+              </div>
+            `;
+          } else {
+            const currCat = getRiskCategory(item.rating);
+            transitionHtml = `
+              <div class="update-card-transition">
+                <span class="rating-badge-inline ${currCat}">${item.rating || '—'}</span>
+                <span class="transition-badge upgrade" style="background: rgba(0, 212, 255, 0.1); color: var(--accent);">Atribuição</span>
+              </div>
+            `;
+          }
+
+          const reportLink = item.link ? `<a href="${item.link}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" title="Ver Relatório Original">📄</a>` : '';
+          const emitterName = item.emissor;
+
+          const cardHtml = `
+            <div class="update-card">
+              <div class="update-card-meta">
+                <span>${agencyBadge(item.agencia)}</span>
+                <div style="display: flex; align-items: center; gap: 0.35rem;">
+                  <span>${formattedDate}</span>
+                  ${reportLink}
+                </div>
+              </div>
+              <div class="update-card-emitter" title="Clique para filtrar a tabela por este emissor" data-emitter="${emitterName.replace(/"/g, '&quot;')}">
+                ${emitterName}
+              </div>
+              <div class="update-card-inst" title="${item.instrumento || '—'}">
+                ${item.instrumento || '—'}
+              </div>
+              ${transitionHtml}
+            </div>
+          `;
+          $list.append(cardHtml);
+        });
+
+        $list.css('opacity', '1');
+      }, 150);
+    }
+
+    /* ── Event Bindings ── */
     $search.on('input', applyFilters);
     $checks.on('change', applyFilters);
+    $sectorSelect.on('change', applyFilters);
+
+    // Tab buttons event
+    $('.update-tab-btn').on('click', function() {
+      const $btn = $(this);
+      if ($btn.hasClass('active')) return;
+      
+      $('.update-tab-btn').removeClass('active').attr('aria-selected', 'false');
+      $btn.addClass('active').attr('aria-selected', 'true');
+      
+      renderCreditMovements($btn.attr('data-tab'));
+    });
+
+    // Emitter click in cards event
+    $('#updates-content-list').on('click', '.update-card-emitter', function() {
+      const emitterName = $(this).attr('data-emitter');
+      if (emitterName) {
+        $search.val(emitterName);
+        $searchClear.show();
+        applyFilters();
+        
+        // Scroll smoothly to table
+        $('html, body').animate({
+          scrollTop: $table.offset().top - 100
+        }, 500);
+      }
+    });
 
     $searchClear.on('click', function() {
       $search.val('');
@@ -1218,6 +2147,42 @@
       applyFilters();
       $search.focus();
     });
+
+    // View Toggle Change
+    $('#toggle-view').on('change', function() {
+      // Collapse all child rows before changing layout
+      if (tableApi) {
+        tableApi.rows().every(function() {
+          if (this.child.isShown()) {
+            this.child.hide();
+            $(this.node()).removeClass('dt-hasChild');
+          }
+        });
+      }
+      applyFilters();
+    });
+
+    // Risk Button Filters
+    $('.risk-btn').on('click', function() {
+      const $btn = $(this);
+      const filter = $btn.attr('data-risk');
+      
+      if ($btn.hasClass('active')) {
+        $btn.removeClass('active');
+        activeRiskFilter = null;
+      } else {
+        $('.risk-btn').removeClass('active');
+        $btn.addClass('active');
+        activeRiskFilter = filter;
+      }
+      
+      applyFilters();
+    });
+
+    // First load execution
+    computeCreditMovements();
+    renderCreditMovements('actions');
+    applyFilters();
 
   })();
   </script>
