@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Consulta de ratings de crédito corporativo e soberano do Brasil por emissor ou CNPJ (S&P, Moody's, Fitch)" />
+  <meta name="description" content="Consulta de ratings de crédito corporativo e soberano do Brasil por emissor ou CNPJ (S&P, Moody's, Fitch, Austin Ratings, Liberum)" />
   <meta property="og:title" content="Pulse Ratings — Consulta" />
-  <meta property="og:description" content="Busque ratings por emissor ou CNPJ. Dados consolidados de S&P, Moody's e Fitch para o mercado brasileiro." />
+  <meta property="og:description" content="Busque ratings por emissor ou CNPJ. Dados de S&P, Moody's, Fitch, Austin Ratings e Liberum para o mercado brasileiro." />
   <title>Consulta — Pulse Ratings | Pulse Data Labs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <link rel="preload" href="./data/emissores_rating.json" as="fetch" crossorigin />
   <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.4/css/responsive.dataTables.min.css" />
@@ -17,43 +17,40 @@
   <link rel="canonical" href="https://pulsedatalabs.github.io/PulseRatingsBrasil/consulta.html" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
       --bg:        #080c10;
-      --bg2:       #0a1020;
-      --bg3:       #0d1520;
-      --surface:   #111c2a;
-      --surface2:  #162030;
+      --bg2:       #0d1218;
+      --bg3:       #111820;
+      --surface:   #141c26;
+      --surface2:  #192433;
       --border:    #1e2d3d;
       --border2:   #243444;
       --accent:    #00d4ff;
       --accent2:   #0095c8;
-      --accent-dim: rgba(0,212,255,0.08);
       --gold:      #f0b429;
       --gold2:     #c8902a;
-      --gold-dim:  rgba(240,180,41,0.1);
       --green:     #00e5a0;
-      --green-dim: rgba(0,229,160,0.1);
       --red:       #ff4d6d;
-      --red-dim:   rgba(255,77,109,0.1);
       --text:      #e8eef4;
       --text2:     #8fa3b8;
-      --text3:     #566878;
-      --fitch:     #00e5a0;
-      --fitch-dim: rgba(0,229,160,0.12);
-      --moodys:    #5b9bd5;
-      --moodys-dim:rgba(91,155,213,0.12);
-      --sp:        #f0b429;
-      --sp-dim:    rgba(240,180,41,0.12);
-      --austin:    #a855f7;
-      --austin-dim:rgba(168,85,247,0.12);
-      --liberum:   #f97316;
-      --liberum-dim:rgba(249,115,22,0.12);
+      --text3:     #5a7288;
       --font-head: 'Syne', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
-      --font-body: 'Inter', sans-serif;
+      --font-body: 'Lora', serif;
+      --fitch:     #00e5a0;
+      --moodys:    #5b9bd5;
+      --sp:        #f0b429;
+      --austin:    #c084fc;
+      --liberum:   #fb923c;
+
+      /* Layout tokens */
+      --page-max:  1200px;
+      --gap:       1.5rem;
       --radius:    8px;
       --radius-sm: 5px;
     }
+
     html { scroll-behavior: smooth; }
     body {
       font-family: var(--font-body);
@@ -65,900 +62,613 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { color: #66e5ff; }
 
-    /* ── Skip link ── */
+    /* ── Skip link ──────────────────────── */
     .skip-link {
       position: absolute; top: -100%; left: 50%; transform: translateX(-50%);
-      background: var(--accent); color: var(--bg);
-      padding: 0.75rem 1.5rem; border-radius: 0 0 var(--radius) var(--radius);
-      font-family: var(--font-mono); font-size: 0.8rem; font-weight: 500;
-      z-index: 1000; transition: top 0.2s;
+      background: var(--accent); color: var(--bg); padding: 0.75rem 1.5rem;
+      border-radius: 0 0 8px 8px; font-family: var(--font-mono); font-size: 0.8rem;
+      font-weight: 500; z-index: 1000; text-decoration: none; transition: top 0.2s;
     }
     .skip-link:focus { top: 0; }
 
-    /* ── Nav ── */
+    /* ── Nav ────────────────────────────── */
     nav {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 2rem; height: 60px;
-      background: rgba(8,12,16,0.92);
-      backdrop-filter: blur(12px);
+      padding: 0 2rem;
+      height: 56px;
+      background: var(--bg2);
       border-bottom: 1px solid var(--border);
       position: sticky; top: 0; z-index: 100;
     }
     .nav-logo {
-      display: flex; align-items: center; gap: 0.6rem;
+      display: flex; align-items: center; gap: 0.5rem;
       font-family: var(--font-head); font-weight: 700; font-size: 1rem;
       color: var(--text); text-decoration: none;
-      letter-spacing: -0.01em;
     }
-    .nav-logo img { height: 28px; width: auto; }
-    .nav-logo-text .pulse { color: #fff; }
-    .nav-logo-text .ratings { color: var(--gold); }
-
-    .nav-links { display: flex; gap: 0.25rem; list-style: none; align-items: center; }
+    .nav-logo .pulse-dot {
+      width: 9px; height: 9px; border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent2);
+      flex-shrink: 0;
+    }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
     .nav-links a {
-      font-family: var(--font-mono); font-size: 0.78rem;
-      color: var(--text2); padding: 0.4rem 0.75rem; border-radius: var(--radius-sm);
-      transition: color 0.2s, background 0.2s;
+      font-family: var(--font-mono); font-size: 0.8rem;
+      color: var(--text2); transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--text); background: var(--surface); }
+    .nav-links a:hover { color: var(--accent); }
     .nav-links a.active { color: var(--accent); }
-
-    .nav-back {
-      display: flex; align-items: center; gap: 0.4rem;
-      font-family: var(--font-mono); font-size: 0.75rem;
-      color: var(--text3); padding: 0.4rem 0.75rem; border-radius: var(--radius-sm);
-      border: 1px solid var(--border); transition: all 0.2s;
-    }
-    .nav-back:hover { color: var(--text2); border-color: var(--border2); background: var(--surface); }
-
     .nav-cta {
-      display: inline-flex; align-items: center; gap: 0.3rem;
-      padding: 0.4rem 1rem;
-      background: var(--accent); color: var(--bg); border-radius: var(--radius-sm);
-      font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600;
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-      box-shadow: 0 0 0 0 rgba(0,212,255,0);
+      display: inline-block; padding: 0.4rem 1rem;
+      background: transparent; color: var(--accent);
+      border: 1px solid var(--accent2); border-radius: var(--radius-sm);
+      font-family: var(--font-mono); font-size: 0.75rem; font-weight: 500;
+      transition: background 0.2s, color 0.2s;
     }
-    .nav-cta:hover {
-      background: #33ddff; color: var(--bg);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 16px rgba(0,212,255,0.25);
+    .nav-cta:hover { background: var(--accent); color: var(--bg); }
+
+    /* ── Page wrapper ───────────────────── */
+    .page-container {
+      max-width: var(--page-max);
+      margin: 0 auto;
+      padding: 0 2rem;
     }
 
-    /* ── Page header ── */
-    .page-header {
-      background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+    /* ── Hero ────────────────────────────── */
+    .hero {
+      padding: 2.5rem 0 2rem;
       border-bottom: 1px solid var(--border);
-      padding: 2.5rem 2rem 2rem;
     }
-    .page-header-inner {
-      max-width: 1300px; margin: 0 auto;
-      display: flex; align-items: flex-end; justify-content: space-between;
-      flex-wrap: wrap; gap: 1.5rem;
+    .hero-inner {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
-    .page-title-group {}
-    .page-eyebrow {
-      font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500;
-      color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase;
-      margin-bottom: 0.5rem;
-      display: flex; align-items: center; gap: 0.4rem;
+    .hero-text h1 {
+      font-family: var(--font-head); font-size: 1.75rem; font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
     }
-    .page-eyebrow::before {
-      content: ''; display: inline-block;
-      width: 20px; height: 1px; background: var(--accent);
+    .hero-text h1 span {
+      background: linear-gradient(135deg, var(--accent), #66e5ff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
-    .page-header h1 {
-      font-family: var(--font-head); font-size: 2rem; font-weight: 800;
-      color: var(--text); line-height: 1.1; letter-spacing: -0.02em;
-    }
-    .page-header p {
+    .hero-text p {
       color: var(--text2); font-size: 0.9rem; margin-top: 0.4rem;
-      max-width: 480px;
     }
 
-    /* ── Stats cards ── */
-    .stats-row {
-      display: flex; gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-    }
-    .stat-card {
-      flex: 1; background: var(--surface);
-      padding: 0.875rem 1.25rem;
-      display: flex; flex-direction: column; gap: 0.1rem;
-      position: relative; overflow: hidden;
-      transition: background 0.2s;
-    }
-    .stat-card::after {
-      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-      height: 2px; background: currentColor; opacity: 0;
-      transition: opacity 0.2s;
-    }
-    .stat-card:hover { background: var(--surface2); }
-    .stat-card:hover::after { opacity: 0.4; }
-    .stat-card.fitch { color: var(--fitch); }
-    .stat-card.moodys { color: var(--moodys); }
-    .stat-card.sp { color: var(--sp); }
-    .stat-card.austin { color: var(--austin); }
-    .stat-card.liberum { color: var(--liberum); }
-    .stat-card.total { color: var(--accent); }
-    .stat-card.emissores { color: var(--text2); }
-
-    .stat-value {
-      font-family: var(--font-mono); font-size: 1.35rem; font-weight: 600;
-      color: currentColor; line-height: 1;
-    }
-    .stat-label {
-      font-family: var(--font-mono); font-size: 0.65rem; font-weight: 500;
-      color: var(--text3); text-transform: uppercase; letter-spacing: 0.07em;
-    }
-    .stat-dot {
-      width: 6px; height: 6px; border-radius: 50%;
-      background: currentColor; opacity: 0.6;
-      position: absolute; top: 0.875rem; right: 0.875rem;
-    }
-
-    /* ── Filter bar ── */
-    .filter-section {
-      max-width: 1300px; margin: 0 auto;
-      padding: 1.5rem 2rem 0;
-    }
-    .filter-bar {
-      display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;
-      padding: 1rem 1.25rem;
+    /* ── Stats ───────────────────────────── */
+    .stats-bar {
+      display: flex; gap: 0;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
+      overflow: hidden;
+      flex-shrink: 0;
     }
-    .search-wrapper {
-      flex: 1; min-width: 220px;
+    .stat-item {
+      font-family: var(--font-mono);
+      text-align: center;
+      padding: 0.75rem 1.25rem;
+      border-right: 1px solid var(--border);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-value {
+      font-size: 1.2rem; font-weight: 600; color: var(--accent);
+      display: block; line-height: 1.2;
+    }
+    .stat-label {
+      font-size: 0.65rem; color: var(--text3); text-transform: uppercase;
+      letter-spacing: 0.07em; display: block; margin-top: 0.1rem;
+    }
+    .stat-item.fitch   .stat-value { color: var(--fitch); }
+    .stat-item.moodys  .stat-value { color: var(--moodys); }
+    .stat-item.sp      .stat-value { color: var(--sp); }
+
+    /* ── Toolbar (filters + export) ─────── */
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1.25rem 0;
+      flex-wrap: wrap;
+    }
+    .toolbar-search {
       position: relative;
+      flex: 1;
+      min-width: 220px;
     }
-    .search-icon {
-      position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%);
+    .toolbar-search svg {
+      position: absolute; left: 0.65rem; top: 50%; transform: translateY(-50%);
       color: var(--text3); pointer-events: none;
-      display: flex; align-items: center;
     }
-    .search-wrapper input {
+    .toolbar-search input {
       width: 100%;
-      background: var(--bg3); border: 1px solid var(--border);
-      color: var(--text); padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+      background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); padding: 0.55rem 0.75rem 0.55rem 2.1rem;
       border-radius: var(--radius-sm);
       font-family: var(--font-mono); font-size: 0.8rem;
-      transition: border-color 0.2s, box-shadow 0.2s;
+      transition: border-color 0.2s;
     }
-    .search-wrapper input:focus {
-      outline: none; border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(0,212,255,0.1);
-    }
-    .search-wrapper input::placeholder { color: var(--text3); }
+    .toolbar-search input:focus { outline: none; border-color: var(--accent); }
+    .toolbar-search input::placeholder { color: var(--text3); }
 
-    .filter-divider {
+    .toolbar-divider {
       width: 1px; height: 28px; background: var(--border);
       flex-shrink: 0;
     }
-    .agency-filters {
-      display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap;
+
+    .agency-checkboxes {
+      display: flex; gap: 0.5rem; align-items: center;
+      flex-wrap: wrap;
     }
-    .agency-chip {
+    .agency-checkboxes input[type="checkbox"] { display: none; }
+    .agency-toggle {
       display: inline-flex; align-items: center; gap: 0.35rem;
-      padding: 0.35rem 0.75rem;
-      border: 1px solid transparent; border-radius: 999px;
-      font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500;
-      cursor: pointer; transition: all 0.15s; user-select: none;
+      padding: 0.35rem 0.7rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      font-family: var(--font-mono); font-size: 0.75rem;
+      cursor: pointer; transition: all 0.15s;
+      color: var(--text3);
+      user-select: none;
     }
-    .agency-chip input[type="checkbox"] { display: none; }
-    .agency-chip .chip-dot {
-      width: 6px; height: 6px; border-radius: 50%;
+    .agency-toggle .dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      flex-shrink: 0;
     }
-    .agency-chip.fitch  { color: var(--fitch);  border-color: var(--border); background: transparent; }
-    .agency-chip.moodys { color: var(--moodys); border-color: var(--border); background: transparent; }
-    .agency-chip.sp     { color: var(--sp);     border-color: var(--border); background: transparent; }
-    .agency-chip.austin { color: var(--austin); border-color: var(--border); background: transparent; }
-    .agency-chip.liberum { color: var(--liberum); border-color: var(--border); background: transparent; }
-    .agency-chip.fitch  .chip-dot { background: var(--fitch); }
-    .agency-chip.moodys .chip-dot { background: var(--moodys); }
-    .agency-chip.sp     .chip-dot { background: var(--sp); }
-    .agency-chip.austin .chip-dot { background: var(--austin); }
-    .agency-chip.liberum .chip-dot { background: var(--liberum); }
-    .agency-chip.fitch.checked  { background: var(--fitch-dim);  border-color: var(--fitch); }
-    .agency-chip.moodys.checked { background: var(--moodys-dim); border-color: var(--moodys); }
-    .agency-chip.sp.checked     { background: var(--sp-dim);     border-color: var(--sp); }
-    .agency-chip.austin.checked { background: var(--austin-dim); border-color: var(--austin); }
-    .agency-chip.liberum.checked { background: var(--liberum-dim); border-color: var(--liberum); }
-    .agency-chip:hover { opacity: 0.85; }
+    .agency-toggle.fitch  .dot { background: var(--fitch); }
+    .agency-toggle.moodys .dot { background: var(--moodys); }
+    .agency-toggle.sp     .dot { background: var(--sp); }
 
-    .filter-count {
-      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);
-      margin-left: auto; white-space: nowrap;
-    }
-    .filter-count span { color: var(--accent); font-weight: 500; }
+    input[type="checkbox"]:checked + .agency-toggle.fitch   { border-color: var(--fitch);   color: var(--fitch);   background: rgba(0,229,160,0.08); }
+    input[type="checkbox"]:checked + .agency-toggle.moodys  { border-color: var(--moodys);  color: var(--moodys);  background: rgba(91,155,213,0.08); }
+    input[type="checkbox"]:checked + .agency-toggle.sp      { border-color: var(--sp);      color: var(--sp);      background: rgba(240,180,41,0.08); }
+    input[type="checkbox"]:checked + .agency-toggle.austin  { border-color: var(--austin);  color: var(--austin);  background: rgba(192,132,252,0.08); }
+    input[type="checkbox"]:checked + .agency-toggle.liberum { border-color: var(--liberum); color: var(--liberum); background: rgba(251,146,60,0.08); }
 
-    /* ── Table section ── */
+    .agency-toggle.austin  .dot { background: var(--austin); }
+    .agency-toggle.liberum .dot { background: var(--liberum); }
+
+    .export-btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.5rem 0.9rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono); font-size: 0.75rem; color: var(--text2);
+      cursor: pointer; transition: all 0.15s; white-space: nowrap;
+    }
+    .export-btn:hover { border-color: var(--accent2); color: var(--accent); background: var(--surface2); }
+
+    /* ── Table container ─────────────────── */
     .table-section {
-      max-width: 1300px; margin: 0 auto;
-      padding: 1rem 2rem 4rem;
-    }
-    .table-container {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       overflow: hidden;
-    }
-    .table-toolbar {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0.75rem 1rem; border-bottom: 1px solid var(--border);
-      flex-wrap: wrap; gap: 0.5rem;
-    }
-    .table-toolbar-left {
-      display: flex; align-items: center; gap: 0.5rem;
-    }
-    .table-label {
-      font-family: var(--font-mono); font-size: 0.72rem;
-      color: var(--text3); text-transform: uppercase; letter-spacing: 0.06em;
+      margin-bottom: 3rem;
     }
 
     /* DataTables overrides */
+    .dataTables_wrapper {
+      font-family: var(--font-mono);
+    }
+
+    /* Top bar: length + filter */
+    .dt-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+    .dataTables_length label {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.75rem; color: var(--text2);
+    }
+    .dataTables_length select {
+      background: var(--bg3); border: 1px solid var(--border2);
+      color: var(--text); border-radius: var(--radius-sm);
+      padding: 0.3rem 0.5rem;
+      font-family: var(--font-mono); font-size: 0.75rem;
+    }
+    .dataTables_length select:focus { outline: none; border-color: var(--accent); }
+
+    .dataTables_filter { display: none; } /* using custom search */
+
+    /* Table */
     table.dataTable {
+      width: 100% !important;
       background: transparent !important;
-      font-size: 0.84rem;
-      border-collapse: collapse !important;
+      font-size: 0.82rem;
+      border-collapse: collapse;
       margin: 0 !important;
     }
     table.dataTable thead th {
       background: var(--bg3) !important;
       color: var(--text3) !important;
-      border-bottom: 1px solid var(--border2) !important;
+      border-bottom: 1px solid var(--border) !important;
       border-top: none !important;
       font-family: var(--font-mono); font-size: 0.68rem;
       text-transform: uppercase; letter-spacing: 0.07em;
-      padding: 0.65rem 1rem !important;
+      padding: 0.6rem 0.75rem !important;
       font-weight: 500;
       white-space: nowrap;
     }
-    table.dataTable thead th.sorting::after,
-    table.dataTable thead th.sorting_asc::after,
-    table.dataTable thead th.sorting_desc::after {
-      opacity: 0.4 !important;
-    }
-    table.dataTable thead th.sorting_asc::after { opacity: 0.9 !important; color: var(--accent) !important; }
-    table.dataTable thead th.sorting_desc::after { opacity: 0.9 !important; color: var(--accent) !important; }
+    table.dataTable thead th:first-child { padding-left: 1rem !important; }
+    table.dataTable thead th:last-child  { padding-right: 1rem !important; }
 
     table.dataTable tbody td {
-      border-bottom: 1px solid rgba(30,45,61,0.5) !important;
-      border-top: none !important;
-      padding: 0.6rem 1rem !important;
+      border-bottom: 1px solid var(--border) !important;
+      padding: 0.55rem 0.75rem !important;
       vertical-align: middle;
+      color: var(--text);
     }
+    table.dataTable tbody td:first-child { padding-left: 1rem !important; }
+    table.dataTable tbody td:last-child  { padding-right: 1rem !important; }
+
     table.dataTable tbody tr { background: transparent !important; }
     table.dataTable tbody tr:last-child td { border-bottom: none !important; }
-    table.dataTable tbody tr:hover td { background: rgba(0,212,255,0.025) !important; }
+    table.dataTable tbody tr:hover td { background: rgba(0,212,255,0.03) !important; }
 
-    .dataTables_wrapper {
-      color: var(--text) !important;
+    /* Bottom bar */
+    .dt-bottom-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
     }
-    .dataTables_wrapper .dataTables_filter { display: none !important; } /* use our own search */
-    .dataTables_wrapper .dataTables_length label {
-      color: var(--text3) !important;
-      font-family: var(--font-mono); font-size: 0.72rem;
-      display: flex; align-items: center; gap: 0.4rem;
+    .dataTables_info {
+      font-size: 0.72rem; color: var(--text3);
     }
-    .dataTables_wrapper .dataTables_length select {
-      background: #111c2a !important;
-      border: 1px solid var(--border) !important;
-      color: #e8eef4 !important;
-      border-radius: var(--radius-sm);
-      padding: 0.25rem 0.4rem !important;
-      font-family: var(--font-mono); font-size: 0.72rem;
+    .dataTables_paginate {
+      display: flex; gap: 0.25rem; align-items: center;
     }
-    .dataTables_wrapper .dataTables_length select option {
-      background: #111c2a;
-      color: #e8eef4;
-    }
-    .dataTables_wrapper .dataTables_info {
-      color: var(--text3) !important;
-      font-family: var(--font-mono); font-size: 0.7rem !important;
-    }
-    .dataTables_wrapper .dataTables_paginate {
-      font-family: var(--font-mono); font-size: 0.75rem;
-    }
-    .dataTables_wrapper .dataTables_paginate .paginate_button {
-      background: transparent !important;
+    .dataTables_paginate .paginate_button {
+      background: var(--bg3) !important;
       color: var(--text2) !important;
       border: 1px solid var(--border) !important;
       border-radius: var(--radius-sm) !important;
-      margin: 0 0.1rem; padding: 0.3rem 0.65rem !important;
-      transition: all 0.15s;
+      padding: 0.3rem 0.6rem !important;
+      font-size: 0.72rem !important;
+      cursor: pointer; transition: all 0.15s;
+      line-height: 1.4;
     }
-    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    .dataTables_paginate .paginate_button:hover:not(.disabled) {
       background: var(--surface2) !important;
       color: var(--accent) !important;
-      border-color: var(--border2) !important;
+      border-color: var(--accent2) !important;
     }
-    .dataTables_wrapper .dataTables_paginate .paginate_button.current,
-    .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-      background: var(--accent) !important;
+    .dataTables_paginate .paginate_button.current {
+      background: var(--accent2) !important;
       color: var(--bg) !important;
       border-color: var(--accent) !important;
       font-weight: 600;
     }
-    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
-      opacity: 0.3; cursor: default !important;
+    .dataTables_paginate .paginate_button.disabled {
+      opacity: 0.35; cursor: default !important;
     }
-    .dataTables_wrapper .dt-layout-row {
-      margin: 0 !important;
-      padding: 0.6rem 1rem;
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 0.5rem;
-      border-top: 1px solid var(--border);
-    }
-    .dataTables_wrapper .dt-layout-row:first-child {
-      border-top: none; border-bottom: 1px solid var(--border);
-      background: var(--bg3);
-    }
-    .dataTables_wrapper .dt-layout-cell { padding: 0 !important; }
+    .dataTables_wrapper .dt-layout-row { display: none; } /* we use custom layout */
 
-    /* dt-buttons */
-    .dt-buttons { display: flex; gap: 0.4rem; }
-    .dt-button {
-      background: var(--surface2) !important;
-      color: var(--text2) !important;
-      border: 1px solid var(--border) !important;
-      border-radius: var(--radius-sm) !important;
-      padding: 0.3rem 0.75rem !important;
-      font-family: var(--font-mono) !important; font-size: 0.72rem !important;
-      cursor: pointer; transition: all 0.15s;
+    /* Cell styles */
+    .cnpj-cell {
+      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);
+      white-space: nowrap; letter-spacing: 0.02em;
     }
-    .dt-button:hover {
-      background: var(--border2) !important;
-      color: var(--accent) !important;
-      border-color: var(--accent2) !important;
-    }
-
-    /* ── Cell styles ── */
     .emissor-cell {
       font-weight: 500; color: var(--text); font-size: 0.84rem;
     }
-    .cnpj-cell {
-      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);
-      white-space: nowrap;
+    .rating-cell {
+      font-family: var(--font-mono); font-weight: 600; font-size: 0.85rem;
     }
-    .agency-badge {
-      display: inline-flex; align-items: center; gap: 0.3rem;
-      padding: 0.2rem 0.6rem; border-radius: 999px;
-      font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500;
-      white-space: nowrap;
-    }
-    .agency-badge .badge-dot { width: 5px; height: 5px; border-radius: 50%; }
-    .agency-badge.fitch  { background: var(--fitch-dim);  color: var(--fitch); }
-    .agency-badge.moodys { background: var(--moodys-dim); color: var(--moodys); }
-    .agency-badge.sp     { background: var(--sp-dim);     color: var(--sp); }
-    .agency-badge.austin { background: var(--austin-dim); color: var(--austin); }
-    .agency-badge.liberum { background: var(--liberum-dim); color: var(--liberum); }
-    .agency-badge.fitch  .badge-dot { background: var(--fitch); }
-    .agency-badge.moodys .badge-dot { background: var(--moodys); }
-    .agency-badge.sp     .badge-dot { background: var(--sp); }
-    .agency-badge.austin .badge-dot { background: var(--austin); }
-    .agency-badge.liberum .badge-dot { background: var(--liberum); }
-
-    .rating-chip {
-      display: inline-block;
-      padding: 0.2rem 0.55rem; border-radius: 4px;
-      font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600;
-      letter-spacing: 0.02em;
-    }
-    .rating-ig   { background: rgba(0,229,160,0.1); color: #00e5a0; border: 1px solid rgba(0,229,160,0.2); }
-    .rating-spec { background: rgba(255,180,41,0.1); color: #ffb429; border: 1px solid rgba(255,180,41,0.2); }
-    .rating-def  { background: rgba(255,77,109,0.1); color: #ff4d6d; border: 1px solid rgba(255,77,109,0.2); }
-    .rating-nr   { background: rgba(100,120,140,0.1); color: var(--text3); border: 1px solid var(--border); }
-
-    .tipo-cell {
-      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text2);
-    }
-
-    .outlook-chip {
-      display: inline-flex; align-items: center; gap: 0.25rem;
-      font-size: 0.78rem; font-family: var(--font-mono);
-    }
-    .outlook-chip::before {
-      content: ''; width: 5px; height: 5px; border-radius: 50%;
-      display: inline-block; background: currentColor; opacity: 0.7;
-    }
-    .outlook-stable    { color: var(--green); }
-    .outlook-positive  { color: var(--accent); }
-    .outlook-negative  { color: var(--red); }
-    .outlook-developing { color: var(--gold); }
-    .outlook-withdrawn  { color: var(--text3); }
-    .outlook-na        { color: var(--text3); }
-
     .date-cell {
       font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);
       white-space: nowrap;
     }
 
-    /* ── Loading / error ── */
-    .loading-state {
-      text-align: center; padding: 5rem 1rem;
+    /* Agency badge */
+    .badge {
+      display: inline-block; padding: 0.18rem 0.55rem; border-radius: 4px;
+      font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500;
+      letter-spacing: 0.02em; white-space: nowrap;
     }
-    .spinner {
-      width: 32px; height: 32px;
-      border: 2px solid var(--border);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.7s linear infinite;
+    .badge-fitch   { background: rgba(0,229,160,0.12);   color: var(--fitch);   border: 1px solid rgba(0,229,160,0.2); }
+    .badge-moodys  { background: rgba(91,155,213,0.12);  color: var(--moodys);  border: 1px solid rgba(91,155,213,0.2); }
+    .badge-sp      { background: rgba(240,180,41,0.12);  color: var(--sp);      border: 1px solid rgba(240,180,41,0.2); }
+    .badge-austin  { background: rgba(192,132,252,0.12); color: var(--austin);  border: 1px solid rgba(192,132,252,0.2); }
+    .badge-liberum { background: rgba(251,146,60,0.12);  color: var(--liberum); border: 1px solid rgba(251,146,60,0.2); }
+    .badge-other   { background: rgba(142,163,184,0.1);  color: var(--text2);   border: 1px solid rgba(142,163,184,0.15); }
+
+    /* Outlook */
+    .outlook-cell { font-family: var(--font-mono); font-size: 0.75rem; }
+    .outlook-stable    { color: var(--green); }
+    .outlook-positive  { color: var(--accent); }
+    .outlook-negative  { color: var(--red); }
+    .outlook-developing { color: var(--gold); }
+    .outlook-withdrawn  { color: var(--text3); }
+
+    /* ── View toggle switch ─────────────────── */
+    .view-toggle {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-family: var(--font-mono); font-size: 0.75rem; color: var(--text2);
+      cursor: pointer; user-select: none; white-space: nowrap;
+    }
+    .view-toggle input[type="checkbox"] { display: none; }
+    .toggle-track {
+      position: relative; width: 36px; height: 20px;
+      background: var(--border2); border-radius: 10px;
+      transition: background 0.2s; flex-shrink: 0;
+    }
+    .toggle-thumb {
+      position: absolute; top: 3px; left: 3px;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--text3); transition: all 0.2s;
+    }
+    .view-toggle input:checked ~ .toggle-track { background: var(--accent2); }
+    .view-toggle input:checked ~ .toggle-track .toggle-thumb {
+      left: 19px; background: var(--accent);
+    }
+    .toggle-label-off { color: var(--text2); }
+    .toggle-label-on  { color: var(--text3); }
+    .view-toggle input:checked ~ .toggle-label-off { color: var(--text3); }
+    .view-toggle input:checked ~ .toggle-label-on  { color: var(--accent); }
+
+    /* ── Clickable row ───────────────────────── */
+    table.dataTable tbody tr.clickable-row { cursor: pointer; }
+    table.dataTable tbody tr.clickable-row:hover td {
+      background: rgba(0,212,255,0.06) !important;
+    }
+    table.dataTable tbody tr.row-active td {
+      background: rgba(0,212,255,0.09) !important;
+    }
+
+    /* ── Drawer overlay ─────────────────────── */
+    .drawer-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.55);
+      z-index: 200;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.25s;
+    }
+    .drawer-overlay.open { opacity: 1; pointer-events: all; }
+
+    /* ── Drawer panel ───────────────────────── */
+    .drawer {
+      position: fixed; top: 0; right: 0; bottom: 0;
+      width: min(560px, 100vw);
+      background: var(--bg2);
+      border-left: 1px solid var(--border);
+      z-index: 201;
+      display: flex; flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+      overflow: hidden;
+    }
+    .drawer.open { transform: translateX(0); }
+
+    /* Drawer header */
+    .drawer-header {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem 1rem;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .drawer-header-left { flex: 1; min-width: 0; }
+    .drawer-emissor-name {
+      font-family: var(--font-head); font-size: 1.05rem; font-weight: 700;
+      color: var(--text); line-height: 1.25;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .drawer-cnpj {
+      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);
+      margin-top: 0.2rem;
+    }
+    .drawer-close {
+      background: none; border: 1px solid var(--border); color: var(--text2);
+      width: 32px; height: 32px; border-radius: var(--radius-sm);
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: all 0.15s;
+    }
+    .drawer-close:hover { border-color: var(--accent2); color: var(--accent); background: rgba(0,212,255,0.06); }
+
+    /* Drawer summary pills */
+    .drawer-summary {
+      display: flex; gap: 0.5rem; flex-wrap: wrap;
+      padding: 0.75rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .summary-pill {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      padding: 0.25rem 0.65rem; border-radius: 20px;
+      font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600;
+      border: 1px solid transparent;
+    }
+    .summary-pill .pill-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .summary-pill.fitch   { background: rgba(0,229,160,0.1);   color: var(--fitch);   border-color: rgba(0,229,160,0.2); }
+    .summary-pill.fitch   .pill-dot { background: var(--fitch); }
+    .summary-pill.moodys  { background: rgba(91,155,213,0.1);  color: var(--moodys);  border-color: rgba(91,155,213,0.2); }
+    .summary-pill.moodys  .pill-dot { background: var(--moodys); }
+    .summary-pill.sp      { background: rgba(240,180,41,0.1);  color: var(--sp);      border-color: rgba(240,180,41,0.2); }
+    .summary-pill.sp      .pill-dot { background: var(--sp); }
+    .summary-pill.austin  { background: rgba(192,132,252,0.1); color: var(--austin);  border-color: rgba(192,132,252,0.2); }
+    .summary-pill.austin  .pill-dot { background: var(--austin); }
+    .summary-pill.liberum { background: rgba(251,146,60,0.1);  color: var(--liberum); border-color: rgba(251,146,60,0.2); }
+    .summary-pill.liberum .pill-dot { background: var(--liberum); }
+
+    /* Drawer body (scrollable) */
+    .drawer-body {
+      flex: 1; overflow-y: auto; padding: 1.25rem 1.5rem;
+    }
+    .drawer-body::-webkit-scrollbar { width: 5px; }
+    .drawer-body::-webkit-scrollbar-track { background: transparent; }
+    .drawer-body::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+    /* Agency section inside drawer */
+    .agency-section { margin-bottom: 1.5rem; }
+    .agency-section:last-child { margin-bottom: 0; }
+    .agency-section-header {
+      display: flex; align-items: center; gap: 0.5rem;
+      margin-bottom: 0.65rem;
+    }
+    .agency-section-title {
+      font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .agency-section-divider {
+      flex: 1; height: 1px; background: var(--border);
+    }
+
+    /* Rating card inside drawer */
+    .rating-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem; position: relative;
+      transition: border-color 0.15s;
+    }
+    .rating-card:last-child { margin-bottom: 0; }
+    .rating-card:hover { border-color: var(--border2); }
+
+    .rating-card-top {
+      display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+    .rc-tipo {
+      font-family: var(--font-mono); font-size: 0.68rem;
+      color: var(--text3); text-transform: uppercase; letter-spacing: 0.05em;
+    }
+    .rc-rating {
+      font-family: var(--font-mono); font-size: 1.1rem; font-weight: 700;
+      color: var(--text);
+    }
+    .rating-card-instrument {
+      font-size: 0.8rem; color: var(--text2); margin-bottom: 0.4rem;
+      font-style: italic;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .rating-card-bottom {
+      display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+    }
+    .rc-outlook {
+      font-family: var(--font-mono); font-size: 0.72rem;
+      display: flex; align-items: center; gap: 0.3rem;
+    }
+    .rc-outlook::before {
+      content: ''; display: inline-block;
+      width: 6px; height: 6px; border-radius: 50%;
+      background: currentColor; flex-shrink: 0;
+    }
+    .rc-date {
+      font-family: var(--font-mono); font-size: 0.7rem; color: var(--text3);
+      margin-left: auto;
+    }
+
+    /* Drawer empty state */
+    .drawer-empty {
+      text-align: center; padding: 3rem 1rem;
+      font-family: var(--font-mono); font-size: 0.8rem; color: var(--text3);
+    }
+
+    @media (max-width: 600px) {
+      .drawer { width: 100vw; }
+      .drawer-body { padding: 1rem; }
+      .drawer-header { padding: 1rem; }
+      .drawer-summary { padding: 0.6rem 1rem; }
+    }
+    .loading {
+      text-align: center; padding: 4rem 1rem;
+      font-family: var(--font-mono); color: var(--text2);
+    }
+    .loading .spinner {
+      width: 30px; height: 30px; border: 2px solid var(--border);
+      border-top-color: var(--accent); border-radius: 50%;
+      animation: spin 0.8s linear infinite;
       margin: 0 auto 1rem;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
-    .loading-text {
-      font-family: var(--font-mono); font-size: 0.8rem; color: var(--text3);
-    }
-    .error-state {
-      text-align: center; padding: 4rem 1rem;
-    }
-    .error-icon {
-      font-size: 2rem; margin-bottom: 0.75rem;
-    }
-    .error-msg {
-      font-family: var(--font-mono); font-size: 0.82rem; color: var(--red);
+    .error {
+      text-align: center; padding: 3rem 1rem; color: var(--red);
+      font-family: var(--font-mono); font-size: 0.85rem;
     }
 
-    /* ── Footer ── */
+    /* ── Footer ──────────────────────────── */
     footer {
+      text-align: center; padding: 1.75rem 1rem;
       border-top: 1px solid var(--border);
-      padding: 1.75rem 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 1rem;
-    }
-    .footer-brand {
-      display: flex; align-items: center; gap: 0.5rem;
       font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);
     }
-    .footer-brand-dot {
-      width: 6px; height: 6px; border-radius: 50%;
-      background: var(--accent); opacity: 0.5;
-    }
-    .footer-links {
-      display: flex; gap: 1.25rem;
-      font-family: var(--font-mono); font-size: 0.72rem;
-    }
-    .footer-links a { color: var(--text3); transition: color 0.2s; }
-    .footer-links a:hover { color: var(--accent); }
+    footer a { color: var(--text2); }
+    footer a:hover { color: var(--accent); }
+    .footer-inner { display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
 
-    /* ── Responsive ── */
+    /* ── Responsive ──────────────────────── */
     @media (max-width: 900px) {
-      .page-header-inner { flex-direction: column; align-items: flex-start; }
-      .stats-row { flex-wrap: wrap; }
-      .stat-card { min-width: calc(50% - 1px); }
+      .hero-inner { flex-direction: column; align-items: flex-start; }
+      .stats-bar { width: 100%; justify-content: stretch; }
+      .stat-item { flex: 1; }
     }
     @media (max-width: 768px) {
+      .page-container { padding: 0 1rem; }
       nav { padding: 0 1rem; }
-      .nav-links { gap: 0; }
-      .nav-links li:not(:last-child) { display: none; }
-      .page-header { padding: 1.75rem 1rem 1.5rem; }
-      .page-header h1 { font-size: 1.5rem; }
-      .filter-section { padding: 1rem 1rem 0; }
-      .table-section { padding: 0.75rem 1rem 3rem; }
-      .filter-divider { display: none; }
-      .filter-count { display: none; }
-      footer { flex-direction: column; align-items: flex-start; padding: 1.5rem 1rem; }
+      .nav-links { gap: 1rem; }
+      .hero { padding: 1.75rem 0 1.5rem; }
+      .hero-text h1 { font-size: 1.35rem; }
+      .toolbar { gap: 0.5rem; }
+      .toolbar-divider { display: none; }
+      .stats-bar { flex-wrap: wrap; }
     }
     @media (max-width: 480px) {
-      .stat-card { min-width: calc(50% - 1px); }
-      .agency-filters { gap: 0.3rem; }
+      .hero-text h1 { font-size: 1.15rem; }
+      .stat-item { padding: 0.6rem 0.75rem; }
     }
 
-    /* ── Custom modifications for UX enhancement ── */
-    #search-clear:hover {
-      color: var(--accent) !important;
-    }
-    .search-wrapper input {
-      padding-right: 2.25rem !important;
-    }
-    
-    /* Child control styling */
-    table.dataTable tbody td.dt-control {
-      text-align: center;
-      cursor: pointer;
-      position: relative;
-    }
-    table.dataTable tbody td.dt-control::before {
-      content: '▶';
-      display: inline-block;
-      font-size: 0.7rem;
-      color: var(--text3);
-      transition: transform 0.2s ease, color 0.2s ease;
-    }
-    table.dataTable tbody tr.dt-hasChild td.dt-control::before {
-      transform: rotate(90deg);
-      color: var(--accent);
-    }
-    
-    /* Row details styling */
-    .row-detail-container {
-      background: linear-gradient(135deg, var(--bg3) 0%, var(--surface) 100%);
-      border: 1px solid var(--border2);
-      border-radius: var(--radius);
-      padding: 1.25rem;
-      margin: 0.5rem 1rem;
-      box-shadow: inset 0 0 12px rgba(0, 212, 255, 0.03);
-      animation: fadeIn 0.25s ease-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-5px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .detail-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.25rem;
-    }
-    .detail-item {
-      display: flex;
-      flex-direction: column;
-      gap: 0.35rem;
-    }
-    .detail-label {
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      color: var(--text3);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .detail-value {
-      font-size: 0.88rem;
-      color: var(--text);
-      font-weight: 500;
-      word-break: break-all;
-    }
-    .detail-actions {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-top: 0.25rem;
-    }
-    .detail-link-btn, .cnpj-copy-btn, .cnpj-external-btn {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 500;
-      padding: 0.4rem 0.8rem;
-      border-radius: var(--radius-sm);
-      text-align: center;
-      transition: all 0.15s ease;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .detail-link-btn {
-      background: var(--accent);
-      color: var(--bg);
-      border: none;
-      font-weight: 600;
-    }
-    .detail-link-btn:hover {
-      background: #33ddff;
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
-      color: var(--bg);
-    }
-    .detail-link-na {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: var(--text3);
-      padding: 0.4rem 0;
-      display: inline-block;
-    }
-    .cnpj-copy-btn {
-      background: transparent;
-      color: var(--text2);
-      border: 1px solid var(--border);
-    }
-    .cnpj-copy-btn:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: rgba(0, 212, 255, 0.03);
-    }
-    .cnpj-external-btn {
-      background: transparent;
-      color: var(--text3);
-      border: 1px solid var(--border);
-    }
-    .cnpj-external-btn:hover {
-      color: var(--text2);
-      border-color: var(--border2);
-      background: var(--surface2);
-    }
-    
-    /* Search Highlight */
-    .search-highlight {
-      background-color: rgba(0, 212, 255, 0.22);
-      color: #fff;
-      border-radius: 2px;
-      padding: 0 2px;
-    }
-    
-    /* Skeleton Loader */
-    .skeleton-wrapper {
-      padding: 0.5rem 0;
-    }
-    .skeleton-row {
-      display: flex; gap: 1rem; padding: 0.9rem 1.25rem; border-bottom: 1px solid var(--border);
-      align-items: center;
-    }
-    .skeleton-row:last-child { border-bottom: none; }
-    .skeleton-cell {
-      height: 14px;
-      background: linear-gradient(90deg, var(--bg3) 25%, var(--border2) 50%, var(--bg3) 75%);
-      background-size: 200% 100%;
-      animation: shimmer 1.5s infinite linear;
-      border-radius: 3px;
-    }
-    @keyframes shimmer {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
-
-    /* ── Connected elements for dynamic query tools ── */
-    .filter-bar {
-      border-bottom-left-radius: 0 !important;
-      border-bottom-right-radius: 0 !important;
-    }
-    
-    .analytics-summary {
-      display: flex;
-      gap: 1.5rem;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.75rem 1.25rem;
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-top: none;
-      border-radius: 0 0 var(--radius) var(--radius);
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      color: var(--text2);
-      flex-wrap: wrap;
-      margin-bottom: 0.5rem;
-    }
-    
-    .analytics-segment {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .analytics-label {
-      color: var(--text3);
-      text-transform: uppercase;
-      font-size: 0.62rem;
-      letter-spacing: 0.05em;
-    }
-    
-    .analytics-bar-bg {
-      width: 100px;
-      height: 6px;
-      background: var(--bg3);
-      border-radius: 3px;
-      overflow: hidden;
-      display: inline-block;
-      vertical-align: middle;
-      border: 1px solid var(--border);
-    }
-    
-    .analytics-bar-fill {
-      height: 100%;
-      background: var(--accent);
-      width: 0%;
-      transition: width 0.4s ease;
-    }
-    .analytics-bar-fill.ig { background: var(--green); }
-    .analytics-bar-fill.spec { background: var(--gold); }
-    
-    /* Toggle switch design */
-    .view-toggle-container {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      user-select: none;
-    }
-    .toggle-label {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      color: var(--text2);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 38px;
-      height: 18px;
-    }
-    .switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: var(--bg3);
-      border: 1px solid var(--border);
-      transition: .25s cubic-bezier(0.4, 0, 0.2, 1);
-      border-radius: 20px;
-    }
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 10px;
-      width: 10px;
-      left: 3px;
-      bottom: 3px;
-      background-color: var(--text3);
-      transition: .25s cubic-bezier(0.4, 0, 0.2, 1);
-      border-radius: 50%;
-    }
-    input:checked + .slider {
-      background-color: rgba(0, 212, 255, 0.1);
-      border-color: var(--accent);
-    }
-    input:checked + .slider:before {
-      transform: translateX(20px);
-      background-color: var(--accent);
-      box-shadow: 0 0 6px var(--accent);
-    }
-    
-    /* Risk filters styles */
-    .risk-filters {
-      display: flex;
-      gap: 0.4rem;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .risk-btn {
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      font-weight: 500;
-      padding: 0.35rem 0.65rem;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border);
-      background: var(--bg3);
-      color: var(--text2);
-      cursor: pointer;
-      transition: all 0.15s ease;
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-      user-select: none;
-    }
-    .risk-btn:hover {
-      border-color: var(--border2);
-      color: var(--text);
-    }
-    .risk-btn.active.ig {
-      background: var(--green-dim);
-      color: var(--green);
-      border-color: rgba(0, 229, 160, 0.4);
-    }
-    .risk-btn.active.spec {
-      background: var(--gold-dim);
-      color: var(--gold);
-      border-color: rgba(240, 180, 41, 0.4);
-    }
-    .risk-btn.active.def {
-      background: var(--red-dim);
-      color: var(--red);
-      border-color: rgba(255, 77, 109, 0.4);
-    }
-    .risk-count {
-      font-size: 0.6rem;
-      opacity: 0.6;
-      padding: 0.02rem 0.25rem;
-      border-radius: 3px;
-      background: rgba(255, 255, 255, 0.05);
-      font-weight: 600;
-    }
-    .risk-btn.active .risk-count {
-      background: rgba(255, 255, 255, 0.15);
-      opacity: 1;
-    }
-    
-    /* Sector select styling */
-    .sector-filter-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .sector-filter-wrapper select {
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      color: var(--text2);
-      padding: 0.35rem 0.65rem;
-      border-radius: var(--radius-sm);
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      outline: none;
-      transition: all 0.15s ease;
-      cursor: pointer;
-      max-width: 170px;
-    }
-    .sector-filter-wrapper select:focus {
-      border-color: var(--accent);
-      color: var(--text);
-    }
-    
-    /* Nested table styling */
-    .nested-ratings-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.78rem;
-      margin-top: 0.5rem;
-    }
-    .nested-ratings-table th {
-      font-family: var(--font-mono);
-      font-size: 0.62rem;
-      color: var(--text3);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 0.4rem 0.6rem;
-      text-align: left;
-      border-bottom: 1px solid var(--border2);
-      background: rgba(255, 255, 255, 0.01);
-    }
-    .nested-ratings-table td {
-      padding: 0.4rem 0.6rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-      vertical-align: middle;
-    }
-    .nested-ratings-table tr:last-child td {
-      border-bottom: none;
-    }
-    .nested-ratings-table tr:hover td {
-      background: rgba(0, 212, 255, 0.015);
-    }
-
-    /* ── Recent Credit Movements Widget ── */
+    /* ── Seção de Movimentações Recentes ── */
     .updates-section {
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    .updates-container {
-      background: var(--bg2);
+      background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1.25rem;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
     }
     .updates-header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 1rem;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
       border-bottom: 1px solid var(--border);
       padding-bottom: 0.75rem;
-      flex-wrap: wrap;
-      gap: 0.75rem;
     }
     .updates-title {
-      margin: 0;
-      font-size: 0.85rem;
-      font-family: var(--font-mono);
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
       color: var(--text);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: -0.01em;
       display: flex;
       align-items: center;
       gap: 0.5rem;
     }
     .updates-tabs {
       display: flex;
-      gap: 0.5rem;
+      gap: 0.35rem;
+      flex-wrap: wrap;
     }
     .update-tab-btn {
       font-family: var(--font-mono);
-      font-size: 0.68rem;
+      font-size: 0.7rem;
       font-weight: 500;
       padding: 0.35rem 0.65rem;
       background: var(--bg3);
@@ -966,12 +676,13 @@
       color: var(--text2);
       border-radius: var(--radius-sm);
       cursor: pointer;
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: all 0.15s ease;
       user-select: none;
     }
     .update-tab-btn:hover {
       border-color: var(--border2);
       color: var(--text);
+      background: var(--surface2);
     }
     .update-tab-btn.active {
       background: rgba(0, 212, 255, 0.08);
@@ -981,13 +692,14 @@
     }
     .updates-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 0.75rem;
       transition: opacity 0.2s ease;
+      margin-top: 1rem;
     }
     .update-card {
-      background: rgba(255, 255, 255, 0.01);
-      border: 1px solid rgba(255, 255, 255, 0.03);
+      background: var(--bg2);
+      border: 1px solid var(--border);
       border-radius: var(--radius-sm);
       padding: 0.85rem;
       display: flex;
@@ -997,294 +709,65 @@
       transition: all 0.2s ease;
     }
     .update-card:hover {
-      background: rgba(255, 255, 255, 0.02);
-      border-color: rgba(255, 255, 255, 0.08);
+      border-color: var(--accent2);
       transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     }
     .update-card-meta {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      font-size: 0.62rem;
+      justify-content: space-between;
       font-family: var(--font-mono);
+      font-size: 0.68rem;
       color: var(--text3);
     }
+    .update-card-meta .date-link {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
     .update-card-emitter {
-      font-size: 0.78rem;
+      font-family: var(--font-body);
       font-weight: 600;
+      font-size: 0.85rem;
       color: var(--text);
       cursor: pointer;
-      text-decoration: underline dotted var(--border2);
-      text-underline-offset: 3px;
-      transition: color 0.15s ease, text-decoration-color 0.15s ease;
-      line-height: 1.25;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      line-height: 1.3;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .update-card-emitter:hover {
       color: var(--accent);
-      text-decoration-color: var(--accent);
     }
     .update-card-inst {
-      font-size: 0.65rem;
-      color: var(--text3);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text2);
+      font-style: italic;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    .update-card-transition {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-top: 0.25rem;
-    }
-    .rating-badge-inline {
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      font-weight: 700;
-      padding: 0.15rem 0.35rem;
-      border-radius: 3px;
-      text-transform: uppercase;
-    }
-    .rating-badge-inline.ig {
-      background: var(--green-dim);
-      color: var(--green);
-      border: 1px solid rgba(0, 229, 160, 0.2);
-    }
-    .rating-badge-inline.spec {
-      background: var(--gold-dim);
-      color: var(--gold);
-      border: 1px solid rgba(240, 180, 41, 0.2);
-    }
-    .rating-badge-inline.def {
-      background: var(--red-dim);
-      color: var(--red);
-      border: 1px solid rgba(255, 77, 109, 0.2);
-    }
-    .rating-badge-inline.nr {
-      background: var(--bg3);
-      color: var(--text3);
-      border: 1px solid var(--border);
-    }
-    .transition-arrow {
-      font-size: 0.75rem;
-      color: var(--text3);
-    }
-    .transition-badge {
-      font-family: var(--font-mono);
-      font-size: 0.6rem;
-      font-weight: 700;
-      padding: 0.1rem 0.3rem;
-      border-radius: 3px;
-      text-transform: uppercase;
-    }
-    .transition-badge.upgrade {
-      background: rgba(0, 229, 160, 0.15);
-      color: var(--green);
-    }
-    .transition-badge.downgrade {
-      background: rgba(255, 77, 109, 0.15);
-      color: var(--red);
-    }
-
-    /* ── Side Drawer styling ── */
-    .side-drawer {
-      position: fixed;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: 2000;
-      visibility: hidden;
-      transition: visibility 0.3s ease;
-    }
-    .side-drawer.open {
-      visibility: visible;
-    }
-    .drawer-overlay {
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(4px);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    .side-drawer.open .drawer-overlay {
-      opacity: 1;
-    }
-    .drawer-content {
-      position: absolute;
-      top: 0; right: 0; bottom: 0;
-      width: 100%;
-      max-width: 520px;
-      background: var(--surface);
-      border-left: 1px solid var(--border);
-      box-shadow: -5px 0 30px rgba(0,0,0,0.5);
-      display: flex;
-      flex-direction: column;
-      transform: translateX(100%);
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .side-drawer.open .drawer-content {
-      transform: translateX(0);
-    }
-    .drawer-header {
-      padding: 1.5rem 1.5rem 0.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-    .drawer-title {
-      font-family: var(--font-head);
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1.2;
-    }
-    .drawer-close {
-      background: none;
-      border: none;
-      color: var(--text3);
-      font-size: 1.25rem;
-      cursor: pointer;
-      transition: color 0.15s ease;
-      padding: 0.25rem;
-      line-height: 1;
-    }
-    .drawer-close:hover {
-      color: var(--red);
-    }
-    .drawer-subheader {
-      padding: 0 1.5rem 1rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .drawer-tabs {
-      display: flex;
-      gap: 0.5rem;
-      padding: 1rem 1.5rem;
-      border-bottom: 1px solid var(--border);
-      background: var(--bg2);
-    }
-    .drawer-tab-btn {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 500;
-      padding: 0.35rem 0.75rem;
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      color: var(--text2);
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      transition: all 0.15s ease;
-      user-select: none;
-    }
-    .drawer-tab-btn:hover {
-      border-color: var(--border2);
-      color: var(--text);
-    }
-    .drawer-tab-btn.active {
-      background: rgba(0, 212, 255, 0.08);
-      border-color: var(--accent);
-      color: var(--accent);
-      box-shadow: 0 0 8px rgba(0, 212, 255, 0.1);
-    }
-    .drawer-body {
-      flex: 1;
-      overflow-y: auto;
-      padding: 1.5rem;
-    }
-    .drawer-tab-content {
-      display: none;
-    }
-    .drawer-tab-content.active {
-      display: block;
-    }
-
-    /* ── Summary view layout ── */
-    .summary-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    .summary-row {
+    .update-card-rating {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.75rem 1rem;
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
+      margin-top: 0.2rem;
+      border-top: 1px dashed var(--border);
+      padding-top: 0.4rem;
     }
-    .summary-agency {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .summary-values {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    /* ── Complete view layout (card listing) ── */
-    .complete-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .rating-card {
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    .rating-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .rating-card-inst {
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--text);
-      line-height: 1.3;
-    }
-    .rating-card-details {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-top: 0.25rem;
-    }
-    .rating-chip-mini {
+    .update-card-rating .rc-rating {
       font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 600;
-      padding: 0.15rem 0.45rem;
-      border-radius: 3px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
     }
-    
-    .rating-chip-mini.rating-ig { background: rgba(0,229,160,0.1); color: #00e5a0; border: 1px solid rgba(0,229,160,0.2); }
-    .rating-chip-mini.rating-spec { background: rgba(255,180,41,0.1); color: #ffb429; border: 1px solid rgba(255,180,41,0.2); }
-    .rating-chip-mini.rating-def { background: rgba(255,77,109,0.1); color: #ff4d6d; border: 1px solid rgba(255,77,109,0.2); }
-    .rating-chip-mini.rating-nr { background: rgba(100,120,140,0.1); color: var(--text3); border: 1px solid var(--border); }
-
-    /* Clickable consolidated cells and rows */
-    .consolidated-action-cell {
-      cursor: pointer;
-      color: var(--accent) !important;
-      font-weight: 500;
-      text-decoration: underline dotted var(--accent2);
-      text-underline-offset: 3px;
-      transition: color 0.15s;
-    }
-    .consolidated-action-cell:hover {
-      color: #66e5ff !important;
-    }
-    table.dataTable tbody tr.consolidated-row {
-      cursor: pointer;
+    .update-card-rating .rc-outlook {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
     }
   </style>
 </head>
@@ -1293,231 +776,149 @@
   <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
   <nav>
-    <a href="index.html" class="nav-logo" aria-label="Pulse Ratings — Página inicial">
-      <img src="./assets/logo.png" alt="" onerror="this.style.display='none'" />
-      <span class="nav-logo-text"><span class="pulse">Pulse</span><span class="ratings">Ratings</span></span>
+    <a href="index.html" class="nav-logo">
+      <span class="pulse-dot"></span>
+      Pulse Ratings
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Início</a></li>
-      <li><a href="consulta.html" class="active" aria-current="page">Consulta</a></li>
-      <li>
-        <a href="mailto:pulsedatalabs@gmail.com?subject=Pulse Ratings — Interesse Comercial" class="nav-cta">
-          Fale Conosco
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-            <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </li>
+      <li><a href="consulta.html" class="active">Consulta</a></li>
+      <li><a href="mailto:pulsedatalabs@gmail.com?subject=Pulse Ratings — Interesse Comercial" class="nav-cta">Fale Conosco ↗</a></li>
     </ul>
   </nav>
 
   <main id="main-content">
+    <div class="page-container">
 
-    <!-- ── Page header ── -->
-    <header class="page-header">
-      <div class="page-header-inner">
-        <div class="page-title-group">
-          <div class="page-eyebrow">Ratings de crédito</div>
-          <h1>Consulta de Emissores</h1>
-          <p>S&amp;P, Moody's e Fitch — mercado brasileiro consolidado</p>
-        </div>
-        <div class="stats-row" id="stats-row" aria-label="Estatísticas da base">
-          <div class="stat-card emissores">
-            <div class="stat-dot"></div>
-            <div class="stat-value" id="stat-emissores">—</div>
-            <div class="stat-label">Emissores</div>
+      <!-- Hero + Stats -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <h1>Consulta de <span>Ratings</span></h1>
+            <p>Busque ratings de crédito por emissor, CNPJ ou agência — S&amp;P, Moody's, Fitch, Austin Ratings, Liberum</p>
           </div>
-          <div class="stat-card total">
-            <div class="stat-dot"></div>
-            <div class="stat-value" id="stat-ratings">—</div>
-            <div class="stat-label">Ratings</div>
-          </div>
-          <div class="stat-card fitch">
-            <div class="stat-dot"></div>
-            <div class="stat-value" id="stat-fitch">—</div>
-            <div class="stat-label">Fitch</div>
-          </div>
-          <div class="stat-card moodys">
-            <div class="stat-dot"></div>
-            <div class="stat-value" id="stat-moodys">—</div>
-            <div class="stat-label">Moody's</div>
-          </div>
-          <div class="stat-card sp">
-            <div class="stat-dot"></div>
-            <div class="stat-value" id="stat-sp">—</div>
-            <div class="stat-label">S&amp;P</div>
-          </div>
-          <div class="stat-card austin">
-            <div class="stat-dot"></div>
-            <div class="stat-value" id="stat-austin">—</div>
-            <div class="stat-label">Austin</div>
-          </div>
-          <div class="stat-card liberum">
-            <div class="stat-dot"></div>
-            <div class="stat-value" id="stat-liberum">—</div>
-            <div class="stat-label">Liberum</div>
+          <div class="stats-bar" id="stats-bar">
+            <div class="stat-item">
+              <span class="stat-value" id="stat-emissores">—</span>
+              <span class="stat-label">Emissores</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value" id="stat-ratings">—</span>
+              <span class="stat-label">Ratings</span>
+            </div>
+            <div class="stat-item fitch">
+              <span class="stat-value" id="stat-fitch">—</span>
+              <span class="stat-label">Fitch</span>
+            </div>
+            <div class="stat-item moodys">
+              <span class="stat-value" id="stat-moodys">—</span>
+              <span class="stat-label">Moody's</span>
+            </div>
+            <div class="stat-item sp">
+              <span class="stat-value" id="stat-sp">—</span>
+              <span class="stat-label">S&amp;P</span>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <!-- ── Filters ── -->
-    <section class="filter-section" aria-label="Filtros">
-      <div class="filter-bar">
-        <div class="search-wrapper">
-          <span class="search-icon" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-              <circle cx="6.5" cy="6.5" r="5" stroke="#566878" stroke-width="1.5"/>
-              <path d="M10 10L14 14" stroke="#566878" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </span>
-          <input type="text" id="search-input"
-            placeholder="Buscar por emissor, CNPJ, rating, tipo…"
-            autocomplete="off"
-            aria-label="Buscar emissores"
-          />
-          <button type="button" id="search-clear" aria-label="Limpar busca" style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text3); cursor: pointer; display: none; font-size: 1.1rem; line-height: 1; padding: 0.2rem; outline: none; transition: color 0.2s;">✕</button>
-        </div>
-        <div class="filter-divider" aria-hidden="true"></div>
-        <div class="agency-filters" role="group" aria-label="Filtrar por agência">
-          <label class="agency-chip fitch checked">
-            <input type="checkbox" value="Fitch" checked />
-            <span class="chip-dot"></span>
-            Fitch
-          </label>
-          <label class="agency-chip moodys checked">
-            <input type="checkbox" value="Moody's" checked />
-            <span class="chip-dot"></span>
-            Moody's
-          </label>
-          <label class="agency-chip sp checked">
-            <input type="checkbox" value="S&P" checked />
-            <span class="chip-dot"></span>
-            S&amp;P
-          </label>
-          <label class="agency-chip austin checked">
-            <input type="checkbox" value="Austin" checked />
-            <span class="chip-dot"></span>
-            Austin
-          </label>
-          <label class="agency-chip liberum checked">
-            <input type="checkbox" value="Liberum" checked />
-            <span class="chip-dot"></span>
-            Liberum
-          </label>
-        </div>
-        <div class="filter-divider" aria-hidden="true"></div>
-        
-        <!-- Toggle Switch de Visualização -->
-        <div class="view-toggle-container">
-          <span class="toggle-label">Agrupar Emissores</span>
-          <label class="switch" title="Alternar entre visualização de ratings individuais e emissores únicos consolidados">
-            <input type="checkbox" id="toggle-view">
-            <span class="slider"></span>
-          </label>
-        </div>
-        
-        <div class="filter-count" id="filter-count" aria-live="polite">
-          <span id="filtered-n">—</span> resultado(s)
-        </div>
-      </div>
-
-      <!-- Barra de Filtros Avançados e Analytics Conectada -->
-      <div class="analytics-summary">
-        <!-- Filtros Rápidos de Risco -->
-        <div class="risk-filters">
-          <span class="analytics-label">Qualidade de Risco:</span>
-          <button class="risk-btn ig" data-risk="ig" title="Filtrar Grau de Investimento (AAA a BBB-)">
-            🟢 Grau de Investimento <span class="risk-count" id="count-ig">0</span>
-          </button>
-          <button class="risk-btn spec" data-risk="spec" title="Filtrar Grau de Especulação (BB a C)">
-            🟡 Especulativo <span class="risk-count" id="count-spec">0</span>
-          </button>
-          <button class="risk-btn def" data-risk="def" title="Filtrar Inadimplência / Default (D / SD)">
-            🔴 Default <span class="risk-count" id="count-def">0</span>
-          </button>
-        </div>
-        
-        <!-- Filtro por Setor -->
-        <div class="sector-filter-wrapper">
-          <span class="analytics-label">Setor:</span>
-          <select id="sector-select" aria-label="Filtrar por setor">
-            <option value="">Todos os Setores</option>
-          </select>
-        </div>
-
-        <!-- Estatísticas Rápidas -->
-        <div class="analytics-segment" id="analytics-ig-ratio">
-          <span class="analytics-label">Grau de Investimento:</span>
-          <span class="analytics-bar-bg">
-            <span class="analytics-bar-fill ig" id="bar-ig-ratio" style="width: 0%;"></span>
-          </span>
-          <strong id="label-ig-ratio" style="color: var(--green); margin-left: 0.25rem;">0%</strong>
-        </div>
-
-        <div class="analytics-segment" id="analytics-outlook-ratio">
-          <span class="analytics-label">Perspectiva Estável:</span>
-          <span class="analytics-bar-bg">
-            <span class="analytics-bar-fill spec" id="bar-stable-ratio" style="width: 0%;"></span>
-          </span>
-          <strong id="label-stable-ratio" style="color: var(--gold); margin-left: 0.25rem;">0%</strong>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Seção de Movimentações Recentes ── -->
-    <section class="updates-section" aria-label="Movimentações Recentes de Crédito">
-      <div class="updates-container">
+      <!-- Seção de Movimentações Recentes (Últimas Atribuições) -->
+      <section class="updates-section" aria-label="Últimas atribuições de rating">
         <div class="updates-header">
           <h2 class="updates-title">
-            <span>⚡</span> Movimentações Recentes de Crédito
+            <span style="color: var(--accent);">⚡</span> Últimas Atribuições de Rating
           </h2>
           <div class="updates-tabs" role="tablist">
-            <button class="update-tab-btn active" data-tab="actions" role="tab" aria-selected="true">
-              Últimas Ações
-            </button>
-            <button class="update-tab-btn" data-tab="downgrades" role="tab" aria-selected="false">
-              🔻 Rebaixamentos
-            </button>
-            <button class="update-tab-btn" data-tab="upgrades" role="tab" aria-selected="false">
-              🔺 Aumentos
-            </button>
+            <button class="update-tab-btn active" data-agency="Moody's" role="tab" aria-selected="true">Moody's</button>
+            <button class="update-tab-btn" data-agency="Fitch" role="tab" aria-selected="false">Fitch</button>
+            <button class="update-tab-btn" data-agency="S&P" role="tab" aria-selected="false">S&amp;P</button>
+            <button class="update-tab-btn" data-agency="Austin" role="tab" aria-selected="false">Austin</button>
+            <button class="update-tab-btn" data-agency="Liberum" role="tab" aria-selected="false">Liberum</button>
           </div>
+        </div>
+        <div class="updates-subheader" style="margin: 0.5rem 0 0; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text3);">
+          <span id="agency-period-text">Período de cobertura: —</span>
         </div>
         <div class="updates-grid" id="updates-content-list">
           <!-- Gerado dinamicamente via JS -->
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── Table ── -->
-    <section class="table-section" aria-label="Tabela de ratings">
-      <div class="table-container">
-        <div id="loading" class="loading-state" style="padding: 1rem 0;">
-          <div style="padding: 1rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
-            <div class="spinner-small" style="width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.7s linear infinite;"></div>
-            <p class="loading-text" style="margin: 0; font-family: var(--font-mono); font-size: 0.75rem;">Carregando ratings estruturados...</p>
-          </div>
-          <div class="skeleton-wrapper">
-            <div class="skeleton-row"><div class="skeleton-cell" style="width: 5%"></div><div class="skeleton-cell" style="width: 30%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 5%"></div></div>
-            <div class="skeleton-row"><div class="skeleton-cell" style="width: 5%"></div><div class="skeleton-cell" style="width: 25%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 20%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 5%"></div></div>
-            <div class="skeleton-row"><div class="skeleton-cell" style="width: 5%"></div><div class="skeleton-cell" style="width: 35%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 5%"></div></div>
-            <div class="skeleton-row"><div class="skeleton-cell" style="width: 5%"></div><div class="skeleton-cell" style="width: 28%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 18%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 5%"></div></div>
-            <div class="skeleton-row"><div class="skeleton-cell" style="width: 5%"></div><div class="skeleton-cell" style="width: 32%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 15%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 10%"></div><div class="skeleton-cell" style="width: 5%"></div></div>
-          </div>
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <div class="toolbar-search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="text" id="search-input" placeholder="Buscar por emissor, CNPJ, tipo ou rating…" autocomplete="off" />
         </div>
-        <div id="error" class="error-state" style="display:none;">
-          <div class="error-icon" aria-hidden="true">⚠</div>
-          <p class="error-msg" id="error-msg"></p>
+
+        <div class="toolbar-divider"></div>
+
+        <div class="agency-checkboxes">
+          <label>
+            <input type="checkbox" value="Fitch" checked />
+            <span class="agency-toggle fitch"><span class="dot"></span>Fitch</span>
+          </label>
+          <label>
+            <input type="checkbox" value="Moody's" checked />
+            <span class="agency-toggle moodys"><span class="dot"></span>Moody's</span>
+          </label>
+          <label>
+            <input type="checkbox" value="S&P" checked />
+            <span class="agency-toggle sp"><span class="dot"></span>S&amp;P</span>
+          </label>
+          <label>
+            <input type="checkbox" value="Austin" checked />
+            <span class="agency-toggle austin"><span class="dot"></span>Austin</span>
+          </label>
+          <label>
+            <input type="checkbox" value="Liberum" checked />
+            <span class="agency-toggle liberum"><span class="dot"></span>Liberum</span>
+          </label>
         </div>
+
+        <div class="toolbar-divider"></div>
+
+        <label class="view-toggle" title="Alternar entre visão detalhada e visão por emissor">
+          <input type="checkbox" id="toggle-consolidated" />
+          <span class="toggle-label-off">Detalhada</span>
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          <span class="toggle-label-on">Por Emissor</span>
+        </label>
+
+        <div class="toolbar-divider"></div>
+
+        <button class="export-btn" id="export-excel-btn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Exportar Excel
+        </button>
+      </div>
+
+      <!-- Table -->
+      <div class="table-section">
+        <div id="loading" class="loading">
+          <div class="spinner"></div>
+          Carregando dados…
+        </div>
+        <div id="error" class="error" style="display:none;"></div>
+
+        <!-- Custom top bar -->
+        <div id="dt-top-bar" class="dt-top-bar" style="display:none;">
+          <div id="dt-length-container"></div>
+          <div id="dt-info-top" style="font-size:0.72rem; color:var(--text3); font-family:var(--font-mono);"></div>
+        </div>
+
         <table id="ratings-table" class="display responsive" style="width:100%; display:none;">
           <thead>
             <tr>
-              <th style="width: 30px; text-align: center;"></th>
               <th>Emissor</th>
               <th>CNPJ</th>
               <th>Agência</th>
-              <th>Tipo</th>
+              <th>Tipo Rating</th>
+              <th>Instrumento / Ativo</th>
               <th>Rating</th>
               <th>Outlook</th>
               <th>Data</th>
@@ -1525,58 +926,44 @@
           </thead>
           <tbody></tbody>
         </table>
-      </div>
-    </section>
 
+        <!-- Custom bottom bar -->
+        <div id="dt-bottom-bar" class="dt-bottom-bar" style="display:none;">
+          <div id="dt-info-container"></div>
+          <div id="dt-paginate-container"></div>
+        </div>
+      </div>
+
+    </div><!-- /page-container -->
   </main>
 
-  <footer>
-    <div class="footer-brand">
-      <div class="footer-brand-dot"></div>
-      © 2026 Pulse Data Labs
+  <!-- ── Drawer overlay + panel ───────────────────────────── -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="drawer" id="emissor-drawer" role="dialog" aria-modal="true" aria-label="Detalhes do emissor">
+    <div class="drawer-header">
+      <div class="drawer-header-left">
+        <div class="drawer-emissor-name" id="drawer-name">—</div>
+        <div class="drawer-cnpj" id="drawer-cnpj"></div>
+      </div>
+      <button class="drawer-close" id="drawer-close" aria-label="Fechar painel">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
     </div>
-    <div class="footer-links">
-      <a href="index.html">PulseRatings</a>
-      <a href="https://pulsedatalabs.github.io" target="_blank" rel="noopener">pulsedatalabs.github.io</a>
-      <a href="mailto:pulsedatalabs@gmail.com">Contato</a>
+    <div class="drawer-summary" id="drawer-summary"></div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </aside>
+
+  <footer>
+    <div class="footer-inner">
+      <span>&copy; 2026 Pulse Data Labs</span>
+      <span>&middot;</span>
+      <a href="mailto:pulsedatalabs@gmail.com">pulsedatalabs@gmail.com</a>
+      <span>&middot;</span>
       <a href="https://github.com/PulseDataLabs/PulseRatingsBrasil" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
   </footer>
 
-  <!-- Sliding Side Drawer -->
-  <div id="side-drawer" class="side-drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-title">
-    <div class="drawer-overlay"></div>
-    <div class="drawer-content">
-      <div class="drawer-header">
-        <h2 id="drawer-title" class="drawer-title">Nome do Emissor</h2>
-        <button class="drawer-close" aria-label="Fechar painel">✕</button>
-      </div>
-      <div class="drawer-subheader">
-        <span id="drawer-cnpj" class="cnpj-cell">CNPJ: —</span>
-      </div>
-      <div class="drawer-tabs" role="tablist">
-        <button class="drawer-tab-btn active" data-drawer-tab="summary" role="tab" aria-selected="true">
-          Visão Resumida
-        </button>
-        <button class="drawer-tab-btn" data-drawer-tab="complete" role="tab" aria-selected="false">
-          Visão Completa
-        </button>
-      </div>
-      <div class="drawer-body">
-        <!-- Tab Content: Summary -->
-        <div id="drawer-tab-content-summary" class="drawer-tab-content active" role="tabpanel">
-          <!-- Populated dynamically via JS -->
-        </div>
-        <!-- Tab Content: Complete -->
-        <div id="drawer-tab-content-complete" class="drawer-tab-content" role="tabpanel">
-          <!-- Populated dynamically via JS -->
-        </div>
-      </div>
-    </div>
-  </div>
-
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
   <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/3.2.2/js/dataTables.buttons.min.js"></script>
@@ -1584,894 +971,555 @@
   <script src="https://cdn.datatables.net/buttons/3.2.2/js/buttons.html5.min.js"></script>
   <script>
   (async function () {
-    const $table   = $('#ratings-table');
-    const $tbody   = $table.find('tbody');
-    const $loading = $('#loading');
-    const $error   = $('#error');
-    const $errMsg  = $('#error-msg');
-    const $search  = $('#search-input');
-    const $searchClear = $('#search-clear');
-    const $chips   = $('.agency-chip');
-    const $checks  = $('.agency-chip input[type="checkbox"]');
+    const $table        = $('#ratings-table');
+    const $loading      = $('#loading');
+    const $error        = $('#error');
+    const $searchInput  = $('#search-input');
+    const $agencyChecks = $('.agency-checkboxes input[type="checkbox"]');
+    const $toggleConsolidated = $('#toggle-consolidated');
 
-    // ── Drawer UI Elements ──
-    const $drawer = $('#side-drawer');
-    const $drawerTitle = $('#drawer-title');
-    const $drawerCnpj = $('#drawer-cnpj');
-    const $drawerTabContentSummary = $('#drawer-tab-content-summary');
-    const $drawerTabContentComplete = $('#drawer-tab-content-complete');
+    // Drawer elements
+    const $overlay    = $('#drawer-overlay');
+    const $drawer     = $('#emissor-drawer');
+    const $drawerName = $('#drawer-name');
+    const $drawerCNPJ = $('#drawer-cnpj');
+    const $drawerSumm = $('#drawer-summary');
+    const $drawerBody = $('#drawer-body');
 
-    let tableApi = null;
-    let allData  = [];
-    let activeRiskFilter = null; // 'ig', 'spec', 'def', or null
+    let tableApi  = null;
+    let allData   = [];
+    let isConsolidated = false;   // current view mode
 
-    /* ── chip toggle style ── */
-    $chips.on('click', function () {
-      const $chip = $(this);
-      const checked = $chip.find('input')[0].checked;
-      $chip.toggleClass('checked', checked);
-    });
+    // ── Helpers ───────────────────────────────────────────────
 
-    /* ── Rating grade ── */
-    const IG_RATINGS = new Set([
-      'AAA','AA+','AA','AA-','A+','A','A-','BBB+','BBB','BBB-',
-      'Aaa','Aa1','Aa2','Aa3','A1','A2','A3','Baa1','Baa2','Baa3',
-      'A-1+','A-1','A-2','A-3','F1+','F1','F2','F3','A1+','P-1','P-2','P-3'
-    ]);
-    const SPEC_RATINGS = new Set([
-      'BB+','BB','BB-','B+','B','B-','CCC+','CCC','CCC-','CC','C',
-      'Ba1','Ba2','Ba3','B1','B2','B3','Caa1','Caa2','Caa3','Ca',
-      'B-1','B-2','B-3','C-1','C-2','C-3','NP','F-1','F-2','F-3'
-    ]);
-    const DEF_RATINGS = new Set(['D','DDD','DD','RD','SD']);
-
-    function getNormalizedRating(r) {
-      if (!r) return '';
-      return r.replace(/\(.*\)/g, '')   // remove parentheses contents
-              .replace(/\.br$/i, '')     // remove trailing .br
-              .replace(/^br/i, '')       // remove leading br
-              .trim();
+    function fmtDate(raw) {
+      if (!raw) return '—';
+      const m = String(raw).match(/^(\d{4})-(\d{2})-(\d{2})/);
+      return m ? `${m[3]}/${m[2]}/${m[1]}` : raw;
     }
 
-    function getRiskCategory(rating) {
-      if (!rating) return 'nr';
-      const base = getNormalizedRating(rating);
-      if (IG_RATINGS.has(base))   return 'ig';
-      if (SPEC_RATINGS.has(base)) return 'spec';
-      if (DEF_RATINGS.has(base))  return 'def';
-      return 'nr';
-    }
-
-    function ratingClass(r) {
-      const cat = getRiskCategory(r);
-      if (cat === 'ig')   return 'rating-ig';
-      if (cat === 'spec') return 'rating-spec';
-      if (cat === 'def')  return 'rating-def';
-      return 'rating-nr';
-    }
-
-    /* ── Outlook ── */
-    function outlookClass(o) {
-      const s = (o||'').toLowerCase();
-      if (s.includes('estável') || s.includes('stable'))  return 'outlook-stable';
-      if (s.includes('positiva') || s.includes('positive')) return 'outlook-positive';
-      if (s.includes('negativa') || s.includes('negative')) return 'outlook-negative';
-      if (s.includes('develop'))   return 'outlook-developing';
-      if (s.includes('withdrawn') || s.includes('retirado')) return 'outlook-withdrawn';
-      if (!o || o === '—')         return 'outlook-na';
+    function outlookClass(outlook) {
+      const o = (outlook || '').toLowerCase();
+      if (o.includes('estável') || o.includes('stable'))                return 'outlook-stable';
+      if (o.includes('positiva') || o.includes('positive'))             return 'outlook-positive';
+      if (o.includes('negativa') || o.includes('negative'))             return 'outlook-negative';
+      if (o.includes('developing') || o.includes('em desenvolvimento')) return 'outlook-developing';
+      if (o.includes('withdrawn') || o.includes('retirado'))            return 'outlook-withdrawn';
       return '';
     }
 
-    /* ── Agency badge ── */
-    function agencyBadge(ag) {
-      const cls = ag === 'Fitch' ? 'fitch' : (ag === "Moody's" ? 'moodys' : (ag === 'S&P' ? 'sp' : (ag === 'Austin' ? 'austin' : 'liberum')));
-      return `<span class="agency-badge ${cls}"><span class="badge-dot"></span>${ag}</span>`;
-    }
-
-    // Normalização setorial
-    function getNormalizedSector(setor, tipoRating) {
-      const s = (setor || '').trim();
-      const tr = (tipoRating || '').trim().toLowerCase();
-      
-      if (tr === 'fidc' || tr === 'fidcs' || tr === 'cri' || tr === 'cris' || tr === 'cra' || s === 'Finanças Estruturadas') {
-        return 'FIDCs / Finanças Estruturadas';
-      }
-      if (s === 'Empresas Não-Financeiras') {
-        return 'Empresas (Corporativo)';
-      }
-      if (s === 'Instituições Financeiras') {
-        return 'Instituições Financeiras';
-      }
-      if (s === 'Projetos de Infraestrutura') {
-        return 'Infraestrutura / Projetos';
-      }
-      if (s === 'Subsoberanos') {
-        return 'Subsoberanos (Estados / Municípios)';
-      }
-      if (!s) return 'Outros';
-      return s;
-    }
-
-    // Copiar CNPJ para clipboard
-    window.copyToClipboard = function(text, btn) {
-      navigator.clipboard.writeText(text).then(() => {
-        const originalText = btn.textContent;
-        btn.textContent = 'Copiado!';
-        btn.style.color = 'var(--green)';
-        btn.style.borderColor = 'var(--green)';
-        setTimeout(() => {
-          btn.textContent = originalText;
-          btn.style.color = '';
-          btn.style.borderColor = '';
-        }, 1500);
-      }).catch(err => {
-        console.error('Erro ao copiar:', err);
-      });
+    const AGENCY_META = {
+      'Fitch':        { cls: 'fitch',   badgeCls: 'badge-fitch' },
+      "Moody's":      { cls: 'moodys',  badgeCls: 'badge-moodys' },
+      'S&P':          { cls: 'sp',      badgeCls: 'badge-sp' },
+      'Austin':{ cls: 'austin',  badgeCls: 'badge-austin' },
+      'Liberum':      { cls: 'liberum', badgeCls: 'badge-liberum' },
     };
 
-    // Formatar os detalhes expandidos (child row individual)
-    function formatDetail(rowData) {
-      const extra = rowData[8];
-      const setor = extra.setor || '—';
-      const instrumento = extra.instrumento || '—';
-      const link = extra.link || '';
-      const cnpjRaw = extra.cnpjRaw || '—';
-      
-      let linkButtonHtml = '';
-      if (link) {
-        linkButtonHtml = `
-          <a href="${link}" target="_blank" rel="noopener" class="detail-link-btn">
-            Acessar Relatório Original ↗
-          </a>
-        `;
-      } else {
-        linkButtonHtml = `
-          <span class="detail-link-na">Relatório indisponível</span>
-        `;
-      }
-      
-      let cnpjActionsHtml = '';
-      if (cnpjRaw && cnpjRaw !== '—') {
-        cnpjActionsHtml = `
-          <button class="cnpj-copy-btn" onclick="copyToClipboard('${cnpjRaw}', this)">
-            Copiar CNPJ
-          </button>
-          <a href="https://cvmweb.cvm.gov.br/swb/default.asp?sg_sistema=cadgeral" target="_blank" rel="noopener" class="cnpj-external-btn">
-            Consultar CVM ↗
-          </a>
-        `;
-      }
-
-      // Se colunas estiverem ocultadas no layout responsivo, renderizamos elas também
-      let collapsedHtml = '';
-      if (tableApi) {
-        const hiddenIndices = tableApi.columns().indexes().filter(idx => !tableApi.column(idx).visible() && idx !== 0);
-        if (hiddenIndices.length > 0) {
-          collapsedHtml = `
-            <div class="collapsed-cols-container" style="margin-top: 1rem; border-top: 1px solid var(--border); padding-top: 0.75rem;">
-              <span class="detail-label" style="display:block; margin-bottom: 0.5rem;">Colunas Ocultadas (Tela Pequena)</span>
-              <table class="collapsed-cols-table" style="width:100%; font-size:0.75rem; border-collapse: collapse;">
-                ${hiddenIndices.toArray().map(idx => {
-                  const title = tableApi.column(idx).header().textContent;
-                  const displayVal = rowData[idx];
-                  const val = (displayVal && typeof displayVal === 'object') ? displayVal.display : displayVal;
-                  return `
-                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
-                       <td style="padding: 0.35rem 0; color: var(--text3); font-family: var(--font-mono); width: 30%; font-weight: 500;">${title}:</td>
-                       <td style="padding: 0.35rem 0; color: var(--text2);">${val}</td>
-                    </tr>
-                  `;
-                }).join('')}
-              </table>
-            </div>
-          `;
-        }
-      }
-      
-      return `
-        <div class="row-detail-container">
-          <div class="detail-grid">
-            <div class="detail-item">
-              <span class="detail-label">Setor / Segmento</span>
-              <span class="detail-value">${setor}</span>
-            </div>
-            <div class="detail-item">
-              <span class="detail-label">Ativo / Instrumento / Classe</span>
-              <span class="detail-value">${instrumento}</span>
-            </div>
-            <div class="detail-item actions-item">
-              <span class="detail-label">Ações & Links</span>
-              <div class="detail-actions">
-                ${linkButtonHtml}
-                ${cnpjActionsHtml}
-              </div>
-            </div>
-          </div>
-          ${collapsedHtml}
-        </div>
-      `;
+    function agencyMeta(a) { return AGENCY_META[a] || { cls: 'other', badgeCls: 'badge-other' }; }
+    function agencyBadge(a) {
+      const m = agencyMeta(a);
+      return `<span class="badge ${m.badgeCls}">${a}</span>`;
     }
+    function onlyDigits(s) { return String(s || '').replace(/\D/g, ''); }
 
-    // Formatar os detalhes expandidos (child row por emissor consolidado)
-    function formatEmitterRatings(extra) {
-      const ratings = extra.allRatings || [];
-      const rowsHtml = ratings.map(r => {
-        const o = r.outlook || '';
-        const rat = r.rating || '';
-        const link = r.link ? `<a href="${r.link}" target="_blank" rel="noopener" class="detail-link-btn" style="padding: 0.2rem 0.5rem; font-size: 0.65rem; display: inline-flex;">Relatório ↗</a>` : '<span class="detail-link-na" style="padding: 0.2rem 0.5rem; font-size: 0.65rem;">Indisponível</span>';
-        return `
-          <tr>
-            <td style="width: 15%;">${agencyBadge(r.agencia)}</td>
-            <td style="width: 35%; color: var(--text2); font-weight: 500;">
-              <div style="font-size: 0.75rem;">${r.tipo_rating || '—'}</div>
-              <div style="font-size: 0.65rem; color: var(--text3); font-family: var(--font-mono);">${r.instrumento || '—'}</div>
-            </td>
-            <td style="width: 15%;"><span class="rating-chip ${ratingClass(rat)}" style="padding: 0.15rem 0.4rem; font-size: 0.7rem;">${rat || '—'}</span></td>
-            <td style="width: 15%;"><span class="outlook-chip ${outlookClass(o)}" style="padding: 0.15rem 0.4rem; font-size: 0.7rem;">${o || '—'}</span></td>
-            <td style="width: 12%; color: var(--text3); font-family: var(--font-mono); font-size: 0.7rem;">${fmtDate(r.dt_acao)}</td>
-            <td style="text-align: right; width: 8%;">${link}</td>
-          </tr>
-        `;
-      }).join('');
+    // ── Load data ─────────────────────────────────────────────
 
-      let cnpjActionsHtml = '';
-      if (extra.cnpjRaw && extra.cnpjRaw !== '—') {
-        cnpjActionsHtml = `
-          <div style="margin-top: 0.75rem; display: flex; gap: 0.5rem; justify-content: flex-end;">
-            <button class="cnpj-copy-btn" onclick="copyToClipboard('${extra.cnpjRaw}', this)" style="padding: 0.25rem 0.6rem; font-size: 0.65rem;">
-              Copiar CNPJ
-            </button>
-            <a href="https://cvmweb.cvm.gov.br/swb/default.asp?sg_sistema=cadgeral" target="_blank" rel="noopener" class="cnpj-external-btn" style="padding: 0.25rem 0.6rem; font-size: 0.65rem;">
-              Consultar CVM ↗
-            </a>
-          </div>
-        `;
-      }
-
-      return `
-        <div class="row-detail-container" style="padding: 1rem; background: rgba(255,255,255,0.01); border-radius: var(--radius-sm); border: 1px solid var(--border);">
-          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text3); text-transform: uppercase; margin-bottom: 0.6rem; letter-spacing: 0.05em;">
-            Ratings Ativos de <strong>${extra.emissorRaw}</strong> (${ratings.length} registros)
-          </div>
-          <div style="overflow-x: auto;">
-            <table class="nested-ratings-table">
-              <thead>
-                <tr>
-                  <th>Agência</th>
-                  <th>Tipo / Instrumento</th>
-                  <th>Rating</th>
-                  <th>Outlook</th>
-                  <th>Data</th>
-                  <th style="text-align: right;">Ação</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${rowsHtml}
-              </tbody>
-            </table>
-          </div>
-          ${cnpjActionsHtml}
-        </div>
-      `;
-    }
-
-    /* ── Load data ── */
     try {
       const resp = await fetch('./data/emissores_rating.json');
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       allData = await resp.json();
     } catch (err) {
       $loading.hide();
-      $errMsg.text('Erro ao carregar dados: ' + err.message);
-      $error.show();
+      $error.text('Erro ao carregar dados: ' + err.message).show();
       return;
     }
-
     if (!allData.length) {
       $loading.hide();
-      $errMsg.text('Nenhum dado encontrado.');
-      $error.show();
+      $error.text('Nenhum dado encontrado.').show();
       return;
     }
 
-    /* ── Populating overall database stats (Static) ── */
-    const emissores  = new Set(allData.map(r => r.emissor));
-    const fitchN     = allData.filter(r => r.agencia === 'Fitch').length;
-    const moodysN    = allData.filter(r => r.agencia === "Moody's").length;
-    const spN        = allData.filter(r => r.agencia === 'S&P').length;
-    const austinN    = allData.filter(r => r.agencia === 'Austin').length;
-    const liberumN   = allData.filter(r => r.agencia === 'Liberum').length;
+    // ── Stats ─────────────────────────────────────────────────
 
-    document.getElementById('stat-emissores').textContent = emissores.size.toLocaleString('pt-BR');
+    const emissoresSet = new Set(allData.map(r => r.emissor));
+    const countBy = (key, val) => allData.filter(r => r[key] === val).length;
+    document.getElementById('stat-emissores').textContent = emissoresSet.size.toLocaleString('pt-BR');
     document.getElementById('stat-ratings').textContent   = allData.length.toLocaleString('pt-BR');
-    document.getElementById('stat-fitch').textContent     = fitchN.toLocaleString('pt-BR');
-    document.getElementById('stat-moodys').textContent    = moodysN.toLocaleString('pt-BR');
-    document.getElementById('stat-sp').textContent        = spN.toLocaleString('pt-BR');
-    document.getElementById('stat-austin').textContent    = austinN.toLocaleString('pt-BR');
-    document.getElementById('stat-liberum').textContent   = liberumN.toLocaleString('pt-BR');
+    document.getElementById('stat-fitch').textContent     = countBy('agencia', 'Fitch').toLocaleString('pt-BR');
+    document.getElementById('stat-moodys').textContent    = countBy('agencia', "Moody's").toLocaleString('pt-BR');
+    document.getElementById('stat-sp').textContent        = countBy('agencia', 'S&P').toLocaleString('pt-BR');
 
-    /* ── Populating dynamic Sector Filter ── */
-    const sectorsSet = new Set();
-    allData.forEach(r => {
-      sectorsSet.add(getNormalizedSector(r.setor, r.tipo_rating));
-    });
-    const sortedSectors = Array.from(sectorsSet).sort();
-    const $sectorSelect = $('#sector-select');
-    $sectorSelect.empty().append('<option value="">Todos os Setores</option>');
-    sortedSectors.forEach(sec => {
-      $sectorSelect.append(`<option value="${sec}">${sec}</option>`);
-    });
+    // ── Index allData by emissor for fast drawer lookup ───────
 
-    /* ── Helper utilities for date & strings ── */
-    function onlyDigits(s) { return (s || '').replace(/\D/g, ''); }
-
-    // Converte YYYY-MM-DD → dd/mm/yyyy; retorna '—' se vazio/inválido
-    function fmtDate(d) {
-      if (!d) return '—';
-      const m = String(d).match(/^(\d{4})-(\d{2})-(\d{2})/);
-      return m ? `${m[3]}/${m[2]}/${m[1]}` : d;
+    const byEmissor = {};
+    for (const r of allData) {
+      const key = r.emissor;
+      if (!byEmissor[key]) byEmissor[key] = { cnpj: r.cnpj || '', rows: [] };
+      byEmissor[key].rows.push(r);
     }
 
-    /* ── Mapping logic for DataTable compatibility ── */
-    function mapIndividualRow(r) {
-      const outlook = r.outlook || '';
-      const rating  = r.rating  || '';
-      const cnpj    = r.cnpj    || '';
-      const ag      = r.agencia || '';
-      const cnpjSearch = cnpj + ' ' + onlyDigits(cnpj);
-      return [
-        '', // Col 0: controle de expansão
-        { display: `<span class="emissor-cell">${r.emissor || '—'}</span>`,   filter: r.emissor    || '' },
-        { display: `<span class="cnpj-cell">${cnpj || '—'}</span>`,           filter: cnpjSearch },
-        { display: agencyBadge(ag),                                            filter: ag },
-        { display: `<span class="tipo-cell">${r.tipo_rating || '—'}</span>`,  filter: r.tipo_rating || '' },
-        { display: `<span class="rating-chip ${ratingClass(rating)}">${rating || '—'}</span>`, filter: rating },
-        { display: `<span class="outlook-chip ${outlookClass(outlook)}">${outlook || '—'}</span>`, filter: outlook },
-        { display: `<span class="date-cell">${fmtDate(r.dt_acao)}</span>`,     filter: fmtDate(r.dt_acao), sort: r.dt_acao || '' },
-        {
-          setor: getNormalizedSector(r.setor, r.tipo_rating),
-          instrumento: r.instrumento || '',
-          link: r.link || '',
-          cnpjRaw: cnpj,
-          emissorRaw: r.emissor || '',
-          isConsolidated: false
-        }
-      ];
-    }
+    // ── Build DataTables row arrays ───────────────────────────
+    //
+    //  DETAILED view columns:
+    //    0=Emissor  1=CNPJ  2=AgênciaRaw  3=TipoRating
+    //    4=Instrumento  5=Rating  6=Outlook  7=DataISO  8=DataDisplay
+    //
+    //  CONSOLIDATED view columns (1 row per emissor):
+    //    0=Emissor  1=CNPJ  2=Agências(joined)  3=RatingResumo
+    //    4=—        5=—     6=—                 7=DataISO  8=DataDisplay
 
-    function getConsolidatedEmitters(data) {
-      const emitters = {};
-      data.forEach(r => {
-        const key = (r.emissor || '').trim();
-        if (!key) return;
-        
-        if (!emitters[key]) {
-          emitters[key] = {
-            emissor: key,
-            cnpj: r.cnpj || '',
-            agencias: new Set(),
-            ratingsCount: 0,
-            lastDate: '',
-            allRatings: []
-          };
-        }
-        
-        emitters[key].ratingsCount++;
-        if (r.agencia) {
-          emitters[key].agencias.add(r.agencia);
-        }
-        if (r.dt_acao && (!emitters[key].lastDate || r.dt_acao > emitters[key].lastDate)) {
-          emitters[key].lastDate = r.dt_acao;
-        }
-        emitters[key].allRatings.push(r);
-      });
-      
-      return Object.values(emitters).map(em => {
-        const agList = Array.from(em.agencias).sort();
-        const displayAgencias = agList.map(agencyBadge).join(' ');
-        
-        // Sort ratings by date descending
-        em.allRatings.sort((a, b) => {
-          const dA = a.dt_acao || '';
-          const dB = b.dt_acao || '';
-          return dB.localeCompare(dA);
-        });
-        
+    function buildDetailedData() {
+      return allData.map(r => {
+        const outlook     = r.outlook || '';
+        const instrumento = r.instrumento || r.ativo || r.instrumento_ativo || '';
+        const dateISO     = r.dt_acao || '';
         return [
-          '', // Col 0: dt-control
-          { display: `<span class="emissor-cell" style="font-weight: 600;">${em.emissor}</span>`, filter: em.emissor },
-          { display: `<span class="cnpj-cell">${em.cnpj || '—'}</span>`, filter: em.cnpj + ' ' + onlyDigits(em.cnpj) },
-          { display: displayAgencias, filter: agList.join(' ') },
-          { display: `<span class="tipo-cell">${em.ratingsCount} rating(s) ativo(s)</span>`, filter: `${em.ratingsCount} ratings` },
-          { display: `<span class="consolidated-action-cell">Ver Painel ➔</span>`, filter: 'Ver Painel' },
-          { display: `<span class="outlook-chip outlook-na">—</span>`, filter: '—' },
-          { display: `<span class="date-cell">${fmtDate(em.lastDate)}</span>`, filter: fmtDate(em.lastDate), sort: em.lastDate },
-          {
-            isConsolidated: true,
-            emissorRaw: em.emissor,
-            cnpjRaw: em.cnpj,
-            allRatings: em.allRatings
-          }
+          r.emissor    || '—',
+          r.cnpj       || '—',
+          r.agencia    || '—',
+          r.tipo_rating|| '—',
+          instrumento  || '—',
+          r.rating     || '—',
+          outlook      || '—',
+          dateISO,
+          fmtDate(dateISO),
         ];
       });
     }
 
-    /* ── Dynamic Analytics Update ── */
-    function updateAnalytics(baseFiltered) {
-      let countIg = 0;
-      let countSpec = 0;
-      let countDef = 0;
-      
-      let stableCount = 0;
-      let hasOutlookCount = 0;
-      
-      baseFiltered.forEach(r => {
-        const cat = getRiskCategory(r.rating);
-        if (cat === 'ig') countIg++;
-        else if (cat === 'spec') countSpec++;
-        else if (cat === 'def') countDef++;
-        
-        const o = (r.outlook || '').toLowerCase();
-        if (o && o !== '—' && !o.includes('retirado') && !o.includes('withdrawn')) {
-          hasOutlookCount++;
-          if (o.includes('estável') || o.includes('stable')) {
-            stableCount++;
-          }
-        }
+    function buildConsolidatedData() {
+      // One row per unique emissor: most recent date, all agencies joined
+      return Object.entries(byEmissor).map(([emissor, { cnpj, rows }]) => {
+        const agencies  = [...new Set(rows.map(r => r.agencia).filter(Boolean))];
+        const ratings   = [...new Set(rows.map(r => r.rating).filter(Boolean))];
+        const latestISO = rows
+          .map(r => r.dt_acao || '')
+          .filter(Boolean)
+          .sort()
+          .at(-1) || '';
+        return [
+          emissor,
+          cnpj || '—',
+          agencies.join(','),          // 2: raw agencies (for filter)
+          agencies.join(' · '),        // 3: display agencies
+          `${rows.length} rating${rows.length !== 1 ? 's' : ''}`, // 4
+          ratings.slice(0, 3).join(' / ') + (ratings.length > 3 ? '…' : ''), // 5
+          '—',                         // 6
+          latestISO,                   // 7
+          fmtDate(latestISO),          // 8
+        ];
       });
-      
-      // Update counters in filters
-      $('#count-ig').text(countIg.toLocaleString('pt-BR'));
-      $('#count-spec').text(countSpec.toLocaleString('pt-BR'));
-      $('#count-def').text(countDef.toLocaleString('pt-BR'));
-      
-      // Compute ratios
-      const totalRisk = countIg + countSpec + countDef;
-      const igRatio = totalRisk > 0 ? Math.round((countIg / totalRisk) * 100) : 0;
-      const stableRatio = hasOutlookCount > 0 ? Math.round((stableCount / hasOutlookCount) * 100) : 0;
-      
-      // Update bars
-      $('#bar-ig-ratio').css('width', `${igRatio}%`);
-      $('#label-ig-ratio').text(`${igRatio}%`);
-      
-      $('#bar-stable-ratio').css('width', `${stableRatio}%`);
-      $('#label-stable-ratio').text(`${stableRatio}%`);
     }
 
-    /* ── Decoupled Search/Filter Orchestration ── */
-    function applyFilters() {
-      const q = ($search.val() || '').trim().toLowerCase();
-      $searchClear.toggle(!!q);
-      
-      // 1. Gather active agency checks
-      const selectedAgencies = [];
-      $checks.each(function () { if (this.checked) selectedAgencies.push(this.value); });
-      
-      // 2. Base text and sector filter (applied to allData first)
-      const textAndSectorFiltered = allData.filter(r => {
-        // Sector Filter
-        const selectedSector = $sectorSelect.val();
-        if (selectedSector && getNormalizedSector(r.setor, r.tipo_rating) !== selectedSector) {
-          return false;
-        }
-        
-        // Text Search Filter
-        if (q) {
-          const emissor = (r.emissor || '').toLowerCase();
-          const cnpj = (r.cnpj || '').toLowerCase();
-          const cnpjDigits = onlyDigits(cnpj);
-          const rating = (r.rating || '').toLowerCase();
-          const tipo = (r.tipo_rating || '').toLowerCase();
-          const inst = (r.instrumento || '').toLowerCase();
-          
-          const matches = emissor.includes(q) ||
-                          cnpj.includes(q) ||
-                          cnpjDigits.includes(q) ||
-                          rating.includes(q) ||
-                          tipo.includes(q) ||
-                          inst.includes(q);
-          if (!matches) return false;
-        }
-        
-        return true;
-      });
+    // ── Column definitions (shared between both views) ────────
 
-      // 3. For Analytics: further filter by active agencies
-      const analyticsFiltered = textAndSectorFiltered.filter(r => {
-        if (selectedAgencies.length > 0 && !selectedAgencies.includes(r.agencia)) {
-          return false;
-        }
-        return true;
-      });
-      updateAnalytics(analyticsFiltered);
-
-      // 4. Map and Filter based on Consolidated Switch
-      const isConsolidated = $('#toggle-view').is(':checked');
-      let mappedRows = [];
-      
-      if (isConsolidated) {
-        // Consolidate the text and sector filtered emitters (meaning drawers will contain all ratings)
-        const allGrouped = getConsolidatedEmitters(textAndSectorFiltered);
-        
-        // Filter the consolidated list based on selectedAgencies and activeRiskFilter
-        mappedRows = allGrouped.filter(em => {
-          if (selectedAgencies.length > 0) {
-            const hasMatchingAgency = em[8].allRatings.some(r => selectedAgencies.includes(r.agencia));
-            if (!hasMatchingAgency) return false;
-          }
-          if (activeRiskFilter) {
-            const hasMatchingRisk = em[8].allRatings.some(r => getRiskCategory(r.rating) === activeRiskFilter);
-            if (!hasMatchingRisk) return false;
-          }
-          return true;
-        });
-      } else {
-        // Filter individual ratings by agency and risk
-        const finalFiltered = textAndSectorFiltered.filter(r => {
-          if (selectedAgencies.length > 0 && !selectedAgencies.includes(r.agencia)) {
-            return false;
-          }
-          if (activeRiskFilter && getRiskCategory(r.rating) !== activeRiskFilter) {
-            return false;
-          }
-          return true;
-        });
-        mappedRows = finalFiltered.map(mapIndividualRow);
-      }
-
-      // Update counters in UI
-      $('#filtered-n').text(mappedRows.length.toLocaleString('pt-BR'));
-
-      // 5. Redraw DataTable
-      if (tableApi) {
-        tableApi.clear().rows.add(mappedRows).draw();
-      }
+    function buildColumns(consolidated) {
+      return [
+        // 0 Emissor — in consolidated mode, show expand icon
+        {
+          render: (d) => consolidated
+            ? `<span class="emissor-cell">${d} <span style="font-size:0.65rem;color:var(--text3);margin-left:0.3rem;">↗</span></span>`
+            : `<span class="emissor-cell">${d}</span>`,
+          searchable: true,
+        },
+        // 1 CNPJ
+        { render: (d) => `<span class="cnpj-cell">${d}</span>`, searchable: true },
+        // 2 Agência raw (hidden in consolidated, visible in detailed)
+        consolidated
+          ? { visible: false, searchable: true }
+          : { render: (d) => d !== '—' ? agencyBadge(d) : '—', searchable: true },
+        // 3 Tipo Rating (detailed) / Agências display (consolidated)
+        consolidated
+          ? {
+              render: (d) => {
+                const parts = d.split(' · ');
+                return parts.map(a => {
+                  const m = agencyMeta(a.trim());
+                  return `<span class="badge ${m.badgeCls}" style="margin-right:3px">${a.trim()}</span>`;
+                }).join('');
+              },
+              searchable: false,
+            }
+          : { render: (d) => d, searchable: true },
+        // 4 Instrumento (detailed) / Contagem (consolidated)
+        { render: (d) => `<span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text2)">${d}</span>`, searchable: !consolidated },
+        // 5 Rating
+        { render: (d) => `<span class="rating-cell">${d}</span>`, searchable: true },
+        // 6 Outlook (hidden in consolidated)
+        consolidated
+          ? { visible: false, searchable: false }
+          : {
+              render: (d, type) => type !== 'display' ? d : `<span class="outlook-cell ${outlookClass(d)}">${d}</span>`,
+              searchable: false,
+            },
+        // 7 Date ISO — hidden, used for sort
+        { visible: false, searchable: false },
+        // 8 Date display
+        { render: (d) => `<span class="date-cell">${d}</span>`, orderData: 7, searchable: false },
+      ];
     }
+
+    // ── Init DataTable ────────────────────────────────────────
 
     $loading.hide();
     $table.show();
 
-    /* ── Initialize DataTable ── */
+    function buildColumnDefs(consolidated) {
+      // Header labels differ per mode
+      const headers = consolidated
+        ? ['Emissor', 'CNPJ', '(raw)', 'Agências', 'Ratings', 'Rating(s)', '', '', 'Última Ação']
+        : ['Emissor', 'CNPJ', 'Agência', 'Tipo Rating', 'Instrumento / Ativo', 'Rating', 'Outlook', '', 'Data'];
+      $table.find('thead th').each(function (i) {
+        if (headers[i] !== undefined && headers[i] !== '') $(this).text(headers[i]);
+      });
+    }
+
     tableApi = $table.DataTable({
-      responsive: {
-        details: false // disable default responsive behavior
-      },
+      data: buildDetailedData(),
+      responsive: true,
       pageLength: 50,
       lengthMenu: [[25, 50, 100, 250, -1], [25, 50, 100, 250, 'Todos']],
-      order: [[1, 'asc']], // Order by Emitter (Col 1)
-      data: [],
-      language: {
-        url: 'https://cdn.datatables.net/plug-ins/2.2.2/i18n/pt-BR.json'
-      },
+      order: [[0, 'asc']],
+      language: { url: 'https://cdn.datatables.net/plug-ins/2.2.2/i18n/pt-BR.json' },
       buttons: [
-        { 
-          extend: 'excelHtml5', 
-          text: '↓ Excel', 
+        {
+          extend: 'excelHtml5',
+          text: 'Excel',
           title: 'pulse_ratings_consulta',
-          exportOptions: { columns: [1, 2, 3, 4, 5, 6, 7], orthogonal: 'filter' } 
-        }
+          exportOptions: { columns: [0,1,2,3,4,5,6,8] }
+        },
       ],
-      dom: '<"dt-layout-row"<"dt-layout-cell"B><"dt-layout-cell"l>>' +
-           '<"dt-layout-row"tr>' +
-           '<"dt-layout-row"<"dt-layout-cell"i><"dt-layout-cell"p>>',
-      columnDefs: [{
-        targets: [1, 2, 3, 4, 5, 6, 7],
-        render: function(data) {
-          if (data && typeof data === 'object') {
-            return data.display !== undefined ? data.display : data;
-          }
-          return data;
-        }
-      }],
-      columns: [
-        { data: 0, className: 'dt-control', orderable: false, searchable: false },
-        { data: 1, render: { _: 'display', filter: 'filter', sort: 'filter' } },
-        { data: 2, render: { _: 'display', filter: 'filter', sort: 'filter' } },
-        { data: 3, render: { _: 'display', filter: 'filter', sort: 'filter' } },
-        { data: 4, render: { _: 'display', filter: 'filter', sort: 'filter' } },
-        { data: 5, render: { _: 'display', filter: 'filter', sort: 'filter' } },
-        { data: 6, render: { _: 'display', filter: 'filter', sort: 'filter' } },
-        { data: 7, render: { _: 'display', filter: 'filter', sort: 'sort' } },
-      ],
+      dom: '<"dt-length-placeholder"l>t<"dt-info-placeholder"i><"dt-paginate-placeholder"p>',
+      columns: buildColumns(false),
     });
 
-    /* ── Highlighting Search Term with mark.js ── */
-    tableApi.on('draw', function () {
-      const body = tableApi.table().body();
-      $(body).unmark();
-      
-      const term = ($search.val() || '').trim();
-      if (term) {
-        $(body).mark(term, {
-          className: 'search-highlight',
-          accuracy: 'partially',
-          exclude: ['td.dt-control', '.agency-badge']
-        });
+    // ── Move DT controls ──────────────────────────────────────
+
+    function moveDtControls() {
+      const $length   = $('.dt-length-placeholder');
+      const $info     = $('.dt-info-placeholder');
+      const $paginate = $('.dt-paginate-placeholder');
+      if ($length.length)   $('#dt-length-container').html($length.detach());
+      if ($info.length)     $('#dt-info-container').html($info.detach());
+      if ($paginate.length) $('#dt-paginate-container').html($paginate.detach());
+      $('#dt-top-bar').show();
+      $('#dt-bottom-bar').show();
+    }
+    setTimeout(moveDtControls, 100);
+
+    // ── Export ────────────────────────────────────────────────
+
+    $('#export-excel-btn').on('click', () => tableApi.button(0).trigger());
+
+    // ── Custom filter ─────────────────────────────────────────
+
+    let activeAgencies = new Set();
+    let searchQuery    = '';
+
+    $.fn.dataTable.ext.search.push(function (settings, data) {
+      // col 2 = raw agencies (single or comma-joined in consolidated mode)
+      const rowAgencies = data[2].split(',').map(s => s.trim());
+      if (activeAgencies.size) {
+        const hasActive = rowAgencies.some(a => activeAgencies.has(a));
+        if (!hasActive) return false;
       }
+      if (searchQuery) {
+        const q       = searchQuery;
+        const qDigits = onlyDigits(q);
+        const matched =
+          data[0].toLowerCase().includes(q) ||
+          data[1].toLowerCase().includes(q) ||
+          (qDigits && onlyDigits(data[1]).includes(qDigits)) ||
+          data[2].toLowerCase().includes(q) ||
+          data[3].toLowerCase().includes(q) ||
+          data[4].toLowerCase().includes(q) ||
+          data[5].toLowerCase().includes(q);
+        if (!matched) return false;
+      }
+      return true;
     });
 
-    /* ── Child row event handling ── */
-    $tbody.on('click', 'td.dt-control', function (e) {
-      e.stopPropagation();
-      const tr = $(this).closest('tr');
-      const row = tableApi.row(tr);
+    function applyFilters() {
+      if (!tableApi) return;
+      searchQuery    = $searchInput.val().trim().toLowerCase();
+      activeAgencies = new Set();
+      $agencyChecks.each(function () { if (this.checked) activeAgencies.add(this.value); });
+      tableApi.draw();
+    }
 
-      const isConsolidated = $('#toggle-view').is(':checked');
+    applyFilters();
+    $searchInput.on('input', applyFilters);
+    $agencyChecks.on('change', applyFilters);
+
+    // ── Consolidated / Detailed toggle ────────────────────────
+
+    function safeDestroyTable() {
+      if (!tableApi) return;
+      const $wrapper = $('#ratings-table_wrapper');
+      if ($wrapper.length) {
+        const $length   = $('.dt-length-placeholder');
+        const $info     = $('.dt-info-placeholder');
+        const $paginate = $('.dt-paginate-placeholder');
+        $wrapper.append($length, $info, $paginate);
+      }
+      tableApi.destroy();
+      tableApi = null;
+    }
+
+    $toggleConsolidated.on('change', function () {
+      isConsolidated = this.checked;
+      closeDrawer();
+
+      // Rebuild with new data + column definitions safely
+      safeDestroyTable();
+
+      // Re-create column headers
+      const $thead = $table.find('thead tr');
       if (isConsolidated) {
-        const data = row.data();
-        const extra = data[8];
-        if (extra && extra.isConsolidated) {
-          openDrawer(extra);
-        }
-        return;
+        $thead.html(`
+          <th>Emissor</th>
+          <th>CNPJ</th>
+          <th style="display:none"></th>
+          <th>Agências</th>
+          <th>Ratings</th>
+          <th>Rating(s)</th>
+          <th style="display:none"></th>
+          <th style="display:none"></th>
+          <th>Última Ação</th>
+        `);
+      } else {
+        $thead.html(`
+          <th>Emissor</th>
+          <th>CNPJ</th>
+          <th>Agência</th>
+          <th>Tipo Rating</th>
+          <th>Instrumento / Ativo</th>
+          <th>Rating</th>
+          <th>Outlook</th>
+          <th style="display:none"></th>
+          <th>Data</th>
+        `);
       }
 
-      if (row.child.isShown()) {
-        row.child.hide();
-        tr.removeClass('dt-hasChild');
-      } else {
-        const data = row.data();
-        row.child(formatDetail(data)).show();
-        tr.addClass('dt-hasChild');
-      }
+      tableApi = $table.DataTable({
+        data: isConsolidated ? buildConsolidatedData() : buildDetailedData(),
+        responsive: true,
+        pageLength: 50,
+        lengthMenu: [[25, 50, 100, 250, -1], [25, 50, 100, 250, 'Todos']],
+        order: [[0, 'asc']],
+        language: { url: 'https://cdn.datatables.net/plug-ins/2.2.2/i18n/pt-BR.json' },
+        buttons: [{
+          extend: 'excelHtml5', text: 'Excel', title: 'pulse_ratings_consulta',
+          exportOptions: { columns: isConsolidated ? [0,1,3,4,5,8] : [0,1,2,3,4,5,6,8] }
+        }],
+        dom: '<"dt-length-placeholder"l>t<"dt-info-placeholder"i><"dt-paginate-placeholder"p>',
+        columns: buildColumns(isConsolidated),
+      });
+
+      setTimeout(moveDtControls, 100);
+      applyFilters();
+      bindRowClick();
     });
 
-    /* ── Credit rating score mapping for transitions ── */
-    const ratingScores = {
-      'AAA': 22, 'AA+': 21, 'AA': 20, 'AA-': 19, 'A+': 18, 'A': 17, 'A-': 16,
-      'BBB+': 15, 'BBB': 14, 'BBB-': 13, 'BB+': 12, 'BB': 11, 'BB-': 10,
-      'B+': 9, 'B': 8, 'B-': 7, 'CCC+': 6, 'CCC': 5, 'CCC-': 4, 'CC': 3, 'C': 2, 'D': 1,
-      // Moody's scales
-      'Aaa': 22, 'Aa1': 21, 'Aa2': 20, 'Aa3': 19, 'A1': 18, 'A2': 17, 'A3': 16,
-      'Baa1': 15, 'Baa2': 14, 'Baa3': 13, 'Ba1': 12, 'Ba2': 11, 'Ba3': 10,
-      'B1': 9, 'B2': 8, 'B3': 7, 'Caa1': 6, 'Caa2': 5, 'Caa3': 4, 'Ca': 3
-    };
+    // ── Drawer logic ──────────────────────────────────────────
 
-    function getRatingScore(r) {
-      const base = getNormalizedRating(r);
-      return ratingScores[base] || 0;
-    }
+    function openDrawer(emissor) {
+      const data = byEmissor[emissor];
+      if (!data) return;
 
-    let upgrades = [];
-    let downgrades = [];
-    let latestActions = [];
+      $drawerName.text(emissor);
+      $drawerCNPJ.text(data.cnpj ? `CNPJ: ${data.cnpj}` : '');
 
-    function computeCreditMovements() {
-      const groups = {};
-      allData.forEach(r => {
-        if (!r.dt_acao) return;
-        const key = `${r.emissor || ''}|${r.agencia || ''}|${r.instrumento || ''}`;
-        if (!groups[key]) groups[key] = [];
-        groups[key].push(r);
-      });
+      // Build summary pills — one per agency that has ratings for this emissor
+      const agencyGroups = {};
+      for (const r of data.rows) {
+        if (!agencyGroups[r.agencia]) agencyGroups[r.agencia] = [];
+        agencyGroups[r.agencia].push(r);
+      }
 
-      Object.values(groups).forEach(list => {
-        if (list.length < 2) return;
-        list.sort((a, b) => (a.dt_acao || '').localeCompare(b.dt_acao || ''));
+      let summaryHtml = '';
+      for (const [agencia, rows] of Object.entries(agencyGroups)) {
+        const m = agencyMeta(agencia);
+        summaryHtml += `
+          <span class="summary-pill ${m.cls}">
+            <span class="pill-dot"></span>
+            ${agencia} · ${rows.length} rating${rows.length !== 1 ? 's' : ''}
+          </span>`;
+      }
+      $drawerSumm.html(summaryHtml);
 
-        for (let i = 1; i < list.length; i++) {
-          const prev = list[i - 1];
-          const curr = list[i];
-          const prevScore = getRatingScore(prev.rating);
-          const currScore = getRatingScore(curr.rating);
+      // Build body: section per agency, cards per rating
+      let bodyHtml = '';
+      for (const [agencia, rows] of Object.entries(agencyGroups)) {
+        const m = agencyMeta(agencia);
+        // Sort rows by date desc
+        const sorted = [...rows].sort((a, b) => (b.dt_acao || '').localeCompare(a.dt_acao || ''));
 
-          if (prevScore > 0 && currScore > 0 && prev.rating !== curr.rating) {
-            const transition = {
-              emissor: curr.emissor,
-              agencia: curr.agencia,
-              instrumento: curr.instrumento || curr.tipo_rating || 'Instrumento',
-              prevRating: prev.rating,
-              currRating: curr.rating,
-              dt_acao: curr.dt_acao,
-              link: curr.link
-            };
+        bodyHtml += `
+          <div class="agency-section">
+            <div class="agency-section-header">
+              <span class="agency-section-title" style="color:var(--${m.cls})">${agencia}</span>
+              <div class="agency-section-divider"></div>
+            </div>`;
 
-            if (currScore > prevScore) {
-              upgrades.push(transition);
-            } else {
-              downgrades.push(transition);
-            }
-          }
+        for (const r of sorted) {
+          const instrumento = r.instrumento || r.ativo || r.instrumento_ativo || '';
+          const outlook     = r.outlook || '';
+          const oClass      = outlookClass(outlook);
+          bodyHtml += `
+            <div class="rating-card">
+              <div class="rating-card-top">
+                <span class="rc-tipo">${r.tipo_rating || '—'}</span>
+                <span class="rc-rating">${r.rating || '—'}</span>
+              </div>
+              ${instrumento ? `<div class="rating-card-instrument">${instrumento}</div>` : ''}
+              <div class="rating-card-bottom">
+                ${outlook ? `<span class="rc-outlook ${oClass}">${outlook}</span>` : ''}
+                <span class="rc-date">${fmtDate(r.dt_acao)}</span>
+              </div>
+            </div>`;
         }
-      });
 
-      upgrades.sort((a, b) => (b.dt_acao || '').localeCompare(a.dt_acao || ''));
-      downgrades.sort((a, b) => (b.dt_acao || '').localeCompare(a.dt_acao || ''));
+        bodyHtml += `</div>`;
+      }
 
-      // Latest actions
-      latestActions = allData
-        .filter(r => r.dt_acao)
-        .sort((a, b) => (b.dt_acao || '').localeCompare(a.dt_acao || ''))
-        .map(r => ({
-          emissor: r.emissor,
-          agencia: r.agencia,
-          instrumento: r.instrumento || r.tipo_rating || 'Instrumento',
-          rating: r.rating,
-          dt_acao: r.dt_acao,
-          link: r.link
-        }))
-        .slice(0, 8);
+      if (!bodyHtml) bodyHtml = '<div class="drawer-empty">Nenhum rating encontrado para este emissor.</div>';
+
+      $drawerBody.html(bodyHtml);
+
+      $overlay.addClass('open');
+      $drawer.addClass('open');
+      $drawer.attr('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+
+      // Highlight active row
+      $table.find('tbody tr').removeClass('row-active');
+      $table.find('tbody tr').filter(function () {
+        return $(this).find('td').first().text().trim() === emissor;
+      }).addClass('row-active');
     }
 
-    function renderCreditMovements(tab) {
-      const $list = $('#updates-content-list');
-      $list.css('opacity', '0');
+    function closeDrawer() {
+      $overlay.removeClass('open');
+      $drawer.removeClass('open');
+      $drawer.attr('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      $table.find('tbody tr').removeClass('row-active');
+    }
 
+    $('#drawer-close').on('click', closeDrawer);
+    $overlay.on('click', closeDrawer);
+    $(document).on('keydown', function (e) { if (e.key === 'Escape') closeDrawer(); });
+
+    function bindRowClick() {
+      $table.find('tbody').off('click.drawer').on('click.drawer', 'tr', function () {
+        const emissor = $(this).find('td').first().text().replace(/↗/g, '').trim();
+        if (emissor && emissor !== '—') openDrawer(emissor);
+      });
+      $table.find('tbody tr').addClass('clickable-row');
+    }
+
+    // Also bind after each DataTables draw (pagination changes DOM)
+    $table.on('draw.dt', function () {
+      $table.find('tbody tr').addClass('clickable-row');
+    });
+
+    // ── Updates section logic ────────────────────────────────
+    const $updatesGrid = $('#updates-content-list');
+    const $agencyPeriod = $('#agency-period-text');
+
+    function renderAgencyActions(agencyName) {
+      if (!allData || !allData.length) return;
+
+      // Filter and sort actions for this agency
+      const agencyActions = allData
+        .filter(r => r.agencia === agencyName && r.dt_acao)
+        .sort((a, b) => (b.dt_acao || '').localeCompare(a.dt_acao || ''));
+
+      // Calculate date period range of ALL actions for this agency
+      if (agencyActions.length) {
+        const minDate = fmtDate(agencyActions.reduce((a, b) => a.dt_acao < b.dt_acao ? a : b).dt_acao);
+        const maxDate = fmtDate(agencyActions.reduce((a, b) => a.dt_acao > b.dt_acao ? a : b).dt_acao);
+        $agencyPeriod.text(`Período de cobertura: de ${minDate} a ${maxDate}`);
+      } else {
+        $agencyPeriod.text('Período de cobertura: não disponível');
+      }
+
+      // Slice to top 8 items to display
+      const itemsToShow = agencyActions.slice(0, 8);
+
+      $updatesGrid.css('opacity', '0');
       setTimeout(() => {
-        $list.empty();
-        let itemsToShow = [];
-        if (tab === 'actions') itemsToShow = latestActions;
-        else if (tab === 'downgrades') itemsToShow = downgrades.slice(0, 8);
-        else if (tab === 'upgrades') itemsToShow = upgrades.slice(0, 8);
-
+        $updatesGrid.empty();
         if (!itemsToShow.length) {
-          $list.append(`
+          $updatesGrid.append(`
             <div style="grid-column: 1/-1; padding: 1.5rem; text-align: center; color: var(--text3); font-family: var(--font-mono); font-size: 0.75rem;">
-              Nenhuma movimentação registrada nesta categoria.
+              Nenhuma movimentação recente registrada para esta agência.
             </div>
           `);
-          $list.css('opacity', '1');
+          $updatesGrid.css('opacity', '1');
           return;
         }
 
         itemsToShow.forEach(item => {
           const formattedDate = fmtDate(item.dt_acao);
-          const isTransition = item.prevRating !== undefined;
-
-          let transitionHtml = '';
-          if (isTransition) {
-            const prevCat = getRiskCategory(item.prevRating);
-            const currCat = getRiskCategory(item.currRating);
-            const changeCls = tab === 'upgrades' ? 'upgrade' : 'downgrade';
-            const changeText = tab === 'upgrades' ? 'Upgrade' : 'Downgrade';
-
-            transitionHtml = `
-              <div class="update-card-transition">
-                <span class="rating-badge-inline ${prevCat}">${item.prevRating}</span>
-                <span class="transition-arrow">➔</span>
-                <span class="rating-badge-inline ${currCat}">${item.currRating}</span>
-                <span class="transition-badge ${changeCls}">${changeText}</span>
-              </div>
-            `;
-          } else {
-            const currCat = getRiskCategory(item.rating);
-            transitionHtml = `
-              <div class="update-card-transition">
-                <span class="rating-badge-inline ${currCat}">${item.rating || '—'}</span>
-                <span class="transition-badge upgrade" style="background: rgba(0, 212, 255, 0.1); color: var(--accent);">Atribuição</span>
-              </div>
-            `;
-          }
-
-          const reportLink = item.link ? `<a href="${item.link}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" title="Ver Relatório Original">📄</a>` : '';
-          const emitterName = item.emissor;
+          const outlook = item.outlook || '';
+          const oClass = outlookClass(outlook);
+          const linkHtml = item.link ? `<a href="${item.link}" target="_blank" rel="noopener" class="date-link" style="color: var(--accent); margin-left: 0.4rem;" title="Ver Relatório Original">📄</a>` : '';
 
           const cardHtml = `
             <div class="update-card">
               <div class="update-card-meta">
                 <span>${agencyBadge(item.agencia)}</span>
-                <div style="display: flex; align-items: center; gap: 0.35rem;">
+                <div class="date-link">
                   <span>${formattedDate}</span>
-                  ${reportLink}
+                  ${linkHtml}
                 </div>
               </div>
-              <div class="update-card-emitter" title="Clique para filtrar a tabela por este emissor" data-emitter="${emitterName.replace(/"/g, '&quot;')}">
-                ${emitterName}
+              <div class="update-card-emitter" title="Clique para filtrar a tabela por este emissor" data-emitter="${item.emissor.replace(/"/g, '&quot;')}">
+                ${item.emissor}
               </div>
-              <div class="update-card-inst" title="${item.instrumento || '—'}">
-                ${item.instrumento || '—'}
+              <div class="update-card-inst" title="${item.instrumento || item.tipo_rating || '—'}">
+                ${item.instrumento || item.tipo_rating || '—'}
               </div>
-              ${transitionHtml}
+              <div class="update-card-rating">
+                <span class="rc-rating">${item.rating || '—'}</span>
+                ${outlook ? `<span class="rc-outlook ${oClass}">${outlook}</span>` : ''}
+              </div>
             </div>
           `;
-          $list.append(cardHtml);
+          $updatesGrid.append(cardHtml);
         });
-
-        $list.css('opacity', '1');
+        $updatesGrid.css('opacity', '1');
       }, 150);
     }
 
-    /* ── Event Bindings ── */
-    $search.on('input', applyFilters);
-    $checks.on('change', applyFilters);
-    $sectorSelect.on('change', applyFilters);
-
-    // ── Row Click Events to open Drawer ──
-    $tbody.on('click', 'tr', function (e) {
-      if (!$('#toggle-view').is(':checked')) return;
-      if ($(e.target).closest('a, button, input, td.dt-control').length) return;
-
-      const row = tableApi.row(this);
-      const data = row.data();
-      if (data && data[8] && data[8].isConsolidated) {
-        openDrawer(data[8]);
-      }
-    });
-
-    // ── Drawer Close Events ──
-    $('.drawer-close, .drawer-overlay').on('click', closeDrawer);
-
-    // ── Drawer Tab Switching ──
-    $('.drawer-tab-btn').on('click', function () {
-      const $btn = $(this);
-      if ($btn.hasClass('active')) return;
-
-      $('.drawer-tab-btn').removeClass('active').attr('aria-selected', 'false');
-      $btn.addClass('active').attr('aria-selected', 'true');
-
-      $('.drawer-tab-content').removeClass('active');
-      const target = $btn.attr('data-drawer-tab');
-      $(`#drawer-tab-content-${target}`).addClass('active');
-    });
-
-    // Tab buttons event
-    $('.update-tab-btn').on('click', function() {
-      const $btn = $(this);
-      if ($btn.hasClass('active')) return;
-      
-      $('.update-tab-btn').removeClass('active').attr('aria-selected', 'false');
-      $btn.addClass('active').attr('aria-selected', 'true');
-      
-      renderCreditMovements($btn.attr('data-tab'));
-    });
-
-    // Emitter click in cards event
-    $('#updates-content-list').on('click', '.update-card-emitter', function() {
+    // Click event for emitter card to filter
+    $updatesGrid.on('click', '.update-card-emitter', function () {
       const emitterName = $(this).attr('data-emitter');
       if (emitterName) {
-        $search.val(emitterName);
-        $searchClear.show();
+        $searchInput.val(emitterName);
         applyFilters();
-        
-        // Scroll smoothly to table
         $('html, body').animate({
           scrollTop: $table.offset().top - 100
         }, 500);
       }
     });
 
-    $searchClear.on('click', function() {
-      $search.val('');
-      $searchClear.hide();
-      applyFilters();
-      $search.focus();
-    });
-
-    // View Toggle Change
-    $('#toggle-view').on('change', function() {
-      // Collapse all child rows before changing layout
-      if (tableApi) {
-        tableApi.rows().every(function() {
-          if (this.child.isShown()) {
-            this.child.hide();
-            $(this.node()).removeClass('dt-hasChild');
-          }
-        });
-      }
-      applyFilters();
-    });
-
-    // Risk Button Filters
-    $('.risk-btn').on('click', function() {
+    // Tab switches
+    $('.update-tab-btn').on('click', function () {
       const $btn = $(this);
-      const filter = $btn.attr('data-risk');
-      
-      if ($btn.hasClass('active')) {
-        $btn.removeClass('active');
-        activeRiskFilter = null;
-      } else {
-        $('.risk-btn').removeClass('active');
-        $btn.addClass('active');
-        activeRiskFilter = filter;
-      }
-      
-      applyFilters();
+      if ($btn.hasClass('active')) return;
+      $('.update-tab-btn').removeClass('active').attr('aria-selected', 'false');
+      $btn.addClass('active').attr('aria-selected', 'true');
+      renderAgencyActions($btn.attr('data-agency'));
     });
 
-    // First load execution
-    computeCreditMovements();
-    renderCreditMovements('actions');
-    applyFilters();
+    // Initial load of default tab
+    renderAgencyActions("Moody's");
+
+    bindRowClick();
 
   })();
   </script>
