@@ -168,6 +168,52 @@
     .stat-item.fitch   .stat-value { color: var(--fitch); }
     .stat-item.moodys  .stat-value { color: var(--moodys); }
     .stat-item.sp      .stat-value { color: var(--sp); }
+    .stat-item.austin .stat-label { color: #E67E22; }
+    .stat-item.liberum .stat-label { color: #8E44AD; }
+
+    /* ── Main Tabs ────────────────────────────────────────── */
+    .main-tabs {
+      display: flex; gap: 1.5rem; border-bottom: 1px solid var(--border1); margin-bottom: 1.5rem;
+    }
+    .main-tab-btn {
+      padding: 0.75rem 0.5rem; border: none; background: none; color: var(--text3); font-weight: 500; font-size: 1rem; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s;
+    }
+    .main-tab-btn:hover { color: var(--text1); }
+    .main-tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+    .main-view { display: none; }
+    .main-view.active { display: block; }
+
+    /* ── Comparator Matrix ────────────────────────────────── */
+    .comparator-toolbar {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;
+    }
+    .comparator-cards {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;
+    }
+    .comp-card {
+      background: var(--surface); border: 1px solid var(--border1); padding: 1rem; border-radius: var(--radius-sm); display: flex; flex-direction: column; gap: 0.25rem;
+    }
+    .comp-card-val { font-size: 1.5rem; font-weight: 600; color: var(--text1); }
+    .comp-card-lbl { font-size: 0.8rem; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
+    
+    .comp-matrix-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--border1); border-radius: var(--radius-sm);
+    }
+    .comp-matrix {
+      width: 100%; border-collapse: collapse; min-width: 800px;
+    }
+    .comp-matrix th, .comp-matrix td {
+      padding: 0.75rem 1rem; border-bottom: 1px solid var(--border1); border-right: 1px solid var(--border1); text-align: left; vertical-align: top;
+    }
+    .comp-matrix th { background: var(--bg2); font-weight: 600; color: var(--text2); font-size: 0.85rem; text-transform: uppercase; position: sticky; top: 0; z-index: 10; }
+    .comp-matrix th:first-child { width: 250px; position: sticky; left: 0; z-index: 11; background: var(--surface); }
+    .comp-matrix td:first-child { position: sticky; left: 0; background: var(--surface); font-weight: 500; color: var(--text1); z-index: 5; }
+    .comp-matrix tr:last-child td { border-bottom: none; }
+    .comp-matrix td:last-child, .comp-matrix th:last-child { border-right: none; }
+    
+    .comp-rating-stack { display: flex; flex-direction: column; gap: 0.25rem; }
 
     /* ── Toolbar (filters + export) ─────── */
     .toolbar {
@@ -196,6 +242,18 @@
     }
     .toolbar-search input:focus { outline: none; border-color: var(--accent); }
     .toolbar-search input::placeholder { color: var(--text3); }
+
+    .sector-dropdown {
+      background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); padding: 0.55rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono); font-size: 0.8rem;
+      transition: border-color 0.2s;
+      outline: none;
+      min-width: 180px;
+      cursor: pointer;
+    }
+    .sector-dropdown:focus { border-color: var(--accent); }
 
     .toolbar-divider {
       width: 1px; height: 28px; background: var(--border);
@@ -844,13 +902,29 @@
         </div>
       </section>
 
-      <!-- Toolbar -->
+        <!-- Main Tabs -->
+        <div class="main-tabs" role="tablist">
+          <button class="main-tab-btn active" data-target="view-lista" role="tab">Tabela de Ratings</button>
+          <button class="main-tab-btn" data-target="view-comparador" role="tab">Comparador Setorial</button>
+        </div>
+
+        <!-- LISTA GERAL -->
+        <div id="view-lista" class="main-view active">
+          <!-- Toolbar -->
       <div class="toolbar">
         <div class="toolbar-search">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
           <input type="text" id="search-input" placeholder="Buscar por emissor, CNPJ, tipo ou rating…" autocomplete="off" />
+        </div>
+
+        <div class="toolbar-divider"></div>
+
+        <div>
+          <select id="sector-filter" class="sector-dropdown">
+            <option value="">Todos os Setores</option>
+          </select>
         </div>
 
         <div class="toolbar-divider"></div>
@@ -913,28 +987,65 @@
 
         <table id="ratings-table" class="display responsive" style="width:100%; display:none;">
           <thead>
-            <tr>
-              <th>Emissor</th>
-              <th>CNPJ</th>
-              <th>Agência</th>
-              <th>Tipo Rating</th>
-              <th>Instrumento / Ativo</th>
-              <th>Rating</th>
-              <th>Outlook</th>
-              <th>Data</th>
-            </tr>
+              <tr>
+                <th>Emissor</th>
+                <th>CNPJ</th>
+                <th>Setor</th>
+                <th>Agência</th>
+                <th>Tipo Rating</th>
+                <th>Instrumento / Ativo</th>
+                <th>Rating</th>
+                <th>Outlook</th>
+                <th>DataISO</th>
+                <th>Data</th>
+                <th>Link</th>
+              </tr>
           </thead>
           <tbody></tbody>
         </table>
 
-        <!-- Custom bottom bar -->
-        <div id="dt-bottom-bar" class="dt-bottom-bar" style="display:none;">
-          <div id="dt-info-container"></div>
-          <div id="dt-paginate-container"></div>
-        </div>
-      </div>
+          <!-- Custom bottom bar -->
+          <div id="dt-bottom-bar" class="dt-bottom-bar" style="display:none;">
+            <div id="dt-info-container"></div>
+            <div id="dt-paginate-container"></div>
+          </div>
+        </div><!-- /table-section -->
+      </div><!-- /view-lista -->
 
-    </div><!-- /page-container -->
+        <!-- COMPARADOR SETORIAL -->
+        <div id="view-comparador" class="main-view">
+          <div class="comparator-toolbar">
+            <div style="flex: 1;">
+              <h2 style="font-size: 1.2rem; color: var(--text1); margin: 0 0 0.25rem 0;">Matriz Comparativa</h2>
+              <p style="font-size: 0.85rem; color: var(--text3); margin: 0;">Analise o rating dos emissores de um mesmo setor nas diferentes agências de risco.</p>
+            </div>
+            <div>
+              <select id="comp-sector-filter" class="sector-dropdown" style="min-width: 250px;">
+                <option value="">Selecione um Setor...</option>
+              </select>
+            </div>
+          </div>
+          
+          <div id="comp-cards-container" class="comparator-cards" style="display: none;">
+            <div class="comp-card">
+              <span class="comp-card-lbl">Emissores no Setor</span>
+              <span class="comp-card-val" id="comp-total-emissores">—</span>
+            </div>
+            <div class="comp-card">
+              <span class="comp-card-lbl">Melhor Avaliado</span>
+              <span class="comp-card-val" id="comp-top-emissor" style="font-size: 1rem;">—</span>
+            </div>
+          </div>
+
+          <div id="comparator-content">
+            <div class="empty-state" style="text-align: center; padding: 4rem 1rem; background: var(--surface); border: 1px dashed var(--border1); border-radius: var(--radius-lg); color: var(--text3);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity: 0.5; margin-bottom: 1rem;"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              <p>Selecione um setor acima para visualizar a matriz comparativa.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /page-container -->
   </main>
 
   <!-- ── Drawer overlay + panel ───────────────────────────── -->
@@ -1007,12 +1118,11 @@
       if (o.includes('withdrawn') || o.includes('retirado'))            return 'outlook-withdrawn';
       return '';
     }
-
     const AGENCY_META = {
       'Fitch':        { cls: 'fitch',   badgeCls: 'badge-fitch' },
       "Moody's":      { cls: 'moodys',  badgeCls: 'badge-moodys' },
       'S&P':          { cls: 'sp',      badgeCls: 'badge-sp' },
-      'Austin':{ cls: 'austin',  badgeCls: 'badge-austin' },
+      'Austin':       { cls: 'austin',  badgeCls: 'badge-austin' },
       'Liberum':      { cls: 'liberum', badgeCls: 'badge-liberum' },
     };
 
@@ -1042,13 +1152,30 @@
 
     // ── Stats ─────────────────────────────────────────────────
 
-    const emissoresSet = new Set(allData.map(r => r.emissor));
-    const countBy = (key, val) => allData.filter(r => r[key] === val).length;
-    document.getElementById('stat-emissores').textContent = emissoresSet.size.toLocaleString('pt-BR');
-    document.getElementById('stat-ratings').textContent   = allData.length.toLocaleString('pt-BR');
-    document.getElementById('stat-fitch').textContent     = countBy('agencia', 'Fitch').toLocaleString('pt-BR');
-    document.getElementById('stat-moodys').textContent    = countBy('agencia', "Moody's").toLocaleString('pt-BR');
-    document.getElementById('stat-sp').textContent        = countBy('agencia', 'S&P').toLocaleString('pt-BR');
+    function renderTable() {
+      // ── Populate Sector Dropdown ──────────────────────────────
+      const $sectorFilter = $('#sector-filter');
+      const $compSectorFilter = $('#comp-sector-filter');
+      const setores = [...new Set(allData.map(r => r.setor).filter(Boolean))].sort();
+      
+      $sectorFilter.find('option:not(:first)').remove();
+      $compSectorFilter.find('option:not(:first)').remove();
+      
+      setores.forEach(s => {
+        $sectorFilter.append(`<option value="${s}">${s}</option>`);
+        $compSectorFilter.append(`<option value="${s}">${s}</option>`);
+      });
+
+      // ── Populate KPI Counters ─────────────────────────────────
+      const emissoresSet = new Set(allData.map(r => r.emissor));
+      const countBy = (key, val) => allData.filter(r => r[key] === val).length;
+      document.getElementById('stat-emissores').textContent = emissoresSet.size.toLocaleString('pt-BR');
+      document.getElementById('stat-ratings').textContent   = allData.length.toLocaleString('pt-BR');
+      document.getElementById('stat-fitch').textContent     = countBy('agencia', 'Fitch').toLocaleString('pt-BR');
+      document.getElementById('stat-moodys').textContent    = countBy('agencia', "Moody's").toLocaleString('pt-BR');
+      document.getElementById('stat-sp').textContent        = countBy('agencia', 'S&P').toLocaleString('pt-BR');
+    }
+    renderTable();
 
     // ── Index allData by emissor for fast drawer lookup ───────
 
@@ -1060,23 +1187,17 @@
     }
 
     // ── Build DataTables row arrays ───────────────────────────
-    //
-    //  DETAILED view columns:
-    //    0=Emissor  1=CNPJ  2=AgênciaRaw  3=TipoRating
-    //    4=Instrumento  5=Rating  6=Outlook  7=DataISO  8=DataDisplay
-    //
-    //  CONSOLIDATED view columns (1 row per emissor):
-    //    0=Emissor  1=CNPJ  2=Agências(joined)  3=RatingResumo
-    //    4=—        5=—     6=—                 7=DataISO  8=DataDisplay
 
     function buildDetailedData() {
       return allData.map(r => {
         const outlook     = r.outlook || '';
         const instrumento = r.instrumento || r.ativo || r.instrumento_ativo || '';
         const dateISO     = r.dt_acao || '';
+        const sectorRaw   = [r.setor, r.subsetor, r.segmento].filter(Boolean).join('|');
         return [
           r.emissor    || '—',
           r.cnpj       || '—',
+          sectorRaw    || '—',
           r.agencia    || '—',
           r.tipo_rating|| '—',
           instrumento  || '—',
@@ -1084,52 +1205,58 @@
           outlook      || '—',
           dateISO,
           fmtDate(dateISO),
+          r.link       || ''
         ];
       });
     }
 
     function buildConsolidatedData() {
-      // One row per unique emissor: most recent date, all agencies joined
       return Object.entries(byEmissor).map(([emissor, { cnpj, rows }]) => {
         const agencies  = [...new Set(rows.map(r => r.agencia).filter(Boolean))];
         const ratings   = [...new Set(rows.map(r => r.rating).filter(Boolean))];
-        const latestISO = rows
-          .map(r => r.dt_acao || '')
-          .filter(Boolean)
-          .sort()
-          .at(-1) || '';
+        const latestISO = rows.map(r => r.dt_acao || '').filter(Boolean).sort().at(-1) || '';
+        const firstRow = rows[0] || {};
+        const sectorRaw = [firstRow.setor, firstRow.subsetor, firstRow.segmento].filter(Boolean).join('|');
+
+        const link = rows.find(r => r.link)?.link || '';
         return [
           emissor,
           cnpj || '—',
-          agencies.join(','),          // 2: raw agencies (for filter)
-          agencies.join(' · '),        // 3: display agencies
-          `${rows.length} rating${rows.length !== 1 ? 's' : ''}`, // 4
-          ratings.slice(0, 3).join(' / ') + (ratings.length > 3 ? '…' : ''), // 5
-          '—',                         // 6
-          latestISO,                   // 7
-          fmtDate(latestISO),          // 8
+          sectorRaw,
+          agencies.join(','),
+          agencies.join(' · '),
+          `${rows.length} rating${rows.length !== 1 ? 's' : ''}`,
+          ratings.slice(0, 3).join(' / ') + (ratings.length > 3 ? '…' : ''),
+          '—',
+          latestISO,
+          fmtDate(latestISO),
+          link
         ];
       });
     }
 
-    // ── Column definitions (shared between both views) ────────
+    // ── Column definitions ────────────────────────────────────
 
     function buildColumns(consolidated) {
       return [
-        // 0 Emissor — in consolidated mode, show expand icon
-        {
-          render: (d) => consolidated
-            ? `<span class="emissor-cell">${d} <span style="font-size:0.65rem;color:var(--text3);margin-left:0.3rem;">↗</span></span>`
-            : `<span class="emissor-cell">${d}</span>`,
+        { render: (d) => consolidated ? `<span class="emissor-cell">${d} <span style="font-size:0.65rem;color:var(--text3);margin-left:0.3rem;">↗</span></span>` : `<span class="emissor-cell">${d}</span>`, searchable: true },
+        { render: (d) => `<span class="cnpj-cell">${d}</span>`, searchable: true },
+        { 
+          render: (d) => {
+            if (d === '—' || !d) return `<span style="color:var(--text3);font-size:0.8rem;">—</span>`;
+            const [sec, sub, seg] = d.split('|');
+            let html = `<div style="font-weight:500;font-size:0.85rem;color:var(--text1); white-space: normal;">${sec}</div>`;
+            if (sub || seg) {
+              const subSeg = [sub, seg].filter(Boolean).join(' / ');
+              html += `<div style="font-size:0.75rem;color:var(--text3);margin-top:2px; white-space: normal;">${subSeg}</div>`;
+            }
+            return html;
+          },
           searchable: true,
         },
-        // 1 CNPJ
-        { render: (d) => `<span class="cnpj-cell">${d}</span>`, searchable: true },
-        // 2 Agência raw (hidden in consolidated, visible in detailed)
         consolidated
           ? { visible: false, searchable: true }
           : { render: (d) => d !== '—' ? agencyBadge(d) : '—', searchable: true },
-        // 3 Tipo Rating (detailed) / Agências display (consolidated)
         consolidated
           ? {
               render: (d) => {
@@ -1142,38 +1269,31 @@
               searchable: false,
             }
           : { render: (d) => d, searchable: true },
-        // 4 Instrumento (detailed) / Contagem (consolidated)
         { render: (d) => `<span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text2)">${d}</span>`, searchable: !consolidated },
-        // 5 Rating
         { render: (d) => `<span class="rating-cell">${d}</span>`, searchable: true },
-        // 6 Outlook (hidden in consolidated)
         consolidated
           ? { visible: false, searchable: false }
-          : {
-              render: (d, type) => type !== 'display' ? d : `<span class="outlook-cell ${outlookClass(d)}">${d}</span>`,
-              searchable: false,
-            },
-        // 7 Date ISO — hidden, used for sort
+          : { render: (d, type) => type !== 'display' ? d : `<span class="outlook-cell ${outlookClass(d)}">${d}</span>`, searchable: false },
         { visible: false, searchable: false },
-        // 8 Date display
-        { render: (d) => `<span class="date-cell">${d}</span>`, orderData: 7, searchable: false },
+        { render: (d) => `<span class="date-cell">${d}</span>`, searchable: false, orderData: 8 },
+        { render: (d) => d ? `<a href="${d}" target="_blank" style="color:var(--accent); text-decoration:none;">Link ↗</a>` : '—', searchable: false },
       ];
     }
 
-    // ── Init DataTable ────────────────────────────────────────
-
+    // ── Table initialization ──────────────────────────────────
     $loading.hide();
     $table.show();
 
     function buildColumnDefs(consolidated) {
-      // Header labels differ per mode
       const headers = consolidated
-        ? ['Emissor', 'CNPJ', '(raw)', 'Agências', 'Ratings', 'Rating(s)', '', '', 'Última Ação']
-        : ['Emissor', 'CNPJ', 'Agência', 'Tipo Rating', 'Instrumento / Ativo', 'Rating', 'Outlook', '', 'Data'];
+        ? ['Emissor', 'CNPJ', 'Setor', '(raw)', 'Agências', 'Ratings', 'Rating(s)', '', '', 'Última Ação', 'Link']
+        : ['Emissor', 'CNPJ', 'Setor', 'Agência', 'Tipo Rating', 'Instrumento / Ativo', 'Rating', 'Outlook', '', 'Data', 'Link'];
       $table.find('thead th').each(function (i) {
         if (headers[i] !== undefined && headers[i] !== '') $(this).text(headers[i]);
       });
     }
+
+    buildColumnDefs(isConsolidated);
 
     tableApi = $table.DataTable({
       data: buildDetailedData(),
@@ -1185,9 +1305,10 @@
       buttons: [
         {
           extend: 'excelHtml5',
-          text: 'Excel',
-          title: 'pulse_ratings_consulta',
-          exportOptions: { columns: [0,1,2,3,4,5,6,8] }
+          text: 'Exportar Excel',
+          className: 'export-btn',
+          title: 'Ratings - Brasil',
+          exportOptions: { columns: [0,1,2,3,4,5,6,7,9] }
         },
       ],
       dom: '<"dt-length-placeholder"l>t<"dt-info-placeholder"i><"dt-paginate-placeholder"p>',
@@ -1216,14 +1337,22 @@
 
     let activeAgencies = new Set();
     let searchQuery    = '';
+    const $sectorFilter = $('#sector-filter');
 
     $.fn.dataTable.ext.search.push(function (settings, data) {
-      // col 2 = raw agencies (single or comma-joined in consolidated mode)
-      const rowAgencies = data[2].split(',').map(s => s.trim());
+      const rowAgencies = data[3].split(',').map(s => s.trim());
       if (activeAgencies.size) {
         const hasActive = rowAgencies.some(a => activeAgencies.has(a));
         if (!hasActive) return false;
       }
+      
+      const selectedSector = $sectorFilter.val();
+      if (selectedSector) {
+        const rowSectorRaw = data[2] || '';
+        const textData2 = rowSectorRaw.replace(/<[^>]*>?/gm, '').split('/')[0].trim();
+        if (textData2 !== selectedSector) return false;
+      }
+
       if (searchQuery) {
         const q       = searchQuery;
         const qDigits = onlyDigits(q);
@@ -1234,7 +1363,8 @@
           data[2].toLowerCase().includes(q) ||
           data[3].toLowerCase().includes(q) ||
           data[4].toLowerCase().includes(q) ||
-          data[5].toLowerCase().includes(q);
+          data[5].toLowerCase().includes(q) ||
+          data[6].toLowerCase().includes(q);
         if (!matched) return false;
       }
       return true;
@@ -1251,6 +1381,142 @@
     applyFilters();
     $searchInput.on('input', applyFilters);
     $agencyChecks.on('change', applyFilters);
+    $('#sector-filter').on('change', applyFilters);
+
+      // ── Main View Switching ───────────────────────────────────
+      $('.main-tab-btn').on('click', function() {
+        $('.main-tab-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        const target = $(this).data('target');
+        $('.main-view').removeClass('active');
+        $('#' + target).addClass('active');
+
+        if (target === 'view-comparador') {
+          renderComparator();
+        }
+      });
+
+      // ── Comparator Logic ──────────────────────────────────────────
+      const $compSectorFilter = $('#comp-sector-filter');
+      const $compCardsContainer = $('#comp-cards-container');
+      const $comparatorContent = $('#comparator-content');
+
+      $compSectorFilter.on('change', renderComparator);
+
+      function getRatingScore(rating) {
+        const r = rating.toUpperCase();
+        if (r.includes('AAA') || r.includes('AAA')) return 100;
+        if (r.includes('AA+') || r.includes('AA1')) return 95;
+        if (r.includes('AA') || r.includes('AA2')) return 90;
+        if (r.includes('AA-') || r.includes('AA3')) return 85;
+        if (r.includes('A+') || r.includes('A1')) return 80;
+        if (r.includes('A') || r.includes('A2')) return 75;
+        if (r.includes('A-') || r.includes('A3')) return 70;
+        if (r.includes('BBB+') || r.includes('BAA1')) return 65;
+        if (r.includes('BBB') || r.includes('BAA2')) return 60;
+        if (r.includes('BBB-') || r.includes('BAA3')) return 55;
+        if (r.includes('BB+') || r.includes('BA1')) return 50;
+        if (r.includes('BB') || r.includes('BA2')) return 45;
+        if (r.includes('BB-') || r.includes('BA3')) return 40;
+        if (r.includes('B+') || r.includes('B1')) return 35;
+        if (r.includes('B') || r.includes('B2')) return 30;
+        if (r.includes('B-') || r.includes('B3')) return 25;
+        if (r.includes('CCC') || r.includes('CAA')) return 20;
+        if (r.includes('CC') || r.includes('CA')) return 15;
+        if (r.includes('C')) return 10;
+        if (r.includes('D') || r.includes('SD')) return 0;
+        return 10;
+      }
+
+      function renderComparator() {
+        const sector = $compSectorFilter.val();
+        if (!sector) {
+          $compCardsContainer.hide();
+          $comparatorContent.html(`
+            <div class="empty-state" style="text-align: center; padding: 4rem 1rem; background: var(--surface); border: 1px dashed var(--border1); border-radius: var(--radius-lg); color: var(--text3);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity: 0.5; margin-bottom: 1rem;"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              <p>Selecione um setor acima para visualizar a matriz comparativa.</p>
+            </div>
+          `);
+          return;
+        }
+
+        const emissoresNoSetor = [];
+        const agencyCount = {};
+        let topEmissor = null;
+        let topRatingVal = -1;
+
+        for (const [emissor, data] of Object.entries(byEmissor)) {
+          const firstRow = data.rows[0];
+          if (firstRow && firstRow.setor === sector) {
+            emissoresNoSetor.push({ emissor, rows: data.rows });
+            
+            let maxScore = 0;
+            for (const row of data.rows) {
+              agencyCount[row.agencia] = (agencyCount[row.agencia] || 0) + 1;
+              const score = getRatingScore(row.rating);
+              if (score > maxScore) maxScore = score;
+            }
+            if (maxScore > topRatingVal) {
+              topRatingVal = maxScore;
+              topEmissor = emissor;
+            }
+          }
+        }
+
+        $('#comp-total-emissores').text(emissoresNoSetor.length);
+        $('#comp-top-emissor').text(topEmissor || '—');
+        
+        $compCardsContainer.show();
+
+        if (emissoresNoSetor.length === 0) {
+          $comparatorContent.html('<p>Nenhum emissor encontrado para este setor.</p>');
+          return;
+        }
+
+        const allSectorAgencies = Object.keys(agencyCount).sort();
+        emissoresNoSetor.sort((a, b) => a.emissor.localeCompare(b.emissor));
+
+        let matrixHtml = `
+          <div class="comp-matrix-wrapper">
+            <table class="comp-matrix">
+              <thead>
+                <tr>
+                  <th>Emissor</th>
+                  ${allSectorAgencies.map(a => `<th>${a}</th>`).join('')}
+                </tr>
+              </thead>
+              <tbody>
+        `;
+
+        for (const item of emissoresNoSetor) {
+          matrixHtml += `<tr><td>${item.emissor}</td>`;
+          
+          for (const ag of allSectorAgencies) {
+            const agRows = item.rows.filter(r => r.agencia === ag);
+            if (agRows.length === 0) {
+              matrixHtml += `<td><span style="color:var(--text3)">—</span></td>`;
+            } else {
+              const uniqueRatings = [...new Set(agRows.map(r => r.rating).filter(Boolean))];
+              matrixHtml += `<td><div class="comp-rating-stack">`;
+              for (const rating of uniqueRatings) {
+                matrixHtml += `<span class="rating-cell" style="display:inline-block">${rating}</span>`;
+              }
+              matrixHtml += `</div></td>`;
+            }
+          }
+          matrixHtml += `</tr>`;
+        }
+
+        matrixHtml += `
+              </tbody>
+            </table>
+          </div>
+        `;
+
+        $comparatorContent.html(matrixHtml);
+      }
 
     // ── Consolidated / Detailed toggle ────────────────────────
 
@@ -1271,36 +1537,9 @@
       isConsolidated = this.checked;
       closeDrawer();
 
-      // Rebuild with new data + column definitions safely
       safeDestroyTable();
-
-      // Re-create column headers
-      const $thead = $table.find('thead tr');
-      if (isConsolidated) {
-        $thead.html(`
-          <th>Emissor</th>
-          <th>CNPJ</th>
-          <th style="display:none"></th>
-          <th>Agências</th>
-          <th>Ratings</th>
-          <th>Rating(s)</th>
-          <th style="display:none"></th>
-          <th style="display:none"></th>
-          <th>Última Ação</th>
-        `);
-      } else {
-        $thead.html(`
-          <th>Emissor</th>
-          <th>CNPJ</th>
-          <th>Agência</th>
-          <th>Tipo Rating</th>
-          <th>Instrumento / Ativo</th>
-          <th>Rating</th>
-          <th>Outlook</th>
-          <th style="display:none"></th>
-          <th>Data</th>
-        `);
-      }
+      $table.find('tbody').empty();
+      buildColumnDefs(isConsolidated);
 
       tableApi = $table.DataTable({
         data: isConsolidated ? buildConsolidatedData() : buildDetailedData(),
@@ -1311,7 +1550,7 @@
         language: { url: 'https://cdn.datatables.net/plug-ins/2.2.2/i18n/pt-BR.json' },
         buttons: [{
           extend: 'excelHtml5', text: 'Excel', title: 'pulse_ratings_consulta',
-          exportOptions: { columns: isConsolidated ? [0,1,3,4,5,8] : [0,1,2,3,4,5,6,8] }
+          exportOptions: { columns: isConsolidated ? [0,1,2,3,4,5,7,9] : [0,1,2,3,4,5,6,7,9] }
         }],
         dom: '<"dt-length-placeholder"l>t<"dt-info-placeholder"i><"dt-paginate-placeholder"p>',
         columns: buildColumns(isConsolidated),
@@ -1329,7 +1568,19 @@
       if (!data) return;
 
       $drawerName.text(emissor);
-      $drawerCNPJ.text(data.cnpj ? `CNPJ: ${data.cnpj}` : '');
+      
+      let secHtml = '';
+      const firstRow = data.rows[0] || {};
+      if (firstRow.setor) {
+        secHtml = `<span style="margin-left: 1rem; color: var(--text1);">Setor: <b>${firstRow.setor}</b>`;
+        if (firstRow.subsetor || firstRow.segmento) {
+          const subSeg = [firstRow.subsetor, firstRow.segmento].filter(Boolean).join(' / ');
+          secHtml += ` <span style="color: var(--text3); font-weight: normal;">(${subSeg})</span>`;
+        }
+        secHtml += `</span>`;
+      }
+      
+      $drawerCNPJ.html((data.cnpj ? `CNPJ: ${data.cnpj}` : '') + secHtml);
 
       // Build summary pills — one per agency that has ratings for this emissor
       const agencyGroups = {};
