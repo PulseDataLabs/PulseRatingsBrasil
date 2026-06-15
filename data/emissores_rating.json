@@ -14041,7 +14041,7 @@
   },
   {
     "emissor": "CISS FUNDO INVESTIMENTO DIREITOS CREDITORIOS PRESTACAO SERVICOS",
-    "cnpj": "",
+    "cnpj": "52.892.178/0001-98",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -14053,7 +14053,7 @@
   },
   {
     "emissor": "CISS FUNDO INVESTIMENTO DIREITOS CREDITORIOS PRESTACAO SERVICOS",
-    "cnpj": "",
+    "cnpj": "52.892.178/0001-98",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -17439,25 +17439,25 @@
     "emissor": "COOPERATIVA CREDITO SUL",
     "cnpj": "32.474.884/0001-02",
     "agencia": "Fitch",
-    "tipo_rating": "National Short Term Rating",
-    "rating": "F1+(bra)",
-    "outlook": "",
-    "dt_acao": "2025-08-26",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697"
-  },
-  {
-    "emissor": "COOPERATIVA CREDITO SUL",
-    "cnpj": "32.474.884/0001-02",
-    "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2025-08-26",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697"
+    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669"
+  },
+  {
+    "emissor": "COOPERATIVA CREDITO SUL",
+    "cnpj": "32.474.884/0001-02",
+    "agencia": "Fitch",
+    "tipo_rating": "National Short Term Rating",
+    "rating": "F1+(bra)",
+    "outlook": "",
+    "dt_acao": "2025-08-26",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669"
   },
   {
     "emissor": "COOPERATIVA CREDITO SUL ESPIRITO SANTO",
@@ -22684,18 +22684,6 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brB+",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBB-",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
@@ -22708,24 +22696,36 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBB",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBBB",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB+",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
@@ -22917,7 +22917,7 @@
     "dt_acao": "2022-06-23",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4020/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/3860/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC ANGA FACTA CONSIGNADOS INSS I",
@@ -23289,7 +23289,7 @@
     "dt_acao": "2024-08-13",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4698/FIDC_Cap_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4699/FIDC_Cap_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC CAPITAL BR",
@@ -35197,7 +35197,7 @@
   },
   {
     "emissor": "IF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "36.643.420/0001-33",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -35209,7 +35209,7 @@
   },
   {
     "emissor": "IF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "36.643.420/0001-33",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -35221,7 +35221,7 @@
   },
   {
     "emissor": "IF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "36.643.420/0001-33",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -35233,7 +35233,7 @@
   },
   {
     "emissor": "IF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "36.643.420/0001-33",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -35245,7 +35245,7 @@
   },
   {
     "emissor": "IF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "36.643.420/0001-33",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -35257,7 +35257,7 @@
   },
   {
     "emissor": "IGNIS CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "47.847.076/0001-10",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -35269,7 +35269,7 @@
   },
   {
     "emissor": "IGNIS CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "47.847.076/0001-10",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -35281,7 +35281,7 @@
   },
   {
     "emissor": "IGNIS CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "47.847.076/0001-10",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -35293,7 +35293,7 @@
   },
   {
     "emissor": "IGNIS CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "47.847.076/0001-10",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -35305,7 +35305,7 @@
   },
   {
     "emissor": "IGNIS CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "47.847.076/0001-10",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -35533,7 +35533,7 @@
   },
   {
     "emissor": "INOVA CREDTECH III FIDC SEGMENTO MULTICARTEIRA RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "52.340.225/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -35545,7 +35545,7 @@
   },
   {
     "emissor": "INOVA CREDTECH III FIDC SEGMENTO MULTICARTEIRA RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "52.340.225/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -35557,7 +35557,7 @@
   },
   {
     "emissor": "INOVA CREDTECH III FIDC SEGMENTO MULTICARTEIRA RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "52.340.225/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -35569,7 +35569,7 @@
   },
   {
     "emissor": "INOVA CREDTECH III FIDC SEGMENTO MULTICARTEIRA RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "52.340.225/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -35581,7 +35581,7 @@
   },
   {
     "emissor": "INOVA CREDTECH III FIDC SEGMENTO MULTICARTEIRA RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "52.340.225/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -35857,7 +35857,7 @@
   },
   {
     "emissor": "INTRABANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
-    "cnpj": "",
+    "cnpj": "35.162.655/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -35869,7 +35869,7 @@
   },
   {
     "emissor": "INTRABANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE ILIMITADA",
-    "cnpj": "",
+    "cnpj": "35.162.655/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -35881,7 +35881,7 @@
   },
   {
     "emissor": "INTRABANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE ILIMITADA",
-    "cnpj": "",
+    "cnpj": "35.162.655/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -35905,7 +35905,7 @@
   },
   {
     "emissor": "INVESTCAMP FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "25.695.170/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -35917,7 +35917,7 @@
   },
   {
     "emissor": "INVESTCAMP FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "25.695.170/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -35965,7 +35965,7 @@
   },
   {
     "emissor": "INVESTCON FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "22.406.927/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -36013,7 +36013,7 @@
   },
   {
     "emissor": "INVISTA ATIVOS ALTERNATIVOS I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "31.933.790/0001-91",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CC",
@@ -36037,7 +36037,7 @@
   },
   {
     "emissor": "INVISTA III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "26.489.103/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -36049,7 +36049,7 @@
   },
   {
     "emissor": "INVISTA III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "26.489.103/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -36313,7 +36313,7 @@
   },
   {
     "emissor": "IRLA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "31.772.126/0001-08",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -36325,7 +36325,7 @@
   },
   {
     "emissor": "IRON CAPITAL CONSIGNADO FEDERAL",
-    "cnpj": "",
+    "cnpj": "37.123.017/0001-46",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
@@ -36433,7 +36433,7 @@
   },
   {
     "emissor": "ISEC",
-    "cnpj": "",
+    "cnpj": "04.243.304/0001-30",
     "agencia": "Austin",
     "tipo_rating": "CRIs",
     "rating": "brBB+",
@@ -36493,7 +36493,7 @@
   },
   {
     "emissor": "ITAU FIC FIDC INFRAESTRUTURA",
-    "cnpj": "",
+    "cnpj": "67.979.120/0001-53",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brAA-",
@@ -37441,7 +37441,7 @@
   },
   {
     "emissor": "JC BG FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "17.911.226/0001-47",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -37465,7 +37465,7 @@
   },
   {
     "emissor": "JC CREDITOS JUDICIAIS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "34.964.344/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -37477,7 +37477,7 @@
   },
   {
     "emissor": "JC CREDITOS JUDICIAIS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "34.964.344/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -37489,7 +37489,7 @@
   },
   {
     "emissor": "JC DIVERSIFICADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "29.109.350/0001-72",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -37513,7 +37513,7 @@
   },
   {
     "emissor": "JC DIVERSIFICADO VI FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "29.469.886/0001-07",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -37525,7 +37525,7 @@
   },
   {
     "emissor": "JC SILOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "23.216.640/0001-39",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CC",
@@ -37537,7 +37537,7 @@
   },
   {
     "emissor": "JC SILOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "23.216.640/0001-39",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -37549,7 +37549,7 @@
   },
   {
     "emissor": "JC SILOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "23.216.640/0001-39",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -37573,7 +37573,7 @@
   },
   {
     "emissor": "JGM LP FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "14.718.674/0001-30",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -37585,7 +37585,7 @@
   },
   {
     "emissor": "JGM LP FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "14.718.674/0001-30",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -37597,7 +37597,7 @@
   },
   {
     "emissor": "JGM LP FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "14.718.674/0001-30",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -37609,7 +37609,7 @@
   },
   {
     "emissor": "JGM LP FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "14.718.674/0001-30",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -37621,7 +37621,7 @@
   },
   {
     "emissor": "JGM LP FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "14.718.674/0001-30",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -37729,7 +37729,7 @@
   },
   {
     "emissor": "JGP ESTRUTURADOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.075.407/0001-65",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -37741,7 +37741,7 @@
   },
   {
     "emissor": "JGP ESTRUTURADOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.075.407/0001-65",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -37753,7 +37753,7 @@
   },
   {
     "emissor": "JGP ESTRUTURADOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
-    "cnpj": "",
+    "cnpj": "41.075.407/0001-65",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -37765,7 +37765,7 @@
   },
   {
     "emissor": "JGP ESTRUTURADOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
-    "cnpj": "",
+    "cnpj": "41.075.407/0001-65",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -37777,7 +37777,7 @@
   },
   {
     "emissor": "JGP ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "50.198.834/0001-21",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -37789,7 +37789,7 @@
   },
   {
     "emissor": "JGP ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "50.198.834/0001-21",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -37873,7 +37873,7 @@
   },
   {
     "emissor": "JP CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.753.151/0001-35",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -37885,7 +37885,7 @@
   },
   {
     "emissor": "JP CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.753.151/0001-35",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -37897,7 +37897,7 @@
   },
   {
     "emissor": "JP CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.753.151/0001-35",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -37909,7 +37909,7 @@
   },
   {
     "emissor": "JP CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.753.151/0001-35",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -37921,7 +37921,7 @@
   },
   {
     "emissor": "JP CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.753.151/0001-35",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -37933,7 +37933,7 @@
   },
   {
     "emissor": "JP CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.753.151/0001-35",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -37945,7 +37945,7 @@
   },
   {
     "emissor": "JP CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.753.151/0001-35",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -37957,7 +37957,7 @@
   },
   {
     "emissor": "JPI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "27.217.664/0001-63",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -37969,7 +37969,7 @@
   },
   {
     "emissor": "JPI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "27.217.664/0001-63",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -37981,7 +37981,7 @@
   },
   {
     "emissor": "JPI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "27.217.664/0001-63",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -37993,7 +37993,7 @@
   },
   {
     "emissor": "JPI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "27.217.664/0001-63",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -38257,7 +38257,7 @@
   },
   {
     "emissor": "JUNTOS CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.242.916/0001-30",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B-",
@@ -38269,7 +38269,7 @@
   },
   {
     "emissor": "JUNTOS CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.242.916/0001-30",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB-",
@@ -38281,7 +38281,7 @@
   },
   {
     "emissor": "JUSINVEST I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
-    "cnpj": "",
+    "cnpj": "38.328.747/0001-46",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -38413,7 +38413,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -38425,7 +38425,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -38437,7 +38437,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -38449,7 +38449,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -38461,7 +38461,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -38473,7 +38473,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB-",
@@ -38485,7 +38485,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -38497,7 +38497,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -38509,7 +38509,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -38521,7 +38521,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -38533,7 +38533,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -38545,7 +38545,7 @@
   },
   {
     "emissor": "KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "40.995.902/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -38701,7 +38701,7 @@
   },
   {
     "emissor": "KOBOLD H FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "10.756.703/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -38713,7 +38713,7 @@
   },
   {
     "emissor": "KOBOLD H FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "10.756.703/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -38725,7 +38725,7 @@
   },
   {
     "emissor": "KOBOLD H FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "10.756.703/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -39277,7 +39277,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -39289,7 +39289,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -39301,7 +39301,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -39313,7 +39313,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -39325,7 +39325,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -39337,7 +39337,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -39349,7 +39349,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -39361,7 +39361,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -39373,7 +39373,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -39385,7 +39385,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -39397,7 +39397,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -39409,7 +39409,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -39421,7 +39421,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -39433,7 +39433,7 @@
   },
   {
     "emissor": "LARCA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "41.114.564/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -39445,7 +39445,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "51.326.028/0001-54",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -39457,7 +39457,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "51.326.028/0001-54",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -39469,7 +39469,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "51.326.028/0001-54",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -39481,7 +39481,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "51.326.028/0001-54",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB-",
@@ -39493,7 +39493,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "51.326.028/0001-54",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP1",
@@ -39505,7 +39505,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "51.326.028/0001-54",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA-",
@@ -39517,7 +39517,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "51.326.028/0001-54",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP1",
@@ -39529,7 +39529,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "51.326.028/0001-54",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA-",
@@ -39541,7 +39541,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "51.326.028/0001-54",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB-",
@@ -39553,7 +39553,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "54.634.742/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA-",
@@ -39565,7 +39565,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "54.634.742/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP1",
@@ -39577,7 +39577,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "54.634.742/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -39589,7 +39589,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "54.634.742/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -39601,7 +39601,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "54.634.742/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA-",
@@ -39613,7 +39613,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "54.634.742/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP1",
@@ -39625,7 +39625,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "54.634.742/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP1",
@@ -39637,7 +39637,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "54.634.742/0001-06",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA-",
@@ -39649,7 +39649,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "59.602.002/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -39661,7 +39661,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "59.602.002/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA-",
@@ -39673,7 +39673,7 @@
   },
   {
     "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "59.602.002/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA-",
@@ -39685,7 +39685,7 @@
   },
   {
     "emissor": "LATACHE AGRO II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "50.831.355/0001-09",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -39697,7 +39697,7 @@
   },
   {
     "emissor": "LATACHE AGRO II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "50.831.355/0001-09",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -39841,7 +39841,7 @@
   },
   {
     "emissor": "LB FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.627.753/0001-71",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -39853,7 +39853,7 @@
   },
   {
     "emissor": "LCBANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
-    "cnpj": "",
+    "cnpj": "52.343.885/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA",
@@ -39865,7 +39865,7 @@
   },
   {
     "emissor": "LCBANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
-    "cnpj": "",
+    "cnpj": "52.343.885/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -40033,7 +40033,7 @@
   },
   {
     "emissor": "LESTE CREDIT PRECATORIOS I",
-    "cnpj": "",
+    "cnpj": "41.755.724/0001-22",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
@@ -40045,7 +40045,7 @@
   },
   {
     "emissor": "LESTE CREDIT PRECATORIOS II",
-    "cnpj": "",
+    "cnpj": "45.145.657/0001-85",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBB",
@@ -40105,7 +40105,7 @@
   },
   {
     "emissor": "LEVER FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "46.390.212/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -40117,7 +40117,7 @@
   },
   {
     "emissor": "LEVER FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "46.390.212/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -40129,7 +40129,7 @@
   },
   {
     "emissor": "LEVER FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "46.390.212/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -40141,7 +40141,7 @@
   },
   {
     "emissor": "LEVER FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "46.390.212/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -40153,7 +40153,7 @@
   },
   {
     "emissor": "LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "34.218.918/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -40165,7 +40165,7 @@
   },
   {
     "emissor": "LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "34.218.918/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -40177,7 +40177,7 @@
   },
   {
     "emissor": "LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "34.218.918/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -40189,7 +40189,7 @@
   },
   {
     "emissor": "LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "34.218.918/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -40201,7 +40201,7 @@
   },
   {
     "emissor": "LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "34.218.918/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -40213,7 +40213,7 @@
   },
   {
     "emissor": "LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "34.218.918/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -40225,7 +40225,7 @@
   },
   {
     "emissor": "LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "34.218.918/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -40237,7 +40237,7 @@
   },
   {
     "emissor": "LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "34.218.918/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -40249,7 +40249,7 @@
   },
   {
     "emissor": "LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "34.218.918/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -40261,7 +40261,7 @@
   },
   {
     "emissor": "LIBRA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.421/0001-99",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP1",
@@ -40273,7 +40273,7 @@
   },
   {
     "emissor": "LIBRA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.421/0001-99",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA",
@@ -40285,7 +40285,7 @@
   },
   {
     "emissor": "LIBRA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.421/0001-99",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -40297,7 +40297,7 @@
   },
   {
     "emissor": "LIBRA II FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "18.563.847/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -40309,7 +40309,7 @@
   },
   {
     "emissor": "LIBRA II FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "18.563.847/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -40321,7 +40321,7 @@
   },
   {
     "emissor": "LIBRA II NP FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "18.563.847/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -40333,7 +40333,7 @@
   },
   {
     "emissor": "LIBRA II NP FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "18.563.847/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -40345,7 +40345,7 @@
   },
   {
     "emissor": "LIBRA II NP FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "18.563.847/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -40357,7 +40357,7 @@
   },
   {
     "emissor": "LIBRA II NP FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "18.563.847/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -40549,7 +40549,7 @@
   },
   {
     "emissor": "LINK BANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "29.970.181/0001-60",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -40573,7 +40573,7 @@
   },
   {
     "emissor": "LITUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "22.101.473/0001-18",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -40585,7 +40585,7 @@
   },
   {
     "emissor": "LITUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "22.101.473/0001-18",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -41113,7 +41113,7 @@
   },
   {
     "emissor": "LOTUS PERFORMANCE FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "44.409.311/0001-84",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -41125,7 +41125,7 @@
   },
   {
     "emissor": "LOTUS PERFORMANCE FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "44.409.311/0001-84",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -41137,7 +41137,7 @@
   },
   {
     "emissor": "LOTUS PERFORMANCE FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "44.409.311/0001-84",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -41149,7 +41149,7 @@
   },
   {
     "emissor": "LOTUS PERFORMANCE FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "44.409.311/0001-84",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -41161,7 +41161,7 @@
   },
   {
     "emissor": "LOTUS PERFORMANCE FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "44.409.311/0001-84",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -41173,7 +41173,7 @@
   },
   {
     "emissor": "LOTUS PERFORMANCE FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "44.409.311/0001-84",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -41233,7 +41233,7 @@
   },
   {
     "emissor": "LYSAN FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.579.682/0001-16",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -41245,7 +41245,7 @@
   },
   {
     "emissor": "LYSAN FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.579.682/0001-16",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -41257,7 +41257,7 @@
   },
   {
     "emissor": "LYSAN FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.579.682/0001-16",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -41269,7 +41269,7 @@
   },
   {
     "emissor": "LYSAN FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.579.682/0001-16",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -41281,7 +41281,7 @@
   },
   {
     "emissor": "LYSAN FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.579.682/0001-16",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -41389,7 +41389,7 @@
   },
   {
     "emissor": "MACCA FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "57.090.601/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -41401,7 +41401,7 @@
   },
   {
     "emissor": "MACCABI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "35.654.828/0001-48",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -41485,7 +41485,7 @@
   },
   {
     "emissor": "MAIS TODOS PF FUNDO INVESTIMENTO DIREITOS CREDITORIOS FINANCEIRO RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "58.088.190/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -41497,7 +41497,7 @@
   },
   {
     "emissor": "MAIS TODOS PF FUNDO INVESTIMENTO DIREITOS CREDITORIOS FINANCEIRO RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "58.088.190/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -41761,7 +41761,7 @@
   },
   {
     "emissor": "MARIN FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "13.554.539/0001-34",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -41773,7 +41773,7 @@
   },
   {
     "emissor": "MARIN FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "13.554.539/0001-34",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -42001,7 +42001,7 @@
   },
   {
     "emissor": "MAV ALTERNATIVE CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "50.123.492/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42109,7 +42109,7 @@
   },
   {
     "emissor": "MENTORE FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "46.082.763/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -42265,7 +42265,7 @@
   },
   {
     "emissor": "METROPOLITANA ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "18.114.024/0001-37",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42277,7 +42277,7 @@
   },
   {
     "emissor": "METROPOLITANA ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "18.114.024/0001-37",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42289,7 +42289,7 @@
   },
   {
     "emissor": "MGW ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "24.252.610/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42301,7 +42301,7 @@
   },
   {
     "emissor": "MGW ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "24.252.610/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -42313,7 +42313,7 @@
   },
   {
     "emissor": "MGW ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "24.252.610/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -42325,7 +42325,7 @@
   },
   {
     "emissor": "MGW ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "24.252.610/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42337,7 +42337,7 @@
   },
   {
     "emissor": "MGW ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "24.252.610/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -42349,7 +42349,7 @@
   },
   {
     "emissor": "MGW ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "24.252.610/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -42385,7 +42385,7 @@
   },
   {
     "emissor": "MILAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "26.286.853/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -42397,7 +42397,7 @@
   },
   {
     "emissor": "MILAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "26.286.853/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42529,7 +42529,7 @@
   },
   {
     "emissor": "MINHA CASA MINHA VIDA FUNDO INVESTIMENTO DIREITOS CREDITORIOS NP RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "61.995.402/0001-68",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42553,7 +42553,7 @@
   },
   {
     "emissor": "MITTU FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "31.570.850/0001-59",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -42565,7 +42565,7 @@
   },
   {
     "emissor": "MITTU FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
-    "cnpj": "",
+    "cnpj": "31.570.850/0001-59",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42625,7 +42625,7 @@
   },
   {
     "emissor": "MOBIUS TOTAL RETURN 1",
-    "cnpj": "",
+    "cnpj": "46.729.344/0001-37",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -42637,7 +42637,7 @@
   },
   {
     "emissor": "MOBIUS VD TOTAL RETURN 1",
-    "cnpj": "",
+    "cnpj": "47.410.122/0001-10",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42673,7 +42673,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -42685,7 +42685,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -42697,7 +42697,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -42709,7 +42709,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -42721,7 +42721,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -42733,7 +42733,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -42745,7 +42745,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -42757,7 +42757,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -42769,7 +42769,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -42781,7 +42781,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -42793,7 +42793,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42805,7 +42805,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -42817,7 +42817,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB-",
@@ -42829,7 +42829,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -42841,7 +42841,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -42853,7 +42853,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -42865,7 +42865,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -42877,7 +42877,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -42889,7 +42889,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -42901,7 +42901,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -42913,7 +42913,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42925,7 +42925,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -42937,7 +42937,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -42949,7 +42949,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -42961,7 +42961,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -42973,7 +42973,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -42985,7 +42985,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -42997,7 +42997,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -43009,7 +43009,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -43021,7 +43021,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -43033,7 +43033,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -43045,7 +43045,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -43057,7 +43057,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -43069,7 +43069,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -43081,7 +43081,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -43093,7 +43093,7 @@
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -43117,7 +43117,7 @@
   },
   {
     "emissor": "MONEFY FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "25.354.121/0001-62",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -43129,7 +43129,7 @@
   },
   {
     "emissor": "MONEFY FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "25.354.121/0001-62",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -43141,7 +43141,7 @@
   },
   {
     "emissor": "MONEFY FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "25.354.121/0001-62",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -43153,7 +43153,7 @@
   },
   {
     "emissor": "MONEFY FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "25.354.121/0001-62",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CC",
@@ -43165,7 +43165,7 @@
   },
   {
     "emissor": "MONEFY FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "25.354.121/0001-62",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -43213,7 +43213,7 @@
   },
   {
     "emissor": "MORIAH",
-    "cnpj": "",
+    "cnpj": "03.210.959/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -43225,7 +43225,7 @@
   },
   {
     "emissor": "MORIAH",
-    "cnpj": "",
+    "cnpj": "03.210.959/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -43237,7 +43237,7 @@
   },
   {
     "emissor": "MORIAH",
-    "cnpj": "",
+    "cnpj": "03.210.959/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -43249,7 +43249,7 @@
   },
   {
     "emissor": "MORIAH",
-    "cnpj": "",
+    "cnpj": "03.210.959/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -43261,7 +43261,7 @@
   },
   {
     "emissor": "MORIAH",
-    "cnpj": "",
+    "cnpj": "03.210.959/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -43273,7 +43273,7 @@
   },
   {
     "emissor": "MORIAH",
-    "cnpj": "",
+    "cnpj": "03.210.959/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -43285,7 +43285,7 @@
   },
   {
     "emissor": "MORIAH",
-    "cnpj": "",
+    "cnpj": "03.210.959/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -43297,7 +43297,7 @@
   },
   {
     "emissor": "MORIAH",
-    "cnpj": "",
+    "cnpj": "03.210.959/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -43309,7 +43309,7 @@
   },
   {
     "emissor": "MORIAH",
-    "cnpj": "",
+    "cnpj": "03.210.959/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -43321,7 +43321,7 @@
   },
   {
     "emissor": "MORIAH",
-    "cnpj": "",
+    "cnpj": "03.210.959/0001-40",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -43381,7 +43381,7 @@
   },
   {
     "emissor": "MOUSTACHE RAPPI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "61.975.703/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -43393,7 +43393,7 @@
   },
   {
     "emissor": "MOUSTACHE RAPPI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "61.975.703/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -43405,7 +43405,7 @@
   },
   {
     "emissor": "MOUSTACHE RAPPI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "61.975.703/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -43417,7 +43417,7 @@
   },
   {
     "emissor": "MOUSTACHE RAPPI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "61.975.703/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -43429,7 +43429,7 @@
   },
   {
     "emissor": "MOUSTACHE RAPPI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "61.975.703/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -43885,7 +43885,7 @@
   },
   {
     "emissor": "MR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "22.175.405/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -43897,7 +43897,7 @@
   },
   {
     "emissor": "MR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "22.175.405/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -43909,7 +43909,7 @@
   },
   {
     "emissor": "MR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "22.175.405/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -43921,7 +43921,7 @@
   },
   {
     "emissor": "MR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "22.175.405/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -43933,7 +43933,7 @@
   },
   {
     "emissor": "MR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "22.175.405/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -43945,7 +43945,7 @@
   },
   {
     "emissor": "MR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "22.175.405/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -43957,7 +43957,7 @@
   },
   {
     "emissor": "MR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "22.175.405/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -43969,7 +43969,7 @@
   },
   {
     "emissor": "MR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "22.175.405/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -44041,7 +44041,7 @@
   },
   {
     "emissor": "MS MULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.664.088/0001-81",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -44053,7 +44053,7 @@
   },
   {
     "emissor": "MS MULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.664.088/0001-81",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -44065,7 +44065,7 @@
   },
   {
     "emissor": "MS MULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.664.088/0001-81",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -44185,7 +44185,7 @@
   },
   {
     "emissor": "MULTI INFRA FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "07.084.253/0001-30",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CC",
@@ -44209,7 +44209,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -44221,7 +44221,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -44233,7 +44233,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -44245,7 +44245,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -44257,7 +44257,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -44269,7 +44269,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -44281,7 +44281,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -44293,7 +44293,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -44305,7 +44305,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -44317,7 +44317,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -44329,7 +44329,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -44341,7 +44341,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -44353,7 +44353,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -44365,7 +44365,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -44377,7 +44377,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -44389,7 +44389,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -44401,7 +44401,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -44413,7 +44413,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -44425,7 +44425,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -44437,7 +44437,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS II FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "09.137.729/0001-89",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -44449,7 +44449,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.492.868/0001-38",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -44461,7 +44461,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.492.868/0001-38",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -44473,7 +44473,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.492.868/0001-38",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -44485,7 +44485,7 @@
   },
   {
     "emissor": "MULTI RECEBIVEIS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.492.868/0001-38",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -44521,7 +44521,7 @@
   },
   {
     "emissor": "MULTIFRIGO FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
-    "cnpj": "",
+    "cnpj": "29.243.005/0001-27",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -44665,7 +44665,7 @@
   },
   {
     "emissor": "MULTIPLIK FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "23.426.441/0001-55",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -44677,7 +44677,7 @@
   },
   {
     "emissor": "MULTIPLIK FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "23.426.441/0001-55",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -44689,7 +44689,7 @@
   },
   {
     "emissor": "MULTIPLIK FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "23.426.441/0001-55",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -44701,7 +44701,7 @@
   },
   {
     "emissor": "MULTIPLIK FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
-    "cnpj": "",
+    "cnpj": "23.426.441/0001-55",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -44749,7 +44749,7 @@
   },
   {
     "emissor": "MULTIPLIKE FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.469.420/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -44761,7 +44761,7 @@
   },
   {
     "emissor": "MULTIPLIKE FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.469.420/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -44773,7 +44773,7 @@
   },
   {
     "emissor": "MULTIPLIKE FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.469.420/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -44785,7 +44785,7 @@
   },
   {
     "emissor": "MULTIPLIKE FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.469.420/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -44797,7 +44797,7 @@
   },
   {
     "emissor": "MULTIPLIKE FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.469.420/0001-01",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -44929,7 +44929,7 @@
   },
   {
     "emissor": "MUNICIPIO CONTAGEM",
-    "cnpj": "",
+    "cnpj": "03.769.735/0001-72",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brA-",
@@ -44941,7 +44941,7 @@
   },
   {
     "emissor": "MUNICIPIO GUARULHOS",
-    "cnpj": "",
+    "cnpj": "01.511.780/0001-05",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brA+",
@@ -44953,7 +44953,7 @@
   },
   {
     "emissor": "MUNICIPIO GUARULHOS",
-    "cnpj": "",
+    "cnpj": "01.511.780/0001-05",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brA-",
@@ -44965,7 +44965,7 @@
   },
   {
     "emissor": "MUNICIPIO GUARULHOS",
-    "cnpj": "",
+    "cnpj": "01.511.780/0001-05",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brA-",
@@ -44977,7 +44977,7 @@
   },
   {
     "emissor": "MUNICIPIO JUNDIAI",
-    "cnpj": "",
+    "cnpj": "02.491.361/0001-03",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brAA+",
@@ -44989,7 +44989,7 @@
   },
   {
     "emissor": "MUNICIPIO JUNDIAI",
-    "cnpj": "",
+    "cnpj": "02.491.361/0001-03",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brAA",
@@ -45001,7 +45001,7 @@
   },
   {
     "emissor": "MUNICIPIO JUNDIAI",
-    "cnpj": "",
+    "cnpj": "02.491.361/0001-03",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brAA",
@@ -45013,7 +45013,7 @@
   },
   {
     "emissor": "MUNICIPIO JUNDIAI",
-    "cnpj": "",
+    "cnpj": "02.491.361/0001-03",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brAA-",
@@ -45025,7 +45025,7 @@
   },
   {
     "emissor": "MUNICIPIO JUNDIAI",
-    "cnpj": "",
+    "cnpj": "02.491.361/0001-03",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brAA-",
@@ -45037,7 +45037,7 @@
   },
   {
     "emissor": "MUNICIPIO JUNDIAI",
-    "cnpj": "",
+    "cnpj": "02.491.361/0001-03",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brA+",
@@ -45049,7 +45049,7 @@
   },
   {
     "emissor": "MUNICIPIO JUNDIAI",
-    "cnpj": "",
+    "cnpj": "02.491.361/0001-03",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brA+",
@@ -45061,7 +45061,7 @@
   },
   {
     "emissor": "MUNICIPIO JUNDIAI",
-    "cnpj": "",
+    "cnpj": "02.491.361/0001-03",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brA",
@@ -45073,7 +45073,7 @@
   },
   {
     "emissor": "MUNICIPIO OSASCO",
-    "cnpj": "",
+    "cnpj": "01.969.877/0001-58",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brAA",
@@ -45085,7 +45085,7 @@
   },
   {
     "emissor": "MUNICIPIO SANTOS",
-    "cnpj": "",
+    "cnpj": "11.512.198/0001-09",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brAA",
@@ -45097,7 +45097,7 @@
   },
   {
     "emissor": "MUNICIPIO SANTOS",
-    "cnpj": "",
+    "cnpj": "11.512.198/0001-09",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "",
@@ -45109,7 +45109,7 @@
   },
   {
     "emissor": "MUNICIPIO SANTOS",
-    "cnpj": "",
+    "cnpj": "11.512.198/0001-09",
     "agencia": "Austin",
     "tipo_rating": "Estados e Municípios",
     "rating": "brAA",
@@ -45157,7 +45157,7 @@
   },
   {
     "emissor": "NACIONAL FEITO PRA VOCE FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "43.309.133/0001-57",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -45169,7 +45169,7 @@
   },
   {
     "emissor": "NACIONAL FEITO PRA VOCE FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "43.309.133/0001-57",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -45181,7 +45181,7 @@
   },
   {
     "emissor": "NACIONAL FEITO PRA VOCE FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "43.309.133/0001-57",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -45193,7 +45193,7 @@
   },
   {
     "emissor": "NACIONAL FEITO PRA VOCE FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "43.309.133/0001-57",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -45229,7 +45229,7 @@
   },
   {
     "emissor": "NANBAN FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "36.741.161/0001-83",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -45253,7 +45253,7 @@
   },
   {
     "emissor": "NANBAN II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "46.073.588/0001-04",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -45793,7 +45793,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -45805,7 +45805,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -45817,7 +45817,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -45829,7 +45829,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -45841,7 +45841,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -45853,7 +45853,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -45865,7 +45865,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -45877,7 +45877,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -45889,7 +45889,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -45901,7 +45901,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -45913,7 +45913,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -45925,7 +45925,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -45937,7 +45937,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -45949,7 +45949,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -45961,7 +45961,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -45973,7 +45973,7 @@
   },
   {
     "emissor": "NOVA CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "33.289.359/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -46050,10 +46050,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "",
-    "dt_acao": "2021-03-26",
+    "dt_acao": "2020-05-07",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3772/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3520/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "NOVUS CAPITAL GESTORA RECURSOS",
@@ -46069,7 +46069,7 @@
   },
   {
     "emissor": "NPL SN FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "54.585.485/0001-51",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -46261,7 +46261,7 @@
   },
   {
     "emissor": "OCEAN ASSET FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "26.984.508/0001-65",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -46525,7 +46525,7 @@
   },
   {
     "emissor": "OLIVEIRA TRUST DISTRIBUIDORA TITULOS VALORES MOBILIARIOS",
-    "cnpj": "",
+    "cnpj": "36.113.876/0001-91",
     "agencia": "Liberum",
     "tipo_rating": "Empresa",
     "rating": "AM2",
@@ -46537,7 +46537,7 @@
   },
   {
     "emissor": "OLIVEIRA TRUST DTVM",
-    "cnpj": "",
+    "cnpj": "21.110.778/0001-23",
     "agencia": "Liberum",
     "tipo_rating": "Empresa",
     "rating": "AM2",
@@ -46549,7 +46549,7 @@
   },
   {
     "emissor": "OLIVEIRA TRUST SERVICER",
-    "cnpj": "",
+    "cnpj": "02.150.453/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "Empresa",
     "rating": "AM2",
@@ -46561,7 +46561,7 @@
   },
   {
     "emissor": "OLIVEIRA TRUST SERVICER",
-    "cnpj": "",
+    "cnpj": "02.150.453/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "Empresa",
     "rating": "AM2",
@@ -46909,7 +46909,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -46921,7 +46921,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -46933,7 +46933,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -46945,7 +46945,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -46957,7 +46957,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -46969,7 +46969,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -46981,7 +46981,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -46993,7 +46993,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -47005,7 +47005,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -47017,7 +47017,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -47029,7 +47029,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -47041,7 +47041,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -47053,7 +47053,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP1",
@@ -47065,7 +47065,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -47077,7 +47077,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA-",
@@ -47089,7 +47089,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -47101,7 +47101,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -47113,7 +47113,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -47125,7 +47125,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -47137,7 +47137,7 @@
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "29.226.704/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -47149,7 +47149,7 @@
   },
   {
     "emissor": "OPHIR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.605.322/0001-04",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -47161,7 +47161,7 @@
   },
   {
     "emissor": "OPHIR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.605.322/0001-04",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -47173,7 +47173,7 @@
   },
   {
     "emissor": "OPHIR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.605.322/0001-04",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -47185,7 +47185,7 @@
   },
   {
     "emissor": "OPHIR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.605.322/0001-04",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -47197,7 +47197,7 @@
   },
   {
     "emissor": "OPHIR FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.605.322/0001-04",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -47653,7 +47653,7 @@
   },
   {
     "emissor": "PAGOL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "46.285.106/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -47665,7 +47665,7 @@
   },
   {
     "emissor": "PAGOL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "46.285.106/0001-80",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -47833,7 +47833,7 @@
   },
   {
     "emissor": "PARTNERSHIP MONEY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.432.185/0001-53",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -47857,7 +47857,7 @@
   },
   {
     "emissor": "PATAGONIA FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
-    "cnpj": "",
+    "cnpj": "42.866.957/0001-65",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -47965,7 +47965,7 @@
   },
   {
     "emissor": "PEREGRINA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.711.472/0001-49",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -48217,7 +48217,7 @@
   },
   {
     "emissor": "PHD FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.769.038/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -48229,7 +48229,7 @@
   },
   {
     "emissor": "PHD FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.769.038/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -48241,7 +48241,7 @@
   },
   {
     "emissor": "PHD FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.769.038/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -48253,7 +48253,7 @@
   },
   {
     "emissor": "PHD FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.769.038/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -48265,7 +48265,7 @@
   },
   {
     "emissor": "PHD FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.769.038/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -48277,7 +48277,7 @@
   },
   {
     "emissor": "PHD FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.769.038/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -48289,7 +48289,7 @@
   },
   {
     "emissor": "PHD FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.769.038/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -48301,7 +48301,7 @@
   },
   {
     "emissor": "PHD FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.769.038/0001-69",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -48349,7 +48349,7 @@
   },
   {
     "emissor": "PIKI DIGITAL LENDING FIDC",
-    "cnpj": "",
+    "cnpj": "42.881.844/0001-39",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brB-",
@@ -48361,7 +48361,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB-",
@@ -48373,7 +48373,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -48385,7 +48385,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -48397,7 +48397,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -48409,7 +48409,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -48421,7 +48421,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -48433,7 +48433,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -48445,7 +48445,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -48457,7 +48457,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -48469,7 +48469,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -48481,7 +48481,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB-",
@@ -48493,7 +48493,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -48505,7 +48505,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -48517,7 +48517,7 @@
   },
   {
     "emissor": "PINARELLO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "29.109.292/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -48745,7 +48745,7 @@
   },
   {
     "emissor": "PLATA I FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSEGMENTOS",
-    "cnpj": "",
+    "cnpj": "17.198.574/0001-19",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -48757,7 +48757,7 @@
   },
   {
     "emissor": "PLATA I FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSEGMENTOS",
-    "cnpj": "",
+    "cnpj": "17.198.574/0001-19",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -48973,7 +48973,7 @@
   },
   {
     "emissor": "PORTLAND CREDITOS JUDICIAIS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "37.021.468/0001-72",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -48985,7 +48985,7 @@
   },
   {
     "emissor": "PORTLAND CREDITOS JUDICIAIS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "37.021.468/0001-72",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -49002,10 +49002,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "Estável",
-    "dt_acao": "2018-08-22",
+    "dt_acao": "2018-08-17",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3010/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3012/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "PORTO SEGURO INVESTIMENTOS",
@@ -49093,7 +49093,7 @@
   },
   {
     "emissor": "POUSO ALEGRE FIC FIDC",
-    "cnpj": "",
+    "cnpj": "29.152.737/0001-01",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brC",
@@ -49105,7 +49105,7 @@
   },
   {
     "emissor": "POUSO ALEGRE FIC FIDC",
-    "cnpj": "",
+    "cnpj": "29.152.737/0001-01",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brC",
@@ -49117,7 +49117,7 @@
   },
   {
     "emissor": "POUSO ALEGRE FIC FIDC",
-    "cnpj": "",
+    "cnpj": "29.152.737/0001-01",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brCC",
@@ -49201,7 +49201,7 @@
   },
   {
     "emissor": "PREMIER RP FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.511.268/0001-84",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -49213,7 +49213,7 @@
   },
   {
     "emissor": "PREMIER RP FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.511.268/0001-84",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -49609,7 +49609,7 @@
   },
   {
     "emissor": "QANTIC IONIQ FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "39.703.077/0001-63",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CC",
@@ -49813,7 +49813,7 @@
   },
   {
     "emissor": "R G FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "11.693.671/0001-00",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -49825,7 +49825,7 @@
   },
   {
     "emissor": "R G FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISEGMENTOS",
-    "cnpj": "",
+    "cnpj": "11.693.671/0001-00",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -50137,7 +50137,7 @@
   },
   {
     "emissor": "RAPPICARD FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "37.986.018/0001-14",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -50149,7 +50149,7 @@
   },
   {
     "emissor": "RAPPICARD FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "37.986.018/0001-14",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -50293,7 +50293,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -50305,7 +50305,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "AA-",
@@ -50317,7 +50317,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -50329,7 +50329,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -50341,7 +50341,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP1",
@@ -50353,7 +50353,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -50365,7 +50365,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -50377,7 +50377,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -50389,7 +50389,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -50401,7 +50401,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -50413,7 +50413,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -50425,7 +50425,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -50437,7 +50437,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -50449,7 +50449,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -50461,7 +50461,7 @@
   },
   {
     "emissor": "RDF FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "19.425.700/0001-56",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB-",
@@ -50545,7 +50545,7 @@
   },
   {
     "emissor": "REALINVEST FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.449.234/0001-60",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -50557,7 +50557,7 @@
   },
   {
     "emissor": "REALINVEST FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.449.234/0001-60",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -50569,7 +50569,7 @@
   },
   {
     "emissor": "REALINVEST FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.449.234/0001-60",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -51013,7 +51013,7 @@
   },
   {
     "emissor": "RIALMA ENERGIA",
-    "cnpj": "",
+    "cnpj": "15.014.934/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "Debenture Colateralizada",
     "rating": "A+",
@@ -51025,7 +51025,7 @@
   },
   {
     "emissor": "RIALMA ENERGIA SPE",
-    "cnpj": "",
+    "cnpj": "64.948.494/0001-13",
     "agencia": "Liberum",
     "tipo_rating": "Debenture Colateralizada",
     "rating": "A+",
@@ -51109,7 +51109,7 @@
   },
   {
     "emissor": "RIGEL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "50.739.342/0001-04",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -51421,7 +51421,7 @@
   },
   {
     "emissor": "RIVO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "07.383.363/0001-00",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -51433,7 +51433,7 @@
   },
   {
     "emissor": "RIVO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "07.383.363/0001-00",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -51685,7 +51685,7 @@
   },
   {
     "emissor": "ROYAL OAK FUNDO INVESTIMENTO COTAS FUNDOS INVESTIMENTOS MULTIMERCADO CREDITO PRIVADO INVESTIMENTO EXTERIOR",
-    "cnpj": "",
+    "cnpj": "23.029.136/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -51697,7 +51697,7 @@
   },
   {
     "emissor": "ROYAL OAK FUNDO INVESTIMENTO COTAS FUNDOS INVESTIMENTOS MULTIMERCADO CREDITO PRIVADO INVESTIMENTO EXTERIOR",
-    "cnpj": "",
+    "cnpj": "23.029.136/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -51721,7 +51721,7 @@
   },
   {
     "emissor": "RSS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "49.265.047/0001-76",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -51733,7 +51733,7 @@
   },
   {
     "emissor": "RUBI FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
-    "cnpj": "",
+    "cnpj": "19.187.286/0001-94",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -51925,7 +51925,7 @@
   },
   {
     "emissor": "SAINT JOHN FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "26.199.830/0001-83",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -51937,7 +51937,7 @@
   },
   {
     "emissor": "SAINT JOHN FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "26.199.830/0001-83",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -51985,7 +51985,7 @@
   },
   {
     "emissor": "SAN PRECA FEDERAL I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "44.395.262/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -51997,7 +51997,7 @@
   },
   {
     "emissor": "SAN PRECA FEDERAL I FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "44.395.262/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -52009,7 +52009,7 @@
   },
   {
     "emissor": "SAN PRECA FEDERAL I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "44.395.262/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -52021,7 +52021,7 @@
   },
   {
     "emissor": "SAN PRECA FEDERAL I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "44.395.262/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -52189,7 +52189,7 @@
   },
   {
     "emissor": "SANTANDER INFRAESTRUTURA INCENTIVADO FIC FIDC",
-    "cnpj": "",
+    "cnpj": "34.218.619/0001-99",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brA-",
@@ -52201,7 +52201,7 @@
   },
   {
     "emissor": "SANTIAGO HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.969.565/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -52213,7 +52213,7 @@
   },
   {
     "emissor": "SANTIAGO HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.969.565/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -52225,7 +52225,7 @@
   },
   {
     "emissor": "SANTIAGO HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.969.565/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -52237,7 +52237,7 @@
   },
   {
     "emissor": "SANTIAGO HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.969.565/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB-",
@@ -52249,7 +52249,7 @@
   },
   {
     "emissor": "SANTIAGO HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.969.565/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -52297,7 +52297,7 @@
   },
   {
     "emissor": "SAO CRISTOVAO FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "46.231.939/0001-68",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -52405,7 +52405,7 @@
   },
   {
     "emissor": "SATURNO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "23.104.455/0001-52",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -52417,7 +52417,7 @@
   },
   {
     "emissor": "SAV NEXOOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "38.284.301/0001-67",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -52429,7 +52429,7 @@
   },
   {
     "emissor": "SAV NEXOOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "38.284.301/0001-67",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -52441,7 +52441,7 @@
   },
   {
     "emissor": "SAV NEXOOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "38.284.301/0001-67",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "C",
@@ -52477,7 +52477,7 @@
   },
   {
     "emissor": "SC FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "45.523.882/0001-08",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -52573,7 +52573,7 @@
   },
   {
     "emissor": "SCF BRAZIL FIDC NP",
-    "cnpj": "",
+    "cnpj": "34.327.179/0001-08",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
@@ -52741,7 +52741,7 @@
   },
   {
     "emissor": "SEJA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "24.987.402/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -52753,7 +52753,7 @@
   },
   {
     "emissor": "SEJA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "24.987.402/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -52765,7 +52765,7 @@
   },
   {
     "emissor": "SEJA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "24.987.402/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -52777,7 +52777,7 @@
   },
   {
     "emissor": "SEJA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "24.987.402/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -52789,7 +52789,7 @@
   },
   {
     "emissor": "SEJA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "24.987.402/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -52801,7 +52801,7 @@
   },
   {
     "emissor": "SEJA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "24.987.402/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -52813,7 +52813,7 @@
   },
   {
     "emissor": "SEJA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "24.987.402/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -52825,7 +52825,7 @@
   },
   {
     "emissor": "SEJA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "24.987.402/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -52837,7 +52837,7 @@
   },
   {
     "emissor": "SEJA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "24.987.402/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -52849,7 +52849,7 @@
   },
   {
     "emissor": "SEJA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "24.987.402/0001-90",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -52873,7 +52873,7 @@
   },
   {
     "emissor": "SELLER FIDC",
-    "cnpj": "",
+    "cnpj": "50.473.039/0001-02",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brAA-",
@@ -52885,7 +52885,7 @@
   },
   {
     "emissor": "SELLOR FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "55.257.461/0001-36",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -52897,7 +52897,7 @@
   },
   {
     "emissor": "SELLOR FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "55.257.461/0001-36",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -53053,7 +53053,7 @@
   },
   {
     "emissor": "SERRA FACAO ENERGIA",
-    "cnpj": "",
+    "cnpj": "07.727.966/0001-74",
     "agencia": "Moody's",
     "tipo_rating": "Rating de Dívida",
     "rating": "AAA.br",
@@ -53065,7 +53065,7 @@
   },
   {
     "emissor": "SERRA FACAO ENERGIA",
-    "cnpj": "",
+    "cnpj": "07.727.966/0001-74",
     "agencia": "Moody's",
     "tipo_rating": "Rating de Emissor",
     "rating": "AAA.br",
@@ -53257,7 +53257,7 @@
   },
   {
     "emissor": "SG FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.720.582/0001-62",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -53269,7 +53269,7 @@
   },
   {
     "emissor": "SG II FUNDO INVESTIMENTO COTAS FUNDOS INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "18.048.628/0001-22",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -53281,7 +53281,7 @@
   },
   {
     "emissor": "SG II FUNDO INVESTIMENTO COTAS FUNDOS INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "18.048.628/0001-22",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -53293,7 +53293,7 @@
   },
   {
     "emissor": "SG II FUNDO INVESTIMENTO COTAS FUNDOS INVESTIMENTO DIREITOS CREDITORIOS NAO",
-    "cnpj": "",
+    "cnpj": "18.048.628/0001-22",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -53305,7 +53305,7 @@
   },
   {
     "emissor": "SG III FUNDO INVESTIMENTO COTAS FUNDO INVESTIMENTO DIREITOS CREDITORIO",
-    "cnpj": "",
+    "cnpj": "12.036.247/0001-47",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -53317,7 +53317,7 @@
   },
   {
     "emissor": "SG III FUNDO INVESTIMENTO COTAS FUNDO INVESTIMENTO DIREITOS CREDITORIO",
-    "cnpj": "",
+    "cnpj": "12.036.247/0001-47",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -53605,7 +53605,7 @@
   },
   {
     "emissor": "SIFRA ENERGY PODIUM FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.462.120/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B-",
@@ -53617,7 +53617,7 @@
   },
   {
     "emissor": "SIFRA ENERGY PODIUM FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.462.120/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -53629,7 +53629,7 @@
   },
   {
     "emissor": "SIFRA ENERGY PODIUM FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.462.120/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -53641,7 +53641,7 @@
   },
   {
     "emissor": "SIFRA ENERGY PODIUM FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.462.120/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -53653,7 +53653,7 @@
   },
   {
     "emissor": "SIFRA ENERGY PODIUM FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.462.120/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -53665,7 +53665,7 @@
   },
   {
     "emissor": "SIFRA ENERGY PODIUM FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.462.120/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -53677,7 +53677,7 @@
   },
   {
     "emissor": "SIFRA ENERGY PODIUM FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.462.120/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B",
@@ -53689,7 +53689,7 @@
   },
   {
     "emissor": "SIFRA ENERGY PODIUM FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.462.120/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP4",
@@ -53701,7 +53701,7 @@
   },
   {
     "emissor": "SIFRA ENERGY PODIUM FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.462.120/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB+",
@@ -53713,7 +53713,7 @@
   },
   {
     "emissor": "SIFRA ENERGY PODIUM FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "42.462.120/0001-50",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -53725,7 +53725,7 @@
   },
   {
     "emissor": "SIFRA LP FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.351.629/0001-63",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -53737,7 +53737,7 @@
   },
   {
     "emissor": "SIFRA LP FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.351.629/0001-63",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -53749,7 +53749,7 @@
   },
   {
     "emissor": "SIFRA LP FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.351.629/0001-63",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -53761,7 +53761,7 @@
   },
   {
     "emissor": "SIFRA LP FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.351.629/0001-63",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -53869,7 +53869,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FEEDER FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.461.840/0001-33",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -53905,7 +53905,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -53917,7 +53917,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -53929,7 +53929,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -53941,7 +53941,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -53953,7 +53953,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -53965,7 +53965,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -53977,7 +53977,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -53989,7 +53989,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB+",
@@ -54001,7 +54001,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP3",
@@ -54013,7 +54013,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A+",
@@ -54025,7 +54025,7 @@
   },
   {
     "emissor": "SIGMA CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "29.236.426/0001-20",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BBB",
@@ -54037,7 +54037,7 @@
   },
   {
     "emissor": "SILVER STONE FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
+    "cnpj": "26.000.055/0001-95",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -54109,7 +54109,7 @@
   },
   {
     "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "48.928.851/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -54121,7 +54121,7 @@
   },
   {
     "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "48.928.851/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -54133,7 +54133,7 @@
   },
   {
     "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "48.928.851/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -54145,7 +54145,7 @@
   },
   {
     "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "48.928.851/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "B+",
@@ -54157,7 +54157,7 @@
   },
   {
     "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "48.928.851/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP5",
@@ -54169,7 +54169,7 @@
   },
   {
     "emissor": "SINAI CONSIG FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "60.742.391/0001-41",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A-",
@@ -54181,7 +54181,7 @@
   },
   {
     "emissor": "SINAI CONSIG FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "60.742.391/0001-41",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -54193,7 +54193,7 @@
   },
   {
     "emissor": "SINAI CONSIG FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-    "cnpj": "",
+    "cnpj": "60.742.391/0001-41",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -54289,7 +54289,7 @@
   },
   {
     "emissor": "SL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "41.820.379/0001-63",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CCC",
@@ -54589,7 +54589,7 @@
   },
   {
     "emissor": "SOLIS CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.513.415/0001-55",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "A",
@@ -54601,7 +54601,7 @@
   },
   {
     "emissor": "SOLIS CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.513.415/0001-55",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "CP2",
@@ -54613,7 +54613,7 @@
   },
   {
     "emissor": "SOLIS CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.513.415/0001-55",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -54625,7 +54625,7 @@
   },
   {
     "emissor": "SOLIS CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
+    "cnpj": "32.513.415/0001-55",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
     "rating": "BB",
@@ -54649,7 +54649,7 @@
   },
   {
     "emissor": "SOLIS PORTFOLIO CREDITO FIC FIDC",
-    "cnpj": "",
+    "cnpj": "58.525.584/0001-07",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brA-",
@@ -55081,7 +55081,7 @@
   },
   {
     "emissor": "SPS I FIDC NP",
-    "cnpj": "",
+    "cnpj": "28.472.352/0001-69",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brB-",
