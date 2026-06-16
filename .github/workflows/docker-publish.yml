@@ -34,4 +34,4 @@ jobs:
           context: .
           platforms: linux/arm64
           push: true
-          tags: ghcr.io/${{ lower(github.repository_owner) }}/pulseratingsbrasil:latest
+          tags: ghcr.io/pulsedatalabs/pulseratingsbrasil:latest
