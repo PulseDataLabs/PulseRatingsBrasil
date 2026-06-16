@@ -59,32 +59,32 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Agencia de Fomento do Estado de Santa Catarina S.A. - Badesc"
+        "example": "Sociedade de Abastecimento de Agua e Saneamento S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/agencia-de-fomento-do-estado-de-santa-catarina-sa-badesc-96804570"
+        "example": "https://www.fitchratings.com/entity/sociedade-de-abastecimento-de-agua-e-saneamento-sa-96230976"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Long Term Issuer Default Rating"
+        "example": "National Long Term Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BB"
+        "example": "BB-(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-11"
+        "example": "2026-06-15"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Affirmed"
+        "example": "Downgrade"
       },
       {
         "name": "de_outlook",
@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Facta INSS CB FIDC"
+        "example": "Sociedade de Abastecimento de Agua e Saneamento S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/facta-inss-cb-fidc-97441991"
+        "example": "https://www.fitchratings.com/entity/sociedade-de-abastecimento-de-agua-e-saneamento-sa-96230976"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACR IV FIDC - SUBORDINADAS"
+        "example": "ACRE BG FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/4679/Acre_BG_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brAA-"
+        "example": "brBB+"
       },
       {
         "name": "de_rating_cp",
@@ -283,12 +283,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brAA-"
+        "example": "brBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-08"
+        "example": "2024-08-14"
       },
       {
         "name": "de_acao_rating",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ACR_IV_FIDC/11045"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11068"
       }
     ]
   },
