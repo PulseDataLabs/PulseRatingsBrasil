@@ -59,32 +59,32 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Sociedade de Abastecimento de Agua e Saneamento S.A."
+        "example": "Brazil"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/sociedade-de-abastecimento-de-agua-e-saneamento-sa-96230976"
+        "example": "https://www.fitchratings.com/entity/brazil-80442191"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "National Long Term Rating"
+        "example": "Long Term Issuer Default Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BB-(bra)"
+        "example": "BB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-15"
+        "example": "2026-06-16"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Downgrade"
+        "example": "Affirmed"
       },
       {
         "name": "de_outlook",
@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Sociedade de Abastecimento de Agua e Saneamento S.A."
+        "example": "Brazil"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/sociedade-de-abastecimento-de-agua-e-saneamento-sa-96230976"
+        "example": "https://www.fitchratings.com/entity/brazil-80442191"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
+        "example": "AFINITTY FIC FIDC - SENIORES 1ª SÉRIE"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/4527/Afinitty_FIC_FIDC_-_Seniores_1ª_série"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB-"
+        "example": "brB+"
       },
       {
         "name": "de_rating_cp",
@@ -283,12 +283,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBB-"
+        "example": "brB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2024-05-15"
       },
       {
         "name": "de_acao_rating",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11204"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10864"
       }
     ]
   },
