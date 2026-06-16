@@ -234,3 +234,6 @@ data/cvm_cache/
 data/rfb_cache/
 # Chrome profile temporario gerado pelo curl-cffi
 chrome-profile/
+
+# Test files temporarios
+test_*.py
