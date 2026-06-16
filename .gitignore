@@ -237,3 +237,6 @@ chrome-profile/
 
 # Test files temporarios
 test_*.py
+
+# Antigravity CLI
+.antigravitycli/
