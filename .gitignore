@@ -232,3 +232,5 @@ data/cvm_cache/
 
 # RFB cache (base CNPJ da Receita Federal para preenchimento local)
 data/rfb_cache/
+# Chrome profile temporario gerado pelo curl-cffi
+chrome-profile/
