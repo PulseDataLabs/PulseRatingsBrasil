@@ -59,22 +59,22 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Brazil"
+        "example": "Elea Digital Infraestrutura e Redes de Telecomunicacoes S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/brazil-80442191"
+        "example": "https://www.fitchratings.com/entity/drammen-rj-infraestrutura-e-redes-de-telecomunicacoes-sa-97272267"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Long Term Issuer Default Rating"
+        "example": "National Long Term Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BB"
+        "example": "A-(bra)"
       },
       {
         "name": "dt_acao_rating",
@@ -84,12 +84,12 @@
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Affirmed"
+        "example": "Upgrade"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Stable"
+        "example": "Rating Outlook Positive"
       }
     ]
   },
@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Brazil"
+        "example": "Elea Digital Infraestrutura e Redes de Telecomunicacoes S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/brazil-80442191"
+        "example": "https://www.fitchratings.com/entity/drammen-rj-infraestrutura-e-redes-de-telecomunicacoes-sa-97272267"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AFINITTY FIC FIDC - SENIORES 1ª SÉRIE"
+        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4527/Afinitty_FIC_FIDC_-_Seniores_1ª_série"
+        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB+"
+        "example": "brA"
       },
       {
         "name": "de_rating_cp",
@@ -283,27 +283,27 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB+"
+        "example": "brA"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-05-15"
+        "example": "2025-04-01"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Preliminar"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": ""
       },
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10864"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
       }
     ]
   },
@@ -315,17 +315,17 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "CISS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS PRESTACAO DE SERVICOS"
+        "example": "ASH HOLDINGS LIMITED"
       },
       {
         "name": "no_setor",
         "type": "str",
-        "example": "FIDC"
+        "example": "Empresa"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29019"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29014"
       }
     ]
   },
@@ -337,27 +337,27 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "CISS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS PRESTACAO DE SERVICOS"
+        "example": "ASH HOLDINGS LIMITED"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29019"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29014"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "FIDC"
+        "example": "Empresa"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "A"
+        "example": "BB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-12"
+        "example": "2026-06-16"
       },
       {
         "name": "de_acao_rating",
@@ -372,7 +372,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": ""
       },
       {
         "name": "de_escala",
