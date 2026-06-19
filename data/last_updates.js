@@ -16,8 +16,8 @@ window.PULSERATINGS_LAST_UPDATES = {
     "max": "2026-06-04"
   },
   "fitch_emissores.csv": {
-    "min": "2026-06-18",
-    "max": "2026-06-18"
+    "min": "2026-06-19",
+    "max": "2026-06-19"
   },
   "standard_and_poors_emissores.csv": {
     "min": "2026-06-19",
