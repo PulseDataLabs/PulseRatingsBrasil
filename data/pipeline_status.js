@@ -1,11 +1,11 @@
 window.PULSERATINGS_PIPELINE_STATUS = {
-  "timestamp": "2026-06-18T15:14:54.992494",
-  "elapsed_seconds": 417.9238760471344,
-  "status": "success",
+  "timestamp": "2026-06-19T00:51:12.186484",
+  "elapsed_seconds": 447.28216075897217,
+  "status": "error",
   "summary": {
     "total": 10,
-    "success": 10,
-    "failed": 0,
+    "success": 9,
+    "failed": 1,
     "drifts": 0
   },
   "scrapers": {
@@ -34,64 +34,64 @@ window.PULSERATINGS_PIPELINE_STATUS = {
       "timestamp": "2026-06-04T17:35:16.936746"
     },
     "fitch_emissores": {
-      "status": "success",
-      "elapsed_seconds": 12.489930868148804,
-      "error": null,
-      "timestamp": "2026-06-18T15:14:54.992644"
+      "status": "error",
+      "elapsed_seconds": 11.90759801864624,
+      "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_emissores.py\", line 148, in fetch\n    emissores = _obter_emissores_fitch_real()\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_emissores.py\", line 77, in _obter_emissores_fitch_real\n    resp.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/curl_cffi/requests/models.py\", line 193, in raise_for_status\n    raise HTTPError(f\"HTTP Error {self.status_code}: {self.reason}\", 0, self)\ncurl_cffi.requests.exceptions.HTTPError: HTTP Error 502: \n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/run_all.py\", line 79, in run_scraper\n    scraper.run()\n    ~~~~~~~~~~~^^\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 108, in run\n    raise e\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 39, in run\n    df = self.fetch()\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_emissores.py\", line 151, in fetch\n    print_fail(f\"Erro ao obter emissores: {e}\")\n    ^^^^^^^^^^\nNameError: name 'print_fail' is not defined. Did you mean: 'print_warn'?\n",
+      "timestamp": "2026-06-19T00:51:12.186586"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 21.451284885406494,
+      "elapsed_seconds": 26.13396692276001,
       "error": null,
-      "timestamp": "2026-06-18T15:14:54.992645"
+      "timestamp": "2026-06-19T00:51:12.186594"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 0.6048929691314697,
+      "elapsed_seconds": 74.2378945350647,
       "error": null,
-      "timestamp": "2026-06-18T15:14:54.992635"
+      "timestamp": "2026-06-19T00:51:12.186600"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 13.057836294174194,
+      "elapsed_seconds": 13.898172616958618,
       "error": null,
-      "timestamp": "2026-06-18T15:14:54.992652"
+      "timestamp": "2026-06-19T00:51:12.186601"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 0.039283037185668945,
+      "elapsed_seconds": 101.54116821289062,
       "error": null,
-      "timestamp": "2026-06-18T15:14:54.992651"
+      "timestamp": "2026-06-19T00:51:12.186605"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 384.228492975235,
+      "elapsed_seconds": 373.0368950366974,
       "error": null,
-      "timestamp": "2026-06-18T15:14:54.992655"
+      "timestamp": "2026-06-19T00:51:12.186606"
     },
     "austin_emissores": {
       "status": "success",
-      "elapsed_seconds": 1.6470849514007568,
+      "elapsed_seconds": 1.9033949375152588,
       "error": null,
-      "timestamp": "2026-06-18T15:14:54.992641"
+      "timestamp": "2026-06-19T00:51:12.186591"
     },
     "austin_ratings": {
       "status": "success",
-      "elapsed_seconds": 26.261122465133667,
+      "elapsed_seconds": 29.805783987045288,
       "error": null,
-      "timestamp": "2026-06-18T15:14:54.992654"
+      "timestamp": "2026-06-19T00:51:12.186603"
     },
     "liberum_emissores": {
       "status": "success",
-      "elapsed_seconds": 32.297731161117554,
+      "elapsed_seconds": 36.23980665206909,
       "error": null,
-      "timestamp": "2026-06-18T15:14:54.992647"
+      "timestamp": "2026-06-19T00:51:12.186596"
     },
     "liberum_ratings": {
       "status": "success",
-      "elapsed_seconds": 31.439885139465332,
+      "elapsed_seconds": 34.912654638290405,
       "error": null,
-      "timestamp": "2026-06-18T15:14:54.992649"
+      "timestamp": "2026-06-19T00:51:12.186598"
     }
   },
   "drifts": {}
