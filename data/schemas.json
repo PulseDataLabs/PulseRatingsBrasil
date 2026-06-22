@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Norsa Refrigerantes S.A."
+        "example": "Solar Bebidas S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/norsa-refrigerantes-sa-96784265"
+        "example": "https://www.fitchratings.com/entity/solar-bebidas-sa-97327228"
       },
       {
         "name": "no_tipo_rating",
@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Fundo de Investimento em Direitos Creditorios Consig Premium I - Responsabilidade Limitada"
+        "example": "Opea Securitizadora S.A. 2026-608-1 (Iguatemi)"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/fundo-de-investimento-em-direitos-creditorios-consig-premium-i-responsabilidade-limitada-97877954"
+        "example": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2026-608-1-iguatemi-97904782"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACRE BG FIDC - SENIORES ÚNICA"
+        "example": "ACRE BG FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4679/Acre_BG_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4680/Acre_BG_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB+"
+        "example": "brB"
       },
       {
         "name": "de_rating_cp",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBB+"
+        "example": "brB"
       },
       {
         "name": "dt_acao_rating",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11068"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11069"
       }
     ]
   },
