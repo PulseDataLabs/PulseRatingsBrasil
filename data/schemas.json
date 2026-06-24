@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AFINITTY FIC FIDC - MEZANINO CLASSE A"
+        "example": "ACRE BG FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4528/Afinitty_FIC_FIDC_-_Mezanino_Classe_A_"
+        "example": "https://www.austin.com.br/Historico-Rating/4679/Acre_BG_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB-"
+        "example": "brBB+"
       },
       {
         "name": "de_rating_cp",
@@ -283,12 +283,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB-"
+        "example": "brBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-05-15"
+        "example": "2024-08-14"
       },
       {
         "name": "de_acao_rating",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10865"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11068"
       }
     ]
   },
