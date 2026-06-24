@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "EDP Energias do Brasil S.A."
+        "example": "Cooperativa Central de Credito Rural com Interacao Solidaria - Central Cresol Sicoper"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/edp-energias-do-brasil-sa-94762090"
+        "example": "https://www.fitchratings.com/entity/cooperativa-central-de-credito-rural-com-interacao-solidaria-central-cresol-sicoper-97361361"
       },
       {
         "name": "no_tipo_rating",
@@ -74,12 +74,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AAA(bra)"
+        "example": "A-(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-22"
+        "example": "2026-06-23"
       },
       {
         "name": "de_acao_rating",
@@ -89,7 +89,7 @@
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Stable"
+        "example": "Rating Outlook Positive"
       }
     ]
   },
@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "EDP Energias do Brasil S.A."
+        "example": "Cooperativa Central de Credito Rural com Interacao Solidaria - Central Cresol Sicoper"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/edp-energias-do-brasil-sa-94762090"
+        "example": "https://www.fitchratings.com/entity/cooperativa-central-de-credito-rural-com-interacao-solidaria-central-cresol-sicoper-97361361"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SENIORES ÚNICA"
+        "example": "AFINITTY FIC FIDC - MEZANINO CLASSE A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4790/Adjud_I_FIDC_NP__-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4528/Afinitty_FIC_FIDC_-_Mezanino_Classe_A_"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB-"
       },
       {
         "name": "de_rating_cp",
@@ -283,12 +283,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2024-05-15"
       },
       {
         "name": "de_acao_rating",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11203"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10865"
       }
     ]
   },
@@ -315,7 +315,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "CENTRUM FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "DELTA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
       },
       {
         "name": "no_setor",
@@ -325,7 +325,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29033"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29035"
       }
     ]
   },
@@ -337,12 +337,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "CENTRUM FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "DELTA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29033"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29035"
       },
       {
         "name": "no_tipo_rating",
@@ -357,7 +357,7 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-17"
+        "example": "2026-06-23"
       },
       {
         "name": "de_acao_rating",
@@ -372,7 +372,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Única"
+        "example": "Subordinada"
       },
       {
         "name": "de_escala",
