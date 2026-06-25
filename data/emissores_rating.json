@@ -3885,7 +3885,7 @@
     "dt_acao": "2024-11-01",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4823/Azure_Consignado_FIDC_-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/4828/Azure_Consignado_FIDC_-_Seniores_Única"
   },
   {
     "emissor": "AZZAS 2154",
@@ -12348,6 +12348,42 @@
     "link": "https://www.austin.com.br/Historico-Rating/3819/Budapeste_FIDC_-_Única_"
   },
   {
+    "emissor": "BV AUTO III SEGMENTO FINANCEIRO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+    "cnpj": "",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "AAA.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-06-24",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "Cotas Seniores",
+    "link": ""
+  },
+  {
+    "emissor": "BV AUTO III SEGMENTO FINANCEIRO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+    "cnpj": "",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "AA.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-06-24",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "Cotas Subordinadas Mezanino A",
+    "link": ""
+  },
+  {
+    "emissor": "BV AUTO III SEGMENTO FINANCEIRO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+    "cnpj": "",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "BBB.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-06-24",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "Cotas Subordinadas Mezanino B",
+    "link": ""
+  },
+  {
     "emissor": "BYX MOZART FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
     "cnpj": "61.188.091/0001-25",
     "agencia": "Moody's",
@@ -15679,6 +15715,114 @@
     "rating": "AAA.br",
     "outlook": "Perspectiva estável",
     "dt_acao": "2025-09-26",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "21ª Emissão de Debêntures - 2ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS",
+    "cnpj": "17.281.106/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating Corporativo",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-23",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS",
+    "cnpj": "17.281.106/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-23",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "16ª Emissão de Debêntures - 1ª série",
+    "link": ""
+  },
+  {
+    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS",
+    "cnpj": "17.281.106/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-23",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "16ª Emissão de Debêntures - 2ª série",
+    "link": ""
+  },
+  {
+    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS",
+    "cnpj": "17.281.106/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-23",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "18ª Emissão de Debêntures - 1ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS",
+    "cnpj": "17.281.106/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-23",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "18ª Emissão de Debêntures - 2ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS",
+    "cnpj": "17.281.106/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-23",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "19ª Emissão de Debêntures - 1ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS",
+    "cnpj": "17.281.106/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-23",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "19ª Emissão de Debêntures - 2ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS",
+    "cnpj": "17.281.106/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-23",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "21ª Emissão de Debêntures - 1ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS",
+    "cnpj": "17.281.106/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-23",
     "setor": "Empresas Não-Financeiras",
     "instrumento": "21ª Emissão de Debêntures - 2ª Série",
     "link": ""
@@ -20964,6 +21108,42 @@
     "link": "https://www.fitchratings.com/entity/energisa-mato-grosso-do-sul-distribuidora-de-energia-sa-96223276"
   },
   {
+    "emissor": "ENERGISA MINAS RIO",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "Long Term Issuer Default Rating",
+    "rating": "BB",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-04-30",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868"
+  },
+  {
+    "emissor": "ENERGISA MINAS RIO",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "Local Currency Long Term Issuer Default Rating",
+    "rating": "BB",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-04-30",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868"
+  },
+  {
+    "emissor": "ENERGISA MINAS RIO",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AA+(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-04-30",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868"
+  },
+  {
     "emissor": "ENERGISA PARAIBA",
     "cnpj": "09.095.183/0001-40",
     "agencia": "Fitch",
@@ -22744,24 +22924,24 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brB+",
+    "rating": "brBBB",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBB-",
+    "rating": "brB+",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
@@ -22792,12 +22972,12 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBBB",
+    "rating": "brBB-",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC",
@@ -22977,7 +23157,7 @@
     "dt_acao": "2022-06-23",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4018/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4020/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC ANGA FACTA CONSIGNADOS INSS I",
@@ -23349,7 +23529,7 @@
     "dt_acao": "2024-08-13",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4699/FIDC_Cap_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4698/FIDC_Cap_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC CAPITAL BR",
@@ -23790,10 +23970,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brBB-",
     "outlook": "Estável",
-    "dt_acao": "2024-07-19",
+    "dt_acao": "2024-02-08",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4629/FIDC_FCT_Consignado_II_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4453/FIDC_FCT_Consignado_II_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "FIDC FENIX",
@@ -30588,6 +30768,18 @@
     "link": ""
   },
   {
+    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS PICPAY FGTS II",
+    "cnpj": "65.839.682/0001-76",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "AAA.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-06-23",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "Cotas Seniores",
+    "link": ""
+  },
+  {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS POUPACRED RESPONSABILIDADE ILIMITADA",
     "cnpj": "",
     "agencia": "Liberum",
@@ -35626,6 +35818,18 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/impar-servicos-hospitalares-sa-96827709"
+  },
+  {
+    "emissor": "IN",
+    "cnpj": "05.208.211/0017-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-18",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "1ª Emissão de Debêntures - Série Única",
+    "link": ""
   },
   {
     "emissor": "INDIE CAPITAL INVESTIMENTOS",
@@ -45732,6 +45936,18 @@
     "link": ""
   },
   {
+    "emissor": "NEON FINANCEIRA",
+    "cnpj": "11.285.104/0001-06",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Depósitos Bancários",
+    "rating": "ML A-2.br",
+    "outlook": "-",
+    "dt_acao": "2025-10-01",
+    "setor": "Instituições Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
     "emissor": "NEON FUNDO INVESTIMENTO DIREITOS CREDITORIOS I",
     "cnpj": "",
     "agencia": "Liberum",
@@ -47472,6 +47688,18 @@
     "link": ""
   },
   {
+    "emissor": "OURO PRETO SERVICOS SANEAMENTO",
+    "cnpj": "35.198.517/0001-11",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA-.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2025-07-04",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "1ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
     "emissor": "OUTFIELD FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADO",
     "cnpj": "",
     "agencia": "Liberum",
@@ -49134,10 +49362,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "Estável",
-    "dt_acao": "2018-08-17",
+    "dt_acao": "2018-08-22",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3012/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3010/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "PORTO SEGURO INVESTIMENTOS",
@@ -49927,6 +50155,18 @@
     "rating": "AA+.br",
     "outlook": "Perspectiva estável",
     "dt_acao": "2025-04-23",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "1ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "QUANTUM PARTICIPACOES",
+    "cnpj": "28.367.479/0001-18",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-23",
     "setor": "Projetos de Infraestrutura",
     "instrumento": "1ª Emissão de Debêntures - Série Única",
     "link": ""
@@ -52339,6 +52579,66 @@
     "rating": "AAA.br",
     "outlook": "Perspectiva estável",
     "dt_acao": "2025-03-17",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "13ª Emissão de Debentures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "SANEAMENTO GOIAS",
+    "cnpj": "01.616.929/0001-02",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating Corporativo",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-19",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "SANEAMENTO GOIAS",
+    "cnpj": "01.616.929/0001-02",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-19",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "10ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "SANEAMENTO GOIAS",
+    "cnpj": "01.616.929/0001-02",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-19",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "11ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "SANEAMENTO GOIAS",
+    "cnpj": "01.616.929/0001-02",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-19",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "12ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "SANEAMENTO GOIAS",
+    "cnpj": "01.616.929/0001-02",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-19",
     "setor": "Empresas Não-Financeiras",
     "instrumento": "13ª Emissão de Debentures - Série Única",
     "link": ""
@@ -55938,10 +56238,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brB",
     "outlook": "Estável",
-    "dt_acao": "2024-10-25",
+    "dt_acao": "2025-06-16",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4835/Struttura_Agro_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4233/Struttura_Agro_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "STZ FORNECEDORES FIDC CORPORATIVOS",
@@ -56947,6 +57247,54 @@
     "rating": "AAA.br",
     "outlook": "Perspectiva estável",
     "dt_acao": "2025-06-18",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "TOP SERVICE SERVICOS SISTEMAS",
+    "cnpj": "00.973.749/0001-15",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-18",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "4ª Emissão de Debêntures - 1ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "TOP SERVICE SERVICOS SISTEMAS",
+    "cnpj": "00.973.749/0001-15",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-18",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "4ª Emissão de Debêntures - 2ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "TOP SERVICE SERVICOS SISTEMAS",
+    "cnpj": "00.973.749/0001-15",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-18",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "5ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "TOP SERVICE SERVICOS SISTEMAS",
+    "cnpj": "00.973.749/0001-15",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Emissor",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-18",
     "setor": "Empresas Não-Financeiras",
     "instrumento": "N/A",
     "link": ""
@@ -58413,6 +58761,18 @@
     "dt_acao": "2025-07-07",
     "setor": "Empresas Não-Financeiras",
     "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "UNIDAS LOCACOES SERVICOS",
+    "cnpj": "75.609.123/0001-23",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-06-19",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "23ª Emissão de Debêntures - Série Única",
     "link": ""
   },
   {
@@ -61546,6 +61906,42 @@
     "setor": "",
     "instrumento": "",
     "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1000167"
+  },
+  {
+    "emissor": "XP RETURN I CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+    "cnpj": "",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "AAA.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-06-19",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "1ª Série de Cotas Seniores",
+    "link": ""
+  },
+  {
+    "emissor": "XP RETURN I CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+    "cnpj": "",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "AAA.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-06-19",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "2ª Série de Cotas Seniores",
+    "link": ""
+  },
+  {
+    "emissor": "XP RETURN I CONSIGNADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+    "cnpj": "",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "AAA.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-06-19",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "3ª Série de Cotas Seniores",
+    "link": ""
   },
   {
     "emissor": "XP VISTA ASSET MANAGEMENT",

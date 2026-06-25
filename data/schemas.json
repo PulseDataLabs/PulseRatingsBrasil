@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-06-18"
+        "example": "2026-06-25"
       }
     ]
   },
@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Vert Cia Securitizadora 2019-30-1 (Klabin)"
+        "example": "Rio Oil Finance Trust"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/vert-companhia-securitizadora-96764451"
+        "example": "https://www.fitchratings.com/entity/rio-oil-finance-trust-94216093"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AFINITTY FIC FIDC - SENIORES 1ª SÉRIE"
+        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4527/Afinitty_FIC_FIDC_-_Seniores_1ª_série"
+        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB+"
+        "example": "brBBB+"
       },
       {
         "name": "de_rating_cp",
@@ -283,17 +283,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB+"
+        "example": "brBBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-05-15"
+        "example": "2024-07-10"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10864"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ADGM_FIDC/10935"
       }
     ]
   },
