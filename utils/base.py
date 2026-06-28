@@ -372,6 +372,13 @@ def salvar_csv(
     except Exception as e:
         log.warning(f"Não foi possível atualizar schemas.json: {e}")
 
+    # Persistência no Oracle Autonomous Database
+    try:
+        from utils.oracle_db import persistir_no_oracle
+        persistir_no_oracle(arquivo, registros, todas, cabecalho)
+    except Exception as e:
+        log.warning(f"Erro ao persistir dados no banco de dados Oracle: {e}")
+
     log.info(
         f"CSV atualizado → {arquivo} | "
         f"{len(registros)} novos registros salvos"

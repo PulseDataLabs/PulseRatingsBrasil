@@ -155,8 +155,31 @@ O script respeita o mesmo sistema de descoberta de scrapers e fases do `run_all.
     cd PulseRatingsBrasil
     ```
 
-2.  **Instale as dependências:**
+2.  **Configure o ambiente virtual e instale as dependências:**
+
+    ##### Opção A: Recomendada (Usando `uv`)
+    O `uv` é um gerenciador de pacotes extremamente rápido escrito em Rust.
     ```bash
+    # Cria o ambiente virtual (.venv)
+    uv venv
+
+    # Ativa o ambiente virtual
+    source .venv/bin/activate
+
+    # Instala as dependências
+    uv pip install -r requirements.txt
+    ```
+
+    ##### Opção B: Tradicional (venv + pip)
+    Caso prefira a abordagem clássica do Python:
+    ```bash
+    # Cria o ambiente virtual (venv)
+    python -m venv venv
+
+    # Ativa o ambiente virtual
+    source venv/bin/activate
+
+    # Instala as dependências
     pip install -r requirements.txt
     ```
 
@@ -164,13 +187,29 @@ O script respeita o mesmo sistema de descoberta de scrapers e fases do `run_all.
     ```bash
     cp .env.example .env
     ```
-    *(Edite o `.env` caso precise definir chaves de API, como `SP_GLOBAL_API_KEY`, caso queira evitar o fallback dinâmico).*
+    *(Edite o `.env` caso queira evitar o fallback dinâmico de APIs ou configurar a persistência de dados no Oracle Cloud Autonomous Database).*
+
+#### 🗄️ Persistência no Oracle Cloud Autonomous Database
+
+Para habilitar a gravação automatizada dos dados no Oracle Cloud Autonomous Database, configure as seguintes variáveis no arquivo `.env`:
+*   `ORACLE_DB_USER`: Usuário do banco de dados.
+*   `ORACLE_DB_PASSWORD`: Senha do usuário.
+*   `ORACLE_DB_DSN`: O DSN de conexão (Service Name do seu banco de dados).
+*   `ORACLE_DB_WALLET_DIR`: O caminho local absoluto para o diretório descompactado contendo os arquivos da Wallet (ex: contendo `cwallet.sso`, `tnsnames.ora`). Se omitido ou vazio, o driver tentará conectar via **One-Way TLS**. Caso preenchido, usará **Mutual TLS (mTLS)**.
+*   `ORACLE_DB_WALLET_PASSWORD`: A senha da Wallet (opcional).
+
+Se as credenciais não forem fornecidas ou a variável de ambiente `SKIP_ORACLE_DB` estiver configurada como `1`, a persistência no banco de dados será ignorada silenciosamente e sem crashar a gravação local dos arquivos CSV.
 
 ### Executando os Scrapers
 
 *   **Executar todos os scrapers ativos:**
     ```bash
     python run_all.py
+    ```
+
+*   **Executar ignorando a persistência no banco de dados Oracle:**
+    ```bash
+    python run_all.py --skip-db
     ```
 
 *   **Executar sequencialmente (ideal para depuração):**

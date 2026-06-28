@@ -395,7 +395,16 @@ if __name__ == "__main__":
         action="store_true",
         help="Gera e atualiza o arquivo data/datasets.json a partir dos scrapers",
     )
+    parser.add_argument(
+        "--skip-db",
+        action="store_true",
+        help="Ignora a gravação e persistência no banco de dados Oracle",
+    )
     args = parser.parse_args()
+
+    if args.skip_db:
+        import os
+        os.environ["SKIP_ORACLE_DB"] = "1"
 
     if args.generate_catalog:
         from scripts.generate_catalog import generate
