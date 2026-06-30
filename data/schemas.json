@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-06-29"
+        "example": "2026-06-30"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
+        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
+        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brA"
       },
       {
         "name": "de_rating_cp",
@@ -283,27 +283,27 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brA"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-07-10"
+        "example": "2025-04-01"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Inicial"
+        "example": "Rating Preliminar"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": ""
       },
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ADGM_FIDC/10935"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
       }
     ]
   },
@@ -315,7 +315,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "DELTA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
+        "example": "ARGENTA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MERCANTIS DE RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -325,7 +325,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29035"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29038"
       }
     ]
   },
@@ -337,12 +337,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "DELTA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
+        "example": "ARGENTA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MERCANTIS DE RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29035"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29038"
       },
       {
         "name": "no_tipo_rating",
@@ -352,17 +352,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "B"
+        "example": "BBB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-23"
+        "example": "2026-06-30"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Encerramento"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -372,7 +372,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Subordinada"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
