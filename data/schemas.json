@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Eco Securitizadora 2026-454-1,2,3,4 (JBS)"
+        "example": "Fundo de Investimento em Direitos Creditorios Consig Premium I - Responsabilidade Limitada"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/eco-securitizadora-2026-454-1-2-3-4-jbs-97909478"
+        "example": "https://www.fitchratings.com/entity/fundo-de-investimento-em-direitos-creditorios-consig-premium-i-responsabilidade-limitada-97877954"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
+        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brA"
+        "example": "brBB-"
       },
       {
         "name": "de_rating_cp",
@@ -283,27 +283,27 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brA"
+        "example": "brBB-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-04-01"
+        "example": "2024-08-13"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Preliminar"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Estável"
       },
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11204"
       }
     ]
   },
