@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-06-30"
+        "example": "2026-07-01"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AFINITTY FIC FIDC - SUBORDINADAS JÚNIOR"
+        "example": "AFINITTY FIC FIDC - SENIORES 1ª SÉRIE"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4529/Afinitty_FIC_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/4527/Afinitty_FIC_FIDC_-_Seniores_1ª_série"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brCC"
+        "example": "brB+"
       },
       {
         "name": "de_rating_cp",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brCC"
+        "example": "brB+"
       },
       {
         "name": "dt_acao_rating",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10866"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10864"
       }
     ]
   },
