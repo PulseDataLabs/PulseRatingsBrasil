@@ -732,18 +732,6 @@
     "link": "https://www.fitchratings.com/entity/aeris-industria-e-comercio-de-equipamentos-para-geracao-de-energia-sa-97108213"
   },
   {
-    "emissor": "AES TUCANO HOLDING II",
-    "cnpj": "34.623.550/0001-89",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-12-30",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/aes-tucano-holding-ii-sa-97281834"
-  },
-  {
     "emissor": "AETE",
     "cnpj": "06.001.492/0001-16",
     "agencia": "Fitch",
@@ -3382,6 +3370,18 @@
     "setor": "Empresas Não-Financeiras",
     "instrumento": "N/A",
     "link": ""
+  },
+  {
+    "emissor": "AUREN PARTICIPACOES",
+    "cnpj": "37.663.076/0001-07",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AAA(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2025-12-30",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/aes-brasil-energia-sa-97281499"
   },
   {
     "emissor": "AUREN PARTICIPACOES",
@@ -9115,6 +9115,42 @@
     "rating": "BBB-.br",
     "outlook": "Perspectiva positiva",
     "dt_acao": "2025-06-09",
+    "setor": "Instituições Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "BANCO SENFF",
+    "cnpj": "11.970.623/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Depósitos Bancários",
+    "rating": "ML A-3.br",
+    "outlook": "-",
+    "dt_acao": "2026-07-01",
+    "setor": "Instituições Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "BANCO SENFF",
+    "cnpj": "11.970.623/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Depósitos Bancários",
+    "rating": "BBB.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-07-01",
+    "setor": "Instituições Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "BANCO SENFF",
+    "cnpj": "11.970.623/0001-03",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Emissor",
+    "rating": "BBB.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-07-01",
     "setor": "Instituições Financeiras",
     "instrumento": "N/A",
     "link": ""
@@ -18006,7 +18042,7 @@
     "tipo_rating": "Rating de Dívida",
     "rating": "A.br",
     "outlook": "Perspectiva estável",
-    "dt_acao": "2025-10-23",
+    "dt_acao": "2026-07-01",
     "setor": "Empresas Não-Financeiras",
     "instrumento": "3ª Emissão de Debêntures - Série única",
     "link": ""
@@ -18018,7 +18054,7 @@
     "tipo_rating": "Rating de Emissor",
     "rating": "A.br",
     "outlook": "Perspectiva estável",
-    "dt_acao": "2025-05-06",
+    "dt_acao": "2026-07-01",
     "setor": "Empresas Não-Financeiras",
     "instrumento": "N/A",
     "link": ""
@@ -22924,24 +22960,36 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brB+",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBB+",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB-",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB+",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
@@ -22966,18 +23014,6 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
-    "rating": "brBB-",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC",
@@ -23157,7 +23193,7 @@
     "dt_acao": "2022-06-23",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4020/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4018/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC ANGA FACTA CONSIGNADOS INSS I",
@@ -23529,7 +23565,7 @@
     "dt_acao": "2024-08-13",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4698/FIDC_Cap_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4699/FIDC_Cap_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC CAPITAL BR",
@@ -31092,18 +31128,6 @@
     "link": ""
   },
   {
-    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA INCLUSAO FINANCEIRA PLUS",
-    "cnpj": "55.255.330/0001-10",
-    "agencia": "Moody's",
-    "tipo_rating": "Rating de Operação Estruturada",
-    "rating": "A.br (sf)",
-    "outlook": "-",
-    "dt_acao": "2025-12-26",
-    "setor": "Finanças Estruturadas",
-    "instrumento": "1ª Série de Cotas Seniores",
-    "link": ""
-  },
-  {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS SABIA CREDIT",
     "cnpj": "",
     "agencia": "Liberum",
@@ -32861,8 +32885,8 @@
     "agencia": "Fitch",
     "tipo_rating": "Long Term Issuer Default Rating",
     "rating": "BBB",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-03-02",
+    "outlook": "Rating Outlook Positive",
+    "dt_acao": "2026-07-02",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/gerdau-sa-82273687"
@@ -32873,8 +32897,8 @@
     "agencia": "Fitch",
     "tipo_rating": "Local Currency Long Term Issuer Default Rating",
     "rating": "BBB",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-03-02",
+    "outlook": "Rating Outlook Positive",
+    "dt_acao": "2026-07-02",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/gerdau-sa-82273687"
@@ -32886,7 +32910,7 @@
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-07-11",
+    "dt_acao": "2026-07-02",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/gerdau-sa-82273687"
@@ -42737,11 +42761,11 @@
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
-    "outlook": "",
-    "dt_acao": "2021-02-03",
+    "outlook": "Estável",
+    "dt_acao": "2020-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3731/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/3627/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
   },
   {
     "emissor": "MERCANTIL PRODUTOS ACO FIDC",
@@ -42749,11 +42773,11 @@
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
-    "outlook": "Estável",
-    "dt_acao": "2020-10-09",
+    "outlook": "",
+    "dt_acao": "2021-02-03",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3627/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/3731/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
   },
   {
     "emissor": "METRO BH",
@@ -45726,19 +45750,7 @@
     "tipo_rating": "Long Term Issuer Default Rating",
     "rating": "BB+",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-02-24",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/natura-cosmeticos-sa-90714090"
-  },
-  {
-    "emissor": "NATURA COSMETICOS",
-    "cnpj": "71.673.990/0001-77",
-    "agencia": "Fitch",
-    "tipo_rating": "Local Currency Long Term Issuer Default Rating",
-    "rating": "BB+",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-02-24",
+    "dt_acao": "2026-07-02",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/natura-cosmeticos-sa-90714090"
@@ -45750,7 +45762,19 @@
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-07-16",
+    "dt_acao": "2026-07-02",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/natura-cosmeticos-sa-90714090"
+  },
+  {
+    "emissor": "NATURA COSMETICOS",
+    "cnpj": "71.673.990/0001-77",
+    "agencia": "Fitch",
+    "tipo_rating": "Local Currency Long Term Issuer Default Rating",
+    "rating": "BB+",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-07-02",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/natura-cosmeticos-sa-90714090"
@@ -46506,10 +46530,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "",
-    "dt_acao": "2020-05-07",
+    "dt_acao": "2021-03-26",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3520/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3772/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "NOVUS CAPITAL GESTORA RECURSOS",
@@ -49558,18 +49582,6 @@
     "setor": "",
     "instrumento": "",
     "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000694"
-  },
-  {
-    "emissor": "POTENGI HOLDINGS",
-    "cnpj": "",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-12-30",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/potengi-holdings-sa-97542650"
   },
   {
     "emissor": "POTTENCIAL SEGURADORA",
@@ -56370,10 +56382,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brB",
     "outlook": "Estável",
-    "dt_acao": "2025-06-16",
+    "dt_acao": "2024-10-25",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4233/Struttura_Agro_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4835/Struttura_Agro_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "STZ FORNECEDORES FIDC CORPORATIVOS",
@@ -60034,6 +60046,18 @@
     "setor": "Instituições Financeiras",
     "instrumento": "N/A",
     "link": ""
+  },
+  {
+    "emissor": "VENTOS SANTA TEREZA 07 ENERGIAS RENOVAVEIS",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AAA(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2025-12-30",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/ventos-de-santa-tereza-07-energias-renovaveis-sa-97591492"
   },
   {
     "emissor": "VENTURA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",

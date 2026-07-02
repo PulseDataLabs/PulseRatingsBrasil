@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-07-01"
+        "example": "2026-07-02"
       }
     ]
   },
@@ -59,37 +59,37 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Sociedade Beneficente Israelita Brasileira - Hospital Albert Einstein"
+        "example": "Gerdau S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/sociedade-beneficente-israelita-brasileira-hospital-albert-einstein-96628807"
+        "example": "https://www.fitchratings.com/entity/gerdau-sa-82273687"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "National Long Term Rating"
+        "example": "Long Term Issuer Default Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "WD(bra)"
+        "example": "BBB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-07-01"
+        "example": "2026-07-02"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Withdrawn"
+        "example": "Affirmed"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Stable"
+        "example": "Rating Outlook Positive"
       }
     ]
   },
@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Opea Securitizadora S.A. 2017-1-169 (Localiza)"
+        "example": "Gerdau S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2017-169-localiza-96576289"
+        "example": "https://www.fitchratings.com/entity/gerdau-sa-82273687"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
+        "example": "AFINITTY FIC FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4529/Afinitty_FIC_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brA"
+        "example": "brCC"
       },
       {
         "name": "de_rating_cp",
@@ -283,27 +283,27 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brA"
+        "example": "brCC"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-04-01"
+        "example": "2024-05-15"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Preliminar"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Estável"
       },
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10866"
       }
     ]
   },
