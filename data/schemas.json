@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Isa Energia Brasil S.A."
+        "example": "Sociedade Beneficente Israelita Brasileira - Hospital Albert Einstein"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/companhia-de-transmissao-de-energia-eletrica-paulista-sa-cteep-87797443"
+        "example": "https://www.fitchratings.com/entity/sociedade-beneficente-israelita-brasileira-hospital-albert-einstein-96628807"
       },
       {
         "name": "no_tipo_rating",
@@ -74,17 +74,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AAA(bra)"
+        "example": "WD(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-26"
+        "example": "2026-07-01"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Affirmed"
+        "example": "Withdrawn"
       },
       {
         "name": "de_outlook",
@@ -187,12 +187,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "iCred FGTS Fundo de Investimento em Direitos Creditorios"
+        "example": "Opea Securitizadora S.A. 2017-1-169 (Localiza)"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/icred-fgts-fundo-de-investimento-em-direitos-creditorios-97587883"
+        "example": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2017-169-localiza-96576289"
       }
     ]
   },
@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AFINITTY FIC FIDC - SENIORES 1ª SÉRIE"
+        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4527/Afinitty_FIC_FIDC_-_Seniores_1ª_série"
+        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB+"
+        "example": "brBBB+"
       },
       {
         "name": "de_rating_cp",
@@ -283,17 +283,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB+"
+        "example": "brBBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-05-15"
+        "example": "2024-07-10"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10864"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ADGM_FIDC/10935"
       }
     ]
   },

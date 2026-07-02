@@ -1313,7 +1313,7 @@
     "agencia": "S&P",
     "tipo_rating": "Escala Nacional Brasil de Longo Prazo",
     "rating": "brA+",
-    "outlook": "Watch Neg",
+    "outlook": "Negative",
     "dt_acao": "2026-03-26",
     "setor": "",
     "instrumento": "",
@@ -1354,18 +1354,6 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/aguas-da-imperatriz-sa-97766000"
-  },
-  {
-    "emissor": "AGUAS PARAIBA",
-    "cnpj": "01.280.003/0001-99",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-05-04",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/aguas-do-paraiba-sa-97598672"
   },
   {
     "emissor": "AGUAS RIO 1 SPE",
@@ -3386,18 +3374,6 @@
   {
     "emissor": "AUREN PARTICIPACOES",
     "cnpj": "37.663.076/0001-07",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-12-30",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/aes-brasil-energia-sa-97281499"
-  },
-  {
-    "emissor": "AUREN PARTICIPACOES",
-    "cnpj": "37.663.076/0001-07",
     "agencia": "Moody's",
     "tipo_rating": "Rating de Dívida",
     "rating": "AAA.br",
@@ -3885,7 +3861,7 @@
     "dt_acao": "2024-11-01",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4828/Azure_Consignado_FIDC_-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/4823/Azure_Consignado_FIDC_-_Seniores_Única"
   },
   {
     "emissor": "AZZAS 2154",
@@ -17667,25 +17643,25 @@
     "emissor": "COOPERATIVA CREDITO SUL",
     "cnpj": "32.474.884/0001-02",
     "agencia": "Fitch",
-    "tipo_rating": "National Short Term Rating",
-    "rating": "F1+(bra)",
-    "outlook": "",
-    "dt_acao": "2025-08-26",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697"
-  },
-  {
-    "emissor": "COOPERATIVA CREDITO SUL",
-    "cnpj": "32.474.884/0001-02",
-    "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2025-08-26",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697"
+    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669"
+  },
+  {
+    "emissor": "COOPERATIVA CREDITO SUL",
+    "cnpj": "32.474.884/0001-02",
+    "agencia": "Fitch",
+    "tipo_rating": "National Short Term Rating",
+    "rating": "F1+(bra)",
+    "outlook": "",
+    "dt_acao": "2025-08-26",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669"
   },
   {
     "emissor": "COOPERATIVA CREDITO SUL ESPIRITO SANTO",
@@ -21846,7 +21822,7 @@
     "tipo_rating": "Long Term Issuer Default Rating",
     "rating": "BB",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-07-02",
+    "dt_acao": "2026-07-01",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435"
@@ -21858,7 +21834,7 @@
     "tipo_rating": "Short Term Issuer Default Rating",
     "rating": "B",
     "outlook": "",
-    "dt_acao": "2025-07-02",
+    "dt_acao": "2026-07-01",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435"
@@ -21870,43 +21846,7 @@
     "tipo_rating": "Local Currency Short Term Issuer Default Rating",
     "rating": "B",
     "outlook": "",
-    "dt_acao": "2025-07-02",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435"
-  },
-  {
-    "emissor": "ESTADO MATO GROSSO SUL",
-    "cnpj": "15.412.257/0001-28",
-    "agencia": "Fitch",
-    "tipo_rating": "Local Currency Long Term Issuer Default Rating",
-    "rating": "BB",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-07-02",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435"
-  },
-  {
-    "emissor": "ESTADO MATO GROSSO SUL",
-    "cnpj": "15.412.257/0001-28",
-    "agencia": "Fitch",
-    "tipo_rating": "National Short Term Rating",
-    "rating": "F1+(bra)",
-    "outlook": "",
-    "dt_acao": "2025-07-02",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435"
-  },
-  {
-    "emissor": "ESTADO MATO GROSSO SUL",
-    "cnpj": "15.412.257/0001-28",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-07-02",
+    "dt_acao": "2026-07-01",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435"
@@ -21918,7 +21858,43 @@
     "tipo_rating": "Standalone Credit Profile",
     "rating": "b+",
     "outlook": "",
-    "dt_acao": "2025-07-02",
+    "dt_acao": "2026-07-01",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435"
+  },
+  {
+    "emissor": "ESTADO MATO GROSSO SUL",
+    "cnpj": "15.412.257/0001-28",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AAA(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-07-01",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435"
+  },
+  {
+    "emissor": "ESTADO MATO GROSSO SUL",
+    "cnpj": "15.412.257/0001-28",
+    "agencia": "Fitch",
+    "tipo_rating": "Local Currency Long Term Issuer Default Rating",
+    "rating": "BB",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-07-01",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435"
+  },
+  {
+    "emissor": "ESTADO MATO GROSSO SUL",
+    "cnpj": "15.412.257/0001-28",
+    "agencia": "Fitch",
+    "tipo_rating": "National Short Term Rating",
+    "rating": "F1+(bra)",
+    "outlook": "",
+    "dt_acao": "2026-07-01",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/estado-de-mato-grosso-do-sul-97706435"
@@ -22936,30 +22912,6 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBB",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
-    "rating": "brBB+",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brB+",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
@@ -22990,6 +22942,30 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB+",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC",
@@ -23169,7 +23145,7 @@
     "dt_acao": "2022-06-23",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4018/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4020/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC ANGA FACTA CONSIGNADOS INSS I",
@@ -23982,10 +23958,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brBB-",
     "outlook": "Estável",
-    "dt_acao": "2024-07-19",
+    "dt_acao": "2024-02-08",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4629/FIDC_FCT_Consignado_II_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4453/FIDC_FCT_Consignado_II_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "FIDC FENIX",
@@ -45669,7 +45645,7 @@
     "dt_acao": "2024-08-30",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4746/NAGRO_GHIA_FIAGRO_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4747/NAGRO_GHIA_FIAGRO_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "NAIA ZETTA VENTURE DEBT FIDC",
@@ -49506,10 +49482,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "Estável",
-    "dt_acao": "2018-08-22",
+    "dt_acao": "2018-08-17",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3010/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3012/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "PORTO SEGURO INVESTIMENTOS",
@@ -55024,9 +55000,9 @@
     "cnpj": "60.765.823/0001-30",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
+    "rating": "WD(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-07-11",
+    "dt_acao": "2026-07-01",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/sociedade-beneficente-israelita-brasileira-hospital-albert-einstein-96628807"
@@ -56382,10 +56358,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brB",
     "outlook": "Estável",
-    "dt_acao": "2025-06-16",
+    "dt_acao": "2024-10-25",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4233/Struttura_Agro_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4835/Struttura_Agro_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "STZ FORNECEDORES FIDC CORPORATIVOS",
@@ -60046,18 +60022,6 @@
     "setor": "Instituições Financeiras",
     "instrumento": "N/A",
     "link": ""
-  },
-  {
-    "emissor": "VENTOS SANTA TEREZA 07 ENERGIAS RENOVAVEIS",
-    "cnpj": "37.020.274/0001-52",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-12-30",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/ventos-de-santa-tereza-07-energias-renovaveis-sa-97591492"
   },
   {
     "emissor": "VENTURA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
