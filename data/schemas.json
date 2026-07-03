@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AFINITTY FIC FIDC - SENIORES 1ª SÉRIE"
+        "example": "AFINITTY FIC FIDC - SUBORDINADAS MEZANINO III"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4527/Afinitty_FIC_FIDC_-_Seniores_1ª_série"
+        "example": "https://www.austin.com.br/Historico-Rating/4526/Afinitty_FIC_FIDC_-_Subordinadas_Mezanino_III_"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB+"
+        "example": "brB-"
       },
       {
         "name": "de_rating_cp",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB+"
+        "example": "brB-"
       },
       {
         "name": "dt_acao_rating",
@@ -293,7 +293,7 @@
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10864"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10863"
       }
     ]
   },
