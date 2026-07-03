@@ -258,12 +258,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AFINITTY FIC FIDC - SUBORDINADAS MEZANINO III"
+        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4526/Afinitty_FIC_FIDC_-_Subordinadas_Mezanino_III_"
+        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
       },
       {
         "name": "no_tipo_rating",
@@ -273,7 +273,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB-"
+        "example": "brBBB+"
       },
       {
         "name": "de_rating_cp",
@@ -283,12 +283,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB-"
+        "example": "brBBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-05-15"
+        "example": "2024-07-10"
       },
       {
         "name": "de_acao_rating",
@@ -303,7 +303,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Afinitty_FIC_FIDC/10863"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ADGM_FIDC/10935"
       }
     ]
   },
@@ -315,7 +315,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ARGENTA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MERCANTIS DE RESPONSABILIDADE LIMITADA"
+        "example": "MOKA FUND I FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "no_setor",
@@ -325,7 +325,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29038"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29041"
       }
     ]
   },
@@ -337,12 +337,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ARGENTA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MERCANTIS DE RESPONSABILIDADE LIMITADA"
+        "example": "MOKA FUND I FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29038"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29041"
       },
       {
         "name": "no_tipo_rating",
@@ -352,27 +352,27 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BBB"
+        "example": "C"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-30"
+        "example": "2026-07-03"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Encerramento"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": "Negativa"
       },
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": "Subordinada"
       },
       {
         "name": "de_escala",
