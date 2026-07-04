@@ -1872,7 +1872,7 @@
         cardClass = 'austin-card';
       } else       if (lowerFile.includes('liberum')) {
         cardClass = 'liberum-card';
-      } else if (lowerFile === 'emissores_consolidado.csv') {
+      } else if (lowerFile.includes('consolidado') || lowerFile.startsWith('ratings_')) {
         cardClass = 'consolidated-card';
       }
 
@@ -1887,7 +1887,7 @@
         mappedSource = 'austin';
       } else if (lowerFile.startsWith('liberum_')) {
         mappedSource = 'liberum';
-      } else if (lowerFile === 'emissores_consolidado.csv') {
+      } else if (lowerFile.includes('consolidado') || lowerFile.startsWith('ratings_')) {
         mappedSource = 'consolidated';
       }
 

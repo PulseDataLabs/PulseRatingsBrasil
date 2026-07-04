@@ -337,6 +337,18 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
             print_warn(f"Consolidação de emissores falhou: {e}")
             logger.warning(f"Consolidação de emissores falhou: {e}")
 
+    # ── Separação de Ratings de Emissores e Emissões ──────────────────
+    if not group and not scraper:
+        try:
+            section("Separação de Ratings", "gear")
+            print_start("Separando ratings de emissores e emissões...")
+            from scripts.separar_emissores_emissoes import main as separate
+            separate()
+            print_done("Ratings separados e chaves vinculadas")
+        except Exception as e:
+            print_warn(f"Separação de ratings falhou: {e}")
+            logger.warning(f"Separação de ratings falhou: {e}")
+
     # ── Resumo final ─────────────────────────────────────────────────
     ok = [n for n, r in results.items() if r[0]]
     fail = [n for n, r in results.items() if not r[0]]

@@ -168,8 +168,8 @@
     .stat-item.fitch   .stat-value { color: var(--fitch); }
     .stat-item.moodys  .stat-value { color: var(--moodys); }
     .stat-item.sp      .stat-value { color: var(--sp); }
-    .stat-item.austin .stat-label { color: #E67E22; }
-    .stat-item.liberum .stat-label { color: #8E44AD; }
+    .stat-item.austin  .stat-value { color: var(--austin); }
+    .stat-item.liberum .stat-value { color: var(--liberum); }
 
     /* ── Main Tabs ────────────────────────────────────────── */
     .main-tabs {
@@ -876,6 +876,14 @@
               <span class="stat-value" id="stat-sp">—</span>
               <span class="stat-label">S&amp;P</span>
             </div>
+            <div class="stat-item austin">
+              <span class="stat-value" id="stat-austin">—</span>
+              <span class="stat-label">Austin</span>
+            </div>
+            <div class="stat-item liberum">
+              <span class="stat-value" id="stat-liberum">—</span>
+              <span class="stat-label">Liberum</span>
+            </div>
           </div>
         </div>
       </section>
@@ -1174,6 +1182,8 @@
       document.getElementById('stat-fitch').textContent     = countBy('agencia', 'Fitch').toLocaleString('pt-BR');
       document.getElementById('stat-moodys').textContent    = countBy('agencia', "Moody's").toLocaleString('pt-BR');
       document.getElementById('stat-sp').textContent        = countBy('agencia', 'S&P').toLocaleString('pt-BR');
+      document.getElementById('stat-austin').textContent    = countBy('agencia', 'Austin').toLocaleString('pt-BR');
+      document.getElementById('stat-liberum').textContent   = countBy('agencia', 'Liberum').toLocaleString('pt-BR');
     }
     renderTable();
 

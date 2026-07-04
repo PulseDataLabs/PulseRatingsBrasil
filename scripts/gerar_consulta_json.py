@@ -206,7 +206,7 @@ def main() -> None:
                         "outlook": r.get("de_outlook", ""),
                         "dt_acao": r.get("dt_acao_rating", ""),
                         "setor": "",
-                        "instrumento": "",
+                        "instrumento": r.get("de_instrumento", ""),
                         "link": r.get("link", ""),
                     }
                 resultados.append(row)

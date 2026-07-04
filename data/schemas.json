@@ -90,6 +90,16 @@
         "name": "de_outlook",
         "type": "str",
         "example": "Rating Outlook Positive"
+      },
+      {
+        "name": "de_instrumento",
+        "type": "str",
+        "example": ""
+      },
+      {
+        "name": "de_isin",
+        "type": "str",
+        "example": ""
       }
     ]
   },
@@ -378,6 +388,110 @@
         "name": "de_escala",
         "type": "str",
         "example": "Longo prazo"
+      }
+    ]
+  },
+  {
+    "title": "Ratings Emissores — Emissores",
+    "files": "ratings_emissores.csv",
+    "source": "other",
+    "fields": [
+      {
+        "name": "agencia",
+        "type": "str",
+        "example": "Austin"
+      },
+      {
+        "name": "no_emissor_padronizado",
+        "type": "str",
+        "example": "APUAMA CAPITAL GESTORA RECURSOS"
+      },
+      {
+        "name": "no_emissor_original",
+        "type": "str",
+        "example": "APUAMA CAPITAL GESTORA DE RECURSOS LTDA."
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "Gestão"
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "QG3"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": "Estável"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2024-03-21"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.austin.com.br/Historico-Rating/4425/Apuama_Capital_Gestora_de_Recursos_Ltda"
+      }
+    ]
+  },
+  {
+    "title": "Ratings Emissoes — Ratings",
+    "files": "ratings_emissoes.csv",
+    "source": "other",
+    "fields": [
+      {
+        "name": "agencia",
+        "type": "str",
+        "example": "Austin"
+      },
+      {
+        "name": "no_emissor_padronizado",
+        "type": "str",
+        "example": "ACCESS FIDC"
+      },
+      {
+        "name": "no_emissor_original",
+        "type": "str",
+        "example": "ACCESS FIDC - SENIORES ÚNICA"
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "FIDCs"
+      },
+      {
+        "name": "de_instrumento",
+        "type": "str",
+        "example": ""
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "brBBB+"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": "Estável"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2024-08-15"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
+      },
+      {
+        "name": "no_devedor_vinculado",
+        "type": "str",
+        "example": ""
       }
     ]
   }

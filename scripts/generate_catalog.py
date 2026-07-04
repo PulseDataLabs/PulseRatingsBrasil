@@ -205,6 +205,40 @@ def generate():
         processed_files.add(consolidated_entry["file"])
         logger.info("Adicionado dataset de emissores consolidados ao catálogo.")
 
+    ratings_emissores_entry = {
+        "title": "Ratings de Emissores Consolidados",
+        "file": "ratings_emissores.csv",
+        "description": "Ratings de crédito de nível de emissor (entidade) consolidados de todas as agências, mapeados pela chave única do emissor padronizado.",
+        "icon": "RE",
+        "iconClass": "icon-consolidated",
+        "badge": "Acumulado",
+        "badgeClass": "badge-cumulative",
+        "tags": ["ratings", "emissores", "consolidado"],
+        "source": "Consolidado",
+        "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/ratings_emissores.csv",
+    }
+    if ratings_emissores_entry["file"] not in processed_files:
+        new_catalog.append(ratings_emissores_entry)
+        processed_files.add(ratings_emissores_entry["file"])
+        logger.info("Adicionado dataset de ratings de emissores ao catálogo.")
+
+    ratings_emissoes_entry = {
+        "title": "Ratings de Emissões Consolidados",
+        "file": "ratings_emissoes.csv",
+        "description": "Ratings de crédito de nível de emissão (instrumentos como FIDCs, debêntures, CRIs e CRAs) consolidados de todas as agências, com chave única do emissor e devedor corporativo final vinculado.",
+        "icon": "RM",
+        "iconClass": "icon-consolidated",
+        "badge": "Acumulado",
+        "badgeClass": "badge-cumulative",
+        "tags": ["ratings", "emissões", "consolidado"],
+        "source": "Consolidado",
+        "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/ratings_emissoes.csv",
+    }
+    if ratings_emissoes_entry["file"] not in processed_files:
+        new_catalog.append(ratings_emissoes_entry)
+        processed_files.add(ratings_emissoes_entry["file"])
+        logger.info("Adicionado dataset de ratings de emissões ao catálogo.")
+
     # 5. Adiciona quaisquer itens do datasets.json antigo que não foram mapeados em run_all.py (ex: datasets secundários do mesmo scraper)
     for file, old_item in old_datasets.items():
         if file not in processed_files:

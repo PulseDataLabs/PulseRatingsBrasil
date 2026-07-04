@@ -1,12 +1,12 @@
 window.PULSERATINGS_PIPELINE_STATUS = {
-  "timestamp": "2026-07-03T23:29:47.132573",
-  "elapsed_seconds": 408.3728926181793,
-  "status": "success",
+  "timestamp": "2026-07-04T20:02:48.637130",
+  "elapsed_seconds": 58.67098903656006,
+  "status": "warning",
   "summary": {
     "total": 10,
     "success": 10,
     "failed": 0,
-    "drifts": 0
+    "drifts": 1
   },
   "scrapers": {
     "moodys_local_ratings": {
@@ -53,9 +53,9 @@ window.PULSERATINGS_PIPELINE_STATUS = {
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 20.06470036506653,
+      "elapsed_seconds": 58.669891595840454,
       "error": null,
-      "timestamp": "2026-07-03T23:29:47.132723"
+      "timestamp": "2026-07-04T20:02:48.637423"
     },
     "moodys_ratings": {
       "status": "success",
@@ -94,5 +94,14 @@ window.PULSERATINGS_PIPELINE_STATUS = {
       "timestamp": "2026-07-03T23:29:47.132720"
     }
   },
-  "drifts": {}
+  "drifts": {
+    "fitch_ratings.csv": {
+      "added": [
+        "de_instrumento",
+        "de_isin"
+      ],
+      "removed": [],
+      "timestamp": "2026-07-04T20:02:45.561243"
+    }
+  }
 };

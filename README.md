@@ -50,7 +50,10 @@ graph TD
     E --> F
     F --> G["scripts/consolidar_emissores.py"]
     G --> H["data/emissores_consolidado.csv"]
-    F & H --> I["data/datasets.json (generate_catalog.py)"]
+    F & H --> S["scripts/separar_emissores_emissoes.py"]
+    S --> RE["data/ratings_emissores.csv"]
+    S --> RM["data/ratings_emissoes.csv"]
+    RE & RM & H --> I["data/datasets.json (generate_catalog.py)"]
     I --> J[git push origin main]
     J --> K[GitHub Pages / index.html]
 ```
@@ -70,6 +73,8 @@ PulseRatingsBrasil/
 │   ├── pipeline_status.json / .js   # Logs de saúde e duração da última execução
 │   ├── last_updates.json / .js      # Período de cobertura temporal de cada CSV
 │   ├── emissores_consolidado.csv    # Emissores consolidados (1 linha por emissor + CNPJ)
+│   ├── ratings_emissores.csv        # Ratings corporativos de nível de emissor/entidade consolidados
+│   ├── ratings_emissoes.csv         # Ratings de instrumentos (debentures, FIDCs, CRIs/CRAs) consolidados
 │   └── *.csv                        # Séries temporais de ratings de crédito
 ├── tests/                           # Testes automatizados
 │   ├── __init__.py
@@ -85,7 +90,9 @@ PulseRatingsBrasil/
 │   └── parsers.py                   # Parsers auxiliares para formatos especiais
 ├── scripts/                         # Scripts de ciclo de vida
 │   ├── consolidar_emissores.py      # Consolida emissores das agências em 1 CSV
+│   ├── separar_emissores_emissoes.py # Separa e normaliza ratings de emissores e emissões
 │   ├── generate_catalog.py          # Gerador automatizado do catálogo de datasets
+│   ├── gerar_consulta_json.py       # Gera JSON otimizado para o dashboard de consulta
 │   ├── preencher_cnpj_cvm.py        # Preenche CNPJ via dados offline da CVM
 │   ├── preencher_cnpj_api.py        # Preenche CNPJ via CNPJ Aberto API (1.000 req/dia)
 │   ├── preencher_cnpj_rfb.py        # Preenche CNPJ via base local da Receita Federal

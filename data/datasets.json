@@ -48,6 +48,38 @@
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/emissores_consolidado.csv"
   },
   {
+    "title": "Ratings de Emissores Consolidados",
+    "file": "ratings_emissores.csv",
+    "description": "Ratings de crédito de nível de emissor (entidade) consolidados de todas as agências, mapeados pela chave única do emissor padronizado.",
+    "icon": "RE",
+    "iconClass": "icon-consolidated",
+    "badge": "Acumulado",
+    "badgeClass": "badge-cumulative",
+    "tags": [
+      "ratings",
+      "emissores",
+      "consolidado"
+    ],
+    "source": "Consolidado",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/ratings_emissores.csv"
+  },
+  {
+    "title": "Ratings de Emissões Consolidados",
+    "file": "ratings_emissoes.csv",
+    "description": "Ratings de crédito de nível de emissão (instrumentos como FIDCs, debêntures, CRIs e CRAs) consolidados de todas as agências, com chave única do emissor e devedor corporativo final vinculado.",
+    "icon": "RM",
+    "iconClass": "icon-consolidated",
+    "badge": "Acumulado",
+    "badgeClass": "badge-cumulative",
+    "tags": [
+      "ratings",
+      "emissões",
+      "consolidado"
+    ],
+    "source": "Consolidado",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/ratings_emissoes.csv"
+  },
+  {
     "title": "Fitch — Ratings",
     "file": "fitch_emissores.csv",
     "description": "Emissores brasileiros com rating de crédito ativo atribuído pela Fitch Ratings.",
