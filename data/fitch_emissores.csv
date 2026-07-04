@@ -600,9 +600,10 @@ dt_captura,no_emissor,link
 2026-07-03,General Shopping Investment Limited,https://www.fitchratings.com/entity/general-shopping-investment-limited-90748293
 2026-07-03,General Shopping Finance Limited (GSF),https://www.fitchratings.com/entity/general-shopping-finance-limited-gsf-89880061
 2026-07-03,Winity S.A.,https://www.fitchratings.com/entity/winity-sa-97772836
-2026-07-03,Gdpar Sn Participacoes Em Projetos Solares S.A.,https://www.fitchratings.com/entity/gdpar-sn-participacoes-em-projetos-solares-sa-97632989
+2026-07-03,Usiminas International S.a r.l.,https://www.fitchratings.com/entity/usiminas-international-sa-rl-96787973
 2026-07-03,GUSAP III LP,https://www.fitchratings.com/entity/gusap-iii-lp-96836871
 2026-07-03,Natura &Co Luxembourg Holdings S.a r.l.,https://www.fitchratings.com/entity/natura-co-luxembourg-holdings-sa-rl-97375551
+2026-07-03,Gdpar Sn Participacoes Em Projetos Solares S.A.,https://www.fitchratings.com/entity/gdpar-sn-participacoes-em-projetos-solares-sa-97632989
 2026-07-03,Athon Geracao Distribuida VI S.A.,https://www.fitchratings.com/entity/athon-geracao-distribuida-vi-sa-97739854
 2026-07-03,MEZ 4 Energia S.A.,https://www.fitchratings.com/entity/mez-4-energia-sa-97510975
 2026-07-03,Borborema Transmissao de Energia S.A.,https://www.fitchratings.com/entity/borborema-transmissao-de-energia-sa-97273640
@@ -681,7 +682,6 @@ dt_captura,no_emissor,link
 2026-07-03,Ventos do Sul Energia S.A.,https://www.fitchratings.com/entity/ventos-do-sul-energia-sa-96780015
 2026-07-03,Concessionaria do Aeroporto Internacional de Guarulhos SA,https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291
 2026-07-03,SE Vineyards Transmissao de Energia S.A.,https://www.fitchratings.com/entity/se-vineyards-transmissao-de-energia-sa-96798394
-2026-07-03,Usiminas International S.a r.l.,https://www.fitchratings.com/entity/usiminas-international-sa-rl-96787973
 2026-07-03,Central Fotovoltaica Sao Pedro II S.A.,https://www.fitchratings.com/entity/central-fotovoltaica-sao-pedro-ii-ltda-96836823
 2026-07-03,Pirapora II Solar Holding S.A.,https://www.fitchratings.com/entity/pirapora-ii-solar-holding-sa-96808655
 2026-07-03,TSM -Transmissora Serra da Mantiqueira S.A.,https://www.fitchratings.com/entity/tsm-transmissora-serra-da-mantiqueira-sa-96829712
@@ -697,21 +697,73 @@ dt_captura,no_emissor,link
 2026-07-03,Geometrica Par Investimentos S.A.,https://www.fitchratings.com/entity/prumo-participacoes-e-investimentos-s-a-96158821
 2026-07-03,Apollo 17 Participacoes S.A,https://www.fitchratings.com/entity/apollo-17-participacoes-sa-97115286
 2026-07-03,Empresa de Energia Cachoeira Caldeirao S.A.,https://www.fitchratings.com/entity/empresa-de-energia-cachoeira-caldeirao-sa-95535290
-2026-07-03,Rialma Transmissora de Energia V S.A,https://www.fitchratings.com/entity/rialma-transmissora-de-energia-v-sa-97616184
-2026-07-03,Usina Termeletrica Pampa Sul S.A.,https://www.fitchratings.com/entity/usina-termeletrica-pampa-sul-sa-97037338
-2026-07-03,Salto do Guassupi Energetica S.A.,https://www.fitchratings.com/entity/salto-do-guassupi-energetica-sa-97007185
-2026-07-03,IP Sul Concessionaria De Iluminacao Publica S.A.,https://www.fitchratings.com/entity/ip-sul-concessionaria-de-iluminacao-publica-sa-97101669
-2026-07-03,Albioma Solar Participacoes S.A.,https://www.fitchratings.com/entity/albioma-solar-participacoes-sa-97840464
+2026-07-03,VDB F2 Geracao de Energia S.A.,https://www.fitchratings.com/entity/vdb-f2-geracao-de-energia-sa-96763362
+2026-07-03,Concessionaria Ponte Rio-Niteroi S.A. - ECOPONTE,https://www.fitchratings.com/entity/concessionaria-ponte-rio-niteroi-sa-ecoponte-96735368
+2026-07-03,Tibagi Energia SPE S.A.,https://www.fitchratings.com/entity/tibagi-energia-spe-sa-96795630
+2026-07-03,Serra do Mel Holding S.A.,https://www.fitchratings.com/entity/serra-do-mel-holding-sa-97125082
+2026-07-03,Voltalia Sao Miguel do Gostoso Participacoes S.A.,https://www.fitchratings.com/entity/voltalia-sao-miguel-do-gostoso-participacoes-sa-96150572
+2026-07-03,Ventos de Sao Clemente Holding S.A.,https://www.fitchratings.com/entity/ventos-de-sao-clemente-holding-sa-96215360
+2026-07-03,Eolica Serra das Vacas Holding S.A.,https://www.fitchratings.com/entity/eolica-serra-das-vacas-holding-sa-96337693
+2026-07-03,Delta 2 Energia S.A.,https://www.fitchratings.com/entity/delta-2-energia-sa-96276236
+2026-07-03,Windepar Holding S.A.,https://www.fitchratings.com/entity/windepar-holding-sa-96416378
+2026-07-03,Matrincha Transmissora de Energia (TP Norte) S.A.,https://www.fitchratings.com/entity/matrincha-transmissora-de-energia-tp-norte-sa-96276320
+2026-07-03,Enel Green Power Manicoba Eolica S.A.,https://www.fitchratings.com/entity/enel-green-power-manicoba-eolica-sa-96386802
+2026-07-03,Itarema Geracao de Energia S.A.,https://www.fitchratings.com/entity/itarema-geracao-de-energia-sa-96274678
+2026-07-03,ECO050 - Concessionaria de Rodovias S.A.,https://www.fitchratings.com/entity/eco050-concessionaria-de-rodovias-sa-96896274
+2026-07-03,Via Brasil MT 320 Concessionaria De Rodovias S.A.,https://www.fitchratings.com/entity/via-brasil-mt-320-concessionaria-de-rodovias-sa-97134673
+2026-07-03,Rincao dos Albinos Energetica S.A.,https://www.fitchratings.com/entity/rincao-dos-albinos-energetica-sa-97007196
+2026-07-03,RDVE Subholding S.A.,https://www.fitchratings.com/entity/rdve-subholding-sa-97349065
+2026-07-03,Serra de Ibiapaba Transmissora de Energia S.A.,https://www.fitchratings.com/entity/serra-de-ibiapaba-transmissora-de-energia-sa-97071673
+2026-07-03,Eolica Serra das Vacas Holding II S.A.,https://www.fitchratings.com/entity/eolica-serra-das-vacas-holding-ii-sa-96558619
+2026-07-03,Argo VI Transmissao de Energia S.A.,https://www.fitchratings.com/entity/esperanza-transmissora-de-energia-sa-96549959
+2026-07-03,Vila Piaui 2 Empreendimentos e Participacoes S.A.,https://www.fitchratings.com/entity/vila-piaui-2-empreendimentos-e-participacoes-sa-97005324
+2026-07-03,Enel Green Power Damascena Eolica S.A.,https://www.fitchratings.com/entity/enel-green-power-damascena-eolica-sa-96386789
+2026-07-03,Concessionaria Rodovia dos Tamoios S.A.,https://www.fitchratings.com/entity/concessionaria-rodovia-dos-tamoios-sa-97339005
+2026-07-03,Confluencia Energia S/A,https://www.fitchratings.com/entity/confluencia-energia-s-a-97273742
+2026-07-03,Argo V Transmissao de Energia S.A.,https://www.fitchratings.com/entity/odoya-transmissora-de-energia-sa-96546310
+2026-07-03,Belo Monte Transmissora de Energia SPE S.A.,https://www.fitchratings.com/entity/belo-monte-transmissora-de-energia-spe-sa-96563152
+2026-07-03,Delta 3 Energia S.A.,https://www.fitchratings.com/entity/omega-energia-e-implantacao-2-sa-96552474
+2026-07-03,Duratex Florestal Ltda.,https://www.fitchratings.com/entity/duratex-florestal-ltda-97810950
+2026-07-03,Cantareira Transmissora de Energia S.A.,https://www.fitchratings.com/entity/cantareira-transmissora-de-energia-sa-96581278
+2026-07-03,Ventos de Sao Lucio I Energias Renovaveis S.A.,https://www.fitchratings.com/entity/ventos-de-sao-lucio-i-energias-renovaveis-sa-97285099
+2026-07-03,Copacabana Geracao de Energia e Participacoes S.A.,https://www.fitchratings.com/entity/copacabana-geracao-de-energia-e-participacoes-sa-96609843
+2026-07-03,TESC -Terminal Santa Catarina S.A.,https://www.fitchratings.com/entity/tesc-terminal-santa-catarina-sa-97201281
+2026-07-03,ETAP - Empresa Transmissora Agreste Potiguar S.A.,https://www.fitchratings.com/entity/etap-empresa-transmissora-agreste-potiguar-sa-96677173
+2026-07-03,Cutia Empreendimentos Eolicos SA,https://www.fitchratings.com/entity/cutia-empreendimentos-eolicos-sa-96751593
+2026-07-03,ETC - Empresa Transmissora Capixaba S.A,https://www.fitchratings.com/entity/etc-empresa-transmissora-capixaba-sa-96676911
+2026-07-03,Verde 08 Energia S.A.,https://www.fitchratings.com/entity/verde-08-energia-sa-96648754
+2026-07-03,Sertao I Solar Energia Spe S.A.,https://www.fitchratings.com/entity/sertao-i-solar-energia-spe-sa-96682692
+2026-07-03,EDTE -Empresa Diamantina de Transmissao de Energia S.A.,https://www.fitchratings.com/entity/edte-empresa-diamantina-de-transmissao-de-energia-sa-96723959
+2026-07-03,Monte Rodovias Nordeste I Holding Participacoes S.A.,https://www.fitchratings.com/entity/monte-rodovias-nordeste-i-holding-participacoes-sa-97611135
+2026-07-03,ASA Branca Holding S.A.,https://www.fitchratings.com/entity/asa-branca-holding-sa-97244274
+2026-07-03,PGE - GUARAU GERADORA DE ENERGIA S.A.,https://www.fitchratings.com/entity/pge-guarau-geradora-de-energia-sa-97540663
+2026-07-03,Porto Primavera Transmissora de Energia S.A.,https://www.fitchratings.com/entity/porto-primavera-transmissora-de-energia-sa-96704406
+2026-07-03,Serra do Serido F2 Holding S.A.,https://www.fitchratings.com/entity/serra-do-serido-f2-holding-sa-97582653
+2026-07-03,AZUL Investments LLP,https://www.fitchratings.com/entity/azul-investments-llp-96664012
+2026-07-03,ETB - Empresa de Transmissao Baiana SA,https://www.fitchratings.com/entity/etb-empresa-de-transmissao-baiana-sa-96726939
+2026-07-03,Norte Energia S/A,https://www.fitchratings.com/entity/norte-energia-s-a-96811901
+2026-07-03,3R Lux S.a.r.l.,https://www.fitchratings.com/entity/3r-lux-sarl-97387748
+2026-07-03,Central Fotovoltaica Sao Pedro IV S.A.,https://www.fitchratings.com/entity/central-fotovoltaica-sao-pedro-iv-ltda-96836831
+2026-07-03,Gy Energy Holding III S.A.,https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467
+2026-07-03,Empresa Sudeste de Transmissao de Energia S.A.,https://www.fitchratings.com/entity/empresa-sudeste-de-transmissao-de-energia-sa-96858544
+2026-07-03,Arcoverde Transmissao de Energia S.A.,https://www.fitchratings.com/entity/arcoverde-transmissao-de-energia-sa-96798294
 2026-07-03,Concessionaria Rota dos Coqueiros S.A.,https://www.fitchratings.com/entity/concessionaria-rota-dos-coqueiros-sa-97385331
 2026-07-03,Transmissora SP-MG S.A.,https://www.fitchratings.com/entity/edp-transmissao-sp-mg-sa-96784533
+2026-07-03,Totalenergies Dracena Participacoes S.A.,https://www.fitchratings.com/entity/eren-dracena-participacoes-sa-96799550
+2026-07-03,Corredor Logistica e Infraestrutura S.A.,https://www.fitchratings.com/entity/corredor-logistica-e-infraestrutura-sa-97484610
 2026-07-03,TGR Subholding 7 S.A.,https://www.fitchratings.com/entity/tgr-subholding-7-sa-97783132
 2026-07-03,Ambipar Lux S.a.r.l.,https://www.fitchratings.com/entity/ambipar-lux-sarl-97575992
 2026-07-03,UTE Gna II Geracao de Energia S.A.,https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044
 2026-07-03,Vila Piaui 1 Empreendimentos e Participacoes S.A.,https://www.fitchratings.com/entity/vila-piaui-1-empreendimentos-e-participacoes-sa-97005316
-2026-07-03,Totalenergies Dracena Participacoes S.A.,https://www.fitchratings.com/entity/eren-dracena-participacoes-sa-96799550
-2026-07-03,Empresa Sudeste de Transmissao de Energia S.A.,https://www.fitchratings.com/entity/empresa-sudeste-de-transmissao-de-energia-sa-96858544
-2026-07-03,Arcoverde Transmissao de Energia S.A.,https://www.fitchratings.com/entity/arcoverde-transmissao-de-energia-sa-96798294
-2026-07-03,Gy Energy Holding III S.A.,https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467
+2026-07-03,Atlas Luiz Carlos Comercializadora de Energia S.A,https://www.fitchratings.com/entity/atlas-luiz-carlos-comercializadora-de-energia-sa-97621684
+2026-07-03,Parintins Amazonas Transmissora de Energia S.A.,https://www.fitchratings.com/entity/parintins-amazonas-transmissora-de-energia-sa-97071688
+2026-07-03,Suno Energias Limpas Projetos Maduros S.A,https://www.fitchratings.com/entity/suno-energias-limpas-projetos-maduros-sa-97853010
 2026-07-03,CRI Opea Securitizadora 2023-202 (Faro Energy),https://www.fitchratings.com/entity/cri-opea-securitizadora-2023-202-faro-energy-97481949
 2026-07-03,Quevedos Energetica S.A.,https://www.fitchratings.com/entity/quevedos-energetica-sa-97007608
+2026-07-03,Usina Termeletrica Pampa Sul S.A.,https://www.fitchratings.com/entity/usina-termeletrica-pampa-sul-sa-97037338
+2026-07-03,Salto do Guassupi Energetica S.A.,https://www.fitchratings.com/entity/salto-do-guassupi-energetica-sa-97007185
 2026-07-03,Assurua 4 e 5 Holding Energia S.A.,https://www.fitchratings.com/entity/assurua-5-energia-sa-97573719
+2026-07-03,IP Sul Concessionaria De Iluminacao Publica S.A.,https://www.fitchratings.com/entity/ip-sul-concessionaria-de-iluminacao-publica-sa-97101669
+2026-07-03,Albioma Solar Participacoes S.A.,https://www.fitchratings.com/entity/albioma-solar-participacoes-sa-97840464
+2026-07-03,Concessionaria da Rodovia MS 306 S.A.,https://www.fitchratings.com/entity/concessionaria-da-rodovia-ms-306-sa-97115282
+2026-07-03,Rialma Transmissora de Energia V S.A,https://www.fitchratings.com/entity/rialma-transmissora-de-energia-v-sa-97616184
