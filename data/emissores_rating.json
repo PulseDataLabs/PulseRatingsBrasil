@@ -14942,54 +14942,6 @@
   {
     "emissor": "CESP",
     "cnpj": "60.933.603/0001-78",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-12-30",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cesp-companhia-energetica-de-sao-paulo-97003909"
-  },
-  {
-    "emissor": "CESP",
-    "cnpj": "60.933.603/0001-78",
-    "agencia": "Fitch",
-    "tipo_rating": "Long Term Issuer Default Rating",
-    "rating": "WD",
-    "outlook": "",
-    "dt_acao": "2023-10-24",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cesp-companhia-energetica-de-sao-paulo-97003909"
-  },
-  {
-    "emissor": "CESP",
-    "cnpj": "60.933.603/0001-78",
-    "agencia": "Fitch",
-    "tipo_rating": "Local Currency Long Term Issuer Default Rating",
-    "rating": "WD",
-    "outlook": "",
-    "dt_acao": "2023-10-24",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/cesp-companhia-energetica-de-sao-paulo-97003909"
-  },
-  {
-    "emissor": "CESP",
-    "cnpj": "60.933.603/0001-78",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "",
-    "dt_acao": "2025-12-30",
-    "setor": "",
-    "instrumento": "CESP_14th Deb Issue_BRL 2.1 bln Floating CDI (Brazil) 0.62% bond/note 14-Aug-2032",
-    "link": "https://www.fitchratings.com/entity/cesp-companhia-energetica-de-sao-paulo-97003909#issues"
-  },
-  {
-    "emissor": "CESP",
-    "cnpj": "60.933.603/0001-78",
     "agencia": "S&P",
     "tipo_rating": "Escala Nacional Brasil de Longo Prazo",
     "rating": "brAAA",
@@ -25584,30 +25536,6 @@
     "link": "https://www.fitchratings.com/entity/ferreira-gomes-energia-sa-91842691#issues"
   },
   {
-    "emissor": "FERROVIA NORTE SUL",
-    "cnpj": "",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-03-16",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/ferrovia-norte-sul-sa-97592975"
-  },
-  {
-    "emissor": "FERROVIA NORTE SUL",
-    "cnpj": "",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "",
-    "dt_acao": "2026-03-16",
-    "setor": "",
-    "instrumento": "2ª Debentures (Série Única)",
-    "link": "https://www.fitchratings.com/entity/ferrovia-norte-sul-sa-97592975#issues"
-  },
-  {
     "emissor": "FG NOW FIDC",
     "cnpj": "",
     "agencia": "Austin",
@@ -25984,36 +25912,12 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBB",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brB+",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
-    "rating": "brBB-",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
@@ -26038,6 +25942,30 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB-",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC",
@@ -26217,7 +26145,7 @@
     "dt_acao": "2022-06-23",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4020/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4018/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC ANGA FACTA CONSIGNADOS INSS I",
@@ -27196,24 +27124,24 @@
     "cnpj": "",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brB-",
-    "outlook": "Estável",
-    "dt_acao": "2024-08-12",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FIDC IC SOMAPAY",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBB+",
     "outlook": "Estável",
     "dt_acao": "2024-08-12",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FIDC IC SOMAPAY",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB-",
+    "outlook": "Estável",
+    "dt_acao": "2024-08-12",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC INCLUSAO FINANCEIRA",
@@ -28372,24 +28300,24 @@
     "cnpj": "",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brC",
-    "outlook": "Negativa",
-    "dt_acao": "2026-07-03",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5246/FIDC_Sinai_Consig_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FIDC SINAI CONSIG",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brB",
     "outlook": "Estável",
     "dt_acao": "2025-12-29",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5193/FIDC_Sinai_Consig_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FIDC SINAI CONSIG",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brC",
+    "outlook": "Negativa",
+    "dt_acao": "2026-07-03",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5246/FIDC_Sinai_Consig_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC SP RECEBIVEIS PREMIUM I",
@@ -36192,8 +36120,8 @@
     "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues"
   },
   {
-    "emissor": "GENERAL SHOPPING FINANCE",
-    "cnpj": "12.969.922/0001-90",
+    "emissor": "GENERAL SHOPPING INVESTMENT",
+    "cnpj": "",
     "agencia": "Fitch",
     "tipo_rating": "Long Term Issuer Default Rating",
     "rating": "WD",
@@ -36201,19 +36129,19 @@
     "dt_acao": "2014-10-21",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/general-shopping-finance-limited-gsf-89880061"
+    "link": "https://www.fitchratings.com/entity/general-shopping-investment-limited-90748293"
   },
   {
-    "emissor": "GENERAL SHOPPING FINANCE",
-    "cnpj": "12.969.922/0001-90",
+    "emissor": "GENERAL SHOPPING INVESTMENT",
+    "cnpj": "",
     "agencia": "Fitch",
     "tipo_rating": "Long Term Rating",
     "rating": "C",
     "outlook": "",
     "dt_acao": "2026-06-08",
     "setor": "",
-    "instrumento": "USD 200 mln 10% perpetual bond/note",
-    "link": "https://www.fitchratings.com/entity/general-shopping-finance-limited-gsf-89880061#issues"
+    "instrumento": "USD 34.42 mln 10% bond/note 10-Aug-2026",
+    "link": "https://www.fitchratings.com/entity/general-shopping-investment-limited-90748293#issues"
   },
   {
     "emissor": "GENERAL SHOPPING OUTLETS",
@@ -54714,10 +54642,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "Estável",
-    "dt_acao": "2018-08-17",
+    "dt_acao": "2018-08-22",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3012/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3010/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "PORTO PRIMAVERA TRANSMISSORA ENERGIA",
@@ -62286,10 +62214,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brB",
     "outlook": "Estável",
-    "dt_acao": "2024-10-25",
+    "dt_acao": "2025-06-16",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4835/Struttura_Agro_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4233/Struttura_Agro_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "STZ FORNECEDORES FIDC CORPORATIVOS",
@@ -68326,18 +68254,6 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/3631/VLA_FIDC_-_Seniores_1ª_série"
-  },
-  {
-    "emissor": "VLI",
-    "cnpj": "",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-03-16",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/vli-sa-94391490"
   },
   {
     "emissor": "VLI MULTIMODAL",
