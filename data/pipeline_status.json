@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-07-08T23:31:54.207024",
-  "elapsed_seconds": 421.29756784439087,
-  "status": "error",
+  "timestamp": "2026-07-09T09:05:22.279030",
+  "elapsed_seconds": 485.96843338012695,
+  "status": "success",
   "summary": {
     "total": 10,
-    "success": 9,
-    "failed": 1,
+    "success": 10,
+    "failed": 0,
     "drifts": 0
   },
   "scrapers": {
@@ -35,63 +35,63 @@
     },
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 15.735875129699707,
+      "elapsed_seconds": 19.338010787963867,
       "error": null,
-      "timestamp": "2026-07-08T23:31:54.207197"
+      "timestamp": "2026-07-09T09:05:22.279217"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 26.029109001159668,
+      "elapsed_seconds": 39.4235520362854,
       "error": null,
-      "timestamp": "2026-07-08T23:31:54.207199"
+      "timestamp": "2026-07-09T09:05:22.279219"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 0.4962735176086426,
+      "elapsed_seconds": 0.9953727722167969,
       "error": null,
-      "timestamp": "2026-07-08T23:31:54.207188"
+      "timestamp": "2026-07-09T09:05:22.279209"
     },
     "fitch_ratings": {
-      "status": "error",
-      "elapsed_seconds": 15.491603374481201,
-      "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_ratings.py\", line 318, in fetch\n    todos = _obter_ratings_via_api()\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_ratings.py\", line 132, in _obter_ratings_via_api\n    resp.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/curl_cffi/requests/models.py\", line 193, in raise_for_status\n    raise HTTPError(f\"HTTP Error {self.status_code}: {self.reason}\", 0, self)\ncurl_cffi.requests.exceptions.HTTPError: HTTP Error 502: \n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/run_all.py\", line 79, in run_scraper\n    scraper.run()\n    ~~~~~~~~~~~^^\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 108, in run\n    raise e\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 39, in run\n    df = self.fetch()\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_ratings.py\", line 321, in fetch\n    print_fail(f\"Erro ao obter ratings: {e}\")\n    ^^^^^^^^^^\nNameError: name 'print_fail' is not defined. Did you mean: 'print_warn'?\n",
-      "timestamp": "2026-07-08T23:31:54.207205"
+      "status": "success",
+      "elapsed_seconds": 51.791136026382446,
+      "error": null,
+      "timestamp": "2026-07-09T09:05:22.279226"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 105.81433129310608,
+      "elapsed_seconds": 0.06714367866516113,
       "error": null,
-      "timestamp": "2026-07-08T23:31:54.207208"
+      "timestamp": "2026-07-09T09:05:22.279223"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 377.1556587219238,
+      "elapsed_seconds": 377.6260805130005,
       "error": null,
-      "timestamp": "2026-07-08T23:31:54.207209"
+      "timestamp": "2026-07-09T09:05:22.279228"
     },
     "austin_emissores": {
       "status": "success",
-      "elapsed_seconds": 5.197319984436035,
+      "elapsed_seconds": 17.448081016540527,
       "error": null,
-      "timestamp": "2026-07-08T23:31:54.207194"
+      "timestamp": "2026-07-09T09:05:22.279214"
     },
     "austin_ratings": {
       "status": "success",
-      "elapsed_seconds": 32.655468463897705,
+      "elapsed_seconds": 45.0368013381958,
       "error": null,
-      "timestamp": "2026-07-08T23:31:54.207206"
+      "timestamp": "2026-07-09T09:05:22.279225"
     },
     "liberum_emissores": {
       "status": "success",
-      "elapsed_seconds": 37.85022592544556,
+      "elapsed_seconds": 106.77773928642273,
       "error": null,
-      "timestamp": "2026-07-08T23:31:54.207201"
+      "timestamp": "2026-07-09T09:05:22.279221"
     },
     "liberum_ratings": {
       "status": "success",
-      "elapsed_seconds": 38.440855503082275,
+      "elapsed_seconds": 89.89532613754272,
       "error": null,
-      "timestamp": "2026-07-08T23:31:54.207203"
+      "timestamp": "2026-07-09T09:05:22.279222"
     }
   },
   "drifts": {}
