@@ -4377,7 +4377,7 @@
     "dt_acao": "2024-11-01",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4823/Azure_Consignado_FIDC_-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/4828/Azure_Consignado_FIDC_-_Seniores_Única"
   },
   {
     "emissor": "AZZAS 2154",
@@ -14868,6 +14868,30 @@
     "link": ""
   },
   {
+    "emissor": "CHEMICAL XII",
+    "cnpj": "46.711.630/0001-75",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "AA.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-07-08",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "Cotas Seniores",
+    "link": ""
+  },
+  {
+    "emissor": "CHEMICAL XII",
+    "cnpj": "46.711.630/0001-75",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "BB+.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-07-08",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "Cotas Subordinadas Mezanino",
+    "link": ""
+  },
+  {
     "emissor": "CHEMICAL XIV FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
     "cnpj": "59.534.745/0001-83",
     "agencia": "Moody's",
@@ -14887,6 +14911,30 @@
     "rating": "BB+.br (sf)",
     "outlook": "RUR para Rebaixamento",
     "dt_acao": "2025-10-06",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "Cotas Subordinadas Mezanino",
+    "link": ""
+  },
+  {
+    "emissor": "CHEMICAL XIV FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "59.534.745/0001-83",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "AA.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-07-08",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "Cotas Seniores",
+    "link": ""
+  },
+  {
+    "emissor": "CHEMICAL XIV FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "59.534.745/0001-83",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "BB+.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-07-08",
     "setor": "Finanças Estruturadas",
     "instrumento": "Cotas Subordinadas Mezanino",
     "link": ""
@@ -25516,6 +25564,18 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
+    "rating": "brBB",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
     "rating": "brBB-",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
@@ -25546,18 +25606,6 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
-    "rating": "brBB",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
@@ -25749,7 +25797,7 @@
     "dt_acao": "2022-06-23",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4018/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4020/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC ANGA FACTA CONSIGNADOS INSS I",
@@ -26622,10 +26670,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brBB-",
     "outlook": "Estável",
-    "dt_acao": "2024-07-19",
+    "dt_acao": "2024-02-08",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4629/FIDC_FCT_Consignado_II_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4453/FIDC_FCT_Consignado_II_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "FIDC FENIX",
@@ -26728,24 +26776,24 @@
     "cnpj": "",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brB-",
-    "outlook": "Estável",
-    "dt_acao": "2024-08-12",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FIDC IC SOMAPAY",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBB+",
     "outlook": "Estável",
     "dt_acao": "2024-08-12",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FIDC IC SOMAPAY",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB-",
+    "outlook": "Estável",
+    "dt_acao": "2024-08-12",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC INCLUSAO FINANCEIRA",
@@ -35724,6 +35772,30 @@
     "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues"
   },
   {
+    "emissor": "GENERAL SHOPPING FINANCE",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "Long Term Issuer Default Rating",
+    "rating": "WD",
+    "outlook": "",
+    "dt_acao": "2014-10-21",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/general-shopping-finance-limited-gsf-89880061"
+  },
+  {
+    "emissor": "GENERAL SHOPPING FINANCE",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "Long Term Rating",
+    "rating": "C",
+    "outlook": "",
+    "dt_acao": "2026-06-08",
+    "setor": "",
+    "instrumento": "USD 200 mln 10% perpetual bond/note",
+    "link": "https://www.fitchratings.com/entity/general-shopping-finance-limited-gsf-89880061#issues"
+  },
+  {
     "emissor": "GENERAL SHOPPING INVESTMENT",
     "cnpj": "",
     "agencia": "Fitch",
@@ -35791,6 +35863,18 @@
     "rating": "CC.br",
     "outlook": "Perspectiva estável",
     "dt_acao": "2025-11-26",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "GENERAL SHOPPING OUTLETS",
+    "cnpj": "08.764.621/0001-53",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating Corporativo",
+    "rating": "C.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-07-08",
     "setor": "Empresas Não-Financeiras",
     "instrumento": "N/A",
     "link": ""
@@ -36814,6 +36898,30 @@
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/28234"
+  },
+  {
+    "emissor": "GRANDE SERTAO I TRANSMISSORA ENERGIA",
+    "cnpj": "",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-07-07",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "2ª Emissão de Debêntures - 1ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "GRANDE SERTAO I TRANSMISSORA ENERGIA",
+    "cnpj": "",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-07-07",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "2ª Emissão de Debêntures - 2ª Série",
+    "link": ""
   },
   {
     "emissor": "GRANDE SERTAO III TRANSMISSORA ENERGIA",
@@ -39274,6 +39382,18 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/iguatemi-empresa-de-shopping-centers-sa-91834892"
+  },
+  {
+    "emissor": "IGUATEMI EMPRESA SHOPPING CENTERS",
+    "cnpj": "51.218.147/0001-93",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "WD(bra)",
+    "outlook": "",
+    "dt_acao": "2026-07-09",
+    "setor": "",
+    "instrumento": "BRL 500 mln 11th debentures due 2028",
+    "link": "https://www.fitchratings.com/entity/iguatemi-empresa-de-shopping-centers-sa-91834892#issues"
   },
   {
     "emissor": "IGUATEMI EMPRESA SHOPPING CENTERS",
@@ -46488,6 +46608,54 @@
     "link": ""
   },
   {
+    "emissor": "MELNICK DESENVOLVIMENTO IMOBILIARIO",
+    "cnpj": "12.181.987/0001-77",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-07-08",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "1ª Emissão de Notas Comerciais - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "MELNICK DESENVOLVIMENTO IMOBILIARIO",
+    "cnpj": "12.181.987/0001-77",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-07-08",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "2ª Emissão de Notas Comerciais - 1ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MELNICK DESENVOLVIMENTO IMOBILIARIO",
+    "cnpj": "12.181.987/0001-77",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-07-08",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "2ª Emissão de Notas Comerciais - 2ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MELNICK DESENVOLVIMENTO IMOBILIARIO",
+    "cnpj": "12.181.987/0001-77",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Emissor",
+    "rating": "AA.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-07-08",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
     "emissor": "MENTORE FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
     "cnpj": "46.082.763/0001-20",
     "agencia": "Liberum",
@@ -46589,11 +46757,11 @@
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
-    "outlook": "",
-    "dt_acao": "2021-02-03",
+    "outlook": "Estável",
+    "dt_acao": "2020-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3731/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/3627/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
   },
   {
     "emissor": "MERCANTIL PRODUTOS ACO FIDC",
@@ -46601,11 +46769,11 @@
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
-    "outlook": "Estável",
-    "dt_acao": "2020-10-09",
+    "outlook": "",
+    "dt_acao": "2021-02-03",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3627/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/3731/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
   },
   {
     "emissor": "METRO BH",
@@ -50670,10 +50838,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "",
-    "dt_acao": "2021-03-26",
+    "dt_acao": "2020-05-07",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3772/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3520/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "NOVO NORTE AEROPORTOS",
