@@ -22196,44 +22196,56 @@
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "loans ser 1",
-    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-167-2-fs-agri-97377838#issues"
+    "instrumento": "loans ser 2",
+    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-fs-97340470#issues"
+  },
+  {
+    "emissor": "ECO SECURITIZADORA 2022",
+    "cnpj": "10.753.164/0001-43",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "PIFsf(bra)",
+    "outlook": "",
+    "dt_acao": "2026-02-18",
+    "setor": "",
+    "instrumento": "loans ser 2",
+    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-fs-97340470#issues"
   },
   {
     "emissor": "ECO SECURITIZADORA 2023",
     "cnpj": "10.753.164/0001-43",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AA-sf(bra)",
+    "rating": "AAAsf(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "certificates ser 2",
-    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2023-264-1-2-fs-97506356#issues"
+    "instrumento": "bonds ser 2023-1",
+    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2023-308-1-dexco-97569197#issues"
   },
   {
     "emissor": "ECO SECURITIZADORA 2024",
     "cnpj": "10.753.164/0001-43",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AA-sf(bra)",
+    "rating": "AAAsf(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
     "instrumento": "notes ser 4",
-    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2024-310-1-2-3-4-fs-97571861#issues"
+    "link": "https://www.fitchratings.com/entity/eco-secutirizadora-2024-369-1-2-3-4-marfrig-97667697#issues"
   },
   {
     "emissor": "ECO SECURITIZADORA 2025",
     "cnpj": "10.753.164/0001-43",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "Asf(bra)",
+    "rating": "AAAsf(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
     "instrumento": "notes ser 4",
-    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-405-1-2-3-4-lar-97771682#issues"
+    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues"
   },
   {
     "emissor": "ECO SECURITIZADORA 2026",
@@ -25696,6 +25708,18 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
+    "rating": "brBB",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
     "rating": "brB+",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
@@ -25708,12 +25732,12 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBBB",
+    "rating": "brBB+",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
@@ -25732,24 +25756,12 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBB",
+    "rating": "brBBB",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
-    "rating": "brBB+",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC",
@@ -26325,7 +26337,7 @@
     "dt_acao": "2024-08-13",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4698/FIDC_Cap_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4699/FIDC_Cap_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC CAPITAL BR",
@@ -26908,24 +26920,24 @@
     "cnpj": "",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBB+",
-    "outlook": "Estável",
-    "dt_acao": "2024-08-12",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FIDC IC SOMAPAY",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brB-",
     "outlook": "Estável",
     "dt_acao": "2024-08-12",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FIDC IC SOMAPAY",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB+",
+    "outlook": "Estável",
+    "dt_acao": "2024-08-12",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC INCLUSAO FINANCEIRA",
@@ -28084,24 +28096,24 @@
     "cnpj": "",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brC",
-    "outlook": "Negativa",
-    "dt_acao": "2026-07-03",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5246/FIDC_Sinai_Consig_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FIDC SINAI CONSIG",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brB",
     "outlook": "Estável",
     "dt_acao": "2025-12-29",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5193/FIDC_Sinai_Consig_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FIDC SINAI CONSIG",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brC",
+    "outlook": "Negativa",
+    "dt_acao": "2026-07-03",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5246/FIDC_Sinai_Consig_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC SP RECEBIVEIS PREMIUM I",
@@ -49446,7 +49458,7 @@
     "tipo_rating": "National Long Term Rating",
     "rating": "AAAsf(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-03-20",
+    "dt_acao": "2026-07-10",
     "setor": "",
     "instrumento": "notes ser 3",
     "link": "https://www.fitchratings.com/entity/multiplike-securitizadora-sa-2024-15-1-2-3-97681046#issues"
@@ -49458,7 +49470,7 @@
     "tipo_rating": "National Long Term Rating",
     "rating": "A-sf(bra)",
     "outlook": "Rating Outlook Positive",
-    "dt_acao": "2026-03-20",
+    "dt_acao": "2026-07-10",
     "setor": "",
     "instrumento": "notes ser 3",
     "link": "https://www.fitchratings.com/entity/multiplike-securitizadora-sa-2024-15-1-2-3-97681046#issues"
@@ -51844,24 +51856,24 @@
     "cnpj": "02.773.542/0001-22",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "WDsf(bra)",
-    "outlook": "",
-    "dt_acao": "2026-03-23",
+    "rating": "AAAsf(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "notes",
-    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2019-1-2-raizen-97435591#issues"
+    "instrumento": "notes ser 1",
+    "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues"
   },
   {
     "emissor": "OPEA SECURITIZADORA 2019",
     "cnpj": "02.773.542/0001-22",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "PIFsf(bra)",
+    "rating": "WDsf(bra)",
     "outlook": "",
-    "dt_acao": "2025-03-13",
+    "dt_acao": "2019-12-05",
     "setor": "",
-    "instrumento": "notes",
-    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2019-1-2-raizen-97435591#issues"
+    "instrumento": "notes ser 1",
+    "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues"
   },
   {
     "emissor": "OPEA SECURITIZADORA 2020",
@@ -51884,20 +51896,20 @@
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "certificates ser 1",
-    "link": "https://www.fitchratings.com/entity/rb-sec-companhia-de-securitizacao-2021-347-aliansce-97233576#issues"
+    "instrumento": "securities ser 2",
+    "link": "https://www.fitchratings.com/entity/rb-sec-companhia-de-securitizacao-2021-1-2-marfrig-97239333#issues"
   },
   {
     "emissor": "OPEA SECURITIZADORA 2022",
     "cnpj": "02.773.542/0001-22",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AAAsf(bra)",
+    "rating": "AA-sf(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "notes ser 1",
-    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2022-509-rede-d-or-97370854#issues"
+    "instrumento": "securities ser 1",
+    "link": "https://www.fitchratings.com/entity/true-securitizadora-2022-18-selmi-97329355#issues"
   },
   {
     "emissor": "OPEA SECURITIZADORA 2023",
@@ -51908,32 +51920,32 @@
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "certificates ser 1",
-    "link": "https://www.fitchratings.com/entity/true-securitizadora-sa-2023-1-klabin-97512311#issues"
+    "instrumento": "loans ser 1",
+    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2023-1-2-aliansce-97471052#issues"
   },
   {
     "emissor": "OPEA SECURITIZADORA 2024",
     "cnpj": "02.773.542/0001-22",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AAAsf(bra)",
-    "outlook": "Rating Outlook Stable",
+    "rating": "AA-sf(bra)",
+    "outlook": "Rating Outlook Positive",
     "dt_acao": "2026-06-24",
     "setor": "",
     "instrumento": "notes ser 3",
-    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues"
+    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-272-1-2-3-grupo-salta-97593456#issues"
   },
   {
     "emissor": "OPEA SECURITIZADORA 2025",
     "cnpj": "02.773.542/0001-22",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AAAsf(bra)",
+    "rating": "AA-sf(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
     "instrumento": "notes ser 2",
-    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2025-490-1-2-rede-d-or-97786050#issues"
+    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2025-539-1-2-almeida-junior-97818673#issues"
   },
   {
     "emissor": "OPEA SECURITIZADORA 2026",
@@ -57112,12 +57124,12 @@
     "cnpj": "08.769.451/0001-08",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AA+sf(bra)",
+    "rating": "AAAsf(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "securities ser 378",
-    "link": "https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2021-378-hapvida-97300765#issues"
+    "instrumento": "notes ser 1",
+    "link": "https://www.fitchratings.com/entity/isec-securitizadora-2021-2-m-dias-branco-97123816#issues"
   },
   {
     "emissor": "RIZA SECURITIZADORA 2022",
@@ -57140,20 +57152,20 @@
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "certificates ser 3",
-    "link": "https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2023-1-2-3-4-norsa-97545488#issues"
+    "instrumento": "notes ser 3",
+    "link": "https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2023-1-2-3-multiplan-97544009#issues"
   },
   {
     "emissor": "RIZA SECURITIZADORA 2024",
     "cnpj": "08.769.451/0001-08",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AAAsf(bra)",
+    "rating": "AAsf(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "securities ser 1",
-    "link": "https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2024-167-1-multiplan-97612066#issues"
+    "instrumento": "notes ser 3",
+    "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-97569652#issues"
   },
   {
     "emissor": "RIZA SECURITIZADORA 2025",
@@ -61782,10 +61794,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brB",
     "outlook": "Estável",
-    "dt_acao": "2025-06-16",
+    "dt_acao": "2024-10-25",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4233/Struttura_Agro_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4835/Struttura_Agro_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "STZ FORNECEDORES FIDC CORPORATIVOS",
@@ -66480,6 +66492,18 @@
     "link": "https://www.fitchratings.com/entity/vert-companhia-securitizadora-96764451#issues"
   },
   {
+    "emissor": "VERT CIA SECURITIZADORA 2020",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AAAsf(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-06-24",
+    "setor": "",
+    "instrumento": "notes ser 1",
+    "link": "https://www.fitchratings.com/entity/vert-companhia-securitizadora-2020-1-brf-97009515#issues"
+  },
+  {
     "emissor": "VERT CIA SECURITIZADORA 2021",
     "cnpj": "",
     "agencia": "Fitch",
@@ -66496,12 +66520,12 @@
     "cnpj": "43.737.117/0001-65",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AAsf(bra)",
+    "rating": "AAAsf(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "notes ser 3",
-    "link": "https://www.fitchratings.com/entity/vert-companhia-securitizadora-2022-1-2-dasa-97421532#issues"
+    "instrumento": "notes ser 2022-1",
+    "link": "https://www.fitchratings.com/entity/vert-companhia-securitizadora-2022-1-mercado-livre-97410809#issues"
   },
   {
     "emissor": "VERT CIA SECURITIZADORA 2023",

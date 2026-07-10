@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Somos Sistemas de Ensino S.A."
+        "example": "Multiplike Securitizadora S.A. 2024-15-1,2,3 (Debentures Multiplike)"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/somos-sistemas-de-ensino-sa-97273134"
+        "example": "https://www.fitchratings.com/entity/multiplike-securitizadora-sa-2024-15-1-2-3-97681046"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACRE BG FIDC - SUBORDINADAS JÚNIOR"
+        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4680/Acre_BG_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brB-"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB"
+        "example": "brB-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-14"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11069"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11648"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACRE BG FIDC"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACRE BG FIDC - SUBORDINADAS JÚNIOR"
+        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brB-"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-14"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4680/Acre_BG_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
       },
       {
         "name": "no_devedor_vinculado",
