@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-07-14T13:26:30.259553",
-  "elapsed_seconds": 408.82527446746826,
-  "status": "success",
+  "timestamp": "2026-07-14T22:57:12.384725",
+  "elapsed_seconds": 337.37670493125916,
+  "status": "error",
   "summary": {
     "total": 10,
-    "success": 10,
-    "failed": 0,
+    "success": 8,
+    "failed": 2,
     "drifts": 0
   },
   "scrapers": {
@@ -34,64 +34,64 @@
       "timestamp": "2026-06-04T17:35:16.936746"
     },
     "fitch_emissores": {
-      "status": "success",
-      "elapsed_seconds": 18.470072507858276,
-      "error": null,
-      "timestamp": "2026-07-14T13:26:30.259686"
+      "status": "error",
+      "elapsed_seconds": 17.424403429031372,
+      "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_emissores.py\", line 148, in fetch\n    emissores = _obter_emissores_fitch_real()\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_emissores.py\", line 77, in _obter_emissores_fitch_real\n    resp.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/curl_cffi/requests/models.py\", line 193, in raise_for_status\n    raise HTTPError(f\"HTTP Error {self.status_code}: {self.reason}\", 0, self)\ncurl_cffi.requests.exceptions.HTTPError: HTTP Error 502: \n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/run_all.py\", line 79, in run_scraper\n    scraper.run()\n    ~~~~~~~~~~~^^\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 108, in run\n    raise e\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 39, in run\n    df = self.fetch()\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_emissores.py\", line 151, in fetch\n    print_fail(f\"Erro ao obter emissores: {e}\")\n    ^^^^^^^^^^\nNameError: name 'print_fail' is not defined. Did you mean: 'print_warn'?\n",
+      "timestamp": "2026-07-14T22:57:12.384868"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 34.08130073547363,
+      "elapsed_seconds": 28.9333918094635,
       "error": null,
-      "timestamp": "2026-07-14T13:26:30.259692"
+      "timestamp": "2026-07-14T22:57:12.384870"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 67.01830410957336,
+      "elapsed_seconds": 1.1025583744049072,
       "error": null,
-      "timestamp": "2026-07-14T13:26:30.259695"
+      "timestamp": "2026-07-14T22:57:12.384863"
     },
     "fitch_ratings": {
-      "status": "success",
-      "elapsed_seconds": 49.54613661766052,
-      "error": null,
-      "timestamp": "2026-07-14T13:26:30.259701"
+      "status": "error",
+      "elapsed_seconds": 0.07268953323364258,
+      "error": "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/curl_cffi/requests/session.py\", line 732, in _request_once\n    c.perform()\n    ~~~~~~~~~^^\n  File \"/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/curl_cffi/curl.py\", line 505, in perform\n    self._check_error(ret, \"perform\")\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/curl_cffi/curl.py\", line 269, in _check_error\n    raise error\ncurl_cffi.curl.CurlError: Failed to perform, curl: (35) Recv failure: Connection reset by peer. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_ratings.py\", line 318, in fetch\n    todos = _obter_ratings_via_api()\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_ratings.py\", line 125, in _obter_ratings_via_api\n    resp = crequests.post(\n        API_URL,\n    ...<3 lines>...\n        timeout=30,\n    )\n  File \"/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/curl_cffi/requests/__init__.py\", line 152, in post\n    return request(method=\"POST\", url=url, **kwargs)\n  File \"/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/curl_cffi/requests/__init__.py\", line 140, in request\n    return s.request(method=method, url=url, **kwargs)\n           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/curl_cffi/requests/session.py\", line 795, in request\n    return self._request_once(\n           ~~~~~~~~~~~~~~~~~~^\n        method=method,\n        ^^^^^^^^^^^^^^\n    ...<32 lines>...\n        discard_cookies=discard_cookies,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/curl_cffi/requests/session.py\", line 739, in _request_once\n    raise error(str(e), e.code, rsp) from e\ncurl_cffi.requests.exceptions.SSLError: Failed to perform, curl: (35) Recv failure: Connection reset by peer. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/run_all.py\", line 79, in run_scraper\n    scraper.run()\n    ~~~~~~~~~~~^^\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 108, in run\n    raise e\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 39, in run\n    df = self.fetch()\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/fitch_ratings.py\", line 321, in fetch\n    print_fail(f\"Erro ao obter ratings: {e}\")\n    ^^^^^^^^^^\nNameError: name 'print_fail' is not defined. Did you mean: 'print_warn'?\n",
+      "timestamp": "2026-07-14T22:57:12.384874"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 0.08799910545349121,
+      "elapsed_seconds": 0.08132624626159668,
       "error": null,
-      "timestamp": "2026-07-14T13:26:30.259698"
+      "timestamp": "2026-07-14T22:57:12.384875"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 331.43861842155457,
+      "elapsed_seconds": 279.91461753845215,
       "error": null,
-      "timestamp": "2026-07-14T13:26:30.259702"
+      "timestamp": "2026-07-14T22:57:12.384877"
     },
     "austin_emissores": {
       "status": "success",
-      "elapsed_seconds": 5.7687976360321045,
+      "elapsed_seconds": 6.0449182987213135,
       "error": null,
-      "timestamp": "2026-07-14T13:26:30.259690"
+      "timestamp": "2026-07-14T22:57:12.384866"
     },
     "austin_ratings": {
       "status": "success",
-      "elapsed_seconds": 24.040648221969604,
+      "elapsed_seconds": 22.798299074172974,
       "error": null,
-      "timestamp": "2026-07-14T13:26:30.259700"
+      "timestamp": "2026-07-14T22:57:12.384876"
     },
     "liberum_emissores": {
       "status": "success",
-      "elapsed_seconds": 54.14714550971985,
+      "elapsed_seconds": 51.05664086341858,
       "error": null,
-      "timestamp": "2026-07-14T13:26:30.259694"
+      "timestamp": "2026-07-14T22:57:12.384871"
     },
     "liberum_ratings": {
       "status": "success",
-      "elapsed_seconds": 53.134289264678955,
+      "elapsed_seconds": 50.30991792678833,
       "error": null,
-      "timestamp": "2026-07-14T13:26:30.259697"
+      "timestamp": "2026-07-14T22:57:12.384873"
     }
   },
   "drifts": {}
