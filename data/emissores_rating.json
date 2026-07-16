@@ -2833,7 +2833,7 @@
   },
   {
     "emissor": "ARGO TRANSMISSAO ENERGIA",
-    "cnpj": "",
+    "cnpj": "24.624.490/0001-65",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
@@ -2845,7 +2845,7 @@
   },
   {
     "emissor": "ARGO V TRANSMISSAO ENERGIA",
-    "cnpj": "",
+    "cnpj": "20.514.590/0001-88",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
@@ -2857,7 +2857,7 @@
   },
   {
     "emissor": "ARGO VI TRANSMISSAO ENERGIA",
-    "cnpj": "",
+    "cnpj": "20.514.555/0001-69",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
@@ -3190,18 +3190,6 @@
     "setor": "Instituições Financeiras",
     "instrumento": "N/A",
     "link": ""
-  },
-  {
-    "emissor": "ASA BRANCA HOLDING",
-    "cnpj": "09.359.927/0001-97",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "A-(bra)",
-    "outlook": "Rating Outlook Negative",
-    "dt_acao": "2026-03-02",
-    "setor": "",
-    "instrumento": "BRL 315 mln Variable 6.25% bond/note 15-Jun-2033",
-    "link": "https://www.fitchratings.com/entity/asa-branca-holding-sa-97244274#issues"
   },
   {
     "emissor": "ASA CREDITO DISTRESSED FIDC NP",
@@ -13164,18 +13152,6 @@
     "link": "https://www.austin.com.br/Historico-Rating/4654/BRZ_TECFIT_FIDC_-_Seniores_Única"
   },
   {
-    "emissor": "BSB ENERGETICA",
-    "cnpj": "03.820.456/0001-96",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AA+(bra)",
-    "outlook": "Rating Outlook Positive",
-    "dt_acao": "2026-06-12",
-    "setor": "",
-    "instrumento": "BRL 345 mln 7.04% Series 11 bond/note 15-Apr-2030",
-    "link": "https://www.fitchratings.com/entity/bsb-energetica-s-a-97349757#issues"
-  },
-  {
     "emissor": "BTAG MASTER I FIAGRO",
     "cnpj": "44.173.416/0001-87",
     "agencia": "Austin",
@@ -15529,7 +15505,7 @@
   },
   {
     "emissor": "CLI SUL",
-    "cnpj": "",
+    "cnpj": "43.514.079/0001-81",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
@@ -16345,7 +16321,7 @@
   },
   {
     "emissor": "COMPANHIA ENERGETICA SINOP",
-    "cnpj": "",
+    "cnpj": "19.527.586/0001-75",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA(bra)",
@@ -17308,24 +17284,24 @@
     "cnpj": "17.281.106/0001-03",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-04-02",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/companhia-de-saneamento-de-minas-gerais-copasa-94017690"
-  },
-  {
-    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS COPASA MG",
-    "cnpj": "17.281.106/0001-03",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
     "rating": "NR",
     "outlook": "",
     "dt_acao": "2026-06-15",
     "setor": "",
     "instrumento": "14th Debentures, 2nd serie due 2026",
     "link": "https://www.fitchratings.com/entity/companhia-de-saneamento-de-minas-gerais-copasa-94017690#issues"
+  },
+  {
+    "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS COPASA MG",
+    "cnpj": "17.281.106/0001-03",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AAA(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-04-02",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/companhia-de-saneamento-de-minas-gerais-copasa-94017690"
   },
   {
     "emissor": "COMPANHIA SANEAMENTO MINAS GERAIS COPASA MG",
@@ -17761,7 +17737,7 @@
   },
   {
     "emissor": "CONCESSIONARIA PONTE RIO",
-    "cnpj": "",
+    "cnpj": "22.163.297/0001-49",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA(bra)",
@@ -17818,18 +17794,6 @@
     "setor": "",
     "instrumento": "",
     "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000064"
-  },
-  {
-    "emissor": "CONCESSIONARIA RODOVIA MS 306",
-    "cnpj": "36.128.741/0001-08",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AA+(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-11-25",
-    "setor": "",
-    "instrumento": "BRL 725 mln Floating IPCA (Brazil) 7.92% bond/note 15-May-2043",
-    "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-ms-306-sa-97115282#issues"
   },
   {
     "emissor": "CONCESSIONARIA RODOVIA TAMOIOS",
@@ -17953,7 +17917,7 @@
   },
   {
     "emissor": "CONCESSIONARIA RODOVIAS TRIANGULO SPE",
-    "cnpj": "",
+    "cnpj": "48.127.012/0001-08",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "A+(bra)",
@@ -19708,6 +19672,18 @@
     "cnpj": "04.370.282/0001-70",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
+    "rating": "NR",
+    "outlook": "",
+    "dt_acao": "2025-09-15",
+    "setor": "",
+    "instrumento": "BRL 1 bln Floating CDI (Brazil) 1.22% bond/note 15-Sep-2025",
+    "link": "https://www.fitchratings.com/entity/copel-geracao-e-transmissao-sa-96167039#issues"
+  },
+  {
+    "emissor": "COPEL GERACAO TRANSMISSAO",
+    "cnpj": "04.370.282/0001-70",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-05-15",
@@ -19725,18 +19701,6 @@
     "dt_acao": "2026-05-15",
     "setor": "",
     "instrumento": "GeT 10th tranche 1 BRL 500 mln Floating CDI (Brazil) 0.59% bond/note",
-    "link": "https://www.fitchratings.com/entity/copel-geracao-e-transmissao-sa-96167039#issues"
-  },
-  {
-    "emissor": "COPEL GERACAO TRANSMISSAO",
-    "cnpj": "04.370.282/0001-70",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "NR",
-    "outlook": "",
-    "dt_acao": "2025-09-15",
-    "setor": "",
-    "instrumento": "BRL 1 bln Floating CDI (Brazil) 1.22% bond/note 15-Sep-2025",
     "link": "https://www.fitchratings.com/entity/copel-geracao-e-transmissao-sa-96167039#issues"
   },
   {
@@ -19873,7 +19837,7 @@
   },
   {
     "emissor": "CORREDOR LOGISTICA INFRAESTRUTURA",
-    "cnpj": "",
+    "cnpj": "15.114.494/0001-02",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
@@ -20089,7 +20053,7 @@
   },
   {
     "emissor": "CPFL GERACAO ENERGIA",
-    "cnpj": "",
+    "cnpj": "03.953.509/0001-47",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
@@ -20101,7 +20065,7 @@
   },
   {
     "emissor": "CPFL GERACAO ENERGIA",
-    "cnpj": "",
+    "cnpj": "03.953.509/0001-47",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
@@ -22552,12 +22516,12 @@
     "cnpj": "10.753.164/0001-43",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AAAsf(bra)",
+    "rating": "AA-sf(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "bonds ser 2023-1",
-    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2023-308-1-dexco-97569197#issues"
+    "instrumento": "notes ser 2",
+    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2023-1-2-fs-97478869#issues"
   },
   {
     "emissor": "ECO SECURITIZADORA 2024",
@@ -22677,19 +22641,7 @@
     "dt_acao": "2024-06-05",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3385/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "ECOAGRO INSUMOS FIDC NP",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
-    "rating": "brB",
-    "outlook": "Estável",
-    "dt_acao": "2019-11-08",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3385/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/3567/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "ECOAGRO INSUMOS FIDC NP",
@@ -22702,6 +22654,18 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/3567/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "ECOAGRO INSUMOS FIDC NP",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB",
+    "outlook": "Estável",
+    "dt_acao": "2019-11-08",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/3385/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "ECORIOMINAS CONCESSIONARIA RODOVIAS",
@@ -25681,7 +25645,7 @@
   },
   {
     "emissor": "FERREIRA GOMES ENERGIA",
-    "cnpj": "",
+    "cnpj": "12.489.315/0001-23",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA(bra)",
@@ -26092,18 +26056,6 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brB+",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBB-",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
@@ -26116,12 +26068,12 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBB+",
+    "rating": "brB+",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
@@ -26134,6 +26086,18 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB+",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
@@ -26325,7 +26289,7 @@
     "dt_acao": "2022-06-23",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4020/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4018/FIDC_Angá_Creditas_Consignado_Privado_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC ANGA FACTA CONSIGNADOS INSS I",
@@ -36226,18 +36190,6 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/3744/Gávea_Sul_FIDC_-_Subordinadas_Mezanino_II_"
-  },
-  {
-    "emissor": "GBS PARTICIPACOES",
-    "cnpj": "",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "D(bra)",
-    "outlook": "",
-    "dt_acao": "2025-08-05",
-    "setor": "",
-    "instrumento": "BRL 600 mln Floating IPCA (Brazil) 7.273% bond/note 15-Mar-2044  credit agreement dated as of 15-Mar-2022",
-    "link": "https://www.fitchratings.com/entity/gbs-participacoes-sa-97320752#issues"
   },
   {
     "emissor": "GBX PRIME I FIDC",
@@ -47345,11 +47297,11 @@
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
-    "outlook": "",
-    "dt_acao": "2021-02-03",
+    "outlook": "Estável",
+    "dt_acao": "2020-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3731/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/3627/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
   },
   {
     "emissor": "MERCANTIL PRODUTOS ACO FIDC",
@@ -47357,11 +47309,11 @@
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
-    "outlook": "Estável",
-    "dt_acao": "2020-10-09",
+    "outlook": "",
+    "dt_acao": "2021-02-03",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3627/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/3731/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
   },
   {
     "emissor": "METRO BH",
@@ -58741,7 +58693,7 @@
   },
   {
     "emissor": "SANTO ANTONIO ENERGIA",
-    "cnpj": "",
+    "cnpj": "09.391.823/0001-60",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
@@ -59698,18 +59650,6 @@
     "setor": "",
     "instrumento": "BRL 116 mln 5.9% bond/note 30-Nov-2040",
     "link": "https://www.fitchratings.com/entity/serra-de-ibiapaba-transmissora-de-energia-sa-97071673#issues"
-  },
-  {
-    "emissor": "SERRA MEL HOLDING",
-    "cnpj": "",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AA-(bra)",
-    "outlook": "Rating Outlook Negative",
-    "dt_acao": "2026-03-17",
-    "setor": "",
-    "instrumento": "BRL 142 mln Floating IPCA (Brazil) 5.2% bond/note 15-Dec-2035  credit agreement dated as of 15-Mar-2021",
-    "link": "https://www.fitchratings.com/entity/serra-do-mel-holding-sa-97125082#issues"
   },
   {
     "emissor": "SERRA SERIDO F2 HOLDING",
@@ -61246,18 +61186,6 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/3306/Solar_FIDC_NP_-_Seniores_1ª_série"
-  },
-  {
-    "emissor": "SOLARIS TRANSMISSAO ENERGIA",
-    "cnpj": "",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "Rating Outlook Negative",
-    "dt_acao": "2026-06-29",
-    "setor": "",
-    "instrumento": "BRL 150 mln 6.403% Series 11 bond/note 15-Aug-2045",
-    "link": "https://www.fitchratings.com/entity/solaris-transmissao-de-energia-sa-97273655#issues"
   },
   {
     "emissor": "SOLFACIL",
@@ -64201,7 +64129,7 @@
   },
   {
     "emissor": "TRANSMISSORA JOSE MARIA MACEDO ELETRICIDADE",
-    "cnpj": "",
+    "cnpj": "21.728.083/0001-00",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
@@ -66901,7 +66829,7 @@
   },
   {
     "emissor": "VENTOS SUL ENERGIA",
-    "cnpj": "",
+    "cnpj": "06.016.348/0001-53",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "NR",
@@ -67006,18 +66934,6 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/1987/Verax_I_Federal_FIDC_NP__-_Subordinadas_Mezanino_I_"
-  },
-  {
-    "emissor": "VERDE 08 ENERGIA",
-    "cnpj": "",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "NR",
-    "outlook": "",
-    "dt_acao": "2025-07-15",
-    "setor": "",
-    "instrumento": "BRL 140 mln Floating IPCA (Brazil) 5.956% bond/note 15-Jul-2025",
-    "link": "https://www.fitchratings.com/entity/verde-08-energia-sa-96648754#issues"
   },
   {
     "emissor": "VERO",
@@ -67969,7 +67885,7 @@
   },
   {
     "emissor": "VIARONDON CONCESSIONARIA RODOVIA",
-    "cnpj": "",
+    "cnpj": "10.635.691/0001-53",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA-(bra)",
@@ -68350,18 +68266,6 @@
     "setor": "",
     "instrumento": "Única - Curto prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/27731"
-  },
-  {
-    "emissor": "VIRGO II CIA SECURITIZACAO 2018",
-    "cnpj": "08.769.451/0001-08",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "PIFsf(bra)",
-    "outlook": "",
-    "dt_acao": "2025-07-15",
-    "setor": "",
-    "instrumento": "certificates ser 2018-1-9,10,11",
-    "link": "https://www.fitchratings.com/entity/cibrasec-companhia-brasileira-de-securitizacao-96645281#issues"
   },
   {
     "emissor": "VIRGO SECURITIZADORA",
