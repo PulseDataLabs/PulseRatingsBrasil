@@ -55,6 +55,7 @@ dt_captura,no_emissor,link
 2026-07-16,"Eco Securitizadora 2022-140-1,2 (FS)",https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-fs-97340470
 2026-07-16,"Eco Securitizadora 2023-264-1,2 (FS)",https://www.fitchratings.com/entity/eco-securitizadora-2023-264-1-2-fs-97506356
 2026-07-16,Eco Securitizadora 2022-167-2 (FS),https://www.fitchratings.com/entity/eco-securitizadora-2022-167-2-fs-agri-97377838
+2026-07-16,Eco Securitizadora 2024-349-1 (Amaggi),https://www.fitchratings.com/entity/eco-securitizadora-2024-349-1-amaggi-97646656
 2026-07-16,Vert Cia Securitizadora 2020-46-2 (BRF),https://www.fitchratings.com/entity/vert-companhia-securitizadora-2020-2-brf-97013158
 2026-07-16,Opea Securitizadora S.A. 2021-1-325 (VCSA),https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2021-325-vci-97136915
 2026-07-16,Opea Securitizadora S.A. 2021-1-347 (Allos),https://www.fitchratings.com/entity/rb-sec-companhia-de-securitizacao-2021-347-aliansce-97233576
@@ -98,7 +99,6 @@ dt_captura,no_emissor,link
 2026-07-16,Opea Securitizadora S.A. 2021-1-396 (Rede D'Or),https://www.fitchratings.com/entity/rb-sec-companhia-de-securitizacao-2021-396-rede-d-or-97297984
 2026-07-16,"Riza Securitizadora 2023-123-1,2,3 (Multiplan)",https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2023-1-2-3-multiplan-97544009
 2026-07-16,"Opea Securitizadora S.A. 2021-16-1,2 (Marfrig)",https://www.fitchratings.com/entity/rb-sec-companhia-de-securitizacao-2021-1-2-marfrig-97239333
-2026-07-16,Eco Securitizadora 2023-308-1 (Dexco),https://www.fitchratings.com/entity/eco-securitizadora-2023-308-1-dexco-97569197
 2026-07-16,"Eco Securitizadora 2024-318-1,2,3 (Marfrig)",https://www.fitchratings.com/entity/eco-securitizadora-2024-318-1-2-3-marfrig-97586433
 2026-07-16,Opea Securitizadora S.A. 2023-65-1 (Klabin),https://www.fitchratings.com/entity/true-securitizadora-sa-2023-1-klabin-97512311
 2026-07-16,"Opea Securitizadora S.A. 2023-189-1,2,3,4 (Iguatemi)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2023-1-2-3-4-iguatemi-97534657
@@ -117,12 +117,12 @@ dt_captura,no_emissor,link
 2026-07-16,"Opea Securitizadora S.A. 2022-52-1,2 (Mercado Livre)",https://www.fitchratings.com/entity/true-securitizadora-2022-2-mercado-livre-97410838
 2026-07-16,"Opea Securitizadora S.A. 2023-176-1,2,3 (Rede D'Or)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2023-1-2-3-rede-d-or-97519281
 2026-07-16,"Riza Securitizadora 2024-188-1,2,3 (Zamp)",https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-97569652
+2026-07-16,Eco Securitizadora 2023-308-1 (Dexco),https://www.fitchratings.com/entity/eco-securitizadora-2023-308-1-dexco-97569197
 2026-07-16,Eco Securitizadora 2023-285-1 (Dexco),https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorio-do-agronegocio-sa-2023-1-dexco-97538242
 2026-07-16,"Opea Securitizadora S.A. 2023-190-1,2 (VCSA)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2023-1-2-vcsa-97533356
 2026-07-16,"Riza Securitizadora 2025-263-1,2,3 (JBS)",https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2025-263-1-2-3-jbs-97705190
 2026-07-16,"Opea Securitizadora S.A. 2025-395-1,2 (BR Malls)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2025-395-1-2-br-malls-97695820
 2026-07-16,"Eco Securitizadora 2025-404-1,2,3 (Mantiqueira)",https://www.fitchratings.com/entity/eco-securitizadora-2025-404-1-2-3-mantiqueira-97780236
-2026-07-16,Eco Securitizadora 2024-349-1 (Amaggi),https://www.fitchratings.com/entity/eco-securitizadora-2024-349-1-amaggi-97646656
 2026-07-16,Cooperativa Central de Credito Rural com Interacao Solidaria - Central Cresol Sicoper,https://www.fitchratings.com/entity/cooperativa-central-de-credito-rural-com-interacao-solidaria-central-cresol-sicoper-97361361
 2026-07-16,Cooperativa Central de Credito com Interacao Solidaria - Central Cresol Baser,https://www.fitchratings.com/entity/cooperativa-central-de-credito-com-interacao-solidaria-central-cresol-baser-97078781
 2026-07-16,Cooperativa Central de Credito Ailos,https://www.fitchratings.com/entity/cooperativa-central-de-credito-ailos-97229433
@@ -186,10 +186,10 @@ dt_captura,no_emissor,link
 2026-07-16,Vivara Participacoes S.A.,https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261
 2026-07-16,Companhia Catarinense de Aguas e Saneamento - CASAN,https://www.fitchratings.com/entity/companhia-catarinense-de-aguas-e-saneamento-casan-92740312
 2026-07-16,Yinson Boronia Production B.V.,https://www.fitchratings.com/entity/yinson-boronia-production-bv-97599549
+2026-07-16,Copel Geracao e Transmissao S.A.,https://www.fitchratings.com/entity/copel-geracao-e-transmissao-sa-96167039
 2026-07-16,Copel Distribuicao S.A.,https://www.fitchratings.com/entity/copel-distribuicao-sa-96382097
 2026-07-16,Companhia Paranaense de Energia (COPEL),https://www.fitchratings.com/entity/companhia-paranaense-de-energia-copel-80614489
 2026-07-16,Copel Servicos S.A.,https://www.fitchratings.com/entity/copel-servicos-sa-97607160
-2026-07-16,Copel Geracao e Transmissao S.A.,https://www.fitchratings.com/entity/copel-geracao-e-transmissao-sa-96167039
 2026-07-16,Cooperativa de Credito Crediceripa - Sicoob Crediceripa,https://www.fitchratings.com/entity/cooperativa-de-credito-crediceripa-sicoob-crediceripa-96975124
 2026-07-16,Cooperativa de Credito PRO - Sicoob PRO,https://www.fitchratings.com/entity/cooperativa-de-credito-pro-97696341
 2026-07-16,Sicoob Cocred Cooperativa de Credito,https://www.fitchratings.com/entity/sicoob-cocred-cooperativa-de-credito-97262424
@@ -214,22 +214,22 @@ dt_captura,no_emissor,link
 2026-07-16,Banco Regional de Desenvolvimento do Extremo Sul (BRDE),https://www.fitchratings.com/entity/banco-regional-de-desenvolvimento-do-extremo-sul-brde-85210273
 2026-07-16,"Maranhao, State of",https://www.fitchratings.com/entity/maranhao-state-of-92198092
 2026-07-16,Pastificio Selmi S.A.,https://www.fitchratings.com/entity/pastificio-selmi-sa-96566506
-2026-07-16,Saneamento Ambiental Aguas do Brasil S.A.,https://www.fitchratings.com/entity/saneamento-ambiental-aguas-do-brasil-sa-92753891
 2026-07-16,Concessionaria Aguas de Juturnaiba S.A.,https://www.fitchratings.com/entity/concessionaria-aguas-de-juturnaiba-sa-97070967
+2026-07-16,Saneamento Ambiental Aguas do Brasil S.A.,https://www.fitchratings.com/entity/saneamento-ambiental-aguas-do-brasil-sa-92753891
 2026-07-16,Aguas da Imperatriz S.A.,https://www.fitchratings.com/entity/aguas-da-imperatriz-sa-97766000
 2026-07-16,Aguas do Paraiba S.A.,https://www.fitchratings.com/entity/aguas-do-paraiba-sa-97598672
 2026-07-16,Smartfit Escola de Ginastica e Danca S.A.,https://www.fitchratings.com/entity/smartfit-escola-de-ginastica-e-danca-sa-96173422
 2026-07-16,Energisa Tocantins - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-tocantins-distribuidora-de-energia-s-a-96689844
-2026-07-16,Energisa Acre - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-acre-distribuidora-de-energia-sa-97096959
 2026-07-16,Energisa Sergipe - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-sergipe-distribuidora-de-energia-s-a-83215018
-2026-07-16,Energisa Minas Rio - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868
-2026-07-16,Energisa S.A.,https://www.fitchratings.com/entity/energisa-sa-83598865
 2026-07-16,Energisa Paraiba - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-paraiba-distribuidora-de-energia-s-a-83215024
+2026-07-16,Energisa S.A.,https://www.fitchratings.com/entity/energisa-sa-83598865
+2026-07-16,Energisa Minas Rio - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868
+2026-07-16,Energisa Acre - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-acre-distribuidora-de-energia-sa-97096959
 2026-07-16,Energisa Sul Sudeste - Distribuidora de Energia S/A,https://www.fitchratings.com/entity/energisa-sul-sudeste-distribuidora-de-energia-s-a-96689833
-2026-07-16,Energisa Mato Grosso do Sul - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-mato-grosso-do-sul-distribuidora-de-energia-sa-96223276
-2026-07-16,Alsol Energias Renovaveis S.A.,https://www.fitchratings.com/entity/alsol-energias-renovaveis-96810835
-2026-07-16,Energisa Rondonia Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965
 2026-07-16,Energisa Mato Grosso - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-mato-grosso-distribuidora-de-energia-sa-96223279
+2026-07-16,Energisa Mato Grosso do Sul - Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-mato-grosso-do-sul-distribuidora-de-energia-sa-96223276
+2026-07-16,Energisa Rondonia Distribuidora de Energia S.A.,https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965
+2026-07-16,Alsol Energias Renovaveis S.A.,https://www.fitchratings.com/entity/alsol-energias-renovaveis-96810835
 2026-07-16,Energisa Transmissao de Energia S.A.,https://www.fitchratings.com/entity/energisa-transmissao-de-energia-sa-96724735
 2026-07-16,Corporeos Servicos Terapeuticos S.A.,https://www.fitchratings.com/entity/corporeos-servicos-terapeuticos-sa-97572161
 2026-07-16,MPM Corporeos S.A.,https://www.fitchratings.com/entity/mpm-corporeos-sa-97252184
@@ -242,23 +242,23 @@ dt_captura,no_emissor,link
 2026-07-16,"Multiplike Financeira S.A. Sociedade De Credito, Financiamento E Investimento",https://www.fitchratings.com/entity/multiplike-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97880687
 2026-07-16,"Vert CSCF 2024-7-1,2,3 (BMG 7)",https://www.fitchratings.com/entity/vert-cscf-2024-7-1-2-3-bmg-7-97645517
 2026-07-16,"CSCF Cartoes Consignados II 2022-2-1,2 (BMG 3)",https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2022-1-2-97405571
-2026-07-16,"CSCF Cartoes Consignados II 2025-4-1,2,3 (BMG 8)",https://www.fitchratings.com/entity/cscf-cartoes-consignados-ii-2025-4-1-2-3-bmg-8-97745508
-2026-07-16,"Vert CSCF 2024-5-1,2,3 (BMG 6)",https://www.fitchratings.com/entity/vert-cscf-2024-1-2-3-bmg-6-97613555
-2026-07-16,"CSCF Cartoes Consignados BMG 2022-2-1,2 (BMG 4)",https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-bmg-2022-1-2-97520636
 2026-07-16,"CSCF Cartoes Consignados II 2023-3-1,2 (BMG 5)",https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2023-2-bmg5-97537359
+2026-07-16,"CSCF Cartoes Consignados II 2025-4-1,2,3 (BMG 8)",https://www.fitchratings.com/entity/cscf-cartoes-consignados-ii-2025-4-1-2-3-bmg-8-97745508
+2026-07-16,"CSCF Cartoes Consignados BMG 2022-2-1,2 (BMG 4)",https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-bmg-2022-1-2-97520636
+2026-07-16,"Vert CSCF 2024-5-1,2,3 (BMG 6)",https://www.fitchratings.com/entity/vert-cscf-2024-1-2-3-bmg-6-97613555
 2026-07-16,Senior Sistemas S.A.,https://www.fitchratings.com/entity/senior-sistemas-sa-97810907
 2026-07-16,Banco Mercedes-Benz do Brasil S.A.,https://www.fitchratings.com/entity/banco-mercedes-benz-do-brasil-sa-91896832
 2026-07-16,Light Servicos de Eletricidade S.A.,https://www.fitchratings.com/entity/light-servicos-de-eletricidade-sa-91050690
 2026-07-16,Light S.A.,https://www.fitchratings.com/entity/light-sa-91040693
 2026-07-16,Light Energia S.A.,https://www.fitchratings.com/entity/light-energia-sa-91019690
+2026-07-16,Ampla Energia e Servicos S.A.,https://www.fitchratings.com/entity/ampla-energia-e-servicos-sa-96591706
 2026-07-16,Eletropaulo Metropolitana Eletricidade de Sao Paulo S.A.,https://www.fitchratings.com/entity/eletropaulo-metropolitana-eletricidade-de-sao-paulo-sa-80464130
 2026-07-16,Companhia Energetica do Ceara,https://www.fitchratings.com/entity/companhia-energetica-do-ceara-96574578
-2026-07-16,Ampla Energia e Servicos S.A.,https://www.fitchratings.com/entity/ampla-energia-e-servicos-sa-96591706
 2026-07-16,Enel Brasil S.A.,https://www.fitchratings.com/entity/enel-brasil-sa-96574575
-2026-07-16,Hospital Esperanca S.A.,https://www.fitchratings.com/entity/hospital-esperanca-sa-97686959
 2026-07-16,Rede D'Or Sao Luiz S.A.,https://www.fitchratings.com/entity/rede-dor-sao-luiz-sa-96193829
-2026-07-16,"Opea Securitizadora S.A. 2023-232-1,2,3,4 (Oncoclinicas)",https://www.fitchratings.com/entity/true-securitizadora-sa2023-1-2-3-4-oncoclinicas-97544828
+2026-07-16,Hospital Esperanca S.A.,https://www.fitchratings.com/entity/hospital-esperanca-sa-97686959
 2026-07-16,"Opea Securitizadora S.A. 2022-54-1,2,3 (Oncoclinicas)",https://www.fitchratings.com/entity/true-securitizadora-2022-1-2-3-oncoclinicas-97419631
+2026-07-16,"Opea Securitizadora S.A. 2023-232-1,2,3,4 (Oncoclinicas)",https://www.fitchratings.com/entity/true-securitizadora-sa2023-1-2-3-4-oncoclinicas-97544828
 2026-07-16,BRB - Banco de Brasilia S.A.,https://www.fitchratings.com/entity/brb-banco-de-brasilia-sa-93215290
 2026-07-16,Eurofarma Laboratorios S.A.,https://www.fitchratings.com/entity/eurofarma-laboratorios-sa-96581229
 2026-07-16,Hospital Mater Dei SA,https://www.fitchratings.com/entity/hospital-mater-dei-sa-97281888
@@ -531,14 +531,14 @@ dt_captura,no_emissor,link
 2026-07-16,ESSENTIA PCHs S.A.,https://www.fitchratings.com/entity/contour-global-do-brasil-participacoes-sa-96630805
 2026-07-16,"Mills Locacao, Servicos e Logistica S.A.",https://www.fitchratings.com/entity/mills-estruturas-e-servicos-de-engenharia-sa-96795007
 2026-07-16,Alubar Metais e Cabos S.A.,https://www.fitchratings.com/entity/alubar-metais-e-cabos-sa-97322864
-2026-07-16,CloudWalk Instituicao de Pagamento e Servicos Ltda.,https://www.fitchratings.com/entity/cloudwalk-instituicao-de-pagamento-e-servicos-ltda-97764117
 2026-07-16,"CloudWalk Financeira S.A. Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/cloudwalk-financeira-sa-credito-financiamento-e-investimento-97784613
-2026-07-16,Cooperativa Central de Credito do Espirito Santo - Sicoob Central ES,https://www.fitchratings.com/entity/cooperativa-central-de-credito-do-espirito-santo-sicoob-central-es-96743383
+2026-07-16,CloudWalk Instituicao de Pagamento e Servicos Ltda.,https://www.fitchratings.com/entity/cloudwalk-instituicao-de-pagamento-e-servicos-ltda-97764117
 2026-07-16,Cooperativa de Credito Sul-Litoranea do Espirito Santo - Sicoob Sul-Litoraneo,https://www.fitchratings.com/entity/cooperativa-de-credito-sul-litoranea-do-espirito-santo-sicoob-sul-litoraneo-96790669
+2026-07-16,Cooperativa Central de Credito do Espirito Santo - Sicoob Central ES,https://www.fitchratings.com/entity/cooperativa-central-de-credito-do-espirito-santo-sicoob-central-es-96743383
+2026-07-16,Cooperativa de Credito Sul-Serrana do Espirito Santo - Sicoob Sul-Serrano,https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697
 2026-07-16,Cooperativa de Credito Sul do Espirito Santo - Sicoob Sul,https://www.fitchratings.com/entity/cooperativa-de-credito-sul-do-espirito-santo-sicoob-sul-96790661
 2026-07-16,Cooperativa de Credito Coopermais - Sicoob Coopermais,https://www.fitchratings.com/entity/cooperativa-de-credito-centro-serrana-do-espirito-santo-sicoob-centro-serrano-96790672
 2026-07-16,Cooperativa de Credito Credirochas - Sicoob Credirochas,https://www.fitchratings.com/entity/cooperativa-de-credito-dos-proprietarios-da-industria-de-rochas-ornamentais-cal-e-calcarios-do-estado-do-espirito-santo-sicoob-credirochas-96790654
-2026-07-16,Cooperativa de Credito Sul-Serrana do Espirito Santo - Sicoob Sul-Serrano,https://www.fitchratings.com/entity/cooperativa-de-credito-sul-serrana-do-espirito-santo-sicoob-sul-serrano-96722697
 2026-07-16,Cooperativa de Credito Conexao - Sicoob Conexao,https://www.fitchratings.com/entity/cooperativa-de-credito-leste-capixaba-sicoob-leste-capixaba-96790658
 2026-07-16,Sendas Distribuidora S/A,https://www.fitchratings.com/entity/sendas-distribuidora-s-a-97205339
 2026-07-16,Icred Solucoes Financeiras S.A,https://www.fitchratings.com/entity/icred-solucoes-financeiras-sa-97585696
@@ -583,8 +583,8 @@ dt_captura,no_emissor,link
 2026-07-16,Banco CNH Industrial Capital S.A.,https://www.fitchratings.com/entity/banco-cnh-industrial-capital-sa-80597992
 2026-07-16,Banco John Deere S.A.,https://www.fitchratings.com/entity/banco-john-deere-sa-96800840
 2026-07-16,Opea Securitizadora S.A. 2018-157 (Rede D'Or),https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizazco-2018-157-rede-d-or-96786349
-2026-07-16,General Shopping Investment Limited,https://www.fitchratings.com/entity/general-shopping-investment-limited-90748293
 2026-07-16,General Shopping Finance Limited (GSF),https://www.fitchratings.com/entity/general-shopping-finance-limited-gsf-89880061
+2026-07-16,General Shopping Investment Limited,https://www.fitchratings.com/entity/general-shopping-investment-limited-90748293
 2026-07-16,Oi Movel S.A.,https://www.fitchratings.com/entity/oi-movel-sa-97265603
 2026-07-16,Ferreira Gomes Energia S.A.,https://www.fitchratings.com/entity/ferreira-gomes-energia-sa-91842691
 2026-07-16,Voltalia Sao Miguel do Gostoso Participacoes S.A.,https://www.fitchratings.com/entity/voltalia-sao-miguel-do-gostoso-participacoes-sa-96150572
@@ -599,7 +599,6 @@ dt_captura,no_emissor,link
 2026-07-16,Sao Roque Energetica S.A.,https://www.fitchratings.com/entity/sao-roque-energetica-sa-97433578
 2026-07-16,Aquapolo Ambiental S.A.,https://www.fitchratings.com/entity/aquapolo-ambiental-sa-89478661
 2026-07-16,Cantareira Transmissora de Energia S.A.,https://www.fitchratings.com/entity/cantareira-transmissora-de-energia-sa-96581278
-2026-07-16,Ecorodovias Concessoes e Servicos S.A.,https://www.fitchratings.com/entity/ecorodovias-concessoes-e-servicos-sa-96637229
 2026-07-16,Sul America Companhia de Seguro Saude,https://www.fitchratings.com/entity/sul-america-companhia-de-seguro-saude-97288459
 2026-07-16,Eolica Serra das Vacas Holding S.A.,https://www.fitchratings.com/entity/eolica-serra-das-vacas-holding-sa-96337693
 2026-07-16,Arcoverde Transmissao de Energia S.A.,https://www.fitchratings.com/entity/arcoverde-transmissao-de-energia-sa-96798294
@@ -620,7 +619,6 @@ dt_captura,no_emissor,link
 2026-07-16,Empresa Sudeste de Transmissao de Energia S.A.,https://www.fitchratings.com/entity/empresa-sudeste-de-transmissao-de-energia-sa-96858544
 2026-07-16,Concessao Metroviaria do Rio de Janeiro S.A. - MetroRio,https://www.fitchratings.com/entity/concessao-metroviaria-do-rio-de-janeiro-sa-metrorio-91062690
 2026-07-16,Porto Primavera Transmissora de Energia S.A.,https://www.fitchratings.com/entity/porto-primavera-transmissora-de-energia-sa-96704406
-2026-07-16,Concessionaria Ponte Rio-Niteroi S.A. - ECOPONTE,https://www.fitchratings.com/entity/concessionaria-ponte-rio-niteroi-sa-ecoponte-96735368
 2026-07-16,Empresa de Energia Cachoeira Caldeirao S.A.,https://www.fitchratings.com/entity/empresa-de-energia-cachoeira-caldeirao-sa-95535290
 2026-07-16,Transmissora Jose Maria de Macedo de Eletricidade S.A.,https://www.fitchratings.com/entity/transmissora-jose-maria-de-macedo-de-eletricidade-sa-96635611
 2026-07-16,Argo Transmissao de Energia S.A.,https://www.fitchratings.com/entity/argo-transmissao-de-energia-sa-96643713
@@ -689,7 +687,6 @@ dt_captura,no_emissor,link
 2026-07-16,Apollo 17 Participacoes S.A,https://www.fitchratings.com/entity/apollo-17-participacoes-sa-97115286
 2026-07-16,Rodovias do Brasil Holding S.A.,https://www.fitchratings.com/entity/rodovias-do-brasil-holding-sa-97193080
 2026-07-16,IP Sul Concessionaria De Iluminacao Publica S.A.,https://www.fitchratings.com/entity/ip-sul-concessionaria-de-iluminacao-publica-sa-97101669
-2026-07-16,ECO050 - Concessionaria de Rodovias S.A.,https://www.fitchratings.com/entity/eco050-concessionaria-de-rodovias-sa-96896274
 2026-07-16,Usina Termeletrica Pampa Sul S.A.,https://www.fitchratings.com/entity/usina-termeletrica-pampa-sul-sa-97037338
 2026-07-16,Vila Piaui 1 Empreendimentos e Participacoes S.A.,https://www.fitchratings.com/entity/vila-piaui-1-empreendimentos-e-participacoes-sa-97005316
 2026-07-16,Rincao Sao Miguel Energetica S.A.,https://www.fitchratings.com/entity/rincao-sao-miguel-energetica-sa-97007595
@@ -745,11 +742,14 @@ dt_captura,no_emissor,link
 2026-07-16,EPR Litoral Pioneiro S.A.,https://www.fitchratings.com/entity/epr-litoral-pioneiro-sa-97749076
 2026-07-16,Winity S.A.,https://www.fitchratings.com/entity/winity-sa-97772836
 2026-07-16,Apiuna Participacoes S/A,https://www.fitchratings.com/entity/apiuna-participacoes-s-a-97828981
-2026-07-16,Concessionaria das Rodovias do Leste MS S.A.,https://www.fitchratings.com/entity/concessionaria-das-rodovias-do-leste-ms-sa-97540794
 2026-07-16,Marlim Azul Energia SA,https://www.fitchratings.com/entity/marlim-azul-energia-sa-97543758
 2026-07-16,Concessionaria Rota do Atlantico S.A.,https://www.fitchratings.com/entity/concessionaria-rota-do-atlantico-sa-97285847
 2026-07-16,Concessionaria Rota dos Coqueiros S.A.,https://www.fitchratings.com/entity/concessionaria-rota-dos-coqueiros-sa-97385331
 2026-07-16,Geometrica Par Investimentos S.A.,https://www.fitchratings.com/entity/prumo-participacoes-e-investimentos-s-a-96158821
 2026-07-16,SE Vineyards Transmissao de Energia S.A.,https://www.fitchratings.com/entity/se-vineyards-transmissao-de-energia-sa-96798394
-2026-07-16,TESC -Terminal Santa Catarina S.A.,https://www.fitchratings.com/entity/tesc-terminal-santa-catarina-sa-97201281
 2026-07-16,BRK Ambiental Manso S.A.,https://www.fitchratings.com/entity/brk-ambiental-manso-sa-94377892
+2026-07-16,ECO050 - Concessionaria de Rodovias S.A.,https://www.fitchratings.com/entity/eco050-concessionaria-de-rodovias-sa-96896274
+2026-07-16,Ecorodovias Concessoes e Servicos S.A.,https://www.fitchratings.com/entity/ecorodovias-concessoes-e-servicos-sa-96637229
+2026-07-16,Concessionaria Ponte Rio-Niteroi S.A. - ECOPONTE,https://www.fitchratings.com/entity/concessionaria-ponte-rio-niteroi-sa-ecoponte-96735368
+2026-07-16,TESC -Terminal Santa Catarina S.A.,https://www.fitchratings.com/entity/tesc-terminal-santa-catarina-sa-97201281
+2026-07-16,Concessionaria das Rodovias do Leste MS S.A.,https://www.fitchratings.com/entity/concessionaria-das-rodovias-do-leste-ms-sa-97540794
