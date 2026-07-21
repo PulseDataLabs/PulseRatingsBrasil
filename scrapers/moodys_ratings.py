@@ -64,13 +64,18 @@ class MoodysRatingsScraper(BaseScraper):
     source = "Moody's"
 
     def fetch(self) -> pd.DataFrame:
-        from curl_cffi import requests
         from openpyxl import load_workbook
-
-        session = requests.Session()
+        from scrapers.utils.moodys_helper import get_moodys_session
 
         self.logger.info(f"Acessando {BASE_URL} para buscar o link do Excel...")
         print_start("Acessando moodyslocal.com.br...")
+        try:
+            session, proxies = get_moodys_session(self.logger, BASE_URL)
+        except Exception as e:
+            self.logger.error(f"Erro ao obter sessão Moody's Local: {e}")
+            print_fail(f"Erro ao obter sessão: {e}")
+            return pd.DataFrame()
+
         try:
             resp = session.get(BASE_URL, impersonate="chrome", timeout=60)
             resp.raise_for_status()
