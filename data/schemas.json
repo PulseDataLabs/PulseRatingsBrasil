@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Banco Citibank S.A."
+        "example": "Laboratorio Sabin de Analises Clinicas S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/banco-citibank-sa-80362437"
+        "example": "https://www.fitchratings.com/entity/laboratorio-sabin-de-analises-clinicas-ltda-96350585"
       },
       {
         "name": "no_tipo_rating",
@@ -74,17 +74,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AAA(bra)"
+        "example": "AA(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-07-15"
+        "example": "2026-07-22"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Affirmed"
+        "example": "Upgrade"
       },
       {
         "name": "de_outlook",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Opea Securitizadora S.A. 2024-301-1 (Almeida Junior)"
+        "example": "FIDC Opea Agro Sumitomo Chemical"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-301-1-almeida-junior-97635401"
+        "example": "https://www.fitchratings.com/entity/fundo-de-investimento-em-direitos-creditorios-opea-agro-sumitomo-chemical-97384354"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4790/Adjud_I_FIDC_NP__-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -298,12 +298,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11203"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11646"
       }
     ]
   },
@@ -404,12 +404,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "AREA GESTAO RECURSOS TERCEIROS BANESTES DTVM"
+        "example": "APUAMA CAPITAL GESTORA RECURSOS"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ÁREA DE GESTÃO DE RECURSOS DE TERCEIROS DA BANESTES DTVM"
+        "example": "APUAMA CAPITAL GESTORA DE RECURSOS LTDA."
       },
       {
         "name": "no_tipo_rating",
@@ -419,7 +419,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "QG2-"
+        "example": "QG3"
       },
       {
         "name": "de_outlook",
@@ -429,12 +429,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-08-22"
+        "example": "2024-03-21"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5018/Área_de_Gestão_de_Recursos_de_Terceiros_da_Banestes_DTVM"
+        "example": "https://www.austin.com.br/Historico-Rating/4425/Apuama_Capital_Gestora_de_Recursos_Ltda"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ADJUD I FIDC NP"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
       },
       {
         "name": "no_tipo_rating",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4790/Adjud_I_FIDC_NP__-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_devedor_vinculado",
