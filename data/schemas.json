@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
+        "example": "ACCESS FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brBBB+"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brBBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-15"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Inicial"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11646"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11202"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "MALMO FICFIDC-NP"
+        "example": "DAYCOVAL CONCRÉDITO CLT FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29092"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29040"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "MALMO FICFIDC-NP"
+        "example": "DAYCOVAL CONCRÉDITO CLT FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29092"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29040"
       },
       {
         "name": "no_tipo_rating",
@@ -362,17 +362,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP5"
+        "example": "CP3"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-07-21"
+        "example": "2026-07-22"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Encerramento"
+        "example": "Atribuição"
       },
       {
         "name": "de_outlook",
@@ -382,7 +382,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Mezanino"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACO CEARENSE FIDC"
+        "example": "ACCESS FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
+        "example": "ACCESS FIDC - SENIORES ÚNICA"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brBBB+"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-15"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_devedor_vinculado",
