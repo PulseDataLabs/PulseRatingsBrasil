@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Laboratorio Sabin de Analises Clinicas S.A."
+        "example": "Mateus Supermercados S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/laboratorio-sabin-de-analises-clinicas-ltda-96350585"
+        "example": "https://www.fitchratings.com/entity/mateus-supermercados-sa-96026490"
       },
       {
         "name": "no_tipo_rating",
@@ -74,17 +74,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AA(bra)"
+        "example": "AAA(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-07-22"
+        "example": "2026-07-24"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Upgrade"
+        "example": "Affirmed"
       },
       {
         "name": "de_outlook",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FIDC Opea Agro Sumitomo Chemical"
+        "example": "Mateus Supermercados S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/fundo-de-investimento-em-direitos-creditorios-opea-agro-sumitomo-chemical-97384354"
+        "example": "https://www.fitchratings.com/entity/mateus-supermercados-sa-96026490"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB-"
+        "example": "brB"
       },
       {
         "name": "de_rating_cp",
@@ -293,12 +293,81 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBB-"
+        "example": "brB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2026-06-18"
+      },
+      {
+        "name": "de_acao_rating",
+        "type": "str",
+        "example": "Rating Inicial"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": "Estável"
+      },
+      {
+        "name": "link_relatorio",
+        "type": "str",
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
+      }
+    ]
+  },
+  {
+    "title": "Liberum Emissores — Emissores",
+    "files": "liberum_emissores.csv",
+    "source": "liberum",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "RIDOLFINVEST 2  FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS NÃO PADRONIZADOS RESPONSABILIDADE LIMITADA"
+      },
+      {
+        "name": "no_setor",
+        "type": "str",
+        "example": "FIDC"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29096"
+      }
+    ]
+  },
+  {
+    "title": "Liberum Ratings — Ratings",
+    "files": "liberum_ratings.csv",
+    "source": "liberum",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "RIDOLFINVEST 2  FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS NÃO PADRONIZADOS RESPONSABILIDADE LIMITADA"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29096"
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "FIDC"
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "A-"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2026-07-24"
       },
       {
         "name": "de_acao_rating",
@@ -311,78 +380,9 @@
         "example": "Estável"
       },
       {
-        "name": "link_relatorio",
-        "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11204"
-      }
-    ]
-  },
-  {
-    "title": "Liberum Emissores — Emissores",
-    "files": "liberum_emissores.csv",
-    "source": "liberum",
-    "fields": [
-      {
-        "name": "no_emissor",
-        "type": "str",
-        "example": "LARCA MULTIPLICA CAPITAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
-      },
-      {
-        "name": "no_setor",
-        "type": "str",
-        "example": "FIDC"
-      },
-      {
-        "name": "link",
-        "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29077"
-      }
-    ]
-  },
-  {
-    "title": "Liberum Ratings — Ratings",
-    "files": "liberum_ratings.csv",
-    "source": "liberum",
-    "fields": [
-      {
-        "name": "no_emissor",
-        "type": "str",
-        "example": "LARCA MULTIPLICA CAPITAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
-      },
-      {
-        "name": "link",
-        "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29077"
-      },
-      {
-        "name": "no_tipo_rating",
-        "type": "str",
-        "example": "FIDC"
-      },
-      {
-        "name": "de_rating_br",
-        "type": "str",
-        "example": "CCC"
-      },
-      {
-        "name": "dt_acao_rating",
-        "type": "date",
-        "example": "2026-07-23"
-      },
-      {
-        "name": "de_acao_rating",
-        "type": "str",
-        "example": "Rebaixamento"
-      },
-      {
-        "name": "de_outlook",
-        "type": "str",
-        "example": "Negativa"
-      },
-      {
         "name": "de_classe",
         "type": "str",
-        "example": "Mezanino"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
@@ -404,12 +404,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "APUAMA CAPITAL GESTORA RECURSOS"
+        "example": "AREA GESTAO RECURSOS TERCEIROS BANESTES DTVM"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "APUAMA CAPITAL GESTORA DE RECURSOS LTDA."
+        "example": "ÁREA DE GESTÃO DE RECURSOS DE TERCEIROS DA BANESTES DTVM"
       },
       {
         "name": "no_tipo_rating",
@@ -419,7 +419,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "QG3"
+        "example": "QG2-"
       },
       {
         "name": "de_outlook",
@@ -429,12 +429,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-03-21"
+        "example": "2025-08-22"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4425/Apuama_Capital_Gestora_de_Recursos_Ltda"
+        "example": "https://www.austin.com.br/Historico-Rating/5018/Área_de_Gestão_de_Recursos_de_Terceiros_da_Banestes_DTVM"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ADJUD I FIDC NP"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB-"
+        "example": "brB"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_devedor_vinculado",
