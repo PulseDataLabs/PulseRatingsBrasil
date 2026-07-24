@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
+        "example": "ACR IV FIDC - SUBORDINADAS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brCCC"
+        "example": "brAA-"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brCCC"
+        "example": "brAA-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-08"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Inicial"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ACR_IV_FIDC/11045"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "DAYCOVAL CONCRÉDITO CLT FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA"
+        "example": "LARCA MULTIPLICA CAPITAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29040"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29077"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "DAYCOVAL CONCRÉDITO CLT FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA"
+        "example": "LARCA MULTIPLICA CAPITAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29040"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29077"
       },
       {
         "name": "no_tipo_rating",
@@ -362,32 +362,32 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP3"
+        "example": "CCC"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-07-22"
+        "example": "2026-07-23"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Atribuição"
+        "example": "Rebaixamento"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": "Negativa"
       },
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": "Mezanino"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Curto prazo"
+        "example": "Longo prazo"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACO CEARENSE FIDC"
+        "example": "ACR IV FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
+        "example": "ACR IV FIDC - SUBORDINADAS"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brCCC"
+        "example": "brAA-"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-08"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
       },
       {
         "name": "no_devedor_vinculado",

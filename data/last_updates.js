@@ -52,7 +52,7 @@ window.PULSERATINGS_LAST_UPDATES = {
     "max": "2026-07-23"
   },
   "liberum_ratings.csv": {
-    "min": "2026-07-21",
+    "min": "2026-07-22",
     "max": "2026-07-23"
   },
   "ratings_emissores.csv": {
