@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Mateus Supermercados S.A."
+        "example": "Companhia Paraibana de Gas PBGAS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/mateus-supermercados-sa-96026490"
+        "example": "https://www.fitchratings.com/entity/companhia-paraibana-de-gas-pbgas-97518314"
       },
       {
         "name": "no_tipo_rating",
@@ -74,7 +74,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AAA(bra)"
+        "example": "A(bra)"
       },
       {
         "name": "dt_acao_rating",
@@ -89,7 +89,7 @@
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Stable"
+        "example": "Rating Outlook Negative"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Mateus Supermercados S.A."
+        "example": "Companhia Paraibana de Gas PBGAS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/mateus-supermercados-sa-96026490"
+        "example": "https://www.fitchratings.com/entity/companhia-paraibana-de-gas-pbgas-97518314"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "ACR IV FIDC - SUBORDINADAS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brAA-"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB"
+        "example": "brAA-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-08"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Inicial"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ACR_IV_FIDC/11045"
       }
     ]
   },
@@ -404,12 +404,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "AREA GESTAO RECURSOS TERCEIROS BANESTES DTVM"
+        "example": "APUAMA CAPITAL GESTORA RECURSOS"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ÁREA DE GESTÃO DE RECURSOS DE TERCEIROS DA BANESTES DTVM"
+        "example": "APUAMA CAPITAL GESTORA DE RECURSOS LTDA."
       },
       {
         "name": "no_tipo_rating",
@@ -419,7 +419,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "QG2-"
+        "example": "QG3"
       },
       {
         "name": "de_outlook",
@@ -429,12 +429,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-08-22"
+        "example": "2024-03-21"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5018/Área_de_Gestão_de_Recursos_de_Terceiros_da_Banestes_DTVM"
+        "example": "https://www.austin.com.br/Historico-Rating/4425/Apuama_Capital_Gestora_de_Recursos_Ltda"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACO CEARENSE FIDC"
+        "example": "ACR IV FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "ACR IV FIDC - SUBORDINADAS"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brAA-"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-08"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
       },
       {
         "name": "no_devedor_vinculado",
