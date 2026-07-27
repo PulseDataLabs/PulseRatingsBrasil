@@ -24,8 +24,8 @@ window.PULSERATINGS_LAST_UPDATES = {
     "max": "2026-07-27"
   },
   "moodys_emissores.csv": {
-    "min": "2026-07-16",
-    "max": "2026-07-16"
+    "min": "2026-07-27",
+    "max": "2026-07-27"
   },
   "fitch_ratings.csv": {
     "min": "2026-06-05",

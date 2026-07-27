@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "RIDOLFINVEST 2  FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS NÃO PADRONIZADOS RESPONSABILIDADE LIMITADA"
+        "example": "GFM FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MULTICREDITO"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29096"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29086"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "RIDOLFINVEST 2  FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS NÃO PADRONIZADOS RESPONSABILIDADE LIMITADA"
+        "example": "GFM FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MULTICREDITO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29096"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29086"
       },
       {
         "name": "no_tipo_rating",
@@ -362,12 +362,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "A-"
+        "example": "BBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-07-24"
+        "example": "2026-07-27"
       },
       {
         "name": "de_acao_rating",
@@ -382,7 +382,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": "Mezanino"
       },
       {
         "name": "de_escala",
