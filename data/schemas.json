@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
+        "example": "ACRE BG FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4679/Acre_BG_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brA"
+        "example": "brBB+"
       },
       {
         "name": "de_rating_cp",
@@ -293,27 +293,27 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brA"
+        "example": "brBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-04-01"
+        "example": "2024-08-14"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Preliminar"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Estável"
       },
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11068"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC"
+        "example": "ACRE BG FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
+        "example": "ACRE BG FIDC - SENIORES ÚNICA"
       },
       {
         "name": "no_tipo_rating",
@@ -471,22 +471,22 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brA"
+        "example": "brBB+"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Estável"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-04-01"
+        "example": "2024-08-14"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4679/Acre_BG_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_devedor_vinculado",
