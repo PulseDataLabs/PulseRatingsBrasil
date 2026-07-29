@@ -678,10 +678,10 @@
     "tipo_rating": "FIDC",
     "rating": "C",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28916"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29124"
   },
   {
     "emissor": "AEGEA SANEAMENTO PARTICIPACOES",
@@ -4533,7 +4533,7 @@
     "dt_acao": "2024-11-01",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4823/Azure_Consignado_FIDC_-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/4828/Azure_Consignado_FIDC_-_Seniores_Única"
   },
   {
     "emissor": "AZZAS 2154",
@@ -10780,66 +10780,6 @@
     "cnpj": "37.651.102/0001-87",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "BB+",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Mezanino - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27999"
-  },
-  {
-    "emissor": "BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "37.651.102/0001-87",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CP4",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Mezanino - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27999"
-  },
-  {
-    "emissor": "BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "37.651.102/0001-87",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "A-",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27999"
-  },
-  {
-    "emissor": "BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "37.651.102/0001-87",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CP2",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27999"
-  },
-  {
-    "emissor": "BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "37.651.102/0001-87",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "B",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27999"
-  },
-  {
-    "emissor": "BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "37.651.102/0001-87",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
     "rating": "CP4",
     "outlook": "Positiva",
     "dt_acao": "",
@@ -10894,6 +10834,66 @@
     "setor": "",
     "instrumento": "Senior - Curto prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/28898"
+  },
+  {
+    "emissor": "BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "37.651.102/0001-87",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "BB+",
+    "outlook": "Estável",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Mezanino - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/27999"
+  },
+  {
+    "emissor": "BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "37.651.102/0001-87",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "A-",
+    "outlook": "Estável",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Senior - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/27999"
+  },
+  {
+    "emissor": "BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "37.651.102/0001-87",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CP2",
+    "outlook": "Estável",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Senior - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/27999"
+  },
+  {
+    "emissor": "BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "37.651.102/0001-87",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CP4",
+    "outlook": "Estável",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Mezanino - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/27999"
+  },
+  {
+    "emissor": "BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "37.651.102/0001-87",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "B",
+    "outlook": "Estável",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Subordinada - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/27999"
   },
   {
     "emissor": "BARI COMPANHIA HIPOTECARIA",
@@ -22338,10 +22338,10 @@
     "tipo_rating": "FIDC",
     "rating": "B",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2023-01-18",
     "setor": "",
     "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28980"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25448"
   },
   {
     "emissor": "DIP FINANCING 11 FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
@@ -23730,10 +23730,10 @@
     "tipo_rating": "FIDC",
     "rating": "AA",
     "outlook": "Estável",
-    "dt_acao": "2026-07-08",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/29029"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29113"
   },
   {
     "emissor": "EMS",
@@ -23957,11 +23957,11 @@
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
-    "outlook": "",
+    "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-04-30",
     "setor": "",
-    "instrumento": "BRL 400 mln bond/note 15-Feb-2031",
-    "link": "https://www.fitchratings.com/entity/energisa-mato-grosso-do-sul-distribuidora-de-energia-sa-96223276#issues"
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/energisa-mato-grosso-do-sul-distribuidora-de-energia-sa-96223276"
   },
   {
     "emissor": "ENERGISA MATO GROSSO SUL",
@@ -23969,11 +23969,11 @@
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
-    "outlook": "Rating Outlook Stable",
+    "outlook": "",
     "dt_acao": "2026-04-30",
     "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/energisa-mato-grosso-do-sul-distribuidora-de-energia-sa-96223276"
+    "instrumento": "EMS_25st Deb_1st Serie_BRL90m_2029",
+    "link": "https://www.fitchratings.com/entity/energisa-mato-grosso-do-sul-distribuidora-de-energia-sa-96223276#issues"
   },
   {
     "emissor": "ENERGISA MATO GROSSO SUL",
@@ -24125,11 +24125,11 @@
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
-    "outlook": "",
+    "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-04-30",
     "setor": "",
-    "instrumento": "ERO_13th Deb_1st Series_BRL230mln_2032",
-    "link": "https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965#issues"
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965"
   },
   {
     "emissor": "ENERGISA RONDONIA DISTRIBUIDORA ENERGIA",
@@ -24137,11 +24137,11 @@
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
-    "outlook": "Rating Outlook Stable",
+    "outlook": "",
     "dt_acao": "2026-04-30",
     "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965"
+    "instrumento": "ERO_13th Deb_1st Series_BRL230mln_2032",
+    "link": "https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965#issues"
   },
   {
     "emissor": "ENERGISA SERGIPE",
@@ -24498,10 +24498,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28922"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29118"
   },
   {
     "emissor": "EOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS WH",
@@ -26188,6 +26188,18 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
+    "rating": "brBB+",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
     "rating": "brB+",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
@@ -26212,36 +26224,24 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBB",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
-    "rating": "brBB+",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBBB",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC",
@@ -27400,24 +27400,24 @@
     "cnpj": "",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBB+",
-    "outlook": "Estável",
-    "dt_acao": "2024-08-12",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FIDC IC SOMAPAY",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brB-",
     "outlook": "Estável",
     "dt_acao": "2024-08-12",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FIDC IC SOMAPAY",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB+",
+    "outlook": "Estável",
+    "dt_acao": "2024-08-12",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC INCLUSAO FINANCEIRA",
@@ -29560,66 +29560,6 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CCC",
-    "outlook": "Estável",
-    "dt_acao": "2023-08-04",
-    "setor": "",
-    "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26080"
-  },
-  {
-    "emissor": "FOUR CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "BBB",
-    "outlook": "Negativa",
-    "dt_acao": "2023-01-17",
-    "setor": "",
-    "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/25446"
-  },
-  {
-    "emissor": "FOUR CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CP3",
-    "outlook": "Negativa",
-    "dt_acao": "2023-01-17",
-    "setor": "",
-    "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/25446"
-  },
-  {
-    "emissor": "FOUR CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "BB",
-    "outlook": "Negativa",
-    "dt_acao": "2023-01-17",
-    "setor": "",
-    "instrumento": "Mezanino - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/25446"
-  },
-  {
-    "emissor": "FOUR CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CP4",
-    "outlook": "Negativa",
-    "dt_acao": "2023-01-17",
-    "setor": "",
-    "instrumento": "Mezanino - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/25446"
-  },
-  {
-    "emissor": "FOUR CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
     "rating": "CP4",
     "outlook": "Estável",
     "dt_acao": "",
@@ -29740,6 +29680,18 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
+    "rating": "CCC",
+    "outlook": "Estável",
+    "dt_acao": "2023-08-04",
+    "setor": "",
+    "instrumento": "Subordinada - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26080"
+  },
+  {
+    "emissor": "FOUR CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
     "rating": "BBB",
     "outlook": "Estável",
     "dt_acao": "2023-08-04",
@@ -29758,6 +29710,54 @@
     "setor": "",
     "instrumento": "Mezanino - Longo prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/26080"
+  },
+  {
+    "emissor": "FOUR CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "BBB",
+    "outlook": "Negativa",
+    "dt_acao": "2023-01-17",
+    "setor": "",
+    "instrumento": "Senior - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25446"
+  },
+  {
+    "emissor": "FOUR CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CP3",
+    "outlook": "Negativa",
+    "dt_acao": "2023-01-17",
+    "setor": "",
+    "instrumento": "Senior - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25446"
+  },
+  {
+    "emissor": "FOUR CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "BB",
+    "outlook": "Negativa",
+    "dt_acao": "2023-01-17",
+    "setor": "",
+    "instrumento": "Mezanino - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25446"
+  },
+  {
+    "emissor": "FOUR CREDIT FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CP4",
+    "outlook": "Negativa",
+    "dt_acao": "2023-01-17",
+    "setor": "",
+    "instrumento": "Mezanino - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25446"
   },
   {
     "emissor": "FOUR EVEN FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
@@ -30196,42 +30196,6 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "B",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Mezanino - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26898"
-  },
-  {
-    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGORA TELECOM",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "BB+",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26898"
-  },
-  {
-    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGORA TELECOM",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CP4",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26898"
-  },
-  {
-    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGORA TELECOM",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
     "rating": "C",
     "outlook": "Estável",
     "dt_acao": "",
@@ -30336,6 +30300,42 @@
     "link": "https://www.liberumratings.com.br/detalhes-ativo/27242"
   },
   {
+    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGORA TELECOM",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "BB+",
+    "outlook": "Estável",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Senior - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26898"
+  },
+  {
+    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGORA TELECOM",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CP4",
+    "outlook": "Estável",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Senior - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26898"
+  },
+  {
+    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGORA TELECOM",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "B",
+    "outlook": "Estável",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Mezanino - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26898"
+  },
+  {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGRO SGT",
     "cnpj": "",
     "agencia": "Liberum",
@@ -30352,12 +30352,24 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
+    "rating": "BBB-",
+    "outlook": "Estável",
+    "dt_acao": "2022-12-16",
+    "setor": "",
+    "instrumento": "Senior - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25356"
+  },
+  {
+    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ALI CREDITO",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
     "rating": "CP3",
     "outlook": "Estável",
-    "dt_acao": "2023-10-31",
+    "dt_acao": "2022-12-16",
     "setor": "",
     "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26563"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25356"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ALI CREDITO",
@@ -30370,18 +30382,6 @@
     "setor": "",
     "instrumento": "Senior - Longo prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/26563"
-  },
-  {
-    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ALI CREDITO",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "BBB-",
-    "outlook": "Estável",
-    "dt_acao": "2023-02-23",
-    "setor": "",
-    "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/25577"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ALION CONSIGNADOS",
@@ -30508,6 +30508,18 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
+    "rating": "CCC",
+    "outlook": "Estável",
+    "dt_acao": "2023-10-26",
+    "setor": "",
+    "instrumento": "Subordinada - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26537"
+  },
+  {
+    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ASAAS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
     "rating": "B",
     "outlook": "Estável",
     "dt_acao": "2026-05-19",
@@ -30526,18 +30538,6 @@
     "setor": "",
     "instrumento": "Senior - Curto prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/29015"
-  },
-  {
-    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ASAAS",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CCC",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28369"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS BIZCAPITAL EMPIRICA PME",
@@ -31600,36 +31600,12 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "A+",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28174"
-  },
-  {
-    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA CREDITAS AUTO",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CP2",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28174"
-  },
-  {
-    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA CREDITAS AUTO",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
     "rating": "CP3",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2022-12-19",
     "setor": "",
     "instrumento": "Mezanino - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28174"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25359"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA CREDITAS AUTO",
@@ -31638,10 +31614,34 @@
     "tipo_rating": "FIDC",
     "rating": "BBB-",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2022-12-19",
     "setor": "",
     "instrumento": "Mezanino - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28174"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25359"
+  },
+  {
+    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA CREDITAS AUTO",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "A+",
+    "outlook": "Estável",
+    "dt_acao": "2022-12-19",
+    "setor": "",
+    "instrumento": "Senior - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25359"
+  },
+  {
+    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA CREDITAS AUTO",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CP2",
+    "outlook": "Estável",
+    "dt_acao": "2022-12-19",
+    "setor": "",
+    "instrumento": "Senior - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25359"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA CREDITAS AUTO",
@@ -32610,10 +32610,22 @@
     "tipo_rating": "FIDC",
     "rating": "CP5",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Mezanino - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28985"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29123"
+  },
+  {
+    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ENERGIA SOLAR",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "C",
+    "outlook": "Estável",
+    "dt_acao": "2026-07-29",
+    "setor": "",
+    "instrumento": "Mezanino - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29123"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ENERGIA SOLAR",
@@ -32622,10 +32634,10 @@
     "tipo_rating": "FIDC",
     "rating": "CP5",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28985"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29123"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ENERGIA SOLAR",
@@ -32634,34 +32646,22 @@
     "tipo_rating": "FIDC",
     "rating": "C",
     "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28985"
-  },
-  {
-    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ENERGIA SOLAR",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "C",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Mezanino - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28985"
-  },
-  {
-    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ENERGIA SOLAR",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "C",
-    "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28985"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29123"
+  },
+  {
+    "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ENERGIA SOLAR",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "C",
+    "outlook": "Estável",
+    "dt_acao": "2026-07-29",
+    "setor": "",
+    "instrumento": "Subordinada - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29123"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ENERGIA SOLAR",
@@ -33424,24 +33424,24 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "BBB",
+    "rating": "CP3",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
-    "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28951"
+    "instrumento": "Senior - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29119"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS KOVI I",
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CP3",
+    "rating": "BBB",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
-    "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28951"
+    "instrumento": "Senior - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29119"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS LESTE FICTOR CONSIGNADO RESPONSABILIDADE LIMITADA",
@@ -33726,10 +33726,10 @@
     "tipo_rating": "FIDC",
     "rating": "B",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28928"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29114"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL MAREAH",
@@ -38596,6 +38596,54 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
+    "rating": "BBB",
+    "outlook": "Estável",
+    "dt_acao": "2023-10-26",
+    "setor": "",
+    "instrumento": "Mezanino - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26534"
+  },
+  {
+    "emissor": "HARPIA FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CP3",
+    "outlook": "Estável",
+    "dt_acao": "2023-10-26",
+    "setor": "",
+    "instrumento": "Mezanino - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26534"
+  },
+  {
+    "emissor": "HARPIA FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CP2",
+    "outlook": "Estável",
+    "dt_acao": "2023-10-26",
+    "setor": "",
+    "instrumento": "Senior - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26534"
+  },
+  {
+    "emissor": "HARPIA FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "A",
+    "outlook": "Estável",
+    "dt_acao": "2023-10-26",
+    "setor": "",
+    "instrumento": "Senior - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26534"
+  },
+  {
+    "emissor": "HARPIA FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
     "rating": "A+",
     "outlook": "Estável",
     "dt_acao": "",
@@ -38614,54 +38662,6 @@
     "setor": "",
     "instrumento": "Mezanino - Longo prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/28959"
-  },
-  {
-    "emissor": "HARPIA FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CP2",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28959"
-  },
-  {
-    "emissor": "HARPIA FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CP3",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Mezanino - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28959"
-  },
-  {
-    "emissor": "HARPIA FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "BBB",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Mezanino - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28000"
-  },
-  {
-    "emissor": "HARPIA FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "A",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27936"
   },
   {
     "emissor": "HAVAN",
@@ -42306,10 +42306,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2023-10-18",
     "setor": "",
     "instrumento": "Única - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27823"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26515"
   },
   {
     "emissor": "JC 4870 FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
@@ -42460,11 +42460,11 @@
     "cnpj": "34.964.344/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CP5",
+    "rating": "CCC",
     "outlook": "Estável",
     "dt_acao": "",
     "setor": "",
-    "instrumento": "Única - Curto prazo",
+    "instrumento": "Única - Longo prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/28466"
   },
   {
@@ -42472,11 +42472,11 @@
     "cnpj": "34.964.344/0001-32",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CCC",
+    "rating": "CP5",
     "outlook": "Estável",
     "dt_acao": "",
     "setor": "",
-    "instrumento": "Única - Longo prazo",
+    "instrumento": "Única - Curto prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/28466"
   },
   {
@@ -43302,10 +43302,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2023-10-26",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26740"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26541"
   },
   {
     "emissor": "K",
@@ -47597,11 +47597,11 @@
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
-    "outlook": "",
-    "dt_acao": "2021-02-03",
+    "outlook": "Estável",
+    "dt_acao": "2020-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3731/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/3627/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
   },
   {
     "emissor": "MERCANTIL PRODUTOS ACO FIDC",
@@ -47609,11 +47609,11 @@
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
-    "outlook": "Estável",
-    "dt_acao": "2020-10-09",
+    "outlook": "",
+    "dt_acao": "2021-02-03",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3627/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/3731/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
   },
   {
     "emissor": "METRO BH",
@@ -47658,10 +47658,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28927"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29117"
   },
   {
     "emissor": "METROPOLITANA ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL LP",
@@ -47766,10 +47766,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28973"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29127"
   },
   {
     "emissor": "MGW ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
@@ -47778,10 +47778,10 @@
     "tipo_rating": "FIDC",
     "rating": "CP5",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28973"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29127"
   },
   {
     "emissor": "MGW ATIVOS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
@@ -47790,10 +47790,10 @@
     "tipo_rating": "FIDC",
     "rating": "C",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28891"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29127"
   },
   {
     "emissor": "MICROCREDITO IMPACTO SOCIAL FIDC",
@@ -47824,24 +47824,24 @@
     "cnpj": "26.286.853/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CP5",
+    "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
-    "instrumento": "Única - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28938"
+    "instrumento": "Única - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29120"
   },
   {
     "emissor": "MILAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS RESPONSABILIDADE LIMITADA",
     "cnpj": "26.286.853/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CCC",
+    "rating": "CP5",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
-    "instrumento": "Única - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28938"
+    "instrumento": "Única - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29120"
   },
   {
     "emissor": "MILAS FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
@@ -48006,10 +48006,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28912"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29121"
   },
   {
     "emissor": "MINUM GENCO GERADORA",
@@ -48436,54 +48436,6 @@
     "cnpj": "12.400.426/0001-11",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "BB+",
-    "outlook": "Negativa",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Mezanino - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26961"
-  },
-  {
-    "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "12.400.426/0001-11",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CP2",
-    "outlook": "Negativa",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26961"
-  },
-  {
-    "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "12.400.426/0001-11",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "A-",
-    "outlook": "Negativa",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26961"
-  },
-  {
-    "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "12.400.426/0001-11",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "B",
-    "outlook": "Negativa",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26961"
-  },
-  {
-    "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
-    "cnpj": "12.400.426/0001-11",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
     "rating": "BB",
     "outlook": "Negativa",
     "dt_acao": "",
@@ -48526,6 +48478,54 @@
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/27134"
+  },
+  {
+    "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
+    "cnpj": "12.400.426/0001-11",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "A-",
+    "outlook": "Negativa",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Senior - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26961"
+  },
+  {
+    "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
+    "cnpj": "12.400.426/0001-11",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CP2",
+    "outlook": "Negativa",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Senior - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26961"
+  },
+  {
+    "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
+    "cnpj": "12.400.426/0001-11",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "BB+",
+    "outlook": "Negativa",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Mezanino - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26961"
+  },
+  {
+    "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
+    "cnpj": "12.400.426/0001-11",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "B",
+    "outlook": "Negativa",
+    "dt_acao": "",
+    "setor": "",
+    "instrumento": "Subordinada - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26961"
   },
   {
     "emissor": "MOKA FUND I FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS MULTISSETORIAL",
@@ -50346,10 +50346,10 @@
     "tipo_rating": "FIDC",
     "rating": "C",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2023-10-10",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27136"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26462"
   },
   {
     "emissor": "MUNDIAL FIDC SERVICOS",
@@ -50745,7 +50745,7 @@
     "dt_acao": "2024-08-30",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4747/NAGRO_GHIA_FIAGRO_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4746/NAGRO_GHIA_FIAGRO_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "NAIA ZETTA VENTURE DEBT FIDC",
@@ -51690,10 +51690,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "",
-    "dt_acao": "2021-03-26",
+    "dt_acao": "2020-05-07",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3772/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3520/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "NOVO NORTE AEROPORTOS",
@@ -51726,10 +51726,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28953"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29122"
   },
   {
     "emissor": "NU ASSET MANAGEMENT",
@@ -52720,6 +52720,18 @@
     "cnpj": "02.773.542/0001-22",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
+    "rating": "AAAsf(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-06-24",
+    "setor": "",
+    "instrumento": "notes ser 1",
+    "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues"
+  },
+  {
+    "emissor": "OPEA SECURITIZADORA 2019",
+    "cnpj": "02.773.542/0001-22",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
     "rating": "WDsf(bra)",
     "outlook": "",
     "dt_acao": "2019-12-05",
@@ -52760,8 +52772,8 @@
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-06-24",
     "setor": "",
-    "instrumento": "notes ser 3",
-    "link": "https://www.fitchratings.com/entity/true-securitizadora-2022-1-2-3-assai-97419780#issues"
+    "instrumento": "notes ser 1",
+    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2022-508-rede-d-or-97370848#issues"
   },
   {
     "emissor": "OPEA SECURITIZADORA 2023",
@@ -52806,10 +52818,10 @@
     "tipo_rating": "National Long Term Rating",
     "rating": "AAAsf(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-06-22",
+    "dt_acao": "2026-06-24",
     "setor": "",
     "instrumento": "notes",
-    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2026-608-1-iguatemi-97904782#issues"
+    "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2026-588-1-2-3-allos-97871091#issues"
   },
   {
     "emissor": "OPERA FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISETORIAL",
@@ -55194,10 +55206,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "Estável",
-    "dt_acao": "2018-08-22",
+    "dt_acao": "2018-08-17",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3010/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3012/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "PORTO PRIMAVERA TRANSMISSORA ENERGIA",
@@ -58672,11 +58684,11 @@
     "cnpj": "44.395.262/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CCC",
+    "rating": "C",
     "outlook": "Estável",
     "dt_acao": "",
     "setor": "",
-    "instrumento": "Senior - Longo prazo",
+    "instrumento": "Subordinada - Longo prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/27638"
   },
   {
@@ -58684,11 +58696,11 @@
     "cnpj": "44.395.262/0001-78",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "C",
+    "rating": "CCC",
     "outlook": "Estável",
     "dt_acao": "",
     "setor": "",
-    "instrumento": "Subordinada - Longo prazo",
+    "instrumento": "Senior - Longo prazo",
     "link": "https://www.liberumratings.com.br/detalhes-ativo/27638"
   },
   {
@@ -61038,10 +61050,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28924"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29115"
   },
   {
     "emissor": "SIMPAR",
@@ -61120,36 +61132,36 @@
     "cnpj": "48.928.851/0001-25",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CCC",
-    "outlook": "Negativa",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28990"
-  },
-  {
-    "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "48.928.851/0001-25",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CCC",
-    "outlook": "Negativa",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Mezanino - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28990"
-  },
-  {
-    "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-    "cnpj": "48.928.851/0001-25",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
     "rating": "CP5",
     "outlook": "Negativa",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Mezanino - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28990"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29112"
+  },
+  {
+    "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "48.928.851/0001-25",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CCC",
+    "outlook": "Negativa",
+    "dt_acao": "2026-07-29",
+    "setor": "",
+    "instrumento": "Mezanino - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29112"
+  },
+  {
+    "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "48.928.851/0001-25",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CCC",
+    "outlook": "Negativa",
+    "dt_acao": "2026-07-29",
+    "setor": "",
+    "instrumento": "Subordinada - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29112"
   },
   {
     "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
@@ -61158,10 +61170,10 @@
     "tipo_rating": "FIDC",
     "rating": "B+",
     "outlook": "Negativa",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28990"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29112"
   },
   {
     "emissor": "SIMULTI FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
@@ -61170,10 +61182,10 @@
     "tipo_rating": "FIDC",
     "rating": "CP5",
     "outlook": "Negativa",
-    "dt_acao": "",
+    "dt_acao": "2026-07-29",
     "setor": "",
     "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28990"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29112"
   },
   {
     "emissor": "SINAI CONSIG FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
@@ -62914,6 +62926,18 @@
     "setor": "",
     "instrumento": "",
     "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1000166"
+  },
+  {
+    "emissor": "STRESS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "C",
+    "outlook": "Estável",
+    "dt_acao": "2026-07-29",
+    "setor": "",
+    "instrumento": "Subordinada - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29125"
   },
   {
     "emissor": "STRESS FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS",
@@ -66186,10 +66210,10 @@
     "tipo_rating": "FIDC",
     "rating": "B",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2022-12-15",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27536"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25352"
   },
   {
     "emissor": "URUS FIDC",
@@ -69004,24 +69028,24 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CP4",
+    "rating": "BB+",
     "outlook": "Estável",
-    "dt_acao": "2023-10-25",
+    "dt_acao": "2023-10-24",
     "setor": "",
-    "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26545"
+    "instrumento": "Senior - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26533"
   },
   {
     "emissor": "VIXTRA FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "BB+",
+    "rating": "CP4",
     "outlook": "Estável",
-    "dt_acao": "2023-10-25",
+    "dt_acao": "2023-10-24",
     "setor": "",
-    "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26545"
+    "instrumento": "Senior - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26533"
   },
   {
     "emissor": "VIXTRA FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
