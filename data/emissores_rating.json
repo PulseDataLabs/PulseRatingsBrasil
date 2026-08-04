@@ -4265,7 +4265,7 @@
     "agencia": "S&P",
     "tipo_rating": "Escala Nacional Brasil de Longo Prazo",
     "rating": "brAAA",
-    "outlook": "Stable",
+    "outlook": "Watch Neg",
     "dt_acao": "2019-09-24",
     "setor": "",
     "instrumento": "",
@@ -22422,10 +22422,10 @@
     "tipo_rating": "FIDC",
     "rating": "B",
     "outlook": "Estável",
-    "dt_acao": "2023-01-18",
+    "dt_acao": "",
     "setor": "",
     "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/25448"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/28980"
   },
   {
     "emissor": "DIP FINANCING 11 FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
@@ -22881,19 +22881,7 @@
     "dt_acao": "2024-06-05",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3567/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "ECOAGRO INSUMOS FIDC NP",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
-    "rating": "brB",
-    "outlook": "",
-    "dt_acao": "2020-06-19",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3567/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/3385/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "ECOAGRO INSUMOS FIDC NP",
@@ -22906,6 +22894,18 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/3385/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "ECOAGRO INSUMOS FIDC NP",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB",
+    "outlook": "",
+    "dt_acao": "2020-06-19",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/3567/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "ECORIOMINAS CONCESSIONARIA RODOVIAS",
@@ -24075,18 +24075,6 @@
     "emissor": "ENERGISA MINAS RIO",
     "cnpj": "19.527.639/0001-58",
     "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AA+(bra)",
-    "outlook": "",
-    "dt_acao": "2026-04-30",
-    "setor": "",
-    "instrumento": "EMR_18th Deb_2nd Serie_BRL100m_2031",
-    "link": "https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868#issues"
-  },
-  {
-    "emissor": "ENERGISA MINAS RIO",
-    "cnpj": "19.527.639/0001-58",
-    "agencia": "Fitch",
     "tipo_rating": "Long Term Issuer Default Rating",
     "rating": "BB",
     "outlook": "Rating Outlook Stable",
@@ -24118,6 +24106,18 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868"
+  },
+  {
+    "emissor": "ENERGISA MINAS RIO",
+    "cnpj": "19.527.639/0001-58",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AA+(bra)",
+    "outlook": "",
+    "dt_acao": "2026-04-30",
+    "setor": "",
+    "instrumento": "EMR_18th Deb_2nd Serie_BRL100m_2031",
+    "link": "https://www.fitchratings.com/entity/energisa-minas-gerais-distribuidora-de-energia-s-a-83598868#issues"
   },
   {
     "emissor": "ENERGISA MINAS RIO",
@@ -24209,11 +24209,11 @@
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
-    "outlook": "Rating Outlook Stable",
+    "outlook": "",
     "dt_acao": "2026-04-30",
     "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965"
+    "instrumento": "ERO_13th Deb_3rd Series_BRL30mln_2040",
+    "link": "https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965#issues"
   },
   {
     "emissor": "ENERGISA RONDONIA DISTRIBUIDORA ENERGIA",
@@ -24221,11 +24221,11 @@
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
-    "outlook": "",
+    "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-04-30",
     "setor": "",
-    "instrumento": "ERO_13th Deb_1st Series_BRL230mln_2032",
-    "link": "https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965#issues"
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/energisa-rondonia-distribuidora-de-energia-sa-97096965"
   },
   {
     "emissor": "ENERGISA SERGIPE",
@@ -24305,11 +24305,11 @@
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
-    "outlook": "Rating Outlook Stable",
+    "outlook": "",
     "dt_acao": "2026-04-30",
     "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/energisa-sul-sudeste-distribuidora-de-energia-s-a-96689833"
+    "instrumento": "ESS_15th Deb Issuance_1st Serie_BRL120mln_2035",
+    "link": "https://www.fitchratings.com/entity/energisa-sul-sudeste-distribuidora-de-energia-s-a-96689833#issues"
   },
   {
     "emissor": "ENERGISA SUL SUDESTE",
@@ -24317,11 +24317,11 @@
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
-    "outlook": "",
+    "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-04-30",
     "setor": "",
-    "instrumento": "ESS_15th Deb Issuance_1st Serie_BRL120mln_2035",
-    "link": "https://www.fitchratings.com/entity/energisa-sul-sudeste-distribuidora-de-energia-s-a-96689833#issues"
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/energisa-sul-sudeste-distribuidora-de-energia-s-a-96689833"
   },
   {
     "emissor": "ENERGISA SUL SUDESTE",
@@ -24559,6 +24559,18 @@
     "rating": "BBB(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2025-08-13",
+    "setor": "",
+    "instrumento": "BRL 23 mln bond/note 01-Jun-2028",
+    "link": "https://www.fitchratings.com/entity/eolica-serra-das-vacas-holding-sa-96337693#issues"
+  },
+  {
+    "emissor": "EOLICA SERRA VACAS HOLDING",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "BBB(bra)",
+    "outlook": "Rating Outlook Negative",
+    "dt_acao": "2026-08-03",
     "setor": "",
     "instrumento": "BRL 34 mln bond/note 01-Jun-2030",
     "link": "https://www.fitchratings.com/entity/eolica-serra-das-vacas-holding-sa-96337693#issues"
@@ -25660,9 +25672,9 @@
     "cnpj": "79.430.682/0001-22",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "A-(bra)",
+    "rating": "BBB(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-12-16",
+    "dt_acao": "2026-08-03",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/farmacia-e-drogaria-nissei-sa-97127704"
@@ -26284,24 +26296,24 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brB+",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBB",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB+",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
@@ -26901,7 +26913,7 @@
     "dt_acao": "2024-08-13",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4699/FIDC_Cap_-_Subordinadas_Preferenciais_"
+    "link": "https://www.austin.com.br/Historico-Rating/4698/FIDC_Cap_-_Subordinadas_Preferenciais_"
   },
   {
     "emissor": "FIDC CAPITAL BR",
@@ -27378,10 +27390,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brBB-",
     "outlook": "Estável",
-    "dt_acao": "2024-02-08",
+    "dt_acao": "2024-07-19",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4453/FIDC_FCT_Consignado_II_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4629/FIDC_FCT_Consignado_II_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "FIDC FENIX",
@@ -27484,24 +27496,24 @@
     "cnpj": "",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brB-",
-    "outlook": "Estável",
-    "dt_acao": "2024-08-12",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FIDC IC SOMAPAY",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBB+",
     "outlook": "Estável",
     "dt_acao": "2024-08-12",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FIDC IC SOMAPAY",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB-",
+    "outlook": "Estável",
+    "dt_acao": "2024-08-12",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC INCLUSAO FINANCEIRA",
@@ -28660,24 +28672,24 @@
     "cnpj": "",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brC",
-    "outlook": "Negativa",
-    "dt_acao": "2026-07-03",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5246/FIDC_Sinai_Consig_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FIDC SINAI CONSIG",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brB",
     "outlook": "Estável",
     "dt_acao": "2025-12-29",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/5193/FIDC_Sinai_Consig_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FIDC SINAI CONSIG",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brC",
+    "outlook": "Negativa",
+    "dt_acao": "2026-07-03",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5246/FIDC_Sinai_Consig_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC SP RECEBIVEIS PREMIUM I",
@@ -30438,10 +30450,10 @@
     "tipo_rating": "FIDC",
     "rating": "B+",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2023-11-09",
     "setor": "",
     "instrumento": "Única - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27009"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/26579"
   },
   {
     "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS ALI CREDITO",
@@ -36986,6 +36998,42 @@
   {
     "emissor": "GIGA MAIS FIBRA TELECOMUNICACOES",
     "cnpj": "07.714.104/0001-07",
+    "agencia": "Fitch",
+    "tipo_rating": "Long Term Issuer Default Rating",
+    "rating": "B+",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-08-03",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/giga-mais-fibra-telecomunicacoes-sa-97922546"
+  },
+  {
+    "emissor": "GIGA MAIS FIBRA TELECOMUNICACOES",
+    "cnpj": "07.714.104/0001-07",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "A(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-08-03",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/giga-mais-fibra-telecomunicacoes-sa-97922546"
+  },
+  {
+    "emissor": "GIGA MAIS FIBRA TELECOMUNICACOES",
+    "cnpj": "07.714.104/0001-07",
+    "agencia": "Fitch",
+    "tipo_rating": "Local Currency Long Term Issuer Default Rating",
+    "rating": "B+",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-08-03",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/giga-mais-fibra-telecomunicacoes-sa-97922546"
+  },
+  {
+    "emissor": "GIGA MAIS FIBRA TELECOMUNICACOES",
+    "cnpj": "07.714.104/0001-07",
     "agencia": "S&P",
     "tipo_rating": "Escala Nacional Brasil de Longo Prazo",
     "rating": "brA-",
@@ -40194,7 +40242,7 @@
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-08-11",
+    "dt_acao": "2026-08-03",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/iguatemi-sa-97371311"
@@ -40206,10 +40254,22 @@
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-08-11",
+    "dt_acao": "2026-08-03",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/iguatemi-empresa-de-shopping-centers-sa-91834892"
+  },
+  {
+    "emissor": "IGUATEMI EMPRESA SHOPPING CENTERS",
+    "cnpj": "51.218.147/0001-93",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AAA(bra)",
+    "outlook": "",
+    "dt_acao": "2026-08-03",
+    "setor": "",
+    "instrumento": "BRL 400 mln 10th debentures 25-Sep-2027",
+    "link": "https://www.fitchratings.com/entity/iguatemi-empresa-de-shopping-centers-sa-91834892#issues"
   },
   {
     "emissor": "IGUATEMI EMPRESA SHOPPING CENTERS",
@@ -40221,18 +40281,6 @@
     "dt_acao": "2026-07-09",
     "setor": "",
     "instrumento": "BRL 500 mln 11th debentures due 2028",
-    "link": "https://www.fitchratings.com/entity/iguatemi-empresa-de-shopping-centers-sa-91834892#issues"
-  },
-  {
-    "emissor": "IGUATEMI EMPRESA SHOPPING CENTERS",
-    "cnpj": "51.218.147/0001-93",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "AAA(bra)",
-    "outlook": "",
-    "dt_acao": "2025-08-11",
-    "setor": "",
-    "instrumento": "BRL 400 mln 10th debentures 25-Sep-2027",
     "link": "https://www.fitchratings.com/entity/iguatemi-empresa-de-shopping-centers-sa-91834892#issues"
   },
   {
@@ -47729,11 +47777,11 @@
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
-    "outlook": "Estável",
-    "dt_acao": "2020-10-09",
+    "outlook": "",
+    "dt_acao": "2021-02-03",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3627/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/3731/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
   },
   {
     "emissor": "MERCANTIL PRODUTOS ACO FIDC",
@@ -47741,11 +47789,11 @@
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
     "rating": "brBBB",
-    "outlook": "",
-    "dt_acao": "2021-02-03",
+    "outlook": "Estável",
+    "dt_acao": "2020-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3731/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
+    "link": "https://www.austin.com.br/Historico-Rating/3627/Mercantil_Produtos_de_Aço_FIDC__-_Seniores_Única"
   },
   {
     "emissor": "METRO BH",
@@ -51810,10 +51858,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "",
-    "dt_acao": "2020-05-07",
+    "dt_acao": "2021-03-26",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3520/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3772/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "NOVO NORTE AEROPORTOS",
@@ -53668,24 +53716,24 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CP4",
+    "rating": "BB",
     "outlook": "Estável",
-    "dt_acao": "2023-07-26",
+    "dt_acao": "2022-12-20",
     "setor": "",
-    "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26014"
+    "instrumento": "Senior - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25362"
   },
   {
     "emissor": "PACIFIC FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "BB",
+    "rating": "CP4",
     "outlook": "Estável",
-    "dt_acao": "2023-07-26",
+    "dt_acao": "2022-12-20",
     "setor": "",
-    "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26014"
+    "instrumento": "Senior - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25362"
   },
   {
     "emissor": "PACIFIC FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO",
@@ -53694,10 +53742,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "2023-07-26",
+    "dt_acao": "2022-12-20",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/26014"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25362"
   },
   {
     "emissor": "PAGBEM FUNDO INVESTIMENTOS DIREITOS CREDITORIOS",
@@ -54870,7 +54918,7 @@
     "tipo_rating": "Long Term Rating",
     "rating": "A+",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-08-11",
+    "dt_acao": "2026-08-03",
     "setor": "",
     "instrumento": "BRL 220 mln bond/note 15-Aug-2034",
     "link": "https://www.fitchratings.com/entity/pirapora-solar-holding-sa-96601674#issues"
@@ -54882,7 +54930,7 @@
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-08-11",
+    "dt_acao": "2026-08-03",
     "setor": "",
     "instrumento": "BRL 220 mln bond/note 15-Aug-2034",
     "link": "https://www.fitchratings.com/entity/pirapora-solar-holding-sa-96601674#issues"
@@ -55326,10 +55374,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "Estável",
-    "dt_acao": "2018-08-22",
+    "dt_acao": "2018-08-17",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3010/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3012/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "PORTO PRIMAVERA TRANSMISSORA ENERGIA",
@@ -68272,48 +68320,12 @@
     "cnpj": "",
     "agencia": "Liberum",
     "tipo_rating": "FIDC",
-    "rating": "CCC",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28892"
-  },
-  {
-    "emissor": "VIA CAPITAL ADAMANTUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CP5",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Mezanino - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28892"
-  },
-  {
-    "emissor": "VIA CAPITAL ADAMANTUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
-    "rating": "CCC",
-    "outlook": "Estável",
-    "dt_acao": "",
-    "setor": "",
-    "instrumento": "Mezanino - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28892"
-  },
-  {
-    "emissor": "VIA CAPITAL ADAMANTUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-    "cnpj": "",
-    "agencia": "Liberum",
-    "tipo_rating": "FIDC",
     "rating": "CP4",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-08-03",
     "setor": "",
     "instrumento": "Senior - Curto prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28892"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29130"
   },
   {
     "emissor": "VIA CAPITAL ADAMANTUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
@@ -68322,10 +68334,46 @@
     "tipo_rating": "FIDC",
     "rating": "BB+",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2026-08-03",
     "setor": "",
     "instrumento": "Senior - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/28892"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29130"
+  },
+  {
+    "emissor": "VIA CAPITAL ADAMANTUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CCC",
+    "outlook": "Estável",
+    "dt_acao": "2026-08-03",
+    "setor": "",
+    "instrumento": "Subordinada - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29130"
+  },
+  {
+    "emissor": "VIA CAPITAL ADAMANTUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CCC",
+    "outlook": "Estável",
+    "dt_acao": "2026-08-03",
+    "setor": "",
+    "instrumento": "Mezanino - Longo prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29130"
+  },
+  {
+    "emissor": "VIA CAPITAL ADAMANTUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
+    "cnpj": "",
+    "agencia": "Liberum",
+    "tipo_rating": "FIDC",
+    "rating": "CP5",
+    "outlook": "Estável",
+    "dt_acao": "2026-08-03",
+    "setor": "",
+    "instrumento": "Mezanino - Curto prazo",
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/29130"
   },
   {
     "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",

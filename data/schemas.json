@@ -59,37 +59,37 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "CSN Mineracao S.A."
+        "example": "Giga Mais Fibra Telecomunicacoes S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/csn-mineracao-sa-97398072"
+        "example": "https://www.fitchratings.com/entity/giga-mais-fibra-telecomunicacoes-sa-97922546"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "National Long Term Rating"
+        "example": "Long Term Issuer Default Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "B(bra)"
+        "example": "B+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-07-31"
+        "example": "2026-08-03"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Downgrade"
+        "example": "New Rating"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Watch Negative"
+        "example": "Rating Outlook Stable"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "CSN Mineracao S.A."
+        "example": "Giga Mais Fibra Telecomunicacoes S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/csn-mineracao-sa-97398072"
+        "example": "https://www.fitchratings.com/entity/giga-mais-fibra-telecomunicacoes-sa-97922546"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB-"
+        "example": "brB"
       },
       {
         "name": "de_rating_cp",
@@ -293,7 +293,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB-"
+        "example": "brB"
       },
       {
         "name": "dt_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11648"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "CLM FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISSETORIAL"
+        "example": "VIA CAPITAL ADAMANTUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MULTISSETORIAL"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29132"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29130"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "CLM FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISSETORIAL"
+        "example": "VIA CAPITAL ADAMANTUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MULTISSETORIAL"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29132"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29130"
       },
       {
         "name": "no_tipo_rating",
@@ -362,17 +362,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "B"
+        "example": "CP4"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-07-31"
+        "example": "2026-08-03"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Encerramento"
       },
       {
         "name": "de_outlook",
@@ -382,12 +382,12 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Subordinada"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Longo prazo"
+        "example": "Curto prazo"
       }
     ]
   },
@@ -456,7 +456,7 @@
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB-"
+        "example": "brB"
       },
       {
         "name": "de_outlook",
@@ -486,7 +486,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_devedor_vinculado",
