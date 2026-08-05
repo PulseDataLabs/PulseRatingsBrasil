@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Vert Cia Securitizadora 2026-42-1,2,3,4,5 (J&F)"
+        "example": "Riza Securitizadora 2022-4-417 (CSN Cimentos)"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/vert-cia-securitizadora-2026-42-1-2-3-4-5-j-f-97895258"
+        "example": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-417-csn-cimentos-97341305"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
+        "example": "ACCESS FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brCCC"
+        "example": "brBBB+"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brCCC"
+        "example": "brBBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-15"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Inicial"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11202"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACO CEARENSE FIDC"
+        "example": "ACCESS FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
+        "example": "ACCESS FIDC - SENIORES ÚNICA"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brCCC"
+        "example": "brBBB+"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-15"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_devedor_vinculado",
