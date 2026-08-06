@@ -16,12 +16,12 @@
     "max": "2026-06-04"
   },
   "fitch_emissores.csv": {
-    "min": "2026-08-05",
-    "max": "2026-08-05"
+    "min": "2026-08-06",
+    "max": "2026-08-06"
   },
   "standard_and_poors_emissores.csv": {
-    "min": "2026-08-05",
-    "max": "2026-08-05"
+    "min": "2026-08-06",
+    "max": "2026-08-06"
   },
   "moodys_emissores.csv": {
     "min": "2026-08-04",
@@ -29,7 +29,7 @@
   },
   "fitch_ratings.csv": {
     "min": "2026-06-05",
-    "max": "2026-08-05"
+    "max": "2026-08-06"
   },
   "moodys_ratings.csv": {
     "min": "2026-06-04",
@@ -37,30 +37,30 @@
   },
   "standard_and_poors_ratings.csv": {
     "min": "2026-06-10",
-    "max": "2026-08-05"
+    "max": "2026-08-06"
   },
   "austin_emissores.csv": {
-    "min": "2026-08-05",
-    "max": "2026-08-05"
+    "min": "2026-08-06",
+    "max": "2026-08-06"
   },
   "austin_ratings.csv": {
-    "min": "2026-08-05",
-    "max": "2026-08-05"
+    "min": "2026-08-06",
+    "max": "2026-08-06"
   },
   "liberum_emissores.csv": {
-    "min": "2026-08-05",
-    "max": "2026-08-05"
+    "min": "2026-08-06",
+    "max": "2026-08-06"
   },
   "liberum_ratings.csv": {
     "min": "2026-07-22",
-    "max": "2026-08-05"
+    "max": "2026-08-06"
   },
   "ratings_emissores.csv": {
     "min": "2026-06-04",
-    "max": "2026-08-05"
+    "max": "2026-08-06"
   },
   "ratings_emissoes.csv": {
     "min": "2026-06-04",
-    "max": "2026-08-05"
+    "max": "2026-08-06"
   }
 }
