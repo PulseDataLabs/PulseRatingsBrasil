@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4790/Adjud_I_FIDC_NP__-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11203"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "GARSON BR FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA"
+        "example": "LARCA CONSIGNADO FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29111"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29147"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "GARSON BR FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA"
+        "example": "LARCA CONSIGNADO FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29111"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29147"
       },
       {
         "name": "no_tipo_rating",
@@ -367,17 +367,17 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-06"
+        "example": "2026-08-10"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Encerramento"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": "Negativa"
       },
       {
         "name": "de_classe",
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ADJUD I FIDC NP"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4790/Adjud_I_FIDC_NP__-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_devedor_vinculado",
