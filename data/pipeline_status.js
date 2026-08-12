@@ -1,6 +1,6 @@
 window.PULSERATINGS_PIPELINE_STATUS = {
-  "timestamp": "2026-08-11T22:31:15.822747",
-  "elapsed_seconds": 624.9965627193451,
+  "timestamp": "2026-08-12T07:12:01.497896",
+  "elapsed_seconds": 555.446676492691,
   "status": "success",
   "summary": {
     "total": 10,
@@ -35,63 +35,63 @@ window.PULSERATINGS_PIPELINE_STATUS = {
     },
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 17.62653636932373,
+      "elapsed_seconds": 17.121198177337646,
       "error": null,
-      "timestamp": "2026-08-11T22:31:15.822906"
+      "timestamp": "2026-08-12T07:12:01.498045"
     },
     "standard_and_poors_emissores": {
       "status": "success",
-      "elapsed_seconds": 29.90748643875122,
+      "elapsed_seconds": 29.310293912887573,
       "error": null,
-      "timestamp": "2026-08-11T22:31:15.822909"
+      "timestamp": "2026-08-12T07:12:01.498048"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 275.74383878707886,
+      "elapsed_seconds": 271.6935694217682,
       "error": null,
-      "timestamp": "2026-08-11T22:31:15.822917"
+      "timestamp": "2026-08-12T07:12:01.498054"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 61.327736616134644,
+      "elapsed_seconds": 53.14557766914368,
       "error": null,
-      "timestamp": "2026-08-11T22:31:15.822921"
+      "timestamp": "2026-08-12T07:12:01.498057"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 297.66670536994934,
+      "elapsed_seconds": 257.19699883461,
       "error": null,
-      "timestamp": "2026-08-11T22:31:15.822923"
+      "timestamp": "2026-08-12T07:12:01.498059"
     },
     "standard_and_poors_ratings": {
       "status": "success",
-      "elapsed_seconds": 349.2373504638672,
+      "elapsed_seconds": 283.74711537361145,
       "error": null,
-      "timestamp": "2026-08-11T22:31:15.822925"
+      "timestamp": "2026-08-12T07:12:01.498060"
     },
     "austin_emissores": {
       "status": "success",
-      "elapsed_seconds": 6.321473121643066,
+      "elapsed_seconds": 5.921061277389526,
       "error": null,
-      "timestamp": "2026-08-11T22:31:15.822901"
+      "timestamp": "2026-08-12T07:12:01.498041"
     },
     "austin_ratings": {
       "status": "success",
-      "elapsed_seconds": 23.086962938308716,
+      "elapsed_seconds": 25.849915981292725,
       "error": null,
-      "timestamp": "2026-08-11T22:31:15.822919"
+      "timestamp": "2026-08-12T07:12:01.498055"
     },
     "liberum_emissores": {
       "status": "success",
-      "elapsed_seconds": 59.55511832237244,
+      "elapsed_seconds": 45.310035943984985,
       "error": null,
-      "timestamp": "2026-08-11T22:31:15.822911"
+      "timestamp": "2026-08-12T07:12:01.498050"
     },
     "liberum_ratings": {
       "status": "success",
-      "elapsed_seconds": 60.17220735549927,
+      "elapsed_seconds": 46.58064937591553,
       "error": null,
-      "timestamp": "2026-08-11T22:31:15.822914"
+      "timestamp": "2026-08-12T07:12:01.498052"
     }
   },
   "drifts": {}
