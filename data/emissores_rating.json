@@ -4480,9 +4480,9 @@
     "cnpj": "09.305.994/0001-29",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "BBB-(bra)",
+    "rating": "BB+(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-03-04",
+    "dt_acao": "2026-08-12",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/azul-sa-94775300"
@@ -22688,20 +22688,8 @@
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-07-20",
     "setor": "",
-    "instrumento": "loans ser 2",
-    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-fs-97340470#issues"
-  },
-  {
-    "emissor": "ECO SECURITIZADORA 2022",
-    "cnpj": "10.753.164/0001-43",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
-    "rating": "PIFsf(bra)",
-    "outlook": "",
-    "dt_acao": "2026-02-18",
-    "setor": "",
-    "instrumento": "loans ser 2",
-    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-fs-97340470#issues"
+    "instrumento": "loans ser 1",
+    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-167-2-fs-agri-97377838#issues"
   },
   {
     "emissor": "ECO SECURITIZADORA 2023",
@@ -22712,8 +22700,8 @@
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-07-20",
     "setor": "",
-    "instrumento": "certificates ser 2",
-    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2023-264-1-2-fs-97506356#issues"
+    "instrumento": "notes ser 4",
+    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2023-1-2-3-4-fs-97550365#issues"
   },
   {
     "emissor": "ECO SECURITIZADORA 2024",
@@ -22724,8 +22712,8 @@
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-07-20",
     "setor": "",
-    "instrumento": "notes ser 4",
-    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2024-310-1-2-3-4-fs-97571861#issues"
+    "instrumento": "certificates ser 2",
+    "link": "https://www.fitchratings.com/entity/eco-securitizadora-2024-331-1-2-fs-97612157#issues"
   },
   {
     "emissor": "ECO SECURITIZADORA 2025",
@@ -22833,19 +22821,7 @@
     "dt_acao": "2024-06-05",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3567/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "ECOAGRO INSUMOS FIDC NP",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
-    "rating": "brB",
-    "outlook": "",
-    "dt_acao": "2020-06-19",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3567/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/3385/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "ECOAGRO INSUMOS FIDC NP",
@@ -22858,6 +22834,18 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/3385/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "ECOAGRO INSUMOS FIDC NP",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB",
+    "outlook": "",
+    "dt_acao": "2020-06-19",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/3567/Ecoagro_Insumos_FIDC_NP_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "ECORIOMINAS CONCESSIONARIA RODOVIAS",
@@ -26248,24 +26236,12 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBB",
+    "rating": "brBBB",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FICTOR INVEST FIDC",
-    "cnpj": "12.536.691/0001-21",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
-    "rating": "brBB-",
-    "outlook": "Negativa",
-    "dt_acao": "2025-10-09",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FICTOR INVEST FIDC",
@@ -26284,12 +26260,24 @@
     "cnpj": "12.536.691/0001-21",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brBBB",
+    "rating": "brBB",
     "outlook": "Negativa",
     "dt_acao": "2025-10-09",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+    "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FICTOR INVEST FIDC",
+    "cnpj": "12.536.691/0001-21",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brBB-",
+    "outlook": "Negativa",
+    "dt_acao": "2025-10-09",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC",
@@ -27484,24 +27472,24 @@
     "cnpj": "",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brB-",
-    "outlook": "Estável",
-    "dt_acao": "2024-08-12",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FIDC IC SOMAPAY",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBB+",
     "outlook": "Estável",
     "dt_acao": "2024-08-12",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FIDC IC SOMAPAY",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB-",
+    "outlook": "Estável",
+    "dt_acao": "2024-08-12",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC INCLUSAO FINANCEIRA",
@@ -51930,10 +51918,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "",
-    "dt_acao": "2021-03-26",
+    "dt_acao": "2020-05-07",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3772/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3520/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "NOVO NORTE AEROPORTOS",
@@ -68260,36 +68248,24 @@
     "cnpj": "25.005.683/0001-09",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "AAAsf(bra)",
-    "outlook": "Rating Outlook Stable",
-    "dt_acao": "2026-04-29",
-    "setor": "",
-    "instrumento": "bonds ser 3",
-    "link": "https://www.fitchratings.com/entity/vert-cscf-2024-7-1-2-3-bmg-7-97645517#issues"
-  },
-  {
-    "emissor": "VERT CSCF 2024",
-    "cnpj": "25.005.683/0001-09",
-    "agencia": "Fitch",
-    "tipo_rating": "National Long Term Rating",
     "rating": "AA-sf(bra)",
     "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-04-29",
     "setor": "",
-    "instrumento": "bonds ser 3",
-    "link": "https://www.fitchratings.com/entity/vert-cscf-2024-7-1-2-3-bmg-7-97645517#issues"
+    "instrumento": "bonds ser 2024-1,2,3",
+    "link": "https://www.fitchratings.com/entity/vert-cscf-2024-1-2-3-bmg-6-97613555#issues"
   },
   {
     "emissor": "VERT CSCF 2024",
     "cnpj": "25.005.683/0001-09",
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
-    "rating": "NRsf",
-    "outlook": "",
-    "dt_acao": "2024-09-25",
+    "rating": "AAAsf(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-04-29",
     "setor": "",
-    "instrumento": "bonds ser 3",
-    "link": "https://www.fitchratings.com/entity/vert-cscf-2024-7-1-2-3-bmg-7-97645517#issues"
+    "instrumento": "bonds ser 2024-1,2,3",
+    "link": "https://www.fitchratings.com/entity/vert-cscf-2024-1-2-3-bmg-6-97613555#issues"
   },
   {
     "emissor": "VERTERA HOLDING",

@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AXIA Energia S.A."
+        "example": "Azul S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/centrais-eletricas-brasileiras-sa-eletrobras-80464173"
+        "example": "https://www.fitchratings.com/entity/azul-sa-94775300"
       },
       {
         "name": "no_tipo_rating",
@@ -74,17 +74,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BB"
+        "example": "B-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-11"
+        "example": "2026-03-04"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Upgrade"
+        "example": "New Rating"
       },
       {
         "name": "de_outlook",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AXIA Energia Nordeste S.A."
+        "example": "Azul S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/companhia-hidro-eletrica-do-sao-francisco-sa-95763491"
+        "example": "https://www.fitchratings.com/entity/azul-sa-94775300"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brA"
       },
       {
         "name": "de_rating_cp",
@@ -293,27 +293,27 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB"
+        "example": "brA"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2025-04-01"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Inicial"
+        "example": "Rating Preliminar"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": ""
       },
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACO CEARENSE FIDC"
+        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
       },
       {
         "name": "no_tipo_rating",
@@ -471,22 +471,22 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brA"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": ""
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2025-04-01"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_devedor_vinculado",
