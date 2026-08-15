@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Azul S.A."
+        "example": "Braskem S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/azul-sa-94775300"
+        "example": "https://www.fitchratings.com/entity/braskem-sa-80092141"
       },
       {
         "name": "no_tipo_rating",
@@ -74,22 +74,22 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "B-"
+        "example": "RD"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-03-04"
+        "example": "2026-08-14"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "New Rating"
+        "example": "Downgrade"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Stable"
+        "example": ""
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FIDC Consig Premium II - Responsabilidade Limitada"
+        "example": "Braskem S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/fidc-consig-premium-ii-responsabilidade-limitada-97936914"
+        "example": "https://www.fitchratings.com/entity/braskem-sa-80092141"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB-"
+        "example": "brB"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBB-"
+        "example": "brB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11204"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS EMPÍRICA HOME EQUITY"
+        "example": "INOVA CREDTECH III FIDC SEGMENTO MULTICARTEIRA DE RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29165"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29179"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS EMPÍRICA HOME EQUITY"
+        "example": "INOVA CREDTECH III FIDC SEGMENTO MULTICARTEIRA DE RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29165"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29179"
       },
       {
         "name": "no_tipo_rating",
@@ -362,12 +362,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "A+"
+        "example": "CP4"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-13"
+        "example": "2026-08-14"
       },
       {
         "name": "de_acao_rating",
@@ -387,7 +387,7 @@
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Longo prazo"
+        "example": "Curto prazo"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ADJUD I FIDC NP"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB-"
+        "example": "brB"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_devedor_vinculado",
