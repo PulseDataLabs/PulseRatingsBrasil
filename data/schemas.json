@@ -59,37 +59,37 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Braskem S.A."
+        "example": "Eneva S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/braskem-sa-80092141"
+        "example": "https://www.fitchratings.com/entity/eneva-sa-96740180"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Long Term Issuer Default Rating"
+        "example": "National Long Term Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "RD"
+        "example": "AAA(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-14"
+        "example": "2026-08-17"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Downgrade"
+        "example": "Affirmed"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Rating Outlook Stable"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Braskem S.A."
+        "example": "Eneva S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/braskem-sa-80092141"
+        "example": "https://www.fitchratings.com/entity/eneva-sa-96740180"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "MAIS TODOS PF FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS FINANCEIRO RESPONSABILIDADE LIMITADA"
+        "example": "PINE LIFT I CARTÃO INSS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS – RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29172"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29173"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "MAIS TODOS PF FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS FINANCEIRO RESPONSABILIDADE LIMITADA"
+        "example": "PINE LIFT I CARTÃO INSS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS – RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29172"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29173"
       },
       {
         "name": "no_tipo_rating",
@@ -362,7 +362,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BB"
+        "example": "AA"
       },
       {
         "name": "dt_acao_rating",
