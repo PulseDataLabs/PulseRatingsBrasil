@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Light Servicos de Eletricidade S.A."
+        "example": "Light Energia S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/light-servicos-de-eletricidade-sa-91050690"
+        "example": "https://www.fitchratings.com/entity/light-energia-sa-91019690"
       },
       {
         "name": "no_tipo_rating",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Light Servicos de Eletricidade S.A."
+        "example": "Light Energia S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/light-servicos-de-eletricidade-sa-91050690"
+        "example": "https://www.fitchratings.com/entity/light-energia-sa-91019690"
       }
     ]
   },
