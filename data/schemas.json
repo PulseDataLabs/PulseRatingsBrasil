@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
+        "example": "ACR IV FIDC - SUBORDINADAS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brA"
+        "example": "brAA-"
       },
       {
         "name": "de_rating_cp",
@@ -293,27 +293,27 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brA"
+        "example": "brAA-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-04-01"
+        "example": "2024-08-08"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Preliminar"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Estável"
       },
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ACR_IV_FIDC/11045"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MEUCASHCARD"
+        "example": "R&G FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29183"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29145"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MEUCASHCARD"
+        "example": "R&G FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29183"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29145"
       },
       {
         "name": "no_tipo_rating",
@@ -362,17 +362,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP4"
+        "example": "A"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-18"
+        "example": "2026-08-19"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Encerramento"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -382,12 +382,12 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Mezanino"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Curto prazo"
+        "example": "Longo prazo"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC"
+        "example": "ACR IV FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
+        "example": "ACR IV FIDC - SUBORDINADAS"
       },
       {
         "name": "no_tipo_rating",
@@ -471,22 +471,22 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brA"
+        "example": "brAA-"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Estável"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-04-01"
+        "example": "2024-08-08"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
       },
       {
         "name": "no_devedor_vinculado",
