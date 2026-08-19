@@ -59,32 +59,32 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Eneva S.A."
+        "example": "Light Servicos de Eletricidade S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/eneva-sa-96740180"
+        "example": "https://www.fitchratings.com/entity/light-servicos-de-eletricidade-sa-91050690"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "National Long Term Rating"
+        "example": "Long Term Issuer Default Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AAA(bra)"
+        "example": "B-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-17"
+        "example": "2026-08-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Affirmed"
+        "example": "Upgrade"
       },
       {
         "name": "de_outlook",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Eneva S.A."
+        "example": "Light Servicos de Eletricidade S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/eneva-sa-96740180"
+        "example": "https://www.fitchratings.com/entity/light-servicos-de-eletricidade-sa-91050690"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
+        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
+        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brA"
       },
       {
         "name": "de_rating_cp",
@@ -293,27 +293,27 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brA"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-07-10"
+        "example": "2025-04-01"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Inicial"
+        "example": "Rating Preliminar"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": ""
       },
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ADGM_FIDC/10935"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "PINE LIFT I CARTÃO INSS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS – RESPONSABILIDADE LIMITADA"
+        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MEUCASHCARD"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29173"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29183"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "PINE LIFT I CARTÃO INSS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS – RESPONSABILIDADE LIMITADA"
+        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MEUCASHCARD"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29173"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29183"
       },
       {
         "name": "no_tipo_rating",
@@ -362,17 +362,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AA"
+        "example": "CP4"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-17"
+        "example": "2026-08-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Encerramento"
       },
       {
         "name": "de_outlook",
@@ -382,12 +382,12 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": "Mezanino"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Longo prazo"
+        "example": "Curto prazo"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ADGM FIDC"
+        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
+        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
       },
       {
         "name": "no_tipo_rating",
@@ -471,22 +471,22 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brA"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": ""
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-07-10"
+        "example": "2025-04-01"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
+        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_devedor_vinculado",
