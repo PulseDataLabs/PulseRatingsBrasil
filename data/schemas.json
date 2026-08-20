@@ -7,17 +7,17 @@
       {
         "name": "no_setor",
         "type": "str",
-        "example": ""
+        "example": "Empresas Não-Financeiras"
       },
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Western Asset Management DTVM Ltda."
+        "example": "AMBEV S.A."
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Avaliações de Qualidade de Gestor de Investimentos"
+        "example": "Rating de Emissor"
       },
       {
         "name": "de_instrumento",
@@ -27,27 +27,27 @@
       {
         "name": "de_objeto",
         "type": "str",
-        "example": "Avaliação de Qualidade de Gestor de Investimentos (MQ)"
+        "example": "Rating de Emissor"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "MQ1.br"
+        "example": "AAA.br"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "-"
+        "example": "Perspectiva estável"
       },
       {
         "name": "dt_rating",
         "type": "date",
-        "example": "2021-06-24"
+        "example": "2026-03-17"
       },
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-07-31"
+        "example": "2026-08-19"
       }
     ]
   },
@@ -180,7 +180,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Western Asset Management DTVM Ltda."
+        "example": "AMBEV S.A."
       },
       {
         "name": "link",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Light Energia S.A."
+        "example": "Stark Bank S.A. - Instituicao de Pagamento"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/light-energia-sa-91019690"
+        "example": "https://www.fitchratings.com/entity/stark-bank-sa-instituicao-de-pagamento-97502050"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACR IV FIDC - SUBORDINADAS"
+        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brAA-"
+        "example": "brBBB-"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brAA-"
+        "example": "brBBB-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-08"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ACR_IV_FIDC/11045"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11646"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "R&G FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
+        "example": "OPERA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MULTISETORIAL"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29145"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29186"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "R&G FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
+        "example": "OPERA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MULTISETORIAL"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29145"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29186"
       },
       {
         "name": "no_tipo_rating",
@@ -362,7 +362,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "A"
+        "example": "BBB"
       },
       {
         "name": "dt_acao_rating",
@@ -377,12 +377,12 @@
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": "Positiva"
       },
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": "Mezanino"
       },
       {
         "name": "de_escala",
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACR IV FIDC"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACR IV FIDC - SUBORDINADAS"
+        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brAA-"
+        "example": "brBBB-"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-08"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_devedor_vinculado",
