@@ -29,7 +29,7 @@ window.PULSERATINGS_LAST_UPDATES = {
   },
   "fitch_ratings.csv": {
     "min": "2026-06-05",
-    "max": "2026-08-19"
+    "max": "2026-08-20"
   },
   "moodys_ratings.csv": {
     "min": "2026-06-04",
