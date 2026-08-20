@@ -89,7 +89,6 @@ def normalizar_rating(rating_str: str | None) -> tuple[str, int | None]:
 
     score = RATING_SCORES.get(clean)
     if score is None:
-        # Tenta score direto do raw sem formatação agressiva (ex: QG2-, MQ1)
         raw_upper = raw.upper().replace(".BR", "")
         score = RATING_SCORES.get(raw_upper)
         if score is not None:
@@ -117,44 +116,93 @@ def normalizar_outlook(outlook_str: str | None) -> str:
     return val
 
 
-def comparar_snapshots(
+def make_key(row: dict[str, Any], key_fields: list[str]) -> str:
+    """Gera chave única para o emissor ou emissão."""
+    parts = []
+    for f in key_fields:
+        val = str(row.get(f) or "").strip().upper()
+        if not val and f == "no_emissor_padronizado":
+            val = str(row.get("no_emissor_original") or row.get("no_emissor") or "").strip().upper()
+        parts.append(val)
+    return " | ".join(parts)
+
+
+def extrair_ratings_vigentes(
     df_rows: list[dict[str, Any]],
+    key_fields: list[str],
+    date_col: str = "dt_acao_rating",
+) -> dict[str, dict[str, Any]]:
+    """
+    Para cada chave única (ex: agência + emissor + tipo/instrumento), seleciona o registro
+    com a data de ação mais recente (rating ativo vigente).
+    """
+    def sort_key(r: dict[str, Any]) -> tuple[str, str]:
+        d_acao = str(r.get(date_col) or r.get("dt_rating") or "").strip()
+        d_cap = str(r.get("dt_captura") or "").strip()
+        return (d_acao, d_cap)
+
+    sorted_rows = sorted(df_rows, key=sort_key)
+    vigentes: dict[str, dict[str, Any]] = {}
+    for r in sorted_rows:
+        k = make_key(r, key_fields)
+        if not k.replace("|", "").strip():
+            continue
+        vigentes[k] = r
+    return vigentes
+
+
+def comparar_snapshots(
+    df_rows_or_map_atual: list[dict[str, Any]] | dict[str, dict[str, Any]],
     tipo_dataset: str,
     key_fields: list[str],
+    map_anterior_override: dict[str, dict[str, Any]] | None = None,
+    dt_atual_override: str | None = None,
+    dt_anterior_override: str | None = None,
 ) -> dict[str, Any]:
     """
-    Compara o snapshot de ratings mais recente contra o snapshot anterior.
+    Compara o snapshot de ratings vigente contra o snapshot anterior.
     Gera listas de Upgrades, Downgrades, Novos, Mudanças de Outlook e Retirados.
+
+    Suporta chamada legada com df_rows contendo 'dt_captura' ou chamada direta com mapas.
     """
-    # Identifica todas as datas de captura ordenadas
-    capturas = sorted(
-        {r["dt_captura"] for r in df_rows if r.get("dt_captura")},
-        reverse=True,
-    )
+    if isinstance(df_rows_or_map_atual, dict):
+        map_atual = df_rows_or_map_atual
+        map_anterior = map_anterior_override or {}
+        dt_atual = dt_atual_override or datetime.now().strftime("%Y-%m-%d")
+        dt_anterior = dt_anterior_override or "N/A"
+    else:
+        df_rows = df_rows_or_map_atual
+        if map_anterior_override is not None:
+            map_atual = extrair_ratings_vigentes(df_rows, key_fields)
+            map_anterior = map_anterior_override
+            dt_atual = dt_atual_override or datetime.now().strftime("%Y-%m-%d")
+            dt_anterior = dt_anterior_override or "N/A"
+        else:
+            # Modo legado / histórico baseado em capturas presentes nas linhas
+            capturas = sorted(
+                {r["dt_captura"] for r in df_rows if r.get("dt_captura")},
+                reverse=True,
+            )
+            if not capturas:
+                return {
+                    "tipo": tipo_dataset,
+                    "dt_atual": None,
+                    "dt_anterior": None,
+                    "upgrades": [],
+                    "downgrades": [],
+                    "novos": [],
+                    "outlooks": [],
+                    "retirados": [],
+                }
 
-    if not capturas:
-        return {
-            "tipo": tipo_dataset,
-            "dt_atual": None,
-            "dt_anterior": None,
-            "upgrades": [],
-            "downgrades": [],
-            "novos": [],
-            "outlooks": [],
-            "retirados": [],
-        }
+            dt_atual = dt_atual_override or capturas[0]
+            dt_anterior = dt_anterior_override or (capturas[1] if len(capturas) > 1 else None)
 
-    dt_atual = capturas[0]
-    dt_anterior = capturas[1] if len(capturas) > 1 else None
+            rows_atual = [r for r in df_rows if r.get("dt_captura") == dt_atual]
+            rows_anterior = [r for r in df_rows if r.get("dt_captura") == dt_anterior] if dt_anterior else []
 
-    rows_atual = [r for r in df_rows if r.get("dt_captura") == dt_atual]
-    rows_anterior = [r for r in df_rows if r.get("dt_captura") == dt_anterior] if dt_anterior else []
-
-    def make_key(row: dict) -> str:
-        return " | ".join(str(row.get(f) or "").strip().upper() for f in key_fields)
-
-    map_atual: dict[str, dict] = {make_key(r): r for r in rows_atual}
-    map_anterior: dict[str, dict] = {make_key(r): r for r in rows_anterior}
+            map_atual = extrair_ratings_vigentes(rows_atual, key_fields)
+            map_anterior = extrair_ratings_vigentes(rows_anterior, key_fields)
 
     upgrades = []
     downgrades = []
@@ -162,7 +210,7 @@ def comparar_snapshots(
     outlooks = []
     retirados = []
 
-    # 1. Compara itens da captura atual
+    # 1. Compara itens da captura atual contra a anterior
     for key, curr in map_atual.items():
         curr_rating_raw = curr.get("de_rating_br") or ""
         curr_rating_base, curr_score = normalizar_rating(curr_rating_raw)
@@ -297,6 +345,139 @@ def comparar_snapshots(
     }
 
 
+def carregar_snapshot_anterior(
+    snapshot_dir: Path,
+    dt_atual: str,
+    rows_emissores: list[dict[str, Any]],
+    rows_emissoes: list[dict[str, Any]],
+    keys_emissores: list[str],
+    keys_emissoes: list[str],
+) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]], str]:
+    """
+    Carrega o snapshot de ratings anterior a dt_atual.
+    Se não houver snapshot gravado em disco (cold start / primeira execução),
+    reconstrói a base anterior a partir do histórico de ações ou inicializa baseline.
+    """
+    snapshot_dir.mkdir(parents=True, exist_ok=True)
+
+    # Procura arquivos de snapshot no diretório
+    snapshot_files = sorted(snapshot_dir.glob("snapshot_*.json"))
+    valid_snapshots = []
+    for sf in snapshot_files:
+        if sf.name in ("snapshot_latest.json", "snapshot_previous.json"):
+            continue
+        m = re.match(r"^snapshot_(\d{4}-\d{2}-\d{2})\.json$", sf.name)
+        if m:
+            s_date = m.group(1)
+            if s_date < dt_atual:
+                valid_snapshots.append((s_date, sf))
+
+    if valid_snapshots:
+        # Pega o snapshot mais recente anterior a dt_atual
+        prev_date, prev_path = valid_snapshots[-1]
+        try:
+            with open(prev_path, encoding="utf-8") as f:
+                data = json.load(f)
+                logger.info(f"Snapshot anterior carregado de {prev_path.name} ({prev_date})")
+                return data.get("emissores", {}), data.get("emissoes", {}), prev_date
+        except Exception as e:
+            logger.warning(f"Falha ao ler snapshot {prev_path}: {e}")
+
+    # Verifica se existe snapshot_previous.json
+    prev_file = snapshot_dir / "snapshot_previous.json"
+    if prev_file.exists():
+        try:
+            with open(prev_file, encoding="utf-8") as f:
+                data = json.load(f)
+                prev_date = data.get("dt_captura", "anterior")
+                if prev_date != dt_atual:
+                    logger.info(f"Snapshot anterior carregado de snapshot_previous.json ({prev_date})")
+                    return data.get("emissores", {}), data.get("emissoes", {}), prev_date
+        except Exception as e:
+            logger.warning(f"Falha ao ler snapshot_previous.json: {e}")
+
+    # Baseline inteligente: Se não há snapshot gravado, reconstrói o estado prévio
+    # a partir das ações históricas registradas nos CSVs.
+    logger.info("Nenhum snapshot anterior em disco. Reconstruindo baseline histórico a partir dos CSVs...")
+
+    def reconstruir_baseline(rows: list[dict[str, Any]], key_fields: list[str]) -> dict[str, dict[str, Any]]:
+        from collections import defaultdict
+
+        acoes_por_chave = defaultdict(list)
+        for r in rows:
+            k = make_key(r, key_fields)
+            if k.replace("|", "").strip():
+                acoes_por_chave[k].append(r)
+
+        baseline = {}
+        for k, acoes in acoes_por_chave.items():
+            def s_key(r):
+                return (str(r.get("dt_acao_rating") or r.get("dt_rating") or ""), str(r.get("dt_captura") or ""))
+
+            sorted_acoes = sorted(acoes, key=s_key)
+
+            if len(sorted_acoes) > 1:
+                ultima = sorted_acoes[-1]
+                d_ultima = str(ultima.get("dt_acao_rating") or ultima.get("dt_rating") or ultima.get("dt_captura") or "")
+                if d_ultima >= dt_atual:
+                    baseline[k] = sorted_acoes[-2]
+                else:
+                    baseline[k] = ultima
+            else:
+                unica = sorted_acoes[0]
+                d_unica = str(unica.get("dt_acao_rating") or unica.get("dt_rating") or "")
+                if d_unica < dt_atual:
+                    baseline[k] = unica
+
+        return baseline
+
+    prev_emissores = reconstruir_baseline(rows_emissores, keys_emissores)
+    prev_emissoes = reconstruir_baseline(rows_emissoes, keys_emissoes)
+    return prev_emissores, prev_emissoes, "baseline_inicial"
+
+
+def salvar_snapshots(
+    snapshot_dir: Path,
+    dt_atual: str,
+    vigentes_emissores: dict[str, dict[str, Any]],
+    vigentes_emissoes: dict[str, dict[str, Any]],
+) -> None:
+    """Persiste o snapshot atual em arquivo diário e snapshot_latest.json."""
+    snapshot_dir.mkdir(parents=True, exist_ok=True)
+
+    data = {
+        "dt_captura": dt_atual,
+        "timestamp": datetime.now().isoformat(),
+        "total_emissores": len(vigentes_emissores),
+        "total_emissoes": len(vigentes_emissoes),
+        "emissores": vigentes_emissores,
+        "emissoes": vigentes_emissoes,
+    }
+
+    # Salva snapshot diário
+    daily_file = snapshot_dir / f"snapshot_{dt_atual}.json"
+    with open(daily_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    # Se snapshot_latest já existia e tinha data diferente de dt_atual, salva como snapshot_previous
+    latest_file = snapshot_dir / "snapshot_latest.json"
+    if latest_file.exists():
+        try:
+            with open(latest_file, encoding="utf-8") as f:
+                old_data = json.load(f)
+            if old_data.get("dt_captura") != dt_atual:
+                with open(snapshot_dir / "snapshot_previous.json", "w", encoding="utf-8") as pf:
+                    json.dump(old_data, pf, indent=2, ensure_ascii=False)
+        except Exception as e:
+            logger.warning(f"Aviso ao arquivar snapshot_previous: {e}")
+
+    # Atualiza snapshot_latest.json
+    with open(latest_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    logger.info(f"Snapshots salvos com sucesso em {snapshot_dir}")
+
+
 def gerar_markdown(relatorio: dict[str, Any]) -> str:
     """Gera relatório legível em Markdown formatado com tabelas e ícones."""
     dt_atual = relatorio.get("dt_atual", datetime.now().strftime("%Y-%m-%d"))
@@ -328,7 +509,6 @@ def gerar_markdown(relatorio: dict[str, Any]) -> str:
     )
     md.append("")
 
-    # Tabela de Upgrades
     all_upgrades = relatorio.get("emissores", {}).get("upgrades", []) + relatorio.get("emissoes", {}).get(
         "upgrades", []
     )
@@ -344,7 +524,6 @@ def gerar_markdown(relatorio: dict[str, Any]) -> str:
             )
         md.append("")
 
-    # Tabela de Downgrades
     all_downgrades = relatorio.get("emissores", {}).get("downgrades", []) + relatorio.get("emissoes", {}).get(
         "downgrades", []
     )
@@ -360,7 +539,6 @@ def gerar_markdown(relatorio: dict[str, Any]) -> str:
             )
         md.append("")
 
-    # Tabela de Mudanças de Outlook
     all_outlooks = relatorio.get("emissores", {}).get("outlooks", []) + relatorio.get("emissoes", {}).get(
         "outlooks", []
     )
@@ -376,7 +554,6 @@ def gerar_markdown(relatorio: dict[str, Any]) -> str:
             )
         md.append("")
 
-    # Tabela de Novos Ratings (até 20 amostras se houver muitos)
     all_novos = relatorio.get("emissores", {}).get("novos", []) + relatorio.get("emissoes", {}).get(
         "novos", []
     )
@@ -392,7 +569,22 @@ def gerar_markdown(relatorio: dict[str, Any]) -> str:
             md.append(f"| *...e mais {len(all_novos) - 30} novos ratings.* | | | | | |")
         md.append("")
 
-    if not all_upgrades and not all_downgrades and not all_outlooks and not all_novos:
+    all_retirados = relatorio.get("emissores", {}).get("retirados", []) + relatorio.get("emissoes", {}).get(
+        "retirados", []
+    )
+    if all_retirados:
+        md.append(f"### ⚪ Ratings Retirados / Descontinuados ({len(all_retirados)})")
+        md.append("| Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |")
+        md.append("| :--- | :--- | :--- | :---: | :--- | :---: |")
+        for r in all_retirados[:30]:
+            md.append(
+                f"| {r['agencia']} | **{r['emissor']}** | {r['instrumento']} | `{r['rating_anterior']}` | {r['outlook_anterior']} | {r['dt_acao']} |"
+            )
+        if len(all_retirados) > 30:
+            md.append(f"| *...e mais {len(all_retirados) - 30} ratings retirados.* | | | | | |")
+        md.append("")
+
+    if not all_upgrades and not all_downgrades and not all_outlooks and not all_novos and not all_retirados:
         md.append("> *Nenhuma movimentação de rating detectada entre as capturas comparadas.*")
 
     return "\n".join(md)
@@ -401,6 +593,7 @@ def gerar_markdown(relatorio: dict[str, Any]) -> str:
 def generate() -> dict[str, Any]:
     """Executa a análise completa de movimentações e salva os relatórios."""
     data_dir = get_data_dir()
+    snapshot_dir = data_dir / "snapshots"
     path_emissores = data_dir / "ratings_emissores.csv"
     path_emissoes = data_dir / "ratings_emissoes.csv"
 
@@ -414,24 +607,46 @@ def generate() -> dict[str, Any]:
         with open(path_emissoes, encoding="utf-8") as f:
             rows_emissoes = list(csv.DictReader(f))
 
+    keys_emissores = ["agencia", "no_emissor_padronizado", "no_tipo_rating"]
+    keys_emissoes = ["agencia", "no_emissor_padronizado", "de_instrumento"]
+
+    # Extrai o universo de ratings vigentes ativos
+    vigentes_emissores = extrair_ratings_vigentes(rows_emissores, keys_emissores)
+    vigentes_emissoes = extrair_ratings_vigentes(rows_emissoes, keys_emissoes)
+
+    # Identifica data atual
+    todas_capturas = {r["dt_captura"] for r in (rows_emissores + rows_emissoes) if r.get("dt_captura")}
+    dt_atual = max(todas_capturas) if todas_capturas else datetime.now().strftime("%Y-%m-%d")
+
+    # Carrega snapshot anterior para comparação
+    prev_emissores, prev_emissoes, dt_anterior = carregar_snapshot_anterior(
+        snapshot_dir=snapshot_dir,
+        dt_atual=dt_atual,
+        rows_emissores=rows_emissores,
+        rows_emissoes=rows_emissoes,
+        keys_emissores=keys_emissores,
+        keys_emissoes=keys_emissoes,
+    )
+
     logger.info("Comparando movimentações de ratings de emissores...")
     diff_emissores = comparar_snapshots(
-        rows_emissores,
+        df_rows_or_map_atual=vigentes_emissores,
         tipo_dataset="emissores",
-        key_fields=["agencia", "no_emissor_padronizado", "no_tipo_rating"],
+        key_fields=keys_emissores,
+        map_anterior_override=prev_emissores,
+        dt_atual_override=dt_atual,
+        dt_anterior_override=dt_anterior,
     )
 
     logger.info("Comparando movimentações de ratings de emissões...")
     diff_emissoes = comparar_snapshots(
-        rows_emissoes,
+        df_rows_or_map_atual=vigentes_emissoes,
         tipo_dataset="emissoes",
-        key_fields=["agencia", "no_emissor_padronizado", "de_instrumento"],
+        key_fields=keys_emissoes,
+        map_anterior_override=prev_emissoes,
+        dt_atual_override=dt_atual,
+        dt_anterior_override=dt_anterior,
     )
-
-    dt_atual = (
-        diff_emissores.get("dt_atual") or diff_emissoes.get("dt_atual") or datetime.now().strftime("%Y-%m-%d")
-    )
-    dt_anterior = diff_emissores.get("dt_anterior") or diff_emissoes.get("dt_anterior")
 
     resumo = {
         "upgrades_emissores": len(diff_emissores["upgrades"]),
@@ -480,6 +695,14 @@ def generate() -> dict[str, Any]:
     with open(md_path, "w", encoding="utf-8") as f:
         f.write(md_content)
     logger.info(f"Relatório Markdown salvo em {md_path}")
+
+    # Persiste snapshots para a próxima rodada
+    salvar_snapshots(
+        snapshot_dir=snapshot_dir,
+        dt_atual=dt_atual,
+        vigentes_emissores=vigentes_emissores,
+        vigentes_emissoes=vigentes_emissoes,
+    )
 
     return relatorio
 
