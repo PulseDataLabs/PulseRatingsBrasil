@@ -64,6 +64,14 @@ jobs:
     - name: Gerar JSON de consulta
       run: python scripts/gerar_consulta_json.py
 
+    # Gera relatório de movimentações de ratings e anexa no Step Summary do GitHub Actions
+    - name: Publicar Relatório de Movimentações de Ratings
+      run: |
+        python scripts/gerar_relatorio_mudancas.py || true
+        if [ -f data/movimentacoes_ratings.md ]; then
+          cat data/movimentacoes_ratings.md >> $GITHUB_STEP_SUMMARY
+        fi
+
     # Identifica mudanças na pasta data/ e faz o push se houver novos dados
     - name: Commitar e enviar novas alterações de dados
       run: |

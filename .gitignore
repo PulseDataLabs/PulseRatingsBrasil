@@ -236,7 +236,7 @@ data/rfb_cache/
 chrome-profile/
 
 # Test files temporarios
-test_*.py
+/test_*.py
 
 # Antigravity CLI
 .antigravitycli/

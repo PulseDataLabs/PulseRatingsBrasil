@@ -827,6 +827,134 @@
       font-family: var(--font-mono);
       font-size: 0.7rem;
     }
+  
+    /* ── Movimentações View Styles ── */
+    .mov-header-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .mov-stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .mov-stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .mov-stat-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .mov-stat-icon {
+      font-size: 1.5rem;
+    }
+    .mov-stat-val {
+      font-family: var(--font-mono);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.1;
+    }
+    .mov-stat-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text3);
+      text-transform: uppercase;
+      margin-top: 0.2rem;
+    }
+    .mov-filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .mov-pill {
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      color: var(--text2);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .mov-pill:hover {
+      color: var(--text);
+      border-color: var(--accent);
+    }
+    .mov-pill.active {
+      background: var(--accent2);
+      color: #fff;
+      border-color: var(--accent);
+      font-weight: 600;
+    }
+    .mov-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1rem;
+    }
+    .mov-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .mov-card:hover {
+      border-color: var(--border2);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .mov-card.border-upgrade { border-left: 4px solid var(--green); }
+    .mov-card.border-downgrade { border-left: 4px solid var(--red); }
+    .mov-card.border-novo { border-left: 4px solid var(--accent); }
+    .mov-card.border-outlook { border-left: 4px solid var(--gold); }
+    .mov-card.border-retirado { border-left: 4px solid var(--text3); opacity: 0.85; }
+
+    .mov-badge-tag {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .tag-upgrade { background: rgba(0,229,160,0.15); color: var(--green); border: 1px solid var(--green); }
+    .tag-downgrade { background: rgba(255,77,109,0.15); color: var(--red); border: 1px solid var(--red); }
+    .tag-novo { background: rgba(0,212,255,0.15); color: var(--accent); border: 1px solid var(--accent); }
+    .tag-outlook { background: rgba(240,180,41,0.15); color: var(--gold); border: 1px solid var(--gold); }
+    .tag-retirado { background: rgba(143,163,184,0.15); color: var(--text2); border: 1px solid var(--text3); }
+
+    .mov-rating-flow {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .mov-old-r { color: var(--text3); text-decoration: line-through; }
+    .mov-arrow { color: var(--text2); font-size: 0.8rem; }
+    .mov-new-r { color: var(--text); }
+
   </style>
 </head>
 <body>
@@ -914,6 +1042,7 @@
         <div class="main-tabs" role="tablist">
           <button class="main-tab-btn active" data-target="view-lista" role="tab">Tabela de Ratings</button>
           <button class="main-tab-btn" data-target="view-comparador" role="tab">Comparador Setorial</button>
+          <button class="main-tab-btn" data-target="view-movimentacoes" role="tab">⚡ Movimentações & Alterações</button>
         </div>
 
         <!-- LISTA GERAL -->
@@ -1053,6 +1182,70 @@
           </div>
         </div>
 
+        <!-- MOVIMENTAÇÕES VIEW -->
+        <div id="view-movimentacoes" class="main-view">
+          <div class="mov-header-box">
+            <div>
+              <h2 style="font-family: var(--font-head); font-size: 1.25rem; color: var(--text);">Movimentações Recentes de Ratings</h2>
+              <p id="mov-period-desc" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text3); margin-top: 0.25rem;">Comparativo de alterações entre capturas diárias</p>
+            </div>
+            <div class="mov-search-box">
+              <input type="text" id="mov-search-input" placeholder="Filtrar movimentações (emissor, agência, rating)..." class="sector-dropdown" style="width: 320px; font-size: 0.8rem;" />
+            </div>
+          </div>
+
+          <div class="mov-stats-bar" id="mov-stats-bar">
+            <div class="mov-stat-card mov-stat-up" data-filter="UPGRADE">
+              <span class="mov-stat-icon">🟢</span>
+              <div>
+                <div class="mov-stat-val" id="mov-count-up">0</div>
+                <div class="mov-stat-lbl">Upgrades</div>
+              </div>
+            </div>
+            <div class="mov-stat-card mov-stat-down" data-filter="DOWNGRADE">
+              <span class="mov-stat-icon">🔴</span>
+              <div>
+                <div class="mov-stat-val" id="mov-count-down">0</div>
+                <div class="mov-stat-lbl">Downgrades</div>
+              </div>
+            </div>
+            <div class="mov-stat-card mov-stat-new" data-filter="NOVO">
+              <span class="mov-stat-icon">🔵</span>
+              <div>
+                <div class="mov-stat-val" id="mov-count-new">0</div>
+                <div class="mov-stat-lbl">Novos Ratings</div>
+              </div>
+            </div>
+            <div class="mov-stat-card mov-stat-out" data-filter="OUTLOOK">
+              <span class="mov-stat-icon">🟡</span>
+              <div>
+                <div class="mov-stat-val" id="mov-count-out">0</div>
+                <div class="mov-stat-lbl">Mudanças Outlook</div>
+              </div>
+            </div>
+            <div class="mov-stat-card mov-stat-del" data-filter="RETIRADO">
+              <span class="mov-stat-icon">⚪</span>
+              <div>
+                <div class="mov-stat-val" id="mov-count-del">0</div>
+                <div class="mov-stat-lbl">Retirados</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mov-filter-pills">
+            <button class="mov-pill active" data-type="ALL">Todos (<span id="mov-total-badge">0</span>)</button>
+            <button class="mov-pill pill-up" data-type="UPGRADE">🟢 Upgrades</button>
+            <button class="mov-pill pill-down" data-type="DOWNGRADE">🔴 Downgrades</button>
+            <button class="mov-pill pill-new" data-type="NOVO">🔵 Novos Ratings</button>
+            <button class="mov-pill pill-out" data-type="OUTLOOK">🟡 Alteração Outlook</button>
+            <button class="mov-pill pill-del" data-type="RETIRADO">⚪ Retirados</button>
+          </div>
+
+          <div id="mov-cards-grid" class="mov-grid">
+            <!-- Renderizado dinamicamente -->
+          </div>
+        </div>
+
       </div><!-- /page-container -->
   </main>
 
@@ -1088,6 +1281,7 @@
   <script src="https://cdn.datatables.net/buttons/3.2.2/js/dataTables.buttons.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/3.2.2/js/buttons.html5.min.js"></script>
+  <script src="./data/movimentacoes_ratings.js"></script>
   <script>
   (async function () {
     const $table        = $('#ratings-table');
@@ -1404,6 +1598,8 @@
 
         if (target === 'view-comparador') {
           renderComparator();
+        } else if (target === 'view-movimentacoes') {
+          renderMovimentacoes();
         }
       });
 

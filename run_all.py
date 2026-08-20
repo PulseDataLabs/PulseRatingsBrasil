@@ -362,6 +362,24 @@ def main(
             print_warn(f"Separação de ratings falhou: {e}")
             logger.warning(f"Separação de ratings falhou: {e}")
 
+    # ── Relatório de Movimentações de Ratings ────────────────────────
+    if not group and not scraper:
+        try:
+            section("Relatório de Movimentações", "chart")
+            print_start("Analisando Upgrades, Downgrades e Novos Ratings...")
+            from scripts.gerar_relatorio_mudancas import generate as generate_diff
+
+            rel = generate_diff()
+            resumo = rel.get("resumo", {})
+            print_done(
+                f"Movimentações: 🟢 {resumo.get('total_upgrades', 0)} upgrades | "
+                f"🔴 {resumo.get('total_downgrades', 0)} downgrades | "
+                f"🔵 {resumo.get('total_novos', 0)} novos"
+            )
+        except Exception as e:
+            print_warn(f"Geração de relatório de movimentações falhou: {e}")
+            logger.warning(f"Geração de relatório de movimentações falhou: {e}")
+
     # ── Resumo final ─────────────────────────────────────────────────
     ok = [n for n, r in results.items() if r[0]]
     fail = [n for n, r in results.items() if not r[0]]
