@@ -1,23 +1,21 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Scraper: Fitch Ratings – Emissores com rating no Brasil
 Fonte:   GraphQL API — https://api.fitchratings.com
 Saída:   data/fitch_emissores.csv
 """
-import os
-import sys
+
 import datetime
-import json
+import sys
 import time
 from pathlib import Path
 
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from utils import get_logger, agora_brt, limpar
 from scrapers.utils.base import BaseScraper
-from scripts.utils import print_done, print_info, print_warn, print_start
+from scripts.utils import print_done, print_fail, print_info, print_start, print_warn
+from utils import get_logger, limpar
 
 log = get_logger("fitch_emissores")
 
@@ -103,6 +101,7 @@ def _obter_emissores_fitch_real() -> list[dict]:
         msg = f"Página {page}: {len(entity_hits)} emissores (acumulado: {len(entities)})"
         log.info(f"  {msg}")
         from scripts.utils import progress_bar
+
         bar = progress_bar(len(entities), total) if total else ""
         print(f"    {bar}")
 
@@ -116,10 +115,7 @@ def _obter_emissores_fitch_real() -> list[dict]:
 
     log.info(f"Total de emissores únicas capturadas: {len(entities)}")
     print_done(f"{len(entities)} emissores únicas capturadas")
-    return [
-        {"dt_captura": today_str, "no_emissor": nome, "link": link}
-        for link, nome in entities.items()
-    ]
+    return [{"dt_captura": today_str, "no_emissor": nome, "link": link} for link, nome in entities.items()]
 
 
 class FitchEmissoresScraper(BaseScraper):

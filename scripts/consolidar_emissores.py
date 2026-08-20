@@ -6,8 +6,8 @@ uma linha por emissor, com colunas de nome por fonte + CNPJ.
 import csv
 import logging
 import re
-import unicodedata
 import sys
+import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -39,11 +39,27 @@ _SUFIXOS = [
 ]
 
 _PALAVRAS_GENERICAS = [
-    r"\bDO\b", r"\bDA\b", r"\bDOS\b", r"\bDAS\b",
-    r"\bDE\b", r"\bEM\b", r"\bCOM\b", r"\bE\b", r"\bOU\b",
-    r"\bA\b", r"\bAO\b", r"\bAOS\b", r"\bAS\b",
-    r"\bO\b", r"\bOS\b", r"\bNO\b", r"\bNA\b",
-    r"\bPELO\b", r"\bPELA\b", r"\bUM\b", r"\bUMA\b",
+    r"\bDO\b",
+    r"\bDA\b",
+    r"\bDOS\b",
+    r"\bDAS\b",
+    r"\bDE\b",
+    r"\bEM\b",
+    r"\bCOM\b",
+    r"\bE\b",
+    r"\bOU\b",
+    r"\bA\b",
+    r"\bAO\b",
+    r"\bAOS\b",
+    r"\bAS\b",
+    r"\bO\b",
+    r"\bOS\b",
+    r"\bNO\b",
+    r"\bNA\b",
+    r"\bPELO\b",
+    r"\bPELA\b",
+    r"\bUM\b",
+    r"\bUMA\b",
     r"\bBRASIL\b",
 ]
 
@@ -80,7 +96,7 @@ def carregar_emissores_fonte(caminho: Path) -> dict[str, str]:
         return {}
 
     result: dict[str, str] = {}
-    with open(caminho, "r", encoding="utf-8") as f:
+    with open(caminho, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             nome = (row.get("no_emissor") or "").strip()
@@ -95,7 +111,7 @@ def carregar_consolidado_existente(caminho: Path) -> dict[str, dict]:
 
     result: dict[str, dict] = {}
     try:
-        with open(caminho, "r", encoding="utf-8") as f:
+        with open(caminho, encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 key = (row.get("no_emissor_padronizado") or "").strip()
@@ -127,9 +143,8 @@ def consolidar(
     for source_key, emissor_dict in sources.items():
         pad_map: dict[str, str] = {}
         for original, padronizado in emissor_dict.items():
-            if padronizado:
-                if padronizado not in pad_map:
-                    pad_map[padronizado] = original
+            if padronizado and padronizado not in pad_map:
+                pad_map[padronizado] = original
         source_padronizados[source_key] = pad_map
 
     all_padronizados: set[str] = set()
@@ -168,9 +183,7 @@ def consolidar(
         writer.writeheader()
         writer.writerows(rows)
 
-    logger.info(
-        f"Consolidado gerado: {len(rows)} emissores em {output_path}"
-    )
+    logger.info(f"Consolidado gerado: {len(rows)} emissores em {output_path}")
 
 
 def generate() -> None:

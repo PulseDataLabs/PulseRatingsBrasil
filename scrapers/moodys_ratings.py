@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Scraper: Moody's – Lista de Classificações Vigentes (Brasil)
 Fonte:   https://moodyslocal.com.br/
@@ -9,14 +8,16 @@ A página disponibiliza um link direto para download do Excel de ratings.
 O scraper utiliza get_moodys_raw_data para download otimizado com cache
 e parsing ultrarrápido via streaming XML.
 """
+
+import datetime
 import os
 import sys
-import datetime
+
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.utils.base import BaseScraper
-from scripts.utils import print_done, print_start, print_fail
+from scripts.utils import print_done, print_fail, print_start
 
 RENAME_MAP = {
     "Setor": "no_setor",

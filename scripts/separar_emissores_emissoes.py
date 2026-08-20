@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Separa ratings consolidados de todas as agências em duas tabelas:
 1. data/ratings_emissores.csv (Ratings de nível de entidade/emissor)
@@ -10,7 +9,6 @@ Faz mapeamento de chaves (no_emissor_padronizado) e vinculação de devedores.
 
 import csv
 import logging
-import os
 import re
 import sys
 from pathlib import Path
@@ -19,9 +17,9 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT_DIR))
 
-from utils.paths import get_data_dir
-from utils.base import salvar_csv
 from scripts.consolidar_emissores import normalizar
+from utils.base import salvar_csv
+from utils.paths import get_data_dir
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("separar_emissores_emissoes")
@@ -41,7 +39,9 @@ DEBTOR_ALIASES = {
 }
 
 
-def find_matching_issuer(raw_name: str, consolidated_names: set, consolidated_list: list, return_fallback: bool = True) -> str:
+def find_matching_issuer(
+    raw_name: str, consolidated_names: set, consolidated_list: list, return_fallback: bool = True
+) -> str:
     """Normaliza o nome do emissor e tenta encontrar o correspondente padronizado."""
     if not raw_name:
         return ""
@@ -75,37 +75,79 @@ def extract_linked_debtor(raw_name: str, consolidated_names: set, consolidated_l
     """Extrai texto entre parênteses do nome da emissão para tentar achar o devedor corporativo."""
     if not raw_name:
         return ""
-    
+
     # Procura texto dentro de parênteses (ex: "Eco Securitizadora ... (JBS)")
     matches_paren = re.findall(r"\(([^)]+)\)", raw_name)
     if not matches_paren:
         return ""
-    
+
     # Pega o último texto em parênteses
     candidate = matches_paren[-1].strip()
-    
+
     # 1. Ignorar se contiver termos de série, classe, emissão, etc. (case-insensitive)
-    ignore_terms = ["serie", "emissao", "classe", "sf", "f1", "f2", "f3", "lote", "tranche", "subordinada", "senior", "meza"]
+    ignore_terms = [
+        "serie",
+        "emissao",
+        "classe",
+        "sf",
+        "f1",
+        "f2",
+        "f3",
+        "lote",
+        "tranche",
+        "subordinada",
+        "senior",
+        "meza",
+    ]
     candidate_lower = candidate.lower()
     if any(term in candidate_lower for term in ignore_terms):
         return ""
-        
+
     # 2. Ignorar se for apenas números ou caracteres especiais
     if re.match(r"^[\d\s\.,ª°\-\/]+$", candidate):
         return ""
-        
+
     norm_candidate = normalizar(candidate)
     if not norm_candidate or len(norm_candidate) < 3:
         return ""
 
     # Ignora parênteses que são claramente séries, tranches, datas ou classes ou palavras genéricas
     generic_terms = {
-        "SERIE", "EMISSAO", "CLASSE", "LOCAL", "SF", "F1", "F2", "F3", 
-        "AAA", "AA", "BBB", "FIDC", "FIDCS", "CRI", "CRIS", "CRA", "CRAS",
-        "BANCO", "BANCOS", "COOPERATIVA", "SECURITIZADORA", "CIA", "COMPANHIA",
-        "FUNDO", "FUNDOS", "INVESTIMENTO", "CREDITO", "SECURITIZACAO", "S/A", "SA", "LTDA"
+        "SERIE",
+        "EMISSAO",
+        "CLASSE",
+        "LOCAL",
+        "SF",
+        "F1",
+        "F2",
+        "F3",
+        "AAA",
+        "AA",
+        "BBB",
+        "FIDC",
+        "FIDCS",
+        "CRI",
+        "CRIS",
+        "CRA",
+        "CRAS",
+        "BANCO",
+        "BANCOS",
+        "COOPERATIVA",
+        "SECURITIZADORA",
+        "CIA",
+        "COMPANHIA",
+        "FUNDO",
+        "FUNDOS",
+        "INVESTIMENTO",
+        "CREDITO",
+        "SECURITIZACAO",
+        "S/A",
+        "SA",
+        "LTDA",
     }
-    if norm_candidate in generic_terms or any(term in norm_candidate for term in ["SERIE", "EMISSAO", "CLASSE"]):
+    if norm_candidate in generic_terms or any(
+        term in norm_candidate for term in ["SERIE", "EMISSAO", "CLASSE"]
+    ):
         return ""
 
     # Se estiver nos aliases mapeados
@@ -114,11 +156,11 @@ def extract_linked_debtor(raw_name: str, consolidated_names: set, consolidated_l
 
     # Busca no catálogo, sem usar o fallback bruto
     matched = find_matching_issuer(candidate, consolidated_names, consolidated_list, return_fallback=False)
-    
+
     # Se o nome retornado for uma palavra genérica ou muito curta, descarta
     if matched in generic_terms or len(matched) < 3:
         return ""
-        
+
     return matched
 
 
@@ -132,7 +174,7 @@ def main():
 
     # 1. Carrega os emissores consolidados
     consolidated_list = []
-    with open(emissores_consolidado_path, "r", encoding="utf-8") as f:
+    with open(emissores_consolidado_path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             p = row.get("no_emissor_padronizado")
@@ -187,7 +229,7 @@ def main():
             "date_col": "dt_acao_rating",
             "link_col": "link",
             "instr_col": None,
-        }
+        },
     }
 
     rows_emissores = []
@@ -201,10 +243,10 @@ def main():
             continue
 
         logger.info(f"Processando ratings da agência {agencia}...")
-        
-        with open(csv_path, "r", encoding="utf-8") as f:
+
+        with open(csv_path, encoding="utf-8") as f:
             reader = csv.DictReader(f)
-            
+
             for row in reader:
                 dt_captura = row.get("dt_captura") or ""
                 no_emissor_original = row.get("no_emissor") or ""
@@ -213,11 +255,11 @@ def main():
                 de_outlook = row.get(config["outlook_col"]) or ""
                 dt_acao_rating = row.get(config["date_col"]) or ""
                 link = row.get(config["link_col"]) if config["link_col"] else ""
-                
+
                 # Identifica se é emissão ou emissor
                 is_emissao = False
                 de_instrumento = ""
-                
+
                 if agencia == "Austin":
                     if no_tipo_rating in ["FIDCs", "CRIs", "Debêntures"]:
                         is_emissao = True
@@ -232,12 +274,13 @@ def main():
                         de_classe = row.get("de_classe") or ""
                         de_escala = row.get("de_escala") or ""
                         de_instrumento = f"{de_classe} - {de_escala}".strip(" -")
-                elif agencia == "Moody's":
-                    # Usa o tipo de rating de Dívida / Estruturada como emissão
-                    if no_tipo_rating in ["Rating de Dívida", "Rating de Operação Estruturada"]:
-                        is_emissao = True
-                        de_instrumento = row.get("de_instrumento") or ""
-                
+                elif agencia == "Moody's" and no_tipo_rating in [
+                    "Rating de Dívida",
+                    "Rating de Operação Estruturada",
+                ]:
+                    is_emissao = True
+                    de_instrumento = row.get("de_instrumento") or ""
+
                 # Mapeia emissor padronizado
                 no_emissor_padronizado = find_matching_issuer(
                     no_emissor_original, consolidated_names, consolidated_list
@@ -248,42 +291,61 @@ def main():
                     no_devedor_vinculado = extract_linked_debtor(
                         no_emissor_original, consolidated_names, consolidated_list
                     )
-                    
-                    rows_emissoes.append({
-                        "dt_captura": dt_captura,
-                        "agencia": agencia,
-                        "no_emissor_padronizado": no_emissor_padronizado,
-                        "no_emissor_original": no_emissor_original,
-                        "no_tipo_rating": no_tipo_rating,
-                        "de_instrumento": de_instrumento,
-                        "de_rating_br": de_rating_br,
-                        "de_outlook": de_outlook,
-                        "dt_acao_rating": dt_acao_rating,
-                        "link": link,
-                        "no_devedor_vinculado": no_devedor_vinculado,
-                    })
+
+                    rows_emissoes.append(
+                        {
+                            "dt_captura": dt_captura,
+                            "agencia": agencia,
+                            "no_emissor_padronizado": no_emissor_padronizado,
+                            "no_emissor_original": no_emissor_original,
+                            "no_tipo_rating": no_tipo_rating,
+                            "de_instrumento": de_instrumento,
+                            "de_rating_br": de_rating_br,
+                            "de_outlook": de_outlook,
+                            "dt_acao_rating": dt_acao_rating,
+                            "link": link,
+                            "no_devedor_vinculado": no_devedor_vinculado,
+                        }
+                    )
                 else:
-                    rows_emissores.append({
-                        "dt_captura": dt_captura,
-                        "agencia": agencia,
-                        "no_emissor_padronizado": no_emissor_padronizado,
-                        "no_emissor_original": no_emissor_original,
-                        "no_tipo_rating": no_tipo_rating,
-                        "de_rating_br": de_rating_br,
-                        "de_outlook": de_outlook,
-                        "dt_acao_rating": dt_acao_rating,
-                        "link": link,
-                    })
+                    rows_emissores.append(
+                        {
+                            "dt_captura": dt_captura,
+                            "agencia": agencia,
+                            "no_emissor_padronizado": no_emissor_padronizado,
+                            "no_emissor_original": no_emissor_original,
+                            "no_tipo_rating": no_tipo_rating,
+                            "de_rating_br": de_rating_br,
+                            "de_outlook": de_outlook,
+                            "dt_acao_rating": dt_acao_rating,
+                            "link": link,
+                        }
+                    )
 
     # 4. Grava os novos arquivos CSV
     colunas_emissores = [
-        "dt_captura", "agencia", "no_emissor_padronizado", "no_emissor_original",
-        "no_tipo_rating", "de_rating_br", "de_outlook", "dt_acao_rating", "link"
+        "dt_captura",
+        "agencia",
+        "no_emissor_padronizado",
+        "no_emissor_original",
+        "no_tipo_rating",
+        "de_rating_br",
+        "de_outlook",
+        "dt_acao_rating",
+        "link",
     ]
     colunas_emissoes = [
-        "dt_captura", "agencia", "no_emissor_padronizado", "no_emissor_original",
-        "no_tipo_rating", "de_instrumento", "de_rating_br", "de_outlook", "dt_acao_rating",
-        "link", "no_devedor_vinculado"
+        "dt_captura",
+        "agencia",
+        "no_emissor_padronizado",
+        "no_emissor_original",
+        "no_tipo_rating",
+        "de_instrumento",
+        "de_rating_br",
+        "de_outlook",
+        "dt_acao_rating",
+        "link",
+        "no_devedor_vinculado",
     ]
 
     out_emissores = data_dir / "ratings_emissores.csv"

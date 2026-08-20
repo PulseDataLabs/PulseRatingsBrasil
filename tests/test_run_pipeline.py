@@ -13,7 +13,7 @@ def test_run_pipeline_dry_run_fitch_emissores(tmp_path):
     env = {
         **os.environ,
         "DATABRICKS_DATA_PATH": str(data_dir),
-        "PYTHONPATH": str(_PROJECT),
+        "PYTHONPATH": os.pathsep.join(sys.path) + os.pathsep + str(_PROJECT),
     }
     result = subprocess.run(
         [
@@ -40,7 +40,7 @@ def test_run_pipeline_dry_run_all(tmp_path):
     env = {
         **os.environ,
         "DATABRICKS_DATA_PATH": str(data_dir),
-        "PYTHONPATH": str(_PROJECT),
+        "PYTHONPATH": os.pathsep.join(sys.path) + os.pathsep + str(_PROJECT),
     }
     result = subprocess.run(
         [

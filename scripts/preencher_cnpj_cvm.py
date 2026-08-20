@@ -7,22 +7,18 @@ Preenche coluna cnpj_emissor no consolidado usando dados offline da CVM:
 import csv
 import logging
 import re
-import time
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Optional
 
 import requests
-from utils.paths import get_data_dir
 
 from scripts.consolidar_emissores import normalizar
+from utils.paths import get_data_dir
 
 logger = logging.getLogger("preencher_cnpj_cvm")
 
-CVM_CIA_URL = (
-    "https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv"
-)
+CVM_CIA_URL = "https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv"
 CVM_FI_URL = "https://dados.cvm.gov.br/dados/FI/CAD/DADOS/cad_fi.csv"
 
 CACHE_DIR = get_data_dir() / "cvm_cache"
@@ -39,7 +35,7 @@ COLUNAS_CONSOLIDADO = [
 ]
 
 
-def _limpar_cnpj(valor: Optional[str]) -> str:
+def _limpar_cnpj(valor: str | None) -> str:
     if not valor:
         return ""
     return re.sub(r"\D", "", valor)
@@ -60,7 +56,7 @@ def _baixar_csv(url: str, cache_path: Path) -> bool:
         return False
 
 
-def _obter_csv(url: str, filename: str, cache_dir: Path = CACHE_DIR) -> Optional[Path]:
+def _obter_csv(url: str, filename: str, cache_dir: Path = CACHE_DIR) -> Path | None:
     cache_path = cache_dir / filename
     if cache_path.exists():
         mtime = datetime.fromtimestamp(cache_path.stat().st_mtime)
@@ -76,7 +72,7 @@ def _obter_csv(url: str, filename: str, cache_dir: Path = CACHE_DIR) -> Optional
 
 
 def _ler_csv(caminho: Path, delimiter: str = ";") -> list[dict]:
-    with open(caminho, "r", encoding="latin-1") as f:
+    with open(caminho, encoding="latin-1") as f:
         reader = csv.DictReader(f, delimiter=delimiter)
         return list(reader)
 
@@ -137,8 +133,8 @@ def _carregar_lookup_fundos(caminho: Path) -> dict[str, str]:
 
 
 def generate(
-    consolidado_path: Optional[Path] = None,
-    cache_dir: Optional[Path] = None,
+    consolidado_path: Path | None = None,
+    cache_dir: Path | None = None,
 ) -> dict:
     if consolidado_path is None:
         consolidado_path = get_data_dir() / "emissores_consolidado.csv"
@@ -171,7 +167,7 @@ def generate(
         logger.warning(f"Consolidado não encontrado: {consolidado_path}")
         return {"matched": 0, "unmatched": 0, "ambiguous": 0, "total": 0}
 
-    with open(consolidado_path, "r", encoding="utf-8") as f:
+    with open(consolidado_path, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     for r in rows:
         r.pop(None, None)
@@ -216,7 +212,9 @@ def generate(
         writer.writeheader()
         writer.writerows(updated_rows)
 
-    logger.info(f"Total: {total} | Preenchidos: {matched} | Não encontrados: {unmatched} | Ambíguos: {ambiguous_hits}")
+    logger.info(
+        f"Total: {total} | Preenchidos: {matched} | Não encontrados: {unmatched} | Ambíguos: {ambiguous_hits}"
+    )
     if ambiguous_list:
         logger.info(f"Ambíguos: {', '.join(ambiguous_list[:10])}{'...' if len(ambiguous_list) > 10 else ''}")
 

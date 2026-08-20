@@ -1,11 +1,10 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Scraper: Liberum Ratings – Emissores com rating no Brasil
 Fonte:   https://sitev2-api.liberumratings.com.br/getRatings
 Saída:   data/liberum_emissores.csv
 """
-import os
+
 import sys
 import time
 from pathlib import Path
@@ -14,7 +13,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from scrapers.utils.base import BaseScraper
-from scripts.utils import print_done, print_info, print_warn, print_start, print_fail
+from scripts.utils import print_done, print_fail, print_start
 
 BASE_API_URL = "https://sitev2-api.liberumratings.com.br"
 HEADERS = {
@@ -85,14 +84,12 @@ class LiberumEmissoresScraper(BaseScraper):
                     data_json = resp.json()
                     break
                 except Exception as e:
-                    self.logger.warning(
-                        f"Tentativa {attempt + 1} falhou para a página {page}: {e}"
-                    )
+                    self.logger.warning(f"Tentativa {attempt + 1} falhou para a página {page}: {e}")
                     if attempt == max_retries - 1:
                         self.logger.error(f"Erro persistente na página {page}: {e}")
                         print_fail(f"Erro ao acessar API Liberum na página {page}: {e}")
                         break
-                    time.sleep(2 ** attempt)
+                    time.sleep(2**attempt)
 
             if data_json is None:
                 # Interrompe o loop se não conseguimos recuperar a página mesmo após retentativas

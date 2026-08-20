@@ -13,21 +13,16 @@ Pipeline:
 
 import argparse
 import csv
-import io
 import logging
 import re
 import sqlite3
-import sys
-import time
 import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
-from typing import Optional
 
 import requests
 
 from scripts.consolidar_emissores import normalizar
-from utils.paths import get_data_dir
 from scripts.utils.ux import (
     banner,
     bold,
@@ -40,12 +35,11 @@ from scripts.utils.ux import (
     print_start,
     print_summary,
     print_table,
-    print_warn,
     red,
     section,
-    white,
     yellow,
 )
+from utils.paths import get_data_dir
 
 logger = logging.getLogger("preencher_cnpj_rfb")
 
@@ -63,27 +57,60 @@ CONSOLIDADO_PATH = get_data_dir() / "emissores_consolidado.csv"
 CACHE_DIR = get_data_dir() / "rfb_cache"
 DB_PATH = CACHE_DIR / "empresas.db"
 
-RFB_BASE_URL = (
-    "https://arquivos.receitafederal.gov.br"
-    "/public.php/dav/files/YggdBLfdninEJX9/"
-)
+RFB_BASE_URL = "https://arquivos.receitafederal.gov.br/public.php/dav/files/YggdBLfdninEJX9/"
 
 NS = {"d": "DAV:", "oc": "http://owncloud.org/ns", "nc": "http://nextcloud.org/ns"}
 
 _PALAVRAS_IGNORAR = {
-    "BANCO", "SA", "S.A", "LTDA", "EIRELI", "MEI", "ME", "EPP",
-    "DO", "DA", "DOS", "DAS", "DE", "EM", "COM", "E", "OU",
-    "A", "AO", "AOS", "AS", "O", "OS", "NO", "NA",
-    "PELO", "PELA", "UM", "UMA",
-    "LIMITED", "INC", "CORP", "LLC",
-    "COMERCIAL", "INDUSTRIAL",
-    "PARTICIPACOES", "PART", "HOLDING",
-    "ADMINISTRACAO", "ADMIN",
-    "ASSESSORIA", "CONSULTORIA",
-    "SERVICOS", "SERVICOS",
-    "IMPORTACAO", "EXPORTACAO", "IMPORTACAO", "EXPORTACAO",
-    "TRANSPORTES", "LOGISTICA", "LOGISTICA",
-    "BRASIL", "SAO",
+    "BANCO",
+    "SA",
+    "S.A",
+    "LTDA",
+    "EIRELI",
+    "MEI",
+    "ME",
+    "EPP",
+    "DO",
+    "DA",
+    "DOS",
+    "DAS",
+    "DE",
+    "EM",
+    "COM",
+    "E",
+    "OU",
+    "A",
+    "AO",
+    "AOS",
+    "AS",
+    "O",
+    "OS",
+    "NO",
+    "NA",
+    "PELO",
+    "PELA",
+    "UM",
+    "UMA",
+    "LIMITED",
+    "INC",
+    "CORP",
+    "LLC",
+    "COMERCIAL",
+    "INDUSTRIAL",
+    "PARTICIPACOES",
+    "PART",
+    "HOLDING",
+    "ADMINISTRACAO",
+    "ADMIN",
+    "ASSESSORIA",
+    "CONSULTORIA",
+    "SERVICOS",
+    "IMPORTACAO",
+    "EXPORTACAO",
+    "TRANSPORTES",
+    "LOGISTICA",
+    "BRASIL",
+    "SAO",
 }
 
 
@@ -115,7 +142,7 @@ def _extrair_palavras(nome: str) -> set[str]:
 # ── WebDAV ──────────────────────────────────────────────────────────────
 
 
-def _xml_text(parent, tag: str) -> Optional[str]:
+def _xml_text(parent, tag: str) -> str | None:
     el = parent.find(tag, NS)
     return el.text if el is not None else None
 
@@ -142,17 +169,19 @@ def _list_dir(url: str) -> list[dict]:
         is_collection = rtype is not None and rtype.find("d:collection", NS) is not None
         size_text = _xml_text(prop, "d:getcontentlength")
         lastmod = _xml_text(prop, "d:getlastmodified")
-        entries.append({
-            "href": href,
-            "name": href.rstrip("/").split("/")[-1],
-            "collection": is_collection,
-            "size": int(size_text) if size_text else 0,
-            "lastmod": lastmod or "",
-        })
+        entries.append(
+            {
+                "href": href,
+                "name": href.rstrip("/").split("/")[-1],
+                "collection": is_collection,
+                "size": int(size_text) if size_text else 0,
+                "lastmod": lastmod or "",
+            }
+        )
     return entries
 
 
-def _mes_mais_recente() -> Optional[str]:
+def _mes_mais_recente() -> str | None:
     entries = _list_dir(RFB_BASE_URL)
     meses = sorted(
         (e["name"] for e in entries if e["collection"] and re.match(r"^\d{4}-\d{2}$", e["name"])),
@@ -164,10 +193,7 @@ def _mes_mais_recente() -> Optional[str]:
 def _empresa_zips_no_mes(mes: str) -> list[dict]:
     url = RFB_BASE_URL + mes + "/"
     entries = _list_dir(url)
-    return [
-        e for e in entries
-        if not e["collection"] and re.match(r"^Empresas\d+\.zip$", e["name"])
-    ]
+    return [e for e in entries if not e["collection"] and re.match(r"^Empresas\d+\.zip$", e["name"])]
 
 
 def _baixar(url: str, path: Path, total_size: int = 0, quiet: bool = False) -> None:
@@ -184,7 +210,11 @@ def _baixar(url: str, path: Path, total_size: int = 0, quiet: bool = False) -> N
                 pct = int(100 * downloaded / total_size)
                 if pct != last_pct:
                     bar = "█" * (pct // 4) + "░" * (25 - pct // 4)
-                    print(f"\r  {cyan(bar)}  {dim(f'{pct:3d}%')}  {dim(f'{downloaded//1024//1024}MB / {total_size//1024//1024}MB')}", end="", flush=True)
+                    print(
+                        f"\r  {cyan(bar)}  {dim(f'{pct:3d}%')}  {dim(f'{downloaded // 1024 // 1024}MB / {total_size // 1024 // 1024}MB')}",
+                        end="",
+                        flush=True,
+                    )
                     last_pct = pct
     if not quiet:
         print()
@@ -204,7 +234,7 @@ def _baixar_empresas(mes: str, cache_dir: Path, quiet: bool = False) -> list[Pat
             continue
         url = RFB_BASE_URL + mes + "/" + z["name"]
         if not quiet:
-            print_info(f"Baixando {z['name']} ({z['size']//1024//1024} MB)...")
+            print_info(f"Baixando {z['name']} ({z['size'] // 1024 // 1024} MB)...")
         _baixar(url, dest, total_size=z.get("size", 0), quiet=quiet)
         baixados.append(dest)
     return baixados
@@ -278,7 +308,7 @@ def _construir_db(zip_paths: list[Path], db_path: Path, quiet: bool = False) -> 
 # ── Search ──────────────────────────────────────────────────────────────
 
 
-def _search(nome_normalizado: str, db_path: Path) -> Optional[str]:
+def _search(nome_normalizado: str, db_path: Path) -> str | None:
     conn = sqlite3.connect(str(db_path))
 
     cur = conn.execute(
@@ -325,8 +355,8 @@ def _salvar_csv(path: Path, rows: list[dict]) -> None:
 
 
 def generate(
-    consolidado_path: Optional[Path] = None,
-    db_path: Optional[Path] = None,
+    consolidado_path: Path | None = None,
+    db_path: Path | None = None,
     rebuild_db: bool = False,
     quiet: bool = False,
 ) -> dict:
@@ -365,7 +395,7 @@ def generate(
         if not quiet:
             print_info(f"Usando banco existente: {db_path}")
 
-    with open(consolidado_path, "r", encoding="utf-8") as f:
+    with open(consolidado_path, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     for r in rows:
         r.pop(None, None)

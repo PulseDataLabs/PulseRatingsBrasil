@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Scraper: Austin Rating – Ratings de emissores brasileiros
 Fonte:   Historico-Rating em https://www.austin.com.br
@@ -8,19 +7,26 @@ Saída:   data/austin_ratings.csv
 Carrega a lista de emissores gerada por austin_emissores.csv e
 acessa de forma concorrente a página de histórico de cada um.
 """
-import os
-import sys
+
 import datetime
-import time
-from pathlib import Path
+import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 
 import pandas as pd
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from scrapers.utils.base import BaseScraper
-from scripts.utils import print_done, print_info, print_warn, print_start, print_fail, progress_bar, IS_TTY, dim
+from scripts.utils import (
+    IS_TTY,
+    dim,
+    print_done,
+    print_fail,
+    print_start,
+    print_warn,
+    progress_bar,
+)
 from utils.paths import get_data_dir
 
 BASE_URL = "https://www.austin.com.br"
@@ -93,18 +99,20 @@ def scrape_emissor_history(emissor_info: dict) -> list[dict]:
         # Escolhe a principal nota de rating (privilegia Longo Prazo, mas usa Curto Prazo se for vazio)
         rating_principal = rating_lp if rating_lp else rating_cp
 
-        rows.append({
-            "no_emissor": nome,
-            "link": link,
-            "no_tipo_rating": setor,
-            "de_rating_br": rating_principal,
-            "de_rating_cp": rating_cp,
-            "de_rating_lp": rating_lp,
-            "dt_acao_rating": dt_acao,
-            "de_acao_rating": acao,
-            "de_outlook": outlook,
-            "link_relatorio": report_link
-        })
+        rows.append(
+            {
+                "no_emissor": nome,
+                "link": link,
+                "no_tipo_rating": setor,
+                "de_rating_br": rating_principal,
+                "de_rating_cp": rating_cp,
+                "de_rating_lp": rating_lp,
+                "dt_acao_rating": dt_acao,
+                "de_acao_rating": acao,
+                "de_outlook": outlook,
+                "link_relatorio": report_link,
+            }
+        )
 
     return rows
 
@@ -136,8 +144,7 @@ class AustinRatingsScraper(BaseScraper):
         emissores_csv = get_data_dir() / "austin_emissores.csv"
         if not emissores_csv.exists():
             self.logger.warning(
-                f"Arquivo de emissores não encontrado: {emissores_csv}. "
-                "Execute austin_emissores.py primeiro."
+                f"Arquivo de emissores não encontrado: {emissores_csv}. Execute austin_emissores.py primeiro."
             )
             print_fail("CSV de emissores não encontrado")
             return pd.DataFrame()
@@ -159,9 +166,7 @@ class AustinRatingsScraper(BaseScraper):
 
         # Dispara conexões concorrentes para acelerar o processo
         with ThreadPoolExecutor(max_workers=15) as executor:
-            future_to_emissor = {
-                executor.submit(scrape_emissor_history, em): em for em in emissores_list
-            }
+            future_to_emissor = {executor.submit(scrape_emissor_history, em): em for em in emissores_list}
 
             for future in as_completed(future_to_emissor):
                 em = future_to_emissor[future]
@@ -199,10 +204,10 @@ class AustinRatingsScraper(BaseScraper):
             "dt_acao_rating",
             "de_acao_rating",
             "de_outlook",
-            "link_relatorio"
+            "link_relatorio",
         ]
         df = df[[c for c in col_order if c in df.columns]]
-        
+
         print_done(f"{len(df)} ratings capturados de {completed} emissores")
         return df
 

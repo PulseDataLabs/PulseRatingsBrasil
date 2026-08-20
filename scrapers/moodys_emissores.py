@@ -1,18 +1,19 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Scraper: Moody's – Lista de Emissores Vigentes (Brasil)
 Fonte:   https://moodyslocal.com.br/
 Saída:   data/moodys_emissores.csv
 """
+
+import datetime
 import os
 import sys
-import datetime
+
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.utils.base import BaseScraper
-from scripts.utils import print_done, print_start, print_fail
+from scripts.utils import print_done, print_fail, print_start
 
 
 class MoodysEmissoresScraper(BaseScraper):
@@ -51,7 +52,7 @@ class MoodysEmissoresScraper(BaseScraper):
         df = pd.DataFrame(data_rows, columns=headers)
         df.rename(columns={"Emissor": "no_emissor"}, inplace=True)
         df.drop_duplicates(subset=["no_emissor"], inplace=True)
-        
+
         today_str = datetime.date.today().strftime("%Y-%m-%d")
         df.insert(0, "dt_captura", today_str)
         df["link"] = ""

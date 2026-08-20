@@ -10,8 +10,7 @@ import argparse
 import logging
 import os
 import sys
-import time
-from typing import Iterator, Optional
+from collections.abc import Iterator
 
 # ── Detecção de Ambiente ──────────────────────────────────────────────
 _CI = os.environ.get("CI", "")
@@ -24,8 +23,7 @@ USE_COLOR = (IS_TTY or bool(_CI)) and not _NO_COLOR and _TERM != "dumb"
 # Detecção de suporte a Unicode
 # Verifica encoding do stdout, LANG/LC_ALL, ou assume True se for TTY
 _utf_env = any(
-    "UTF" in os.environ.get(v, "").upper().replace("-", "")
-    for v in ("LC_ALL", "LC_CTYPE", "LANG")
+    "UTF" in os.environ.get(v, "").upper().replace("-", "") for v in ("LC_ALL", "LC_CTYPE", "LANG")
 )
 try:
     _utf_stdout = "UTF" in (sys.stdout.encoding or "").upper().replace("-", "")
@@ -35,7 +33,7 @@ except Exception:
 USE_UNICODE = _utf_stdout or _utf_env or (IS_TTY and _utf_stdout)
 
 
-def configure(*, use_color: Optional[bool] = None, use_unicode: Optional[bool] = None) -> None:
+def configure(*, use_color: bool | None = None, use_unicode: bool | None = None) -> None:
     global USE_COLOR, USE_UNICODE, ICON
     if use_color is not None:
         USE_COLOR = use_color
@@ -49,22 +47,24 @@ def _rebuild_icons() -> None:
     global ICON
     u = USE_UNICODE
     ICON.clear()
-    ICON.update({
-        "success": "✔" if u else "[OK]",
-        "fail":    "✖" if u else "[FAIL]",
-        "warn":    "⚠" if u else "[WARN]",
-        "info":    "ℹ" if u else "[INFO]",
-        "skip":    "⏭" if u else "[SKIP]",
-        "file":    "📄" if u else "[FILE]",
-        "refresh": "🔄" if u else "[REFRESH]",
-        "clean":   "🧹" if u else "[CLEAN]",
-        "chart":   "📊" if u else "[CHART]",
-        "clock":   "⏱" if u else "[TIME]",
-        "folder":  "📁" if u else "[DIR]",
-        "search":  "🔍" if u else "[SEARCH]",
-        "gear":    "⚙"  if u else "[GEAR]",
-        "rocket":  "🚀" if u else "[ROCKET]",
-    })
+    ICON.update(
+        {
+            "success": "✔" if u else "[OK]",
+            "fail": "✖" if u else "[FAIL]",
+            "warn": "⚠" if u else "[WARN]",
+            "info": "ℹ" if u else "[INFO]",
+            "skip": "⏭" if u else "[SKIP]",
+            "file": "📄" if u else "[FILE]",
+            "refresh": "🔄" if u else "[REFRESH]",
+            "clean": "🧹" if u else "[CLEAN]",
+            "chart": "📊" if u else "[CHART]",
+            "clock": "⏱" if u else "[TIME]",
+            "folder": "📁" if u else "[DIR]",
+            "search": "🔍" if u else "[SEARCH]",
+            "gear": "⚙" if u else "[GEAR]",
+            "rocket": "🚀" if u else "[ROCKET]",
+        }
+    )
 
 
 # ── Códigos ANSI Core ─────────────────────────────────────────────────
@@ -72,22 +72,64 @@ def _c(code: str, text: str) -> str:
     return f"\033[{code}m{text}\033[0m" if USE_COLOR else text
 
 
-def bold(t: str) -> str:    return _c("1", t)
-def dim(t: str) -> str:     return _c("2", t)
-def red(t: str) -> str:     return _c("31", t)
-def green(t: str) -> str:   return _c("32", t)
-def yellow(t: str) -> str:  return _c("33", t)
-def blue(t: str) -> str:    return _c("34", t)
-def magenta(t: str) -> str: return _c("35", t)
-def cyan(t: str) -> str:    return _c("36", t)
-def white(t: str) -> str:   return _c("97", t)
+def bold(t: str) -> str:
+    return _c("1", t)
 
-def b_red(t: str) -> str:     return _c("1;31", t)
-def b_green(t: str) -> str:   return _c("1;32", t)
-def b_yellow(t: str) -> str:  return _c("1;33", t)
-def b_blue(t: str) -> str:    return _c("1;34", t)
-def b_magenta(t: str) -> str: return _c("1;35", t)
-def b_cyan(t: str) -> str:    return _c("1;36", t)
+
+def dim(t: str) -> str:
+    return _c("2", t)
+
+
+def red(t: str) -> str:
+    return _c("31", t)
+
+
+def green(t: str) -> str:
+    return _c("32", t)
+
+
+def yellow(t: str) -> str:
+    return _c("33", t)
+
+
+def blue(t: str) -> str:
+    return _c("34", t)
+
+
+def magenta(t: str) -> str:
+    return _c("35", t)
+
+
+def cyan(t: str) -> str:
+    return _c("36", t)
+
+
+def white(t: str) -> str:
+    return _c("97", t)
+
+
+def b_red(t: str) -> str:
+    return _c("1;31", t)
+
+
+def b_green(t: str) -> str:
+    return _c("1;32", t)
+
+
+def b_yellow(t: str) -> str:
+    return _c("1;33", t)
+
+
+def b_blue(t: str) -> str:
+    return _c("1;34", t)
+
+
+def b_magenta(t: str) -> str:
+    return _c("1;35", t)
+
+
+def b_cyan(t: str) -> str:
+    return _c("1;36", t)
 
 
 # ── Ícones ────────────────────────────────────────────────────────────
@@ -95,23 +137,23 @@ ICON: dict[str, str] = {}
 _rebuild_icons()
 
 GROUP_ICON = {
-    "anbima":  "🟡",
-    "b3":      "🔵",
-    "bcb":     "🟢",
-    "cvm":     "🟣",
-    "ibge":    "🔴",
+    "anbima": "🟡",
+    "b3": "🔵",
+    "bcb": "🟢",
+    "cvm": "🟣",
+    "ibge": "🔴",
     "ratings": "⚪",
-    "misc":    "🟤",
+    "misc": "🟤",
 }
 
 GROUP_COLOR = {
-    "anbima":  yellow,
-    "b3":      cyan,
-    "bcb":     green,
-    "cvm":     magenta,
-    "ibge":    red,
+    "anbima": yellow,
+    "b3": cyan,
+    "bcb": green,
+    "cvm": magenta,
+    "ibge": red,
     "ratings": white,
-    "misc":    blue,
+    "misc": blue,
 }
 
 
@@ -141,12 +183,12 @@ def print_start(msg: str, icon: str = "refresh") -> None:
     print(f"  {ICON[icon]}  {msg}")
 
 
-def print_done(msg: str, elapsed: Optional[float] = None, icon: str = "success") -> None:
+def print_done(msg: str, elapsed: float | None = None, icon: str = "success") -> None:
     time_str = f"  {dim(f'{elapsed:.1f}s')}" if elapsed is not None else ""
     print(f"  {green(ICON[icon])}  {msg}{time_str}")
 
 
-def print_fail(msg: str, elapsed: Optional[float] = None, icon: str = "fail") -> None:
+def print_fail(msg: str, elapsed: float | None = None, icon: str = "fail") -> None:
     time_str = f"  {dim(f'{elapsed:.1f}s')}" if elapsed is not None else ""
     print(f"  {red(ICON[icon])}  {msg}{time_str}")
 
@@ -179,9 +221,7 @@ def print_table(
     total_w = sum(col_widths) + len(headers) * 3 + 1
 
     sep = dim("─" * total_w)
-    head = dim("│") + dim("│").join(
-        f" {bold(h):{w}} " for h, w in zip(headers, col_widths)
-    ) + dim("│")
+    head = dim("│") + dim("│").join(f" {bold(h):{w}} " for h, w in zip(headers, col_widths)) + dim("│")
 
     if title:
         print()
@@ -195,9 +235,7 @@ def print_table(
         print(sep)
 
     for row in rows:
-        line_str = dim("│") + dim("│").join(
-            f" {str(c):{w}} " for c, w in zip(row, col_widths)
-        ) + dim("│")
+        line_str = dim("│") + dim("│").join(f" {str(c):{w}} " for c, w in zip(row, col_widths)) + dim("│")
         print(line_str)
     print(sep)
     print()
@@ -210,7 +248,7 @@ def print_summary(
     failed: int,
     skipped: int = 0,
     elapsed: float = 0.0,
-    details: Optional[list[tuple[str, str, str]]] = None,
+    details: list[tuple[str, str, str]] | None = None,
 ) -> None:
     details = details or []
     print()

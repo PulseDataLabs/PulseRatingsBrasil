@@ -114,6 +114,8 @@ def test_carregar_consolidado_existente_normal(tmp_path):
             "no_emissor_fitch": "Ambev S.A.",
             "no_emissor_moodys": "",
             "no_emissor_standard_and_poors": "",
+            "no_emissor_austin": "",
+            "no_emissor_liberum": "",
             "cnpj_emissor": "12345678000199",
         },
     ])
@@ -141,7 +143,7 @@ def test_consolidar_simples(tmp_path):
     _escrever_csv(sp, [{"no_emissor": "", "link": ""}])
 
     output = tmp_path / "out.csv"
-    consolidar(fitch, moodys, sp, output)
+    consolidar(fitch, moodys, sp, fitch, fitch, output)
 
     with open(output, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -164,7 +166,7 @@ def test_consolidar_mesmo_emissor_2_fontes(tmp_path):
     _escrever_csv(sp, [{"no_emissor": "AMBEV S.A.", "link": ""}])
 
     output = tmp_path / "out.csv"
-    consolidar(fitch, moodys, sp, output)
+    consolidar(fitch, moodys, sp, fitch, fitch, output)
 
     with open(output, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
@@ -182,6 +184,8 @@ def test_consolidar_merge_preserva_cnpj(tmp_path):
             "no_emissor_fitch": "Ambev S.A. (antigo)",
             "no_emissor_moodys": "",
             "no_emissor_standard_and_poors": "",
+            "no_emissor_austin": "",
+            "no_emissor_liberum": "",
             "cnpj_emissor": "12345678000199",
         },
     ])
@@ -195,7 +199,7 @@ def test_consolidar_merge_preserva_cnpj(tmp_path):
     sp = tmp_path / "sp.csv"
     _escrever_csv(sp, [{"no_emissor": "", "link": ""}])
 
-    consolidar(fitch, moodys, sp, output)
+    consolidar(fitch, moodys, sp, fitch, fitch, output)
 
     with open(output, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
@@ -220,7 +224,7 @@ def test_consolidar_ordem_alfabetica(tmp_path):
     _escrever_csv(sp, [{"no_emissor": "", "link": ""}])
 
     output = tmp_path / "out.csv"
-    consolidar(fitch, moodys, sp, output)
+    consolidar(fitch, moodys, sp, fitch, fitch, output)
 
     with open(output, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
@@ -238,6 +242,8 @@ def test_consolidar_emissor_novo_adicionado(tmp_path):
             "no_emissor_fitch": "Ambev S.A.",
             "no_emissor_moodys": "",
             "no_emissor_standard_and_poors": "",
+            "no_emissor_austin": "",
+            "no_emissor_liberum": "",
             "cnpj_emissor": "",
         },
     ])
@@ -254,7 +260,7 @@ def test_consolidar_emissor_novo_adicionado(tmp_path):
     sp = tmp_path / "sp.csv"
     _escrever_csv(sp, [{"no_emissor": "", "link": ""}])
 
-    consolidar(fitch, moodys, sp, output)
+    consolidar(fitch, moodys, sp, fitch, fitch, output)
 
     with open(output, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
@@ -272,7 +278,7 @@ def test_consolidar_sem_nenhuma_fonte(tmp_path):
     _escrever_csv(sp, [{"no_emissor": "", "link": ""}])
 
     output = tmp_path / "out.csv"
-    consolidar(tmp_path / "inexistente.csv", moodys, sp, output)
+    consolidar(tmp_path / "inexistente.csv", moodys, sp, moodys, moodys, output)
 
     with open(output, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))

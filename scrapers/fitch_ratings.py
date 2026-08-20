@@ -1,21 +1,20 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Scraper: Fitch Ratings – Ratings de emissores brasileiros
 Fonte:   GraphQL API — https://api.fitchratings.com
 Saída:   data/fitch_ratings.csv
 """
+
 import sys
-import datetime
 import time
 from pathlib import Path
 
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from utils import get_logger, agora_brt, limpar
 from scrapers.utils.base import BaseScraper
-from scripts.utils import print_done, print_info, print_warn, print_start, progress_bar
+from scripts.utils import print_done, print_fail, print_info, print_start, print_warn, progress_bar
+from utils import agora_brt, get_logger, limpar
 
 log = get_logger("fitch_ratings")
 
@@ -167,18 +166,20 @@ def _obter_ratings_via_api() -> list[dict]:
                 if alert_desc == "-":
                     alert_desc = ""
 
-                rows.append({
-                    "dt_captura": dt_captura,
-                    "no_emissor": nome,
-                    "link": link,
-                    "no_tipo_rating": limpar(r.get("ratingTypeDescription") or ""),
-                    "de_rating_br": limpar(r.get("ratingCode") or ""),
-                    "dt_acao_rating": _formatar_data(r.get("ratingEffectiveDate") or ""),
-                    "de_acao_rating": limpar(r.get("ratingActionDescription") or ""),
-                    "de_outlook": limpar(alert_desc),
-                    "de_instrumento": "",
-                    "de_isin": "",
-                })
+                rows.append(
+                    {
+                        "dt_captura": dt_captura,
+                        "no_emissor": nome,
+                        "link": link,
+                        "no_tipo_rating": limpar(r.get("ratingTypeDescription") or ""),
+                        "de_rating_br": limpar(r.get("ratingCode") or ""),
+                        "dt_acao_rating": _formatar_data(r.get("ratingEffectiveDate") or ""),
+                        "de_acao_rating": limpar(r.get("ratingActionDescription") or ""),
+                        "de_outlook": limpar(alert_desc),
+                        "de_instrumento": "",
+                        "de_isin": "",
+                    }
+                )
 
         log.info(
             f"  Página {page}: {len(entity_hits)} emissores, "
@@ -256,18 +257,20 @@ def _obter_ratings_via_api() -> list[dict]:
                 if alert_desc == "-":
                     alert_desc = ""
 
-                rows.append({
-                    "dt_captura": dt_captura,
-                    "no_emissor": issuer,
-                    "link": link,
-                    "no_tipo_rating": limpar(r.get("ratingTypeDescription") or ""),
-                    "de_rating_br": limpar(r.get("ratingCode") or ""),
-                    "dt_acao_rating": _formatar_data(r.get("ratingEffectiveDate") or ""),
-                    "de_acao_rating": limpar(r.get("ratingActionDescription") or ""),
-                    "de_outlook": limpar(alert_desc),
-                    "de_instrumento": issue_name,
-                    "de_isin": de_isin,
-                })
+                rows.append(
+                    {
+                        "dt_captura": dt_captura,
+                        "no_emissor": issuer,
+                        "link": link,
+                        "no_tipo_rating": limpar(r.get("ratingTypeDescription") or ""),
+                        "de_rating_br": limpar(r.get("ratingCode") or ""),
+                        "dt_acao_rating": _formatar_data(r.get("ratingEffectiveDate") or ""),
+                        "de_acao_rating": limpar(r.get("ratingActionDescription") or ""),
+                        "de_outlook": limpar(alert_desc),
+                        "de_instrumento": issue_name,
+                        "de_isin": de_isin,
+                    }
+                )
 
         log.info(
             f"  Página {page}: {len(issue_hits)} emissões, "

@@ -1,11 +1,10 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Scraper: Liberum Ratings – Classificações de risco detalhadas
 Fonte:   https://sitev2-api.liberumratings.com.br/getRatings
 Saída:   data/liberum_ratings.csv
 """
-import os
+
 import sys
 import time
 from pathlib import Path
@@ -14,7 +13,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from scrapers.utils.base import BaseScraper
-from scripts.utils import print_done, print_info, print_warn, print_start, print_fail
+from scripts.utils import print_done, print_fail, print_start
 
 BASE_API_URL = "https://sitev2-api.liberumratings.com.br"
 HEADERS = {
@@ -52,7 +51,9 @@ class LiberumRatingsScraper(BaseScraper):
 
     # Catálogo de Metadados
     title = "Liberum — Ratings"
-    description = "Ratings de crédito de longo e curto prazo e perspectivas atribuídas pela Liberum Ratings no Brasil."
+    description = (
+        "Ratings de crédito de longo e curto prazo e perspectivas atribuídas pela Liberum Ratings no Brasil."
+    )
     icon = "L"
     icon_class = "icon-liberum"
     badge = "Diário"
@@ -98,14 +99,12 @@ class LiberumRatingsScraper(BaseScraper):
                     data_json = resp.json()
                     break
                 except Exception as e:
-                    self.logger.warning(
-                        f"Tentativa {attempt + 1} falhou para a página {page}: {e}"
-                    )
+                    self.logger.warning(f"Tentativa {attempt + 1} falhou para a página {page}: {e}")
                     if attempt == max_retries - 1:
                         self.logger.error(f"Erro persistente na página {page}: {e}")
                         print_fail(f"Erro ao acessar API Liberum na página {page}: {e}")
                         break
-                    time.sleep(2 ** attempt)
+                    time.sleep(2**attempt)
 
             if data_json is None:
                 break
@@ -142,17 +141,19 @@ class LiberumRatingsScraper(BaseScraper):
                     if not nota:
                         continue
 
-                    rows.append({
-                        "no_emissor": nome,
-                        "link": link_detalhes,
-                        "no_tipo_rating": categoria,
-                        "de_rating_br": nota,
-                        "dt_acao_rating": dt_acao_rating,
-                        "de_acao_rating": acao,
-                        "de_outlook": perspectiva,
-                        "de_classe": classe,
-                        "de_escala": escala,
-                    })
+                    rows.append(
+                        {
+                            "no_emissor": nome,
+                            "link": link_detalhes,
+                            "no_tipo_rating": categoria,
+                            "de_rating_br": nota,
+                            "dt_acao_rating": dt_acao_rating,
+                            "de_acao_rating": acao,
+                            "de_outlook": perspectiva,
+                            "de_classe": classe,
+                            "de_escala": escala,
+                        }
+                    )
 
             page += 1
             time.sleep(0.3)

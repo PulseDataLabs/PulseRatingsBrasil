@@ -18,19 +18,29 @@ import re
 import sys
 import time
 from pathlib import Path
-from typing import Optional
 
 import requests
 from dotenv import load_dotenv
-from utils.paths import get_data_dir
 
 from scripts.consolidar_emissores import normalizar
 from scripts.preencher_cnpj_api import _matches
 from scripts.utils.ux import (
-    banner, section, bold, dim, green, red, yellow, cyan,
-    print_start, print_done, print_fail, print_warn, print_skip, print_info,
-    print_summary, print_table,
+    banner,
+    bold,
+    cyan,
+    dim,
+    green,
+    print_done,
+    print_fail,
+    print_info,
+    print_start,
+    print_summary,
+    print_table,
+    red,
+    section,
+    yellow,
 )
+from utils.paths import get_data_dir
 
 logger = logging.getLogger("preencher_cnpj_web")
 
@@ -163,14 +173,20 @@ def _texto_sem_cnpj(texto: str) -> str:
     return _RE_CNPJ.sub(" ", texto)
 
 
-def _limpar_cnpj(valor: Optional[str]) -> str:
+def _limpar_cnpj(valor: str | None) -> str:
     if not valor:
         return ""
     return re.sub(r"\D", "", valor)
 
 
 def _obter_nome_busca(row: dict) -> str:
-    for col in ["no_emissor_fitch", "no_emissor_moodys", "no_emissor_standard_and_poors", "no_emissor_austin", "no_emissor_liberum"]:
+    for col in [
+        "no_emissor_fitch",
+        "no_emissor_moodys",
+        "no_emissor_standard_and_poors",
+        "no_emissor_austin",
+        "no_emissor_liberum",
+    ]:
         nome = (row.get(col) or "").strip()
         if nome:
             return nome
@@ -251,7 +267,7 @@ def _consultar_cnpj_reverso(cnpj_base: str) -> tuple[str | None, bool | None]:
 
 
 def generate(
-    consolidado_path: Optional[Path] = None,
+    consolidado_path: Path | None = None,
     rate_limit: float = 1.5,
     quiet: bool = False,
 ) -> dict:
@@ -269,7 +285,7 @@ def generate(
         print_fail(f"Consolidado não encontrado: {consolidado_path}")
         return {"total": 0, "matched": 0, "unmatched": 0, "errors": 0}
 
-    with open(consolidado_path, "r", encoding="utf-8") as f:
+    with open(consolidado_path, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     for r in rows:
         r.pop(None, None)
@@ -337,7 +353,9 @@ def generate(
             except Exception as e:
                 errors += 1
                 if not quiet:
-                    print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('erro busca')}  {dim(str(e)[:40])}")
+                    print(
+                        f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('erro busca')}  {dim(str(e)[:40])}"
+                    )
                 if i < len(rows) - 1:
                     time.sleep(rate_limit)
                 continue
@@ -345,7 +363,9 @@ def generate(
             if not results:
                 unmatched += 1
                 if not quiet:
-                    print(f"  {yellow('⚠')}  {dim(nome_busca):{max_width}s}  {yellow('não encontrado nos buscadores')}")
+                    print(
+                        f"  {yellow('⚠')}  {dim(nome_busca):{max_width}s}  {yellow('não encontrado nos buscadores')}"
+                    )
                 if i < len(rows) - 1:
                     time.sleep(rate_limit)
                 continue
@@ -362,7 +382,9 @@ def generate(
             if not cnpjs_encontrados:
                 unmatched += 1
                 if not quiet:
-                    print(f"  {yellow('⚠')}  {dim(nome_busca):{max_width}s}  {yellow('sem CNPJ nos resultados')}")
+                    print(
+                        f"  {yellow('⚠')}  {dim(nome_busca):{max_width}s}  {yellow('sem CNPJ nos resultados')}"
+                    )
                 if i < len(rows) - 1:
                     time.sleep(rate_limit)
                 continue
@@ -405,7 +427,9 @@ def generate(
                     unmatched += 1
                     if not quiet:
                         cnpjs_str = ", ".join(sorted(cnpjs_encontrados))
-                        print(f"  {yellow('⚠')}  {dim(nome_busca):{max_width}s}  {yellow(f'{len(cnpjs_encontrados)} CNPJs, ambíguo: {cnpjs_str}')}")
+                        print(
+                            f"  {yellow('⚠')}  {dim(nome_busca):{max_width}s}  {yellow(f'{len(cnpjs_encontrados)} CNPJs, ambíguo: {cnpjs_str}')}"
+                        )
                     if i < len(rows) - 1:
                         time.sleep(rate_limit)
                     continue
@@ -477,7 +501,7 @@ def main():
         print(f"  {yellow('⚠')}  {result['unmatched']} não encontrados")
     if result["errors"] > 0:
         print(f"  {red('✖')}  {result['errors']} erro(s)")
-    total_encontrados = result["matched"] + result.get("pre_existing", 0)
+    result["matched"] + result.get("pre_existing", 0)
     print(f"  {dim('─')}")
     print(f"  {bold('Total no consolidado:')} {result['total']} emissores")
 

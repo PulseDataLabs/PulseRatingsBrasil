@@ -16,7 +16,6 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT_DIR))
 
 from run_all import discover_scrapers
-from scrapers.utils.base import BaseScraper
 from utils.paths import get_data_dir
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -87,7 +86,7 @@ def generate():
                 cls = getattr(mod, class_name)
                 # Instancia para obter atributos dinâmicos do BaseScraper
                 inst = cls()
-                
+
                 title = getattr(inst, "title", "")
                 description = getattr(inst, "description", "")
                 icon = getattr(inst, "icon", "")
@@ -102,7 +101,7 @@ def generate():
                     filename = inst.output_file.name
                 else:
                     filename = f"{inst.name}.csv"
-            
+
             # Se for funcional, verifica se possui METADATA global
             elif hasattr(mod, "METADATA") and isinstance(mod.METADATA, dict):
                 meta = mod.METADATA
@@ -118,7 +117,9 @@ def generate():
                     filename = meta["file"]
 
         except Exception as e:
-            logger.warning(f"Erro ao importar {module_name} para metadados, usando fallback do datasets.json: {e}")
+            logger.warning(
+                f"Erro ao importar {module_name} para metadados, usando fallback do datasets.json: {e}"
+            )
 
         # 3. Aplica lógica de Fallback com o datasets.json anterior
         # Procuramos correspondência pelo arquivo CSV gerado
@@ -150,7 +151,7 @@ def generate():
         if icon == "📊":
             icon = default_icon
 
-        if 'badge' in cls.__dict__:
+        if "badge" in cls.__dict__:
             badge = badge
             badge_class = badge_class
         else:
@@ -164,7 +165,10 @@ def generate():
             icon_class = default_icon_class
 
         # URL bruta do arquivo no repositório do github
-        url = fallback.get("url") or f"https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/{filename}"
+        url = (
+            fallback.get("url")
+            or f"https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/{filename}"
+        )
         if url:
             if "PulseFlat" in url:
                 url = url.replace("PulseFlat", "PulseRatingsBrasil")
@@ -181,7 +185,7 @@ def generate():
             "badgeClass": badge_class,
             "tags": tags,
             "source": source,
-            "url": url
+            "url": url,
         }
 
         new_catalog.append(dataset_entry)
@@ -253,7 +257,9 @@ def generate():
         datasets_json_path.parent.mkdir(parents=True, exist_ok=True)
         with datasets_json_path.open("w", encoding="utf-8") as f:
             json.dump(new_catalog, f, indent=2, ensure_ascii=False)
-        logger.info(f"Sucesso! Catálogo gerado e salvo em {datasets_json_path} com {len(new_catalog)} datasets.")
+        logger.info(
+            f"Sucesso! Catálogo gerado e salvo em {datasets_json_path} com {len(new_catalog)} datasets."
+        )
     except Exception as e:
         logger.error(f"Erro ao salvar datasets.json: {e}")
         sys.exit(1)

@@ -8,6 +8,7 @@ import csv
 import json
 import logging
 import sys
+import time
 from base64 import b64encode
 from datetime import datetime
 from pathlib import Path
@@ -15,10 +16,9 @@ from zoneinfo import ZoneInfo
 
 import requests
 
-import time
-
 # Patch global do requests para impor limite e padrão de timeout (evita travamentos longos)
 _orig_request = requests.Session.request
+
 
 def _patched_request(self, method, url, *args, **kwargs):
     timeout = kwargs.get("timeout")
@@ -51,6 +51,7 @@ def _patched_request(self, method, url, *args, **kwargs):
                 raise e
             time.sleep(1.0)
 
+
 requests.Session.request = _patched_request
 
 DRIFTS = []
@@ -63,9 +64,9 @@ HEADERS_HTTP = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/124.0 Safari/537.36"
     ),
-    "Accept":  "application/json, text/plain, */*",
+    "Accept": "application/json, text/plain, */*",
     "Referer": "https://www.b3.com.br/",
-    "Origin":  "https://www.b3.com.br",
+    "Origin": "https://www.b3.com.br",
 }
 
 
@@ -147,29 +148,34 @@ def salvar_csv(
         if schemas_path.exists() and registros:
             with schemas_path.open("r", encoding="utf-8") as sf:
                 schemas = json.load(sf)
-            
+
             # Pega colunas úteis da nova execução
-            filtered_cols = [c for c in cabecalho if c not in ("conjunto", "arquivo_origem", "registro_hash", "dt_captura")]
-            
+            filtered_cols = [
+                c for c in cabecalho if c not in ("conjunto", "arquivo_origem", "registro_hash", "dt_captura")
+            ]
+
             import re
+
             for s in schemas:
-                files_declared = [f.strip() for f in re.split(r'·| e ', s.get("files", ""))]
+                files_declared = [f.strip() for f in re.split(r"·| e ", s.get("files", ""))]
                 if arquivo.name in files_declared:
                     existing_cols = [f["name"] for f in s.get("fields", [])]
                     added = [c for c in filtered_cols if c not in existing_cols]
                     removed = []
                     if len(files_declared) == 1:
                         removed = [c for c in existing_cols if c not in filtered_cols]
-                    
+
                     if added or removed:
                         drift_info = {
                             "file": arquivo.name,
                             "added": added,
                             "removed": removed,
-                            "timestamp": datetime.now().isoformat()
+                            "timestamp": datetime.now().isoformat(),
                         }
                         DRIFTS.append(drift_info)
-                        log.warning(f"SCHEMA DRIFT detectado em {arquivo.name}: Adicionadas: {added} | Removidas: {removed}")
+                        log.warning(
+                            f"SCHEMA DRIFT detectado em {arquivo.name}: Adicionadas: {added} | Removidas: {removed}"
+                        )
                     break
     except Exception as e:
         log.warning(f"Erro ao detectar schema drift para {arquivo.name}: {e}")
@@ -192,10 +198,7 @@ def salvar_csv(
     # Determina chaves compostas dos novos dados (para dedup preciso)
     chaves_novas: set[tuple] | None = None
     if chaves_dedup:
-        chaves_novas = {
-            tuple(r.get(c, "") for c in chaves_dedup)
-            for r in registros
-        }
+        chaves_novas = {tuple(r.get(c, "") for c in chaves_dedup) for r in registros}
 
     linhas_anteriores: list[dict] = []
     substituidas = 0
@@ -233,7 +236,7 @@ def salvar_csv(
                     last_updates = json.load(lf)
             except Exception:
                 pass
-        
+
         if registros:
             # Identifica a coluna de data no cabeçalho
             date_col = None
@@ -241,27 +244,27 @@ def salvar_csv(
                 if candidate in cabecalho:
                     date_col = candidate
                     break
-            
+
             if date_col:
                 datas = [r.get(date_col) for r in todas if r.get(date_col)]
                 if datas:
-                    last_updates[arquivo.name] = {
-                        "min": min(datas),
-                        "max": max(datas)
-                    }
+                    last_updates[arquivo.name] = {"min": min(datas), "max": max(datas)}
                     with last_updates_path.open("w", encoding="utf-8") as lf:
                         json.dump(last_updates, lf, indent=2, ensure_ascii=False)
-                    
+
                     # Salva também como last_updates.js para carregamento local offline (file://)
                     last_updates_js_path = arquivo.parent / "last_updates.js"
                     with last_updates_js_path.open("w", encoding="utf-8") as lf:
-                        lf.write(f"window.PULSERATINGS_LAST_UPDATES = {json.dumps(last_updates, indent=2, ensure_ascii=False)};\n")
+                        lf.write(
+                            f"window.PULSERATINGS_LAST_UPDATES = {json.dumps(last_updates, indent=2, ensure_ascii=False)};\n"
+                        )
     except Exception as e:
         log.warning(f"Não foi possível atualizar last_updates.json/js: {e}")
 
     # Atualiza data/schemas.json com a estrutura mais recente deste arquivo
     try:
         import re
+
         schemas_path = arquivo.parent / "schemas.json"
         schemas = []
         if schemas_path.exists():
@@ -274,17 +277,49 @@ def salvar_csv(
         # Identifica o tipo dos campos com base no nome
         def get_type_badge(col_name):
             col_name = col_name.lower()
-            if col_name.startswith("dt_") or col_name.endswith("_dt") or "data" in col_name or "date" in col_name:
+            if (
+                col_name.startswith("dt_")
+                or col_name.endswith("_dt")
+                or "data" in col_name
+                or "date" in col_name
+            ):
                 return "date"
-            if col_name.startswith("vr_") or col_name.startswith("vl_") or col_name.endswith("_val") or "preco" in col_name or "taxa" in col_name or "saldo" in col_name or "patrimonio" in col_name or col_name in ("ret_dia_perc", "ret_mes_perc", "ret_ano_perc", "ret_12_meses_perc", "vol_aa_perc", "taxa_juros_aa_perc_compra_d1", "taxa_juros_aa_perc_venda_d0"):
+            if (
+                col_name.startswith("vr_")
+                or col_name.startswith("vl_")
+                or col_name.endswith("_val")
+                or "preco" in col_name
+                or "taxa" in col_name
+                or "saldo" in col_name
+                or "patrimonio" in col_name
+                or col_name
+                in (
+                    "ret_dia_perc",
+                    "ret_mes_perc",
+                    "ret_ano_perc",
+                    "ret_12_meses_perc",
+                    "vol_aa_perc",
+                    "taxa_juros_aa_perc_compra_d1",
+                    "taxa_juros_aa_perc_venda_d0",
+                )
+            ):
                 return "float"
-            if col_name.startswith("qt_") or col_name.startswith("nr_") or "quantidade" in col_name or "numero" in col_name or col_name in ("id_registro_fundo", "id_registro_classe", "prazo", "prazo_dias", "Ordem", "page_number"):
+            if (
+                col_name.startswith("qt_")
+                or col_name.startswith("nr_")
+                or "quantidade" in col_name
+                or "numero" in col_name
+                or col_name
+                in ("id_registro_fundo", "id_registro_classe", "prazo", "prazo_dias", "Ordem", "page_number")
+            ):
                 return "int"
             return "str"
 
         # Colunas úteis
-        filtered_cols = [c for c in cabecalho if c not in ("conjunto", "arquivo_origem", "registro_hash", "dt_captura")]
-        
+        filtered_cols = [
+            c for c in cabecalho if c not in ("conjunto", "arquivo_origem", "registro_hash", "dt_captura")
+        ]
+
         # Pega a primeira linha como exemplo
         first_reg = registros[0] if registros else {}
         fields = []
@@ -293,16 +328,12 @@ def salvar_csv(
             ex_val = str(first_reg.get(c, ""))
             if ex_val == "nan" or ex_val == "None":
                 ex_val = ""
-            fields.append({
-                "name": c,
-                "type": t_badge,
-                "example": ex_val
-            })
+            fields.append({"name": c, "type": t_badge, "example": ex_val})
 
         # Procura a entrada correspondente no schemas.json
         found = False
         for s in schemas:
-            files_declared = [f.strip() for f in re.split(r'·| e ', s.get("files", ""))]
+            files_declared = [f.strip() for f in re.split(r"·| e ", s.get("files", ""))]
             if arquivo.name in files_declared:
                 if len(files_declared) > 1:
                     # Mescla: preserva os campos existentes pertencentes a outros arquivos no grupo
@@ -321,51 +352,53 @@ def salvar_csv(
             # Adiciona nova entrada
             def get_source_from_filename(filename: str) -> str:
                 fn = filename.lower()
-                if 'standard_and_poors' in fn or 's_p' in fn:
-                    return 's_p'
-                elif 'moodys' in fn:
-                    return 'moodys'
-                elif 'fitch' in fn:
-                    return 'fitch'
-                elif 'austin' in fn:
-                    return 'austin'
-                elif 'liberum' in fn:
-                    return 'liberum'
-                elif 'consolidado' in fn:
-                    return 'consolidated'
-                return 'other'
+                if "standard_and_poors" in fn or "s_p" in fn:
+                    return "s_p"
+                elif "moodys" in fn:
+                    return "moodys"
+                elif "fitch" in fn:
+                    return "fitch"
+                elif "austin" in fn:
+                    return "austin"
+                elif "liberum" in fn:
+                    return "liberum"
+                elif "consolidado" in fn:
+                    return "consolidated"
+                return "other"
 
             def get_title_from_filename(filename: str) -> str:
                 fn = filename.lower()
-                if 'consolidado' in fn:
-                    return 'Emissores Consolidados'
-                
-                if 'standard_and_poors' in fn or 's_p' in fn:
-                    ag = 'S&P'
-                elif 'moodys' in fn:
+                if "consolidado" in fn:
+                    return "Emissores Consolidados"
+
+                if "standard_and_poors" in fn or "s_p" in fn:
+                    ag = "S&P"
+                elif "moodys" in fn:
                     ag = "Moody's"
-                elif 'fitch' in fn:
-                    ag = 'Fitch'
-                elif 'austin' in fn:
-                    ag = 'Austin'
-                elif 'liberum' in fn:
-                    ag = 'Liberum'
+                elif "fitch" in fn:
+                    ag = "Fitch"
+                elif "austin" in fn:
+                    ag = "Austin"
+                elif "liberum" in fn:
+                    ag = "Liberum"
                 else:
-                    ag = filename.replace('.csv', '').replace('_', ' ').title()
-                
-                if 'entidades' in fn or 'emissores' in fn:
-                    suf = 'Emissores'
+                    ag = filename.replace(".csv", "").replace("_", " ").title()
+
+                if "entidades" in fn or "emissores" in fn:
+                    suf = "Emissores"
                 else:
-                    suf = 'Ratings'
-                return f'{ag} — {suf}'
+                    suf = "Ratings"
+                return f"{ag} — {suf}"
 
             guessed_title = get_title_from_filename(arquivo.name)
-            schemas.append({
-                "title": guessed_title,
-                "files": arquivo.name,
-                "source": get_source_from_filename(arquivo.name),
-                "fields": fields
-            })
+            schemas.append(
+                {
+                    "title": guessed_title,
+                    "files": arquivo.name,
+                    "source": get_source_from_filename(arquivo.name),
+                    "fields": fields,
+                }
+            )
 
         with schemas_path.open("w", encoding="utf-8") as sf:
             json.dump(schemas, sf, indent=2, ensure_ascii=False)
@@ -375,6 +408,7 @@ def salvar_csv(
     # Persistência no Oracle Autonomous Database
     try:
         from utils.oracle_db import persistir_no_oracle
+
         persistir_no_oracle(arquivo, registros, todas, cabecalho)
     except Exception as e:
         log.warning(f"Erro ao persistir dados no banco de dados Oracle: {e}")

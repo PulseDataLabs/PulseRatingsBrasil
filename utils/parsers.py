@@ -11,21 +11,20 @@ import io
 import json
 import re
 import unicodedata
+import warnings
 import zipfile
 from datetime import date, datetime, timedelta
 from xml.etree import ElementTree as ET
 
-from bizdays import Calendar
-
 import openpyxl
-import warnings
+from bizdays import Calendar
 
 # Silencia avisos irritantes de formatação/estilos ausentes do openpyxl
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 import xlrd
 
-from .base import FUSO, agora_brt, get_logger, limpar
+from .base import FUSO, agora_brt, limpar
 
 FIXOS = ["dt_captura", "conjunto", "arquivo_origem", "registro_hash"]
 
@@ -86,7 +85,6 @@ def sanitize_xls_header(key: str) -> str:
     if key.startswith("data_e_hora") or "atualiza" in key:
         return "indicador"
     return key
-
 
 
 def csv_rows(text: str, delimiter: str | None = None) -> list[dict]:
@@ -157,7 +155,7 @@ def fwf_rows(text: str, fields: list[str], widths: list[int], only_regtype_01: b
         pos = 0
         row = {}
         for name, width in zip(fields, widths):
-            row[name] = ln[pos:pos + width].strip()
+            row[name] = ln[pos : pos + width].strip()
             pos += width
         if only_regtype_01 and row.get("regtype") != "01":
             continue
@@ -241,7 +239,10 @@ def _xls_rows_openpyxl(content: bytes) -> list[dict]:
             target = name
             break
     ws = wb[target] if target else wb.active
-    headers = [sanitize_xls_header(normalize_key(str(c.value or ""))) for c in next(ws.iter_rows(min_row=1, max_row=1))]
+    headers = [
+        sanitize_xls_header(normalize_key(str(c.value or "")))
+        for c in next(ws.iter_rows(min_row=1, max_row=1))
+    ]
     rows = []
     for row in ws.iter_rows(min_row=2, values_only=True):
         item = {}

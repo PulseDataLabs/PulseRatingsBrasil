@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Scraper: S&P Global – Emissores com rating no Brasil
 Fonte:   https://brazil.ratings.spglobal.com/ratings/pt/regulatory/consolidated-search-entity/
@@ -7,22 +6,23 @@ Saída:   data/s_p_emissores_brasil.csv
 
 Busca todos os emissores utilizando a API de busca da S&P Brasil.
 """
-import os
-import sys
+
 import datetime
+import os
 import string
+import sys
 import time
 
 import pandas as pd
 import requests
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from scrapers.utils.base import BaseScraper
-from scripts.utils import print_done, print_info, print_warn, print_start, print_fail, progress_bar, IS_TTY
-
-
 import re
+
 from dotenv import load_dotenv
+
+from scrapers.utils.base import BaseScraper
+from scripts.utils import IS_TTY, print_done, print_fail, print_start, print_warn, progress_bar
 
 load_dotenv()
 
@@ -54,14 +54,14 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
     accumulate = False
 
     # Catálogo de Metadados
-    title = 'S&P — Emissores'
-    description = 'Emissores com rating de crédito ativo ou histórico de classificação regulatória pela S&P Global Ratings no Brasil.'
-    icon = 'S&P'
-    icon_class = 'icon-sp'
-    badge = 'Diário'
-    badge_class = 'badge-daily'
-    tags = ['ratings', 's&p', 'emissores']
-    source = 'S&P'
+    title = "S&P — Emissores"
+    description = "Emissores com rating de crédito ativo ou histórico de classificação regulatória pela S&P Global Ratings no Brasil."
+    icon = "S&P"
+    icon_class = "icon-sp"
+    badge = "Diário"
+    badge_class = "badge-daily"
+    tags = ["ratings", "s&p", "emissores"]
+    source = "S&P"
 
     def _get_api_key(self) -> str:
         """
@@ -76,13 +76,7 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
         self.logger.info("Buscando API Key de forma dinâmica da página pública...")
         print_start("Obtendo API Key da S&P...")
         try:
-            r = requests.get(
-                BASE_URL,
-                headers={
-                    "User-Agent": HEADERS_BASE["User-Agent"]
-                },
-                timeout=30
-            )
+            r = requests.get(BASE_URL, headers={"User-Agent": HEADERS_BASE["User-Agent"]}, timeout=30)
             if r.status_code == 200:
                 match = re.search(r'"NEXT_PUBLIC_API_KEY"\s*:\s*"([^"]+)"', r.text)
                 if match:
@@ -99,7 +93,7 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
 
     def fetch(self) -> pd.DataFrame:
         session = requests.Session()
-        
+
         api_key = self._get_api_key()
         if not api_key:
             self.logger.error("Abortando fetch: API Key não disponível.")
@@ -130,7 +124,7 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
             "User-Agent": HEADERS_BASE["User-Agent"],
             "Content-Type": "application/json; charset=utf-8",
             "Authorization": f"Bearer {token}",
-            "Access-Control-Allow-Origin": "*"
+            "Access-Control-Allow-Origin": "*",
         }
 
         # Conjunto de termos de busca para garantir a cobertura completa
@@ -143,41 +137,43 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
         for idx, term in enumerate(search_terms, 1):
             page = 0
             page_length = 100
-            
+
             while True:
                 payload = {
                     "searchTerm": term,
                     "locale": "pt_LA",
                     "pageNumber": page,
-                    "pageLength": page_length
+                    "pageLength": page_length,
                 }
-                
+
                 try:
                     resp = session.post(api_url, json=payload, headers=api_headers, timeout=30)
                     if resp.status_code != 200:
-                        self.logger.warning(f"Erro na busca do termo {term} página {page}: status {resp.status_code}")
+                        self.logger.warning(
+                            f"Erro na busca do termo {term} página {page}: status {resp.status_code}"
+                        )
                         break
-                        
+
                     data = resp.json()
                     total_records = data.get("totalNumberOfRecords", 0)
                     details = data.get("entitySearchDetails", [])
-                    
+
                     if not details:
                         break
-                        
+
                     for entity in details:
                         org_id = entity.get("orgId")
                         org_name = entity.get("orgName")
                         sector_code = entity.get("sectorCode") or "CORP"
-                        
+
                         if org_id and org_name:
                             # Constrói o link de detalhes de forma consistente
                             link = f"{BASE_URL}/ratings/pt/regulatory/org-details/sectorCode/{sector_code}/entityId/{org_id}"
                             resultados[link] = org_name
-                            
+
                     if (page + 1) * page_length >= total_records:
                         break
-                        
+
                     page += 1
                     time.sleep(0.1)
                 except Exception as e:
@@ -200,11 +196,7 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
         rows = []
         today_str = datetime.date.today().strftime("%Y-%m-%d")
         for link, nome in resultados.items():
-            rows.append({
-                "dt_captura": today_str,
-                "no_emissor": nome,
-                "link": link
-            })
+            rows.append({"dt_captura": today_str, "no_emissor": nome, "link": link})
 
         return pd.DataFrame(rows)
 
@@ -212,4 +204,3 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
 if __name__ == "__main__":
     scraper = StandardAndPoorsEmissoresScraper()
     scraper.run()
-

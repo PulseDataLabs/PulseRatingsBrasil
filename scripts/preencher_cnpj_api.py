@@ -11,16 +11,27 @@ import re
 import sys
 import time
 from pathlib import Path
-from typing import Optional
-
-from utils.paths import get_data_dir
 
 from scripts.consolidar_emissores import normalizar
 from scripts.utils.ux import (
-    banner, section, line, bold, dim, green, red, yellow, cyan, white,
-    print_start, print_done, print_fail, print_warn, print_skip, print_info,
-    print_summary, print_table, progress_bar,
+    banner,
+    bold,
+    cyan,
+    dim,
+    green,
+    print_done,
+    print_fail,
+    print_info,
+    print_skip,
+    print_start,
+    print_summary,
+    print_table,
+    print_warn,
+    red,
+    section,
+    yellow,
 )
+from utils.paths import get_data_dir
 
 logger = logging.getLogger("preencher_cnpj_api")
 
@@ -35,7 +46,7 @@ COLUNAS_CONSOLIDADO = [
 ]
 
 
-def _limpar_cnpj(valor: Optional[str]) -> str:
+def _limpar_cnpj(valor: str | None) -> str:
     if not valor:
         return ""
     return re.sub(r"\D", "", valor)
@@ -56,7 +67,13 @@ _SUFIXOS_BUSCA = [
 
 
 def _obter_nome_busca(row: dict) -> str:
-    for col in ["no_emissor_fitch", "no_emissor_moodys", "no_emissor_standard_and_poors", "no_emissor_austin", "no_emissor_liberum"]:
+    for col in [
+        "no_emissor_fitch",
+        "no_emissor_moodys",
+        "no_emissor_standard_and_poors",
+        "no_emissor_austin",
+        "no_emissor_liberum",
+    ]:
         nome = (row.get(col) or "").strip()
         if nome:
             return nome
@@ -106,10 +123,7 @@ def _matches(hit_nome: str, nome_pad: str) -> bool:
 
     pad_tokens = set(nome_pad.split())
     hit_tokens = set(hit_norm.split())
-    if len(pad_tokens) >= 2 and pad_tokens.issubset(hit_tokens):
-        return True
-
-    return False
+    return bool(len(pad_tokens) >= 2 and pad_tokens.issubset(hit_tokens))
 
 
 def _salvar_csv(path: Path, rows: list[dict]) -> None:
@@ -124,12 +138,13 @@ def _salvar_csv(path: Path, rows: list[dict]) -> None:
 
 
 def generate(
-    consolidado_path: Optional[Path] = None,
+    consolidado_path: Path | None = None,
     rate_limit: float = 1.0,
     dry_run: bool = False,
     quiet: bool = False,
 ) -> dict:
     from dotenv import load_dotenv
+
     load_dotenv()
 
     if consolidado_path is None:
@@ -151,7 +166,7 @@ def generate(
         print_fail(f"Consolidado não encontrado: {consolidado_path}")
         return {"matched": 0, "unmatched": 0, "errors": 0, "total": 0}
 
-    with open(consolidado_path, "r", encoding="utf-8") as f:
+    with open(consolidado_path, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     for r in rows:
         r.pop(None, None)
@@ -160,7 +175,9 @@ def generate(
     pendentes = [r for r in rows if not (r.get("cnpj_emissor") or "").strip()]
     ja_preenchidos = len(rows) - len(pendentes)
 
-    print_info(f"Consolidado: {len(rows)} emissores · {green(str(ja_preenchidos))} já preenchidos · {yellow(str(len(pendentes)))} pendentes")
+    print_info(
+        f"Consolidado: {len(rows)} emissores · {green(str(ja_preenchidos))} já preenchidos · {yellow(str(len(pendentes)))} pendentes"
+    )
 
     if not pendentes:
         print_done("Nenhum emissor pendente — consolidado já completo")
@@ -248,7 +265,9 @@ def generate(
                     break
                 except Exception as e:
                     if not quiet:
-                        print(f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('erro')}  {dim(str(e)[:40])}")
+                        print(
+                            f"  {red('✖')}  {dim(nome_busca):{max_width}s}  {red('erro')}  {dim(str(e)[:40])}"
+                        )
                     errors += 1
                     break
 
@@ -313,9 +332,7 @@ def main():
     )
     result = generate()
 
-    if result.get("skipped_no_key"):
-        sys.exit(1)
-    elif result.get("missing_dep"):
+    if result.get("skipped_no_key") or result.get("missing_dep"):
         sys.exit(1)
 
     print()
@@ -325,7 +342,7 @@ def main():
         print(f"  {yellow('⚠')}  {result['unmatched']} não encontrados")
     if result["errors"] > 0:
         print(f"  {red('✖')}  {result['errors']} erro(s)")
-    total_encontrados = result["matched"] + result.get("pre_existing", 0)
+    result["matched"] + result.get("pre_existing", 0)
     print(f"  {dim('─')}")
     print(f"  {bold('Total no consolidado:')} {result['total']} emissores")
 

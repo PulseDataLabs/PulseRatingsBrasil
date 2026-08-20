@@ -12,10 +12,8 @@ import re
 import sqlite3
 import unicodedata
 from collections import defaultdict
-from pathlib import Path
-from typing import Optional
 
-from scripts.consolidar_emissores import normalizar, _SUFIXOS, _PALAVRAS_GENERICAS
+from scripts.consolidar_emissores import _PALAVRAS_GENERICAS, _SUFIXOS, normalizar
 from utils.paths import get_data_dir
 
 logger = logging.getLogger("validar_cnpjs")
@@ -52,40 +50,86 @@ _FIDC_PATTERNS = [
 # Stop words adicionais para a comparação leniente
 _PALAVRAS_LENIENTE = _PALAVRAS_GENERICAS + [
     # FIDC boilerplate
-    r"\bFUNDO\b", r"\bINVESTIMENTO\b", r"\bDIREITOS\b", r"\bCREDITORIOS\b",
-    r"\bFIDC\b", r"\bFICFIDC\b",
-    r"\bSEGMENTO\b", r"\bFINANCEIROS?\b", r"\bMEIOS\b", r"\bPAGAMENTO\b",
-    r"\bRESP\b", r"\bRESPONSBILIDADE\b", r"\bRESPONSABILIDADE\b", r"\bLIMITADA\b",
-    r"\bCLASSE\b", r"\bUNICA\b", r"\bFECHADA\b",
-    r"\bCOMERCIAIS\b", r"\bCREDITO\b", r"\bMERCANTIL\b",
-    r"\bCONSUMIDOR\b", r"\bEMPRESARIAL\b",
-    r"\bTRANSACOES\b", r"\bRECEBIVEIS\b",
-    r"\bSUSTENTAVEL\b", r"\bGREEN\b", r"\bESG\b", r"\bIS\b",
+    r"\bFUNDO\b",
+    r"\bINVESTIMENTO\b",
+    r"\bDIREITOS\b",
+    r"\bCREDITORIOS\b",
+    r"\bFIDC\b",
+    r"\bFICFIDC\b",
+    r"\bSEGMENTO\b",
+    r"\bFINANCEIROS?\b",
+    r"\bMEIOS\b",
+    r"\bPAGAMENTO\b",
+    r"\bRESP\b",
+    r"\bRESPONSBILIDADE\b",
+    r"\bRESPONSABILIDADE\b",
+    r"\bLIMITADA\b",
+    r"\bCLASSE\b",
+    r"\bUNICA\b",
+    r"\bFECHADA\b",
+    r"\bCOMERCIAIS\b",
+    r"\bCREDITO\b",
+    r"\bMERCANTIL\b",
+    r"\bCONSUMIDOR\b",
+    r"\bEMPRESARIAL\b",
+    r"\bTRANSACOES\b",
+    r"\bRECEBIVEIS\b",
+    r"\bSUSTENTAVEL\b",
+    r"\bGREEN\b",
+    r"\bESG\b",
+    r"\bIS\b",
     # Companhias/empresas genéricas
-    r"\bCOMPANHIA\b", r"\bCIA\b",
-    r"\bEMPRESA\b", r"\bEMPREENDIMENTOS\b",
+    r"\bCOMPANHIA\b",
+    r"\bCIA\b",
+    r"\bEMPRESA\b",
+    r"\bEMPREENDIMENTOS\b",
     r"\bSOCIEDADE\b",
     # Securitização
-    r"\bSECURITIZADORA\b", r"\bSECURITIZACAO\b", r"\bSECURITISATION\b",
+    r"\bSECURITIZADORA\b",
+    r"\bSECURITIZACAO\b",
+    r"\bSECURITISATION\b",
     # Energia/transmissão
-    r"\bENERGIA\b", r"\bELETRICA\b",
-    r"\bTRANSMISSAO\b", r"\bTRANSMISSORA\b",
+    r"\bENERGIA\b",
+    r"\bELETRICA\b",
+    r"\bTRANSMISSAO\b",
+    r"\bTRANSMISSORA\b",
     r"\bSUBHOLDING\b",
     # Participações/gestão
-    r"\bPARTICIPACOES\b", r"\bPART\b",
+    r"\bPARTICIPACOES\b",
+    r"\bPART\b",
     r"\bHOLDING\b",
-    r"\bADMINISTRACAO\b", r"\bADMIN\b",
+    r"\bADMINISTRACAO\b",
+    r"\bADMIN\b",
     r"\bADMINISTRADORA\b",
-    r"\bGESTORA\b", r"\bGESTAO\b", r"\bASSET\b", r"\bMANAGEMENT\b", r"\bDTVM\b",
-    r"\bDISTRIBUIDORA\b", r"\bTITULOS\b", r"\bVALORES\b", r"\bMOBILIARIOS\b",
+    r"\bGESTORA\b",
+    r"\bGESTAO\b",
+    r"\bASSET\b",
+    r"\bMANAGEMENT\b",
+    r"\bDTVM\b",
+    r"\bDISTRIBUIDORA\b",
+    r"\bTITULOS\b",
+    r"\bVALORES\b",
+    r"\bMOBILIARIOS\b",
     # Outras genéricas
-    r"\bASSESSORIA\b", r"\bCONSULTORIA\b", r"\bSERVICOS\b",
-    r"\bCOMERCIAL\b", r"\bIMPORTADORA\b",
-    r"\bBENEF\b", r"\bBENEFICENTE\b", r"\bHOSPITAL\b",
-    r"\bECON\b", r"\bECONOMIA\b", r"\bCRED\b", r"\bMUTUO\b",
-    r"\bDESENVOLVIMENTO\b", r"\bHABITACIONAL\b", r"\bURBANO\b",
-    r"\bMUNICIPALITY\b", r"\bMUNICIPIO\b",
-    r"\bSTATE\b", r"\bESTADO\b",
+    r"\bASSESSORIA\b",
+    r"\bCONSULTORIA\b",
+    r"\bSERVICOS\b",
+    r"\bCOMERCIAL\b",
+    r"\bIMPORTADORA\b",
+    r"\bBENEF\b",
+    r"\bBENEFICENTE\b",
+    r"\bHOSPITAL\b",
+    r"\bECON\b",
+    r"\bECONOMIA\b",
+    r"\bCRED\b",
+    r"\bMUTUO\b",
+    r"\bDESENVOLVIMENTO\b",
+    r"\bHABITACIONAL\b",
+    r"\bURBANO\b",
+    r"\bMUNICIPALITY\b",
+    r"\bMUNICIPIO\b",
+    r"\bSTATE\b",
+    r"\bESTADO\b",
 ]
 
 # Mapa de renomes históricos conhecidos
@@ -191,9 +235,8 @@ def _comparar_nomes(nome_csv: str, nome_rfb: str) -> tuple[str, str]:
         return "✅", "match exato (leniente)"
 
     # --- Stage 4: substring leniente ---
-    if n_csv_len and n_rfb_len:
-        if n_csv_len in n_rfb_len or n_rfb_len in n_csv_len:
-            return "⚠️", "match parcial (substring leniente)"
+    if n_csv_len and n_rfb_len and (n_csv_len in n_rfb_len or n_rfb_len in n_csv_len):
+        return "⚠️", "match parcial (substring leniente)"
 
     # --- Stage 5: substring strict ---
     if n_csv in n_rfb or n_rfb in n_csv:
@@ -300,7 +343,7 @@ def validar(relatorio: bool = True) -> list[dict]:
         rows = list(csv.DictReader(f))
 
     cnpj_map: dict[str, list[dict]] = defaultdict(list)
-    for i, row in enumerate(rows):
+    for _i, row in enumerate(rows):
         cnpj = re.sub(r"\D", "", (row.get("cnpj_emissor") or "").strip())
         if not cnpj:
             continue
@@ -311,8 +354,8 @@ def validar(relatorio: bool = True) -> list[dict]:
 
     for cnpj_completo, emissores in sorted(cnpj_map.items()):
         base = cnpj_completo[:8]
-        razao_rfb: Optional[str] = None
-        razao_cvm: Optional[str] = None
+        razao_rfb: str | None = None
+        razao_cvm: str | None = None
 
         if conn is not None:
             cur = conn.execute(
@@ -346,14 +389,16 @@ def validar(relatorio: bool = True) -> list[dict]:
                     obs += f" ({fonte})"
                 stats[status] += 1
 
-            resultados.append({
-                "emissor": emissor,
-                "cnpj": cnpj_fmt,
-                "razao_rfb": razao_rfb or "",
-                "razao_cvm": razao_cvm or "",
-                "status": status,
-                "obs": obs,
-            })
+            resultados.append(
+                {
+                    "emissor": emissor,
+                    "cnpj": cnpj_fmt,
+                    "razao_rfb": razao_rfb or "",
+                    "razao_cvm": razao_cvm or "",
+                    "status": status,
+                    "obs": obs,
+                }
+            )
 
     if conn is not None:
         conn.close()
@@ -374,10 +419,10 @@ def validar(relatorio: bool = True) -> list[dict]:
     print(f"  Total CNPJs únicos verificados: {len(cnpj_map)}")
     print(f"  Total emissores verificados:    {total}")
     print()
-    print(f"  ✅ Match exato:     {stats['✅']:4d}  ({100*stats['✅']/total:.1f}%)" if total else "")
-    print(f"  ⚠️  Match parcial:   {stats['⚠️']:4d}  ({100*stats['⚠️']/total:.1f}%)" if total else "")
-    print(f"  ❌ Mismatch:         {stats['❌']:4d}  ({100*stats['❌']/total:.1f}%)" if total else "")
-    print(f"  ❓ Não encontrado:   {stats['❓']:4d}  ({100*stats['❓']/total:.1f}%)" if total else "")
+    print(f"  ✅ Match exato:     {stats['✅']:4d}  ({100 * stats['✅'] / total:.1f}%)" if total else "")
+    print(f"  ⚠️  Match parcial:   {stats['⚠️']:4d}  ({100 * stats['⚠️'] / total:.1f}%)" if total else "")
+    print(f"  ❌ Mismatch:         {stats['❌']:4d}  ({100 * stats['❌'] / total:.1f}%)" if total else "")
+    print(f"  ❓ Não encontrado:   {stats['❓']:4d}  ({100 * stats['❓'] / total:.1f}%)" if total else "")
     print("=" * 60)
 
     mismatches = [r for r in resultados if r["status"] == "❌"]
@@ -387,9 +432,9 @@ def validar(relatorio: bool = True) -> list[dict]:
         for r in mismatches:
             print(f"    ❌ {r['emissor']}")
             print(f"       CNPJ: {r['cnpj']}")
-            if r['razao_rfb']:
+            if r["razao_rfb"]:
                 print(f"       RFB:  {r['razao_rfb']}")
-            if r['razao_cvm']:
+            if r["razao_cvm"]:
                 print(f"       CVM:  {r['razao_cvm']}")
             print()
 

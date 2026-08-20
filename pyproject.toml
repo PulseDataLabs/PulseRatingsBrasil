@@ -1,0 +1,51 @@
+[project]
+name = "PulseRatingsBrasil"
+version = "1.0.0"
+description = "Pipeline diário de captura, consolidação e análise de ratings corporativos e de crédito no Brasil."
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort (import sorting)
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+]
+ignore = [
+    "E501",   # Line too long (handled by formatter)
+    "B008",   # Do not perform function call in argument defaults
+    "B905",   # zip without strict=
+    "SIM108", # Use ternary operator instead of if-else
+    "SIM105", # Use contextlib.suppress
+]
+
+[tool.ruff.lint.per-file-ignores]
+"run_all.py" = ["E402"]
+"scripts/*" = ["E402"]
+"scrapers/*" = ["E402"]
+"databricks/*" = ["E402"]
+"tests/*" = ["E402", "B007", "F841"]
+"utils/parsers.py" = ["E402"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["scrapers", "scripts", "utils"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"

@@ -219,17 +219,17 @@ def test_generate_preenche(tmp_path):
     consolidado_path = tmp_path / "emissores_consolidado.csv"
     _escrever_csv(consolidado_path, [
         {
-            "nome_emissor_padronizado": "AMBEV",
-            "nome_emissor_fitch": "Ambev S.A.",
-            "nome_emissor_moodys": "",
-            "nome_emissor_standard_and_poors": "",
+            "no_emissor_padronizado": "AMBEV",
+            "no_emissor_fitch": "Ambev S.A.",
+            "no_emissor_moodys": "",
+            "no_emissor_standard_and_poors": "",
             "cnpj_emissor": "",
         },
         {
-            "nome_emissor_padronizado": "VALE",
-            "nome_emissor_fitch": "Vale S.A.",
-            "nome_emissor_moodys": "",
-            "nome_emissor_standard_and_poors": "",
+            "no_emissor_padronizado": "VALE",
+            "no_emissor_fitch": "Vale S.A.",
+            "no_emissor_moodys": "",
+            "no_emissor_standard_and_poors": "",
             "cnpj_emissor": "",
         },
     ])
@@ -247,7 +247,7 @@ def test_generate_preenche(tmp_path):
     with open(consolidado_path, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
-    cnpjs = {r["nome_emissor_padronizado"]: r["cnpj_emissor"] for r in rows}
+    cnpjs = {r["no_emissor_padronizado"]: r["cnpj_emissor"] for r in rows}
     assert cnpjs["AMBEV"] == "00000000000191"
     assert cnpjs["VALE"] == ""
 
@@ -275,10 +275,10 @@ def test_generate_preserva_cnpj_existente(tmp_path):
     consolidado_path = tmp_path / "emissores_consolidado.csv"
     _escrever_csv(consolidado_path, [
         {
-            "nome_emissor_padronizado": "AMBEV",
-            "nome_emissor_fitch": "",
-            "nome_emissor_moodys": "",
-            "nome_emissor_standard_and_poors": "",
+            "no_emissor_padronizado": "AMBEV",
+            "no_emissor_fitch": "",
+            "no_emissor_moodys": "",
+            "no_emissor_standard_and_poors": "",
             "cnpj_emissor": "99999999000199",
         },
     ])
@@ -308,7 +308,7 @@ def test_generate_trailing_comma_no_crash(tmp_path):
 
     consolidado_path = tmp_path / "emissores_consolidado.csv"
     consolidado_path.write_text(
-        "nome_emissor_padronizado,nome_emissor_fitch,nome_emissor_moodys,nome_emissor_standard_and_poors,cnpj_emissor,\n"
+        "no_emissor_padronizado,no_emissor_fitch,no_emissor_moodys,no_emissor_standard_and_poors,no_emissor_austin,no_emissor_liberum,cnpj_emissor,\n"
         "AMBEV,Ambev S.A.,,,,\n",
         encoding="utf-8",
     )

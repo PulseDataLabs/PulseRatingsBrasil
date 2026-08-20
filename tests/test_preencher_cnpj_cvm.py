@@ -105,31 +105,31 @@ def consolidado_path(tmp_path):
     path = tmp_path / "emissores_consolidado.csv"
     _escrever_csv(path, [
         {
-            "nome_emissor_padronizado": "AMBEV",
-            "nome_emissor_fitch": "Ambev S.A.",
-            "nome_emissor_moodys": "",
-            "nome_emissor_standard_and_poors": "",
+            "no_emissor_padronizado": "AMBEV",
+            "no_emissor_fitch": "Ambev S.A.",
+            "no_emissor_moodys": "",
+            "no_emissor_standard_and_poors": "",
             "cnpj_emissor": "",
         },
         {
-            "nome_emissor_padronizado": "VALE",
-            "nome_emissor_fitch": "",
-            "nome_emissor_moodys": "Vale S.A.",
-            "nome_emissor_standard_and_poors": "",
+            "no_emissor_padronizado": "VALE",
+            "no_emissor_fitch": "",
+            "no_emissor_moodys": "Vale S.A.",
+            "no_emissor_standard_and_poors": "",
             "cnpj_emissor": "",
         },
         {
-            "nome_emissor_padronizado": "BANCO BRADESCO",
-            "nome_emissor_fitch": "",
-            "nome_emissor_moodys": "",
-            "nome_emissor_standard_and_poors": "Banco Bradesco S.A.",
+            "no_emissor_padronizado": "BANCO BRADESCO",
+            "no_emissor_fitch": "",
+            "no_emissor_moodys": "",
+            "no_emissor_standard_and_poors": "Banco Bradesco S.A.",
             "cnpj_emissor": "",
         },
         {
-            "nome_emissor_padronizado": "EMPRESA",
-            "nome_emissor_fitch": "Empresa X Ltda.",
-            "nome_emissor_moodys": "",
-            "nome_emissor_standard_and_poors": "",
+            "no_emissor_padronizado": "EMPRESA",
+            "no_emissor_fitch": "Empresa X Ltda.",
+            "no_emissor_moodys": "",
+            "no_emissor_standard_and_poors": "",
             "cnpj_emissor": "",
         },
     ])
@@ -181,7 +181,7 @@ def test_generate_preenche_cnpj(mock_get, consolidado_path, tmp_path):
     with open(consolidado_path, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
-    cnpjs = {r["nome_emissor_padronizado"]: r["cnpj_emissor"] for r in rows}
+    cnpjs = {r["no_emissor_padronizado"]: r["cnpj_emissor"] for r in rows}
     assert cnpjs["AMBEV"] == "00000000000191"
     assert cnpjs["VALE"] == "11111111000111"
     assert cnpjs["BANCO BRADESCO"] == "22222222000122"
@@ -192,10 +192,10 @@ def test_generate_preenche_cnpj(mock_get, consolidado_path, tmp_path):
 def test_generate_preserva_cnpj_existente(mock_get, consolidado_path, tmp_path):
     _escrever_csv(consolidado_path, [
         {
-            "nome_emissor_padronizado": "AMBEV",
-            "nome_emissor_fitch": "Ambev S.A.",
-            "nome_emissor_moodys": "",
-            "nome_emissor_standard_and_poors": "",
+            "no_emissor_padronizado": "AMBEV",
+            "no_emissor_fitch": "Ambev S.A.",
+            "no_emissor_moodys": "",
+            "no_emissor_standard_and_poors": "",
             "cnpj_emissor": "99999999000199",
         },
     ])
@@ -236,7 +236,7 @@ def test_generate_com_trailing_comma(mock_get, consolidado_path, tmp_path):
     """CSV com coluna extra (trailing comma) não deve crashar no Py3.13."""
     path = consolidado_path
     path.write_text(
-        "nome_emissor_padronizado,nome_emissor_fitch,nome_emissor_moodys,nome_emissor_standard_and_poors,cnpj_emissor,\n"
+        "no_emissor_padronizado,no_emissor_fitch,no_emissor_moodys,no_emissor_standard_and_poors,no_emissor_austin,no_emissor_liberum,cnpj_emissor,\n"
         "AMBEV,Ambev S.A.,,,,\n"
         "VALE,,Vale S.A.,,,\n"
         "EMPRESA,Empresa X Ltda.,,,,\n",

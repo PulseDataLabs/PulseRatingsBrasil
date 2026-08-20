@@ -1,8 +1,10 @@
 import logging
-from pathlib import Path
+
 import pandas as pd
-from utils import salvar_csv, agora_brt
+
+from utils import agora_brt, salvar_csv
 from utils.paths import get_data_dir
+
 
 class BaseScraper:
     name: str = ""
@@ -60,21 +62,28 @@ class BaseScraper:
                     return ""
 
                 # 1. Limpa formatos de data BR (DD/MM/YYYY -> YYYY-MM-DD)
-                match = re.match(r'^(\d{2})/(\d{2})/(\d{4})$', val_str)
+                match = re.match(r"^(\d{2})/(\d{2})/(\d{4})$", val_str)
                 if match:
                     d, m, y = match.groups()
                     return f"{y}-{m}-{d}"
-                match_short = re.match(r'^(\d{2})/(\d{2})/(\d{2})$', val_str)
+                match_short = re.match(r"^(\d{2})/(\d{2})/(\d{2})$", val_str)
                 if match_short:
                     d, m, y = match_short.groups()
                     return f"20{y}-{m}-{d}"
 
                 # 2. Limpa formatos numéricos BR (5,3656 -> 5.3656)
-                if ',' in val_str and val_str.count(',') == 1:
-                    clean_num = val_str.replace('.', '').replace(',', '').replace('%', '').replace('-', '').replace('+', '').strip()
+                if "," in val_str and val_str.count(",") == 1:
+                    clean_num = (
+                        val_str.replace(".", "")
+                        .replace(",", "")
+                        .replace("%", "")
+                        .replace("-", "")
+                        .replace("+", "")
+                        .strip()
+                    )
                     if clean_num.isdigit():
-                        parts = val_str.split(',')
-                        left = parts[0].replace('.', '')
+                        parts = val_str.split(",")
+                        left = parts[0].replace(".", "")
                         right = parts[1]
                         return f"{left}.{right}"
 

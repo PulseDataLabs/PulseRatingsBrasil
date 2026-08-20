@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Pulse Ratings Brasil – Pipeline para execução em Databricks
 
@@ -14,6 +13,7 @@ Comportamento:
     - Fallback para data/ se a variável não estiver definida
     - Usa o mesmo motor de descoberta de scrapers do run_all.py
 """
+
 import argparse
 import importlib
 import logging
@@ -108,7 +108,9 @@ def main(group: str | None = None, scraper: str | None = None, dry_run: bool = F
     if scraper:
         targets = {scraper: registry[scraper]} if scraper in registry else {}
     else:
-        targets = {n: i for n, i in registry.items() if i["enabled"] and (group is None or i["group"] == group)}
+        targets = {
+            n: i for n, i in registry.items() if i["enabled"] and (group is None or i["group"] == group)
+        }
 
     if not targets:
         logger.error("Nenhum scraper encontrado para execução.")

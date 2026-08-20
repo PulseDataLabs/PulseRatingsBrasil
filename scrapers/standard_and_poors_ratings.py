@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Scraper: S&P Global – Ratings de emissores brasileiros
 Fonte:   https://brazil.ratings.spglobal.com/
@@ -8,10 +7,11 @@ Saída:   data/s_p_ratings_brasil.csv
 Para cada emissor listado em data/s_p_emissores_brasil.csv,
 acessa a página de detalhes e extrai a tabela de ratings usando a estrutura Next.js (__NEXT_DATA__).
 """
-import os
-import sys
+
 import datetime
 import json
+import os
+import sys
 import time
 
 import pandas as pd
@@ -20,8 +20,15 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.utils.base import BaseScraper
-from scripts.utils import print_done, print_info, print_warn, print_start, print_fail, progress_bar, IS_TTY, dim
-
+from scripts.utils import (
+    IS_TTY,
+    dim,
+    print_done,
+    print_fail,
+    print_start,
+    print_warn,
+    progress_bar,
+)
 
 HEADERS = {
     "User-Agent": (
@@ -37,40 +44,58 @@ def parse_sp_date(date_str: str) -> str:
     """Converte datas do formato S&P para YYYY-MM-DD."""
     if not date_str or date_str == "--":
         return ""
-    
+
     date_str = date_str.strip()
     if "/" in date_str:
         parts = date_str.split("/")
         if len(parts) == 3:
             return f"{parts[2]}-{parts[1]}-{parts[0]}"
-            
+
     if "-" in date_str:
         parts = date_str.split("-")
         if len(parts) == 3:
             if len(parts[0]) == 4:
                 return date_str
-            
+
             day, month_abbr, year = parts
             months = {
-                "jan": "01", "january": "01",
-                "fev": "02", "feb": "02", "february": "02",
-                "mar": "03", "march": "03",
-                "abr": "04", "apr": "04", "april": "04",
-                "mai": "05", "may": "05",
-                "jun": "06", "june": "06",
-                "jul": "07", "july": "07",
-                "ago": "08", "aug": "08", "august": "08",
-                "set": "09", "sep": "09", "september": "09",
-                "out": "10", "oct": "10", "october": "10",
-                "nov": "11", "november": "11",
-                "dez": "12", "dec": "12", "december": "12"
+                "jan": "01",
+                "january": "01",
+                "fev": "02",
+                "feb": "02",
+                "february": "02",
+                "mar": "03",
+                "march": "03",
+                "abr": "04",
+                "apr": "04",
+                "april": "04",
+                "mai": "05",
+                "may": "05",
+                "jun": "06",
+                "june": "06",
+                "jul": "07",
+                "july": "07",
+                "ago": "08",
+                "aug": "08",
+                "august": "08",
+                "set": "09",
+                "sep": "09",
+                "september": "09",
+                "out": "10",
+                "oct": "10",
+                "october": "10",
+                "nov": "11",
+                "november": "11",
+                "dez": "12",
+                "dec": "12",
+                "december": "12",
             }
             m = months.get(month_abbr.lower())
             if m:
                 return f"{year}-{m}-{day.zfill(2)}"
             if day.isdigit() and month_abbr.isdigit() and year.isdigit():
                 return f"{year}-{month_abbr.zfill(2)}-{day.zfill(2)}"
-                
+
     return date_str
 
 
@@ -87,11 +112,11 @@ def _parse_ratings_next_data(html: str) -> list[dict]:
         res = page_props.get("Res", {})
         if not res:
             return []
-            
+
         rating_details = res.get("ratingDetails", {})
         if not rating_details:
             return []
-            
+
         ratings_list = rating_details.get("Ratings", [])
         if not ratings_list:
             return []
@@ -106,15 +131,17 @@ def _parse_ratings_next_data(html: str) -> list[dict]:
             cw_perspectiva = r.get("currentCwOl") or ""
             data_cw = parse_sp_date(r.get("currentCwOlDate"))
 
-            rows.append({
-                "no_tipo_rating": tipo_rating,
-                "de_rating_br": rating_val,
-                "dt_acao_rating": data_acao,
-                "dt_ultima_revisao": data_revisao,
-                "de_id_regulatorio": identificadores,
-                "de_outlook": cw_perspectiva,
-                "dt_outlook": data_cw,
-            })
+            rows.append(
+                {
+                    "no_tipo_rating": tipo_rating,
+                    "de_rating_br": rating_val,
+                    "dt_acao_rating": data_acao,
+                    "dt_ultima_revisao": data_revisao,
+                    "de_id_regulatorio": identificadores,
+                    "de_outlook": cw_perspectiva,
+                    "dt_outlook": data_cw,
+                }
+            )
         return rows
     except Exception:
         return []
@@ -134,14 +161,14 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
     accumulate = True
 
     # Catálogo de Metadados
-    title = 'S&P — Ratings'
-    description = 'Histórico consolidado de notas de rating atribuídas pela S&P Global Ratings a emissores corporativos, soberanos e de infraestrutura no Brasil.'
-    icon = 'S&P'
-    icon_class = 'icon-sp'
-    badge = ''
-    badge_class = ''
-    tags = ['ratings', 's&p', 'emissores']
-    source = 'S&P'
+    title = "S&P — Ratings"
+    description = "Histórico consolidado de notas de rating atribuídas pela S&P Global Ratings a emissores corporativos, soberanos e de infraestrutura no Brasil."
+    icon = "S&P"
+    icon_class = "icon-sp"
+    badge = ""
+    badge_class = ""
+    tags = ["ratings", "s&p", "emissores"]
+    source = "S&P"
 
     def fetch(self) -> pd.DataFrame:
         emissores_csv = os.path.join(
@@ -159,9 +186,7 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
 
         df_emissores = pd.read_csv(emissores_csv)
         if "link" not in df_emissores.columns:
-            self.logger.warning(
-                "Coluna 'link' não encontrada no CSV de emissores."
-            )
+            self.logger.warning("Coluna 'link' não encontrada no CSV de emissores.")
             print_fail("Coluna 'link' não encontrada no CSV")
             return pd.DataFrame()
 
@@ -174,35 +199,29 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
         for i, row in df_emissores.iterrows():
             nome = row.get("no_emissor", "")
             link = row.get("link", "")
-            self.logger.info(f"[{i+1}/{total}] {nome}")
+            self.logger.info(f"[{i + 1}/{total}] {nome}")
             bar = progress_bar(i + 1, total)
             print(f"  {bar}  {dim(nome[:72])}", end="\r" if IS_TTY else "\n")
 
             try:
                 resp = session.get(link, headers=HEADERS, timeout=30)
                 if resp.status_code == 403:
-                    self.logger.warning(
-                        f"Acesso bloqueado (403) para {nome}."
-                    )
+                    self.logger.warning(f"Acesso bloqueado (403) para {nome}.")
                     continue
                 if resp.status_code != 200:
-                    self.logger.warning(
-                        f"Status {resp.status_code} para {link}"
-                    )
+                    self.logger.warning(f"Status {resp.status_code} para {link}")
                     continue
-                
+
                 ratings_list = _parse_ratings_next_data(resp.text)
                 if not ratings_list:
-                    self.logger.warning(
-                        f"Nenhum rating ou estrutura __NEXT_DATA__ encontrada para {nome}"
-                    )
+                    self.logger.warning(f"Nenhum rating ou estrutura __NEXT_DATA__ encontrada para {nome}")
                     continue
-                
+
                 df_table = pd.DataFrame(ratings_list)
                 df_table["no_emissor"] = nome
                 df_table["link"] = link
                 frames.append(df_table)
-                
+
                 time.sleep(0.1)  # delay para não sobrecarregar
             except Exception as e:
                 self.logger.warning(f"Erro em {link}: {e}")
@@ -214,7 +233,18 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
 
         df = pd.concat(frames, ignore_index=True)
         df.insert(0, "dt_captura", datetime.date.today().strftime("%Y-%m-%d"))
-        col_order = ["dt_captura", "no_emissor", "link", "no_tipo_rating", "de_rating_br", "dt_acao_rating", "dt_ultima_revisao", "de_id_regulatorio", "de_outlook", "dt_outlook"]
+        col_order = [
+            "dt_captura",
+            "no_emissor",
+            "link",
+            "no_tipo_rating",
+            "de_rating_br",
+            "dt_acao_rating",
+            "dt_ultima_revisao",
+            "de_id_regulatorio",
+            "de_outlook",
+            "dt_outlook",
+        ]
         df = df[[c for c in col_order if c in df.columns]]
         print_done(f"{len(df)} ratings capturados de {len(frames)} emissores")
         return df
@@ -223,4 +253,3 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
 if __name__ == "__main__":
     scraper = StandardAndPoorsRatingsScraper()
     scraper.run()
-

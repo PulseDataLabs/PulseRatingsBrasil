@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 """
 Pulse Ratings Brasil – Orquestrador de scrapers
 Uso:
@@ -7,18 +6,18 @@ Uso:
     python run_all.py --group ratings        # apenas o grupo ratings
     python run_all.py --scraper fitch_ratings # apenas um scraper específico
 """
+
 import argparse
+import concurrent.futures
 import importlib
+import json
 import logging
 import sys
-import traceback
 import time
+import traceback
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from pathlib import Path
-import json
-from typing import Optional
-import concurrent.futures
-from concurrent.futures import ThreadPoolExecutor
 
 from utils.paths import get_data_dir
 
@@ -30,9 +29,18 @@ logging.basicConfig(
 logger = logging.getLogger("run_all")
 
 from scripts.utils import (
-    banner, section, print_start, print_done, print_fail,
-    print_warn, print_summary, print_table, progress_bar, IS_TTY, dim, bold,
-    green, red, yellow, cyan, white, line,
+    banner,
+    bold,
+    cyan,
+    green,
+    line,
+    print_done,
+    print_fail,
+    print_start,
+    print_summary,
+    print_warn,
+    red,
+    section,
 )
 
 
@@ -60,7 +68,7 @@ def discover_scrapers() -> dict[str, dict]:
                     "enabled": enabled,
                     "phase": phase,
                     "class_name": class_name,
-                    "title": getattr(cls, "title", module_name.replace("_", " ").title())
+                    "title": getattr(cls, "title", module_name.replace("_", " ").title()),
                 }
         except Exception as e:
             logger.warning(f"Erro ao carregar metadados do scraper {module_name}: {e}")
@@ -68,7 +76,7 @@ def discover_scrapers() -> dict[str, dict]:
     return scrapers
 
 
-def run_scraper(module_name: str) -> tuple[bool, float, Optional[str]]:
+def run_scraper(module_name: str) -> tuple[bool, float, str | None]:
     start_time = time.time()
     try:
         logger.info(f"▶  Iniciando: {module_name}")
@@ -94,7 +102,9 @@ def run_scraper(module_name: str) -> tuple[bool, float, Optional[str]]:
         return False, elapsed, tb
 
 
-def run_scrapers_subset(subset: list[str], parallel: bool, max_workers: int) -> dict[str, tuple[bool, float, Optional[str]]]:
+def run_scrapers_subset(
+    subset: list[str], parallel: bool, max_workers: int
+) -> dict[str, tuple[bool, float, str | None]]:
     results = {}
     if not subset:
         return results
@@ -131,13 +141,11 @@ def run_scrapers_subset(subset: list[str], parallel: bool, max_workers: int) -> 
     return results
 
 
-def save_pipeline_status(results: dict[str, tuple[bool, float, Optional[str]]], total_elapsed: float) -> None:
-    from utils.base import DRIFTS
+def save_pipeline_status(results: dict[str, tuple[bool, float, str | None]], total_elapsed: float) -> None:
     from datetime import datetime
-    import json
-    from pathlib import Path
 
-    root_dir = Path(__file__).resolve().parent
+    from utils.base import DRIFTS
+
     status_path = get_data_dir() / "pipeline_status.json"
     status_js_path = get_data_dir() / "pipeline_status.js"
 
@@ -148,14 +156,9 @@ def save_pipeline_status(results: dict[str, tuple[bool, float, Optional[str]]], 
         "timestamp": datetime.now().isoformat(),
         "elapsed_seconds": total_elapsed,
         "status": "success",
-        "summary": {
-            "total": len(active_scrapers),
-            "success": 0,
-            "failed": 0,
-            "drifts": 0
-        },
+        "summary": {"total": len(active_scrapers), "success": 0, "failed": 0, "drifts": 0},
         "scrapers": {},
-        "drifts": {}
+        "drifts": {},
     }
 
     if status_path.exists():
@@ -175,10 +178,10 @@ def save_pipeline_status(results: dict[str, tuple[bool, float, Optional[str]]], 
             "status": "success" if success else "error",
             "elapsed_seconds": elapsed,
             "error": err,
-            "timestamp": datetime.now().isoformat()
+            "timestamp": datetime.now().isoformat(),
         }
 
-    processed_files = {f"{name}.csv" for name in results.keys()}
+    processed_files = {f"{name}.csv" for name in results}
     for filename in list(status_data["drifts"].keys()):
         if filename in processed_files:
             del status_data["drifts"][filename]
@@ -188,7 +191,7 @@ def save_pipeline_status(results: dict[str, tuple[bool, float, Optional[str]]], 
         status_data["drifts"][filename] = {
             "added": d["added"],
             "removed": d["removed"],
-            "timestamp": d["timestamp"]
+            "timestamp": d["timestamp"],
         }
 
     success_count = 0
@@ -200,7 +203,7 @@ def save_pipeline_status(results: dict[str, tuple[bool, float, Optional[str]]], 
                 "status": "unknown",
                 "elapsed_seconds": 0.0,
                 "error": None,
-                "timestamp": None
+                "timestamp": None,
             }
 
         stat = status_data["scrapers"][name]["status"]
@@ -227,14 +230,18 @@ def save_pipeline_status(results: dict[str, tuple[bool, float, Optional[str]]], 
             json.dump(status_data, f, indent=2, ensure_ascii=False)
 
         with status_js_path.open("w", encoding="utf-8") as f:
-            f.write(f"window.PULSERATINGS_PIPELINE_STATUS = {json.dumps(status_data, indent=2, ensure_ascii=False)};\n")
+            f.write(
+                f"window.PULSERATINGS_PIPELINE_STATUS = {json.dumps(status_data, indent=2, ensure_ascii=False)};\n"
+            )
 
-        logger.info(f"Relatório de status do pipeline salvo com sucesso em data/pipeline_status.json e .js")
+        logger.info("Relatório de status do pipeline salvo com sucesso em data/pipeline_status.json e .js")
     except Exception as e:
         logger.error(f"Erro ao salvar relatório de status do pipeline: {e}")
 
 
-def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: bool = True, max_workers: int = 4) -> None:
+def main(
+    group: str | None = None, scraper: str | None = None, parallel: bool = True, max_workers: int = 4
+) -> None:
     start_time = time.time()
 
     scrapers_registry = discover_scrapers()
@@ -246,7 +253,8 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
         targets = {scraper: scrapers_registry[scraper]}
     else:
         targets = {
-            name: info for name, info in scrapers_registry.items()
+            name: info
+            for name, info in scrapers_registry.items()
             if info["enabled"] and (group is None or info["group"] == group)
         }
 
@@ -259,13 +267,13 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
     phase1_targets = [name for name, info in targets.items() if info["phase"] == 1]
     phase2_targets = [name for name, info in targets.items() if info["phase"] == 2]
 
-    results: dict[str, tuple[bool, float, Optional[str]]] = {}
+    results: dict[str, tuple[bool, float, str | None]] = {}
 
     # ── Fase 1 ────────────────────────────────────────────────────────
     if phase1_targets:
         banner(
             f"FASE 1 — {len(phase1_targets)} scraper(s) independente(s)",
-            f"{datetime.now().strftime('%d/%m/%Y %H:%M:%S')} BRT | {'paralelo' if parallel else 'sequencial'}"
+            f"{datetime.now().strftime('%d/%m/%Y %H:%M:%S')} BRT | {'paralelo' if parallel else 'sequencial'}",
         )
         phase1_results = run_scrapers_subset(phase1_targets, parallel, max_workers)
         results.update(phase1_results)
@@ -280,18 +288,20 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
             elapsed=time.time() - start_time,
             details=[
                 ("file", "Scrapers", ", ".join(phase1_results.keys())),
-            ]
+            ],
         )
 
     # ── Fase 2 ────────────────────────────────────────────────────────
     if phase2_targets:
         banner(
             f"FASE 2 — {len(phase2_targets)} scraper(s) dependente(s)",
-            f"{datetime.now().strftime('%d/%m/%Y %H:%M:%S')} BRT | {'paralelo' if parallel else 'sequencial'}"
+            f"{datetime.now().strftime('%d/%m/%Y %H:%M:%S')} BRT | {'paralelo' if parallel else 'sequencial'}",
         )
 
         if "standard_and_poors_emissores" in results and not results["standard_and_poors_emissores"][0]:
-            print_warn("standard_and_poors_emissores falhou na Fase 1. A Fase 2 de S&P pode falhar ou usar dados antigos.")
+            print_warn(
+                "standard_and_poors_emissores falhou na Fase 1. A Fase 2 de S&P pode falhar ou usar dados antigos."
+            )
 
         phase2_results = run_scrapers_subset(phase2_targets, parallel, max_workers)
         results.update(phase2_results)
@@ -306,7 +316,7 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
             elapsed=time.time() - start_time,
             details=[
                 ("file", "Scrapers", ", ".join(phase2_results.keys())),
-            ]
+            ],
         )
 
     total_elapsed = time.time() - start_time
@@ -319,6 +329,7 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
             section("Catálogo de Datasets", "gear")
             print_start("Regenerando datasets.json...")
             from scripts.generate_catalog import generate
+
             generate()
             print_done("Catálogo atualizado")
         except Exception as e:
@@ -331,6 +342,7 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
             section("Consolidação de Emissores", "gear")
             print_start("Consolidando emissores das agências...")
             from scripts.consolidar_emissores import generate as consolidate
+
             consolidate()
             print_done("Emissores consolidados")
         except Exception as e:
@@ -343,6 +355,7 @@ def main(group: Optional[str] = None, scraper: Optional[str] = None, parallel: b
             section("Separação de Ratings", "gear")
             print_start("Separando ratings de emissores e emissões...")
             from scripts.separar_emissores_emissoes import main as separate
+
             separate()
             print_done("Ratings separados e chaves vinculadas")
         except Exception as e:
@@ -416,16 +429,13 @@ if __name__ == "__main__":
 
     if args.skip_db:
         import os
+
         os.environ["SKIP_ORACLE_DB"] = "1"
 
     if args.generate_catalog:
         from scripts.generate_catalog import generate
+
         generate()
         sys.exit(0)
 
-    main(
-        group=args.group,
-        scraper=args.scraper,
-        parallel=args.parallel,
-        max_workers=args.max_workers
-    )
+    main(group=args.group, scraper=args.scraper, parallel=args.parallel, max_workers=args.max_workers)

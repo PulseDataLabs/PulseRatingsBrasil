@@ -12,19 +12,26 @@ Uso:
 import os
 import re
 import sys
-import time
-from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
 
 from scripts.preencher_cnpj_api import generate
 from scripts.utils.ux import (
-    banner, section,
-    bold, dim, green, red, yellow, cyan,
-    print_start, print_done, print_fail, print_warn, print_skip, print_info,
+    banner,
+    bold,
+    cyan,
+    dim,
+    green,
+    print_fail,
+    print_info,
+    print_skip,
+    print_start,
+    print_warn,
+    red,
+    section,
+    yellow,
 )
-
 
 FONTES = [
     {
