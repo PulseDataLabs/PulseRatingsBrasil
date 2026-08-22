@@ -59,27 +59,27 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Cosan S.A."
+        "example": "Banco Rodobens S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/cosan-sa-88173461"
+        "example": "https://www.fitchratings.com/entity/banco-rodobens-sa-89100264"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Long Term Issuer Default Rating"
+        "example": "National Long Term Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BB-"
+        "example": "AA+(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-20"
+        "example": "2026-08-21"
       },
       {
         "name": "de_acao_rating",
@@ -89,7 +89,7 @@
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Negative"
+        "example": "Rating Outlook Stable"
       },
       {
         "name": "de_instrumento",
@@ -153,7 +153,7 @@
       {
         "name": "dt_ultima_revisao",
         "type": "date",
-        "example": "2026-04-20"
+        "example": "2026-08-21"
       },
       {
         "name": "de_id_regulatorio",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Cosan S.A."
+        "example": "Banco Rodobens S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/cosan-sa-88173461"
+        "example": "https://www.fitchratings.com/entity/banco-rodobens-sa-89100264"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACRE BG FIDC - SUBORDINADAS JÚNIOR"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4680/Acre_BG_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-14"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11069"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "OKNO 1 FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+        "example": "SQUID FUNDO DE INVESTIMENTO EM DIRETOS CREDITÓRIOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29101"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29177"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "OKNO 1 FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+        "example": "SQUID FUNDO DE INVESTIMENTO EM DIRETOS CREDITÓRIOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29101"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29177"
       },
       {
         "name": "no_tipo_rating",
@@ -362,12 +362,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP3"
+        "example": "BB-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-20"
+        "example": "2026-08-21"
       },
       {
         "name": "de_acao_rating",
@@ -377,17 +377,17 @@
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Estável"
+        "example": "Negativa"
       },
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": "Mezanino"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Curto prazo"
+        "example": "Longo prazo"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACRE BG FIDC"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACRE BG FIDC - SUBORDINADAS JÚNIOR"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-14"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4680/Acre_BG_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_devedor_vinculado",
