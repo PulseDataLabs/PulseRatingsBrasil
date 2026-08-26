@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-08-25"
+        "example": "2026-08-26"
       }
     ]
   },
@@ -59,37 +59,37 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Brava Energia S.A."
+        "example": "Rumo Malha Norte S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/3r-petroleum-oleo-e-gas-sa-97357047"
+        "example": "https://www.fitchratings.com/entity/rumo-malha-norte-sa-80614513"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Long Term Issuer Default Rating"
+        "example": "National Long Term Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BB"
+        "example": "AAA(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-25"
+        "example": "2026-08-26"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Upgrade"
+        "example": "Affirmed"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Stable"
+        "example": "Rating Outlook Negative"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Brava Energia S.A."
+        "example": "Rumo Malha Norte S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/3r-petroleum-oleo-e-gas-sa-97357047"
+        "example": "https://www.fitchratings.com/entity/rumo-malha-norte-sa-80614513"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "K2 FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "CORUJA I FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS - RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29153"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29171"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "K2 FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "CORUJA I FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS - RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29153"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29171"
       },
       {
         "name": "no_tipo_rating",
@@ -362,12 +362,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BBB+"
+        "example": "B+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-24"
+        "example": "2026-08-26"
       },
       {
         "name": "de_acao_rating",
@@ -382,7 +382,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Mezanino"
+        "example": "Subordinada"
       },
       {
         "name": "de_escala",
