@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Rumo Malha Paulista S.A."
+        "example": "Multiplan Empreendimentos Imobiliarios S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/rumo-malha-paulista-sa-87217976"
+        "example": "https://www.fitchratings.com/entity/multiplan-empreendimentos-imobiliarios-sa-96177986"
       },
       {
         "name": "no_tipo_rating",
@@ -79,7 +79,7 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-26"
+        "example": "2026-08-27"
       },
       {
         "name": "de_acao_rating",
@@ -89,7 +89,7 @@
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Negative"
+        "example": "Rating Outlook Stable"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Rumo Malha Paulista S.A."
+        "example": "Multiplan Empreendimentos Imobiliarios S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/rumo-malha-paulista-sa-87217976"
+        "example": "https://www.fitchratings.com/entity/multiplan-empreendimentos-imobiliarios-sa-96177986"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACRE BG FIDC - SUBORDINADAS JÚNIOR"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4680/Acre_BG_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_tipo_rating",
@@ -298,12 +298,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-14"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11069"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "JC 4870 VI FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS NAO PADRONIZADOS FIDC-NP"
+        "example": "HOPE CONSIGNADO I DE RESPONSABILIDADE LIMITADA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29193"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29190"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "JC 4870 VI FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS NAO PADRONIZADOS FIDC-NP"
+        "example": "HOPE CONSIGNADO I DE RESPONSABILIDADE LIMITADA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29193"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29190"
       },
       {
         "name": "no_tipo_rating",
@@ -362,17 +362,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CCC"
+        "example": "A+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-08-26"
+        "example": "2026-08-27"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Encerramento"
+        "example": "Atribuição"
       },
       {
         "name": "de_outlook",
@@ -382,7 +382,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Subordinada"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACRE BG FIDC"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACRE BG FIDC - SUBORDINADAS JÚNIOR"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "no_tipo_rating",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-14"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4680/Acre_BG_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_devedor_vinculado",
