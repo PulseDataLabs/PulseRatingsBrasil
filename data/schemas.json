@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "de_rating_cp",
@@ -293,7 +293,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "dt_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
       }
     ]
   },
@@ -404,12 +404,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "AREA GESTAO RECURSOS TERCEIROS BANESTES DTVM"
+        "example": "APUAMA CAPITAL GESTORA RECURSOS"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ÁREA DE GESTÃO DE RECURSOS DE TERCEIROS DA BANESTES DTVM"
+        "example": "APUAMA CAPITAL GESTORA DE RECURSOS LTDA."
       },
       {
         "name": "no_tipo_rating",
@@ -419,7 +419,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "QG2-"
+        "example": "QG3"
       },
       {
         "name": "de_outlook",
@@ -429,12 +429,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-08-22"
+        "example": "2024-03-21"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5018/Área_de_Gestão_de_Recursos_de_Terceiros_da_Banestes_DTVM"
+        "example": "https://www.austin.com.br/Historico-Rating/4425/Apuama_Capital_Gestora_de_Recursos_Ltda"
       }
     ]
   },
@@ -456,7 +456,7 @@
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "de_outlook",
@@ -486,7 +486,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_devedor_vinculado",
