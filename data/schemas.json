@@ -59,27 +59,27 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "V2i Energia S.A."
+        "example": "Sao Paulo, Municipality of"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/v2i-energia-sa-97576213"
+        "example": "https://www.fitchratings.com/entity/sao-paulo-municipality-of-93835890"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "National Long Term Rating"
+        "example": "Long Term Issuer Default Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "A(bra)"
+        "example": "BB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-09-01"
+        "example": "2026-09-04"
       },
       {
         "name": "de_acao_rating",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Opea Securitizadora S.A. 2022-91-1.2 (Mega Moda)"
+        "example": "Sao Paulo, Municipality of"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/true-securitizadora-2022-1-2-mega-moda-97432791"
+        "example": "https://www.fitchratings.com/entity/sao-paulo-municipality-of-93835890"
       }
     ]
   },
