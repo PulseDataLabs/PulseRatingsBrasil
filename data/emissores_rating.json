@@ -1985,11 +1985,11 @@
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
-    "outlook": "Rating Outlook Stable",
+    "outlook": "",
     "dt_acao": "2026-04-30",
     "setor": "",
-    "instrumento": "",
-    "link": "https://www.fitchratings.com/entity/alsol-energias-renovaveis-96810835"
+    "instrumento": "Alsol - 1st deb issuance - BRL100 mln bond/note",
+    "link": "https://www.fitchratings.com/entity/alsol-energias-renovaveis-96810835#issues"
   },
   {
     "emissor": "ALSOL ENERGIAS RENOVAVEIS",
@@ -1997,11 +1997,11 @@
     "agencia": "Fitch",
     "tipo_rating": "National Long Term Rating",
     "rating": "AA+(bra)",
-    "outlook": "",
+    "outlook": "Rating Outlook Stable",
     "dt_acao": "2026-04-30",
     "setor": "",
-    "instrumento": "Alsol - 1st deb issuance - BRL100 mln bond/note",
-    "link": "https://www.fitchratings.com/entity/alsol-energias-renovaveis-96810835#issues"
+    "instrumento": "",
+    "link": "https://www.fitchratings.com/entity/alsol-energias-renovaveis-96810835"
   },
   {
     "emissor": "ALTHAIA INDUSTRIA FARMACEUTICA",
@@ -2554,6 +2554,18 @@
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/3002/Antecipe_FIDC_Multissetorial_-_Subordinadas_Júnior_"
+  },
+  {
+    "emissor": "APIUNA PARTICIPACOES",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AA+(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2025-12-23",
+    "setor": "",
+    "instrumento": "BRL 370 mln 8.896% bond/note 15-Dec-2043",
+    "link": "https://www.fitchratings.com/entity/apiuna-participacoes-s-a-97828981#issues"
   },
   {
     "emissor": "APOLLO 17 PARTICIPACOES",
@@ -10638,7 +10650,7 @@
     "tipo_rating": "National Long Term Rating",
     "rating": "A-(bra)",
     "outlook": "Rating Outlook Positive",
-    "dt_acao": "2025-09-12",
+    "dt_acao": "2026-09-08",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/banco-triangulo-sa-80543474"
@@ -10650,7 +10662,7 @@
     "tipo_rating": "National Short Term Rating",
     "rating": "F2(bra)",
     "outlook": "",
-    "dt_acao": "2025-09-12",
+    "dt_acao": "2026-09-08",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/banco-triangulo-sa-80543474"
@@ -14820,6 +14832,18 @@
     "link": ""
   },
   {
+    "emissor": "CASA PEDRA SECURITIZADORA CREDITO",
+    "cnpj": "31.468.139/0001-98",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Operação Estruturada",
+    "rating": "CC.br (sf)",
+    "outlook": "-",
+    "dt_acao": "2026-09-04",
+    "setor": "Finanças Estruturadas",
+    "instrumento": "Série Unica da 19ª Emissao de CRIs",
+    "link": ""
+  },
+  {
     "emissor": "CASE FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
     "cnpj": "32.316.919/0001-85",
     "agencia": "Liberum",
@@ -16951,6 +16975,18 @@
     "rating": "BBB-(bra)",
     "outlook": "Rating Watch Negative",
     "dt_acao": "2026-03-20",
+    "setor": "",
+    "instrumento": "BRL 800 mln Series 23 bond/note 15-Dec-2041 - 2a serie",
+    "link": "https://www.fitchratings.com/entity/companhia-estadual-de-geracao-de-energia-eletrica-ceee-g-97686013#issues"
+  },
+  {
+    "emissor": "COMPANHIA ESTADUAL GERACAO ENERGIA ELETRICA",
+    "cnpj": "39.881.421/0001-04",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "CCC+(bra)",
+    "outlook": "Rating Watch Negative",
+    "dt_acao": "2026-09-08",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/companhia-estadual-de-geracao-de-energia-eletrica-ceee-g-97686013"
@@ -21576,6 +21612,30 @@
     "link": "https://www.austin.com.br/Historico-Rating/3949/CRI_Opea_-_468ª_e_470ª_Séries_-_1ª_Emissão_–_Risco_Shopping_Madureira"
   },
   {
+    "emissor": "CRI OPEA SECURITIZADORA",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "AA(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-02-12",
+    "setor": "",
+    "instrumento": "Senior BRL 275 mln bond/note 22-Dec-2035",
+    "link": "https://www.fitchratings.com/entity/cri-opea-securitizadora-sa-pacaembu-97837366#issues"
+  },
+  {
+    "emissor": "CRI OPEA SECURITIZADORA",
+    "cnpj": "",
+    "agencia": "Fitch",
+    "tipo_rating": "National Long Term Rating",
+    "rating": "A+(bra)",
+    "outlook": "Rating Outlook Stable",
+    "dt_acao": "2026-02-12",
+    "setor": "",
+    "instrumento": "Subordinada - BRL 75 mln bond/note 22-Dec-2035",
+    "link": "https://www.fitchratings.com/entity/cri-opea-securitizadora-sa-pacaembu-97837366#issues"
+  },
+  {
     "emissor": "CRI OPEA SECURITIZADORA 2023",
     "cnpj": "",
     "agencia": "Fitch",
@@ -23083,6 +23143,18 @@
     "rating": "AA.br",
     "outlook": "Perspectiva estável",
     "dt_acao": "2025-08-13",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "2ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "DIX EMPREENDIMENTOS",
+    "cnpj": "04.409.762/0004-40",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-09-04",
     "setor": "Projetos de Infraestrutura",
     "instrumento": "2ª Emissão de Debêntures - Série Única",
     "link": ""
@@ -27378,10 +27450,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "2022-12-29",
+    "dt_acao": "",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/25361"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/27443"
   },
   {
     "emissor": "FIDC BPD CONSIGNADO",
@@ -28038,10 +28110,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brBB-",
     "outlook": "Estável",
-    "dt_acao": "2024-02-08",
+    "dt_acao": "2024-07-19",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4453/FIDC_FCT_Consignado_II_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/4629/FIDC_FCT_Consignado_II_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "FIDC FENIX",
@@ -28144,24 +28216,24 @@
     "cnpj": "",
     "agencia": "Austin",
     "tipo_rating": "FIDCs",
-    "rating": "brB-",
-    "outlook": "Estável",
-    "dt_acao": "2024-08-12",
-    "setor": "",
-    "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
-  },
-  {
-    "emissor": "FIDC IC SOMAPAY",
-    "cnpj": "",
-    "agencia": "Austin",
-    "tipo_rating": "FIDCs",
     "rating": "brBB+",
     "outlook": "Estável",
     "dt_acao": "2024-08-12",
     "setor": "",
     "instrumento": "",
     "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
+  },
+  {
+    "emissor": "FIDC IC SOMAPAY",
+    "cnpj": "",
+    "agencia": "Austin",
+    "tipo_rating": "FIDCs",
+    "rating": "brB-",
+    "outlook": "Estável",
+    "dt_acao": "2024-08-12",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_"
   },
   {
     "emissor": "FIDC INCLUSAO FINANCEIRA",
@@ -38808,6 +38880,18 @@
     "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1000334"
   },
   {
+    "emissor": "GS INIMA INDUSTRIAL",
+    "cnpj": "31.406.860/0001-53",
+    "agencia": "S&P",
+    "tipo_rating": "Escala Nacional Brasil de Longo Prazo",
+    "rating": "NR",
+    "outlook": "NM",
+    "dt_acao": "2026-09-08",
+    "setor": "",
+    "instrumento": "",
+    "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1000334"
+  },
+  {
     "emissor": "GSH PARTICIPACOES",
     "cnpj": "08.397.078/0001-01",
     "agencia": "Fitch",
@@ -39558,7 +39642,7 @@
     "tipo_rating": "National Long Term Rating",
     "rating": "AAA(bra)",
     "outlook": "Rating Outlook Stable",
-    "dt_acao": "2025-09-16",
+    "dt_acao": "2026-09-08",
     "setor": "",
     "instrumento": "",
     "link": "https://www.fitchratings.com/entity/havan-sa-96189218"
@@ -43005,6 +43089,30 @@
     "dt_acao": "2025-09-05",
     "setor": "Instituições Financeiras",
     "instrumento": "7ª Emissão de Debêntures em Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "ITAUSA",
+    "cnpj": "61.532.644/0001-15",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Instituições Financeiras",
+    "instrumento": "7ª Emissão de Debêntures em Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "ITAUSA",
+    "cnpj": "61.532.644/0001-15",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Emissor",
+    "rating": "AAA.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Instituições Financeiras",
+    "instrumento": "N/A",
     "link": ""
   },
   {
@@ -50438,6 +50546,246 @@
   {
     "emissor": "MOVIDA PARTICIPACOES",
     "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "10ª Emissão de Debêntures - 2ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "10ª Emissão de Debêntures - 3ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "11ª Emissão de Debêntures - 1ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "11ª Emissão de Debêntures - 2ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "11ª Emissão de Debêntures - 3ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "11ª Emissão de Debêntures - 4ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "15ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "16ª Emissão de Debêntures - 1ª série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "16ª Emissão de Debêntures - 2ª série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "18ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "21ª Emissão de Debêntures - 1ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "21ª Emissão de Debêntures - 2ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "22ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "23ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "24ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "25ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "26ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "8ª Emissão de Debêntures - 1ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "8ª Emissão de Debêntures - 2ª Série",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Emissor",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva estável",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
+    "emissor": "MOVIDA PARTICIPACOES",
+    "cnpj": "21.314.559/0001-66",
     "agencia": "S&P",
     "tipo_rating": "Escala Nacional Brasil de Longo Prazo",
     "rating": "brAA+",
@@ -52842,10 +53190,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "",
-    "dt_acao": "2021-03-26",
+    "dt_acao": "2020-05-07",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3772/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3520/Novo_Mundo_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "NOVO NORTE AEROPORTOS",
@@ -52998,10 +53346,10 @@
     "tipo_rating": "FIDC",
     "rating": "CCC",
     "outlook": "Estável",
-    "dt_acao": "",
+    "dt_acao": "2022-12-29",
     "setor": "",
     "instrumento": "Subordinada - Longo prazo",
-    "link": "https://www.liberumratings.com.br/detalhes-ativo/27778"
+    "link": "https://www.liberumratings.com.br/detalhes-ativo/25380"
   },
   {
     "emissor": "NXC CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
@@ -56406,10 +56754,10 @@
     "tipo_rating": "FIDCs",
     "rating": "brCCC",
     "outlook": "Estável",
-    "dt_acao": "2018-08-17",
+    "dt_acao": "2018-08-22",
     "setor": "",
     "instrumento": "",
-    "link": "https://www.austin.com.br/Historico-Rating/3012/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
+    "link": "https://www.austin.com.br/Historico-Rating/3010/Porto_Fino_FIC_FIDC_-_Subordinadas_Júnior_"
   },
   {
     "emissor": "PORTO PRIMAVERA TRANSMISSORA ENERGIA",
@@ -63408,6 +63756,18 @@
     "link": ""
   },
   {
+    "emissor": "SPE NOVO NORTE AEROPORTOS",
+    "cnpj": "48.710.127/0001-20",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "AA+.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-09-04",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "2ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
     "emissor": "SPE TRANSMISSORA ENERGIA LINHA VERDE II",
     "cnpj": "",
     "agencia": "Fitch",
@@ -65112,6 +65472,30 @@
     "link": ""
   },
   {
+    "emissor": "THOPEN ENERGIA",
+    "cnpj": "28.133.664/0001-48",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "CC.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "1ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "THOPEN ENERGIA",
+    "cnpj": "28.133.664/0001-48",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Emissor",
+    "rating": "CC.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-09-04",
+    "setor": "Empresas Não-Financeiras",
+    "instrumento": "N/A",
+    "link": ""
+  },
+  {
     "emissor": "THOPEN SOLAR 02",
     "cnpj": "",
     "agencia": "Moody's",
@@ -65119,6 +65503,18 @@
     "rating": "CCC-.br",
     "outlook": "Perspectiva negativa",
     "dt_acao": "2026-07-30",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "Série Única da 1ª Emissão de Debêntures",
+    "link": ""
+  },
+  {
+    "emissor": "THOPEN SOLAR 02",
+    "cnpj": "",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "CC.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-09-04",
     "setor": "Projetos de Infraestrutura",
     "instrumento": "Série Única da 1ª Emissão de Debêntures",
     "link": ""
@@ -65143,6 +65539,18 @@
     "rating": "CCC-.br",
     "outlook": "Perspectiva negativa",
     "dt_acao": "2026-07-30",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "1ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "THOPEN SOLAR 07",
+    "cnpj": "",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "CC.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-09-04",
     "setor": "Projetos de Infraestrutura",
     "instrumento": "1ª Emissão de Debêntures - Série Única",
     "link": ""
@@ -65184,6 +65592,18 @@
     "link": ""
   },
   {
+    "emissor": "THOPEN SOLAR 10",
+    "cnpj": "49.408.882/0001-18",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "CC.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-09-04",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "1ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
     "emissor": "THOPEN SOLAR 12 SPE",
     "cnpj": "50.513.224/0001-75",
     "agencia": "Moody's",
@@ -65220,6 +65640,18 @@
     "link": ""
   },
   {
+    "emissor": "THOPEN SOLAR 12 SPE",
+    "cnpj": "50.513.224/0001-75",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "CC.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-09-04",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "1ª Emissão de Debêntures - Série Única",
+    "link": ""
+  },
+  {
     "emissor": "THOPEN SOLAR 55 SPE",
     "cnpj": "53.074.942/0001-80",
     "agencia": "Moody's",
@@ -65239,6 +65671,18 @@
     "rating": "CCC-.br",
     "outlook": "Perspectiva negativa",
     "dt_acao": "2026-07-30",
+    "setor": "Projetos de Infraestrutura",
+    "instrumento": "1ª Emissão de Debêntures – Série Única",
+    "link": ""
+  },
+  {
+    "emissor": "THOPEN SOLAR 55 SPE",
+    "cnpj": "53.074.942/0001-80",
+    "agencia": "Moody's",
+    "tipo_rating": "Rating de Dívida",
+    "rating": "CC.br",
+    "outlook": "Perspectiva negativa",
+    "dt_acao": "2026-09-04",
     "setor": "Projetos de Infraestrutura",
     "instrumento": "1ª Emissão de Debêntures – Série Única",
     "link": ""
