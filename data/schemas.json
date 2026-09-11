@@ -59,37 +59,37 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Embraer S.A."
+        "example": "TRSP - Terminal de Regaseificacao de GNL de Sao Paulo S.A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/embraer-sa-94402890"
+        "example": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Long Term Issuer Default Rating"
+        "example": "National Long Term Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BBB"
+        "example": "AA(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-09-09"
+        "example": "2026-09-10"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Upgrade"
+        "example": "Affirmed"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Stable"
+        "example": "Rating Outlook Negative"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Embraer S.A."
+        "example": "TRSP - Terminal de Regaseificacao de GNL de Sao Paulo S.A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/embraer-sa-94402890"
+        "example": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
+        "example": "ACRE BG FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/4679/Acre_BG_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB-"
+        "example": "brBB+"
       },
       {
         "name": "de_rating_cp",
@@ -293,12 +293,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBB-"
+        "example": "brBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2024-08-14"
       },
       {
         "name": "de_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11204"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11068"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "BARCELONA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS GENIAL MULTI CONSIGNADOS II RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29194"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29201"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "BARCELONA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS GENIAL MULTI CONSIGNADOS II RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29194"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29201"
       },
       {
         "name": "no_tipo_rating",
@@ -362,12 +362,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP2"
+        "example": "B+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-09-09"
+        "example": "2026-09-10"
       },
       {
         "name": "de_acao_rating",
@@ -387,7 +387,7 @@
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Curto prazo"
+        "example": "Longo prazo"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ADJUD I FIDC NP"
+        "example": "ACRE BG FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
+        "example": "ACRE BG FIDC - SENIORES ÚNICA"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB-"
+        "example": "brBB+"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2024-08-14"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/4679/Acre_BG_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_devedor_vinculado",
