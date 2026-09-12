@@ -67,6 +67,15 @@ PulseRatingsBrasil/
 ├── .github/
 │   └── workflows/
 │       └── main.yml                 # Agendamento do pipeline no GitHub Actions
+├── databricks/                      # Integração nativa Databricks (Git Folders & Workflows)
+│   ├── notebooks/
+│   │   ├── 01_orchestrator_notebook.py # Notebook interativo com widgets para depuração
+│   │   └── 02_delta_lake_exporter.py   # Exportador de CSVs para tabelas Delta Lake
+│   ├── run_pulse_ratings_brasil_job.py # Entrypoint Python Script para Databricks Workflows
+│   ├── delta_exporter.py            # Utilitário de carga e conversão para Delta Lake
+│   ├── init.sh                      # Init script para instalação de libs nativas (curl-cffi)
+│   ├── requirements.txt             # Dependências otimizadas para runtime Databricks
+│   └── README.md                    # Guia passo a passo de configuração e agendamento
 ├── data/                            # Datasets, schemas e metadados de controle
 │   ├── datasets.json                # Catálogo estruturado de metadados dos datasets
 │   ├── schemas.json                 # Definição e mapeamento de campos e tipos
@@ -110,45 +119,29 @@ PulseRatingsBrasil/
 
 ## ☁️ Deploy no Databricks (Opcional)
 
-O pipeline pode ser executado em um cluster Databricks para armazenar os CSVs no DBFS e alimentar dashboards via Databricks SQL.
+O **Pulse Ratings Brasil** possui suporte nativo para execução no **Databricks**, permitindo orquestrar os scrapers via **Databricks Workflows (Jobs UI)**, depurar interativamente através de **Notebooks com Widgets** e exportar os dados consolidados diretamente para tabelas **Delta Lake** no **Hive Metastore** ou **Unity Catalog**.
 
-### Setup
+### 🌟 Destaques da Integração
 
-1. Crie um cluster Databricks (runtime 15.4 LTS ou superior).
-2. Configure o **init script** do cluster para instalar o `curl-cffi`:
-   - Cluster → Advanced → Init Scripts → adicione o caminho para `databricks/init.sh` no DBFS ou Workspace.
-3. Instale as demais dependências:
-   ```bash
-   pip install -r databricks/requirements.txt
-   ```
-4. Defina a variável de ambiente `DATABRICKS_DATA_PATH` no cluster ou job:
-   ```
-   DATABRICKS_DATA_PATH=/dbfs/FileStore/pulse_ratings/data
-   ```
-   Se não definida, o pipeline salva os dados em `data/` (comportamento padrão local).
+* **Git Folders (Repos) Padrão**: Conecte o repositório diretamente pela UI do Databricks (`Workspace > Users > Git folder`), sem necessidade de Databricks Asset Bundles (DABs) ou permissões administrativas especiais.
+* **Entrypoint Python Script Task**: O script `databricks/run_pulse_ratings_brasil_job.py` resolve dinamicamente o `sys.path`, recupera credenciais do **Databricks Secret Scope** (ou variáveis de ambiente) e executa o pipeline sem duplicar lógica de código.
+* **Notebook Interativo com Widgets**: O notebook `databricks/notebooks/01_orchestrator_notebook.py` disponibiliza dropdowns visuais para rodar scrapers específicos, filtrar por grupos (`ratings`, `emissores`), alternar execução paralela/sequencial e depurar em tempo real.
+* **Exportador Delta Lake**: O notebook `databricks/notebooks/02_delta_lake_exporter.py` converte automaticamente os CSVs para tabelas Delta Lake com colunas de auditoria (`_ingestion_timestamp`), permitindo consultas analíticas imediatas via Databricks SQL ou conexões com Power BI.
 
-### Execução
+### 🚀 Como Executar no Databricks
 
 ```bash
-# Pipeline completo
-python databricks/run_pipeline.py
+# Execução via Python Script Task ou terminal Databricks
+python databricks/run_pulse_ratings_brasil_job.py --parallel --max-workers 4
 
-# Apenas um scraper
-python databricks/run_pipeline.py --scraper fitch_emissores
+# Executar apenas um scraper específico
+python databricks/run_pulse_ratings_brasil_job.py --scraper fitch_ratings
 
-# Dry-run (apenas log, não salva)
-python databricks/run_pipeline.py --dry-run
+# Executar pipeline e exportar diretamente para Delta Lake
+python databricks/run_pulse_ratings_brasil_job.py --export-delta
 ```
 
-O script respeita o mesmo sistema de descoberta de scrapers e fases do `run_all.py`.
-
-### Como funciona
-
-- `databricks/run_pipeline.py` orquestra os scrapers, escrevendo os CSVs no diretório definido por `DATABRICKS_DATA_PATH`.
-- O diretório de saída é resolvido por `utils/paths.get_data_dir()`, que prioriza a variável de ambiente com fallback para `data/`.
-- O `BaseScraper` em `scrapers/utils/base.py` usa `get_data_dir()` para determinar onde salvar, sem alterar o comportamento local.
-
-> **Nota:** O deploy no Databricks é adicional e não interfere no pipeline GitHub Actions. Ambos compartilham o mesmo código de scrapers.
+📖 **Guia Completo Passo a Passo:** Consulte a documentação dedicada em [**`databricks/README.md`**](databricks/README.md) para detalhes visuais de clonagem, configuração de secrets, criação do Job agendado e consultas SQL analíticas.
 
 ---
 

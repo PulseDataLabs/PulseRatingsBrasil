@@ -1,10 +1,26 @@
-# Pulse Ratings Brasil – Dependências para cluster Databricks
-# Copie este arquivo ou use o init script (init.sh) para instalar.
-# Cluster runtime recomendado: 15.4 LTS (Spark 3.5, Scala 2.12)
+# Pulse Ratings Brasil – Dependências para Databricks
+# Compatível com Databricks Runtime 13.3 LTS, 14.3 LTS e 15.4 LTS+
 
-pandas>=2.0
-requests>=2.31
-python-dotenv>=1.0
-lxml>=5.0
-beautifulsoup4>=4.12
-curl-cffi>=0.7
+# Core e Requisições HTTP
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+python-dotenv>=1.0.0
+lxml>=5.0.0
+curl-cffi>=0.7.0
+
+# Processamento de Dados
+pandas>=2.0.0
+openpyxl>=3.1.0
+xlrd>=2.0.1
+bizdays>=1.0.0
+
+# APIs de Enriquecimento e Busca
+cnpjaberto>=0.1.0
+ddgs>=1.0.0
+
+# Banco de Dados Oracle (Opcional)
+oracledb>=2.0.0
+SQLAlchemy>=2.0.0
+
+# Testes e Qualidade
+pytest>=8.0.0
