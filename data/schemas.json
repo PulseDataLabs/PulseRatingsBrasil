@@ -59,37 +59,37 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Oi S.A."
+        "example": "Icred Solucoes Financeiras S.A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/oi-sa-80090797"
+        "example": "https://www.fitchratings.com/entity/icred-solucoes-financeiras-sa-97585696"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "National Long Term Rating"
+        "example": "ABS Primary Servicer Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "WD(bra)"
+        "example": "ABPS3+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-09-11"
+        "example": "2026-09-14"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Withdrawn"
+        "example": "Upgrade"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Rating Outlook Stable"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Oi S.A."
+        "example": "Icred Solucoes Financeiras S.A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/oi-sa-80090797"
+        "example": "https://www.fitchratings.com/entity/icred-solucoes-financeiras-sa-97585696"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACRE BG FIDC - SENIORES ÚNICA"
+        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4679/Acre_BG_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB+"
+        "example": "brBB-"
       },
       {
         "name": "de_rating_cp",
@@ -293,12 +293,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBB+"
+        "example": "brBB-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-14"
+        "example": "2024-08-13"
       },
       {
         "name": "de_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11068"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11204"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS SABIA CREDIT"
+        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS SANTA CRUZ CAPITAL"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29185"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29218"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS SABIA CREDIT"
+        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS SANTA CRUZ CAPITAL"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29185"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29218"
       },
       {
         "name": "no_tipo_rating",
@@ -362,17 +362,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "B"
+        "example": "C"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-09-11"
+        "example": "2026-09-14"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Encerramento"
       },
       {
         "name": "de_outlook",
@@ -382,7 +382,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Subordinada"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACRE BG FIDC"
+        "example": "ADJUD I FIDC NP"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACRE BG FIDC - SENIORES ÚNICA"
+        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB+"
+        "example": "brBB-"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-14"
+        "example": "2024-08-13"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4679/Acre_BG_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
       },
       {
         "name": "no_devedor_vinculado",
