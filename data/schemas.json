@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-09-16"
+        "example": "2026-09-17"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
+        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brCCC"
+        "example": "brB-"
       },
       {
         "name": "de_rating_cp",
@@ -293,7 +293,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brCCC"
+        "example": "brB-"
       },
       {
         "name": "dt_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11648"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "B4 TRUST FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "LARCA CONSIGNADO III FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS - RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29146"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29221"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "B4 TRUST FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "LARCA CONSIGNADO III FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS - RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29146"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29221"
       },
       {
         "name": "no_tipo_rating",
@@ -362,17 +362,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "B"
+        "example": "A-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-09-15"
+        "example": "2026-09-17"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rebaixamento"
       },
       {
         "name": "de_outlook",
@@ -382,7 +382,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Subordinada"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
@@ -456,7 +456,7 @@
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
+        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brCCC"
+        "example": "brB-"
       },
       {
         "name": "de_outlook",
@@ -486,7 +486,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
       },
       {
         "name": "no_devedor_vinculado",
