@@ -16,16 +16,16 @@ window.PULSERATINGS_LAST_UPDATES = {
     "max": "2026-06-04"
   },
   "fitch_emissores.csv": {
-    "min": "2026-09-16",
-    "max": "2026-09-16"
+    "min": "2026-09-17",
+    "max": "2026-09-17"
   },
   "standard_and_poors_emissores.csv": {
-    "min": "2026-09-16",
-    "max": "2026-09-16"
+    "min": "2026-09-17",
+    "max": "2026-09-17"
   },
   "moodys_emissores.csv": {
-    "min": "2026-09-16",
-    "max": "2026-09-16"
+    "min": "2026-09-17",
+    "max": "2026-09-17"
   },
   "fitch_ratings.csv": {
     "min": "2026-06-05",
@@ -40,20 +40,20 @@ window.PULSERATINGS_LAST_UPDATES = {
     "max": "2026-09-17"
   },
   "austin_emissores.csv": {
-    "min": "2026-09-16",
-    "max": "2026-09-16"
+    "min": "2026-09-17",
+    "max": "2026-09-17"
   },
   "austin_ratings.csv": {
     "min": "2026-09-04",
     "max": "2026-09-17"
   },
   "liberum_emissores.csv": {
-    "min": "2026-09-16",
-    "max": "2026-09-16"
+    "min": "2026-09-17",
+    "max": "2026-09-17"
   },
   "liberum_ratings.csv": {
     "min": "2026-08-04",
-    "max": "2026-09-16"
+    "max": "2026-09-17"
   },
   "ratings_emissores.csv": {
     "min": "2026-06-04",
