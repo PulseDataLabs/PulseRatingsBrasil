@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACR IV FIDC - SUBORDINADAS"
+        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brAA-"
+        "example": "brBBB+"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brAA-"
+        "example": "brBBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-08"
+        "example": "2024-07-10"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ACR_IV_FIDC/11045"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ADGM_FIDC/10935"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACR IV FIDC"
+        "example": "ADGM FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACR IV FIDC - SUBORDINADAS"
+        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
       },
       {
         "name": "no_tipo_rating",
@@ -466,12 +466,12 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SUBORDINADAS"
+        "example": "SENIORES 3ª SÉRIE"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brAA-"
+        "example": "brBBB+"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-08"
+        "example": "2024-07-10"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4665/ACR_IV_FIDC_-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
       },
       {
         "name": "no_devedor_vinculado",
