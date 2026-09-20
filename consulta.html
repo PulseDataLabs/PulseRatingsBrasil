@@ -184,36 +184,257 @@
     .main-view { display: none; }
     .main-view.active { display: block; }
 
-    /* ── Comparator Matrix ────────────────────────────────── */
-    .comparator-toolbar {
-      display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;
+    /* ── Comparator Matrix Enhancements (Terminal Institucional) ─ */
+    .comparator-header-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
     }
     .comparator-cards {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
     }
     .comp-card {
-      background: var(--surface); border: 1px solid var(--border1); padding: 1rem; border-radius: var(--radius-sm); display: flex; flex-direction: column; gap: 0.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 0.85rem 1.1rem;
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      transition: border-color 0.2s;
     }
-    .comp-card-val { font-size: 1.5rem; font-weight: 600; color: var(--text1); }
-    .comp-card-lbl { font-size: 0.8rem; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
+    .comp-card:hover {
+      border-color: var(--border2);
+    }
+    .comp-card-val {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      font-family: var(--font-mono);
+      line-height: 1.2;
+    }
+    .comp-card-lbl {
+      font-size: 0.65rem;
+      color: var(--text3);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-family: var(--font-mono);
+    }
     
+    .comp-toolbar-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .comp-search-bar {
+      position: relative;
+      flex: 1;
+      min-width: 280px;
+      max-width: 480px;
+      display: flex;
+      align-items: center;
+    }
+    .comp-search-input {
+      width: 100%;
+      padding: 0.6rem 2.2rem 0.6rem 2.3rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .comp-search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.12);
+    }
+    .comp-search-icon {
+      position: absolute;
+      left: 0.85rem;
+      color: var(--accent);
+      pointer-events: none;
+      opacity: 0.85;
+    }
+    .comp-search-clear {
+      position: absolute;
+      right: 0.75rem;
+      background: none;
+      border: none;
+      color: var(--text3);
+      cursor: pointer;
+      display: none;
+      font-size: 0.85rem;
+      padding: 2px 6px;
+    }
+
     .comp-matrix-wrapper {
-      overflow-x: auto;
-      border: 1px solid var(--border1); border-radius: var(--radius-sm);
+      max-height: 68vh;
+      overflow: auto;
+      border: 1px solid var(--border2);
+      border-radius: var(--radius);
+      background: #090e15;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+      position: relative;
     }
     .comp-matrix {
-      width: 100%; border-collapse: collapse; min-width: 800px;
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      min-width: 880px;
+      font-size: 0.82rem;
     }
-    .comp-matrix th, .comp-matrix td {
-      padding: 0.75rem 1rem; border-bottom: 1px solid var(--border1); border-right: 1px solid var(--border1); text-align: left; vertical-align: top;
+    .comp-matrix th,
+    .comp-matrix td {
+      padding: 0.7rem 0.95rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      vertical-align: middle;
     }
-    .comp-matrix th { background: var(--bg2); font-weight: 600; color: var(--text2); font-size: 0.85rem; text-transform: uppercase; position: sticky; top: 0; z-index: 10; }
-    .comp-matrix th:first-child { width: 250px; position: sticky; left: 0; z-index: 11; background: var(--surface); }
-    .comp-matrix td:first-child { position: sticky; left: 0; background: var(--surface); font-weight: 500; color: var(--text1); z-index: 5; }
-    .comp-matrix tr:last-child td { border-bottom: none; }
-    .comp-matrix td:last-child, .comp-matrix th:last-child { border-right: none; }
-    
-    .comp-rating-stack { display: flex; flex-direction: column; gap: 0.25rem; }
+    .comp-matrix thead th {
+      background: #0d1522;
+      color: var(--text2);
+      font-size: 0.7rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      position: sticky;
+      top: 0;
+      z-index: 25;
+      border-bottom: 2px solid var(--border2);
+      border-top: none;
+      white-space: nowrap;
+    }
+    .comp-matrix thead th.comp-th-emissor {
+      position: sticky;
+      left: 0;
+      top: 0;
+      z-index: 35;
+      background: #090f18;
+      width: 270px;
+      min-width: 270px;
+      border-right: 2px solid var(--border2);
+    }
+    .comp-matrix tbody td.comp-td-emissor {
+      position: sticky;
+      left: 0;
+      z-index: 15;
+      background: #0b111a;
+      border-right: 2px solid var(--border2);
+      box-shadow: 3px 0 8px rgba(0, 0, 0, 0.35);
+    }
+    .comp-matrix tbody tr:nth-child(even) td {
+      background-color: rgba(255, 255, 255, 0.015);
+    }
+    .comp-matrix tbody tr:nth-child(even) td.comp-td-emissor {
+      background-color: #0d1520;
+    }
+    .comp-matrix tbody tr:hover td {
+      background-color: rgba(0, 212, 255, 0.04) !important;
+    }
+    .comp-matrix tbody tr:hover td.comp-td-emissor {
+      background-color: #121c2b !important;
+    }
+
+    /* Rating Boxes inside Comparator Matrix */
+    .comp-rating-card {
+      background: #111823;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.35rem 0.55rem;
+      min-width: 135px;
+      margin-bottom: 0.3rem;
+      transition: border-color 0.2s;
+    }
+    .comp-rating-card:last-child {
+      margin-bottom: 0;
+    }
+    .comp-rating-card:hover {
+      border-color: var(--border2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    .comp-rating-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.4rem;
+    }
+    .comp-rating-tag {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .comp-rating-tag.grade-aaa,
+    .comp-rating-tag.grade-aa {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+    }
+    .comp-rating-tag.grade-a {
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid rgba(14, 165, 233, 0.3);
+      color: #38bdf8;
+    }
+    .comp-rating-tag.grade-bbb {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: #fbbf24;
+    }
+    .comp-rating-tag.grade-bb {
+      background: rgba(249, 115, 22, 0.12);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      color: #fb923c;
+    }
+    .comp-rating-tag.grade-b,
+    .comp-rating-tag.grade-c,
+    .comp-rating-tag.grade-d {
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #f87171;
+    }
+    .comp-rating-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.35rem;
+      margin-top: 0.25rem;
+    }
+    .comp-rating-inst-text {
+      font-size: 0.62rem;
+      color: var(--text3);
+      font-family: var(--font-mono);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 125px;
+    }
+    .comp-rating-dt-text {
+      font-size: 0.62rem;
+      color: var(--text3);
+      font-family: var(--font-mono);
+    }
+    .comp-empty-dash {
+      color: #475569;
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      display: block;
+      text-align: center;
+    }
 
     /* ── Toolbar (filters + export) ─────── */
     .toolbar {
@@ -1345,26 +1566,58 @@
 
         <!-- COMPARADOR SETORIAL -->
         <div id="view-comparador" class="main-view">
-          <div class="comparator-toolbar">
-            <div style="flex: 1;">
-              <h2 style="font-size: 1.2rem; color: var(--text1); margin: 0 0 0.25rem 0;">Matriz Comparativa</h2>
-              <p style="font-size: 0.85rem; color: var(--text3); margin: 0;">Analise o rating dos emissores de um mesmo setor nas diferentes agências de risco.</p>
+          <div class="comparator-header-box">
+            <div>
+              <h2 style="font-family: var(--font-head); font-size: 1.35rem; color: var(--text);">📊 Matriz Comparativa de Ratings por Setor</h2>
+              <p style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text3); margin-top: 0.35rem;">Compare lado a lado as notas vigentes dos emissores entre Fitch, Moody's, S&P, Austin e Liberum.</p>
             </div>
             <div>
-              <select id="comp-sector-filter" class="sector-dropdown" style="min-width: 250px;">
+              <select id="comp-sector-filter" class="sector-dropdown" style="min-width: 280px; padding: 0.65rem 1rem; border-radius: 8px; border: 1px solid var(--border2); font-weight: 500;">
                 <option value="">Selecione um Setor...</option>
               </select>
             </div>
           </div>
           
+          <!-- KPI Cards do Setor -->
           <div id="comp-cards-container" class="comparator-cards" style="display: none;">
             <div class="comp-card">
               <span class="comp-card-lbl">Emissores no Setor</span>
               <span class="comp-card-val" id="comp-total-emissores">—</span>
             </div>
             <div class="comp-card">
-              <span class="comp-card-lbl">Melhor Avaliado</span>
-              <span class="comp-card-val" id="comp-top-emissor" style="font-size: 1rem;">—</span>
+              <span class="comp-card-lbl">Cobertura Fitch</span>
+              <span class="comp-card-val" id="comp-fitch-emissores" style="color: #eab308;">—</span>
+            </div>
+            <div class="comp-card">
+              <span class="comp-card-lbl">Cobertura Moody's</span>
+              <span class="comp-card-val" id="comp-moodys-emissores" style="color: #38bdf8;">—</span>
+            </div>
+            <div class="comp-card">
+              <span class="comp-card-lbl">Cobertura S&P</span>
+              <span class="comp-card-val" id="comp-sp-emissores" style="color: #ff5c62;">—</span>
+            </div>
+            <div class="comp-card">
+              <span class="comp-card-lbl">Multi-Agência (2+)</span>
+              <span class="comp-card-val" id="comp-multi-emissores" style="color: var(--green);">—</span>
+            </div>
+          </div>
+
+          <!-- Barra de Busca do Comparador e Metadados -->
+          <div id="comp-toolbar-bar" class="comp-toolbar-bar" style="display: none;">
+            <div class="comp-search-bar">
+              <svg class="comp-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+              <input type="text" id="comp-search-input" class="comp-search-input" placeholder="Filtrar emissor por nome ou CNPJ no setor..." autocomplete="off" />
+              <button id="comp-search-clear" type="button" class="comp-search-clear" title="Limpar busca">✕</button>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text3);">
+                Exibindo <strong id="comp-visible-count" style="color: var(--text);">0</strong> de <span id="comp-total-sector-count">0</span> emissores
+              </span>
+              <span style="font-size: 0.72rem; color: var(--text3); font-family: var(--font-mono); background: rgba(0,212,255,0.06); padding: 0.25rem 0.5rem; border-radius: 4px; border: 1px solid rgba(0,212,255,0.15);">
+                💡 Clique no emissor para ver histórico
+              </span>
             </div>
           </div>
 
@@ -2305,10 +2558,110 @@
         return 10;
       }
 
+      function getRatingTierClass(rating) {
+        const r = (rating || '').toUpperCase();
+        if (r.includes('AAA') || r.includes('AA+') || r.includes('AA-') || r.includes('AA') || r.includes('AA1') || r.includes('AA2') || r.includes('AA3')) return 'grade-aa';
+        if (r.includes('A+') || r.includes('A-') || r.includes('A') || r.includes('A1') || r.includes('A2') || r.includes('A3')) return 'grade-a';
+        if (r.includes('BBB') || r.includes('BAA')) return 'grade-bbb';
+        if (r.includes('BB') || r.includes('BA')) return 'grade-bb';
+        return 'grade-b';
+      }
+
+      function renderAgencyMatrixCell(agRows) {
+        if (!agRows || agRows.length === 0) {
+          return `<span class="comp-empty-dash">—</span>`;
+        }
+
+        // Ordena por data mais recente
+        const sorted = [...agRows].sort((a, b) => (b.dt_acao || '').localeCompare(a.dt_acao || ''));
+
+        // Se houver ratings ativos, desconsidera retirados/WD
+        const active = sorted.filter(r => {
+          const rat = (r.rating || '').toUpperCase();
+          return !['WD', 'WR', 'PIF', 'NR', 'WITHDRAWN'].some(w => rat.includes(w));
+        });
+        const pool = active.length > 0 ? active : sorted;
+
+        // Prioriza escala nacional e rating de emissor/corporativo
+        pool.sort((a, b) => {
+          const aRat = (a.rating || '').toLowerCase();
+          const bRat = (b.rating || '').toLowerCase();
+          const aIsNat = aRat.includes('(bra)') || aRat.includes('.br') || aRat.startsWith('br');
+          const bIsNat = bRat.includes('(bra)') || bRat.includes('.br') || bRat.startsWith('br');
+          if (aIsNat && !bIsNat) return -1;
+          if (!aIsNat && bIsNat) return 1;
+
+          const aTipo = (a.tipo_rating || '').toLowerCase();
+          const bTipo = (b.tipo_rating || '').toLowerCase();
+          const aIsCorp = aTipo.includes('corporativo') || aTipo.includes('emissor') || aTipo.includes('issuer');
+          const bIsCorp = bTipo.includes('corporativo') || bTipo.includes('emissor') || bTipo.includes('issuer');
+          if (aIsCorp && !bIsCorp) return -1;
+          if (!aIsCorp && bIsCorp) return 1;
+
+          return (b.dt_acao || '').localeCompare(a.dt_acao || '');
+        });
+
+        // Agrupa por nota e perspectiva para não repetir
+        const groups = {};
+        for (const r of pool) {
+          const rat = r.rating;
+          if (!rat || rat === '—') continue;
+          const key = rat + '|' + (r.outlook || '');
+          if (!groups[key]) {
+            groups[key] = {
+              rating: rat,
+              outlook: r.outlook || '',
+              dt_acao: r.dt_acao || '',
+              instrumento: r.tipo_rating || r.instrumento || '',
+              count: 0
+            };
+          }
+          groups[key].count++;
+        }
+
+        const selectedGroups = Object.values(groups).slice(0, 2);
+        if (selectedGroups.length === 0) {
+          return `<span class="comp-empty-dash">—</span>`;
+        }
+
+        let html = '';
+        for (const g of selectedGroups) {
+          const gradeCls = getRatingTierClass(g.rating);
+          const oCls = outlookClass(g.outlook);
+          const oHtml = g.outlook ? `<span class="outlook-badge ${oCls}" style="font-size:0.6rem;padding:0.1rem 0.35rem;border-radius:3px;">${g.outlook}</span>` : '';
+          const countBadge = g.count > 1 ? `<span style="font-size:0.6rem;color:var(--text3);background:rgba(255,255,255,0.06);padding:0.1rem 0.3rem;border-radius:3px;" title="${g.count} instrumentos ou séries com esta mesma nota">(${g.count}x)</span>` : '';
+          
+          let instDisplay = g.instrumento || '';
+          if (instDisplay.length > 20) {
+            instDisplay = instDisplay.substring(0, 18) + '…';
+          }
+
+          html += `
+            <div class="comp-rating-card">
+              <div class="comp-rating-top-row">
+                <span class="comp-rating-tag ${gradeCls}">${g.rating}</span>
+                <div style="display:flex;align-items:center;gap:0.3rem;">
+                  ${countBadge}
+                  ${oHtml}
+                </div>
+              </div>
+              <div class="comp-rating-meta-row">
+                <span class="comp-rating-inst-text" title="${g.instrumento}">${instDisplay}</span>
+                <span class="comp-rating-dt-text">${fmtDate(g.dt_acao)}</span>
+              </div>
+            </div>
+          `;
+        }
+        return html;
+      }
+
       function renderComparator() {
         const sector = $compSectorFilter.val();
+        const $toolbarBar = $('#comp-toolbar-bar');
+
         if (!sector) {
           $compCardsContainer.hide();
+          $toolbarBar.hide();
           $comparatorContent.html(`
             <div class="empty-state" style="text-align: center; padding: 4rem 1rem; background: var(--surface); border: 1px dashed var(--border1); border-radius: var(--radius-lg); color: var(--text3);">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity: 0.5; margin-bottom: 1rem;"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
@@ -2319,45 +2672,54 @@
         }
 
         const emissoresNoSetor = [];
-        const agencyCount = {};
-        let topEmissor = null;
-        let topRatingVal = -1;
+        let fitchEmissoresCount = 0;
+        let moodysEmissoresCount = 0;
+        let spEmissoresCount = 0;
+        let multiEmissoresCount = 0;
 
         for (const [emissor, data] of Object.entries(byEmissor)) {
           const emSetor = data.setor || (data.rows.find(r => r.setor)?.setor) || '';
           if (emSetor === sector) {
-            emissoresNoSetor.push({ emissor, rows: data.rows });
-            
-            let maxScore = 0;
-            for (const row of data.rows) {
-              if (row.agencia) {
-                agencyCount[row.agencia] = (agencyCount[row.agencia] || 0) + 1;
-              }
-              const score = getRatingScore(row.rating);
-              if (score > maxScore) maxScore = score;
-            }
-            if (maxScore > topRatingVal) {
-              topRatingVal = maxScore;
-              topEmissor = emissor;
-            }
+            const ags = new Set(data.rows.map(r => r.agencia).filter(Boolean));
+            if (ags.has('Fitch')) fitchEmissoresCount++;
+            if (ags.has("Moody's")) moodysEmissoresCount++;
+            if (ags.has('S&P')) spEmissoresCount++;
+            if (ags.size >= 2) multiEmissoresCount++;
+
+            emissoresNoSetor.push({
+              emissor,
+              cnpj: data.cnpj || '',
+              rows: data.rows,
+              agencies: ags
+            });
           }
         }
 
-        $('#comp-total-emissores').text(emissoresNoSetor.length);
-        $('#comp-top-emissor').text(topEmissor || '—');
+        $('#comp-total-emissores').text(emissoresNoSetor.length.toLocaleString('pt-BR'));
+        $('#comp-fitch-emissores').text(fitchEmissoresCount.toLocaleString('pt-BR'));
+        $('#comp-moodys-emissores').text(moodysEmissoresCount.toLocaleString('pt-BR'));
+        $('#comp-sp-emissores').text(spEmissoresCount.toLocaleString('pt-BR'));
+        $('#comp-multi-emissores').text(multiEmissoresCount.toLocaleString('pt-BR'));
         
         $compCardsContainer.show();
+        $toolbarBar.show();
+        $('#comp-total-sector-count').text(emissoresNoSetor.length);
+        $('#comp-visible-count').text(emissoresNoSetor.length);
+        $('#comp-search-input').val('');
+        $('#comp-search-clear').hide();
 
         if (emissoresNoSetor.length === 0) {
-          $comparatorContent.html('<p style="text-align:center;padding:2rem;color:var(--text3);">Nenhum emissor encontrado para este setor.</p>');
+          $comparatorContent.html('<p style="text-align:center;padding:3rem;color:var(--text3);background:var(--surface);border-radius:8px;">Nenhum emissor encontrado para este setor.</p>');
           return;
         }
 
-        // Ordenação das agências: Fitch, Moody's, S&P, Austin, Liberum
+        // Colunas prioritárias: Fitch, Moody's, S&P, Austin, Liberum
         const AGENCY_ORDER = ['Fitch', "Moody's", 'S&P', 'Austin', 'Liberum'];
-        const presentAgencies = Object.keys(agencyCount);
-        const allSectorAgencies = AGENCY_ORDER.filter(a => presentAgencies.includes(a))
-          .concat(presentAgencies.filter(a => !AGENCY_ORDER.includes(a)));
+        const presentAgenciesSet = new Set();
+        emissoresNoSetor.forEach(e => e.agencies.forEach(a => presentAgenciesSet.add(a)));
+        
+        const allSectorAgencies = AGENCY_ORDER.filter(a => presentAgenciesSet.has(a))
+          .concat([...presentAgenciesSet].filter(a => !AGENCY_ORDER.includes(a)));
 
         emissoresNoSetor.sort((a, b) => a.emissor.localeCompare(b.emissor));
 
@@ -2366,7 +2728,7 @@
             <table class="comp-matrix">
               <thead>
                 <tr>
-                  <th style="min-width: 220px;">Emissor</th>
+                  <th class="comp-th-emissor">Emissor</th>
                   ${allSectorAgencies.map(a => `<th style="text-align:center;"><span class="badge ${agencyMeta(a).badgeCls}" style="font-size:0.75rem;padding:0.25rem 0.65rem;">${a}</span></th>`).join('')}
                 </tr>
               </thead>
@@ -2374,22 +2736,26 @@
         `;
 
         for (const item of emissoresNoSetor) {
-          matrixHtml += `<tr><td class="comp-emissor-cell" data-emissor="${item.emissor}" style="cursor:pointer;" title="Clique para ver histórico completo do emissor"><span style="color:var(--text);font-weight:600;">${item.emissor}</span> <span style="font-size:0.65rem;color:var(--accent);margin-left:0.25rem;">↗</span></td>`;
+          const searchNorm = `${item.emissor} ${item.cnpj}`.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+          
+          matrixHtml += `
+            <tr data-search-text="${searchNorm}">
+              <td class="comp-td-emissor" data-emissor="${item.emissor}" style="cursor:pointer;" title="Clique para abrir detalhes do emissor">
+                <div style="font-weight:700;color:#f8fafc;font-size:0.84rem;line-height:1.25;display:flex;align-items:center;justify-content:space-between;">
+                  <span>${item.emissor}</span>
+                  <span style="font-size:0.7rem;color:var(--accent);margin-left:0.35rem;opacity:0.85;">↗</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.4rem;margin-top:0.3rem;">
+                  <span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text3);">${item.cnpj || '—'}</span>
+                  <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--accent);background:rgba(0,212,255,0.08);padding:0.1rem 0.35rem;border-radius:3px;">${item.rows.length} nota${item.rows.length !== 1 ? 's' : ''}</span>
+                </div>
+              </td>
+          `;
           
           for (const ag of allSectorAgencies) {
             const agRows = item.rows.filter(r => r.agencia === ag);
-            if (agRows.length === 0) {
-              matrixHtml += `<td style="text-align:center;"><span style="color:var(--text3);font-family:var(--font-mono);">—</span></td>`;
-            } else {
-              matrixHtml += `<td><div class="comp-rating-stack">`;
-              for (const row of agRows) {
-                const oCls = outlookClass(row.outlook);
-                const oHtml = row.outlook ? `<span class="outlook-badge ${oCls}" style="font-size:0.6rem;padding:0.1rem 0.35rem;margin-left:0.25rem;">${row.outlook}</span>` : '';
-                const instrHtml = row.instrumento ? `<div style="font-size:0.68rem;color:var(--text3);max-width:200px;white-space:normal;line-height:1.2;margin-top:2px;">${row.instrumento}</div>` : '';
-                matrixHtml += `<div style="margin-bottom:0.35rem;"><span class="rating-cell" style="display:inline-block;font-size:0.78rem;">${row.rating}</span>${oHtml}${instrHtml}</div>`;
-              }
-              matrixHtml += `</div></td>`;
-            }
+            const cellHtml = renderAgencyMatrixCell(agRows);
+            matrixHtml += `<td>${cellHtml}</td>`;
           }
           matrixHtml += `</tr>`;
         }
@@ -2403,11 +2769,29 @@
         $comparatorContent.html(matrixHtml);
       }
 
-    // Clique no emissor da matriz comparativa abre o Drawer
-    $(document).on('click', '.comp-emissor-cell', function() {
-      const em = $(this).data('emissor');
-      if (em && typeof openDrawer === 'function') openDrawer(em);
-    });
+      // Filtro de busca de emissor na matriz comparativa
+      $(document).on('input', '#comp-search-input', function() {
+        const query = $(this).val().toLowerCase().trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        $('#comp-search-clear').toggle(!!query);
+        let visible = 0;
+        $('.comp-matrix tbody tr').each(function() {
+          const text = $(this).data('search-text') || '';
+          const match = !query || text.includes(query);
+          $(this).toggle(match);
+          if (match) visible++;
+        });
+        $('#comp-visible-count').text(visible);
+      });
+
+      $(document).on('click', '#comp-search-clear', function() {
+        $('#comp-search-input').val('').trigger('input');
+      });
+
+      // Clique no emissor da matriz comparativa abre o Drawer
+      $(document).on('click', '.comp-td-emissor', function() {
+        const em = $(this).data('emissor');
+        if (em && typeof openDrawer === 'function') openDrawer(em);
+      });
 
     // ── Consolidated / Detailed toggle ────────────────────────
 
