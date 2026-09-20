@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-09-20T15:09:24.067613",
+  "timestamp": "2026-09-20T15:49:43.855136",
   "dt_atual": "2026-09-20",
   "dt_anterior": "2026-09-19",
   "resumo": {
@@ -16,8 +16,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "outlooks_emissoes": 25,
     "total_outlooks": 41,
     "retirados_emissores": 5,
-    "retirados_emissoes": 9,
-    "total_retirados": 14
+    "retirados_emissoes": 8,
+    "total_retirados": 13
   },
   "periodo_recente": {
     "dt_atual": "2026-09-20",
@@ -36,8 +36,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 25,
       "total_outlooks": 41,
       "retirados_emissores": 5,
-      "retirados_emissoes": 9,
-      "total_retirados": 14
+      "retirados_emissoes": 8,
+      "total_retirados": 13
     },
     "emissores": {
       "tipo": "emissores",
@@ -772,13 +772,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brB+",
-          "rating_atual": "brBB-",
+          "rating_atual": "brBBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
+          "variacao_notches": "+5"
         },
         {
           "agencia": "Fitch",
@@ -2144,19 +2144,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "BRAZIL",
           "instrumento": "BRL 177 bln Floating bond/note 01-Sep-2026",
           "dt_acao": "2026-09-01",
@@ -2267,11 +2254,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-09-19",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 0,
-      "total_upgrades": 0,
+      "upgrades_emissoes": 1,
+      "total_upgrades": 1,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 1,
-      "total_downgrades": 1,
+      "downgrades_emissoes": 0,
+      "total_downgrades": 0,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2279,8 +2266,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 1,
-      "total_retirados": 1
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
@@ -2296,39 +2283,25 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "tipo": "emissoes",
       "dt_atual": "2026-09-20",
       "dt_anterior": "2026-09-19",
-      "upgrades": [],
-      "downgrades": [
+      "upgrades": [
         {
           "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB+",
-          "rating_atual": "brBB-",
+          "rating_atual": "brBBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
         }
       ],
+      "downgrades": [],
       "novos": [],
       "outlooks": [],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "retirados": []
     }
   },
   "movimentacoes": [
@@ -4920,22 +4893,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "instrumento": "securities ser 1",
-      "dt_acao": "2026-04-15",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-09-20"
-    },
-    {
-      "agencia": "Fitch",
       "emissor": "KANASTRA SECURITIZADORA 2024",
       "instrumento": "notes ser 5",
       "dt_acao": "2026-01-28",
@@ -4987,13 +4944,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brB+",
-      "rating_atual": "brBB-",
+      "rating_atual": "brBBB",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+1",
+      "variacao_notches": "+5",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-09-20"
@@ -95509,13 +95466,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "emissor": "FICTOR INVEST FIDC",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brB+",
-        "rating_atual": "brBB-",
+        "rating_atual": "brBBB",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+1"
+        "variacao_notches": "+5"
       },
       {
         "agencia": "Fitch",
@@ -96879,19 +96836,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "retirados": [
-      {
-        "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "instrumento": "securities ser 1",
-        "dt_acao": "2026-04-15",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-        "rating_anterior": "AA+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
       {
         "agencia": "Fitch",
         "emissor": "BRAZIL",
