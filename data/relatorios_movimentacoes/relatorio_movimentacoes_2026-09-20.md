@@ -8,7 +8,7 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 16 | 12 | **28** |
-| 🔴 **Downgrades (Rebaixamentos)** | 8 | 40 | **48** |
+| 🔴 **Downgrades (Rebaixamentos)** | 8 | 41 | **49** |
 | 🔵 **Novos Ratings** | 2 | 45 | **47** |
 | 🟡 **Mudanças de Perspectiva** | 16 | 25 | **41** |
 | ⚪ **Ratings Retirados / Liquidados** | 5 | 8 | **13** |
@@ -41,11 +41,11 @@
 | Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA-` | **`brAA`** | `+1` | Estável | 27/09/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 25/06/2026 |
 | Fitch | **VERT CSCF 2024** | bonds ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brB+` | **`brBBB`** | `+5` | Negativa | 09/10/2025 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brB+` | **`brBB-`** | `+1` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
 | Fitch | **3R LUX R.L.** | USD 500 mln 9.75% bond/note 05-Feb-2031 | `BB-` | **`BB`** | `+1` | Em Observação | 25/08/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 48
+### 🔴 Rebaixamentos de Rating (Downgrades) — 49
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Moody's | **IN** | Avaliações de Qualidade de Gestor de Investimentos | `MQ1.br` | **`MQ3.br`** | `-5` | Estável | 13/05/2025 |
@@ -59,6 +59,7 @@
 | Liberum | **LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `AA-` | **`A-`** | `-3` | Negativa | 17/09/2026 |
 | Fitch | **OPEA SECURITIZADORA 2022** | notes ser 1 | `AAAsf(bra)` | **`AAsf(bra)`** | `-2` | Em Observação | 02/09/2026 |
 | Fitch | **FACTA INSS CB FIDC** | bonds ser 2022-1,2,3 | `AAAsf(bra)` | **`CCsf(bra)`** | `-19` | Estável | 12/06/2026 |
+| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB+` | **`brBBB-`** | `-2` | Estável | 06/03/2024 |
 | Fitch | **KANASTRA SECURITIZADORA 2024** | notes ser 5 | `AAAsf(bra)` | **`AA+sf(bra)`** | `-1` | Estável | 28/01/2026 |
 | Moody's | **CREDITCORP SECURITIZADORA** | 1ª Série da 7ª Emissão | `(P)AAA.br (sf)` | **`AA+.br (sf)`** | `-1` | Estável | 27/08/2026 |
 | Moody's | **CREDITCORP SECURITIZADORA** | 2ª Série da 7ª Emissão | `(P)BBB.br (sf)` | **`BBB-.br (sf)`** | `-1` | Estável | 27/08/2026 |
@@ -196,4 +197,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (19/09/2026 → 20/09/2026)
-*Total nas últimas 24h: 🟢 1 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
