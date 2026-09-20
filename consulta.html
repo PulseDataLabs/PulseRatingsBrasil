@@ -829,6 +829,80 @@
     }
   
     /* ── Movimentações View Styles ── */
+    .mov-toolbar-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .mov-view-toggle {
+      display: flex;
+      gap: 0.25rem;
+      background: var(--surface);
+      padding: 3px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+    }
+    .mov-vtoggle-btn {
+      background: transparent;
+      border: none;
+      color: var(--text3);
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .mov-vtoggle-btn:hover {
+      color: var(--text);
+    }
+    .mov-vtoggle-btn.active {
+      background: var(--accent);
+      color: var(--bg);
+      font-weight: 700;
+    }
+    .mov-table-wrapper {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-top: 1rem;
+      overflow-x: auto;
+    }
+    #mov-data-table {
+      width: 100% !important;
+    }
+    #mov-data-table tbody tr {
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    #mov-data-table tbody tr:hover td {
+      background: rgba(0, 212, 255, 0.04) !important;
+    }
+    .mov-dt-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .mov-dt-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border);
+    }
+
     .mov-header-box {
       display: flex;
       align-items: center;
@@ -1378,16 +1452,47 @@
             </div>
           </div>
 
-          <div class="mov-filter-pills">
-            <button class="mov-pill active" data-type="ALL">Todos (<span id="mov-total-badge">0</span>)</button>
-            <button class="mov-pill pill-up" data-type="UPGRADE">🟢 Upgrades</button>
-            <button class="mov-pill pill-down" data-type="DOWNGRADE">🔴 Downgrades</button>
-            <button class="mov-pill pill-new" data-type="NOVO">🔵 Novos Ratings</button>
-            <button class="mov-pill pill-out" data-type="OUTLOOK">🟡 Alteração Outlook</button>
-            <button class="mov-pill pill-del" data-type="RETIRADO">⚪ Retirados</button>
+          <div class="mov-toolbar-actions">
+            <div class="mov-filter-pills" style="margin: 0;">
+              <button class="mov-pill active" data-type="ALL">Todos (<span id="mov-total-badge">0</span>)</button>
+              <button class="mov-pill pill-up" data-type="UPGRADE">🟢 Upgrades</button>
+              <button class="mov-pill pill-down" data-type="DOWNGRADE">🔴 Downgrades</button>
+              <button class="mov-pill pill-new" data-type="NOVO">🔵 Novos Ratings</button>
+              <button class="mov-pill pill-out" data-type="OUTLOOK">🟡 Alteração Outlook</button>
+              <button class="mov-pill pill-del" data-type="RETIRADO">⚪ Retirados</button>
+            </div>
+
+            <div class="mov-view-toggle">
+              <button id="btn-view-table" class="mov-vtoggle-btn active" title="Visualização em Tabela">📊 Tabela</button>
+              <button id="btn-view-cards" class="mov-vtoggle-btn" title="Visualização em Cards">🗂️ Cards</button>
+            </div>
           </div>
 
-          <div id="mov-cards-grid" class="mov-grid">
+          <!-- Container Tabular (Padrão) -->
+          <div id="mov-table-container" class="mov-table-wrapper">
+            <table id="mov-data-table" class="display responsive nowrap" style="width: 100%;">
+              <thead>
+                <tr>
+                  <th>DataISO</th>
+                  <th class="col-center">Data</th>
+                  <th class="col-center">Ação</th>
+                  <th class="col-center">Agência</th>
+                  <th>Emissor</th>
+                  <th>Instrumento / Tipo</th>
+                  <th class="col-center">Rating Ant.</th>
+                  <th class="col-center">Rating Novo</th>
+                  <th class="col-center">Variação</th>
+                  <th class="col-center">Perspectiva</th>
+                  <th class="col-center">Fonte</th>
+                  <th>EmissorRaw</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+          <!-- Container de Cards (Alternativo) -->
+          <div id="mov-cards-grid" class="mov-grid" style="display: none; margin-top: 1rem;">
             <!-- Renderizado dinamicamente -->
           </div>
         </div>
@@ -1757,6 +1862,8 @@
     let currentMovType = 'ALL';       // 'ALL', 'UPGRADE', 'DOWNGRADE', 'NOVO', 'OUTLOOK', 'RETIRADO'
     let currentMovAgency = 'ALL';     // 'ALL', 'Fitch', 'Moody's', 'S&P', 'Austin', 'Liberum'
     let currentMovSearch = '';
+    let currentMovView = 'table'; // 'table' (padrão) ou 'cards'
+    let movTableApi = null;
 
     function getMovimentacoesList() {
       const data = window.PULSERATINGS_MOVIMENTACOES;
@@ -1791,6 +1898,7 @@
     function renderMovimentacoes() {
       const data = window.PULSERATINGS_MOVIMENTACOES;
       const $grid = $('#mov-cards-grid');
+      const $tableContainer = $('#mov-table-container');
       const $desc = $('#mov-period-desc');
 
       if (!data) {
@@ -1798,7 +1906,8 @@
           <div class="empty-state" style="text-align: center; padding: 3rem 1rem; color: var(--text3); grid-column: 1 / -1;">
             <p>Dados de movimentações de ratings ainda não foram carregados.</p>
           </div>
-        `);
+        `).show();
+        $tableContainer.hide();
         return;
       }
 
@@ -1837,7 +1946,7 @@
 
       // Aplica filtros de Tipo, Agência e Busca sem distinção de acentos ou maiúsculas
       function normSearchText(str) {
-        return (str || '').normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+        return (str || '').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
       }
       const searchTerms = normSearchText(currentMovSearch).trim().split(/\s+/).filter(Boolean);
 
@@ -1857,17 +1966,140 @@
       if (filtered.length === 0) {
         const hasSearch = currentMovSearch.trim().length > 0;
         const searchEscaped = currentMovSearch.replace(/"/g, '&quot;');
-        $grid.html(`
-          <div class="empty-state" style="text-align: center; padding: 3.5rem 1rem; color: var(--text3); grid-column: 1 / -1; background: var(--surface); border: 1px dashed var(--border1); border-radius: var(--radius-lg);">
+        const emptyHtml = `
+          <div class="empty-state" style="text-align: center; padding: 3.5rem 1rem; color: var(--text3); width: 100%; background: var(--surface); border: 1px dashed var(--border1); border-radius: var(--radius-lg);">
             <p style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text);">${hasSearch ? `Nenhum resultado encontrado para "<strong>${searchEscaped}</strong>".` : 'Nenhuma movimentação encontrada para os filtros selecionados.'}</p>
             <p style="font-size: 0.8rem; color: var(--text3);">${hasSearch ? 'Verifique se o nome do emissor está correto ou tente buscar por termos parciais.' : 'Tente alterar o período, selecionar outra agência ou limpar a busca.'}</p>
             ${hasSearch ? '<button id="btn-clear-empty-search" style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.8rem; cursor: pointer; padding: 0.5rem 1.2rem; background: rgba(0, 212, 255, 0.1); border: 1px solid var(--accent); color: var(--accent); border-radius: var(--radius-sm); transition: all 0.2s;">Limpar busca de emissor ✕</button>' : ''}
           </div>
-        `);
+        `;
+        $grid.html(emptyHtml).show();
+        $tableContainer.hide();
         return;
       }
 
-      // Renderiza os cards
+      // ── MODO TABELA (PADRÃO) ───────────────────────────────────
+      if (currentMovView === 'table') {
+        $grid.hide();
+        $tableContainer.show();
+
+        const tableData = filtered.map(m => {
+          const tipoLabel = {
+            UPGRADE: '<span class="mov-badge-tag tag-upgrade" style="font-size:0.68rem; padding: 2px 7px;">🟢 UPGRADE</span>',
+            DOWNGRADE: '<span class="mov-badge-tag tag-downgrade" style="font-size:0.68rem; padding: 2px 7px;">🔴 DOWNGRADE</span>',
+            NOVO: '<span class="mov-badge-tag tag-novo" style="font-size:0.68rem; padding: 2px 7px;">🔵 NOVO</span>',
+            OUTLOOK: '<span class="mov-badge-tag tag-outlook" style="font-size:0.68rem; padding: 2px 7px;">🟡 OUTLOOK</span>',
+            RETIRADO: '<span class="mov-badge-tag tag-retirado" style="font-size:0.68rem; padding: 2px 7px;">⚪ RETIRADO</span>'
+          }[m.tipo] || m.tipo;
+
+          const agBadge = agencyBadge(m.agencia);
+          const emissorHtml = `<span class="emissor-cell" style="cursor: pointer; font-weight: 600; color: var(--text);">${m.emissor} <span style="font-size:0.65rem;color:var(--text3);margin-left:0.3rem;">↗</span></span>`;
+          const linkHtml = m.link ? `<a href="${m.link}" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; font-size: 0.8rem; font-weight: 500;">Link ↗</a>` : '—';
+          
+          let notchHtml = '<span style="color:var(--text3)">—</span>';
+          if (m.variacao_notches && m.variacao_notches !== '—' && m.variacao_notches !== '0') {
+            const isUp = m.tipo === 'UPGRADE';
+            notchHtml = `<span style="font-size: 0.72rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; background: ${isUp ? 'rgba(0,229,160,0.15)' : 'rgba(255,77,109,0.15)'}; color: ${isUp ? 'var(--green)' : 'var(--red)'}; font-family: var(--font-mono);">${m.variacao_notches}</span>`;
+          }
+
+          let newRatingHtml = `<span style="font-family: var(--font-mono); font-weight: 700;">${m.rating_atual || '—'}</span>`;
+          if (m.tipo === 'UPGRADE') {
+            newRatingHtml = `<span style="color: var(--green); font-weight: 700; font-family: var(--font-mono); font-size: 0.92rem;">${m.rating_atual}</span>`;
+          } else if (m.tipo === 'DOWNGRADE') {
+            newRatingHtml = `<span style="color: var(--red); font-weight: 700; font-family: var(--font-mono); font-size: 0.92rem;">${m.rating_atual}</span>`;
+          } else if (m.tipo === 'NOVO') {
+            newRatingHtml = `<span style="color: var(--accent); font-weight: 700; font-family: var(--font-mono); font-size: 0.92rem;">${m.rating_atual}</span>`;
+          } else if (m.tipo === 'RETIRADO') {
+            newRatingHtml = `<span style="color: var(--text3); font-size: 0.72rem; font-weight: 700;">RETIRADO</span>`;
+          }
+
+          let outlookHtml = '<span style="color:var(--text3)">—</span>';
+          if (m.outlook_atual) {
+            if (m.tipo === 'OUTLOOK') {
+              outlookHtml = `<span style="font-size:0.75rem; color:var(--gold); font-weight:600;">${m.outlook_anterior || 'Estável'} ➔ ${m.outlook_atual}</span>`;
+            } else {
+              outlookHtml = `<span class="rc-outlook ${outlookClass(m.outlook_atual)}" style="font-size:0.72rem; padding: 2px 6px;">${m.outlook_atual}</span>`;
+            }
+          }
+
+          const prevRatingHtml = `<span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text2);">${m.rating_anterior || '—'}</span>`;
+
+          return [
+            m.dt_acao || '',                           // col 0: DataISO (hidden, sort)
+            `<span class="date-cell" style="font-family:var(--font-mono); font-size:0.8rem;">${fmtDate(m.dt_acao)}</span>`, // col 1: Data BR
+            tipoLabel,                                // col 2: Ação
+            agBadge,                                  // col 3: Agência
+            emissorHtml,                              // col 4: Emissor
+            `<div style="font-size:0.78rem; color:var(--text2); max-width: 260px; white-space: normal; line-height: 1.3;">${m.instrumento || 'Corporativo / Emissor'}</div>`, // col 5: Instrumento
+            prevRatingHtml,                           // col 6: Rating Ant.
+            newRatingHtml,                            // col 7: Rating Novo
+            notchHtml,                                // col 8: Variação
+            outlookHtml,                              // col 9: Perspectiva
+            linkHtml,                                 // col 10: Fonte
+            m.emissor                                 // col 11: Emissor raw (hidden, for drawer click)
+          ];
+        });
+
+        if ($.fn.DataTable.isDataTable('#mov-data-table')) {
+          movTableApi.destroy();
+          $('#mov-data-table tbody').empty();
+        }
+
+        movTableApi = $('#mov-data-table').DataTable({
+          data: tableData,
+          responsive: false,
+          pageLength: 25,
+          lengthMenu: [[25, 50, 100, 250, -1], [25, 50, 100, 250, 'Todas']],
+          order: [[0, 'desc']], // Mais recentes primeiro
+          language: { url: 'https://cdn.datatables.net/plug-ins/2.2.2/i18n/pt-BR.json' },
+          columnDefs: [
+            { targets: 0, visible: false, searchable: false },
+            { targets: 1, orderData: 0, className: 'col-center' },
+            { targets: 2, className: 'col-center' },
+            { targets: 3, className: 'col-center' },
+            { targets: 4, className: 'emissor-col' },
+            { targets: 6, className: 'col-center' },
+            { targets: 7, className: 'col-center' },
+            { targets: 8, className: 'col-center' },
+            { targets: 9, className: 'col-center' },
+            { targets: 10, className: 'col-center' },
+            { targets: 11, visible: false, searchable: false }
+          ],
+          dom: '<"mov-dt-top"lfB>rt<"mov-dt-bottom"ip>',
+          buttons: [
+            {
+              extend: 'excelHtml5',
+              text: 'Exportar Excel',
+              className: 'export-btn',
+              title: 'Movimentacoes_Ratings_PulseRatings',
+              exportOptions: { columns: [1, 2, 3, 4, 5, 6, 7, 8, 9] }
+            },
+            {
+              extend: 'csvHtml5',
+              text: 'Exportar CSV',
+              className: 'export-btn',
+              title: 'Movimentacoes_Ratings_PulseRatings',
+              exportOptions: { columns: [1, 2, 3, 4, 5, 6, 7, 8, 9] }
+            }
+          ]
+        });
+
+        // Clique na linha ou no emissor para abrir Drawer
+        $('#mov-data-table tbody').off('click', 'tr').on('click', 'tr', function (e) {
+          if ($(e.target).is('a')) return;
+          const rowData = movTableApi.row(this).data();
+          if (rowData && rowData[11] && typeof openDrawer === 'function') {
+            openDrawer(rowData[11]);
+          }
+        });
+
+        return;
+      }
+
+      // ── MODO CARDS (ALTERNATIVO) ───────────────────────────────
+      $tableContainer.hide();
+      $grid.show();
+
       const htmlCards = filtered.map(m => {
         const borderClass = 'border-' + m.tipo.toLowerCase();
         const tagClass = 'tag-' + m.tipo.toLowerCase();
@@ -1948,6 +2180,20 @@
     }
 
     // Event listeners para filtros de movimentações
+    $(document).on('click', '#btn-view-table', function() {
+      $('.mov-vtoggle-btn').removeClass('active');
+      $(this).addClass('active');
+      currentMovView = 'table';
+      renderMovimentacoes();
+    });
+
+    $(document).on('click', '#btn-view-cards', function() {
+      $('.mov-vtoggle-btn').removeClass('active');
+      $(this).addClass('active');
+      currentMovView = 'cards';
+      renderMovimentacoes();
+    });
+
     $(document).on('click', '.mov-period-btn', function() {
       $('.mov-period-btn').removeClass('active');
       $(this).addClass('active');
@@ -2010,9 +2256,7 @@
         openDrawer(emissor);
       }
     });
-
-
-    // ── Comparator Logic ──────────────────────────────────────────
+// ── Comparator Logic ──────────────────────────────────────────
       const $compSectorFilter = $('#comp-sector-filter');
       const $compCardsContainer = $('#comp-cards-container');
       const $comparatorContent = $('#comparator-content');
