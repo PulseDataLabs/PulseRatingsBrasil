@@ -785,6 +785,177 @@
     .dataset-card.liberum-card::after { background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.08), transparent 60%); }
     .dataset-card.consolidated-card::after { background: radial-gradient(circle at top right, rgba(187, 134, 252, 0.08), transparent 60%); }
 
+    
+    /* ── Datasets Table & View Toggle ─────────────────── */
+    .datasets-view-toggle {
+      display: inline-flex;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 3px;
+      gap: 3px;
+    }
+    .view-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text3);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 0.45rem 0.85rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .view-toggle-btn:hover {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .view-toggle-btn.active {
+      background: var(--surface);
+      color: var(--accent);
+      border-color: var(--border2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      font-weight: 600;
+    }
+
+    .datasets-table-wrapper {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow-x: auto;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    }
+    .datasets-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    .datasets-table thead {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border2);
+    }
+    .datasets-table th {
+      padding: 0.85rem 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text3);
+      white-space: nowrap;
+    }
+    .datasets-table tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s ease;
+    }
+    .datasets-table tbody tr:last-child {
+      border-bottom: none;
+    }
+    .datasets-table tbody tr:hover {
+      background: rgba(0, 212, 255, 0.035);
+    }
+    .datasets-table tbody tr.filtered-out {
+      display: none !important;
+    }
+    .datasets-table td {
+      padding: 0.85rem 1rem;
+      vertical-align: middle;
+      font-size: 0.82rem;
+      color: var(--text2);
+    }
+    .tbl-file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent);
+      background: rgba(0, 212, 255, 0.08);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 212, 255, 0.16);
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .agency-tag {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.25rem 0.55rem;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      white-space: nowrap;
+    }
+    .agency-tag.agency-s_p {
+      background: rgba(227, 83, 89, 0.1);
+      border: 1px solid rgba(227, 83, 89, 0.25);
+      color: #ff5c62;
+    }
+    .agency-tag.agency-moodys {
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      color: #38bdf8;
+    }
+    .agency-tag.agency-fitch {
+      background: rgba(234, 179, 8, 0.1);
+      border: 1px solid rgba(234, 179, 8, 0.25);
+      color: #eab308;
+    }
+    .agency-tag.agency-austin {
+      background: rgba(168, 85, 247, 0.1);
+      border: 1px solid rgba(168, 85, 247, 0.25);
+      color: #c084fc;
+    }
+    .agency-tag.agency-liberum {
+      background: rgba(249, 115, 22, 0.1);
+      border: 1px solid rgba(249, 115, 22, 0.25);
+      color: #f97316;
+    }
+    .agency-tag.agency-consolidated {
+      background: rgba(187, 134, 252, 0.1);
+      border: 1px solid rgba(187, 134, 252, 0.25);
+      color: #bb86fc;
+    }
+    .agency-tag.agency-other {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: var(--text2);
+    }
+    .tbl-action-btn {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--text2);
+      padding: 0.35rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.68rem;
+      font-family: var(--font-mono);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .tbl-action-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(0, 212, 255, 0.05);
+    }
+    .tbl-action-btn.tbl-btn-download {
+      background: rgba(0, 229, 160, 0.08);
+      border-color: rgba(0, 229, 160, 0.25);
+      color: var(--green);
+      font-weight: 500;
+    }
+    .tbl-action-btn.tbl-btn-download:hover {
+      background: var(--green);
+      color: var(--bg);
+      box-shadow: 0 0 12px rgba(0, 229, 160, 0.3);
+    }
+
     .dataset-card:hover { background: var(--surface); }
     .dataset-card:hover::after { opacity: 1; }
 
@@ -1615,11 +1786,21 @@
 <!-- DATASETS -->
 <section class="datasets-section" id="datasets">
   <div class="container">
-    <div class="datasets-header reveal">
+    <div class="datasets-header reveal" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
       <div>
         <div class="section-label">Datasets</div>
         <h2 class="section-title">Datasets disponíveis</h2>
         <p class="section-desc">CSVs atualizados diariamente. Clique em Download para baixar o arquivo mais recente.</p>
+      </div>
+      <div class="datasets-view-toggle">
+        <button type="button" class="view-toggle-btn active" id="btn-view-table" title="Visualização compacta em Tabela">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3zM3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+          Tabela
+        </button>
+        <button type="button" class="view-toggle-btn" id="btn-view-cards" title="Visualização em Cards">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Cards
+        </button>
       </div>
     </div>
 
@@ -1641,15 +1822,41 @@
       <button class="filter-btn" data-source="liberum"><span class="btn-dot dot-liberum"></span> Liberum Ratings</button>
     </div>
 
-    <div class="datasets-grid reveal" id="datasets-container">
+    <!-- Visualização em Tabela (Padrão de Alta Densidade) -->
+    <div class="datasets-table-wrapper reveal" id="datasets-table-container">
+      <table class="datasets-table" id="datasets-table">
+        <thead>
+          <tr>
+            <th style="min-width: 250px;">Dataset</th>
+            <th>Arquivo</th>
+            <th>Agência</th>
+            <th>Tipo</th>
+            <th>Atualização / Período</th>
+            <th>Tags</th>
+            <th style="text-align: right; min-width: 190px;">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="datasets-table-body">
+          <tr>
+            <td colspan="7" style="text-align: center; padding: 3rem; color: var(--text2);">
+              Carregando catálogo de datasets...
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Visualização em Cards (Opcional) -->
+    <div class="datasets-grid reveal" id="datasets-container" style="display: none;">
       <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--text2);">
         <p id="datasets-loading">Carregando catálogo de datasets...</p>
       </div>
-      <div class="no-results" id="datasets-no-results">
-        <div class="no-results-icon">🔍</div>
-        <div class="no-results-title">Nenhum dataset encontrado</div>
-        <div class="no-results-desc">Tente alterar os filtros ou buscar por outro termo.</div>
-      </div>
+    </div>
+
+    <div class="no-results" id="datasets-no-results" style="display: none; margin-top: 2rem;">
+      <div class="no-results-icon">🔍</div>
+      <div class="no-results-title">Nenhum dataset encontrado</div>
+      <div class="no-results-desc">Tente alterar os filtros ou buscar por outro termo.</div>
     </div>
     </div>
   </div>
@@ -1843,12 +2050,43 @@
     }
   }
 
+  let activeDatasetsView = 'table';
+
+  function initDatasetsViewToggle() {
+    const btnTable = document.getElementById('btn-view-table');
+    const btnCards = document.getElementById('btn-view-cards');
+    const tblContainer = document.getElementById('datasets-table-container');
+    const cardsContainer = document.getElementById('datasets-container');
+
+    if (!btnTable || !btnCards || !tblContainer || !cardsContainer) return;
+
+    btnTable.addEventListener('click', () => {
+      activeDatasetsView = 'table';
+      btnTable.classList.add('active');
+      btnCards.classList.remove('active');
+      tblContainer.style.display = 'block';
+      cardsContainer.style.display = 'none';
+      applyDatasetFilters();
+    });
+
+    btnCards.addEventListener('click', () => {
+      activeDatasetsView = 'cards';
+      btnCards.classList.add('active');
+      btnTable.classList.remove('active');
+      tblContainer.style.display = 'none';
+      cardsContainer.style.display = 'grid';
+      applyDatasetFilters();
+    });
+  }
+
   function renderDatasets() {
-    const container = document.getElementById('datasets-container');
-    if (!container) return;
+    const tableBody = document.getElementById('datasets-table-body');
+    const cardsContainer = document.getElementById('datasets-container');
+    if (!tableBody && !cardsContainer) return;
 
     if (allDatasets.length === 0) {
-      container.innerHTML = `<div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--text2);">Nenhum dataset encontrado.</div>`;
+      if (tableBody) tableBody.innerHTML = `<tr><td colspan="7" style="text-align: center; padding: 3rem; color: var(--text2);">Nenhum dataset encontrado.</td></tr>`;
+      if (cardsContainer) cardsContainer.innerHTML = `<div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--text2);">Nenhum dataset encontrado.</div>`;
       return;
     }
 
@@ -1858,37 +2096,48 @@
       'moodys_emissores.csv'
     ]);
 
-    let html = '';
+    const updates = window.PULSERATINGS_LAST_UPDATES || {};
+
+    const formatDt = (dStr) => {
+      if (!dStr) return '';
+      const cleanDate = dStr.split(' ')[0];
+      const parts = cleanDate.split('-');
+      return parts.length === 3 ? `${parts[2]}/${parts[1]}/${parts[0]}` : dStr;
+    };
+
+    let tableHtml = '';
+    let cardsHtml = '';
+
     allDatasets.forEach(dataset => {
-      let cardClass = '';
       const lowerFile = dataset.file.toLowerCase();
+      let cardClass = '';
+      let mappedSource = 'other';
+      let agencyLabel = dataset.source || 'Agência';
+
       if (lowerFile.includes('standard_and_poors_') || lowerFile.includes('s_p_') || lowerFile.includes('spglobal')) {
         cardClass = 'sp-card';
+        mappedSource = 's_p';
+        agencyLabel = 'S&P Global';
       } else if (lowerFile.includes('moody')) {
         cardClass = 'moodys-card';
-      } else       if (lowerFile.includes('fitch')) {
-        cardClass = 'fitch-card';
-      } else       if (lowerFile.includes('austin')) {
-        cardClass = 'austin-card';
-      } else       if (lowerFile.includes('liberum')) {
-        cardClass = 'liberum-card';
-      } else if (lowerFile.includes('consolidado') || lowerFile.startsWith('ratings_')) {
-        cardClass = 'consolidated-card';
-      }
-
-      let mappedSource = 'other';
-      if (lowerFile.startsWith('standard_and_poors_') || lowerFile.startsWith('s_p_')) {
-        mappedSource = 's_p';
-      } else if (lowerFile.startsWith('moodys_')) {
         mappedSource = 'moodys';
-      } else if (lowerFile.startsWith('fitch_')) {
+        agencyLabel = "Moody's Local";
+      } else if (lowerFile.includes('fitch')) {
+        cardClass = 'fitch-card';
         mappedSource = 'fitch';
-      } else if (lowerFile.startsWith('austin_')) {
+        agencyLabel = 'Fitch Ratings';
+      } else if (lowerFile.includes('austin')) {
+        cardClass = 'austin-card';
         mappedSource = 'austin';
-      } else if (lowerFile.startsWith('liberum_')) {
+        agencyLabel = 'Austin Rating';
+      } else if (lowerFile.includes('liberum')) {
+        cardClass = 'liberum-card';
         mappedSource = 'liberum';
-      } else if (lowerFile.includes('consolidado') || lowerFile.startsWith('ratings_')) {
+        agencyLabel = 'Liberum Ratings';
+      } else if (lowerFile.includes('consolidado') || lowerFile.startsWith('ratings_') || lowerFile.startsWith('historico_')) {
+        cardClass = 'consolidated-card';
         mappedSource = 'consolidated';
+        agencyLabel = 'Consolidado';
       }
 
       const tagsHtml = (dataset.tags || []).map(t => `<span class="field-tag">${t}</span>`).join('');
@@ -1898,8 +2147,88 @@
       const accBadgeClass = isSnapshot ? 'badge-snapshot' : 'badge-cumulative';
       const accBadgeText = isSnapshot ? 'Snapshot' : 'Acumulado';
       const scraperBadge = dataset.badge ? `<span class="card-badge ${dataset.badgeClass || 'badge-daily'}">${dataset.badge}</span>` : '';
-      html += `
-        <div class="dataset-card ${cardClass}" data-source-mapped="${mappedSource}">
+
+      // Date lookup
+      const entry = updates[dataset.file];
+      let periodHtml = '—';
+      if (entry) {
+        let minDate = '';
+        let maxDate = '';
+        if (typeof entry === 'object' && entry !== null) {
+          minDate = entry.min || '';
+          maxDate = entry.max || '';
+        } else if (typeof entry === 'string') {
+          maxDate = entry;
+        }
+        const minFmt = formatDt(minDate);
+        const maxFmt = formatDt(maxDate);
+
+        if (minFmt && minFmt !== maxFmt) {
+          periodHtml = `<span style="color: var(--text3); font-size: 0.65rem; display: block;">Histórico:</span><strong>${minFmt}</strong> a <strong>${maxFmt}</strong>`;
+        } else if (maxFmt) {
+          periodHtml = `<span style="color: var(--text3); font-size: 0.65rem; display: block;">Mais recente:</span><strong>${maxFmt}</strong>`;
+        }
+      }
+
+      // Search text metadata for ultra-fast filtering
+      const searchMeta = `${dataset.title} ${dataset.file} ${dataset.description || ''} ${(dataset.tags || []).join(' ')} ${agencyLabel}`.toLowerCase();
+
+      // 1. Build Table Row
+      tableHtml += `
+        <tr class="dataset-row" data-source-mapped="${mappedSource}" data-search="${searchMeta.replace(/"/g, '&quot;')}">
+          <td>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <div class="card-icon ${iconClass}" style="width: 32px; height: 32px; min-width: 32px; font-size: 0.75rem; border-radius: 6px;">${iconText}</div>
+              <div>
+                <div style="font-family: var(--font-head); font-weight: 700; color: var(--text); font-size: 0.92rem; line-height: 1.25;">${dataset.title}</div>
+                <div style="font-size: 0.75rem; color: var(--text3); margin-top: 0.2rem; max-width: 380px; line-height: 1.35; white-space: normal;">${dataset.description || ''}</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <code class="tbl-file-badge">${dataset.file}</code>
+          </td>
+          <td>
+            <span class="agency-tag agency-${mappedSource}">${agencyLabel}</span>
+          </td>
+          <td>
+            <div style="display: flex; flex-direction: column; gap: 0.25rem; align-items: flex-start;">
+              <span class="card-badge ${accBadgeClass}" style="font-size: 0.58rem; padding: 0.15rem 0.45rem;">${accBadgeText}</span>
+              ${scraperBadge}
+            </div>
+          </td>
+          <td>
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text2); line-height: 1.3;">
+              ${periodHtml}
+            </div>
+          </td>
+          <td>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.25rem; max-width: 170px;">
+              ${tagsHtml}
+            </div>
+          </td>
+          <td style="text-align: right;">
+            <div style="display: flex; align-items: center; justify-content: flex-end; gap: 0.35rem;">
+              <a href="${dataset.url}" class="tbl-action-btn tbl-btn-download" target="_blank" download title="Baixar arquivo CSV">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                CSV
+              </a>
+              <button type="button" class="tbl-action-btn copy-url-btn" data-url="${dataset.url}" title="Copiar Link direto para o CSV">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                Link
+              </button>
+              <button type="button" class="tbl-action-btn copy-pandas-btn" data-url="${dataset.url}" title="Copiar código Python / Pandas">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path></svg>
+                Pandas
+              </button>
+            </div>
+          </td>
+        </tr>
+      `;
+
+      // 2. Build Card HTML (for card view toggle)
+      cardsHtml += `
+        <div class="dataset-card ${cardClass}" data-source-mapped="${mappedSource}" data-search="${searchMeta.replace(/"/g, '&quot;')}">
           <div class="card-top">
             <div class="card-icon ${iconClass}">${iconText}</div>
             <div class="card-badges">
@@ -1909,28 +2238,62 @@
           </div>
           <div class="card-title">${dataset.title}</div>
           <div class="card-file">${dataset.file}</div>
+          <div class="card-last-update">${periodHtml.replace(/<[^>]*>?/gm, ' ')}</div>
           <div class="card-desc">${dataset.description || 'Sem descrição.'}</div>
           <div class="card-fields">
             ${tagsHtml}
           </div>
           <div class="card-footer">
-            <span class="card-source">Fonte: ${dataset.source || 'Desconhecida'}</span>
-            <a href="${dataset.url}" class="download-btn" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              CSV
-            </a>
+            <span class="card-source">Fonte: ${agencyLabel}</span>
+            <div style="display: flex; gap: 0.4rem; align-items: center;">
+              <button type="button" class="tbl-action-btn copy-pandas-btn" data-url="${dataset.url}" title="Copiar Pandas">Pandas</button>
+              <button type="button" class="tbl-action-btn copy-url-btn" data-url="${dataset.url}" title="Copiar Link">Link</button>
+              <a href="${dataset.url}" class="download-btn" target="_blank" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                CSV
+              </a>
+            </div>
           </div>
         </div>
       `;
     });
 
-    container.innerHTML = html + `
-      <div class="no-results" id="datasets-no-results">
-        <div class="no-results-icon">🔍</div>
-        <div class="no-results-title">Nenhum dataset encontrado</div>
-        <div class="no-results-desc">Tente alterar os filtros ou buscar por outro termo.</div>
-      </div>`;
+    if (tableBody) tableBody.innerHTML = tableHtml;
+    if (cardsContainer) cardsContainer.innerHTML = cardsHtml;
   }
+
+  // Setup click listeners for copy buttons across table and cards
+  document.addEventListener('click', (e) => {
+    const copyUrlBtn = e.target.closest('.copy-url-btn');
+    if (copyUrlBtn) {
+      e.preventDefault();
+      const url = copyUrlBtn.getAttribute('data-url');
+      if (url) {
+        navigator.clipboard.writeText(url).then(() => {
+          showToast('URL do CSV copiada com sucesso!', 'success');
+        }).catch(() => {
+          showToast('Erro ao copiar URL', 'error');
+        });
+      }
+      return;
+    }
+
+    const copyPandasBtn = e.target.closest('.copy-pandas-btn');
+    if (copyPandasBtn) {
+      e.preventDefault();
+      const url = copyPandasBtn.getAttribute('data-url');
+      if (url) {
+        const code = `import pandas as pd\ndf = pd.read_csv("${url}")`;
+        navigator.clipboard.writeText(code).then(() => {
+          showToast('Código Pandas copiado com sucesso!', 'success');
+        }).catch(() => {
+          showToast('Erro ao copiar código', 'error');
+        });
+      }
+      return;
+    }
+  });
+
   // Reveal on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -1955,121 +2318,20 @@
     });
   });
 
-  // Load and render last capture dates dynamically
+  // Fallback load last updates if not present synchronously
   async function loadLastUpdates() {
     let updates = window.PULSERATINGS_LAST_UPDATES;
     if (!updates) {
       try {
         const response = await fetch('./data/last_updates.json');
         if (response.ok) {
-          updates = await response.json();
+          window.PULSERATINGS_LAST_UPDATES = await response.json();
+          renderDatasets();
         }
       } catch (err) {
         console.warn('Erro ao carregar last_updates.json:', err);
       }
     }
-
-    if (!updates) {
-      console.warn('Metadados de última captura não encontrados.');
-      return;
-    }
-
-    document.querySelectorAll('.dataset-card').forEach(card => {
-      const fileElement = card.querySelector('.card-file');
-      if (!fileElement) return;
-
-      const fileName = fileElement.textContent.trim();
-      const entry = updates[fileName];
-
-      if (entry) {
-        let minDate = '';
-        let maxDate = '';
-
-        if (typeof entry === 'object' && entry !== null) {
-          minDate = entry.min || '';
-          maxDate = entry.max || '';
-        } else if (typeof entry === 'string') {
-          maxDate = entry;
-        }
-
-        const format = (dStr) => {
-          if (!dStr) return '';
-          // Remove time part if exists (e.g. YYYY-MM-DD HH:MM:SS)
-          const cleanDate = dStr.split(' ')[0];
-          const parts = cleanDate.split('-');
-          return parts.length === 3 ? `${parts[2]}/${parts[1]}/${parts[0]}` : dStr;
-        };
-
-        const minFmt = format(minDate);
-        const maxFmt = format(maxDate);
-
-        const updateBadge = document.createElement('div');
-        updateBadge.className = 'card-last-update';
-
-        if (minFmt && minFmt !== maxFmt) {
-          updateBadge.innerHTML = `Histórico: ${minFmt} a ${maxFmt}`;
-        } else if (maxFmt) {
-          updateBadge.innerHTML = `Captura mais recente: ${maxFmt}`;
-        }
-
-        fileElement.parentNode.insertBefore(updateBadge, fileElement.nextSibling);
-      }
-    });
-  }
-
-  // Add copy URL button to dataset cards
-  function initCopyUrlButtons() {
-    document.querySelectorAll('.dataset-card').forEach(card => {
-      const downloadBtn = card.querySelector('.download-btn');
-      if (!downloadBtn) return;
-      
-      const csvUrl = downloadBtn.getAttribute('href');
-      if (!csvUrl) return;
-
-      // Check if copy URL button already exists
-      if (card.querySelector('.copy-url-btn')) return;
-
-      const copyUrlBtn = document.createElement('button');
-      copyUrlBtn.className = 'copy-url-btn';
-      copyUrlBtn.title = 'Copiar URL do CSV';
-      copyUrlBtn.style.cssText = `
-        background: var(--bg2);
-        border: 1px solid var(--border);
-        color: var(--text2);
-        padding: 0.45rem 0.7rem;
-        border-radius: 4px;
-        font-size: 0.7rem;
-        font-family: var(--font-mono);
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        transition: all 0.2s;
-      `;
-      copyUrlBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 12px; height: 12px;">
-          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-        </svg>
-        Link
-      `;
-      copyUrlBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        navigator.clipboard.writeText(csvUrl).then(() => {
-          showToast('URL do CSV copiada!', 'success');
-        }).catch(() => {
-          showToast('Erro ao copiar URL', 'error');
-        });
-      });
-
-      // Insert after download button
-      const wrapper = downloadBtn.parentElement;
-      if (wrapper && wrapper.style.display === 'flex') {
-        wrapper.appendChild(copyUrlBtn);
-      } else {
-        downloadBtn.parentNode.insertBefore(copyUrlBtn, downloadBtn.nextSibling);
-      }
-    });
   }
 
   // Toast notification system
@@ -2100,46 +2362,48 @@
 
     // Filter functions
     function applyDatasetFilters() {
+      const rows = document.querySelectorAll('.dataset-row');
       const cards = document.querySelectorAll('.dataset-card');
       const noResults = document.getElementById('datasets-no-results');
       const clearFiltersBtn = document.getElementById('clear-filters');
       let visibleCount = 0;
 
+      // Filter Table Rows
+      rows.forEach(row => {
+        const rowSource = row.getAttribute('data-source-mapped');
+        const isConsolidated = rowSource === 'consolidated';
+        const sourceMatch = isConsolidated || (activeSourceFilter === 'all' || rowSource === activeSourceFilter);
+        const searchMeta = row.getAttribute('data-search') || '';
+        const searchMatch = !activeSearchQuery || searchMeta.includes(activeSearchQuery);
+
+        if (sourceMatch && searchMatch) {
+          row.classList.remove('filtered-out');
+          visibleCount++;
+        } else {
+          row.classList.add('filtered-out');
+        }
+      });
+
+      // Filter Cards
       cards.forEach(card => {
         const cardSource = card.getAttribute('data-source-mapped');
         const isConsolidated = cardSource === 'consolidated';
         const sourceMatch = isConsolidated || (activeSourceFilter === 'all' || cardSource === activeSourceFilter);
-        
-        let searchMatch = true;
-        if (activeSearchQuery) {
-          const title = (card.querySelector('.card-title')?.textContent || '').toLowerCase();
-          const file = (card.querySelector('.card-file')?.textContent || '').toLowerCase();
-          const desc = (card.querySelector('.card-desc')?.textContent || '').toLowerCase();
-          const tags = Array.from(card.querySelectorAll('.field-tag')).map(t => t.textContent.toLowerCase()).join(' ');
-          const source = (card.querySelector('.card-source')?.textContent || '').toLowerCase();
-          
-          const text = `${title} ${file} ${desc} ${tags} ${source}`;
-          searchMatch = text.includes(activeSearchQuery);
-        }
-        
+        const searchMeta = card.getAttribute('data-search') || '';
+        const searchMatch = !activeSearchQuery || searchMeta.includes(activeSearchQuery);
+
         if (sourceMatch && searchMatch) {
           card.classList.remove('filtered-out');
-          card.style.opacity = '0';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transition = 'opacity 0.3s ease';
-          }, 10);
-          visibleCount++;
         } else {
           card.classList.add('filtered-out');
         }
       });
 
       if (noResults) {
-        noResults.classList.toggle('visible', visibleCount === 0);
+        noResults.style.display = (visibleCount === 0) ? 'block' : 'none';
       }
       if (clearFiltersBtn) {
-        clearFiltersBtn.style.display = (activeSourceFilter !== 'all' || activeSearchQuery) ? 'flex' : 'none';
+        clearFiltersBtn.style.display = (activeSourceFilter !== 'all' || activeSearchQuery) ? 'inline-flex' : 'none';
       }
     }
 
@@ -2538,12 +2802,11 @@
   }
 
   document.addEventListener('DOMContentLoaded', async () => {
+    initDatasetsViewToggle();
     await loadAndRenderDatasets();
     await loadLastUpdates();
     await loadSchemas();
     initDatasetFilters();
-    initPandasCopyButtons();
-    initCopyUrlButtons();
     initPipelineHealth();
     await loadPipelineStatus();
     initMobileMenu();
