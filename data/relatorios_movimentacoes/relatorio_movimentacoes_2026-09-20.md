@@ -11,7 +11,7 @@
 | 🔴 **Downgrades (Rebaixamentos)** | 8 | 41 | **49** |
 | 🔵 **Novos Ratings** | 2 | 45 | **47** |
 | 🟡 **Mudanças de Perspectiva** | 16 | 25 | **41** |
-| ⚪ **Ratings Retirados / Liquidados** | 5 | 10 | **15** |
+| ⚪ **Ratings Retirados / Liquidados** | 5 | 8 | **13** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 28
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -38,11 +38,11 @@
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Curto prazo | `CP4` | **`CP3`** | `+1` | Estável | 09/09/2026 |
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Longo prazo | `BB+` | **`BBB-`** | `+1` | Estável | 09/09/2026 |
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `A-` | **`A`** | `+1` | Estável | 09/09/2026 |
+| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA-` | **`brAA`** | `+1` | Estável | 27/09/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 25/06/2026 |
 | Fitch | **VERT CSCF 2024** | bonds ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brB+` | **`brBB+`** | `+3` | Negativa | 09/10/2025 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brB+` | **`brBB-`** | `+1` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
-| Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
 | Fitch | **3R LUX R.L.** | USD 500 mln 9.75% bond/note 05-Feb-2031 | `BB-` | **`BB`** | `+1` | Em Observação | 25/08/2026 |
 
 ### 🔴 Rebaixamentos de Rating (Downgrades) — 49
@@ -59,6 +59,7 @@
 | Liberum | **LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `AA-` | **`A-`** | `-3` | Negativa | 17/09/2026 |
 | Fitch | **OPEA SECURITIZADORA 2022** | notes ser 1 | `AAAsf(bra)` | **`AAsf(bra)`** | `-2` | Em Observação | 02/09/2026 |
 | Fitch | **FACTA INSS CB FIDC** | bonds ser 2022-1,2,3 | `AAAsf(bra)` | **`CCsf(bra)`** | `-19` | Estável | 12/06/2026 |
+| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB+` | **`brBBB-`** | `-2` | Estável | 06/03/2024 |
 | Fitch | **KANASTRA SECURITIZADORA 2024** | notes ser 5 | `AAAsf(bra)` | **`AA+sf(bra)`** | `-1` | Estável | 28/01/2026 |
 | Moody's | **CREDITCORP SECURITIZADORA** | 1ª Série da 7ª Emissão | `(P)AAA.br (sf)` | **`AA+.br (sf)`** | `-1` | Estável | 27/08/2026 |
 | Moody's | **CREDITCORP SECURITIZADORA** | 2ª Série da 7ª Emissão | `(P)BBB.br (sf)` | **`BBB-.br (sf)`** | `-1` | Estável | 27/08/2026 |
@@ -89,7 +90,6 @@
 | Moody's | **RIZA SECURITIZADORA** | 2ª Série da 226ª Emissão de CRAs | `BBB+.br (sf)` | **`BB-.br (sf)`** | `-5` | Estável | 15/09/2026 |
 | Moody's | **RIZA SECURITIZADORA** | 3ª Série da 226ª Emissão de CRAs | `BBB+.br (sf)` | **`BB-.br (sf)`** | `-5` | Estável | 15/09/2026 |
 | Moody's | **RIZA SECURITIZADORA** | Série Única da 171ª Emissão de CRAs | `BBB+.br (sf)` | **`BB-.br (sf)`** | `-5` | Estável | 15/09/2026 |
-| Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Positiva | 24/06/2026 |
 | Moody's | **THOPEN SOLAR 02** | Série Única da 1ª Emissão de Debêntures | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Moody's | **THOPEN SOLAR 07** | 1ª Emissão de Debêntures - Série Única | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Moody's | **RIZA SECURITIZADORA** | Série Única da 37ª Emissão de CRIs | `CCC-.br (sf)` | **`CC.br (sf)`** | `-1` | Estável | 04/09/2026 |
@@ -178,7 +178,7 @@
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042 | **`AA-(bra)`** | Em Observação | 31/08/2026 |
 | *...e mais 17 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (15)
+### ⚪ Ratings Retirados / Liquidados (13)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **DELTA SUCROENERGIA** | Escala Nacional Brasil de Longo Prazo | `brAAA` | Estável | 02/09/2026 |
@@ -186,8 +186,6 @@
 | Fitch | **OI** | Local Currency Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **OI** | Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **ALLIANCA SAUDE PARTICIPACOES** | National Long Term Rating | `RD(bra)` | Estável | 15/09/2026 |
-| Fitch | **OPEA SECURITIZADORA 2019** | notes ser 1 | `AAAsf(bra)` | Estável | 05/12/2019 |
-| Fitch | **ECO SECURITIZADORA 2022** | securities ser 1,2,3 | `AAAsf(bra)` | Estável | 15/01/2026 |
 | Fitch | **BRAZIL** | BRL 177 bln Floating bond/note 01-Sep-2026 | `BB` | Estável | 01/09/2026 |
 | Fitch | **DMCARD SECURITIZADORA** | notes ser 1 | `BBB+sf(bra)` | Estável | 10/09/2026 |
 | Fitch | **OI** | USD 1.46 bln 8.5% bond/note 31-Dec-2028  credit agreement dated as of 08-Aug-2024 | `C` | Estável | 11/09/2026 |
@@ -199,4 +197,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (19/09/2026 → 20/09/2026)
-*Total nas últimas 24h: 🟢 1 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 3 retirados.*
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
