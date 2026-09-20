@@ -48,6 +48,24 @@
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/emissores_consolidado.csv"
   },
   {
+    "title": "Histórico de Movimentações de Ratings",
+    "file": "historico_movimentacoes.csv",
+    "description": "Histórico consolidado e contínuo de alterações de ratings (upgrades, downgrades, novos, perspectivas e retiradas) com contagem de variação em degraus (notches).",
+    "icon": "HM",
+    "iconClass": "icon-consolidated",
+    "badge": "Histórico",
+    "badgeClass": "badge-cumulative",
+    "tags": [
+      "movimentacoes",
+      "upgrades",
+      "downgrades",
+      "historico",
+      "consolidado"
+    ],
+    "source": "Consolidado",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/historico_movimentacoes.csv"
+  },
+  {
     "title": "Ratings de Emissores Consolidados",
     "file": "ratings_emissores.csv",
     "description": "Ratings de crédito de nível de emissor (entidade) consolidados de todas as agências, mapeados pela chave única do emissor padronizado.",
@@ -78,24 +96,6 @@
     ],
     "source": "Consolidado",
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/ratings_emissoes.csv"
-  },
-  {
-    "title": "Histórico de Movimentações de Ratings",
-    "file": "historico_movimentacoes.csv",
-    "description": "Histórico consolidado e contínuo de alterações de ratings (upgrades, downgrades, novos, perspectivas e retiradas) com contagem de variação em degraus (notches).",
-    "icon": "HM",
-    "iconClass": "icon-consolidated",
-    "badge": "Histórico",
-    "badgeClass": "badge-cumulative",
-    "tags": [
-      "movimentacoes",
-      "upgrades",
-      "downgrades",
-      "historico",
-      "consolidado"
-    ],
-    "source": "Consolidado",
-    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/historico_movimentacoes.csv"
   },
   {
     "title": "Fitch — Ratings",
