@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-09-20T16:05:06.831264",
+  "timestamp": "2026-09-20T16:30:59.297612",
   "dt_atual": "2026-09-20",
   "dt_anterior": "2026-09-19",
   "resumo": {
