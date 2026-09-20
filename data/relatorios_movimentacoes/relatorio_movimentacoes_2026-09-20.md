@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 16 | 12 | **28** |
-| 🔴 **Downgrades (Rebaixamentos)** | 8 | 41 | **49** |
+| 🟢 **Upgrades (Elevações)** | 16 | 14 | **30** |
+| 🔴 **Downgrades (Rebaixamentos)** | 8 | 42 | **50** |
 | 🔵 **Novos Ratings** | 2 | 45 | **47** |
 | 🟡 **Mudanças de Perspectiva** | 16 | 25 | **41** |
 | ⚪ **Ratings Retirados / Liquidados** | 5 | 8 | **13** |
 
-### 🟢 Elevações de Rating (Upgrades) — 28
+### 🟢 Elevações de Rating (Upgrades) — 30
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **LIGHT SERVICOS ELETRICIDADE** | Escala Nacional Brasil de Longo Prazo | `D` | **`brBB+`** | `+11` | Estável | 17/09/2026 |
@@ -43,9 +43,11 @@
 | Fitch | **VERT CSCF 2024** | bonds ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
 | Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brB+` | **`brBBB`** | `+5` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
+| Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
+| Fitch | **RIZA SECURITIZADORA 2024** | notes ser 3 | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 24/06/2026 |
 | Fitch | **3R LUX R.L.** | USD 500 mln 9.75% bond/note 05-Feb-2031 | `BB-` | **`BB`** | `+1` | Em Observação | 25/08/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 49
+### 🔴 Rebaixamentos de Rating (Downgrades) — 50
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Moody's | **IN** | Avaliações de Qualidade de Gestor de Investimentos | `MQ1.br` | **`MQ3.br`** | `-5` | Estável | 13/05/2025 |
@@ -90,6 +92,7 @@
 | Moody's | **RIZA SECURITIZADORA** | 2ª Série da 226ª Emissão de CRAs | `BBB+.br (sf)` | **`BB-.br (sf)`** | `-5` | Estável | 15/09/2026 |
 | Moody's | **RIZA SECURITIZADORA** | 3ª Série da 226ª Emissão de CRAs | `BBB+.br (sf)` | **`BB-.br (sf)`** | `-5` | Estável | 15/09/2026 |
 | Moody's | **RIZA SECURITIZADORA** | Série Única da 171ª Emissão de CRAs | `BBB+.br (sf)` | **`BB-.br (sf)`** | `-5` | Estável | 15/09/2026 |
+| Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Positiva | 24/06/2026 |
 | Moody's | **THOPEN SOLAR 02** | Série Única da 1ª Emissão de Debêntures | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Moody's | **THOPEN SOLAR 07** | 1ª Emissão de Debêntures - Série Única | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Moody's | **RIZA SECURITIZADORA** | Série Única da 37ª Emissão de CRIs | `CCC-.br (sf)` | **`CC.br (sf)`** | `-1` | Estável | 04/09/2026 |
@@ -197,4 +200,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (19/09/2026 → 20/09/2026)
-*Total nas últimas 24h: 🟢 1 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 3 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
