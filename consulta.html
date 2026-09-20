@@ -834,8 +834,98 @@
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
-      margin-bottom: 1.25rem;
+      margin-bottom: 0.75rem;
       flex-wrap: wrap;
+    }
+    .mov-search-bar-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 0.5rem 0 1rem 0;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .mov-search-bar {
+      position: relative;
+      flex: 1;
+      min-width: 320px;
+      display: flex;
+      align-items: center;
+    }
+    .mov-search-icon {
+      position: absolute;
+      left: 1rem;
+      color: var(--accent);
+      pointer-events: none;
+      opacity: 0.85;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .mov-search-bar:focus-within .mov-search-icon {
+      opacity: 1;
+      transform: scale(1.1);
+      color: var(--accent);
+    }
+    .mov-search-bar input {
+      width: 100%;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      color: var(--text);
+      padding: 0.75rem 2.8rem 0.75rem 2.9rem;
+      border-radius: var(--radius);
+      font-family: var(--font-mono);
+      font-size: 0.92rem;
+      letter-spacing: -0.01em;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .mov-search-bar input:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: var(--bg2);
+      box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.16), 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .mov-search-bar input::placeholder {
+      color: var(--text3);
+      font-size: 0.85rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .mov-search-clear-btn {
+      position: absolute;
+      right: 0.85rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border);
+      color: var(--text3);
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      line-height: 1;
+      transition: all 0.15s ease;
+    }
+    .mov-search-clear-btn:hover {
+      background: var(--red);
+      border-color: var(--red);
+      color: #fff;
+    }
+    .mov-search-badge {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text2);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 0.65rem 0.9rem;
+      border-radius: var(--radius);
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .mov-search-badge strong {
+      color: var(--accent);
     }
     .mov-stats-bar {
       display: grid;
@@ -896,6 +986,36 @@
       color: var(--text);
       border-color: var(--accent);
     }
+    .mov-period-btn, .mov-agency-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text2);
+      font-size: 0.75rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-weight: 500;
+      transition: all 0.15s ease;
+    }
+    .mov-period-btn:hover, .mov-agency-btn:hover {
+      background: var(--surface2);
+      color: var(--text);
+      border-color: var(--border2);
+    }
+    .mov-period-btn.active {
+      background: var(--accent);
+      color: #000;
+      font-weight: 700;
+      border-color: var(--accent);
+    }
+    .mov-agency-btn.active {
+      background: var(--accent2);
+      color: #fff;
+      font-weight: 700;
+      border-color: var(--accent);
+    }
+
     .mov-pill.active {
       background: var(--accent2);
       color: #fff;
@@ -1186,12 +1306,38 @@
         <div id="view-movimentacoes" class="main-view">
           <div class="mov-header-box">
             <div>
-              <h2 style="font-family: var(--font-head); font-size: 1.25rem; color: var(--text);">Movimentações Recentes de Ratings</h2>
-              <p id="mov-period-desc" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text3); margin-top: 0.25rem;">Comparativo de alterações entre capturas diárias</p>
+              <h2 style="font-family: var(--font-head); font-size: 1.35rem; color: var(--text);">⚡ Relatório de Movimentações de Ratings</h2>
+              <p id="mov-period-desc" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text3); margin-top: 0.35rem;">Painel de Upgrades, Downgrades e Alterações</p>
             </div>
-            <div class="mov-search-box">
-              <input type="text" id="mov-search-input" placeholder="Filtrar movimentações (emissor, agência, rating)..." class="sector-dropdown" style="width: 320px; font-size: 0.8rem;" />
+            <div class="mov-period-pills" style="display: flex; gap: 0.35rem; align-items: center; flex-wrap: wrap;">
+              <button class="mov-period-btn active" data-period="periodo">📅 Últimos 30 Dias</button>
+              <button class="mov-period-btn" data-period="diario">⚡ Últimas 24h</button>
+              <button class="mov-period-btn" data-period="todos">🌐 Todo o Histórico</button>
             </div>
+          </div>
+
+          <!-- Campo de Busca de Emissores Largo e Destacado -->
+          <div class="mov-search-bar-container">
+            <div class="mov-search-bar">
+              <svg class="mov-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+              <input type="text" id="mov-search-input" placeholder="Buscar por emissor (ex: Brava Energia, Gol, Petrobras, Smart Fit, OI), agência ou instrumento..." autocomplete="off" />
+              <button id="mov-search-clear" class="mov-search-clear-btn" title="Limpar busca" style="display: none;">✕</button>
+            </div>
+            <div class="mov-search-meta">
+              <span class="mov-search-badge"><strong id="mov-filtered-count">0</strong> de <span id="mov-total-in-period">0</span> movimentações</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; margin-top: 0.75rem; margin-bottom: 0.85rem;">
+            <span style="font-size: 0.72rem; color: var(--text3); font-family: var(--font-mono); text-transform: uppercase; margin-right: 0.25rem;">Agência:</span>
+            <button class="mov-agency-btn active" data-agency="ALL">Todas as Agências</button>
+            <button class="mov-agency-btn" data-agency="Fitch">Fitch</button>
+            <button class="mov-agency-btn" data-agency="Moody's">Moody's</button>
+            <button class="mov-agency-btn" data-agency="S&P">S&P</button>
+            <button class="mov-agency-btn" data-agency="Austin">Austin</button>
+            <button class="mov-agency-btn" data-agency="Liberum">Liberum</button>
           </div>
 
           <div class="mov-stats-bar" id="mov-stats-bar">
@@ -1306,9 +1452,12 @@
     // ── Helpers ───────────────────────────────────────────────
 
     function fmtDate(raw) {
-      if (!raw) return '—';
-      const m = String(raw).match(/^(\d{4})-(\d{2})-(\d{2})/);
-      return m ? `${m[3]}/${m[2]}/${m[1]}` : raw;
+      if (!raw || raw === '—' || raw === 'None' || raw === 'null') return '—';
+      const m = String(raw).match(/(\d{4})[/-](\d{2})[/-](\d{2})/);
+      if (m) return `${m[3]}/${m[2]}/${m[1]}`;
+      const br = String(raw).match(/^(\d{2})[/-](\d{2})[/-](\d{4})/);
+      if (br) return `${br[1]}/${br[2]}/${br[3]}`;
+      return raw;
     }
 
     function outlookClass(outlook) {
@@ -1603,7 +1752,267 @@
         }
       });
 
-      // ── Comparator Logic ──────────────────────────────────────────
+      // ── Movimentações Logic ──────────────────────────────────────────
+    let currentMovPeriod = 'periodo'; // 'periodo', 'diario', 'todos'
+    let currentMovType = 'ALL';       // 'ALL', 'UPGRADE', 'DOWNGRADE', 'NOVO', 'OUTLOOK', 'RETIRADO'
+    let currentMovAgency = 'ALL';     // 'ALL', 'Fitch', 'Moody's', 'S&P', 'Austin', 'Liberum'
+    let currentMovSearch = '';
+
+    function getMovimentacoesList() {
+      const data = window.PULSERATINGS_MOVIMENTACOES;
+      if (!data) return [];
+
+      let list = [];
+      if (currentMovPeriod === 'diario') {
+        const d = data.diario || {};
+        const em = (d.emissores && d.emissores.upgrades) ? d.emissores : {};
+        const is = (d.emissoes && d.emissoes.upgrades) ? d.emissoes : {};
+        ['upgrades', 'downgrades', 'novos', 'outlooks', 'retirados'].forEach(k => {
+          const tipo = k === 'upgrades' ? 'UPGRADE' : k === 'downgrades' ? 'DOWNGRADE' : k === 'novos' ? 'NOVO' : k === 'outlooks' ? 'OUTLOOK' : 'RETIRADO';
+          (em[k] || []).forEach(item => list.push({ ...item, categoria: 'Emissor', tipo }));
+          (is[k] || []).forEach(item => list.push({ ...item, categoria: 'Emissão', tipo }));
+        });
+      } else if (currentMovPeriod === 'todos') {
+        list = data.historico_completo || data.movimentacoes || [];
+      } else {
+        // 'periodo' (default - últimos 30 dias / histórico recente)
+        const p = data.periodo_recente || data;
+        const em = p.emissores || {};
+        const is = p.emissoes || {};
+        ['upgrades', 'downgrades', 'novos', 'outlooks', 'retirados'].forEach(k => {
+          const tipo = k === 'upgrades' ? 'UPGRADE' : k === 'downgrades' ? 'DOWNGRADE' : k === 'novos' ? 'NOVO' : k === 'outlooks' ? 'OUTLOOK' : 'RETIRADO';
+          (em[k] || []).forEach(item => list.push({ ...item, categoria: 'Emissor', tipo }));
+          (is[k] || []).forEach(item => list.push({ ...item, categoria: 'Emissão', tipo }));
+        });
+      }
+      return list;
+    }
+
+    function renderMovimentacoes() {
+      const data = window.PULSERATINGS_MOVIMENTACOES;
+      const $grid = $('#mov-cards-grid');
+      const $desc = $('#mov-period-desc');
+
+      if (!data) {
+        $grid.html(`
+          <div class="empty-state" style="text-align: center; padding: 3rem 1rem; color: var(--text3); grid-column: 1 / -1;">
+            <p>Dados de movimentações de ratings ainda não foram carregados.</p>
+          </div>
+        `);
+        return;
+      }
+
+      // Atualiza descrição do período
+      const pInfo = (currentMovPeriod === 'diario') ? (data.diario || {}) : (data.periodo_recente || data);
+      const dtAnt = pInfo.dt_anterior ? fmtDate(pInfo.dt_anterior) : 'Início';
+      const dtAtu = pInfo.dt_atual ? fmtDate(pInfo.dt_atual) : (data.dt_atual ? fmtDate(data.dt_atual) : '');
+      if (currentMovPeriod === 'diario') {
+        $desc.text(`Comparativo da última captura: ${dtAnt} ➔ ${dtAtu} (últimas 24h)`);
+      } else if (currentMovPeriod === 'todos') {
+        $desc.text(`Todo o histórico acumulado de alterações registradas até ${dtAtu}`);
+      } else {
+        $desc.text(`Período monitorado: ${dtAnt} ➔ ${dtAtu} (últimos 30 dias / capturas recentes)`);
+      }
+
+      const allItems = getMovimentacoesList();
+
+      // Recalcula contadores dos cards para o período selecionado
+      let cntUp = 0, cntDown = 0, cntNew = 0, cntOut = 0, cntDel = 0;
+      allItems.forEach(item => {
+        if (item.tipo === 'UPGRADE') cntUp++;
+        else if (item.tipo === 'DOWNGRADE') cntDown++;
+        else if (item.tipo === 'NOVO') cntNew++;
+        else if (item.tipo === 'OUTLOOK') cntOut++;
+        else if (item.tipo === 'RETIRADO') cntDel++;
+      });
+
+      $('#mov-count-up').text(cntUp);
+      $('#mov-count-down').text(cntDown);
+      $('#mov-count-new').text(cntNew);
+      $('#mov-count-out').text(cntOut);
+      $('#mov-count-del').text(cntDel);
+
+      // Atualiza contadores do cabeçalho de busca
+      $('#mov-total-in-period').text(allItems.length);
+
+      // Aplica filtros de Tipo, Agência e Busca sem distinção de acentos ou maiúsculas
+      function normSearchText(str) {
+        return (str || '').normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+      }
+      const searchTerms = normSearchText(currentMovSearch).trim().split(/\s+/).filter(Boolean);
+
+      const filtered = allItems.filter(item => {
+        if (currentMovType !== 'ALL' && item.tipo !== currentMovType) return false;
+        if (currentMovAgency !== 'ALL' && item.agencia !== currentMovAgency) return false;
+        if (searchTerms.length > 0) {
+          const haystack = normSearchText(`${item.emissor || ''} ${item.agencia || ''} ${item.instrumento || ''} ${item.rating_atual || ''} ${item.rating_anterior || ''}`);
+          if (!searchTerms.every(term => haystack.includes(term))) return false;
+        }
+        return true;
+      });
+
+      $('#mov-total-badge').text(filtered.length);
+      $('#mov-filtered-count').text(filtered.length);
+
+      if (filtered.length === 0) {
+        const hasSearch = currentMovSearch.trim().length > 0;
+        const searchEscaped = currentMovSearch.replace(/"/g, '&quot;');
+        $grid.html(`
+          <div class="empty-state" style="text-align: center; padding: 3.5rem 1rem; color: var(--text3); grid-column: 1 / -1; background: var(--surface); border: 1px dashed var(--border1); border-radius: var(--radius-lg);">
+            <p style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text);">${hasSearch ? `Nenhum resultado encontrado para "<strong>${searchEscaped}</strong>".` : 'Nenhuma movimentação encontrada para os filtros selecionados.'}</p>
+            <p style="font-size: 0.8rem; color: var(--text3);">${hasSearch ? 'Verifique se o nome do emissor está correto ou tente buscar por termos parciais.' : 'Tente alterar o período, selecionar outra agência ou limpar a busca.'}</p>
+            ${hasSearch ? '<button id="btn-clear-empty-search" style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.8rem; cursor: pointer; padding: 0.5rem 1.2rem; background: rgba(0, 212, 255, 0.1); border: 1px solid var(--accent); color: var(--accent); border-radius: var(--radius-sm); transition: all 0.2s;">Limpar busca de emissor ✕</button>' : ''}
+          </div>
+        `);
+        return;
+      }
+
+      // Renderiza os cards
+      const htmlCards = filtered.map(m => {
+        const borderClass = 'border-' + m.tipo.toLowerCase();
+        const tagClass = 'tag-' + m.tipo.toLowerCase();
+        const tipoLabel = {
+          UPGRADE: '🟢 ELEVAÇÃO (UPGRADE)',
+          DOWNGRADE: '🔴 REBAIXAMENTO',
+          NOVO: '🔵 NOVO RATING',
+          OUTLOOK: '🟡 PERSPECTIVA',
+          RETIRADO: '⚪ RETIRADO / LIQUIDADO'
+        }[m.tipo] || m.tipo;
+
+        let flowHtml = '';
+        if (m.tipo === 'UPGRADE' || m.tipo === 'DOWNGRADE') {
+          const notchBadge = (m.variacao_notches && m.variacao_notches !== '—' && m.variacao_notches !== '0')
+            ? `<span style="font-size: 0.7rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; background: ${m.tipo === 'UPGRADE' ? 'rgba(0,229,160,0.15)' : 'rgba(255,77,109,0.15)'}; color: ${m.tipo === 'UPGRADE' ? 'var(--green)' : 'var(--red)'};">${m.variacao_notches}</span>`
+            : '';
+          flowHtml = `
+            <div class="mov-rating-flow">
+              <span class="mov-old-r">${m.rating_anterior || '—'}</span>
+              <span class="mov-arrow">➔</span>
+              <span class="mov-new-r" style="color: ${m.tipo === 'UPGRADE' ? 'var(--green)' : 'var(--red)'}; font-size: 1.1rem;">${m.rating_atual || '—'}</span>
+              ${notchBadge}
+              <span style="font-size: 0.72rem; color: var(--text3); margin-left: auto;">${m.outlook_atual || 'Estável'}</span>
+            </div>
+          `;
+        } else if (m.tipo === 'OUTLOOK') {
+          flowHtml = `
+            <div class="mov-rating-flow">
+              <span class="mov-new-r">${m.rating_atual || '—'}</span>
+              <span style="font-size: 0.75rem; color: var(--gold); margin-left: auto;">${m.outlook_anterior || 'Estável'} ➔ <b>${m.outlook_atual || 'Estável'}</b></span>
+            </div>
+          `;
+        } else if (m.tipo === 'NOVO') {
+          flowHtml = `
+            <div class="mov-rating-flow">
+              <span class="mov-new-r" style="color: var(--accent); font-size: 1.1rem;">${m.rating_atual || '—'}</span>
+              <span style="font-size: 0.72rem; color: var(--text3); margin-left: auto;">${m.outlook_atual || 'Estável'}</span>
+            </div>
+          `;
+        } else {
+          flowHtml = `
+            <div class="mov-rating-flow">
+              <span class="mov-old-r">${m.rating_anterior || '—'}</span>
+              <span class="mov-arrow">➔</span>
+              <span style="color: var(--text3); font-size: 0.8rem; font-weight: 700;">ENCERRADO / RETIRADO</span>
+            </div>
+          `;
+        }
+
+        const agBadge = agencyBadge(m.agencia);
+        const linkBtn = m.link ? `<a href="${m.link}" target="_blank" rel="noopener" style="font-size: 0.7rem; color: var(--accent); text-decoration: none;">Ver Fonte ↗</a>` : '';
+
+        return `
+          <div class="mov-card ${borderClass}" data-emissor="${m.emissor}" style="cursor: pointer;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
+              <span class="mov-badge-tag ${tagClass}">${tipoLabel}</span>
+              <span style="font-size: 0.72rem; color: var(--text3); font-family: var(--font-mono); font-weight: 600;">${fmtDate(m.dt_acao)}</span>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: 0.15rem;">
+              <div style="display: flex; align-items: center; gap: 0.4rem;">
+                ${agBadge}
+                <span style="font-size: 0.72rem; color: var(--text3);">${m.categoria || ''}</span>
+              </div>
+              ${linkBtn}
+            </div>
+            <div style="margin-top: 0.2rem;">
+              <div style="font-family: var(--font-head); font-weight: 700; font-size: 0.95rem; color: var(--text);">${m.emissor}</div>
+              <div style="font-size: 0.75rem; color: var(--text2); margin-top: 0.15rem; line-height: 1.35;">${m.instrumento || 'Corporativo / Emissor'}</div>
+            </div>
+            <div style="margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--border1);">
+              ${flowHtml}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      $grid.html(htmlCards);
+    }
+
+    // Event listeners para filtros de movimentações
+    $(document).on('click', '.mov-period-btn', function() {
+      $('.mov-period-btn').removeClass('active');
+      $(this).addClass('active');
+      currentMovPeriod = $(this).data('period');
+      renderMovimentacoes();
+    });
+
+    $(document).on('click', '.mov-agency-btn', function() {
+      $('.mov-agency-btn').removeClass('active');
+      $(this).addClass('active');
+      currentMovAgency = $(this).data('agency');
+      renderMovimentacoes();
+    });
+
+    $(document).on('click', '.mov-pill', function() {
+      $('.mov-pill').removeClass('active');
+      $(this).addClass('active');
+      currentMovType = $(this).data('type');
+      renderMovimentacoes();
+    });
+
+    $(document).on('click', '.mov-stat-card', function() {
+      const filterType = $(this).data('filter');
+      $('.mov-pill').removeClass('active');
+      $(`.mov-pill[data-type="${filterType}"]`).addClass('active');
+      currentMovType = filterType;
+      renderMovimentacoes();
+    });
+
+    $(document).on('input', '#mov-search-input', function() {
+      currentMovSearch = $(this).val();
+      if (currentMovSearch.trim().length > 0) {
+        $('#mov-search-clear').show();
+      } else {
+        $('#mov-search-clear').hide();
+      }
+      renderMovimentacoes();
+    });
+
+    $(document).on('click', '#mov-search-clear, #btn-clear-empty-search', function() {
+      $('#mov-search-input').val('').focus();
+      $('#mov-search-clear').hide();
+      currentMovSearch = '';
+      renderMovimentacoes();
+    });
+
+    $(document).on('keydown', '#mov-search-input', function(e) {
+      if (e.key === 'Escape') {
+        $(this).val('');
+        $('#mov-search-clear').hide();
+        currentMovSearch = '';
+        renderMovimentacoes();
+      }
+    });
+
+    $(document).on('click', '.mov-card', function(e) {
+      if ($(e.target).is('a')) return;
+      const emissor = $(this).data('emissor');
+      if (emissor && emissor !== '—' && typeof openDrawer === 'function') {
+        openDrawer(emissor);
+      }
+    });
+
+
+    // ── Comparator Logic ──────────────────────────────────────────
       const $compSectorFilter = $('#comp-sector-filter');
       const $compCardsContainer = $('#comp-cards-container');
       const $comparatorContent = $('#comparator-content');

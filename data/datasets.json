@@ -80,6 +80,24 @@
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/ratings_emissoes.csv"
   },
   {
+    "title": "Histórico de Movimentações de Ratings",
+    "file": "historico_movimentacoes.csv",
+    "description": "Histórico consolidado e contínuo de alterações de ratings (upgrades, downgrades, novos, perspectivas e retiradas) com contagem de variação em degraus (notches).",
+    "icon": "HM",
+    "iconClass": "icon-consolidated",
+    "badge": "Histórico",
+    "badgeClass": "badge-cumulative",
+    "tags": [
+      "movimentacoes",
+      "upgrades",
+      "downgrades",
+      "historico",
+      "consolidado"
+    ],
+    "source": "Consolidado",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/historico_movimentacoes.csv"
+  },
+  {
     "title": "Fitch — Ratings",
     "file": "fitch_emissores.csv",
     "description": "Emissores brasileiros com rating de crédito ativo atribuído pela Fitch Ratings.",

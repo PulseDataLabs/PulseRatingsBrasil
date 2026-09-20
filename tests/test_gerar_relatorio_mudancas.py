@@ -246,8 +246,116 @@ def test_gerar_markdown():
     }
 
     md = gerar_markdown(relatorio)
-    assert "# 📊 Relatório de Movimentações de Ratings (2026-08-19)" in md
+    assert "# 📊 Relatório de Movimentações de Ratings (19/08/2026)" in md
     assert "TESTE S.A." in md
     assert "FIDC TESTE" in md
     assert "Upgrades (Elevações)" in md
     assert "Downgrades (Rebaixamentos)" in md
+
+
+def test_normalizar_rating_fitch_sf_e_curto_prazo():
+    # Fitch Structured Finance (sf)
+    clean, score = normalizar_rating("AA-sf(bra)")
+    assert clean == "AA-"
+    assert score == 4
+
+    clean, score = normalizar_rating("BBBsf(bra)")
+    assert clean == "BBB"
+    assert score == 9
+
+    clean, score = normalizar_rating("A+sf(bra)")
+    assert clean == "A+"
+    assert score == 5
+
+    clean, score = normalizar_rating("AAAsf(bra)")
+    assert clean == "AAA"
+    assert score == 1
+
+    # Curto prazo
+    clean, score = normalizar_rating("F1+(bra)")
+    assert clean == "F1+"
+    assert score == 1
+
+    clean, score = normalizar_rating("brA-1+")
+    assert clean == "A-1+"
+    assert score == 1
+
+    clean, score = normalizar_rating("ML A-1.br")
+    assert clean == "ML A-1"
+    assert score == 1
+
+
+def test_retiradas_wd_e_pif_nao_sao_upgrades():
+    rows_atual = {
+        "FITCH | OI | NATIONAL LONG TERM RATING": {
+            "agencia": "Fitch",
+            "no_emissor_padronizado": "OI",
+            "no_tipo_rating": "National Long Term Rating",
+            "de_rating_br": "WD(bra)",
+            "de_outlook": "Estável",
+            "dt_acao_rating": "2026-09-11",
+        },
+        "FITCH | RIZA SECURITIZADORA | CRI": {
+            "agencia": "Fitch",
+            "no_emissor_padronizado": "RIZA SECURITIZADORA",
+            "no_tipo_rating": "CRI",
+            "de_rating_br": "PIFsf(bra)",
+            "de_outlook": "Estável",
+            "dt_acao_rating": "2026-09-11",
+        },
+    }
+    rows_anterior = {
+        "FITCH | OI | NATIONAL LONG TERM RATING": {
+            "agencia": "Fitch",
+            "no_emissor_padronizado": "OI",
+            "no_tipo_rating": "National Long Term Rating",
+            "de_rating_br": "RD(bra)",
+            "de_outlook": "Estável",
+            "dt_acao_rating": "2026-08-14",
+        },
+        "FITCH | RIZA SECURITIZADORA | CRI": {
+            "agencia": "Fitch",
+            "no_emissor_padronizado": "RIZA SECURITIZADORA",
+            "no_tipo_rating": "CRI",
+            "de_rating_br": "AA+sf(bra)",
+            "de_outlook": "Estável",
+            "dt_acao_rating": "2025-08-14",
+        },
+    }
+
+    res = comparar_snapshots(
+        df_rows_or_map_atual=rows_atual,
+        tipo_dataset="emissores",
+        key_fields=["agencia", "no_emissor_padronizado", "no_tipo_rating"],
+        map_anterior_override=rows_anterior,
+    )
+
+    assert len(res["upgrades"]) == 0, "WD e PIF jamais devem ser computados como upgrades!"
+    assert len(res["downgrades"]) == 0
+    assert len(res["retirados"]) == 2
+    emissores_retirados = [r["emissor"] for r in res["retirados"]]
+    assert "OI" in emissores_retirados
+    assert "RIZA SECURITIZADORA" in emissores_retirados
+
+
+def test_tranches_distintas_austin_nao_colidem():
+    rows = [
+        {
+            "agencia": "Austin",
+            "no_emissor_padronizado": "FIDC ABC",
+            "de_instrumento": "SENIORES",
+            "de_rating_br": "brA",
+            "dt_acao_rating": "2020-04-02",
+            "dt_captura": "2026-09-11",
+        },
+        {
+            "agencia": "Austin",
+            "no_emissor_padronizado": "FIDC ABC",
+            "de_instrumento": "SUBORDINADAS",
+            "de_rating_br": "brB-",
+            "dt_acao_rating": "2020-04-02",
+            "dt_captura": "2026-09-11",
+        },
+    ]
+    vigentes = extrair_ratings_vigentes(rows, ["agencia", "no_emissor_padronizado", "de_instrumento"])
+    assert len(vigentes) == 2, "Tranches Senior e Subordinada devem coexistir sem sobrescrita"

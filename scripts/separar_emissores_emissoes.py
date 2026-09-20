@@ -263,6 +263,15 @@ def main():
                 if agencia == "Austin":
                     if no_tipo_rating in ["FIDCs", "CRIs", "Debêntures"]:
                         is_emissao = True
+                        if " - " in no_emissor_original:
+                            base_emissor, de_instrumento = no_emissor_original.split(" - ", 1)
+                            de_instrumento = de_instrumento.strip()
+                        elif " – " in no_emissor_original:
+                            base_emissor, de_instrumento = no_emissor_original.split(" – ", 1)
+                            de_instrumento = de_instrumento.strip()
+                        else:
+                            base_emissor = no_emissor_original
+                            de_instrumento = no_tipo_rating
                 elif agencia == "Fitch":
                     de_instrumento_val = row.get("de_instrumento") or ""
                     if de_instrumento_val:
@@ -282,8 +291,9 @@ def main():
                     de_instrumento = row.get("de_instrumento") or ""
 
                 # Mapeia emissor padronizado
+                lookup_nome = base_emissor if (agencia == "Austin" and is_emissao) else no_emissor_original
                 no_emissor_padronizado = find_matching_issuer(
-                    no_emissor_original, consolidated_names, consolidated_list
+                    lookup_nome, consolidated_names, consolidated_list
                 )
 
                 if is_emissao:

@@ -466,7 +466,7 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": ""
+        "example": "SUBORDINADAS JÚNIOR"
       },
       {
         "name": "de_rating_br",
@@ -492,6 +492,88 @@
         "name": "no_devedor_vinculado",
         "type": "str",
         "example": ""
+      }
+    ]
+  },
+  {
+    "title": "Histórico de Movimentações de Ratings",
+    "files": "historico_movimentacoes.csv",
+    "source": "consolidado",
+    "fields": [
+      {
+        "name": "dt_captura",
+        "type": "date",
+        "example": "2026-09-11"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2026-09-01"
+      },
+      {
+        "name": "agencia",
+        "type": "str",
+        "example": "S&P"
+      },
+      {
+        "name": "categoria",
+        "type": "str",
+        "example": "Emissor"
+      },
+      {
+        "name": "no_emissor_padronizado",
+        "type": "str",
+        "example": "BRAVA ENERGIA"
+      },
+      {
+        "name": "no_emissor_original",
+        "type": "str",
+        "example": "BRAVA ENERGIA S.A."
+      },
+      {
+        "name": "de_instrumento",
+        "type": "str",
+        "example": "Escala Nacional Brasil de Longo Prazo"
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "Escala Nacional Brasil de Longo Prazo"
+      },
+      {
+        "name": "tipo_movimento",
+        "type": "str",
+        "example": "UPGRADE"
+      },
+      {
+        "name": "rating_anterior",
+        "type": "str",
+        "example": "brAA-"
+      },
+      {
+        "name": "rating_atual",
+        "type": "str",
+        "example": "brAA"
+      },
+      {
+        "name": "variacao_notches",
+        "type": "str",
+        "example": "+1 notch"
+      },
+      {
+        "name": "outlook_anterior",
+        "type": "str",
+        "example": "Estável"
+      },
+      {
+        "name": "outlook_atual",
+        "type": "str",
+        "example": "Positiva"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://brazil.ratings.spglobal.com/..."
       }
     ]
   }
