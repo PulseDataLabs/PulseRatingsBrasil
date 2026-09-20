@@ -1633,16 +1633,33 @@
       document.getElementById('stat-austin').textContent    = countBy('agencia', 'Austin').toLocaleString('pt-BR');
       document.getElementById('stat-liberum').textContent   = countBy('agencia', 'Liberum').toLocaleString('pt-BR');
     }
-    renderTable();
-
-    // ── Index allData by emissor for fast drawer lookup ───────
-
+    // ── Index allData by emissor and resolve sector across all rows ───
     const byEmissor = {};
     for (const r of allData) {
       const key = r.emissor;
-      if (!byEmissor[key]) byEmissor[key] = { cnpj: r.cnpj || '', rows: [] };
+      if (!byEmissor[key]) byEmissor[key] = { cnpj: r.cnpj || '', rows: [], setor: '', subsetor: '', segmento: '' };
       byEmissor[key].rows.push(r);
+      if (r.setor && !byEmissor[key].setor) {
+        byEmissor[key].setor = r.setor;
+        byEmissor[key].subsetor = r.subsetor || '';
+        byEmissor[key].segmento = r.segmento || '';
+      }
     }
+
+    // Propaga o setor resolvido para todas as linhas daquele emissor
+    for (const data of Object.values(byEmissor)) {
+      if (data.setor) {
+        for (const r of data.rows) {
+          if (!r.setor) {
+            r.setor = data.setor;
+            r.subsetor = data.subsetor;
+            r.segmento = data.segmento;
+          }
+        }
+      }
+    }
+
+    renderTable();
 
     // ── Build DataTables row arrays ───────────────────────────
 
@@ -2307,13 +2324,15 @@
         let topRatingVal = -1;
 
         for (const [emissor, data] of Object.entries(byEmissor)) {
-          const firstRow = data.rows[0];
-          if (firstRow && firstRow.setor === sector) {
+          const emSetor = data.setor || (data.rows.find(r => r.setor)?.setor) || '';
+          if (emSetor === sector) {
             emissoresNoSetor.push({ emissor, rows: data.rows });
             
             let maxScore = 0;
             for (const row of data.rows) {
-              agencyCount[row.agencia] = (agencyCount[row.agencia] || 0) + 1;
+              if (row.agencia) {
+                agencyCount[row.agencia] = (agencyCount[row.agencia] || 0) + 1;
+              }
               const score = getRatingScore(row.rating);
               if (score > maxScore) maxScore = score;
             }
@@ -2330,11 +2349,16 @@
         $compCardsContainer.show();
 
         if (emissoresNoSetor.length === 0) {
-          $comparatorContent.html('<p>Nenhum emissor encontrado para este setor.</p>');
+          $comparatorContent.html('<p style="text-align:center;padding:2rem;color:var(--text3);">Nenhum emissor encontrado para este setor.</p>');
           return;
         }
 
-        const allSectorAgencies = Object.keys(agencyCount).sort();
+        // Ordenação das agências: Fitch, Moody's, S&P, Austin, Liberum
+        const AGENCY_ORDER = ['Fitch', "Moody's", 'S&P', 'Austin', 'Liberum'];
+        const presentAgencies = Object.keys(agencyCount);
+        const allSectorAgencies = AGENCY_ORDER.filter(a => presentAgencies.includes(a))
+          .concat(presentAgencies.filter(a => !AGENCY_ORDER.includes(a)));
+
         emissoresNoSetor.sort((a, b) => a.emissor.localeCompare(b.emissor));
 
         let matrixHtml = `
@@ -2342,25 +2366,27 @@
             <table class="comp-matrix">
               <thead>
                 <tr>
-                  <th>Emissor</th>
-                  ${allSectorAgencies.map(a => `<th>${a}</th>`).join('')}
+                  <th style="min-width: 220px;">Emissor</th>
+                  ${allSectorAgencies.map(a => `<th style="text-align:center;"><span class="badge ${agencyMeta(a).badgeCls}" style="font-size:0.75rem;padding:0.25rem 0.65rem;">${a}</span></th>`).join('')}
                 </tr>
               </thead>
               <tbody>
         `;
 
         for (const item of emissoresNoSetor) {
-          matrixHtml += `<tr><td>${item.emissor}</td>`;
+          matrixHtml += `<tr><td class="comp-emissor-cell" data-emissor="${item.emissor}" style="cursor:pointer;" title="Clique para ver histórico completo do emissor"><span style="color:var(--text);font-weight:600;">${item.emissor}</span> <span style="font-size:0.65rem;color:var(--accent);margin-left:0.25rem;">↗</span></td>`;
           
           for (const ag of allSectorAgencies) {
             const agRows = item.rows.filter(r => r.agencia === ag);
             if (agRows.length === 0) {
-              matrixHtml += `<td><span style="color:var(--text3)">—</span></td>`;
+              matrixHtml += `<td style="text-align:center;"><span style="color:var(--text3);font-family:var(--font-mono);">—</span></td>`;
             } else {
-              const uniqueRatings = [...new Set(agRows.map(r => r.rating).filter(Boolean))];
               matrixHtml += `<td><div class="comp-rating-stack">`;
-              for (const rating of uniqueRatings) {
-                matrixHtml += `<span class="rating-cell" style="display:inline-block">${rating}</span>`;
+              for (const row of agRows) {
+                const oCls = outlookClass(row.outlook);
+                const oHtml = row.outlook ? `<span class="outlook-badge ${oCls}" style="font-size:0.6rem;padding:0.1rem 0.35rem;margin-left:0.25rem;">${row.outlook}</span>` : '';
+                const instrHtml = row.instrumento ? `<div style="font-size:0.68rem;color:var(--text3);max-width:200px;white-space:normal;line-height:1.2;margin-top:2px;">${row.instrumento}</div>` : '';
+                matrixHtml += `<div style="margin-bottom:0.35rem;"><span class="rating-cell" style="display:inline-block;font-size:0.78rem;">${row.rating}</span>${oHtml}${instrHtml}</div>`;
               }
               matrixHtml += `</div></td>`;
             }
@@ -2376,6 +2402,12 @@
 
         $comparatorContent.html(matrixHtml);
       }
+
+    // Clique no emissor da matriz comparativa abre o Drawer
+    $(document).on('click', '.comp-emissor-cell', function() {
+      const em = $(this).data('emissor');
+      if (em && typeof openDrawer === 'function') openDrawer(em);
+    });
 
     // ── Consolidated / Detailed toggle ────────────────────────
 

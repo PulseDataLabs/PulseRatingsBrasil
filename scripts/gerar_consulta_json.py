@@ -20,6 +20,19 @@ AUSTIN_RATINGS_PATH = os.path.join(DATA_DIR, "austin_ratings.csv")
 LIBERUM_RATINGS_PATH = os.path.join(DATA_DIR, "liberum_ratings.csv")
 OUTPUT_PATH = os.path.join(DATA_DIR, "emissores_rating.json")
 
+SETORES_MAP_PATH = os.path.join(DATA_DIR, "emissores_setores.json")
+
+
+def carregar_mapa_setores() -> dict:
+    if os.path.exists(SETORES_MAP_PATH):
+        try:
+            with open(SETORES_MAP_PATH, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Aviso ao carregar emissores_setores.json: {e}")
+    return {}
+
+
 
 def _cnpj_fmt(cnpj: str) -> str:
     if not cnpj:
@@ -138,9 +151,17 @@ def main() -> None:
     sem_match_sp = 0
     com_rating = 0
 
+    setores_map = carregar_mapa_setores()
+
     for em in emissores:
         nome_padrao = em["no_emissor_padronizado"]
         cnpj = em["cnpj"]
+
+        # Resolve setor do emissor
+        sec_info = setores_map.get(nome_padrao) or setores_map.get(cnpj) or {}
+        em_setor = sec_info.get("setor", "")
+        em_subsetor = sec_info.get("subsetor", "")
+        em_segmento = sec_info.get("segmento", "")
 
         agencias = [
             ("Fitch", em["no_emissor_fitch"], fitch_idx),
@@ -170,6 +191,9 @@ def main() -> None:
 
             tem_rating = True
             for r in ratings:
+                # Se o emissor ainda nao tem setor mas o registro do Moody's tem, usa o do Moody's
+                current_setor = em_setor or r.get("no_setor", "")
+
                 if nome_agencia == "Moody's":
                     row = {
                         "emissor": nome_padrao,
@@ -179,7 +203,9 @@ def main() -> None:
                         "rating": r.get("de_rating_br", ""),
                         "outlook": r.get("de_outlook", ""),
                         "dt_acao": r.get("dt_rating", ""),
-                        "setor": r.get("no_setor", ""),
+                        "setor": current_setor,
+                        "subsetor": em_subsetor,
+                        "segmento": em_segmento,
                         "instrumento": r.get("de_instrumento", ""),
                         "link": "",
                     }
@@ -192,7 +218,9 @@ def main() -> None:
                         "rating": r.get("de_rating_br", ""),
                         "outlook": r.get("de_outlook", ""),
                         "dt_acao": r.get("dt_acao_rating", ""),
-                        "setor": "",
+                        "setor": current_setor,
+                        "subsetor": em_subsetor,
+                        "segmento": em_segmento,
                         "instrumento": "",
                         "link": r.get("link", ""),
                     }
@@ -205,8 +233,10 @@ def main() -> None:
                         "rating": r.get("de_rating_br", ""),
                         "outlook": r.get("de_outlook", ""),
                         "dt_acao": r.get("dt_acao_rating", ""),
-                        "setor": "",
-                        "instrumento": "",
+                        "setor": current_setor,
+                        "subsetor": em_subsetor,
+                        "segmento": em_segmento,
+                        "instrumento": r.get("de_instrumento", ""),
                         "link": r.get("link", ""),
                     }
                 elif nome_agencia == "Liberum":
@@ -218,7 +248,9 @@ def main() -> None:
                         "rating": r.get("de_rating_br", ""),
                         "outlook": r.get("de_outlook", ""),
                         "dt_acao": r.get("dt_acao_rating", ""),
-                        "setor": "",
+                        "setor": current_setor,
+                        "subsetor": em_subsetor,
+                        "segmento": em_segmento,
                         "instrumento": f"{r.get('de_classe', '')} - {r.get('de_escala', '')}".strip(" -"),
                         "link": r.get("link", ""),
                     }
@@ -231,7 +263,9 @@ def main() -> None:
                         "rating": r.get("de_rating_br", ""),
                         "outlook": r.get("de_outlook", ""),
                         "dt_acao": r.get("dt_acao_rating", ""),
-                        "setor": "",
+                        "setor": current_setor,
+                        "subsetor": em_subsetor,
+                        "segmento": em_segmento,
                         "instrumento": r.get("de_instrumento", ""),
                         "link": r.get("link", ""),
                     }
@@ -239,6 +273,25 @@ def main() -> None:
 
         if tem_rating:
             com_rating += 1
+
+    
+    # Propaga o setor para todas as linhas do mesmo emissor (ex: se Moody's tiver setor, Fitch e S&P herdam)
+    emissor_to_sector = {}
+    for r in resultados:
+        em = r["emissor"]
+        if r.get("setor") and em not in emissor_to_sector:
+            emissor_to_sector[em] = {
+                "setor": r["setor"],
+                "subsetor": r.get("subsetor", ""),
+                "segmento": r.get("segmento", ""),
+            }
+
+    for r in resultados:
+        em = r["emissor"]
+        if not r.get("setor") and em in emissor_to_sector:
+            r["setor"] = emissor_to_sector[em]["setor"]
+            r["subsetor"] = emissor_to_sector[em]["subsetor"]
+            r["segmento"] = emissor_to_sector[em]["segmento"]
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(resultados, f, ensure_ascii=False, indent=2)
