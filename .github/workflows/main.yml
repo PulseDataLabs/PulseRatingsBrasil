@@ -87,3 +87,26 @@ jobs:
         
         # Envia as alterações de volta para a branch main
         git push origin main
+    # Publica automaticamente no repositório público (PulseRatingsBrasil-web)
+    - name: Publicar no Repositório Público (PulseRatingsBrasil-web)
+      if: env.WEB_TOKEN != ''
+      env:
+        WEB_TOKEN: ${{ secrets.WEB_DEPLOY_TOKEN }}
+      run: |
+        mkdir -p /tmp/web_deploy
+        cp index.html consulta.html /tmp/web_deploy/
+        if [ -d assets ]; then cp -r assets /tmp/web_deploy/; fi
+        mkdir -p /tmp/web_deploy/data
+        cp -r data/* /tmp/web_deploy/data/
+        sed -i 's|PulseRatingsBrasil/main/data|PulseRatingsBrasil-web/main/data|g' /tmp/web_deploy/data/datasets.json
+        sed -i 's|PulseRatingsBrasil/consulta.html|PulseRatingsBrasil-web/consulta.html|g' /tmp/web_deploy/consulta.html
+        sed -i 's|PulseRatingsBrasil/|PulseRatingsBrasil-web/|g' /tmp/web_deploy/index.html
+        touch /tmp/web_deploy/.nojekyll
+        
+        cd /tmp/web_deploy
+        git init -b main
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Deploy automático dos dados: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        git push --force https://x-access-token:${WEB_TOKEN}@github.com/PulseDataLabs/PulseRatingsBrasil-web.git main || echo "Aviso: Falha ao sincronizar repo público."

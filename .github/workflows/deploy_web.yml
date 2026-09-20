@@ -1,0 +1,76 @@
+name: Publicar Site em PulseRatingsBrasil-web
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'index.html'
+      - 'consulta.html'
+      - 'assets/**'
+      - 'data/**'
+      - '.github/workflows/deploy_web.yml'
+  workflow_dispatch:
+
+jobs:
+  deploy-web:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repositório Privado
+        uses: actions/checkout@v4
+
+      - name: Preparar Arquivos para o Repositório Público
+        run: |
+          mkdir -p /tmp/web_deploy
+          
+          # Copia páginas HTML e assets
+          cp index.html consulta.html /tmp/web_deploy/
+          if [ -d assets ]; then cp -r assets /tmp/web_deploy/; fi
+          
+          # Copia pasta de dados completa
+          mkdir -p /tmp/web_deploy/data
+          cp -r data/* /tmp/web_deploy/data/
+          
+          # Atualiza links no datasets.json e páginas para o repositório público
+          sed -i 's|PulseRatingsBrasil/main/data|PulseRatingsBrasil-web/main/data|g' /tmp/web_deploy/data/datasets.json
+          sed -i 's|PulseRatingsBrasil/consulta.html|PulseRatingsBrasil-web/consulta.html|g' /tmp/web_deploy/consulta.html
+          sed -i 's|PulseRatingsBrasil/|PulseRatingsBrasil-web/|g' /tmp/web_deploy/index.html
+          
+          # Garante arquivo .nojekyll para o GitHub Pages
+          touch /tmp/web_deploy/.nojekyll
+          
+          # Cria README para o repositório público
+          cat << 'ENDREADME' > /tmp/web_deploy/README.md
+# Pulse Ratings Brasil — Portal Público
+
+Portal público de monitoramento e consulta de ratings de crédito no Brasil.
+
+- 🌐 **Acesse o site**: [https://pulsedatalabs.github.io/PulseRatingsBrasil-web/](https://pulsedatalabs.github.io/PulseRatingsBrasil-web/)
+- 📊 **Página de Consulta**: [https://pulsedatalabs.github.io/PulseRatingsBrasil-web/consulta.html](https://pulsedatalabs.github.io/PulseRatingsBrasil-web/consulta.html)
+
+Este repositório é o espelho público do frontend, mantido e atualizado automaticamente pelo pipeline privado da **Pulse Data Labs**.
+ENDREADME
+
+      - name: Publicar no Repositório Público (PulseDataLabs/PulseRatingsBrasil-web)
+        env:
+          WEB_TOKEN: ${{ secrets.WEB_DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$WEB_TOKEN" ]; then
+            echo "::error::Secret WEB_DEPLOY_TOKEN não encontrado. Configure o secret com seu Personal Access Token."
+            exit 1
+          fi
+
+          cd /tmp/web_deploy
+          git init -b main
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Deploy automático: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git push --force https://x-access-token:${WEB_TOKEN}@github.com/PulseDataLabs/PulseRatingsBrasil-web.git main
+
+      - name: Resumo do Deploy
+        run: |
+          echo "### 🚀 Deploy Público Realizado com Sucesso!" >> $GITHUB_STEP_SUMMARY
+          echo "- **Repositório Público**: [PulseDataLabs/PulseRatingsBrasil-web](https://github.com/PulseDataLabs/PulseRatingsBrasil-web)" >> $GITHUB_STEP_SUMMARY
+          echo "- **URL do Site**: [https://pulsedatalabs.github.io/PulseRatingsBrasil-web/](https://pulsedatalabs.github.io/PulseRatingsBrasil-web/)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Página de Consulta**: [https://pulsedatalabs.github.io/PulseRatingsBrasil-web/consulta.html](https://pulsedatalabs.github.io/PulseRatingsBrasil-web/consulta.html)" >> $GITHUB_STEP_SUMMARY
