@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-09-20T18:10:47.189721",
+  "timestamp": "2026-09-20T18:45:43.480683",
   "dt_atual": "2026-09-20",
   "dt_anterior": "2026-09-19",
   "resumo": {
@@ -7,8 +7,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "upgrades_emissoes": 12,
     "total_upgrades": 28,
     "downgrades_emissores": 8,
-    "downgrades_emissoes": 41,
-    "total_downgrades": 49,
+    "downgrades_emissoes": 40,
+    "total_downgrades": 48,
     "novos_emissores": 2,
     "novos_emissoes": 45,
     "total_novos": 47,
@@ -27,8 +27,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 12,
       "total_upgrades": 28,
       "downgrades_emissores": 8,
-      "downgrades_emissoes": 41,
-      "total_downgrades": 49,
+      "downgrades_emissoes": 40,
+      "total_downgrades": 48,
       "novos_emissores": 2,
       "novos_emissoes": 45,
       "total_novos": 47,
@@ -846,19 +846,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-19"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
         },
         {
           "agencia": "Fitch",
@@ -4968,22 +4955,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "tipo_movimento": "DOWNGRADE",
       "variacao_notches": "-5",
       "categoria": "Emissor",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-09-20"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "HIGH YIELD YALEEH FIDC",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2024-03-06",
-      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brBBB+",
-      "rating_atual": "brBBB-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
-      "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-09-20"
     },
@@ -95620,19 +95591,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-19"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "HIGH YIELD YALEEH FIDC",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2024-03-06",
-        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brBBB+",
-        "rating_atual": "brBBB-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
       },
       {
         "agencia": "Fitch",
