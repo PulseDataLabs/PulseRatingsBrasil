@@ -10,8 +10,8 @@
 | 🟢 **Upgrades (Elevações)** | 16 | 14 | **30** |
 | 🔴 **Downgrades (Rebaixamentos)** | 8 | 42 | **50** |
 | 🔵 **Novos Ratings** | 2 | 45 | **47** |
-| 🟡 **Mudanças de Perspectiva** | 16 | 25 | **41** |
-| ⚪ **Ratings Retirados / Liquidados** | 5 | 8 | **13** |
+| 🟡 **Mudanças de Perspectiva** | 16 | 29 | **45** |
+| ⚪ **Ratings Retirados / Liquidados** | 5 | 9 | **14** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 30
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -101,7 +101,7 @@
 | Fitch | **COMPANHIA ESTADUAL GERACAO ENERGIA ELETRICA** | BRL 397 mln 8.722% bond/note 14-Dec-2041 | `BBB-(bra)` | **`CCC+(bra)`** | `-7` | Em Observação | 08/09/2026 |
 | Fitch | **COMPANHIA ESTADUAL GERACAO ENERGIA ELETRICA** | BRL 793 mln 8.722% bond/note 15-Dec-2041 | `BBB-(bra)` | **`CCC+(bra)`** | `-7` | Em Observação | 08/09/2026 |
 
-### 🟡 Mudanças de Perspectiva (Outlook) — 41
+### 🟡 Mudanças de Perspectiva (Outlook) — 45
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva Anterior | Nova Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | S&P | **ORIZON VALORIZACAO RESIDUOS** | Escala Nacional Brasil de Longo Prazo | `brAA+` | Negativa | **Estável** | 17/10/2022 |
@@ -129,6 +129,10 @@
 | Liberum | **B4 TRUST FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP2` | Estável | **Negativa** | 15/09/2026 |
 | Liberum | **CREDIT PARTNERS FUNDO INVESTIMENTO DIREITO CREDITORIOS** | Subordinada - Longo prazo | `CCC` | Estável | **Negativa** | 02/09/2026 |
 | Liberum | **KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP3` | Negativa | **Estável** | 17/09/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS ZIPDIN I** | Mezanino - Curto prazo | `CP3` | Negativa | **Estável** | 21/09/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS ZIPDIN I** | Mezanino - Longo prazo | `BBB-` | Negativa | **Estável** | 21/09/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS ZIPDIN I** | Senior - Curto prazo | `CP2` | Negativa | **Estável** | 21/09/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS ZIPDIN I** | Senior - Longo prazo | `A-` | Negativa | **Estável** | 21/09/2026 |
 | Moody's | **BABILONIA HOLDING** | 1ª Emissão de Debêntures - Série Única | `AA+.br` | Estável | **Negativa** | 21/08/2026 |
 | Moody's | **DIX EMPREENDIMENTOS** | 2ª Emissão de Debêntures - Série Única | `AA.br` | Estável | **Negativa** | 04/09/2026 |
 | Moody's | **SPE NOVO NORTE AEROPORTOS** | 2ª Emissão de Debêntures - Série Única | `AA+.br` | Estável | **Negativa** | 04/09/2026 |
@@ -181,7 +185,7 @@
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042 | **`AA-(bra)`** | Em Observação | 31/08/2026 |
 | *...e mais 17 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (13)
+### ⚪ Ratings Retirados / Liquidados (14)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **DELTA SUCROENERGIA** | Escala Nacional Brasil de Longo Prazo | `brAAA` | Estável | 02/09/2026 |
@@ -189,6 +193,7 @@
 | Fitch | **OI** | Local Currency Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **OI** | Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **ALLIANCA SAUDE PARTICIPACOES** | National Long Term Rating | `RD(bra)` | Estável | 15/09/2026 |
+| Fitch | **RIZA SECURITIZADORA 2022** | securities ser 1 | `AA+sf(bra)` | Estável | 15/04/2026 |
 | Fitch | **BRAZIL** | BRL 177 bln Floating bond/note 01-Sep-2026 | `BB` | Estável | 01/09/2026 |
 | Fitch | **DMCARD SECURITIZADORA** | notes ser 1 | `BBB+sf(bra)` | Estável | 10/09/2026 |
 | Fitch | **OI** | USD 1.46 bln 8.5% bond/note 31-Dec-2028  credit agreement dated as of 08-Aug-2024 | `C` | Estável | 11/09/2026 |
@@ -200,4 +205,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (20/09/2026 → 21/09/2026)
-*Total nas últimas 24h: 🟢 4 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 4 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 4 perspectivas | ⚪ 1 retirados.*
