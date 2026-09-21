@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACCESS FIDC - SENIORES ÚNICA"
+        "example": "ACRE BG FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4680/Acre_BG_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brB"
       },
       {
         "name": "de_rating_cp",
@@ -293,12 +293,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-15"
+        "example": "2024-08-14"
       },
       {
         "name": "de_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11202"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11069"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACCESS FIDC"
+        "example": "CROWN OCEAN I FIDC NP"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACCESS FIDC - SENIORES ÚNICA"
+        "example": "CROWN OCEAN I FIDC NP - SUBORDINADAS"
       },
       {
         "name": "no_tipo_rating",
@@ -466,12 +466,12 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SENIORES ÚNICA"
+        "example": "SUBORDINADAS"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brB"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-15"
+        "example": "2020-02-11"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/2451/Crown_Ocean_I_FIDC_NP_-_Subordinadas_"
       },
       {
         "name": "no_devedor_vinculado",
