@@ -41,15 +41,15 @@ jobs:
           
           # Cria README para o repositório público
           cat << 'ENDREADME' > /tmp/web_deploy/README.md
-# Pulse Ratings Brasil — Portal Público
+          # Pulse Ratings Brasil — Portal Público
 
-Portal público de monitoramento e consulta de ratings de crédito no Brasil.
+          Portal público de monitoramento e consulta de ratings de crédito no Brasil.
 
-- 🌐 **Acesse o site**: [https://pulsedatalabs.github.io/PulseRatingsBrasil-web/](https://pulsedatalabs.github.io/PulseRatingsBrasil-web/)
-- 📊 **Página de Consulta**: [https://pulsedatalabs.github.io/PulseRatingsBrasil-web/consulta.html](https://pulsedatalabs.github.io/PulseRatingsBrasil-web/consulta.html)
+          - 🌐 **Acesse o site**: [https://pulsedatalabs.github.io/PulseRatingsBrasil-web/](https://pulsedatalabs.github.io/PulseRatingsBrasil-web/)
+          - 📊 **Página de Consulta**: [https://pulsedatalabs.github.io/PulseRatingsBrasil-web/consulta.html](https://pulsedatalabs.github.io/PulseRatingsBrasil-web/consulta.html)
 
-Este repositório é o espelho público do frontend, mantido e atualizado automaticamente pelo pipeline privado da **Pulse Data Labs**.
-ENDREADME
+          Este repositório é o espelho público do frontend, mantido e atualizado automaticamente pelo pipeline privado da **Pulse Data Labs**.
+          ENDREADME
 
       - name: Publicar no Repositório Público (PulseDataLabs/PulseRatingsBrasil-web)
         env:
