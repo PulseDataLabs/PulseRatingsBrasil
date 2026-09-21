@@ -38,9 +38,9 @@
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Curto prazo | `CP4` | **`CP3`** | `+1` | Estável | 09/09/2026 |
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Longo prazo | `BB+` | **`BBB-`** | `+1` | Estável | 09/09/2026 |
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `A-` | **`A`** | `+1` | Estável | 09/09/2026 |
+| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA-` | **`brAA`** | `+1` | Estável | 27/09/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 25/06/2026 |
 | Fitch | **VERT CSCF 2024** | bonds ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brB+` | **`brBB`** | `+2` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
 | Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
 | Fitch | **RIZA SECURITIZADORA 2024** | notes ser 3 | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 24/06/2026 |
@@ -198,4 +198,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (20/09/2026 → 21/09/2026)
-*Total nas últimas 24h: 🟢 4 upgrades | 🔴 2 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 5 upgrades | 🔴 2 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
