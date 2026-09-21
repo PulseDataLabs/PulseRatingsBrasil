@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-09-21T10:58:15.470173",
+  "timestamp": "2026-09-21T11:10:54.012378",
   "dt_atual": "2026-09-21",
   "dt_anterior": "2026-09-20",
   "resumo": {
@@ -16,8 +16,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "outlooks_emissoes": 29,
     "total_outlooks": 45,
     "retirados_emissores": 5,
-    "retirados_emissoes": 9,
-    "total_retirados": 14
+    "retirados_emissoes": 8,
+    "total_retirados": 13
   },
   "periodo_recente": {
     "dt_atual": "2026-09-21",
@@ -36,8 +36,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 29,
       "total_outlooks": 45,
       "retirados_emissores": 5,
-      "retirados_emissoes": 9,
-      "total_retirados": 14
+      "retirados_emissoes": 8,
+      "total_retirados": 13
     },
     "emissores": {
       "tipo": "emissores",
@@ -2231,19 +2231,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "BRAZIL",
           "instrumento": "BRL 177 bln Floating bond/note 01-Sep-2026",
           "dt_acao": "2026-09-01",
@@ -2354,8 +2341,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-09-20",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 4,
-      "total_upgrades": 4,
+      "upgrades_emissoes": 3,
+      "total_upgrades": 3,
       "downgrades_emissores": 0,
       "downgrades_emissoes": 1,
       "total_downgrades": 1,
@@ -2366,8 +2353,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 4,
       "total_outlooks": 4,
       "retirados_emissores": 0,
-      "retirados_emissoes": 1,
-      "total_retirados": 1
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
@@ -2396,19 +2383,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brB-",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+5"
         },
         {
           "agencia": "Fitch",
@@ -2503,21 +2477,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "0"
         }
       ],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "retirados": []
     }
   },
   "movimentacoes": [
@@ -5213,22 +5173,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-09-21"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "instrumento": "securities ser 1",
-      "dt_acao": "2026-04-15",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
       "dt_captura": "2026-09-21"
     },
     {
@@ -100255,19 +100199,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "retirados": [
-      {
-        "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "instrumento": "securities ser 1",
-        "dt_acao": "2026-04-15",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-        "rating_anterior": "AA+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
       {
         "agencia": "Fitch",
         "emissor": "BRAZIL",
