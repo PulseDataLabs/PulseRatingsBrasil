@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
+        "example": "ACCESS FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
+        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -298,12 +298,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-07-10"
+        "example": "2024-08-15"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Inicial"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ADGM_FIDC/10935"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11202"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ADGM FIDC"
+        "example": "ACCESS FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
+        "example": "ACCESS FIDC - SENIORES ÚNICA"
       },
       {
         "name": "no_tipo_rating",
@@ -466,7 +466,7 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SENIORES 3ª SÉRIE"
+        "example": "SENIORES ÚNICA"
       },
       {
         "name": "de_rating_br",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-07-10"
+        "example": "2024-08-15"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
+        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_devedor_vinculado",
