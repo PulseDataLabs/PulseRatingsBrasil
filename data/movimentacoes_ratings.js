@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-09-21T09:59:55.146280",
+  "timestamp": "2026-09-21T10:29:58.427841",
   "dt_atual": "2026-09-21",
   "dt_anterior": "2026-09-20",
   "resumo": {
@@ -16,8 +16,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "outlooks_emissoes": 25,
     "total_outlooks": 41,
     "retirados_emissores": 5,
-    "retirados_emissoes": 10,
-    "total_retirados": 15
+    "retirados_emissoes": 8,
+    "total_retirados": 13
   },
   "periodo_recente": {
     "dt_atual": "2026-09-21",
@@ -36,8 +36,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 25,
       "total_outlooks": 41,
       "retirados_emissores": 5,
-      "retirados_emissoes": 10,
-      "total_retirados": 15
+      "retirados_emissoes": 8,
+      "total_retirados": 13
     },
     "emissores": {
       "tipo": "emissores",
@@ -772,20 +772,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brB+",
-          "rating_atual": "brBBB",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+5"
+          "variacao_notches": "+3"
         },
         {
           "agencia": "Fitch",
           "emissor": "ECO SECURITIZADORA 2025",
           "instrumento": "notes ser 4",
           "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
           "rating_anterior": "Asf(bra)",
           "rating_atual": "AAAsf(bra)",
           "outlook_anterior": "Estável",
@@ -2183,32 +2183,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2019",
-          "instrumento": "notes ser 1",
-          "dt_acao": "2019-12-05",
-          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "WDsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2022",
-          "instrumento": "securities ser 1,2,3",
-          "dt_acao": "2026-01-15",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "BRAZIL",
           "instrumento": "BRL 177 bln Floating bond/note 01-Sep-2026",
           "dt_acao": "2026-09-01",
@@ -2331,8 +2305,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 2,
-      "total_retirados": 2
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
@@ -2364,16 +2338,16 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
+          "emissor": "FIDC IC SOMAPAY",
           "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brBBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
+          "variacao_notches": "+5"
         },
         {
           "agencia": "Fitch",
@@ -2419,34 +2393,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       ],
       "novos": [],
       "outlooks": [],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2019",
-          "instrumento": "notes ser 1",
-          "dt_acao": "2019-12-05",
-          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "WDsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2022",
-          "instrumento": "securities ser 1,2,3",
-          "dt_acao": "2026-01-15",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "retirados": []
     }
   },
   "movimentacoes": [
@@ -4961,7 +4908,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "ECO SECURITIZADORA 2025",
       "instrumento": "notes ser 4",
       "dt_acao": "2026-06-24",
-      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
       "rating_anterior": "Asf(bra)",
       "rating_atual": "AAAsf(bra)",
       "outlook_anterior": "Estável",
@@ -5101,22 +5048,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-09-21"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "ECO SECURITIZADORA 2022",
-      "instrumento": "securities ser 1,2,3",
-      "dt_acao": "2026-01-15",
-      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
-      "rating_anterior": "AAAsf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-09-21"
-    },
-    {
       "agencia": "Moody's",
       "emissor": "VINLAND CAPITAL MANAGEMENT CREDITO PRIVADO GESTORA RECURSOS",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -5153,13 +5084,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brB+",
-      "rating_atual": "brBBB",
+      "rating_atual": "brBB+",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+5",
+      "variacao_notches": "+3",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-09-21"
@@ -5209,22 +5140,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-09-21"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "OPEA SECURITIZADORA 2019",
-      "instrumento": "notes ser 1",
-      "dt_acao": "2019-12-05",
-      "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-      "rating_anterior": "AAAsf(bra)",
-      "rating_atual": "WDsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
       "dt_captura": "2026-09-21"
     },
     {
@@ -98603,20 +98518,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "emissor": "FICTOR INVEST FIDC",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brB+",
-        "rating_atual": "brBBB",
+        "rating_atual": "brBB+",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+5"
+        "variacao_notches": "+3"
       },
       {
         "agencia": "Fitch",
         "emissor": "ECO SECURITIZADORA 2025",
         "instrumento": "notes ser 4",
         "dt_acao": "2026-06-24",
-        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
         "rating_anterior": "Asf(bra)",
         "rating_atual": "AAAsf(bra)",
         "outlook_anterior": "Estável",
@@ -100012,32 +99927,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "retirados": [
-      {
-        "agencia": "Fitch",
-        "emissor": "OPEA SECURITIZADORA 2019",
-        "instrumento": "notes ser 1",
-        "dt_acao": "2019-12-05",
-        "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-        "rating_anterior": "AAAsf(bra)",
-        "rating_atual": "WDsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "ECO SECURITIZADORA 2022",
-        "instrumento": "securities ser 1,2,3",
-        "dt_acao": "2026-01-15",
-        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
-        "rating_anterior": "AAAsf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
       {
         "agencia": "Fitch",
         "emissor": "BRAZIL",
