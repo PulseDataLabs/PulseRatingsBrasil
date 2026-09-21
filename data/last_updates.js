@@ -33,11 +33,11 @@ window.PULSERATINGS_LAST_UPDATES = {
   },
   "moodys_ratings.csv": {
     "min": "2026-06-04",
-    "max": "2026-09-20"
+    "max": "2026-09-21"
   },
   "standard_and_poors_ratings.csv": {
     "min": "2026-06-10",
-    "max": "2026-09-20"
+    "max": "2026-09-21"
   },
   "austin_emissores.csv": {
     "min": "2026-09-20",
@@ -57,10 +57,10 @@ window.PULSERATINGS_LAST_UPDATES = {
   },
   "ratings_emissores.csv": {
     "min": "2026-06-04",
-    "max": "2026-09-20"
+    "max": "2026-09-21"
   },
   "ratings_emissoes.csv": {
     "min": "2026-06-04",
-    "max": "2026-09-20"
+    "max": "2026-09-21"
   }
 };
