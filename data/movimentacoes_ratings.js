@@ -1,11 +1,11 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-09-21T08:10:12.197117",
+  "timestamp": "2026-09-21T08:29:39.200470",
   "dt_atual": "2026-09-21",
   "dt_anterior": "2026-09-20",
   "resumo": {
     "upgrades_emissores": 16,
-    "upgrades_emissoes": 14,
-    "total_upgrades": 30,
+    "upgrades_emissoes": 13,
+    "total_upgrades": 29,
     "downgrades_emissores": 8,
     "downgrades_emissoes": 41,
     "total_downgrades": 49,
@@ -24,8 +24,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-08-21",
     "resumo": {
       "upgrades_emissores": 16,
-      "upgrades_emissoes": 14,
-      "total_upgrades": 30,
+      "upgrades_emissoes": 13,
+      "total_upgrades": 29,
       "downgrades_emissores": 8,
       "downgrades_emissoes": 41,
       "total_downgrades": 49,
@@ -729,19 +729,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+1"
         },
         {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA-",
-          "rating_atual": "brAA",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
           "instrumento": "notes",
@@ -772,20 +759,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brB+",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
+          "variacao_notches": "+2"
         },
         {
           "agencia": "Fitch",
           "emissor": "ECO SECURITIZADORA 2025",
           "instrumento": "notes ser 4",
           "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues",
           "rating_anterior": "Asf(bra)",
           "rating_atual": "AAAsf(bra)",
           "outlook_anterior": "Estável",
@@ -2280,11 +2267,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-09-20",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 5,
-      "total_upgrades": 5,
+      "upgrades_emissoes": 4,
+      "total_upgrades": 4,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 1,
-      "total_downgrades": 1,
+      "downgrades_emissoes": 2,
+      "total_downgrades": 2,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2310,19 +2297,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_atual": "2026-09-21",
       "dt_anterior": "2026-09-20",
       "upgrades": [
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA-",
-          "rating_atual": "brAA",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
-        },
         {
           "agencia": "Austin",
           "emissor": "HIGH YIELD YALEEH FIDC",
@@ -2377,6 +2351,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         }
       ],
       "downgrades": [
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
         {
           "agencia": "Fitch",
           "emissor": "OPEA SECURITIZADORA 2024",
@@ -4908,7 +4895,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "ECO SECURITIZADORA 2025",
       "instrumento": "notes ser 4",
       "dt_acao": "2026-06-24",
-      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues",
       "rating_anterior": "Asf(bra)",
       "rating_atual": "AAAsf(bra)",
       "outlook_anterior": "Estável",
@@ -5084,13 +5071,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brB+",
-      "rating_atual": "brBB+",
+      "rating_atual": "brBB",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+3",
+      "variacao_notches": "+2",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-09-21"
@@ -5124,22 +5111,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-09-21"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC CONSIGNADOS FEDERAIS",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2019-09-27",
-      "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brAA-",
-      "rating_atual": "brAA",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+1",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
       "dt_captura": "2026-09-21"
     }
   ],
@@ -98459,19 +98430,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+1"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FIDC CONSIGNADOS FEDERAIS",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2019-09-27",
-        "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brAA-",
-        "rating_atual": "brAA",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+1"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
         "instrumento": "notes",
@@ -98502,20 +98460,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "emissor": "FICTOR INVEST FIDC",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brB+",
-        "rating_atual": "brBB+",
+        "rating_atual": "brBB",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+3"
+        "variacao_notches": "+2"
       },
       {
         "agencia": "Fitch",
         "emissor": "ECO SECURITIZADORA 2025",
         "instrumento": "notes ser 4",
         "dt_acao": "2026-06-24",
-        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues",
         "rating_anterior": "Asf(bra)",
         "rating_atual": "AAAsf(bra)",
         "outlook_anterior": "Estável",
