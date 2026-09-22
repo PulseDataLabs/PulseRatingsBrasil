@@ -7,6 +7,10 @@ on:
 
   workflow_dispatch:
 
+concurrency:
+  group: preencher-cnpj
+  cancel-in-progress: true
+
 jobs:
   preencher-cnpj:
     runs-on: ubuntu-latest
@@ -16,15 +20,16 @@ jobs:
 
     steps:
     - name: Checkout do código
-      uses: actions/checkout@v6
+      uses: actions/checkout@v4
 
     - name: Configurar Fuso Horário Local
       run: sudo timedatectl set-timezone America/Sao_Paulo
 
     - name: Configurar Python
-      uses: actions/setup-python@v6
+      uses: actions/setup-python@v5
       with:
         python-version: '3.13'
+        cache: 'pip'
 
     - name: Instalar dependências
       run: |

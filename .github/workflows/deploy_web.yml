@@ -8,9 +8,12 @@ on:
       - 'index.html'
       - 'consulta.html'
       - 'assets/**'
-      - 'data/**'
       - '.github/workflows/deploy_web.yml'
   workflow_dispatch:
+
+concurrency:
+  group: deploy-web
+  cancel-in-progress: true
 
 jobs:
   deploy-web:

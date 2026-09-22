@@ -3,6 +3,21 @@ name: Build and Publish Docker Image
 on:
   push:
     branches: [main, master]
+    paths-ignore:
+      - 'data/**'
+      - 'docs/**'
+      - '**.md'
+      - 'index.html'
+      - 'consulta.html'
+      - 'assets/**'
+      - '.github/workflows/main.yml'
+      - '.github/workflows/deploy_web.yml'
+      - '.github/workflows/preencher_cnpj.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: docker-publish
+  cancel-in-progress: true
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
