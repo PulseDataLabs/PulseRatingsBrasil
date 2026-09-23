@@ -22,6 +22,7 @@ concurrency:
 
 jobs:
   build:
+    name: Executar Automação de Dados
     runs-on: ubuntu-latest
 
     # Dá permissão para o token do GitHub Actions fazer alterações no repositório (Push)
