@@ -81,10 +81,14 @@ jobs:
         git push origin main
     # Publica automaticamente no repositório público (PulseRatingsBrasil-web)
     - name: Publicar no Repositório Público (PulseRatingsBrasil-web)
-      if: ${{ secrets.WEB_DEPLOY_TOKEN != '' }}
       env:
         WEB_TOKEN: ${{ secrets.WEB_DEPLOY_TOKEN }}
       run: |
+        if [ -z "$WEB_TOKEN" ]; then
+          echo "Aviso: Secret WEB_DEPLOY_TOKEN não encontrado. Pulando deploy no repositório público."
+          exit 0
+        fi
+
         mkdir -p /tmp/web_deploy
         cp index.html consulta.html /tmp/web_deploy/
         if [ -d assets ]; then cp -r assets /tmp/web_deploy/; fi
