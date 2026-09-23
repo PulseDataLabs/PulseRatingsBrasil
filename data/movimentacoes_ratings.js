@@ -1,11 +1,11 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-09-23T11:15:26.971189",
+  "timestamp": "2026-09-23T15:55:14.837597",
   "dt_atual": "2026-09-23",
   "dt_anterior": "2026-09-22",
   "resumo": {
     "upgrades_emissores": 17,
-    "upgrades_emissoes": 17,
-    "total_upgrades": 34,
+    "upgrades_emissoes": 15,
+    "total_upgrades": 32,
     "downgrades_emissores": 8,
     "downgrades_emissoes": 41,
     "total_downgrades": 49,
@@ -16,16 +16,16 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "outlooks_emissoes": 28,
     "total_outlooks": 44,
     "retirados_emissores": 5,
-    "retirados_emissoes": 9,
-    "total_retirados": 14
+    "retirados_emissoes": 11,
+    "total_retirados": 16
   },
   "periodo_recente": {
     "dt_atual": "2026-09-23",
     "dt_anterior": "2026-08-24",
     "resumo": {
       "upgrades_emissores": 17,
-      "upgrades_emissoes": 17,
-      "total_upgrades": 34,
+      "upgrades_emissoes": 15,
+      "total_upgrades": 32,
       "downgrades_emissores": 8,
       "downgrades_emissoes": 41,
       "total_downgrades": 49,
@@ -36,8 +36,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 28,
       "total_outlooks": 44,
       "retirados_emissores": 5,
-      "retirados_emissoes": 9,
-      "total_retirados": 14
+      "retirados_emissoes": 11,
+      "total_retirados": 16
     },
     "emissores": {
       "tipo": "emissores",
@@ -768,19 +768,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+2"
         },
         {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brB-",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+5"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "VERT CSCF 2024",
           "instrumento": "bonds ser 3",
@@ -792,19 +779,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+3"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB-",
-          "rating_atual": "brBBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+4"
         },
         {
           "agencia": "Moody's",
@@ -1786,10 +1760,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "TRSP",
-          "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
+          "emissor": "COMPASS GAS ENERGIA",
+          "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
           "dt_acao": "2026-09-10",
-          "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
+          "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
           "rating_atual": "AA(bra)",
           "outlook_atual": "Em Observação",
           "tipo_movimento": "NOVO",
@@ -1797,10 +1771,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "COMPASS GAS ENERGIA",
-          "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
+          "emissor": "TRSP",
+          "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
           "dt_acao": "2026-09-10",
-          "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
+          "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
           "rating_atual": "AA(bra)",
           "outlook_atual": "Em Observação",
           "tipo_movimento": "NOVO",
@@ -2269,6 +2243,32 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2019",
+          "instrumento": "notes ser 1",
+          "dt_acao": "2019-12-05",
+          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "WDsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "instrumento": "securities ser 1,2,3",
+          "dt_acao": "2026-01-15",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "FIDC CONSIG PREMIUM II",
           "instrumento": "certificates ser 4",
           "dt_acao": "2026-08-24",
@@ -2392,11 +2392,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-09-22",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 3,
-      "total_upgrades": 3,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 2,
-      "total_downgrades": 2,
+      "downgrades_emissoes": 4,
+      "total_downgrades": 4,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2422,19 +2422,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_atual": "2026-09-23",
       "dt_anterior": "2026-09-22",
       "upgrades": [
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brBBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
         {
           "agencia": "Liberum",
           "emissor": "DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
@@ -2488,6 +2475,32 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-5"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brBB-",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
         }
       ],
       "novos": [],
@@ -3738,10 +3751,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "TRSP",
-      "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
+      "emissor": "COMPASS GAS ENERGIA",
+      "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
       "dt_acao": "2026-09-10",
-      "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
+      "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
       "rating_atual": "AA(bra)",
       "outlook_atual": "Em Observação",
       "tipo_movimento": "NOVO",
@@ -3752,10 +3765,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "COMPASS GAS ENERGIA",
-      "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
+      "emissor": "TRSP",
+      "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
       "dt_acao": "2026-09-10",
-      "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
+      "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
       "rating_atual": "AA(bra)",
       "outlook_atual": "Em Observação",
       "tipo_movimento": "NOVO",
@@ -5286,6 +5299,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-09-23"
     },
     {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "securities ser 1,2,3",
+      "dt_acao": "2026-01-15",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-09-23"
+    },
+    {
       "agencia": "Moody's",
       "emissor": "VINLAND CAPITAL MANAGEMENT CREDITO PRIVADO GESTORA RECURSOS",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -5298,22 +5327,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "tipo_movimento": "UPGRADE",
       "variacao_notches": "+2",
       "categoria": "Emissor",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-09-23"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FICTOR INVEST FIDC",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB-",
-      "rating_atual": "brBBB",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+4",
-      "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-09-23"
     },
@@ -5331,22 +5344,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "-5",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-09-23"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC IC SOMAPAY",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2024-08-12",
-      "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brB-",
-      "rating_atual": "brBB+",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+5",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
       "dt_captura": "2026-09-23"
     },
     {
@@ -5378,6 +5375,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
+      "dt_captura": "2026-09-23"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2019",
+      "instrumento": "notes ser 1",
+      "dt_acao": "2019-12-05",
+      "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "WDsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
       "dt_captura": "2026-09-23"
     }
   ],
@@ -8311,6 +8324,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "link": "https://www.fitchratings.com/entity/kanastra-securtitzadora-2024-1-1-2-3-4-5-solfacil-97530370#issues"
     },
     {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "securities ser 1,2,3",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-01-15",
+      "dt_captura": "2026-09-23",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues"
+    },
+    {
       "agencia": "S&P",
       "emissor": "ORIZON VALORIZACAO RESIDUOS",
       "instrumento": "Escala Nacional Brasil de Longo Prazo",
@@ -8325,6 +8354,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2022-10-17",
       "dt_captura": "2026-09-23",
       "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1000779"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2019",
+      "instrumento": "notes ser 1",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "WDsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2019-12-05",
+      "dt_captura": "2026-09-23",
+      "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues"
     },
     {
       "agencia": "Liberum",
@@ -104816,19 +104861,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+2"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FIDC IC SOMAPAY",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2024-08-12",
-        "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brB-",
-        "rating_atual": "brBB+",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+5"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "VERT CSCF 2024",
         "instrumento": "bonds ser 3",
@@ -104840,19 +104872,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+3"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB-",
-        "rating_atual": "brBBB",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+4"
       },
       {
         "agencia": "Moody's",
@@ -105834,10 +105853,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "TRSP",
-        "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
+        "emissor": "COMPASS GAS ENERGIA",
+        "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
         "dt_acao": "2026-09-10",
-        "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
+        "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
         "rating_atual": "AA(bra)",
         "outlook_atual": "Em Observação",
         "tipo_movimento": "NOVO",
@@ -105845,10 +105864,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "COMPASS GAS ENERGIA",
-        "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
+        "emissor": "TRSP",
+        "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
         "dt_acao": "2026-09-10",
-        "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
+        "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
         "rating_atual": "AA(bra)",
         "outlook_atual": "Em Observação",
         "tipo_movimento": "NOVO",
@@ -106315,6 +106334,32 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "retirados": [
+      {
+        "agencia": "Fitch",
+        "emissor": "OPEA SECURITIZADORA 2019",
+        "instrumento": "notes ser 1",
+        "dt_acao": "2019-12-05",
+        "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "WDsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "ECO SECURITIZADORA 2022",
+        "instrumento": "securities ser 1,2,3",
+        "dt_acao": "2026-01-15",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "PIFsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
       {
         "agencia": "Fitch",
         "emissor": "FIDC CONSIG PREMIUM II",

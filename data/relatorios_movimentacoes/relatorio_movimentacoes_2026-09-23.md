@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 17 | 17 | **34** |
+| 🟢 **Upgrades (Elevações)** | 17 | 15 | **32** |
 | 🔴 **Downgrades (Rebaixamentos)** | 8 | 41 | **49** |
 | 🔵 **Novos Ratings** | 2 | 46 | **48** |
 | 🟡 **Mudanças de Perspectiva** | 16 | 28 | **44** |
-| ⚪ **Ratings Retirados / Liquidados** | 5 | 9 | **14** |
+| ⚪ **Ratings Retirados / Liquidados** | 5 | 11 | **16** |
 
-### 🟢 Elevações de Rating (Upgrades) — 34
+### 🟢 Elevações de Rating (Upgrades) — 32
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **LIGHT SERVICOS ELETRICIDADE** | Escala Nacional Brasil de Longo Prazo | `D` | **`brBB+`** | `+11` | Estável | 17/09/2026 |
@@ -41,9 +41,7 @@
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `A-` | **`A`** | `+1` | Estável | 09/09/2026 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 25/06/2026 |
 | Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB-` | **`brBBB+`** | `+2` | Estável | 06/03/2024 |
-| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brB-` | **`brBB+`** | `+5` | Estável | 12/08/2024 |
 | Fitch | **VERT CSCF 2024** | bonds ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB-` | **`brBBB`** | `+4` | Negativa | 09/10/2025 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 7ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Fitch | **RIZA SECURITIZADORA 2024** | notes ser 3 | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 24/06/2026 |
@@ -187,7 +185,7 @@
 | Moody's | **COMPANHIA SANEAMENTO TOCANTINS** | 4ª Emissão de Debentures | **`AA.br`** | Estável | 03/09/2026 |
 | *...e mais 18 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (14)
+### ⚪ Ratings Retirados / Liquidados (16)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **DELTA SUCROENERGIA** | Escala Nacional Brasil de Longo Prazo | `brAAA` | Estável | 02/09/2026 |
@@ -195,6 +193,8 @@
 | Fitch | **OI** | Local Currency Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **OI** | Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **ALLIANCA SAUDE PARTICIPACOES** | National Long Term Rating | `RD(bra)` | Estável | 15/09/2026 |
+| Fitch | **OPEA SECURITIZADORA 2019** | notes ser 1 | `AAAsf(bra)` | Estável | 05/12/2019 |
+| Fitch | **ECO SECURITIZADORA 2022** | securities ser 1,2,3 | `AAAsf(bra)` | Estável | 15/01/2026 |
 | Fitch | **FIDC CONSIG PREMIUM II** | certificates ser 4 | `AA+sf(bra)` | Estável | 24/08/2026 |
 | Fitch | **BRAZIL** | BRL 177 bln Floating bond/note 01-Sep-2026 | `BB` | Estável | 01/09/2026 |
 | Fitch | **DMCARD SECURITIZADORA** | notes ser 1 | `BBB+sf(bra)` | Estável | 10/09/2026 |
@@ -207,4 +207,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (22/09/2026 → 23/09/2026)
-*Total nas últimas 24h: 🟢 3 upgrades | 🔴 2 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 2 upgrades | 🔴 4 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
