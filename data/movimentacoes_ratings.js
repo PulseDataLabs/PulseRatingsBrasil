@@ -1,14 +1,14 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-09-24T11:18:22.777257",
+  "timestamp": "2026-09-24T16:25:24.284380",
   "dt_atual": "2026-09-24",
   "dt_anterior": "2026-09-23",
   "resumo": {
     "upgrades_emissores": 14,
-    "upgrades_emissoes": 13,
-    "total_upgrades": 27,
+    "upgrades_emissoes": 14,
+    "total_upgrades": 28,
     "downgrades_emissores": 8,
-    "downgrades_emissoes": 43,
-    "total_downgrades": 51,
+    "downgrades_emissoes": 41,
+    "total_downgrades": 49,
     "novos_emissores": 2,
     "novos_emissoes": 43,
     "total_novos": 45,
@@ -16,19 +16,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "outlooks_emissoes": 28,
     "total_outlooks": 45,
     "retirados_emissores": 5,
-    "retirados_emissoes": 10,
-    "total_retirados": 15
+    "retirados_emissoes": 9,
+    "total_retirados": 14
   },
   "periodo_recente": {
     "dt_atual": "2026-09-24",
     "dt_anterior": "2026-08-25",
     "resumo": {
       "upgrades_emissores": 14,
-      "upgrades_emissoes": 13,
-      "total_upgrades": 27,
+      "upgrades_emissoes": 14,
+      "total_upgrades": 28,
       "downgrades_emissores": 8,
-      "downgrades_emissoes": 43,
-      "total_downgrades": 51,
+      "downgrades_emissoes": 41,
+      "total_downgrades": 49,
       "novos_emissores": 2,
       "novos_emissoes": 43,
       "total_novos": 45,
@@ -36,8 +36,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 28,
       "total_outlooks": 45,
       "retirados_emissores": 5,
-      "retirados_emissoes": 10,
-      "total_retirados": 15
+      "retirados_emissoes": 9,
+      "total_retirados": 14
     },
     "emissores": {
       "tipo": "emissores",
@@ -728,6 +728,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+2"
         },
         {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "VERT CSCF 2024",
           "instrumento": "bonds ser 3",
@@ -832,19 +845,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-3"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
         },
         {
           "agencia": "Fitch",
@@ -975,19 +975,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBBB",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
         },
         {
           "agencia": "Moody's",
@@ -2183,19 +2170,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2023",
-          "instrumento": "certificates ser 3",
-          "dt_acao": "2026-06-15",
-          "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-          "rating_anterior": "AAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "FIDC CONSIG PREMIUM II",
           "instrumento": "certificates ser 4",
           "dt_acao": "2026-08-24",
@@ -2322,8 +2296,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 0,
       "total_upgrades": 0,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 4,
-      "total_downgrades": 4,
+      "downgrades_emissoes": 1,
+      "total_downgrades": 1,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2331,8 +2305,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 1,
-      "total_retirados": 1
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
@@ -2352,19 +2326,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "downgrades": [
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
           "emissor": "HIGH YIELD YALEEH FIDC",
           "instrumento": "SUBORDINADAS PREFERENCIAIS",
           "dt_acao": "2024-03-06",
@@ -2375,51 +2336,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-2"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBBB",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
         }
       ],
       "novos": [],
       "outlooks": [],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2023",
-          "instrumento": "certificates ser 3",
-          "dt_acao": "2026-06-15",
-          "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-          "rating_anterior": "AAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "retirados": []
     }
   },
   "movimentacoes": [
@@ -5043,22 +4964,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "OPEA SECURITIZADORA 2023",
-      "instrumento": "certificates ser 3",
-      "dt_acao": "2026-06-15",
-      "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-      "rating_anterior": "AAsf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-09-24"
-    },
-    {
-      "agencia": "Fitch",
       "emissor": "FACTA INSS CB FIDC",
       "instrumento": "bonds ser 2022-1,2,3",
       "dt_acao": "2026-06-12",
@@ -5154,22 +5059,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-09-24"
     },
     {
-      "agencia": "Austin",
-      "emissor": "FICTOR INVEST FIDC",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBBB",
-      "rating_atual": "brBB+",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-09-24"
-    },
-    {
       "agencia": "Moody's",
       "emissor": "IN",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -5186,6 +5075,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-09-24"
     },
     {
+      "agencia": "Austin",
+      "emissor": "FIDC IC SOMAPAY",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2024-08-12",
+      "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brB-",
+      "rating_atual": "brBB+",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+5",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-09-24"
+    },
+    {
       "agencia": "S&P",
       "emissor": "ORIZON VALORIZACAO RESIDUOS",
       "instrumento": "Escala Nacional Brasil de Longo Prazo",
@@ -5198,22 +5103,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-09-24"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC CONSIGNADOS FEDERAIS",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2019-09-27",
-      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brAA",
-      "rating_atual": "brAA-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
       "dt_captura": "2026-09-24"
     }
   ],
@@ -107588,6 +107477,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+2"
       },
       {
+        "agencia": "Austin",
+        "emissor": "FIDC IC SOMAPAY",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2024-08-12",
+        "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brB-",
+        "rating_atual": "brBB+",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+5"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "VERT CSCF 2024",
         "instrumento": "bonds ser 3",
@@ -107692,19 +107594,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-3"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FIDC CONSIGNADOS FEDERAIS",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2019-09-27",
-        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brAA",
-        "rating_atual": "brAA-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
       },
       {
         "agencia": "Fitch",
@@ -107835,19 +107724,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBBB",
-        "rating_atual": "brBB+",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
       },
       {
         "agencia": "Moody's",
@@ -109041,19 +108917,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "retirados": [
-      {
-        "agencia": "Fitch",
-        "emissor": "OPEA SECURITIZADORA 2023",
-        "instrumento": "certificates ser 3",
-        "dt_acao": "2026-06-15",
-        "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-        "rating_anterior": "AAsf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
       {
         "agencia": "Fitch",
         "emissor": "FIDC CONSIG PREMIUM II",

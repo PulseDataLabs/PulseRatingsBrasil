@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 14 | 13 | **27** |
-| 🔴 **Downgrades (Rebaixamentos)** | 8 | 43 | **51** |
+| 🟢 **Upgrades (Elevações)** | 14 | 14 | **28** |
+| 🔴 **Downgrades (Rebaixamentos)** | 8 | 41 | **49** |
 | 🔵 **Novos Ratings** | 2 | 43 | **45** |
 | 🟡 **Mudanças de Perspectiva** | 17 | 28 | **45** |
-| ⚪ **Ratings Retirados / Liquidados** | 5 | 10 | **15** |
+| ⚪ **Ratings Retirados / Liquidados** | 5 | 9 | **14** |
 
-### 🟢 Elevações de Rating (Upgrades) — 27
+### 🟢 Elevações de Rating (Upgrades) — 28
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **LIGHT SERVICOS ELETRICIDADE** | Escala Nacional Brasil de Longo Prazo | `D` | **`brBB+`** | `+11` | Estável | 17/09/2026 |
@@ -37,6 +37,7 @@
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Longo prazo | `BB+` | **`BBB-`** | `+1` | Estável | 09/09/2026 |
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `A-` | **`A`** | `+1` | Estável | 09/09/2026 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 25/06/2026 |
+| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brB-` | **`brBB+`** | `+5` | Estável | 12/08/2024 |
 | Fitch | **VERT CSCF 2024** | bonds ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 7ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
@@ -44,7 +45,7 @@
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Curto prazo | `CP3` | **`CP2`** | `+1` | Estável | 23/09/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | `BBB-` | **`A`** | `+4` | Estável | 23/09/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 51
+### 🔴 Rebaixamentos de Rating (Downgrades) — 49
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Moody's | **IN** | Avaliações de Qualidade de Gestor de Investimentos | `MQ1.br` | **`MQ3.br`** | `-5` | Estável | 13/05/2025 |
@@ -57,7 +58,6 @@
 | Fitch | **COMPANHIA ESTADUAL GERACAO ENERGIA ELETRICA** | National Long Term Rating | `BBB-(bra)` | **`CCC+(bra)`** | `-7` | Em Observação | 08/09/2026 |
 | Liberum | **LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `AA-` | **`A-`** | `-3` | Negativa | 22/09/2026 |
 | Liberum | **INTRABANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE ILIMITADA** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/09/2026 |
-| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
 | Fitch | **OPEA SECURITIZADORA 2022** | notes ser 1 | `AAAsf(bra)` | **`AAsf(bra)`** | `-2` | Em Observação | 02/09/2026 |
 | Fitch | **FACTA INSS CB FIDC** | bonds ser 2022-1,2,3 | `AAAsf(bra)` | **`CCsf(bra)`** | `-19` | Estável | 12/06/2026 |
 | Fitch | **KANASTRA SECURITIZADORA 2024** | notes ser 5 | `AAAsf(bra)` | **`AA+sf(bra)`** | `-1` | Estável | 28/01/2026 |
@@ -68,7 +68,6 @@
 | Moody's | **THOPEN SOLAR 10** | 1ª Emissão de Debêntures - Série Única | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Moody's | **SLC AGRICOLA** | Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025 | `AA.br` | **`AA-.br`** | `-1` | Estável | 17/09/2026 |
 | Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 2ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 4ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
@@ -183,7 +182,7 @@
 | Fitch | **TRSP** | 2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033 | **`AA(bra)`** | Em Observação | 10/09/2026 |
 | *...e mais 15 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (15)
+### ⚪ Ratings Retirados / Liquidados (14)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **DELTA SUCROENERGIA** | Escala Nacional Brasil de Longo Prazo | `brAAA` | Estável | 02/09/2026 |
@@ -191,7 +190,6 @@
 | Fitch | **OI** | Local Currency Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **OI** | Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **ALLIANCA SAUDE PARTICIPACOES** | National Long Term Rating | `RD(bra)` | Estável | 15/09/2026 |
-| Fitch | **OPEA SECURITIZADORA 2023** | certificates ser 3 | `AAsf(bra)` | Estável | 15/06/2026 |
 | Fitch | **FIDC CONSIG PREMIUM II** | certificates ser 4 | `AA+sf(bra)` | Estável | 24/08/2026 |
 | Fitch | **BRAZIL** | BRL 177 bln Floating bond/note 01-Sep-2026 | `BB` | Estável | 01/09/2026 |
 | Fitch | **DMCARD SECURITIZADORA** | notes ser 1 | `BBB+sf(bra)` | Estável | 10/09/2026 |
@@ -204,4 +202,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (23/09/2026 → 24/09/2026)
-*Total nas últimas 24h: 🟢 0 upgrades | 🔴 4 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
