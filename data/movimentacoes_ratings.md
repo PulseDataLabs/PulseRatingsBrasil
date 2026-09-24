@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 17 | 15 | **32** |
+| 🟢 **Upgrades (Elevações)** | 17 | 18 | **35** |
 | 🔴 **Downgrades (Rebaixamentos)** | 8 | 41 | **49** |
-| 🔵 **Novos Ratings** | 2 | 46 | **48** |
-| 🟡 **Mudanças de Perspectiva** | 16 | 28 | **44** |
+| 🔵 **Novos Ratings** | 2 | 48 | **50** |
+| 🟡 **Mudanças de Perspectiva** | 17 | 28 | **45** |
 | ⚪ **Ratings Retirados / Liquidados** | 5 | 11 | **16** |
 
-### 🟢 Elevações de Rating (Upgrades) — 32
+### 🟢 Elevações de Rating (Upgrades) — 35
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **LIGHT SERVICOS ELETRICIDADE** | Escala Nacional Brasil de Longo Prazo | `D` | **`brBB+`** | `+11` | Estável | 17/09/2026 |
@@ -39,9 +39,12 @@
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Curto prazo | `CP4` | **`CP3`** | `+1` | Estável | 09/09/2026 |
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Longo prazo | `BB+` | **`BBB-`** | `+1` | Estável | 09/09/2026 |
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `A-` | **`A`** | `+1` | Estável | 09/09/2026 |
+| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA-` | **`brAA`** | `+1` | Estável | 27/09/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 25/06/2026 |
 | Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB-` | **`brBBB+`** | `+2` | Estável | 06/03/2024 |
+| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brB-` | **`brBB+`** | `+5` | Estável | 12/08/2024 |
 | Fitch | **VERT CSCF 2024** | bonds ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB-` | **`brBBB`** | `+4` | Negativa | 09/10/2025 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 7ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Fitch | **RIZA SECURITIZADORA 2024** | notes ser 3 | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 24/06/2026 |
@@ -102,7 +105,7 @@
 | Fitch | **COMPANHIA ESTADUAL GERACAO ENERGIA ELETRICA** | BRL 397 mln 8.722% bond/note 14-Dec-2041 | `BBB-(bra)` | **`CCC+(bra)`** | `-7` | Em Observação | 08/09/2026 |
 | Fitch | **COMPANHIA ESTADUAL GERACAO ENERGIA ELETRICA** | BRL 793 mln 8.722% bond/note 15-Dec-2041 | `BBB-(bra)` | **`CCC+(bra)`** | `-7` | Em Observação | 08/09/2026 |
 
-### 🟡 Mudanças de Perspectiva (Outlook) — 44
+### 🟡 Mudanças de Perspectiva (Outlook) — 45
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva Anterior | Nova Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | S&P | **ORIZON VALORIZACAO RESIDUOS** | Escala Nacional Brasil de Longo Prazo | `brAA+` | Negativa | **Estável** | 17/10/2022 |
@@ -121,6 +124,7 @@
 | Fitch | **EFI** | National Long Term Rating | `A(bra)` | Estável | **Negativa** | 18/09/2026 |
 | Fitch | **TRAVELEX BANCO CAMBIO** | National Long Term Rating | `BBB(bra)` | Estável | **Em Observação** | 18/09/2026 |
 | Fitch | **TRAVELEX BANCO CAMBIO** | National Short Term Rating | `F2(bra)` | Estável | **Em Observação** | 18/09/2026 |
+| Fitch | **COMPANHIA GAS ESTADO RIO GRANDE SUL** | National Long Term Rating | `AA(bra)` | Em Observação | **Negativa** | 23/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS FINANCEIROS FACTA CONSIGNADO INSS RESPONSABILIDADE LIMITADA** | Mezanino - Longo prazo | `BB` | Negativa | **Estável** | 14/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS FINANCEIROS FACTA CONSIGNADO INSS RESPONSABILIDADE LIMITADA** | Mezanino - Curto prazo | `CP4` | Negativa | **Estável** | 14/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS FINANCEIROS FACTA CONSIGNADO INSS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | `A` | Negativa | **Estável** | 14/09/2026 |
@@ -150,7 +154,7 @@
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 215 mln bond/note 15-Sep-2037 | `AAA(bra)` | Estável | **Negativa** | 11/09/2026 |
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 65 mln bond/note 15-Sep-2037 | `AAA(bra)` | Estável | **Negativa** | 11/09/2026 |
 
-### 🔵 Novos Ratings Atribuídos (48)
+### 🔵 Novos Ratings Atribuídos (50)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Moody's | **HSI GESTORA CREDITO PRIVADO** | Avaliações de Qualidade de Gestor de Investimentos | **`MQ2.br`** | Estável | 28/08/2026 |
@@ -183,7 +187,7 @@
 | Moody's | **IGARAPAVA SANEAMENTO** | 1ª Emissão de Debêntures - 1ª Série | **`AA.br`** | Estável | 02/09/2026 |
 | Moody's | **IGARAPAVA SANEAMENTO** | 1ª Emissão de Debêntures - 2ª Série | **`AA.br`** | Estável | 02/09/2026 |
 | Moody's | **COMPANHIA SANEAMENTO TOCANTINS** | 4ª Emissão de Debentures | **`AA.br`** | Estável | 03/09/2026 |
-| *...e mais 18 novos ratings.* | | | | | |
+| *...e mais 20 novos ratings.* | | | | | |
 
 ### ⚪ Ratings Retirados / Liquidados (16)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
@@ -193,8 +197,8 @@
 | Fitch | **OI** | Local Currency Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **OI** | Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **ALLIANCA SAUDE PARTICIPACOES** | National Long Term Rating | `RD(bra)` | Estável | 15/09/2026 |
-| Fitch | **OPEA SECURITIZADORA 2019** | notes ser 1 | `AAAsf(bra)` | Estável | 05/12/2019 |
-| Fitch | **ECO SECURITIZADORA 2022** | securities ser 1,2,3 | `AAAsf(bra)` | Estável | 15/01/2026 |
+| Fitch | **OCTANTE SECURITIZADORA 2021** | loans ser 2 | `Asf(bra)` | Estável | 06/12/2021 |
+| Fitch | **ECO SECURITIZADORA 2022** | loans ser 2 | `Asf(bra)` | Estável | 18/02/2026 |
 | Fitch | **FIDC CONSIG PREMIUM II** | certificates ser 4 | `AA+sf(bra)` | Estável | 24/08/2026 |
 | Fitch | **BRAZIL** | BRL 177 bln Floating bond/note 01-Sep-2026 | `BB` | Estável | 01/09/2026 |
 | Fitch | **DMCARD SECURITIZADORA** | notes ser 1 | `BBB+sf(bra)` | Estável | 10/09/2026 |
@@ -207,4 +211,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (22/09/2026 → 23/09/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 4 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 3 upgrades | 🔴 1 downgrades | 🔵 2 novos | 🟡 1 perspectivas | ⚪ 2 retirados.*
