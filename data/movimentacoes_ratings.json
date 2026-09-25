@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-09-24T16:25:24.284380",
+  "timestamp": "2026-09-24T23:44:27.646718",
   "dt_atual": "2026-09-24",
   "dt_anterior": "2026-09-23",
   "resumo": {
     "upgrades_emissores": 14,
-    "upgrades_emissoes": 14,
-    "total_upgrades": 28,
-    "downgrades_emissores": 8,
-    "downgrades_emissoes": 41,
-    "total_downgrades": 49,
+    "upgrades_emissoes": 13,
+    "total_upgrades": 27,
+    "downgrades_emissores": 9,
+    "downgrades_emissoes": 42,
+    "total_downgrades": 51,
     "novos_emissores": 2,
     "novos_emissoes": 43,
     "total_novos": 45,
@@ -16,19 +16,19 @@
     "outlooks_emissoes": 28,
     "total_outlooks": 45,
     "retirados_emissores": 5,
-    "retirados_emissoes": 9,
-    "total_retirados": 14
+    "retirados_emissoes": 11,
+    "total_retirados": 16
   },
   "periodo_recente": {
     "dt_atual": "2026-09-24",
     "dt_anterior": "2026-08-25",
     "resumo": {
       "upgrades_emissores": 14,
-      "upgrades_emissoes": 14,
-      "total_upgrades": 28,
-      "downgrades_emissores": 8,
-      "downgrades_emissoes": 41,
-      "total_downgrades": 49,
+      "upgrades_emissoes": 13,
+      "total_upgrades": 27,
+      "downgrades_emissores": 9,
+      "downgrades_emissoes": 42,
+      "total_downgrades": 51,
       "novos_emissores": 2,
       "novos_emissoes": 43,
       "total_novos": 45,
@@ -36,8 +36,8 @@
       "outlooks_emissoes": 28,
       "total_outlooks": 45,
       "retirados_emissores": 5,
-      "retirados_emissoes": 9,
-      "total_retirados": 14
+      "retirados_emissoes": 11,
+      "total_retirados": 16
     },
     "emissores": {
       "tipo": "emissores",
@@ -292,6 +292,19 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
+        },
+        {
+          "agencia": "S&P",
+          "emissor": "GJA INDUSTRIAS",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2026-09-24",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000270",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBB-",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-5"
         },
         {
           "agencia": "Moody's",
@@ -728,19 +741,6 @@
           "variacao_notches": "+2"
         },
         {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brB-",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+5"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "VERT CSCF 2024",
           "instrumento": "bonds ser 3",
@@ -783,7 +783,7 @@
           "agencia": "Fitch",
           "emissor": "RIZA SECURITIZADORA 2024",
           "instrumento": "notes ser 3",
-          "dt_acao": "2026-06-24",
+          "dt_acao": "2026-09-24",
           "link": "https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2024-218-1-2-3-jbs-97652090#issues",
           "rating_anterior": "AAsf(bra)",
           "rating_atual": "AAAsf(bra)",
@@ -975,6 +975,19 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
         },
         {
           "agencia": "Moody's",
@@ -2170,6 +2183,32 @@
       "retirados": [
         {
           "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2019",
+          "instrumento": "notes ser 1",
+          "dt_acao": "2019-12-05",
+          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "WDsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "instrumento": "securities ser 1,2,3",
+          "dt_acao": "2026-01-15",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "FIDC CONSIG PREMIUM II",
           "instrumento": "certificates ser 4",
           "dt_acao": "2026-08-24",
@@ -2295,9 +2334,9 @@
       "upgrades_emissores": 0,
       "upgrades_emissoes": 0,
       "total_upgrades": 0,
-      "downgrades_emissores": 0,
-      "downgrades_emissoes": 1,
-      "total_downgrades": 1,
+      "downgrades_emissores": 1,
+      "downgrades_emissoes": 2,
+      "total_downgrades": 3,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2305,15 +2344,29 @@
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 0,
-      "total_retirados": 0
+      "retirados_emissoes": 2,
+      "total_retirados": 2
     },
     "emissores": {
       "tipo": "emissores",
       "dt_atual": "2026-09-24",
       "dt_anterior": "2026-09-23",
       "upgrades": [],
-      "downgrades": [],
+      "downgrades": [
+        {
+          "agencia": "S&P",
+          "emissor": "GJA INDUSTRIAS",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2026-09-24",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000270",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBB-",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-5"
+        }
+      ],
       "novos": [],
       "outlooks": [],
       "retirados": []
@@ -2326,24 +2379,96 @@
       "downgrades": [
         {
           "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
+          "emissor": "FIDC IC SOMAPAY",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brB-",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "variacao_notches": "-5"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
         }
       ],
       "novos": [],
       "outlooks": [],
-      "retirados": []
+      "retirados": [
+        {
+          "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2019",
+          "instrumento": "notes ser 1",
+          "dt_acao": "2019-12-05",
+          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "WDsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "instrumento": "securities ser 1,2,3",
+          "dt_acao": "2026-01-15",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        }
+      ]
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "S&P",
+      "emissor": "GJA INDUSTRIAS",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "dt_acao": "2026-09-24",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000270",
+      "rating_anterior": "brBBB+",
+      "rating_atual": "brBB-",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-5",
+      "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-09-24"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "RIZA SECURITIZADORA 2024",
+      "instrumento": "notes ser 3",
+      "dt_acao": "2026-09-24",
+      "link": "https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2024-218-1-2-3-jbs-97652090#issues",
+      "rating_anterior": "AAsf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+2",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-09-24"
+    },
     {
       "agencia": "Fitch",
       "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
@@ -4932,22 +5057,6 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2024",
-      "instrumento": "notes ser 3",
-      "dt_acao": "2026-06-24",
-      "link": "https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2024-218-1-2-3-jbs-97652090#issues",
-      "rating_anterior": "AAsf(bra)",
-      "rating_atual": "AAAsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+2",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-09-24"
-    },
-    {
-      "agencia": "Fitch",
       "emissor": "OPEA SECURITIZADORA 2024",
       "instrumento": "notes ser 3",
       "dt_acao": "2026-06-24",
@@ -5043,6 +5152,22 @@
       "dt_captura": "2026-09-24"
     },
     {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "securities ser 1,2,3",
+      "dt_acao": "2026-01-15",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-09-24"
+    },
+    {
       "agencia": "Moody's",
       "emissor": "VINLAND CAPITAL MANAGEMENT CREDITO PRIVADO GESTORA RECURSOS",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -5056,6 +5181,22 @@
       "variacao_notches": "+2",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
+      "dt_captura": "2026-09-24"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FICTOR INVEST FIDC",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2025-10-09",
+      "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBBB",
+      "rating_atual": "brBB",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-3",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-09-24"
     },
     {
@@ -5075,22 +5216,6 @@
       "dt_captura": "2026-09-24"
     },
     {
-      "agencia": "Austin",
-      "emissor": "FIDC IC SOMAPAY",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2024-08-12",
-      "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brB-",
-      "rating_atual": "brBB+",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+5",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-09-24"
-    },
-    {
       "agencia": "S&P",
       "emissor": "ORIZON VALORIZACAO RESIDUOS",
       "instrumento": "Escala Nacional Brasil de Longo Prazo",
@@ -5104,9 +5229,41 @@
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
       "dt_captura": "2026-09-24"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2019",
+      "instrumento": "notes ser 1",
+      "dt_acao": "2019-12-05",
+      "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "WDsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-09-24"
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "S&P",
+      "emissor": "GJA INDUSTRIAS",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "tipo_movimento": "DOWNGRADE",
+      "rating_anterior": "brBBB+",
+      "rating_atual": "brBB-",
+      "variacao_notches": "-5",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "dt_acao": "2026-09-24",
+      "dt_captura": "2026-09-24",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000270"
+    },
     {
       "agencia": "Fitch",
       "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
@@ -7956,6 +8113,22 @@
       "link": "https://www.fitchratings.com/entity/kanastra-securtitzadora-2024-1-1-2-3-4-5-solfacil-97530370#issues"
     },
     {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "securities ser 1,2,3",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-01-15",
+      "dt_captura": "2026-09-24",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues"
+    },
+    {
       "agencia": "S&P",
       "emissor": "ORIZON VALORIZACAO RESIDUOS",
       "instrumento": "Escala Nacional Brasil de Longo Prazo",
@@ -7970,6 +8143,22 @@
       "dt_acao": "2022-10-17",
       "dt_captura": "2026-09-24",
       "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1000779"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2019",
+      "instrumento": "notes ser 1",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "WDsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2019-12-05",
+      "dt_captura": "2026-09-24",
+      "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues"
     },
     {
       "agencia": "Liberum",
@@ -107043,6 +107232,19 @@
         "variacao_notches": "-1"
       },
       {
+        "agencia": "S&P",
+        "emissor": "GJA INDUSTRIAS",
+        "instrumento": "Escala Nacional Brasil de Longo Prazo",
+        "dt_acao": "2026-09-24",
+        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000270",
+        "rating_anterior": "brBBB+",
+        "rating_atual": "brBB-",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-5"
+      },
+      {
         "agencia": "Moody's",
         "emissor": "GJA INDUSTRIAS",
         "instrumento": "Rating de Emissor",
@@ -107477,19 +107679,6 @@
         "variacao_notches": "+2"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FIDC IC SOMAPAY",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2024-08-12",
-        "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brB-",
-        "rating_atual": "brBB+",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+5"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "VERT CSCF 2024",
         "instrumento": "bonds ser 3",
@@ -107532,7 +107721,7 @@
         "agencia": "Fitch",
         "emissor": "RIZA SECURITIZADORA 2024",
         "instrumento": "notes ser 3",
-        "dt_acao": "2026-06-24",
+        "dt_acao": "2026-09-24",
         "link": "https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2024-218-1-2-3-jbs-97652090#issues",
         "rating_anterior": "AAsf(bra)",
         "rating_atual": "AAAsf(bra)",
@@ -107724,6 +107913,19 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-1"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBBB",
+        "rating_atual": "brBB",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-3"
       },
       {
         "agencia": "Moody's",
@@ -108917,6 +109119,32 @@
       }
     ],
     "retirados": [
+      {
+        "agencia": "Fitch",
+        "emissor": "OPEA SECURITIZADORA 2019",
+        "instrumento": "notes ser 1",
+        "dt_acao": "2019-12-05",
+        "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "WDsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "ECO SECURITIZADORA 2022",
+        "instrumento": "securities ser 1,2,3",
+        "dt_acao": "2026-01-15",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "PIFsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
       {
         "agencia": "Fitch",
         "emissor": "FIDC CONSIG PREMIUM II",
