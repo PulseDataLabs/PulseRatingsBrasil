@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-25T16:18:20.845309",
+  "timestamp": "2026-09-25T23:50:00.973411",
   "dt_atual": "2026-09-25",
   "dt_anterior": "2026-09-24",
   "resumo": {
@@ -840,6 +840,19 @@
           "variacao_notches": "-19"
         },
         {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "KANASTRA SECURITIZADORA 2024",
           "instrumento": "notes ser 5",
@@ -942,19 +955,6 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBBB",
-          "rating_atual": "brBB-",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-4"
         },
         {
           "agencia": "Moody's",
@@ -1645,10 +1645,10 @@
         },
         {
           "agencia": "Fitch",
-          "emissor": "COMPASS GAS ENERGIA",
-          "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
+          "emissor": "TRSP",
+          "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
           "dt_acao": "2026-09-10",
-          "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
+          "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
           "rating_atual": "AA(bra)",
           "outlook_atual": "Em Observação",
           "tipo_movimento": "NOVO",
@@ -1656,10 +1656,10 @@
         },
         {
           "agencia": "Fitch",
-          "emissor": "TRSP",
-          "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
+          "emissor": "COMPASS GAS ENERGIA",
+          "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
           "dt_acao": "2026-09-10",
-          "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
+          "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
           "rating_atual": "AA(bra)",
           "outlook_atual": "Em Observação",
           "tipo_movimento": "NOVO",
@@ -2345,8 +2345,8 @@
     "dt_anterior": "2026-09-24",
     "resumo": {
       "upgrades_emissores": 2,
-      "upgrades_emissoes": 0,
-      "total_upgrades": 2,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 4,
       "downgrades_emissores": 0,
       "downgrades_emissoes": 1,
       "total_downgrades": 1,
@@ -2401,20 +2401,47 @@
       "tipo": "emissoes",
       "dt_atual": "2026-09-25",
       "dt_anterior": "2026-09-24",
-      "upgrades": [],
-      "downgrades": [
+      "upgrades": [
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        },
         {
           "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB",
-          "rating_atual": "brBB-",
+          "rating_atual": "brBBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+3"
+        }
+      ],
+      "downgrades": [
+        {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
+          "variacao_notches": "-2"
         }
       ],
       "novos": [
@@ -3928,10 +3955,10 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "COMPASS GAS ENERGIA",
-      "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
+      "emissor": "TRSP",
+      "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
       "dt_acao": "2026-09-10",
-      "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
+      "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
       "rating_atual": "AA(bra)",
       "outlook_atual": "Em Observação",
       "tipo_movimento": "NOVO",
@@ -3942,10 +3969,10 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "TRSP",
-      "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
+      "emissor": "COMPASS GAS ENERGIA",
+      "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
       "dt_acao": "2026-09-10",
-      "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
+      "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
       "rating_atual": "AA(bra)",
       "outlook_atual": "Em Observação",
       "tipo_movimento": "NOVO",
@@ -5238,22 +5265,6 @@
       "dt_captura": "2026-09-25"
     },
     {
-      "agencia": "Austin",
-      "emissor": "FICTOR INVEST FIDC",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBBB",
-      "rating_atual": "brBB-",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-4",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-09-25"
-    },
-    {
       "agencia": "Moody's",
       "emissor": "IN",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -5266,6 +5277,22 @@
       "tipo_movimento": "DOWNGRADE",
       "variacao_notches": "-5",
       "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-09-25"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "HIGH YIELD YALEEH FIDC",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB+",
+      "rating_atual": "brBBB-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
+      "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-09-25"
     },
@@ -110760,6 +110787,19 @@
         "variacao_notches": "-19"
       },
       {
+        "agencia": "Austin",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB+",
+        "rating_atual": "brBBB-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "KANASTRA SECURITIZADORA 2024",
         "instrumento": "notes ser 5",
@@ -110862,19 +110902,6 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBBB",
-        "rating_atual": "brBB-",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-4"
       },
       {
         "agencia": "Moody's",
@@ -111565,10 +111592,10 @@
       },
       {
         "agencia": "Fitch",
-        "emissor": "COMPASS GAS ENERGIA",
-        "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
+        "emissor": "TRSP",
+        "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
         "dt_acao": "2026-09-10",
-        "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
+        "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
         "rating_atual": "AA(bra)",
         "outlook_atual": "Em Observação",
         "tipo_movimento": "NOVO",
@@ -111576,10 +111603,10 @@
       },
       {
         "agencia": "Fitch",
-        "emissor": "TRSP",
-        "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
+        "emissor": "COMPASS GAS ENERGIA",
+        "instrumento": "BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years",
         "dt_acao": "2026-09-10",
-        "link": "https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746#issues",
+        "link": "https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144#issues",
         "rating_atual": "AA(bra)",
         "outlook_atual": "Em Observação",
         "tipo_movimento": "NOVO",

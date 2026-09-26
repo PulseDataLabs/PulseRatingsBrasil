@@ -63,6 +63,7 @@
 | Liberum | **INTRABANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE ILIMITADA** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/09/2026 |
 | Fitch | **OPEA SECURITIZADORA 2022** | notes ser 1 | `AAAsf(bra)` | **`AAsf(bra)`** | `-2` | Em Observação | 02/09/2026 |
 | Fitch | **FACTA INSS CB FIDC** | bonds ser 2022-1,2,3 | `AAAsf(bra)` | **`CCsf(bra)`** | `-19` | Estável | 12/06/2026 |
+| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB+` | **`brBBB-`** | `-2` | Estável | 06/03/2024 |
 | Fitch | **KANASTRA SECURITIZADORA 2024** | notes ser 5 | `AAAsf(bra)` | **`AA+sf(bra)`** | `-1` | Estável | 28/01/2026 |
 | Moody's | **CREDITCORP SECURITIZADORA** | 1ª Série da 7ª Emissão | `(P)AAA.br (sf)` | **`AA+.br (sf)`** | `-1` | Estável | 27/08/2026 |
 | Moody's | **CREDITCORP SECURITIZADORA** | 2ª Série da 7ª Emissão | `(P)BBB.br (sf)` | **`BBB-.br (sf)`** | `-1` | Estável | 27/08/2026 |
@@ -71,7 +72,6 @@
 | Moody's | **THOPEN SOLAR 10** | 1ª Emissão de Debêntures - Série Única | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Moody's | **SLC AGRICOLA** | Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025 | `AA.br` | **`AA-.br`** | `-1` | Estável | 17/09/2026 |
 | Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB-`** | `-4` | Negativa | 09/10/2025 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 2ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 4ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
@@ -203,4 +203,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (24/09/2026 → 25/09/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 1 downgrades | 🔵 1 novos | 🟡 0 perspectivas | ⚪ 3 retirados.*
+*Total nas últimas 24h: 🟢 4 upgrades | 🔴 1 downgrades | 🔵 1 novos | 🟡 0 perspectivas | ⚪ 3 retirados.*
