@@ -8,7 +8,7 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 16 | 13 | **29** |
-| 🔴 **Downgrades (Rebaixamentos)** | 9 | 39 | **48** |
+| 🔴 **Downgrades (Rebaixamentos)** | 9 | 38 | **47** |
 | 🔵 **Novos Ratings** | 1 | 36 | **37** |
 | 🟡 **Mudanças de Perspectiva** | 10 | 27 | **37** |
 | ⚪ **Ratings Retirados / Liquidados** | 5 | 12 | **17** |
@@ -46,7 +46,7 @@
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Curto prazo | `CP3` | **`CP2`** | `+1` | Estável | 23/09/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | `BBB-` | **`A`** | `+4` | Estável | 23/09/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 48
+### 🔴 Rebaixamentos de Rating (Downgrades) — 47
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Moody's | **IN** | Avaliações de Qualidade de Gestor de Investimentos | `MQ1.br` | **`MQ3.br`** | `-5` | Estável | 13/05/2025 |
@@ -68,7 +68,6 @@
 | Moody's | **THOPEN SOLAR 10** | 1ª Emissão de Debêntures - Série Única | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Moody's | **SLC AGRICOLA** | Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025 | `AA.br` | **`AA-.br`** | `-1` | Estável | 17/09/2026 |
 | Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 2ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 4ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
@@ -197,4 +196,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (25/09/2026 → 28/09/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
+*Total nas últimas 24h: 🟢 1 upgrades | 🔴 2 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
