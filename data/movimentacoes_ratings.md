@@ -9,9 +9,9 @@
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 16 | 13 | **29** |
 | 🔴 **Downgrades (Rebaixamentos)** | 9 | 39 | **48** |
-| 🔵 **Novos Ratings** | 1 | 36 | **37** |
+| 🔵 **Novos Ratings** | 2 | 42 | **44** |
 | 🟡 **Mudanças de Perspectiva** | 10 | 27 | **37** |
-| ⚪ **Ratings Retirados / Liquidados** | 5 | 12 | **17** |
+| ⚪ **Ratings Retirados / Liquidados** | 5 | 14 | **19** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 29
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -30,8 +30,8 @@
 | Fitch | **LD CELULOSE** | National Long Term Rating | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 09/09/2026 |
 | Fitch | **LD CELULOSE** | Local Currency Long Term Issuer Default Rating | `BB-` | **`BB`** | `+1` | Estável | 09/09/2026 |
 | Fitch | **COOPERATIVA CREDITO VALE ITAJAI** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 15/09/2026 |
-| Fitch | **QI SOCIEDADE CREDITO DIRETO** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Fitch | **QI PARTICIPACOES** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
+| Fitch | **QI SOCIEDADE CREDITO DIRETO** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Liberum | **KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `BBB-` | **`BBB`** | `+1` | Estável | 17/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS LF I** | Mezanino - Longo prazo | `BBB` | **`A-`** | `+2` | Estável | 02/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS LF I** | Mezanino - Curto prazo | `CP3` | **`CP2`** | `+1` | Estável | 02/09/2026 |
@@ -68,7 +68,7 @@
 | Moody's | **THOPEN SOLAR 10** | 1ª Emissão de Debêntures - Série Única | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Moody's | **SLC AGRICOLA** | Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025 | `AA.br` | **`AA-.br`** | `-1` | Estável | 17/09/2026 |
 | Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brB+`** | `-5` | Negativa | 09/10/2025 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 2ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 4ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
@@ -139,10 +139,11 @@
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 215 mln bond/note 15-Sep-2037 | `AAA(bra)` | Estável | **Negativa** | 11/09/2026 |
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 65 mln bond/note 15-Sep-2037 | `AAA(bra)` | Estável | **Negativa** | 11/09/2026 |
 
-### 🔵 Novos Ratings Atribuídos (37)
+### 🔵 Novos Ratings Atribuídos (44)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Moody's | **COMPANHIA SANEAMENTO TOCANTINS** | Rating de Emissor | **`AA.br`** | Estável | 03/09/2026 |
+| Moody's | **MOTIVA INFRAESTRUTURA MOBILIDADE** | Rating Corporativo | **`AAA.br`** | Estável | 25/09/2026 |
 | Moody's | **SUL CONCESSOES PARTICIPACOES** | 3ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 24/09/2026 |
 | Moody's | **COMPANHIA AGUAS ITAPEMA** | 2ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 21/09/2026 |
 | Moody's | **TRANSMISSORA ALIANCA ENERGIA ELETRICA** | 12ª Emissão de Debêntures - 1ª Série | **`AAA.br`** | Estável | 11/09/2026 |
@@ -151,6 +152,9 @@
 | Moody's | **TRANSMISSORA ALIANCA ENERGIA ELETRICA** | 6ª Emissão de Debêntures - 2ª Série | **`AAA.br`** | Estável | 11/09/2026 |
 | Moody's | **JANAUBA TRANSMISSORA ENERGIA ELETRICA** | 1ª Emissão de Debêntures - Série Única | **`AAA.br`** | Estável | 11/09/2026 |
 | Moody's | **JANAUBA TRANSMISSORA ENERGIA ELETRICA** | 2ª Emissão de Debêntures - Série Única | **`AAA.br`** | Estável | 11/09/2026 |
+| Moody's | **ARGO ENERGIA EMPREENDIMENTOS PARTICIPACOES** | 1ª Emissão de Debêntures - 1ª Série | **`AAA.br`** | Estável | 25/09/2026 |
+| Moody's | **ARGO ENERGIA EMPREENDIMENTOS PARTICIPACOES** | 1ª Emissão de Debêntures - 2ª Série | **`AAA.br`** | Estável | 25/09/2026 |
+| Moody's | **ARGO ENERGIA EMPREENDIMENTOS PARTICIPACOES** | 1ª Emissão de Debêntures - 3ª Série | **`AAA.br`** | Estável | 25/09/2026 |
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 1a serie - 2nd Debenture  BRL 375 mln bond/note 15-Dec-2045 | **`AA-(bra)`** | Em Observação | 31/08/2026 |
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042 | **`AA-(bra)`** | Em Observação | 31/08/2026 |
 | Moody's | **IGARAPAVA SANEAMENTO** | 1ª Emissão de Debêntures - 1ª Série | **`AA.br`** | Estável | 02/09/2026 |
@@ -161,20 +165,16 @@
 | Moody's | **VTK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Rating da Classe Sênior | **`AAA.br (sf)`** | Estável | 04/09/2026 |
 | Moody's | **HYPERA** | 22ª Emissão de Debêntures - Série Única | **`AAA.br`** | Estável | 08/09/2026 |
 | Moody's | **VIBRA ENERGIA** | 11ª Emissão de Debêntures | **`AAA.br`** | Estável | 08/09/2026 |
-| Fitch | **TRSP** | 2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033 | **`AA(bra)`** | Em Observação | 10/09/2026 |
 | Fitch | **COMPASS GAS ENERGIA** | BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years | **`AA(bra)`** | Em Observação | 10/09/2026 |
+| Fitch | **TRSP** | 2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033 | **`AA(bra)`** | Em Observação | 10/09/2026 |
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 143 mln bond/note 15-Sep-2037 | **`AAA(bra)`** | Negativa | 11/09/2026 |
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 43 mln bond/note 15-Sep-2037 | **`AAA(bra)`** | Negativa | 11/09/2026 |
 | Moody's | **MEZ 6 ENERGIA** | 2ª Emissão de Debêntures - Série Única | **`AA-.br`** | Estável | 15/09/2026 |
 | Fitch | **CIELO** | 10a Debentures (Serie Unica) BRL 2.5 bln Floating CDI (Brazil) bond/note | **`AAA(bra)`** | Estável | 15/09/2026 |
 | Moody's | **RIZA SECURITIZADORA** | Série Única da 217ª Emissão de CRAs | **`A.br (sf)`** | Estável | 16/09/2026 |
-| Fitch | **CIMED CO.** | 6ª Emissão de Debêntures de BRL200 milhões e vencimento em 2031 | **`AA(bra)`** | Estável | 18/09/2026 |
-| Fitch | **CIMED CO.** | 6ª Emissão de Debêntures de BRL 200 milhões  e vencimento em2031 | **`AA(bra)`** | Estável | 18/09/2026 |
-| Fitch | **NOVA TRANSPORTADORA SUDESTE** | 13th Debenture - BRL 1.5 bln bond/note | **`AAA(bra)`** | Estável | 21/09/2026 |
-| Moody's | **MOVIDA PARTICIPACOES** | 29ª Emissão de Debêntures - Série Única | **`AA+.br`** | Estável | 22/09/2026 |
-| *...e mais 7 novos ratings.* | | | | | |
+| *...e mais 14 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (17)
+### ⚪ Ratings Retirados / Liquidados (19)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **DELTA SUCROENERGIA** | Escala Nacional Brasil de Longo Prazo | `brAAA` | Estável | 02/09/2026 |
@@ -182,14 +182,16 @@
 | Fitch | **OI** | Local Currency Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **OI** | Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **ALLIANCA SAUDE PARTICIPACOES** | National Long Term Rating | `RD(bra)` | Estável | 15/09/2026 |
+| Fitch | **OPEA SECURITIZADORA 2019** | notes ser 1 | `AAAsf(bra)` | Estável | 05/12/2019 |
+| Fitch | **ECO SECURITIZADORA 2022** | securities ser 1,2,3 | `AAAsf(bra)` | Estável | 15/01/2026 |
 | Fitch | **OPEA SECURITIZADORA 2022** | notes ser 3 | `AAAsf(bra)` | Estável | 15/09/2026 |
 | Fitch | **BRAZIL** | BRL 177 bln Floating bond/note 01-Sep-2026 | `BB` | Estável | 01/09/2026 |
 | Fitch | **DMCARD SECURITIZADORA** | notes ser 1 | `BBB+sf(bra)` | Estável | 10/09/2026 |
 | Fitch | **OI** | USD 1.46 bln 8.5% bond/note 31-Dec-2028  credit agreement dated as of 08-Aug-2024 | `C` | Estável | 11/09/2026 |
 | Fitch | **OI** | USD 699.66 mln 10% bond/note 30-Jun-2027 | `C` | Estável | 11/09/2026 |
 | Fitch | **TOTVS** | BRL 1.5 bln Floating CDI (Brazil) 0.95% bond/note 19-Jul-2031 | `AAA(bra)` | Estável | 11/09/2026 |
-| Fitch | **EMPREENDIMENTOS PAGUE MENOS** | BRL350 mln / 6th debenture / tranche 2 / NOV.2028 | `AA-(bra)` | Estável | 11/09/2026 |
 | Fitch | **COPEL DISTRIBUICAO** | BRL 1.6 bln Floating bond/note 15-Jun-2028 | `AAA(bra)` | Estável | 11/09/2026 |
+| Fitch | **EMPREENDIMENTOS PAGUE MENOS** | BRL350 mln / 6th debenture / tranche 2 / NOV.2028 | `AA-(bra)` | Estável | 11/09/2026 |
 | Fitch | **HIDROVIAS** | 2nd Debentures Issuance BRL 500 mln bond/note 21-Jul-2029 | `AAA(bra)` | Estável | 18/09/2026 |
 | Fitch | **ICRED CHOPIN INSS FIDC** | certificates ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
 | Fitch | **ICRED INSS III FIDC** | notes ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
@@ -197,4 +199,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (28/09/2026 → 29/09/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 1 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 2 retirados.*
