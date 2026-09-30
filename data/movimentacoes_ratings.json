@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-30T00:25:16.811841",
+  "timestamp": "2026-09-30T13:19:09.581764",
   "dt_atual": "2026-09-30",
   "dt_anterior": "2026-09-29",
   "resumo": {
@@ -7,8 +7,8 @@
     "upgrades_emissoes": 16,
     "total_upgrades": 32,
     "downgrades_emissores": 9,
-    "downgrades_emissoes": 39,
-    "total_downgrades": 48,
+    "downgrades_emissoes": 37,
+    "total_downgrades": 46,
     "novos_emissores": 3,
     "novos_emissoes": 43,
     "total_novos": 46,
@@ -16,8 +16,8 @@
     "outlooks_emissoes": 26,
     "total_outlooks": 36,
     "retirados_emissores": 5,
-    "retirados_emissoes": 15,
-    "total_retirados": 20
+    "retirados_emissoes": 16,
+    "total_retirados": 21
   },
   "periodo_recente": {
     "dt_atual": "2026-09-30",
@@ -27,8 +27,8 @@
       "upgrades_emissoes": 16,
       "total_upgrades": 32,
       "downgrades_emissores": 9,
-      "downgrades_emissoes": 39,
-      "total_downgrades": 48,
+      "downgrades_emissoes": 37,
+      "total_downgrades": 46,
       "novos_emissores": 3,
       "novos_emissoes": 43,
       "total_novos": 46,
@@ -36,8 +36,8 @@
       "outlooks_emissoes": 26,
       "total_outlooks": 36,
       "retirados_emissores": 5,
-      "retirados_emissoes": 15,
-      "total_retirados": 20
+      "retirados_emissoes": 16,
+      "total_retirados": 21
     },
     "emissores": {
       "tipo": "emissores",
@@ -917,19 +917,6 @@
           "variacao_notches": "-1"
         },
         {
-          "agencia": "Fitch",
-          "emissor": "BRAZILIAN SECURITIES 2011",
-          "instrumento": "certificates",
-          "dt_acao": "2025-10-29",
-          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
-          "rating_anterior": "BBBsf(bra)",
-          "rating_atual": "BBsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-3"
-        },
-        {
           "agencia": "Moody's",
           "emissor": "SLC AGRICOLA",
           "instrumento": "Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025",
@@ -954,19 +941,6 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBBB",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
         },
         {
           "agencia": "Moody's",
@@ -2304,6 +2278,19 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "RETIRADO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "BANCO",
+          "instrumento": "USD 750 mln 3.25% bond/note 30-Sep-2026",
+          "dt_acao": "2026-09-30",
+          "link": "https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721#issues",
+          "rating_anterior": "BB",
+          "rating_atual": "NR",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
         }
       ]
     }
@@ -2313,11 +2300,11 @@
     "dt_anterior": "2026-09-29",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 3,
-      "total_upgrades": 3,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 1,
-      "total_downgrades": 1,
+      "downgrades_emissoes": 0,
+      "total_downgrades": 0,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2325,8 +2312,8 @@
       "outlooks_emissoes": 1,
       "total_outlooks": 1,
       "retirados_emissores": 0,
-      "retirados_emissoes": 2,
-      "total_retirados": 2
+      "retirados_emissoes": 3,
+      "total_retirados": 3
     },
     "emissores": {
       "tipo": "emissores",
@@ -2358,46 +2345,19 @@
         },
         {
           "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brB-",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+5"
-        },
-        {
-          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brB+",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
+          "variacao_notches": "+5"
         }
       ],
-      "downgrades": [
-        {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
-        }
-      ],
+      "downgrades": [],
       "novos": [],
       "outlooks": [
         {
@@ -2439,11 +2399,40 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "RETIRADO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "BANCO",
+          "instrumento": "USD 750 mln 3.25% bond/note 30-Sep-2026",
+          "dt_acao": "2026-09-30",
+          "link": "https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721#issues",
+          "rating_anterior": "BB",
+          "rating_atual": "NR",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
         }
       ]
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Fitch",
+      "emissor": "BANCO",
+      "instrumento": "USD 750 mln 3.25% bond/note 30-Sep-2026",
+      "dt_acao": "2026-09-30",
+      "link": "https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721#issues",
+      "rating_anterior": "BB",
+      "rating_atual": "NR",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-09-30"
+    },
     {
       "agencia": "Fitch",
       "emissor": "RIZA SECURITIZADORA 2019",
@@ -5149,38 +5138,6 @@
       "dt_captura": "2026-09-30"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "BRAZILIAN SECURITIES 2011",
-      "instrumento": "certificates",
-      "dt_acao": "2025-10-29",
-      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
-      "rating_anterior": "BBBsf(bra)",
-      "rating_atual": "BBsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-3",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-09-30"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FICTOR INVEST FIDC",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBBB",
-      "rating_atual": "brBB+",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-09-30"
-    },
-    {
       "agencia": "Moody's",
       "emissor": "IN",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -5230,6 +5187,22 @@
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "Fitch",
+      "emissor": "BANCO",
+      "instrumento": "USD 750 mln 3.25% bond/note 30-Sep-2026",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "BB",
+      "rating_atual": "NR",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-09-30",
+      "dt_captura": "2026-09-30",
+      "link": "https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721#issues"
+    },
     {
       "agencia": "Fitch",
       "emissor": "RIZA SECURITIZADORA 2019",
@@ -119053,19 +119026,6 @@
         "variacao_notches": "-1"
       },
       {
-        "agencia": "Fitch",
-        "emissor": "BRAZILIAN SECURITIES 2011",
-        "instrumento": "certificates",
-        "dt_acao": "2025-10-29",
-        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
-        "rating_anterior": "BBBsf(bra)",
-        "rating_atual": "BBsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-3"
-      },
-      {
         "agencia": "Moody's",
         "emissor": "SLC AGRICOLA",
         "instrumento": "Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025",
@@ -119090,19 +119050,6 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBBB",
-        "rating_atual": "brBB+",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
       },
       {
         "agencia": "Moody's",
@@ -120436,6 +120383,19 @@
         "link": "https://www.fitchratings.com/entity/ccr-sa-80614467#issues",
         "rating_anterior": "AAA(bra)",
         "rating_atual": "WD(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "BANCO",
+        "instrumento": "USD 750 mln 3.25% bond/note 30-Sep-2026",
+        "dt_acao": "2026-09-30",
+        "link": "https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721#issues",
+        "rating_anterior": "BB",
+        "rating_atual": "NR",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "RETIRADO",

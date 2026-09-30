@@ -8,10 +8,10 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 16 | 16 | **32** |
-| 🔴 **Downgrades (Rebaixamentos)** | 9 | 39 | **48** |
+| 🔴 **Downgrades (Rebaixamentos)** | 9 | 37 | **46** |
 | 🔵 **Novos Ratings** | 3 | 43 | **46** |
 | 🟡 **Mudanças de Perspectiva** | 10 | 26 | **36** |
-| ⚪ **Ratings Retirados / Liquidados** | 5 | 15 | **20** |
+| ⚪ **Ratings Retirados / Liquidados** | 5 | 16 | **21** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 32
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -49,7 +49,7 @@
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Curto prazo | `CP3` | **`CP2`** | `+1` | Estável | 23/09/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | `BBB-` | **`A`** | `+4` | Estável | 23/09/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 48
+### 🔴 Rebaixamentos de Rating (Downgrades) — 46
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Moody's | **IN** | Avaliações de Qualidade de Gestor de Investimentos | `MQ1.br` | **`MQ3.br`** | `-5` | Estável | 13/05/2025 |
@@ -69,10 +69,8 @@
 | Moody's | **THOPEN SOLAR 12 SPE** | 1ª Emissão de Debêntures - Série Única | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Fitch | **CSCF CARTOES CONSIGNADOS II 2025** | notes ser 1,2,3 | `AAAsf(bra)` | **`AAsf(bra)`** | `-2` | Estável | 29/04/2026 |
 | Moody's | **THOPEN SOLAR 10** | 1ª Emissão de Debêntures - Série Única | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
-| Fitch | **BRAZILIAN SECURITIES 2011** | certificates | `BBBsf(bra)` | **`BBsf(bra)`** | `-3` | Estável | 29/10/2025 |
 | Moody's | **SLC AGRICOLA** | Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025 | `AA.br` | **`AA-.br`** | `-1` | Estável | 17/09/2026 |
 | Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 2ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 4ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
@@ -176,7 +174,7 @@
 | Fitch | **CIELO** | 10a Debentures (Serie Unica) BRL 2.5 bln Floating CDI (Brazil) bond/note | **`AAA(bra)`** | Estável | 15/09/2026 |
 | *...e mais 16 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (20)
+### ⚪ Ratings Retirados / Liquidados (21)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **DELTA SUCROENERGIA** | Escala Nacional Brasil de Longo Prazo | `brAAA` | Estável | 02/09/2026 |
@@ -199,7 +197,8 @@
 | Fitch | **ICRED CHOPIN INSS FIDC** | certificates ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
 | Fitch | **ICRED INSS III FIDC** | notes ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
 | Fitch | **MOTIVA INFRAESTRUTURA MOBILIDADE** | 18a debenture - BRL 1.32 bln bond/note 15-May-2030 | `AAA(bra)` | Estável | 28/09/2026 |
+| Fitch | **BANCO** | USD 750 mln 3.25% bond/note 30-Sep-2026 | `BB` | Estável | 30/09/2026 |
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (29/09/2026 → 30/09/2026)
-*Total nas últimas 24h: 🟢 3 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 1 perspectivas | ⚪ 2 retirados.*
+*Total nas últimas 24h: 🟢 2 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 1 perspectivas | ⚪ 3 retirados.*
