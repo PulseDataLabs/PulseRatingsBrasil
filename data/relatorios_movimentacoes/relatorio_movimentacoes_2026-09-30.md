@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 16 | 16 | **32** |
-| 🔴 **Downgrades (Rebaixamentos)** | 9 | 37 | **46** |
+| 🟢 **Upgrades (Elevações)** | 16 | 15 | **31** |
+| 🔴 **Downgrades (Rebaixamentos)** | 9 | 38 | **47** |
 | 🔵 **Novos Ratings** | 3 | 43 | **46** |
 | 🟡 **Mudanças de Perspectiva** | 10 | 26 | **36** |
-| ⚪ **Ratings Retirados / Liquidados** | 5 | 16 | **21** |
+| ⚪ **Ratings Retirados / Liquidados** | 6 | 16 | **22** |
 
-### 🟢 Elevações de Rating (Upgrades) — 32
+### 🟢 Elevações de Rating (Upgrades) — 31
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **LIGHT SERVICOS ELETRICIDADE** | Escala Nacional Brasil de Longo Prazo | `D` | **`brBB+`** | `+11` | Estável | 17/09/2026 |
@@ -38,7 +38,6 @@
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Curto prazo | `CP4` | **`CP3`** | `+1` | Estável | 09/09/2026 |
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Longo prazo | `BB+` | **`BBB-`** | `+1` | Estável | 09/09/2026 |
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `A-` | **`A`** | `+1` | Estável | 09/09/2026 |
-| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA-` | **`brAA`** | `+1` | Estável | 27/09/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 25/06/2026 |
 | Fitch | **VERT CSCF 2024** | bonds ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
@@ -49,7 +48,7 @@
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Curto prazo | `CP3` | **`CP2`** | `+1` | Estável | 23/09/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | `BBB-` | **`A`** | `+4` | Estável | 23/09/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 46
+### 🔴 Rebaixamentos de Rating (Downgrades) — 47
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Moody's | **IN** | Avaliações de Qualidade de Gestor de Investimentos | `MQ1.br` | **`MQ3.br`** | `-5` | Estável | 13/05/2025 |
@@ -71,6 +70,7 @@
 | Moody's | **THOPEN SOLAR 10** | 1ª Emissão de Debêntures - Série Única | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Moody's | **SLC AGRICOLA** | Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025 | `AA.br` | **`AA-.br`** | `-1` | Estável | 17/09/2026 |
 | Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brB+`** | `-5` | Negativa | 09/10/2025 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 2ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 4ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
@@ -166,15 +166,15 @@
 | Moody's | **VTK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Rating da Classe Sênior | **`AAA.br (sf)`** | Estável | 04/09/2026 |
 | Moody's | **HYPERA** | 22ª Emissão de Debêntures - Série Única | **`AAA.br`** | Estável | 08/09/2026 |
 | Moody's | **VIBRA ENERGIA** | 11ª Emissão de Debêntures | **`AAA.br`** | Estável | 08/09/2026 |
-| Fitch | **TRSP** | 2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033 | **`AA(bra)`** | Em Observação | 10/09/2026 |
 | Fitch | **COMPASS GAS ENERGIA** | BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years | **`AA(bra)`** | Em Observação | 10/09/2026 |
+| Fitch | **TRSP** | 2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033 | **`AA(bra)`** | Em Observação | 10/09/2026 |
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 143 mln bond/note 15-Sep-2037 | **`AAA(bra)`** | Negativa | 11/09/2026 |
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 43 mln bond/note 15-Sep-2037 | **`AAA(bra)`** | Negativa | 11/09/2026 |
 | Moody's | **MEZ 6 ENERGIA** | 2ª Emissão de Debêntures - Série Única | **`AA-.br`** | Estável | 15/09/2026 |
 | Fitch | **CIELO** | 10a Debentures (Serie Unica) BRL 2.5 bln Floating CDI (Brazil) bond/note | **`AAA(bra)`** | Estável | 15/09/2026 |
 | *...e mais 16 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (21)
+### ⚪ Ratings Retirados / Liquidados (22)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **DELTA SUCROENERGIA** | Escala Nacional Brasil de Longo Prazo | `brAAA` | Estável | 02/09/2026 |
@@ -182,6 +182,7 @@
 | Fitch | **OI** | Local Currency Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **OI** | Long Term Issuer Default Rating | `RD` | Estável | 11/09/2026 |
 | Fitch | **ALLIANCA SAUDE PARTICIPACOES** | National Long Term Rating | `RD(bra)` | Estável | 15/09/2026 |
+| Fitch | **ACUCAREIRA QUATA** | National Long Term Rating | `A+(bra)` | Estável | 30/09/2026 |
 | Fitch | **OPEA SECURITIZADORA 2019** | notes ser 1 | `AAAsf(bra)` | Estável | 05/12/2019 |
 | Fitch | **ECO SECURITIZADORA 2022** | securities ser 1,2,3 | `AAAsf(bra)` | Estável | 15/01/2026 |
 | Fitch | **CREDITO UNIVERSITARIO III FIDC** | notes ser 3 | `AAAsf(bra)` | Estável | 18/06/2026 |
@@ -191,8 +192,8 @@
 | Fitch | **OI** | USD 1.46 bln 8.5% bond/note 31-Dec-2028  credit agreement dated as of 08-Aug-2024 | `C` | Estável | 11/09/2026 |
 | Fitch | **OI** | USD 699.66 mln 10% bond/note 30-Jun-2027 | `C` | Estável | 11/09/2026 |
 | Fitch | **TOTVS** | BRL 1.5 bln Floating CDI (Brazil) 0.95% bond/note 19-Jul-2031 | `AAA(bra)` | Estável | 11/09/2026 |
-| Fitch | **EMPREENDIMENTOS PAGUE MENOS** | BRL350 mln / 6th debenture / tranche 2 / NOV.2028 | `AA-(bra)` | Estável | 11/09/2026 |
 | Fitch | **COPEL DISTRIBUICAO** | BRL 1.6 bln Floating bond/note 15-Jun-2028 | `AAA(bra)` | Estável | 11/09/2026 |
+| Fitch | **EMPREENDIMENTOS PAGUE MENOS** | BRL350 mln / 6th debenture / tranche 2 / NOV.2028 | `AA-(bra)` | Estável | 11/09/2026 |
 | Fitch | **HIDROVIAS** | 2nd Debentures Issuance BRL 500 mln bond/note 21-Jul-2029 | `AAA(bra)` | Estável | 18/09/2026 |
 | Fitch | **ICRED CHOPIN INSS FIDC** | certificates ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
 | Fitch | **ICRED INSS III FIDC** | notes ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
@@ -201,4 +202,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (29/09/2026 → 30/09/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 1 perspectivas | ⚪ 3 retirados.*
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 1 perspectivas | ⚪ 4 retirados.*
