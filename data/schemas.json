@@ -59,27 +59,27 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Vitru Educacao S.A."
+        "example": "Ache Laboratorios Farmaceuticos S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/vitru-brasil-empreendimentos-participacoes-e-comercio-sa-97548344"
+        "example": "https://www.fitchratings.com/entity/ache-laboratorios-farmaceuticos-sa-90982911"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "National Long Term Rating"
+        "example": "Long Term Issuer Default Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AA(bra)"
+        "example": "BB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-09-30"
+        "example": "2026-10-01"
       },
       {
         "name": "de_acao_rating",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Vitru Educacao S.A."
+        "example": "BSec Securitizadora 2011-269"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/vitru-brasil-empreendimentos-participacoes-e-comercio-sa-97548344"
+        "example": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436"
       }
     ]
   },
