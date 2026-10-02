@@ -59,22 +59,22 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Ache Laboratorios Farmaceuticos S.A."
+        "example": "Sociedade de Credito, Financiamento e Investimento Efi S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/ache-laboratorios-farmaceuticos-sa-90982911"
+        "example": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Long Term Issuer Default Rating"
+        "example": "National Short Term Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BB+"
+        "example": "F1(bra)"
       },
       {
         "name": "dt_acao_rating",
@@ -84,12 +84,12 @@
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Affirmed"
+        "example": "New Rating"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Stable"
+        "example": ""
       },
       {
         "name": "de_instrumento",
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
+        "example": "ACCESS FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/2394/Access_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_tipo_rating",
@@ -298,12 +298,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-15"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Inicial"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11200"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACO CEARENSE FIDC"
+        "example": "ACCESS FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
+        "example": "ACCESS FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "no_tipo_rating",
@@ -466,7 +466,7 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SUBORDINADAS JÚNIOR"
+        "example": "SUBORDINADAS MEZANINO"
       },
       {
         "name": "de_rating_br",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-15"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/2394/Access_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_devedor_vinculado",
