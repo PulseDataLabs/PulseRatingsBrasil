@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 15 | 13 | **28** |
+| 🟢 **Upgrades (Elevações)** | 15 | 14 | **29** |
 | 🔴 **Downgrades (Rebaixamentos)** | 12 | 36 | **48** |
-| 🔵 **Novos Ratings** | 5 | 50 | **55** |
+| 🔵 **Novos Ratings** | 5 | 54 | **59** |
 | 🟡 **Mudanças de Perspectiva** | 7 | 17 | **24** |
 | ⚪ **Ratings Retirados / Liquidados** | 5 | 16 | **21** |
 
-### 🟢 Elevações de Rating (Upgrades) — 28
+### 🟢 Elevações de Rating (Upgrades) — 29
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **LIGHT SERVICOS ELETRICIDADE** | Escala Nacional Brasil de Longo Prazo | `D` | **`brBB+`** | `+11` | Estável | 17/09/2026 |
@@ -37,6 +37,7 @@
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `A-` | **`A`** | `+1` | Estável | 09/09/2026 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 25/06/2026 |
 | Fitch | **VERT CSCF 2024** | bonds ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brBB+`** | `+1` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 7ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
@@ -125,14 +126,14 @@
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 65 mln bond/note 15-Sep-2037 | `AAA(bra)` | Estável | **Negativa** | 11/09/2026 |
 | Fitch | **RIZA SECURITIZADORA 2019** | notes ser 1 | `A+sf(bra)` | Em Observação | **Estável** | 29/09/2026 |
 
-### 🔵 Novos Ratings Atribuídos (55)
+### 🔵 Novos Ratings Atribuídos (59)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Moody's | **COMPANHIA SANEAMENTO TOCANTINS** | Rating de Emissor | **`AA.br`** | Estável | 03/09/2026 |
 | Moody's | **MOTIVA INFRAESTRUTURA MOBILIDADE** | Rating Corporativo | **`AAA.br`** | Estável | 25/09/2026 |
 | Moody's | **ASTER MAQUINAS SOLUCOES INTEGRADAS** | Rating de Emissor | **`AA-.br`** | Estável | 28/09/2026 |
-| Fitch | **RED** | National Short Term Rating | **`F1(bra)`** | Estável | 01/10/2026 |
-| Fitch | **RED** | National Long Term Rating | **`A(bra)`** | Negativa | 01/10/2026 |
+| Fitch | **SOCIEDADE CREDITO** | National Short Term Rating | **`F1(bra)`** | Estável | 01/10/2026 |
+| Fitch | **SOCIEDADE CREDITO** | National Long Term Rating | **`A(bra)`** | Negativa | 01/10/2026 |
 | Moody's | **SUL CONCESSOES PARTICIPACOES** | 3ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 24/09/2026 |
 | Moody's | **COMPANHIA AGUAS ITAPEMA** | 2ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 21/09/2026 |
 | Moody's | **TRANSMISSORA ALIANCA ENERGIA ELETRICA** | 12ª Emissão de Debêntures - 1ª Série | **`AAA.br`** | Estável | 11/09/2026 |
@@ -156,9 +157,9 @@
 | Moody's | **VTK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Rating da Classe Sênior | **`AAA.br (sf)`** | Estável | 04/09/2026 |
 | Moody's | **HYPERA** | 22ª Emissão de Debêntures - Série Única | **`AAA.br`** | Estável | 08/09/2026 |
 | Moody's | **VIBRA ENERGIA** | 11ª Emissão de Debêntures | **`AAA.br`** | Estável | 08/09/2026 |
+| Moody's | **VIBRA ENERGIA** | 11ª Emissão de Debêntures - Série Única | **`AAA.br`** | Estável | 08/09/2026 |
 | Fitch | **TRSP** | 2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033 | **`AA(bra)`** | Em Observação | 10/09/2026 |
-| Fitch | **COMPASS GAS ENERGIA** | BRL 1.7 mln Floating CDI (Brazil) 0.70% bond/note 2nd serie  4th debenture maturity in the 6th and 7th years | **`AA(bra)`** | Em Observação | 10/09/2026 |
-| *...e mais 25 novos ratings.* | | | | | |
+| *...e mais 29 novos ratings.* | | | | | |
 
 ### ⚪ Ratings Retirados / Liquidados (21)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
@@ -187,4 +188,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (01/10/2026 → 02/10/2026)
-*Total nas últimas 24h: 🟢 0 upgrades | 🔴 2 downgrades | 🔵 2 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 2 downgrades | 🔵 6 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*

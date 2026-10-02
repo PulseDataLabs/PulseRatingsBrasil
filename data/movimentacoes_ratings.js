@@ -1,17 +1,17 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-02T00:22:57.421155",
+  "timestamp": "2026-10-02T12:53:45.084107",
   "dt_atual": "2026-10-02",
   "dt_anterior": "2026-10-01",
   "resumo": {
     "upgrades_emissores": 15,
-    "upgrades_emissoes": 13,
-    "total_upgrades": 28,
+    "upgrades_emissoes": 14,
+    "total_upgrades": 29,
     "downgrades_emissores": 12,
     "downgrades_emissoes": 36,
     "total_downgrades": 48,
     "novos_emissores": 5,
-    "novos_emissoes": 50,
-    "total_novos": 55,
+    "novos_emissoes": 54,
+    "total_novos": 59,
     "outlooks_emissores": 7,
     "outlooks_emissoes": 17,
     "total_outlooks": 24,
@@ -24,14 +24,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-09-02",
     "resumo": {
       "upgrades_emissores": 15,
-      "upgrades_emissoes": 13,
-      "total_upgrades": 28,
+      "upgrades_emissoes": 14,
+      "total_upgrades": 29,
       "downgrades_emissores": 12,
       "downgrades_emissoes": 36,
       "total_downgrades": 48,
       "novos_emissores": 5,
-      "novos_emissoes": 50,
-      "total_novos": 55,
+      "novos_emissoes": 54,
+      "total_novos": 59,
       "outlooks_emissores": 7,
       "outlooks_emissoes": 17,
       "total_outlooks": 24,
@@ -434,7 +434,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "RED",
+          "emissor": "SOCIEDADE CREDITO",
           "instrumento": "National Short Term Rating",
           "dt_acao": "2026-10-01",
           "link": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140",
@@ -445,7 +445,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "RED",
+          "emissor": "SOCIEDADE CREDITO",
           "instrumento": "National Long Term Rating",
           "dt_acao": "2026-10-01",
           "link": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140",
@@ -691,6 +691,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+3"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
         },
         {
           "agencia": "Fitch",
@@ -1509,6 +1522,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "—"
         },
         {
+          "agencia": "Moody's",
+          "emissor": "VIBRA ENERGIA",
+          "instrumento": "11ª Emissão de Debêntures - Série Única",
+          "dt_acao": "2026-09-08",
+          "link": "",
+          "rating_atual": "AAA.br",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "TRSP",
           "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
@@ -1592,17 +1616,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "dt_acao": "2026-09-18",
           "link": "https://www.fitchratings.com/entity/cimed-co-sa-97629249#issues",
           "rating_atual": "AA(bra)",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "IN",
-          "instrumento": "2a Emissão - Série Unica",
-          "dt_acao": "2026-09-18",
-          "link": "https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291#issues",
-          "rating_atual": "A+(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1801,6 +1814,50 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "dt_acao": "2026-10-01",
           "link": "https://www.fitchratings.com/entity/bk-brasil-operacao-e-assessoria-restaurantes-sa-96269281#issues",
           "rating_atual": "AA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Senior - Curto prazo",
+          "dt_acao": "2026-10-02",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+          "rating_atual": "CP4",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Mezanino - Curto prazo",
+          "dt_acao": "2026-10-02",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+          "rating_atual": "CP5",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Senior - Longo prazo",
+          "dt_acao": "2026-10-02",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+          "rating_atual": "BB+",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Mezanino - Longo prazo",
+          "dt_acao": "2026-10-02",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+          "rating_atual": "B+",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -2235,8 +2292,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "downgrades_emissoes": 2,
       "total_downgrades": 2,
       "novos_emissores": 2,
-      "novos_emissoes": 0,
-      "total_novos": 2,
+      "novos_emissoes": 4,
+      "total_novos": 6,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
@@ -2253,7 +2310,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "novos": [
         {
           "agencia": "Fitch",
-          "emissor": "RED",
+          "emissor": "SOCIEDADE CREDITO",
           "instrumento": "National Short Term Rating",
           "dt_acao": "2026-10-01",
           "link": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140",
@@ -2264,7 +2321,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "RED",
+          "emissor": "SOCIEDADE CREDITO",
           "instrumento": "National Long Term Rating",
           "dt_acao": "2026-10-01",
           "link": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140",
@@ -2285,32 +2342,77 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "downgrades": [
         {
           "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
           "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA",
+          "rating_atual": "brAA-",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "variacao_notches": "-1"
         },
         {
           "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-3"
+          "variacao_notches": "-2"
         }
       ],
-      "novos": [],
+      "novos": [
+        {
+          "agencia": "Liberum",
+          "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Senior - Curto prazo",
+          "dt_acao": "2026-10-02",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+          "rating_atual": "CP4",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Mezanino - Curto prazo",
+          "dt_acao": "2026-10-02",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+          "rating_atual": "CP5",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Senior - Longo prazo",
+          "dt_acao": "2026-10-02",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+          "rating_atual": "BB+",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Mezanino - Longo prazo",
+          "dt_acao": "2026-10-02",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+          "rating_atual": "B+",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        }
+      ],
       "outlooks": [],
       "retirados": [
         {
@@ -2331,8 +2433,64 @@ window.PULSERATINGS_MOVIMENTACOES = {
   },
   "movimentacoes": [
     {
+      "agencia": "Liberum",
+      "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Senior - Curto prazo",
+      "dt_acao": "2026-10-02",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+      "rating_atual": "CP4",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-02"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Mezanino - Curto prazo",
+      "dt_acao": "2026-10-02",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+      "rating_atual": "CP5",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-02"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Senior - Longo prazo",
+      "dt_acao": "2026-10-02",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+      "rating_atual": "BB+",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-02"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Mezanino - Longo prazo",
+      "dt_acao": "2026-10-02",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+      "rating_atual": "B+",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-02"
+    },
+    {
       "agencia": "Fitch",
-      "emissor": "RED",
+      "emissor": "SOCIEDADE CREDITO",
       "instrumento": "National Short Term Rating",
       "dt_acao": "2026-10-01",
       "link": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140",
@@ -2346,7 +2504,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "RED",
+      "emissor": "SOCIEDADE CREDITO",
       "instrumento": "National Long Term Rating",
       "dt_acao": "2026-10-01",
       "link": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140",
@@ -3212,20 +3370,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-09-18",
       "link": "https://www.fitchratings.com/entity/cimed-co-sa-97629249#issues",
       "rating_atual": "AA(bra)",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-10-02"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "IN",
-      "instrumento": "2a Emissão - Série Unica",
-      "dt_acao": "2026-09-18",
-      "link": "https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291#issues",
-      "rating_atual": "A+(bra)",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -4453,6 +4597,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-10-02"
     },
     {
+      "agencia": "Moody's",
+      "emissor": "VIBRA ENERGIA",
+      "instrumento": "11ª Emissão de Debêntures - Série Única",
+      "dt_acao": "2026-09-08",
+      "link": "",
+      "rating_atual": "AAA.br",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-02"
+    },
+    {
       "agencia": "Fitch",
       "emissor": "SAO PAULO",
       "instrumento": "Standalone Credit Profile",
@@ -4981,6 +5139,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-10-02"
     },
     {
+      "agencia": "Austin",
+      "emissor": "FICTOR INVEST FIDC",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2025-10-09",
+      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBB",
+      "rating_atual": "brBB+",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-02"
+    },
+    {
       "agencia": "Moody's",
       "emissor": "IN",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -5014,6 +5188,70 @@ window.PULSERATINGS_MOVIMENTACOES = {
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "Liberum",
+      "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Senior - Curto prazo",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "CP4",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-02",
+      "dt_captura": "2026-10-02",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29039"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Mezanino - Curto prazo",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "CP5",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-02",
+      "dt_captura": "2026-10-02",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29039"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Senior - Longo prazo",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "BB+",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-02",
+      "dt_captura": "2026-10-02",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29039"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Mezanino - Longo prazo",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "B+",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-02",
+      "dt_captura": "2026-10-02",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29039"
+    },
     {
       "agencia": "Fitch",
       "emissor": "RED",
@@ -5077,6 +5315,38 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-01",
       "dt_captura": "2026-10-02",
       "link": "https://www.fitchratings.com/entity/bk-brasil-operacao-e-assessoria-restaurantes-sa-96269281#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "SOCIEDADE CREDITO",
+      "instrumento": "National Short Term Rating",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "F1(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-01",
+      "dt_captura": "2026-10-02",
+      "link": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "SOCIEDADE CREDITO",
+      "instrumento": "National Long Term Rating",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "A(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Negativa",
+      "dt_acao": "2026-10-01",
+      "dt_captura": "2026-10-02",
+      "link": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140"
     },
     {
       "agencia": "S&P",
@@ -7242,6 +7512,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "agencia": "Moody's",
       "emissor": "VIBRA ENERGIA",
       "instrumento": "11ª Emissão de Debêntures",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA.br",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-09-08",
+      "dt_captura": "2026-10-02",
+      "link": ""
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "VIBRA ENERGIA",
+      "instrumento": "11ª Emissão de Debêntures - Série Única",
       "categoria": "Emissão",
       "tipo": "NOVO",
       "tipo_movimento": "NOVO",
@@ -123986,7 +124272,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "RED",
+        "emissor": "SOCIEDADE CREDITO",
         "instrumento": "National Short Term Rating",
         "dt_acao": "2026-10-01",
         "link": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140",
@@ -123997,7 +124283,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "RED",
+        "emissor": "SOCIEDADE CREDITO",
         "instrumento": "National Long Term Rating",
         "dt_acao": "2026-10-01",
         "link": "https://www.fitchratings.com/entity/sociedade-de-credito-financiamento-e-investimento-efi-sa-97939140",
@@ -124243,6 +124529,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+3"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBB",
+        "rating_atual": "brBB+",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
       },
       {
         "agencia": "Fitch",
@@ -125061,6 +125360,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "—"
       },
       {
+        "agencia": "Moody's",
+        "emissor": "VIBRA ENERGIA",
+        "instrumento": "11ª Emissão de Debêntures - Série Única",
+        "dt_acao": "2026-09-08",
+        "link": "",
+        "rating_atual": "AAA.br",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "TRSP",
         "instrumento": "2a Emissao - 1a serie -  BRL 800 mln Floating IPCA (Brazil) 7.437% bond/note 15-Jan-2033",
@@ -125144,17 +125454,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-09-18",
         "link": "https://www.fitchratings.com/entity/cimed-co-sa-97629249#issues",
         "rating_atual": "AA(bra)",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "IN",
-        "instrumento": "2a Emissão - Série Unica",
-        "dt_acao": "2026-09-18",
-        "link": "https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291#issues",
-        "rating_atual": "A+(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -125353,6 +125652,50 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-01",
         "link": "https://www.fitchratings.com/entity/bk-brasil-operacao-e-assessoria-restaurantes-sa-96269281#issues",
         "rating_atual": "AA(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "instrumento": "Senior - Curto prazo",
+        "dt_acao": "2026-10-02",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+        "rating_atual": "CP4",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "instrumento": "Mezanino - Curto prazo",
+        "dt_acao": "2026-10-02",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+        "rating_atual": "CP5",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "instrumento": "Senior - Longo prazo",
+        "dt_acao": "2026-10-02",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+        "rating_atual": "BB+",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "FIRENZE CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "instrumento": "Mezanino - Longo prazo",
+        "dt_acao": "2026-10-02",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29039",
+        "rating_atual": "B+",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
