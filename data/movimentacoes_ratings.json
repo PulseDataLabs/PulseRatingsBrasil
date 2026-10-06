@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-10-06T01:21:16.653107",
+  "timestamp": "2026-10-06T13:10:14.857502",
   "dt_atual": "2026-10-06",
   "dt_anterior": "2026-10-05",
   "resumo": {
     "upgrades_emissores": 12,
-    "upgrades_emissoes": 12,
-    "total_upgrades": 24,
+    "upgrades_emissoes": 14,
+    "total_upgrades": 26,
     "downgrades_emissores": 11,
     "downgrades_emissoes": 37,
     "total_downgrades": 48,
-    "novos_emissores": 4,
-    "novos_emissoes": 54,
-    "total_novos": 58,
+    "novos_emissores": 6,
+    "novos_emissoes": 55,
+    "total_novos": 61,
     "outlooks_emissores": 7,
     "outlooks_emissoes": 19,
     "total_outlooks": 26,
@@ -24,14 +24,14 @@
     "dt_anterior": "2026-09-04",
     "resumo": {
       "upgrades_emissores": 12,
-      "upgrades_emissoes": 12,
-      "total_upgrades": 24,
+      "upgrades_emissoes": 14,
+      "total_upgrades": 26,
       "downgrades_emissores": 11,
       "downgrades_emissoes": 37,
       "total_downgrades": 48,
-      "novos_emissores": 4,
-      "novos_emissoes": 54,
-      "total_novos": 58,
+      "novos_emissores": 6,
+      "novos_emissoes": 55,
+      "total_novos": 61,
       "outlooks_emissores": 7,
       "outlooks_emissoes": 19,
       "total_outlooks": 26,
@@ -390,6 +390,28 @@
           "outlook_atual": "Negativa",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Moody's",
+          "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
+          "instrumento": "Rating de Emissor",
+          "dt_acao": "2026-10-05",
+          "link": "",
+          "rating_atual": "AAA.br",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "BANCO C6",
+          "instrumento": "Finanças Públicas",
+          "dt_acao": "2026-10-06",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29227",
+          "rating_atual": "AAA",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
         }
       ],
       "outlooks": [
@@ -618,6 +640,19 @@
         },
         {
           "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB-",
+          "rating_atual": "brBBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
+        },
+        {
+          "agencia": "Austin",
           "emissor": "FIDC IC SOMAPAY",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2024-08-12",
@@ -667,6 +702,19 @@
           "outlook_atual": "Positiva",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "instrumento": "notes ser 2",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
+          "rating_anterior": "AA-sf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+3"
         },
         {
           "agencia": "Fitch",
@@ -831,13 +879,13 @@
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBB-",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "variacao_notches": "-4"
         },
         {
           "agencia": "Moody's",
@@ -1658,9 +1706,9 @@
           "agencia": "Moody's",
           "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGIBANK III RESPONSABILIDADE LIMITADA",
           "instrumento": "Cotas Seniores",
-          "dt_acao": "2026-09-28",
+          "dt_acao": "2026-10-05",
           "link": "",
-          "rating_atual": "(P)AAA.br (sf)",
+          "rating_atual": "AAA.br (sf)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1782,6 +1830,17 @@
           "dt_acao": "2026-10-05",
           "link": "https://www.fitchratings.com/entity/seller-3-fundo-de-investimento-em-direitos-creditorios-segmento-meios-de-pagamento-de-resp-limitada-97967726#issues",
           "rating_atual": "AAA(EXP)sf(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Moody's",
+          "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
+          "instrumento": "1ª Emissão de Debêntures – Série Única",
+          "dt_acao": "2026-10-05",
+          "link": "",
+          "rating_atual": "AAA.br",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -2234,14 +2293,14 @@
     "dt_anterior": "2026-10-05",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 1,
-      "total_upgrades": 1,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 3,
-      "total_downgrades": 3,
-      "novos_emissores": 0,
-      "novos_emissoes": 0,
-      "total_novos": 0,
+      "downgrades_emissoes": 2,
+      "total_downgrades": 2,
+      "novos_emissores": 2,
+      "novos_emissoes": 1,
+      "total_novos": 3,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
@@ -2255,7 +2314,30 @@
       "dt_anterior": "2026-10-05",
       "upgrades": [],
       "downgrades": [],
-      "novos": [],
+      "novos": [
+        {
+          "agencia": "Moody's",
+          "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
+          "instrumento": "Rating de Emissor",
+          "dt_acao": "2026-10-05",
+          "link": "",
+          "rating_atual": "AAA.br",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "BANCO C6",
+          "instrumento": "Finanças Públicas",
+          "dt_acao": "2026-10-06",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29227",
+          "rating_atual": "AAA",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        }
+      ],
       "outlooks": [],
       "retirados": []
     },
@@ -2264,6 +2346,19 @@
       "dt_atual": "2026-10-06",
       "dt_anterior": "2026-10-05",
       "upgrades": [
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "instrumento": "notes ser 2",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
+          "rating_anterior": "AA-sf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+3"
+        },
         {
           "agencia": "Fitch",
           "emissor": "BSEC SECURITIZADORA 2011",
@@ -2281,27 +2376,14 @@
       "downgrades": [
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brBB-",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-2"
         },
@@ -2319,12 +2401,66 @@
           "variacao_notches": "-5"
         }
       ],
-      "novos": [],
+      "novos": [
+        {
+          "agencia": "Moody's",
+          "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
+          "instrumento": "1ª Emissão de Debêntures – Série Única",
+          "dt_acao": "2026-10-05",
+          "link": "",
+          "rating_atual": "AAA.br",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        }
+      ],
       "outlooks": [],
       "retirados": []
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Liberum",
+      "emissor": "BANCO C6",
+      "instrumento": "Finanças Públicas",
+      "dt_acao": "2026-10-06",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29227",
+      "rating_atual": "AAA",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-06"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
+      "instrumento": "Rating de Emissor",
+      "dt_acao": "2026-10-05",
+      "link": "",
+      "rating_atual": "AAA.br",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-06"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGIBANK III RESPONSABILIDADE LIMITADA",
+      "instrumento": "Cotas Seniores",
+      "dt_acao": "2026-10-05",
+      "link": "",
+      "rating_atual": "AAA.br (sf)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-06"
+    },
     {
       "agencia": "Fitch",
       "emissor": "FIDC CREDITAS AUTO X",
@@ -2360,6 +2496,20 @@
       "dt_acao": "2026-10-05",
       "link": "https://www.fitchratings.com/entity/seller-3-fundo-de-investimento-em-direitos-creditorios-segmento-meios-de-pagamento-de-resp-limitada-97967726#issues",
       "rating_atual": "AAA(EXP)sf(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-06"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
+      "instrumento": "1ª Emissão de Debêntures – Série Única",
+      "dt_acao": "2026-10-05",
+      "link": "",
+      "rating_atual": "AAA.br",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -2715,20 +2865,6 @@
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
       "categoria": "Emissor",
-      "tipo": "NOVO",
-      "dt_captura": "2026-10-06"
-    },
-    {
-      "agencia": "Moody's",
-      "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGIBANK III RESPONSABILIDADE LIMITADA",
-      "instrumento": "Cotas Seniores",
-      "dt_acao": "2026-09-28",
-      "link": "",
-      "rating_atual": "(P)AAA.br (sf)",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
       "tipo": "NOVO",
       "dt_captura": "2026-10-06"
     },
@@ -4841,6 +4977,22 @@
     },
     {
       "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "notes ser 2",
+      "dt_acao": "2026-06-24",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
+      "rating_anterior": "AA-sf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+3",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-06"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "OPEA SECURITIZADORA 2024",
       "instrumento": "notes ser 3",
       "dt_acao": "2026-06-24",
@@ -4972,13 +5124,13 @@
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBBB",
-      "rating_atual": "brBB+",
+      "rating_atual": "brBB-",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
+      "variacao_notches": "-4",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-06"
@@ -5014,9 +5166,41 @@
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-10-06"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "HIGH YIELD YALEEH FIDC",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB-",
+      "rating_atual": "brBBB+",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+2",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-06"
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "Liberum",
+      "emissor": "BANCO C6",
+      "instrumento": "Finanças Públicas",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-06",
+      "dt_captura": "2026-10-06",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29227"
+    },
     {
       "agencia": "Fitch",
       "emissor": "FIDC CREDITAS AUTO X",
@@ -5112,6 +5296,54 @@
       "dt_acao": "2026-10-05",
       "dt_captura": "2026-10-06",
       "link": "https://www.fitchratings.com/entity/localiza-fleet-sa-96673245#issues"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
+      "instrumento": "Rating de Emissor",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA.br",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-05",
+      "dt_captura": "2026-10-06",
+      "link": ""
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGIBANK III RESPONSABILIDADE LIMITADA",
+      "instrumento": "Cotas Seniores",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA.br (sf)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-05",
+      "dt_captura": "2026-10-06",
+      "link": ""
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
+      "instrumento": "1ª Emissão de Debêntures – Série Única",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA.br",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-05",
+      "dt_captura": "2026-10-06",
+      "link": ""
     },
     {
       "agencia": "Moody's",
@@ -7688,6 +7920,22 @@
       "dt_acao": "2026-06-24",
       "dt_captura": "2026-10-06",
       "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "notes ser 2",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "AA-sf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "variacao_notches": "+3",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-06-24",
+      "dt_captura": "2026-10-06",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues"
     },
     {
       "agencia": "Fitch",
@@ -132441,6 +132689,28 @@
         "outlook_atual": "Negativa",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
+      },
+      {
+        "agencia": "Moody's",
+        "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
+        "instrumento": "Rating de Emissor",
+        "dt_acao": "2026-10-05",
+        "link": "",
+        "rating_atual": "AAA.br",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "BANCO C6",
+        "instrumento": "Finanças Públicas",
+        "dt_acao": "2026-10-06",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29227",
+        "rating_atual": "AAA",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
       }
     ],
     "outlooks": [
@@ -132669,6 +132939,19 @@
       },
       {
         "agencia": "Austin",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB-",
+        "rating_atual": "brBBB+",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+2"
+      },
+      {
+        "agencia": "Austin",
         "emissor": "FIDC IC SOMAPAY",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2024-08-12",
@@ -132718,6 +133001,19 @@
         "outlook_atual": "Positiva",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "ECO SECURITIZADORA 2022",
+        "instrumento": "notes ser 2",
+        "dt_acao": "2026-06-24",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
+        "rating_anterior": "AA-sf(bra)",
+        "rating_atual": "AAAsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+3"
       },
       {
         "agencia": "Fitch",
@@ -132882,13 +133178,13 @@
         "emissor": "FICTOR INVEST FIDC",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brBBB",
-        "rating_atual": "brBB+",
+        "rating_atual": "brBB-",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
+        "variacao_notches": "-4"
       },
       {
         "agencia": "Moody's",
@@ -133709,9 +134005,9 @@
         "agencia": "Moody's",
         "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS AGIBANK III RESPONSABILIDADE LIMITADA",
         "instrumento": "Cotas Seniores",
-        "dt_acao": "2026-09-28",
+        "dt_acao": "2026-10-05",
         "link": "",
-        "rating_atual": "(P)AAA.br (sf)",
+        "rating_atual": "AAA.br (sf)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -133833,6 +134129,17 @@
         "dt_acao": "2026-10-05",
         "link": "https://www.fitchratings.com/entity/seller-3-fundo-de-investimento-em-direitos-creditorios-segmento-meios-de-pagamento-de-resp-limitada-97967726#issues",
         "rating_atual": "AAA(EXP)sf(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Moody's",
+        "emissor": "COMPANHIA GAS ESTADO RIO GRANDE SUL",
+        "instrumento": "1ª Emissão de Debêntures – Série Única",
+        "dt_acao": "2026-10-05",
+        "link": "",
+        "rating_atual": "AAA.br",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"

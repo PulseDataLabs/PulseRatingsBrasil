@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-10-05"
+        "example": "2026-10-06"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB-"
       },
       {
         "name": "de_rating_cp",
@@ -293,7 +293,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB-"
       },
       {
         "name": "dt_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11646"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11648"
       }
     ]
   },
@@ -325,17 +325,17 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FIRENZE CAPITAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA"
+        "example": "BANCO C6 S.A."
       },
       {
         "name": "no_setor",
         "type": "str",
-        "example": "FIDC"
+        "example": "Finanças Públicas"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29039"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29227"
       }
     ]
   },
@@ -347,32 +347,32 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FIRENZE CAPITAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA"
+        "example": "BANCO C6 S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29039"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29227"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "FIDC"
+        "example": "Finanças Públicas"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP4"
+        "example": "AAA"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-10-02"
+        "example": "2026-10-06"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Atribuição"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -382,12 +382,12 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": ""
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Curto prazo"
+        "example": "Local"
       }
     ]
   },
@@ -456,7 +456,7 @@
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
       },
       {
         "name": "no_tipo_rating",
@@ -466,12 +466,12 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SENIORES ÚNICA"
+        "example": "MEZANINO CLASSE A"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB-"
       },
       {
         "name": "de_outlook",
@@ -486,7 +486,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
       },
       {
         "name": "no_devedor_vinculado",

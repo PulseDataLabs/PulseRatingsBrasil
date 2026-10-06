@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 12 | 12 | **24** |
+| 🟢 **Upgrades (Elevações)** | 12 | 14 | **26** |
 | 🔴 **Downgrades (Rebaixamentos)** | 11 | 37 | **48** |
-| 🔵 **Novos Ratings** | 4 | 54 | **58** |
+| 🔵 **Novos Ratings** | 6 | 55 | **61** |
 | 🟡 **Mudanças de Perspectiva** | 7 | 19 | **26** |
 | ⚪ **Ratings Retirados / Liquidados** | 5 | 16 | **21** |
 
-### 🟢 Elevações de Rating (Upgrades) — 24
+### 🟢 Elevações de Rating (Upgrades) — 26
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **LIGHT SERVICOS ELETRICIDADE** | Escala Nacional Brasil de Longo Prazo | `D` | **`brBB+`** | `+11` | Estável | 17/09/2026 |
@@ -33,10 +33,12 @@
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Longo prazo | `BB+` | **`BBB-`** | `+1` | Estável | 09/09/2026 |
 | Liberum | **BARCELONA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `A-` | **`A`** | `+1` | Estável | 09/09/2026 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 25/06/2026 |
+| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB-` | **`brBBB+`** | `+2` | Estável | 06/03/2024 |
 | Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brB-` | **`brBB+`** | `+5` | Estável | 12/08/2024 |
 | Fitch | **VERT CSCF 2024** | bonds ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 7ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
+| Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
 | Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Curto prazo | `CP3` | **`CP2`** | `+1` | Estável | 23/09/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | `BBB-` | **`A`** | `+4` | Estável | 23/09/2026 |
@@ -64,7 +66,7 @@
 | Moody's | **THOPEN SOLAR 10** | 1ª Emissão de Debêntures - Série Única | `CCC-.br` | **`CC.br`** | `-1` | Negativa | 04/09/2026 |
 | Moody's | **SLC AGRICOLA** | Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025 | `AA.br` | **`AA-.br`** | `-1` | Estável | 17/09/2026 |
 | Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB-`** | `-4` | Negativa | 09/10/2025 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 2ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 4ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
@@ -123,13 +125,15 @@
 | Fitch | **CRI BARI SECURITIZADORA 2022** | BRL 39 mln bond/note 15-Jul-2036 | `BBB+sf(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 | Fitch | **PGE** | BRL 49 mln bond/note 15-Jul-2036 | `BBB+(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (58)
+### 🔵 Novos Ratings Atribuídos (61)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Moody's | **MOTIVA INFRAESTRUTURA MOBILIDADE** | Rating Corporativo | **`AAA.br`** | Estável | 25/09/2026 |
 | Moody's | **ASTER MAQUINAS SOLUCOES INTEGRADAS** | Rating de Emissor | **`AA-.br`** | Estável | 28/09/2026 |
 | Fitch | **SOCIEDADE CREDITO** | National Short Term Rating | **`F1(bra)`** | Estável | 01/10/2026 |
 | Fitch | **SOCIEDADE CREDITO** | National Long Term Rating | **`A(bra)`** | Negativa | 01/10/2026 |
+| Moody's | **COMPANHIA GAS ESTADO RIO GRANDE SUL** | Rating de Emissor | **`AAA.br`** | Estável | 05/10/2026 |
+| Liberum | **BANCO C6** | Finanças Públicas | **`AAA`** | Estável | 06/10/2026 |
 | Moody's | **SUL CONCESSOES PARTICIPACOES** | 3ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 24/09/2026 |
 | Moody's | **COMPANHIA AGUAS ITAPEMA** | 2ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 21/09/2026 |
 | Moody's | **TRANSMISSORA ALIANCA ENERGIA ELETRICA** | 12ª Emissão de Debêntures - 1ª Série | **`AAA.br`** | Estável | 11/09/2026 |
@@ -154,9 +158,7 @@
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 143 mln bond/note 15-Sep-2037 | **`AAA(bra)`** | Negativa | 11/09/2026 |
 | Fitch | **TOTALENERGIES DRACENA PARTICIPACOES** | BRL 43 mln bond/note 15-Sep-2037 | **`AAA(bra)`** | Negativa | 11/09/2026 |
 | Moody's | **MEZ 6 ENERGIA** | 2ª Emissão de Debêntures - Série Única | **`AA-.br`** | Estável | 15/09/2026 |
-| Fitch | **CIELO** | 10a Debentures (Serie Unica) BRL 2.5 bln Floating CDI (Brazil) bond/note | **`AAA(bra)`** | Estável | 15/09/2026 |
-| Moody's | **RIZA SECURITIZADORA** | Série Única da 217ª Emissão de CRAs | **`A.br (sf)`** | Estável | 16/09/2026 |
-| *...e mais 28 novos ratings.* | | | | | |
+| *...e mais 31 novos ratings.* | | | | | |
 
 ### ⚪ Ratings Retirados / Liquidados (21)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
@@ -185,4 +187,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (05/10/2026 → 06/10/2026)
-*Total nas últimas 24h: 🟢 1 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 2 upgrades | 🔴 2 downgrades | 🔵 3 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
