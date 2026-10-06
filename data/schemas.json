@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB-"
+        "example": "brCCC"
       },
       {
         "name": "de_rating_cp",
@@ -293,7 +293,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB-"
+        "example": "brCCC"
       },
       {
         "name": "dt_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11648"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
       }
     ]
   },
@@ -325,17 +325,17 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "BANCO C6 S.A."
+        "example": "ACELERA VAREJO FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
       },
       {
         "name": "no_setor",
         "type": "str",
-        "example": "Finanças Públicas"
+        "example": "FIDC"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29227"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29219"
       }
     ]
   },
@@ -347,22 +347,22 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "BANCO C6 S.A."
+        "example": "ACELERA VAREJO FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29227"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29219"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Finanças Públicas"
+        "example": "FIDC"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AAA"
+        "example": "B"
       },
       {
         "name": "dt_acao_rating",
@@ -382,12 +382,12 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": ""
+        "example": "Senior"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Local"
+        "example": "Longo prazo"
       }
     ]
   },
@@ -456,7 +456,7 @@
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "no_tipo_rating",
@@ -466,12 +466,12 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "MEZANINO CLASSE A"
+        "example": "SUBORDINADAS JÚNIOR"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB-"
+        "example": "brCCC"
       },
       {
         "name": "de_outlook",
@@ -486,7 +486,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_devedor_vinculado",

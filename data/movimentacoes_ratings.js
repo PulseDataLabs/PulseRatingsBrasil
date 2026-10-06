@@ -1,11 +1,11 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-06T13:10:14.857502",
+  "timestamp": "2026-10-06T17:04:40.417234",
   "dt_atual": "2026-10-06",
   "dt_anterior": "2026-10-05",
   "resumo": {
     "upgrades_emissores": 12,
-    "upgrades_emissoes": 14,
-    "total_upgrades": 26,
+    "upgrades_emissoes": 13,
+    "total_upgrades": 25,
     "downgrades_emissores": 11,
     "downgrades_emissoes": 37,
     "total_downgrades": 48,
@@ -24,8 +24,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-09-04",
     "resumo": {
       "upgrades_emissores": 12,
-      "upgrades_emissoes": 14,
-      "total_upgrades": 26,
+      "upgrades_emissoes": 13,
+      "total_upgrades": 25,
       "downgrades_emissores": 11,
       "downgrades_emissoes": 37,
       "total_downgrades": 48,
@@ -652,19 +652,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+2"
         },
         {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brB-",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+5"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "VERT CSCF 2024",
           "instrumento": "bonds ser 3",
@@ -757,6 +744,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         }
       ],
       "downgrades": [
+        {
+          "agencia": "Liberum",
+          "emissor": "ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+          "instrumento": "Senior - Curto prazo",
+          "dt_acao": "2026-10-06",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29219",
+          "rating_anterior": "CP4",
+          "rating_atual": "CP5",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
         {
           "agencia": "Liberum",
           "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
@@ -873,19 +873,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBBB",
-          "rating_atual": "brBB-",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-4"
         },
         {
           "agencia": "Moody's",
@@ -1729,8 +1716,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "BSEC SECURITIZADORA 2011",
           "instrumento": "certificates",
           "dt_acao": "2026-10-01",
-          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
-          "rating_atual": "BBBsf(bra)",
+          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+          "rating_atual": "BBsf(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -2296,8 +2283,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 2,
       "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 2,
-      "total_downgrades": 2,
+      "downgrades_emissoes": 3,
+      "total_downgrades": 3,
       "novos_emissores": 2,
       "novos_emissoes": 1,
       "total_novos": 3,
@@ -2347,6 +2334,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_anterior": "2026-10-05",
       "upgrades": [
         {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brBBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "ECO SECURITIZADORA 2022",
           "instrumento": "notes ser 2",
@@ -2358,34 +2358,34 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+3"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "BSEC SECURITIZADORA 2011",
-          "instrumento": "certificates",
-          "dt_acao": "2026-10-01",
-          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
-          "rating_anterior": "BBsf(bra)",
-          "rating_atual": "BBBsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
         }
       ],
       "downgrades": [
         {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brBB-",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
+          "agencia": "Liberum",
+          "emissor": "ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+          "instrumento": "Senior - Curto prazo",
+          "dt_acao": "2026-10-06",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29219",
+          "rating_anterior": "CP4",
+          "rating_atual": "CP5",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-5"
         },
         {
           "agencia": "Fitch",
@@ -2431,6 +2431,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "—",
       "categoria": "Emissor",
       "tipo": "NOVO",
+      "dt_captura": "2026-10-06"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "instrumento": "Senior - Curto prazo",
+      "dt_acao": "2026-10-06",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29219",
+      "rating_anterior": "CP4",
+      "rating_atual": "CP5",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-1",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-06"
     },
     {
@@ -2666,8 +2682,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "BSEC SECURITIZADORA 2011",
       "instrumento": "certificates",
       "dt_acao": "2026-10-01",
-      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
-      "rating_atual": "BBBsf(bra)",
+      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+      "rating_atual": "BBsf(bra)",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -5120,22 +5136,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-10-06"
     },
     {
-      "agencia": "Austin",
-      "emissor": "FICTOR INVEST FIDC",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBBB",
-      "rating_atual": "brBB-",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-4",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-06"
-    },
-    {
       "agencia": "Moody's",
       "emissor": "IN",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -5149,22 +5149,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "-5",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-06"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC IC SOMAPAY",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2024-08-12",
-      "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brB-",
-      "rating_atual": "brBB+",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+5",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
       "dt_captura": "2026-10-06"
     },
     {
@@ -5200,6 +5184,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-06",
       "dt_captura": "2026-10-06",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29227"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "instrumento": "Senior - Curto prazo",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "tipo_movimento": "DOWNGRADE",
+      "rating_anterior": "CP4",
+      "rating_atual": "CP5",
+      "variacao_notches": "-1",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-06",
+      "dt_captura": "2026-10-06",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29219"
     },
     {
       "agencia": "Fitch",
@@ -5488,6 +5488,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-01",
       "dt_captura": "2026-10-06",
       "link": "https://www.fitchratings.com/entity/bk-brasil-operacao-e-assessoria-restaurantes-sa-96269281#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "BSEC SECURITIZADORA 2011",
+      "instrumento": "certificates",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "BBsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-01",
+      "dt_captura": "2026-10-06",
+      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues"
     },
     {
       "agencia": "S&P",
@@ -132951,19 +132967,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+2"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FIDC IC SOMAPAY",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2024-08-12",
-        "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brB-",
-        "rating_atual": "brBB+",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+5"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "VERT CSCF 2024",
         "instrumento": "bonds ser 3",
@@ -133056,6 +133059,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "downgrades": [
+      {
+        "agencia": "Liberum",
+        "emissor": "ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+        "instrumento": "Senior - Curto prazo",
+        "dt_acao": "2026-10-06",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29219",
+        "rating_anterior": "CP4",
+        "rating_atual": "CP5",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-1"
+      },
       {
         "agencia": "Liberum",
         "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
@@ -133172,19 +133188,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBBB",
-        "rating_atual": "brBB-",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-4"
       },
       {
         "agencia": "Moody's",
@@ -134028,8 +134031,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "emissor": "BSEC SECURITIZADORA 2011",
         "instrumento": "certificates",
         "dt_acao": "2026-10-01",
-        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
-        "rating_atual": "BBBsf(bra)",
+        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+        "rating_atual": "BBsf(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
