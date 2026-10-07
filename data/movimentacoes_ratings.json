@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-07T00:57:10.015162",
+  "timestamp": "2026-10-07T13:19:04.227918",
   "dt_atual": "2026-10-07",
   "dt_anterior": "2026-10-06",
   "resumo": {
@@ -7,11 +7,11 @@
     "upgrades_emissoes": 16,
     "total_upgrades": 28,
     "downgrades_emissores": 11,
-    "downgrades_emissoes": 37,
-    "total_downgrades": 48,
+    "downgrades_emissoes": 38,
+    "total_downgrades": 49,
     "novos_emissores": 6,
-    "novos_emissoes": 54,
-    "total_novos": 60,
+    "novos_emissoes": 55,
+    "total_novos": 61,
     "outlooks_emissores": 7,
     "outlooks_emissoes": 19,
     "total_outlooks": 26,
@@ -27,11 +27,11 @@
       "upgrades_emissoes": 16,
       "total_upgrades": 28,
       "downgrades_emissores": 11,
-      "downgrades_emissoes": 37,
-      "total_downgrades": 48,
+      "downgrades_emissoes": 38,
+      "total_downgrades": 49,
       "novos_emissores": 6,
-      "novos_emissoes": 54,
-      "total_novos": 60,
+      "novos_emissoes": 55,
+      "total_novos": 61,
       "outlooks_emissores": 7,
       "outlooks_emissoes": 19,
       "total_outlooks": 26,
@@ -639,19 +639,6 @@
           "variacao_notches": "+2"
         },
         {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brB-",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+5"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "VERT CSCF 2024",
           "instrumento": "bonds ser 3",
@@ -702,6 +689,19 @@
           "outlook_atual": "Positiva",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "instrumento": "notes ser 2",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
+          "rating_anterior": "AA-sf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+3"
         },
         {
           "agencia": "Fitch",
@@ -834,6 +834,19 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-19"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
         },
         {
           "agencia": "Fitch",
@@ -1744,8 +1757,8 @@
           "emissor": "BSEC SECURITIZADORA 2011",
           "instrumento": "certificates",
           "dt_acao": "2026-10-01",
-          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
-          "rating_atual": "BBsf(bra)",
+          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
+          "rating_atual": "BBBsf(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1856,6 +1869,17 @@
           "dt_acao": "2026-10-05",
           "link": "https://www.fitchratings.com/entity/seller-3-fundo-de-investimento-em-direitos-creditorios-segmento-meios-de-pagamento-de-resp-limitada-97967726#issues",
           "rating_atual": "AAA(EXP)sf(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Moody's",
+          "emissor": "VTK [II] FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "1ª Série de Cotas Seniores",
+          "dt_acao": "2026-10-06",
+          "link": "",
+          "rating_atual": "(P)AAA.br (sf)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -2301,8 +2325,8 @@
       "downgrades_emissoes": 2,
       "total_downgrades": 2,
       "novos_emissores": 0,
-      "novos_emissoes": 0,
-      "total_novos": 0,
+      "novos_emissoes": 1,
+      "total_novos": 1,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
@@ -2326,17 +2350,17 @@
       "dt_anterior": "2026-10-06",
       "upgrades": [
         {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brB-",
-          "rating_atual": "brBB+",
+          "agencia": "Fitch",
+          "emissor": "BSEC SECURITIZADORA 2011",
+          "instrumento": "certificates",
+          "dt_acao": "2026-10-01",
+          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
+          "rating_anterior": "BBsf(bra)",
+          "rating_atual": "BBBsf(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+5"
+          "variacao_notches": "+3"
         },
         {
           "agencia": "Fitch",
@@ -2381,6 +2405,19 @@
       "downgrades": [
         {
           "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
+        {
+          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
@@ -2391,22 +2428,21 @@
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-2"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2022",
-          "instrumento": "notes ser 2",
-          "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "AA-sf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-3"
         }
       ],
-      "novos": [],
+      "novos": [
+        {
+          "agencia": "Moody's",
+          "emissor": "VTK [II] FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "1ª Série de Cotas Seniores",
+          "dt_acao": "2026-10-06",
+          "link": "",
+          "rating_atual": "(P)AAA.br (sf)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        }
+      ],
       "outlooks": [],
       "retirados": []
     }
@@ -2488,6 +2524,20 @@
       "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-07"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "VTK [II] FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "1ª Série de Cotas Seniores",
+      "dt_acao": "2026-10-06",
+      "link": "",
+      "rating_atual": "(P)AAA.br (sf)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
       "dt_captura": "2026-10-07"
     },
     {
@@ -2723,8 +2773,8 @@
       "emissor": "BSEC SECURITIZADORA 2011",
       "instrumento": "certificates",
       "dt_acao": "2026-10-01",
-      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
-      "rating_atual": "BBsf(bra)",
+      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
+      "rating_atual": "BBBsf(bra)",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -5036,6 +5086,22 @@
     },
     {
       "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "notes ser 2",
+      "dt_acao": "2026-06-24",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
+      "rating_anterior": "AA-sf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+3",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-07"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "FACTA INSS CB FIDC",
       "instrumento": "bonds ser 2022-1,2,3",
       "dt_acao": "2026-06-12",
@@ -5164,18 +5230,18 @@
     },
     {
       "agencia": "Austin",
-      "emissor": "FIDC IC SOMAPAY",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2024-08-12",
-      "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brB-",
-      "rating_atual": "brBB+",
+      "emissor": "HIGH YIELD YALEEH FIDC",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB+",
+      "rating_atual": "brBBB-",
       "outlook_anterior": "Estável",
       "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+5",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
       "categoria": "Emissão",
-      "tipo": "UPGRADE",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-07"
     }
   ],
@@ -5259,6 +5325,22 @@
       "dt_acao": "2026-10-06",
       "dt_captura": "2026-10-07",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29219"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "VTK [II] FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "1ª Série de Cotas Seniores",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "(P)AAA.br (sf)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-06",
+      "dt_captura": "2026-10-07",
+      "link": ""
     },
     {
       "agencia": "Moody's",
@@ -5547,6 +5629,22 @@
       "dt_acao": "2026-10-01",
       "dt_captura": "2026-10-07",
       "link": "https://www.fitchratings.com/entity/bk-brasil-operacao-e-assessoria-restaurantes-sa-96269281#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "BSEC SECURITIZADORA 2011",
+      "instrumento": "certificates",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "BBBsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-01",
+      "dt_captura": "2026-10-07",
+      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues"
     },
     {
       "agencia": "S&P",
@@ -7947,6 +8045,22 @@
       "dt_acao": "2026-06-25",
       "dt_captura": "2026-10-07",
       "link": "https://www.fitchratings.com/entity/credito-universitario-fundo-de-investimento-em-direitos-creditorios-96969819#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "notes ser 2",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "AA-sf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "variacao_notches": "+3",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-06-24",
+      "dt_captura": "2026-10-07",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues"
     },
     {
       "agencia": "Fitch",
@@ -135813,19 +135927,6 @@
         "variacao_notches": "+2"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FIDC IC SOMAPAY",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2024-08-12",
-        "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brB-",
-        "rating_atual": "brBB+",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+5"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "VERT CSCF 2024",
         "instrumento": "bonds ser 3",
@@ -135876,6 +135977,19 @@
         "outlook_atual": "Positiva",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "ECO SECURITIZADORA 2022",
+        "instrumento": "notes ser 2",
+        "dt_acao": "2026-06-24",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
+        "rating_anterior": "AA-sf(bra)",
+        "rating_atual": "AAAsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+3"
       },
       {
         "agencia": "Fitch",
@@ -136008,6 +136122,19 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-19"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB+",
+        "rating_atual": "brBBB-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
       },
       {
         "agencia": "Fitch",
@@ -136918,8 +137045,8 @@
         "emissor": "BSEC SECURITIZADORA 2011",
         "instrumento": "certificates",
         "dt_acao": "2026-10-01",
-        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
-        "rating_atual": "BBsf(bra)",
+        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
+        "rating_atual": "BBBsf(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -137030,6 +137157,17 @@
         "dt_acao": "2026-10-05",
         "link": "https://www.fitchratings.com/entity/seller-3-fundo-de-investimento-em-direitos-creditorios-segmento-meios-de-pagamento-de-resp-limitada-97967726#issues",
         "rating_atual": "AAA(EXP)sf(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Moody's",
+        "emissor": "VTK [II] FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "instrumento": "1ª Série de Cotas Seniores",
+        "dt_acao": "2026-10-06",
+        "link": "",
+        "rating_atual": "(P)AAA.br (sf)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
