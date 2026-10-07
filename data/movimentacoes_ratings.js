@@ -1,14 +1,14 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-07T13:19:04.227918",
+  "timestamp": "2026-10-07T17:46:23.907980",
   "dt_atual": "2026-10-07",
   "dt_anterior": "2026-10-06",
   "resumo": {
     "upgrades_emissores": 12,
-    "upgrades_emissoes": 16,
-    "total_upgrades": 28,
+    "upgrades_emissoes": 17,
+    "total_upgrades": 29,
     "downgrades_emissores": 11,
-    "downgrades_emissoes": 38,
-    "total_downgrades": 49,
+    "downgrades_emissoes": 37,
+    "total_downgrades": 48,
     "novos_emissores": 6,
     "novos_emissoes": 55,
     "total_novos": 61,
@@ -24,11 +24,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-09-07",
     "resumo": {
       "upgrades_emissores": 12,
-      "upgrades_emissoes": 16,
-      "total_upgrades": 28,
+      "upgrades_emissoes": 17,
+      "total_upgrades": 29,
       "downgrades_emissores": 11,
-      "downgrades_emissoes": 38,
-      "total_downgrades": 49,
+      "downgrades_emissoes": 37,
+      "total_downgrades": 48,
       "novos_emissores": 6,
       "novos_emissoes": 55,
       "total_novos": 61,
@@ -639,6 +639,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+2"
         },
         {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "VERT CSCF 2024",
           "instrumento": "bonds ser 3",
@@ -834,19 +847,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-19"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
         },
         {
           "agencia": "Fitch",
@@ -2319,11 +2319,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-10-06",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 4,
-      "total_upgrades": 4,
+      "upgrades_emissoes": 5,
+      "total_upgrades": 5,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 2,
-      "total_downgrades": 2,
+      "downgrades_emissoes": 1,
+      "total_downgrades": 1,
       "novos_emissores": 0,
       "novos_emissoes": 1,
       "total_novos": 1,
@@ -2349,6 +2349,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_atual": "2026-10-07",
       "dt_anterior": "2026-10-06",
       "upgrades": [
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        },
         {
           "agencia": "Fitch",
           "emissor": "BSEC SECURITIZADORA 2011",
@@ -2403,19 +2416,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         }
       ],
       "downgrades": [
-        {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
-        },
         {
           "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
@@ -5230,18 +5230,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Austin",
-      "emissor": "HIGH YIELD YALEEH FIDC",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2024-03-06",
-      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brBBB+",
-      "rating_atual": "brBBB-",
+      "emissor": "FIDC IC SOMAPAY",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2024-08-12",
+      "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brB-",
+      "rating_atual": "brBB+",
       "outlook_anterior": "Estável",
       "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+5",
       "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
+      "tipo": "UPGRADE",
       "dt_captura": "2026-10-07"
     }
   ],
@@ -135927,6 +135927,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+2"
       },
       {
+        "agencia": "Austin",
+        "emissor": "FIDC IC SOMAPAY",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2024-08-12",
+        "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brB-",
+        "rating_atual": "brBB+",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+5"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "VERT CSCF 2024",
         "instrumento": "bonds ser 3",
@@ -136122,19 +136135,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-19"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "HIGH YIELD YALEEH FIDC",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2024-03-06",
-        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brBBB+",
-        "rating_atual": "brBBB-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
       },
       {
         "agencia": "Fitch",
