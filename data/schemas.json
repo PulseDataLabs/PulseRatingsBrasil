@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Igua Saneamento S.A."
+        "example": "Hapvida Participacoes e Investimentos S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/igua-saneamento-sa-92892096"
+        "example": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531"
       },
       {
         "name": "no_tipo_rating",
@@ -74,22 +74,22 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "A+(bra)"
+        "example": "A(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-10-07"
+        "example": "2026-10-08"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Affirmed"
+        "example": "Downgrade"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Stable"
+        "example": "Rating Outlook Negative"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Igua Saneamento S.A."
+        "example": "Hapvida Participacoes e Investimentos S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/igua-saneamento-sa-92892096"
+        "example": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531"
       }
     ]
   },
