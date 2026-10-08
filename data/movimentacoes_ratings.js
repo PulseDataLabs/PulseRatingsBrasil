@@ -1,14 +1,14 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-08T01:05:54.250649",
+  "timestamp": "2026-10-08T13:37:39.377803",
   "dt_atual": "2026-10-08",
   "dt_anterior": "2026-10-07",
   "resumo": {
-    "upgrades_emissores": 12,
+    "upgrades_emissores": 13,
     "upgrades_emissoes": 17,
-    "total_upgrades": 29,
+    "total_upgrades": 30,
     "downgrades_emissores": 9,
-    "downgrades_emissoes": 28,
-    "total_downgrades": 37,
+    "downgrades_emissoes": 27,
+    "total_downgrades": 36,
     "novos_emissores": 5,
     "novos_emissoes": 55,
     "total_novos": 60,
@@ -23,12 +23,12 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_atual": "2026-10-08",
     "dt_anterior": "2026-09-08",
     "resumo": {
-      "upgrades_emissores": 12,
+      "upgrades_emissores": 13,
       "upgrades_emissoes": 17,
-      "total_upgrades": 29,
+      "total_upgrades": 30,
       "downgrades_emissores": 9,
-      "downgrades_emissoes": 28,
-      "total_downgrades": 37,
+      "downgrades_emissoes": 27,
+      "total_downgrades": 36,
       "novos_emissores": 5,
       "novos_emissoes": 55,
       "total_novos": 60,
@@ -69,6 +69,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+7"
+        },
+        {
+          "agencia": "S&P",
+          "emissor": "DESKTOP",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2026-10-08",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918",
+          "rating_anterior": "brA+",
+          "rating_atual": "brAAA",
+          "outlook_anterior": "Em Observação",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+4"
         },
         {
           "agencia": "Moody's",
@@ -641,6 +654,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+2"
         },
         {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2025",
+          "instrumento": "notes ser 4",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+          "rating_anterior": "Asf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        },
+        {
           "agencia": "Moody's",
           "emissor": "OCEANPACT SERVICOS MARITIMOS",
           "instrumento": "6ª Emissão de Debêntures - Série Única",
@@ -665,19 +691,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Positiva",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2022",
-          "instrumento": "notes ser 2",
-          "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
-          "rating_anterior": "AA-sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
         },
         {
           "agencia": "Fitch",
@@ -797,19 +810,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-3"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
         },
         {
           "agencia": "Fitch",
@@ -1603,8 +1603,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "BSEC SECURITIZADORA 2011",
           "instrumento": "certificates",
           "dt_acao": "2026-10-01",
-          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
-          "rating_atual": "BBBsf(bra)",
+          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+          "rating_atual": "BBsf(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -2140,12 +2140,12 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_atual": "2026-10-08",
     "dt_anterior": "2026-10-07",
     "resumo": {
-      "upgrades_emissores": 0,
-      "upgrades_emissoes": 1,
-      "total_upgrades": 1,
+      "upgrades_emissores": 1,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 3,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 1,
-      "total_downgrades": 1,
+      "downgrades_emissoes": 2,
+      "total_downgrades": 2,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2160,7 +2160,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "tipo": "emissores",
       "dt_atual": "2026-10-08",
       "dt_anterior": "2026-10-07",
-      "upgrades": [],
+      "upgrades": [
+        {
+          "agencia": "S&P",
+          "emissor": "DESKTOP",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2026-10-08",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918",
+          "rating_anterior": "brA+",
+          "rating_atual": "brAAA",
+          "outlook_anterior": "Em Observação",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+4"
+        }
+      ],
       "downgrades": [],
       "novos": [],
       "outlooks": [],
@@ -2183,21 +2197,47 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+2"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2025",
+          "instrumento": "notes ser 4",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+          "rating_anterior": "Asf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
         }
       ],
       "downgrades": [
         {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "instrumento": "notes ser 2",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "AA-sf(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
+          "variacao_notches": "-3"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "BSEC SECURITIZADORA 2011",
+          "instrumento": "certificates",
+          "dt_acao": "2026-10-01",
+          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+          "rating_anterior": "BBBsf(bra)",
+          "rating_atual": "BBsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
         }
       ],
       "novos": [],
@@ -2206,6 +2246,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "S&P",
+      "emissor": "DESKTOP",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "dt_acao": "2026-10-08",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918",
+      "rating_anterior": "brA+",
+      "rating_atual": "brAAA",
+      "outlook_anterior": "Em Observação",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+4",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-08"
+    },
     {
       "agencia": "Fitch",
       "emissor": "CONCESSIONARIA BLOCO CENTRAL",
@@ -2517,8 +2573,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "BSEC SECURITIZADORA 2011",
       "instrumento": "certificates",
       "dt_acao": "2026-10-01",
-      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
-      "rating_atual": "BBBsf(bra)",
+      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+      "rating_atual": "BBsf(bra)",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -4592,16 +4648,16 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "ECO SECURITIZADORA 2022",
-      "instrumento": "notes ser 2",
+      "emissor": "ECO SECURITIZADORA 2025",
+      "instrumento": "notes ser 4",
       "dt_acao": "2026-06-24",
-      "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
-      "rating_anterior": "AA-sf(bra)",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+      "rating_anterior": "Asf(bra)",
       "rating_atual": "AAAsf(bra)",
       "outlook_anterior": "Estável",
       "outlook_atual": "Estável",
       "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+3",
+      "variacao_notches": "+5",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-10-08"
@@ -4765,25 +4821,25 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-10-08"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC CONSIGNADOS FEDERAIS",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2019-09-27",
-      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brAA",
-      "rating_atual": "brAA-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-08"
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "S&P",
+      "emissor": "DESKTOP",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "brA+",
+      "rating_atual": "brAAA",
+      "variacao_notches": "+4",
+      "outlook_anterior": "Em Observação",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-08",
+      "dt_captura": "2026-10-08",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918"
+    },
     {
       "agencia": "Fitch",
       "emissor": "CONCESSIONARIA BLOCO CENTRAL",
@@ -5151,6 +5207,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-01",
       "dt_captura": "2026-10-08",
       "link": "https://www.fitchratings.com/entity/bk-brasil-operacao-e-assessoria-restaurantes-sa-96269281#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "BSEC SECURITIZADORA 2011",
+      "instrumento": "certificates",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "BBsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-01",
+      "dt_captura": "2026-10-08",
+      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues"
     },
     {
       "agencia": "S&P",
@@ -7343,6 +7415,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-06-24",
       "dt_captura": "2026-10-08",
       "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2025",
+      "instrumento": "notes ser 4",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "Asf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "variacao_notches": "+5",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-06-24",
+      "dt_captura": "2026-10-08",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues"
     },
     {
       "agencia": "Fitch",
@@ -137537,6 +137625,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+7"
       },
       {
+        "agencia": "S&P",
+        "emissor": "DESKTOP",
+        "instrumento": "Escala Nacional Brasil de Longo Prazo",
+        "dt_acao": "2026-10-08",
+        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918",
+        "rating_anterior": "brA+",
+        "rating_atual": "brAAA",
+        "outlook_anterior": "Em Observação",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+4"
+      },
+      {
         "agencia": "Moody's",
         "emissor": "VINLAND CAPITAL MANAGEMENT CREDITO PRIVADO GESTORA RECURSOS",
         "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -138107,6 +138208,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+2"
       },
       {
+        "agencia": "Fitch",
+        "emissor": "ECO SECURITIZADORA 2025",
+        "instrumento": "notes ser 4",
+        "dt_acao": "2026-06-24",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+        "rating_anterior": "Asf(bra)",
+        "rating_atual": "AAAsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+5"
+      },
+      {
         "agencia": "Moody's",
         "emissor": "OCEANPACT SERVICOS MARITIMOS",
         "instrumento": "6ª Emissão de Debêntures - Série Única",
@@ -138131,19 +138245,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Positiva",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+1"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "ECO SECURITIZADORA 2022",
-        "instrumento": "notes ser 2",
-        "dt_acao": "2026-06-24",
-        "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
-        "rating_anterior": "AA-sf(bra)",
-        "rating_atual": "AAAsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+3"
       },
       {
         "agencia": "Fitch",
@@ -138263,19 +138364,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-3"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FIDC CONSIGNADOS FEDERAIS",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2019-09-27",
-        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brAA",
-        "rating_atual": "brAA-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
       },
       {
         "agencia": "Fitch",
@@ -139069,8 +139157,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "emissor": "BSEC SECURITIZADORA 2011",
         "instrumento": "certificates",
         "dt_acao": "2026-10-01",
-        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
-        "rating_atual": "BBBsf(bra)",
+        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+        "rating_atual": "BBsf(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
