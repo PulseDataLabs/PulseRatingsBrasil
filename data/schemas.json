@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACCESS FIDC - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brCCC"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brCCC"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-15"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11202"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "INCOR CRED FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA"
+        "example": "AEG 4 FUNDOS DE INVESTIMENTO EM DIREITOS CREDITÓRIOS DE RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29226"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29229"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "INCOR CRED FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA"
+        "example": "AEG 4 FUNDOS DE INVESTIMENTO EM DIREITOS CREDITÓRIOS DE RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29226"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29229"
       },
       {
         "name": "no_tipo_rating",
@@ -362,17 +362,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CCC"
+        "example": "C"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-10-08"
+        "example": "2026-10-09"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Atribuição"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACCESS FIDC"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACCESS FIDC - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "no_tipo_rating",
@@ -466,12 +466,12 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SENIORES ÚNICA"
+        "example": "SUBORDINADAS JÚNIOR"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brCCC"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-15"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_devedor_vinculado",
