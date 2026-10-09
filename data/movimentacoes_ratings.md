@@ -8,9 +8,9 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 10 | 12 | **22** |
-| 🔴 **Downgrades (Rebaixamentos)** | 8 | 28 | **36** |
+| 🔴 **Downgrades (Rebaixamentos)** | 8 | 27 | **35** |
 | 🔵 **Novos Ratings** | 6 | 61 | **67** |
-| 🟡 **Mudanças de Perspectiva** | 7 | 17 | **24** |
+| 🟡 **Mudanças de Perspectiva** | 8 | 17 | **25** |
 | ⚪ **Ratings Retirados / Liquidados** | 6 | 16 | **22** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 22
@@ -32,14 +32,14 @@
 | Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brB+` | **`brBBB`** | `+5` | Negativa | 09/10/2025 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 7ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
-| Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Curto prazo | `CP3` | **`CP2`** | `+1` | Estável | 23/09/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | `BBB-` | **`A`** | `+4` | Estável | 23/09/2026 |
 | Fitch | **CONCESSIONARIA BLOCO CENTRAL** | BRL 800 mln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
 | Fitch | **CONCESSIONARIA BLOCO SUL** | BRL 700 mln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
 | Fitch | **CONCESSIONARIA BLOCO SUL** | BRL 2.5 bln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
+| Fitch | **AGUA VERMELHA TRANSMISSORA ENERGIA** | BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035 | `A-(bra)` | **`A(bra)`** | `+1` | Positiva | 09/10/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 36
+### 🔴 Rebaixamentos de Rating (Downgrades) — 35
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **EVEN CONSTRUTORA INCORPORADORA** | Escala Nacional Brasil de Longo Prazo | `brAA+` | **`brAA`** | `-1` | Negativa | 30/09/2026 |
@@ -55,7 +55,6 @@
 | Liberum | **INTRABANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE ILIMITADA** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/09/2026 |
 | Fitch | **FACTA INSS CB FIDC** | bonds ser 2022-1,2,3 | `AAAsf(bra)` | **`CCsf(bra)`** | `-19` | Estável | 12/06/2026 |
 | Fitch | **KANASTRA SECURITIZADORA 2024** | notes ser 5 | `AAAsf(bra)` | **`AA+sf(bra)`** | `-1` | Estável | 28/01/2026 |
-| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
 | Fitch | **CSCF CARTOES CONSIGNADOS II 2025** | notes ser 1,2,3 | `AAAsf(bra)` | **`AAsf(bra)`** | `-2` | Estável | 29/04/2026 |
 | Moody's | **SLC AGRICOLA** | Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025 | `AA.br` | **`AA-.br`** | `-1` | Estável | 17/09/2026 |
 | Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
@@ -79,7 +78,7 @@
 | Moody's | **RIZA SECURITIZADORA** | 3ª Série da 226ª Emissão de CRAs | `BBB+.br (sf)` | **`BB-.br (sf)`** | `-5` | Estável | 15/09/2026 |
 | Moody's | **RIZA SECURITIZADORA** | Série Única da 171ª Emissão de CRAs | `BBB+.br (sf)` | **`BB-.br (sf)`** | `-5` | Estável | 15/09/2026 |
 
-### 🟡 Mudanças de Perspectiva (Outlook) — 24
+### 🟡 Mudanças de Perspectiva (Outlook) — 25
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva Anterior | Nova Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | Fitch | **TRSP** | National Long Term Rating | `AA(bra)` | Em Observação | **Negativa** | 10/09/2026 |
@@ -89,6 +88,7 @@
 | Fitch | **TRAVELEX BANCO CAMBIO** | National Long Term Rating | `BBB(bra)` | Estável | **Em Observação** | 18/09/2026 |
 | Fitch | **TRAVELEX BANCO CAMBIO** | National Short Term Rating | `F2(bra)` | Estável | **Em Observação** | 18/09/2026 |
 | Fitch | **COMPANHIA GAS ESTADO RIO GRANDE SUL** | National Long Term Rating | `AA(bra)` | Em Observação | **Negativa** | 23/09/2026 |
+| Fitch | **VESTE ESTILO** | National Long Term Rating | `BBB(bra)` | Negativa | **Estável** | 09/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS FINANCEIROS FACTA CONSIGNADO INSS RESPONSABILIDADE LIMITADA** | Mezanino - Longo prazo | `BB` | Negativa | **Estável** | 14/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS FINANCEIROS FACTA CONSIGNADO INSS RESPONSABILIDADE LIMITADA** | Mezanino - Curto prazo | `CP4` | Negativa | **Estável** | 14/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS FINANCEIROS FACTA CONSIGNADO INSS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | `A` | Negativa | **Estável** | 14/09/2026 |
@@ -170,4 +170,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (08/10/2026 → 09/10/2026)
-*Total nas últimas 24h: 🟢 3 upgrades | 🔴 1 downgrades | 🔵 5 novos | 🟡 0 perspectivas | ⚪ 2 retirados.*
+*Total nas últimas 24h: 🟢 6 upgrades | 🔴 3 downgrades | 🔵 5 novos | 🟡 1 perspectivas | ⚪ 2 retirados.*

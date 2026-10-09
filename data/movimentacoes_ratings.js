@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-09T13:11:09.015594",
+  "timestamp": "2026-10-09T17:20:51.412865",
   "dt_atual": "2026-10-09",
   "dt_anterior": "2026-10-08",
   "resumo": {
@@ -7,14 +7,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "upgrades_emissoes": 12,
     "total_upgrades": 22,
     "downgrades_emissores": 8,
-    "downgrades_emissoes": 28,
-    "total_downgrades": 36,
+    "downgrades_emissoes": 27,
+    "total_downgrades": 35,
     "novos_emissores": 6,
     "novos_emissoes": 61,
     "total_novos": 67,
-    "outlooks_emissores": 7,
+    "outlooks_emissores": 8,
     "outlooks_emissoes": 17,
-    "total_outlooks": 24,
+    "total_outlooks": 25,
     "retirados_emissores": 6,
     "retirados_emissoes": 16,
     "total_retirados": 22
@@ -27,14 +27,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 12,
       "total_upgrades": 22,
       "downgrades_emissores": 8,
-      "downgrades_emissoes": 28,
-      "total_downgrades": 36,
+      "downgrades_emissoes": 27,
+      "total_downgrades": 35,
       "novos_emissores": 6,
       "novos_emissoes": 61,
       "total_novos": 67,
-      "outlooks_emissores": 7,
+      "outlooks_emissores": 8,
       "outlooks_emissoes": 17,
-      "total_outlooks": 24,
+      "total_outlooks": 25,
       "retirados_emissores": 6,
       "retirados_emissoes": 16,
       "total_retirados": 22
@@ -433,6 +433,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Negativa",
           "tipo_movimento": "OUTLOOK",
           "variacao_notches": "0"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "VESTE ESTILO",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-10-09",
+          "link": "https://www.fitchratings.com/entity/restoque-comercio-e-confeccoes-de-roupas-sa-93935490",
+          "rating_atual": "BBB(bra)",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
         }
       ],
       "retirados": [
@@ -600,19 +612,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+1"
         },
         {
-          "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2024",
-          "instrumento": "notes ser 3",
-          "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
-          "rating_anterior": "AA-sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Positiva",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
-        },
-        {
           "agencia": "Liberum",
           "emissor": "DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
           "instrumento": "Senior - Curto prazo",
@@ -674,6 +673,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "rating_atual": "AAA(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "AGUA VERMELHA TRANSMISSORA ENERGIA",
+          "instrumento": "BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035",
+          "dt_acao": "2026-10-09",
+          "link": "https://www.fitchratings.com/entity/agua-vermelha-transmissora-de-energia-sa-97452675#issues",
+          "rating_anterior": "A-(bra)",
+          "rating_atual": "A(bra)",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Positiva",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
         }
@@ -743,19 +755,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
         },
         {
           "agencia": "Fitch",
@@ -1435,8 +1434,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "BSEC SECURITIZADORA 2011",
           "instrumento": "certificates",
           "dt_acao": "2026-10-01",
-          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
-          "rating_atual": "BBBsf(bra)",
+          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+          "rating_atual": "BBsf(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -2140,17 +2139,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-10-08",
     "resumo": {
       "upgrades_emissores": 2,
-      "upgrades_emissoes": 1,
-      "total_upgrades": 3,
+      "upgrades_emissoes": 4,
+      "total_upgrades": 6,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 1,
-      "total_downgrades": 1,
+      "downgrades_emissoes": 3,
+      "total_downgrades": 3,
       "novos_emissores": 0,
       "novos_emissoes": 5,
       "total_novos": 5,
-      "outlooks_emissores": 0,
+      "outlooks_emissores": 1,
       "outlooks_emissoes": 0,
-      "total_outlooks": 0,
+      "total_outlooks": 1,
       "retirados_emissores": 0,
       "retirados_emissoes": 2,
       "total_retirados": 2
@@ -2189,7 +2188,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       ],
       "downgrades": [],
       "novos": [],
-      "outlooks": [],
+      "outlooks": [
+        {
+          "agencia": "Fitch",
+          "emissor": "VESTE ESTILO",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-10-09",
+          "link": "https://www.fitchratings.com/entity/restoque-comercio-e-confeccoes-de-roupas-sa-93935490",
+          "rating_atual": "BBB(bra)",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        }
+      ],
       "retirados": []
     },
     "emissoes": {
@@ -2197,6 +2209,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_atual": "2026-10-09",
       "dt_anterior": "2026-10-08",
       "upgrades": [
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA-",
+          "rating_atual": "brAA",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
         {
           "agencia": "Austin",
           "emissor": "HIGH YIELD YALEEH FIDC",
@@ -2209,9 +2234,61 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+2"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "AGUA VERMELHA TRANSMISSORA ENERGIA",
+          "instrumento": "BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035",
+          "dt_acao": "2026-10-09",
+          "link": "https://www.fitchratings.com/entity/agua-vermelha-transmissora-de-energia-sa-97452675#issues",
+          "rating_anterior": "A-(bra)",
+          "rating_atual": "A(bra)",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
         }
       ],
       "downgrades": [
+        {
+          "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2024",
+          "instrumento": "notes ser 3",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-272-1-2-3-grupo-salta-97593456#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "AA-sf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "BSEC SECURITIZADORA 2011",
+          "instrumento": "certificates",
+          "dt_acao": "2026-10-01",
+          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+          "rating_anterior": "BBBsf(bra)",
+          "rating_atual": "BBsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
+        },
         {
           "agencia": "Fitch",
           "emissor": "GDS SUBHOLDING",
@@ -2315,6 +2392,37 @@ window.PULSERATINGS_MOVIMENTACOES = {
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Fitch",
+      "emissor": "VESTE ESTILO",
+      "instrumento": "National Long Term Rating",
+      "dt_acao": "2026-10-09",
+      "link": "https://www.fitchratings.com/entity/restoque-comercio-e-confeccoes-de-roupas-sa-93935490",
+      "rating_atual": "BBB(bra)",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "dt_captura": "2026-10-09"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "AGUA VERMELHA TRANSMISSORA ENERGIA",
+      "instrumento": "BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035",
+      "dt_acao": "2026-10-09",
+      "link": "https://www.fitchratings.com/entity/agua-vermelha-transmissora-de-energia-sa-97452675#issues",
+      "rating_anterior": "A-(bra)",
+      "rating_atual": "A(bra)",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Positiva",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-09"
+    },
     {
       "agencia": "S&P",
       "emissor": "BANCO ORIGINAL",
@@ -2916,8 +3024,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "BSEC SECURITIZADORA 2011",
       "instrumento": "certificates",
       "dt_acao": "2026-10-01",
-      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
-      "rating_atual": "BBBsf(bra)",
+      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+      "rating_atual": "BBsf(bra)",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -4735,22 +4843,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "OPEA SECURITIZADORA 2024",
-      "instrumento": "notes ser 3",
-      "dt_acao": "2026-06-24",
-      "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
-      "rating_anterior": "AA-sf(bra)",
-      "rating_atual": "AAAsf(bra)",
-      "outlook_anterior": "Positiva",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+3",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-10-09"
-    },
-    {
-      "agencia": "Fitch",
       "emissor": "FACTA INSS CB FIDC",
       "instrumento": "bonds ser 2022-1,2,3",
       "dt_acao": "2026-06-12",
@@ -4876,25 +4968,41 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-09"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC IC SOMAPAY",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2024-08-12",
-      "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB+",
-      "rating_atual": "brB-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-5",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-09"
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "Fitch",
+      "emissor": "VESTE ESTILO",
+      "instrumento": "National Long Term Rating",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "BBB(bra)",
+      "variacao_notches": "0",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-09",
+      "dt_captura": "2026-10-09",
+      "link": "https://www.fitchratings.com/entity/restoque-comercio-e-confeccoes-de-roupas-sa-93935490"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "AGUA VERMELHA TRANSMISSORA ENERGIA",
+      "instrumento": "BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "A-(bra)",
+      "rating_atual": "A(bra)",
+      "variacao_notches": "+1",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Positiva",
+      "dt_acao": "2026-10-09",
+      "dt_captura": "2026-10-09",
+      "link": "https://www.fitchratings.com/entity/agua-vermelha-transmissora-de-energia-sa-97452675#issues"
+    },
     {
       "agencia": "S&P",
       "emissor": "BANCO ORIGINAL",
@@ -140938,6 +141046,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Negativa",
         "tipo_movimento": "OUTLOOK",
         "variacao_notches": "0"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "VESTE ESTILO",
+        "instrumento": "National Long Term Rating",
+        "dt_acao": "2026-10-09",
+        "link": "https://www.fitchratings.com/entity/restoque-comercio-e-confeccoes-de-roupas-sa-93935490",
+        "rating_atual": "BBB(bra)",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "OUTLOOK",
+        "variacao_notches": "0"
       }
     ],
     "retirados": [
@@ -141105,19 +141225,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+1"
       },
       {
-        "agencia": "Fitch",
-        "emissor": "OPEA SECURITIZADORA 2024",
-        "instrumento": "notes ser 3",
-        "dt_acao": "2026-06-24",
-        "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
-        "rating_anterior": "AA-sf(bra)",
-        "rating_atual": "AAAsf(bra)",
-        "outlook_anterior": "Positiva",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+3"
-      },
-      {
         "agencia": "Liberum",
         "emissor": "DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
         "instrumento": "Senior - Curto prazo",
@@ -141179,6 +141286,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "rating_atual": "AAA(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "AGUA VERMELHA TRANSMISSORA ENERGIA",
+        "instrumento": "BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035",
+        "dt_acao": "2026-10-09",
+        "link": "https://www.fitchratings.com/entity/agua-vermelha-transmissora-de-energia-sa-97452675#issues",
+        "rating_anterior": "A-(bra)",
+        "rating_atual": "A(bra)",
+        "outlook_anterior": "Positiva",
+        "outlook_atual": "Positiva",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+1"
       }
@@ -141248,19 +141368,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FIDC IC SOMAPAY",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2024-08-12",
-        "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brB-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-5"
       },
       {
         "agencia": "Fitch",
@@ -141940,8 +142047,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "emissor": "BSEC SECURITIZADORA 2011",
         "instrumento": "certificates",
         "dt_acao": "2026-10-01",
-        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
-        "rating_atual": "BBBsf(bra)",
+        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
+        "rating_atual": "BBsf(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
