@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-10-12T16:01:42.844297",
+  "timestamp": "2026-10-12T19:54:10.679650",
   "dt_atual": "2026-10-12",
   "dt_anterior": "2026-10-10",
   "resumo": {
     "upgrades_emissores": 10,
-    "upgrades_emissoes": 13,
-    "total_upgrades": 23,
+    "upgrades_emissoes": 11,
+    "total_upgrades": 21,
     "downgrades_emissores": 8,
-    "downgrades_emissoes": 27,
-    "total_downgrades": 35,
+    "downgrades_emissoes": 30,
+    "total_downgrades": 38,
     "novos_emissores": 7,
-    "novos_emissoes": 60,
-    "total_novos": 67,
+    "novos_emissoes": 61,
+    "total_novos": 68,
     "outlooks_emissores": 6,
     "outlooks_emissoes": 15,
     "total_outlooks": 21,
@@ -24,14 +24,14 @@
     "dt_anterior": "2026-09-11",
     "resumo": {
       "upgrades_emissores": 10,
-      "upgrades_emissoes": 13,
-      "total_upgrades": 23,
+      "upgrades_emissoes": 11,
+      "total_upgrades": 21,
       "downgrades_emissores": 8,
-      "downgrades_emissoes": 27,
-      "total_downgrades": 35,
+      "downgrades_emissoes": 30,
+      "total_downgrades": 38,
       "novos_emissores": 7,
-      "novos_emissoes": 60,
-      "total_novos": 67,
+      "novos_emissoes": 61,
+      "total_novos": 68,
       "outlooks_emissores": 6,
       "outlooks_emissoes": 15,
       "total_outlooks": 21,
@@ -521,19 +521,6 @@
           "variacao_notches": "+3"
         },
         {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brBBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
-        {
           "agencia": "Moody's",
           "emissor": "OCEANPACT SERVICOS MARITIMOS",
           "instrumento": "6ª Emissão de Debêntures - Série Única",
@@ -558,19 +545,6 @@
           "outlook_atual": "Positiva",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2024",
-          "instrumento": "notes ser 3",
-          "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
-          "rating_anterior": "AA-sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Positiva",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
         },
         {
           "agencia": "Liberum",
@@ -705,6 +679,19 @@
           "variacao_notches": "-19"
         },
         {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "KANASTRA SECURITIZADORA 2024",
           "instrumento": "notes ser 5",
@@ -753,6 +740,19 @@
           "rating_atual": "AA-.br (sf)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
         },
@@ -1002,6 +1002,19 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-5"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "instrumento": "notes ser 2",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "AA-sf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
         }
       ],
       "novos": [
@@ -1166,6 +1179,17 @@
           "dt_acao": "2026-09-18",
           "link": "https://www.fitchratings.com/entity/cimed-co-sa-97629249#issues",
           "rating_atual": "AA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "IN",
+          "instrumento": "2a Emissão - Série Unica",
+          "dt_acao": "2026-09-18",
+          "link": "https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291#issues",
+          "rating_atual": "A+(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1513,7 +1537,7 @@
         },
         {
           "agencia": "Fitch",
-          "emissor": "IN",
+          "emissor": "GDS SUBHOLDING",
           "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
           "dt_acao": "2026-10-08",
           "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
@@ -1987,11 +2011,11 @@
     "dt_anterior": "2026-10-10",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 4,
-      "total_upgrades": 4,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 1,
-      "total_downgrades": 1,
+      "downgrades_emissoes": 3,
+      "total_downgrades": 3,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2042,32 +2066,6 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+5"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2024",
-          "instrumento": "notes ser 3",
-          "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
-          "rating_anterior": "AA-sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Positiva",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2022",
-          "instrumento": "notes ser 2",
-          "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008#issues",
-          "rating_anterior": "AA-sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
         }
       ],
       "downgrades": [
@@ -2083,6 +2081,32 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
         }
       ],
       "novos": [],
@@ -2232,7 +2256,7 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "IN",
+      "emissor": "GDS SUBHOLDING",
       "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
       "dt_acao": "2026-10-08",
       "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
@@ -3639,6 +3663,20 @@
     },
     {
       "agencia": "Fitch",
+      "emissor": "IN",
+      "instrumento": "2a Emissão - Série Unica",
+      "dt_acao": "2026-09-18",
+      "link": "https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291#issues",
+      "rating_atual": "A+(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-12"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "CIMED CO.",
       "instrumento": "6ª Emissão de Debêntures de BRL 200 milhões  e vencimento em2031",
       "dt_acao": "2026-09-18",
@@ -4338,18 +4376,18 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "OPEA SECURITIZADORA 2024",
-      "instrumento": "notes ser 3",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "notes ser 2",
       "dt_acao": "2026-06-24",
-      "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
-      "rating_anterior": "AA-sf(bra)",
-      "rating_atual": "AAAsf(bra)",
-      "outlook_anterior": "Positiva",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "AA-sf(bra)",
+      "outlook_anterior": "Estável",
       "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+3",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-3",
       "categoria": "Emissão",
-      "tipo": "UPGRADE",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-12"
     },
     {
@@ -4453,15 +4491,15 @@
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBB+",
-      "rating_atual": "brBBB",
+      "rating_atual": "brBB",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+2",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-1",
       "categoria": "Emissão",
-      "tipo": "UPGRADE",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-12"
     },
     {
@@ -4477,6 +4515,22 @@
       "tipo_movimento": "DOWNGRADE",
       "variacao_notches": "-5",
       "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-12"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "HIGH YIELD YALEEH FIDC",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB+",
+      "rating_atual": "brBBB-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
+      "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-12"
     }
@@ -4849,6 +4903,22 @@
       "dt_acao": "2026-10-08",
       "dt_captura": "2026-10-12",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29226"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "GDS SUBHOLDING",
+      "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "BBB(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Em Observação",
+      "dt_acao": "2026-10-08",
+      "dt_captura": "2026-10-12",
+      "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues"
     },
     {
       "agencia": "Moody's",
@@ -6195,6 +6265,22 @@
       "link": "https://www.fitchratings.com/entity/hidrovias-do-brasil-sa-96584762#issues"
     },
     {
+      "agencia": "Fitch",
+      "emissor": "IN",
+      "instrumento": "2a Emissão - Série Unica",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "A+(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-09-18",
+      "dt_captura": "2026-10-12",
+      "link": "https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291#issues"
+    },
+    {
       "agencia": "S&P",
       "emissor": "LIGHT SERVICOS ELETRICIDADE",
       "instrumento": "Escala Nacional Brasil de Longo Prazo",
@@ -6897,6 +6983,22 @@
       "dt_acao": "2026-06-24",
       "dt_captura": "2026-10-12",
       "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "notes ser 2",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "tipo_movimento": "DOWNGRADE",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "AA-sf(bra)",
+      "variacao_notches": "-3",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-06-24",
+      "dt_captura": "2026-10-12",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158#issues"
     },
     {
       "agencia": "Fitch",
@@ -145829,19 +145931,6 @@
         "variacao_notches": "+3"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brBBB",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+2"
-      },
-      {
         "agencia": "Moody's",
         "emissor": "OCEANPACT SERVICOS MARITIMOS",
         "instrumento": "6ª Emissão de Debêntures - Série Única",
@@ -145866,19 +145955,6 @@
         "outlook_atual": "Positiva",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+1"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "OPEA SECURITIZADORA 2024",
-        "instrumento": "notes ser 3",
-        "dt_acao": "2026-06-24",
-        "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
-        "rating_anterior": "AA-sf(bra)",
-        "rating_atual": "AAAsf(bra)",
-        "outlook_anterior": "Positiva",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+3"
       },
       {
         "agencia": "Liberum",
@@ -146013,6 +146089,19 @@
         "variacao_notches": "-19"
       },
       {
+        "agencia": "Austin",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB+",
+        "rating_atual": "brBBB-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "KANASTRA SECURITIZADORA 2024",
         "instrumento": "notes ser 5",
@@ -146061,6 +146150,19 @@
         "rating_atual": "AA-.br (sf)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-1"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBB+",
+        "rating_atual": "brBB",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-1"
       },
@@ -146310,6 +146412,19 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-5"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "ECO SECURITIZADORA 2022",
+        "instrumento": "notes ser 2",
+        "dt_acao": "2026-06-24",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158#issues",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "AA-sf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-3"
       }
     ],
     "novos": [
@@ -146474,6 +146589,17 @@
         "dt_acao": "2026-09-18",
         "link": "https://www.fitchratings.com/entity/cimed-co-sa-97629249#issues",
         "rating_atual": "AA(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "IN",
+        "instrumento": "2a Emissão - Série Unica",
+        "dt_acao": "2026-09-18",
+        "link": "https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291#issues",
+        "rating_atual": "A+(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -146821,7 +146947,7 @@
       },
       {
         "agencia": "Fitch",
-        "emissor": "IN",
+        "emissor": "GDS SUBHOLDING",
         "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
         "dt_acao": "2026-10-08",
         "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
