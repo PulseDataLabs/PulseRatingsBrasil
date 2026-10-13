@@ -1,17 +1,17 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-13T14:23:08.263578",
+  "timestamp": "2026-10-13T17:40:27.118702",
   "dt_atual": "2026-10-13",
   "dt_anterior": "2026-10-12",
   "resumo": {
     "upgrades_emissores": 7,
-    "upgrades_emissoes": 12,
-    "total_upgrades": 19,
+    "upgrades_emissoes": 14,
+    "total_upgrades": 21,
     "downgrades_emissores": 8,
-    "downgrades_emissoes": 29,
-    "total_downgrades": 37,
+    "downgrades_emissoes": 28,
+    "total_downgrades": 36,
     "novos_emissores": 11,
-    "novos_emissoes": 61,
-    "total_novos": 72,
+    "novos_emissoes": 62,
+    "total_novos": 73,
     "outlooks_emissores": 6,
     "outlooks_emissoes": 15,
     "total_outlooks": 21,
@@ -24,14 +24,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-09-11",
     "resumo": {
       "upgrades_emissores": 7,
-      "upgrades_emissoes": 12,
-      "total_upgrades": 19,
+      "upgrades_emissoes": 14,
+      "total_upgrades": 21,
       "downgrades_emissores": 8,
-      "downgrades_emissoes": 29,
-      "total_downgrades": 37,
+      "downgrades_emissoes": 28,
+      "total_downgrades": 36,
       "novos_emissores": 11,
-      "novos_emissoes": 61,
-      "total_novos": 72,
+      "novos_emissoes": 62,
+      "total_novos": 73,
       "outlooks_emissores": 6,
       "outlooks_emissoes": 15,
       "total_outlooks": 21,
@@ -111,10 +111,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "QI PARTICIPACOES",
+          "emissor": "QI SOCIEDADE CREDITO DIRETO",
           "instrumento": "National Long Term Rating",
           "dt_acao": "2026-09-25",
-          "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
+          "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
           "rating_anterior": "AA-(bra)",
           "rating_atual": "AA(bra)",
           "outlook_anterior": "Positiva",
@@ -124,10 +124,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "QI SOCIEDADE CREDITO DIRETO",
+          "emissor": "QI PARTICIPACOES",
           "instrumento": "National Long Term Rating",
           "dt_acao": "2026-09-25",
-          "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
+          "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
           "rating_anterior": "AA-(bra)",
           "rating_atual": "AA(bra)",
           "outlook_anterior": "Positiva",
@@ -539,6 +539,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+3"
         },
         {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brBBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
+        },
+        {
           "agencia": "Moody's",
           "emissor": "OCEANPACT SERVICOS MARITIMOS",
           "instrumento": "6ª Emissão de Debêntures - Série Única",
@@ -563,6 +576,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Positiva",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2024",
+          "instrumento": "notes ser 3",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
+          "rating_anterior": "AA-sf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+3"
         },
         {
           "agencia": "Liberum",
@@ -695,19 +721,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-19"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
         },
         {
           "agencia": "Fitch",
@@ -1693,6 +1706,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "VIVARA PARTICIPACOES",
+          "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.56% bond/note",
+          "dt_acao": "2026-10-13",
+          "link": "https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261#issues",
+          "rating_atual": "AAA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
         }
       ],
       "outlooks": [
@@ -1880,12 +1904,12 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2022",
-          "instrumento": "securities ser 1,2,3",
-          "dt_acao": "2026-01-15",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+          "emissor": "CSCF CARTOES CONSIGNADOS II 2023",
+          "instrumento": "notes ser 2023-1",
+          "dt_acao": "2023-10-30",
+          "link": "https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2023-2-bmg5-97537359#issues",
           "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
+          "rating_atual": "NRsf",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "RETIRADO",
@@ -2029,20 +2053,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-10-12",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 2,
-      "total_upgrades": 2,
+      "upgrades_emissoes": 4,
+      "total_upgrades": 4,
       "downgrades_emissores": 1,
       "downgrades_emissoes": 0,
       "total_downgrades": 1,
       "novos_emissores": 0,
-      "novos_emissoes": 0,
-      "total_novos": 0,
+      "novos_emissoes": 1,
+      "total_novos": 1,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 2,
-      "total_retirados": 2
+      "retirados_emissoes": 1,
+      "total_retirados": 1
     },
     "emissores": {
       "tipo": "emissores",
@@ -2088,43 +2112,68 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB-",
+          "rating_atual": "brBBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
+        },
+        {
+          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
+          "variacao_notches": "+3"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2024",
+          "instrumento": "notes ser 3",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
+          "rating_anterior": "AA-sf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+3"
         }
       ],
       "downgrades": [],
-      "novos": [],
+      "novos": [
+        {
+          "agencia": "Fitch",
+          "emissor": "VIVARA PARTICIPACOES",
+          "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.56% bond/note",
+          "dt_acao": "2026-10-13",
+          "link": "https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261#issues",
+          "rating_atual": "AAA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        }
+      ],
       "outlooks": [],
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2022",
-          "instrumento": "securities ser 1,2,3",
-          "dt_acao": "2026-01-15",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+          "emissor": "CSCF CARTOES CONSIGNADOS II 2023",
+          "instrumento": "notes ser 2023-1",
+          "dt_acao": "2023-10-30",
+          "link": "https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2023-2-bmg5-97537359#issues",
           "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
+          "rating_atual": "NRsf",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "RETIRADO",
@@ -2134,6 +2183,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Fitch",
+      "emissor": "VIVARA PARTICIPACOES",
+      "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.56% bond/note",
+      "dt_acao": "2026-10-13",
+      "link": "https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261#issues",
+      "rating_atual": "AAA(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-13"
+    },
     {
       "agencia": "Fitch",
       "emissor": "VESTE ESTILO",
@@ -3006,10 +3069,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "QI PARTICIPACOES",
+      "emissor": "QI SOCIEDADE CREDITO DIRETO",
       "instrumento": "National Long Term Rating",
       "dt_acao": "2026-09-25",
-      "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
+      "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
       "rating_anterior": "AA-(bra)",
       "rating_atual": "AA(bra)",
       "outlook_anterior": "Positiva",
@@ -3022,10 +3085,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "QI SOCIEDADE CREDITO DIRETO",
+      "emissor": "QI PARTICIPACOES",
       "instrumento": "National Long Term Rating",
       "dt_acao": "2026-09-25",
-      "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
+      "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
       "rating_anterior": "AA-(bra)",
       "rating_atual": "AA(bra)",
       "outlook_anterior": "Positiva",
@@ -4387,6 +4450,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2024",
+      "instrumento": "notes ser 3",
+      "dt_acao": "2026-06-24",
+      "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
+      "rating_anterior": "AA-sf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+3",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-13"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "ECO SECURITIZADORA 2022",
       "instrumento": "notes ser 2",
       "dt_acao": "2026-06-24",
@@ -4498,22 +4577,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-10-13"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "ECO SECURITIZADORA 2022",
-      "instrumento": "securities ser 1,2,3",
-      "dt_acao": "2026-01-15",
-      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
-      "rating_anterior": "AAAsf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-10-13"
-    },
-    {
       "agencia": "Moody's",
       "emissor": "VINLAND CAPITAL MANAGEMENT CREDITO PRIVADO GESTORA RECURSOS",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -4526,6 +4589,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "tipo_movimento": "UPGRADE",
       "variacao_notches": "+2",
       "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-13"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FICTOR INVEST FIDC",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2025-10-09",
+      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBB+",
+      "rating_atual": "brBBB",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+2",
+      "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-10-13"
     },
@@ -4546,19 +4625,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-10-13"
     },
     {
-      "agencia": "Austin",
-      "emissor": "HIGH YIELD YALEEH FIDC",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2024-03-06",
-      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brBBB+",
-      "rating_atual": "brBBB-",
+      "agencia": "Fitch",
+      "emissor": "CSCF CARTOES CONSIGNADOS II 2023",
+      "instrumento": "notes ser 2023-1",
+      "dt_acao": "2023-10-30",
+      "link": "https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2023-2-bmg5-97537359#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "NRsf",
       "outlook_anterior": "Estável",
       "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
       "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
+      "tipo": "RETIRADO",
       "dt_captura": "2026-10-13"
     },
     {
@@ -4579,6 +4658,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "Fitch",
+      "emissor": "VIVARA PARTICIPACOES",
+      "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.56% bond/note",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-13",
+      "dt_captura": "2026-10-13",
+      "link": "https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261#issues"
+    },
     {
       "agencia": "Fitch",
       "emissor": "VESTE ESTILO",
@@ -7077,6 +7172,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2024",
+      "instrumento": "notes ser 3",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "AA-sf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "variacao_notches": "+3",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-06-24",
+      "dt_captura": "2026-10-13",
+      "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "FACTA INSS CB FIDC",
       "instrumento": "bonds ser 2022-1,2,3",
       "categoria": "Emissão",
@@ -7186,6 +7297,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-01-15",
       "dt_captura": "2026-10-13",
       "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "CSCF CARTOES CONSIGNADOS II 2023",
+      "instrumento": "notes ser 2023-1",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "NRsf",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2023-10-30",
+      "dt_captura": "2026-10-13",
+      "link": "https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2023-2-bmg5-97537359#issues"
     },
     {
       "agencia": "Fitch",
@@ -148172,10 +148299,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "QI PARTICIPACOES",
+        "emissor": "QI SOCIEDADE CREDITO DIRETO",
         "instrumento": "National Long Term Rating",
         "dt_acao": "2026-09-25",
-        "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
+        "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
         "rating_anterior": "AA-(bra)",
         "rating_atual": "AA(bra)",
         "outlook_anterior": "Positiva",
@@ -148185,10 +148312,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "QI SOCIEDADE CREDITO DIRETO",
+        "emissor": "QI PARTICIPACOES",
         "instrumento": "National Long Term Rating",
         "dt_acao": "2026-09-25",
-        "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
+        "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
         "rating_anterior": "AA-(bra)",
         "rating_atual": "AA(bra)",
         "outlook_anterior": "Positiva",
@@ -148600,6 +148727,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+3"
       },
       {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBB+",
+        "rating_atual": "brBBB",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+2"
+      },
+      {
         "agencia": "Moody's",
         "emissor": "OCEANPACT SERVICOS MARITIMOS",
         "instrumento": "6ª Emissão de Debêntures - Série Única",
@@ -148624,6 +148764,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Positiva",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "OPEA SECURITIZADORA 2024",
+        "instrumento": "notes ser 3",
+        "dt_acao": "2026-06-24",
+        "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
+        "rating_anterior": "AA-sf(bra)",
+        "rating_atual": "AAAsf(bra)",
+        "outlook_anterior": "Positiva",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+3"
       },
       {
         "agencia": "Liberum",
@@ -148756,19 +148909,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-19"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "HIGH YIELD YALEEH FIDC",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2024-03-06",
-        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brBBB+",
-        "rating_atual": "brBBB-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
       },
       {
         "agencia": "Fitch",
@@ -149754,6 +149894,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "VIVARA PARTICIPACOES",
+        "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.56% bond/note",
+        "dt_acao": "2026-10-13",
+        "link": "https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261#issues",
+        "rating_atual": "AAA(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
       }
     ],
     "outlooks": [
@@ -149941,12 +150092,12 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "retirados": [
       {
         "agencia": "Fitch",
-        "emissor": "ECO SECURITIZADORA 2022",
-        "instrumento": "securities ser 1,2,3",
-        "dt_acao": "2026-01-15",
-        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+        "emissor": "CSCF CARTOES CONSIGNADOS II 2023",
+        "instrumento": "notes ser 2023-1",
+        "dt_acao": "2023-10-30",
+        "link": "https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2023-2-bmg5-97537359#issues",
         "rating_anterior": "AAAsf(bra)",
-        "rating_atual": "PIFsf(bra)",
+        "rating_atual": "NRsf",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "RETIRADO",
