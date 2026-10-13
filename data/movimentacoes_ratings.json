@@ -1,62 +1,49 @@
 {
-  "timestamp": "2026-10-13T02:03:52.612824",
+  "timestamp": "2026-10-13T14:23:08.263578",
   "dt_atual": "2026-10-13",
   "dt_anterior": "2026-10-12",
   "resumo": {
-    "upgrades_emissores": 10,
-    "upgrades_emissoes": 13,
-    "total_upgrades": 23,
+    "upgrades_emissores": 7,
+    "upgrades_emissoes": 12,
+    "total_upgrades": 19,
     "downgrades_emissores": 8,
-    "downgrades_emissoes": 28,
-    "total_downgrades": 36,
-    "novos_emissores": 7,
-    "novos_emissoes": 60,
-    "total_novos": 67,
+    "downgrades_emissoes": 29,
+    "total_downgrades": 37,
+    "novos_emissores": 11,
+    "novos_emissoes": 61,
+    "total_novos": 72,
     "outlooks_emissores": 6,
     "outlooks_emissoes": 15,
     "total_outlooks": 21,
     "retirados_emissores": 3,
-    "retirados_emissoes": 10,
-    "total_retirados": 13
+    "retirados_emissoes": 11,
+    "total_retirados": 14
   },
   "periodo_recente": {
     "dt_atual": "2026-10-13",
     "dt_anterior": "2026-09-11",
     "resumo": {
-      "upgrades_emissores": 10,
-      "upgrades_emissoes": 13,
-      "total_upgrades": 23,
+      "upgrades_emissores": 7,
+      "upgrades_emissoes": 12,
+      "total_upgrades": 19,
       "downgrades_emissores": 8,
-      "downgrades_emissoes": 28,
-      "total_downgrades": 36,
-      "novos_emissores": 7,
-      "novos_emissoes": 60,
-      "total_novos": 67,
+      "downgrades_emissoes": 29,
+      "total_downgrades": 37,
+      "novos_emissores": 11,
+      "novos_emissoes": 61,
+      "total_novos": 72,
       "outlooks_emissores": 6,
       "outlooks_emissoes": 15,
       "total_outlooks": 21,
       "retirados_emissores": 3,
-      "retirados_emissoes": 10,
-      "total_retirados": 13
+      "retirados_emissoes": 11,
+      "total_retirados": 14
     },
     "emissores": {
       "tipo": "emissores",
       "dt_atual": "2026-10-13",
       "dt_anterior": "2026-09-11",
       "upgrades": [
-        {
-          "agencia": "S&P",
-          "emissor": "BANCO ORIGINAL",
-          "instrumento": "Escala Nacional Brasil de Curto Prazo",
-          "dt_acao": "2026-10-08",
-          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
-          "rating_anterior": "brA-2",
-          "rating_atual": "brA-1",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
-        },
         {
           "agencia": "S&P",
           "emissor": "LIGHT SERVICOS ELETRICIDADE",
@@ -84,19 +71,6 @@
           "variacao_notches": "+7"
         },
         {
-          "agencia": "S&P",
-          "emissor": "DESKTOP",
-          "instrumento": "Escala Nacional Brasil de Longo Prazo",
-          "dt_acao": "2026-10-08",
-          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918",
-          "rating_anterior": "brA+",
-          "rating_atual": "brAAA",
-          "outlook_anterior": "Em Observação",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+4"
-        },
-        {
           "agencia": "Moody's",
           "emissor": "VINLAND CAPITAL MANAGEMENT CREDITO PRIVADO GESTORA RECURSOS",
           "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -105,19 +79,6 @@
           "rating_anterior": "MQ2.br",
           "rating_atual": "MQ1.br",
           "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
-        {
-          "agencia": "S&P",
-          "emissor": "BANCO ORIGINAL",
-          "instrumento": "Escala Nacional Brasil de Longo Prazo",
-          "dt_acao": "2026-10-08",
-          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brA",
-          "outlook_anterior": "Positiva",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+2"
@@ -150,10 +111,10 @@
         },
         {
           "agencia": "Fitch",
-          "emissor": "QI SOCIEDADE CREDITO DIRETO",
+          "emissor": "QI PARTICIPACOES",
           "instrumento": "National Long Term Rating",
           "dt_acao": "2026-09-25",
-          "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
+          "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
           "rating_anterior": "AA-(bra)",
           "rating_atual": "AA(bra)",
           "outlook_anterior": "Positiva",
@@ -163,10 +124,10 @@
         },
         {
           "agencia": "Fitch",
-          "emissor": "QI PARTICIPACOES",
+          "emissor": "QI SOCIEDADE CREDITO DIRETO",
           "instrumento": "National Long Term Rating",
           "dt_acao": "2026-09-25",
-          "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
+          "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
           "rating_anterior": "AA-(bra)",
           "rating_atual": "AA(bra)",
           "outlook_anterior": "Positiva",
@@ -178,16 +139,16 @@
       "downgrades": [
         {
           "agencia": "S&P",
-          "emissor": "EVEN CONSTRUTORA INCORPORADORA",
+          "emissor": "VALE",
           "instrumento": "Escala Nacional Brasil de Longo Prazo",
-          "dt_acao": "2026-09-30",
-          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000453",
-          "rating_anterior": "brAA+",
-          "rating_atual": "brAA",
-          "outlook_anterior": "Negativa",
+          "dt_acao": "2026-06-03",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001436",
+          "rating_anterior": "brAAA",
+          "rating_atual": "brAA-",
+          "outlook_anterior": "Estável",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
+          "variacao_notches": "-3"
         },
         {
           "agencia": "Moody's",
@@ -282,6 +243,50 @@
         }
       ],
       "novos": [
+        {
+          "agencia": "S&P",
+          "emissor": "BANCO",
+          "instrumento": "Escala Nacional Brasil de Curto Prazo",
+          "dt_acao": "2026-10-08",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
+          "rating_atual": "brA-1",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "S&P",
+          "emissor": "IN",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2026-09-30",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000453",
+          "rating_atual": "brAA",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "S&P",
+          "emissor": "BANCO",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2026-10-08",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
+          "rating_atual": "brA",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "S&P",
+          "emissor": "K",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2026-10-08",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918",
+          "rating_atual": "brAAA",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
         {
           "agencia": "Moody's",
           "emissor": "MOTIVA INFRAESTRUTURA MOBILIDADE",
@@ -534,19 +539,6 @@
           "variacao_notches": "+3"
         },
         {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brBBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
-        {
           "agencia": "Moody's",
           "emissor": "OCEANPACT SERVICOS MARITIMOS",
           "instrumento": "6ª Emissão de Debêntures - Série Única",
@@ -703,6 +695,19 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-19"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
         },
         {
           "agencia": "Fitch",
@@ -1198,6 +1203,17 @@
           "agencia": "Fitch",
           "emissor": "NOVA TRANSPORTADORA SUDESTE",
           "instrumento": "13th Debenture - BRL 1.5 bln bond/note",
+          "dt_acao": "2026-09-21",
+          "link": "https://www.fitchratings.com/entity/nova-transportadora-do-sudeste-sa-nts-96606450#issues",
+          "rating_atual": "AAA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "NOVA TRANSPORTADORA SUDESTE",
+          "instrumento": "13th Debenture - BRL 1.04 bln Floating IGP-DI (Brazil) bond/note 08-Oct-2033",
           "dt_acao": "2026-09-21",
           "link": "https://www.fitchratings.com/entity/nova-transportadora-do-sudeste-sa-nts-96606450#issues",
           "rating_atual": "AAA(bra)",
@@ -1864,6 +1880,19 @@
       "retirados": [
         {
           "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "instrumento": "securities ser 1,2,3",
+          "dt_acao": "2026-01-15",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "OPEA SECURITIZADORA 2022",
           "instrumento": "notes ser 3",
           "dt_acao": "2026-09-15",
@@ -2000,11 +2029,11 @@
     "dt_anterior": "2026-10-12",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 3,
-      "total_upgrades": 3,
-      "downgrades_emissores": 0,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 2,
+      "downgrades_emissores": 1,
       "downgrades_emissoes": 0,
-      "total_downgrades": 0,
+      "total_downgrades": 1,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2012,15 +2041,29 @@
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 0,
-      "total_retirados": 0
+      "retirados_emissoes": 2,
+      "total_retirados": 2
     },
     "emissores": {
       "tipo": "emissores",
       "dt_atual": "2026-10-13",
       "dt_anterior": "2026-10-12",
       "upgrades": [],
-      "downgrades": [],
+      "downgrades": [
+        {
+          "agencia": "S&P",
+          "emissor": "VALE",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2026-06-03",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001436",
+          "rating_anterior": "brAAA",
+          "rating_atual": "brAA-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
+        }
+      ],
       "novos": [],
       "outlooks": [],
       "retirados": []
@@ -2045,35 +2088,49 @@
         },
         {
           "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB-",
-          "rating_atual": "brBBB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
-        {
-          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB",
-          "rating_atual": "brBBB",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
+          "variacao_notches": "+1"
         }
       ],
       "downgrades": [],
       "novos": [],
       "outlooks": [],
-      "retirados": []
+      "retirados": [
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "instrumento": "securities ser 1,2,3",
+          "dt_acao": "2026-01-15",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "RIZA SECURITIZADORA 2022",
+          "instrumento": "securities ser 1",
+          "dt_acao": "2026-04-15",
+          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+          "rating_anterior": "AA+sf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        }
+      ]
     }
   },
   "movimentacoes": [
@@ -2109,54 +2166,6 @@
       "dt_captura": "2026-10-13"
     },
     {
-      "agencia": "S&P",
-      "emissor": "BANCO ORIGINAL",
-      "instrumento": "Escala Nacional Brasil de Curto Prazo",
-      "dt_acao": "2026-10-08",
-      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
-      "rating_anterior": "brA-2",
-      "rating_atual": "brA-1",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+1",
-      "categoria": "Emissor",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-10-13"
-    },
-    {
-      "agencia": "S&P",
-      "emissor": "DESKTOP",
-      "instrumento": "Escala Nacional Brasil de Longo Prazo",
-      "dt_acao": "2026-10-08",
-      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918",
-      "rating_anterior": "brA+",
-      "rating_atual": "brAAA",
-      "outlook_anterior": "Em Observação",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+4",
-      "categoria": "Emissor",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-10-13"
-    },
-    {
-      "agencia": "S&P",
-      "emissor": "BANCO ORIGINAL",
-      "instrumento": "Escala Nacional Brasil de Longo Prazo",
-      "dt_acao": "2026-10-08",
-      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
-      "rating_anterior": "brBBB+",
-      "rating_atual": "brA",
-      "outlook_anterior": "Positiva",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+2",
-      "categoria": "Emissor",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-10-13"
-    },
-    {
       "agencia": "Fitch",
       "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
       "instrumento": "National Long Term Rating",
@@ -2170,6 +2179,48 @@
       "variacao_notches": "-4",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-13"
+    },
+    {
+      "agencia": "S&P",
+      "emissor": "BANCO",
+      "instrumento": "Escala Nacional Brasil de Curto Prazo",
+      "dt_acao": "2026-10-08",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
+      "rating_atual": "brA-1",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-13"
+    },
+    {
+      "agencia": "S&P",
+      "emissor": "BANCO",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "dt_acao": "2026-10-08",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
+      "rating_atual": "brA",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-13"
+    },
+    {
+      "agencia": "S&P",
+      "emissor": "K",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "dt_acao": "2026-10-08",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918",
+      "rating_atual": "brAAA",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
       "dt_captura": "2026-10-13"
     },
     {
@@ -2762,18 +2813,16 @@
     },
     {
       "agencia": "S&P",
-      "emissor": "EVEN CONSTRUTORA INCORPORADORA",
+      "emissor": "IN",
       "instrumento": "Escala Nacional Brasil de Longo Prazo",
       "dt_acao": "2026-09-30",
       "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000453",
-      "rating_anterior": "brAA+",
       "rating_atual": "brAA",
-      "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
       "categoria": "Emissor",
-      "tipo": "DOWNGRADE",
+      "tipo": "NOVO",
       "dt_captura": "2026-10-13"
     },
     {
@@ -2957,10 +3006,10 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "QI SOCIEDADE CREDITO DIRETO",
+      "emissor": "QI PARTICIPACOES",
       "instrumento": "National Long Term Rating",
       "dt_acao": "2026-09-25",
-      "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
+      "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
       "rating_anterior": "AA-(bra)",
       "rating_atual": "AA(bra)",
       "outlook_anterior": "Positiva",
@@ -2973,10 +3022,10 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "QI PARTICIPACOES",
+      "emissor": "QI SOCIEDADE CREDITO DIRETO",
       "instrumento": "National Long Term Rating",
       "dt_acao": "2026-09-25",
-      "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
+      "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
       "rating_anterior": "AA-(bra)",
       "rating_atual": "AA(bra)",
       "outlook_anterior": "Positiva",
@@ -3446,6 +3495,20 @@
       "agencia": "Fitch",
       "emissor": "NOVA TRANSPORTADORA SUDESTE",
       "instrumento": "13th Debenture - BRL 1.5 bln bond/note",
+      "dt_acao": "2026-09-21",
+      "link": "https://www.fitchratings.com/entity/nova-transportadora-do-sudeste-sa-nts-96606450#issues",
+      "rating_atual": "AAA(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-13"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "NOVA TRANSPORTADORA SUDESTE",
+      "instrumento": "13th Debenture - BRL 1.04 bln Floating IGP-DI (Brazil) bond/note 08-Oct-2033",
       "dt_acao": "2026-09-21",
       "link": "https://www.fitchratings.com/entity/nova-transportadora-do-sudeste-sa-nts-96606450#issues",
       "rating_atual": "AAA(bra)",
@@ -4355,6 +4418,22 @@
       "dt_captura": "2026-10-13"
     },
     {
+      "agencia": "S&P",
+      "emissor": "VALE",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "dt_acao": "2026-06-03",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001436",
+      "rating_anterior": "brAAA",
+      "rating_atual": "brAA-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-3",
+      "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-13"
+    },
+    {
       "agencia": "Fitch",
       "emissor": "VERT CSCF 2024",
       "instrumento": "bonds ser 3",
@@ -4419,6 +4498,22 @@
       "dt_captura": "2026-10-13"
     },
     {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "securities ser 1,2,3",
+      "dt_acao": "2026-01-15",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-10-13"
+    },
+    {
       "agencia": "Moody's",
       "emissor": "VINLAND CAPITAL MANAGEMENT CREDITO PRIVADO GESTORA RECURSOS",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -4435,22 +4530,6 @@
       "dt_captura": "2026-10-13"
     },
     {
-      "agencia": "Austin",
-      "emissor": "FICTOR INVEST FIDC",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB+",
-      "rating_atual": "brBBB",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+2",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-10-13"
-    },
-    {
       "agencia": "Moody's",
       "emissor": "IN",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -4463,6 +4542,22 @@
       "tipo_movimento": "DOWNGRADE",
       "variacao_notches": "-5",
       "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-13"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "HIGH YIELD YALEEH FIDC",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB+",
+      "rating_atual": "brBBB-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
+      "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-13"
     },
@@ -4851,6 +4946,54 @@
       "dt_acao": "2026-10-08",
       "dt_captura": "2026-10-13",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29226"
+    },
+    {
+      "agencia": "S&P",
+      "emissor": "BANCO",
+      "instrumento": "Escala Nacional Brasil de Curto Prazo",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "brA-1",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-08",
+      "dt_captura": "2026-10-13",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381"
+    },
+    {
+      "agencia": "S&P",
+      "emissor": "BANCO",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "brA",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-08",
+      "dt_captura": "2026-10-13",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381"
+    },
+    {
+      "agencia": "S&P",
+      "emissor": "K",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "brAAA",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-08",
+      "dt_captura": "2026-10-13",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918"
     },
     {
       "agencia": "Moody's",
@@ -5363,6 +5506,22 @@
       "dt_acao": "2026-09-30",
       "dt_captura": "2026-10-13",
       "link": "https://www.fitchratings.com/entity/banco-do-brasil-sa-80089721#issues"
+    },
+    {
+      "agencia": "S&P",
+      "emissor": "IN",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "brAA",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Negativa",
+      "dt_acao": "2026-09-30",
+      "dt_captura": "2026-10-13",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000453"
     },
     {
       "agencia": "Moody's",
@@ -6083,6 +6242,22 @@
       "dt_acao": "2026-09-21",
       "dt_captura": "2026-10-13",
       "link": "https://www.fitchratings.com/entity/bsb-energetica-s-a-97349757#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "NOVA TRANSPORTADORA SUDESTE",
+      "instrumento": "13th Debenture - BRL 1.04 bln Floating IGP-DI (Brazil) bond/note 08-Oct-2033",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-09-21",
+      "dt_captura": "2026-10-13",
+      "link": "https://www.fitchratings.com/entity/nova-transportadora-do-sudeste-sa-nts-96606450#issues"
     },
     {
       "agencia": "Fitch",
@@ -6917,6 +7092,22 @@
       "link": "https://www.fitchratings.com/entity/facta-inss-cb-fidc-97441991#issues"
     },
     {
+      "agencia": "S&P",
+      "emissor": "VALE",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "tipo_movimento": "DOWNGRADE",
+      "rating_anterior": "brAAA",
+      "rating_atual": "brAA-",
+      "variacao_notches": "-3",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Negativa",
+      "dt_acao": "2026-06-03",
+      "dt_captura": "2026-10-13",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001436"
+    },
+    {
       "agencia": "Fitch",
       "emissor": "VERT CSCF 2024",
       "instrumento": "bonds ser 3",
@@ -6979,6 +7170,22 @@
       "dt_acao": "2026-01-28",
       "dt_captura": "2026-10-13",
       "link": "https://www.fitchratings.com/entity/kanastra-securtitzadora-2024-1-1-2-3-4-5-solfacil-97530370#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "instrumento": "securities ser 1,2,3",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-01-15",
+      "dt_captura": "2026-10-13",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues"
     },
     {
       "agencia": "Fitch",
@@ -147900,19 +148107,6 @@
     "upgrades": [
       {
         "agencia": "S&P",
-        "emissor": "BANCO ORIGINAL",
-        "instrumento": "Escala Nacional Brasil de Curto Prazo",
-        "dt_acao": "2026-10-08",
-        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
-        "rating_anterior": "brA-2",
-        "rating_atual": "brA-1",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+1"
-      },
-      {
-        "agencia": "S&P",
         "emissor": "LIGHT SERVICOS ELETRICIDADE",
         "instrumento": "Escala Nacional Brasil de Longo Prazo",
         "dt_acao": "2026-09-17",
@@ -147938,19 +148132,6 @@
         "variacao_notches": "+7"
       },
       {
-        "agencia": "S&P",
-        "emissor": "DESKTOP",
-        "instrumento": "Escala Nacional Brasil de Longo Prazo",
-        "dt_acao": "2026-10-08",
-        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918",
-        "rating_anterior": "brA+",
-        "rating_atual": "brAAA",
-        "outlook_anterior": "Em Observação",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+4"
-      },
-      {
         "agencia": "Moody's",
         "emissor": "VINLAND CAPITAL MANAGEMENT CREDITO PRIVADO GESTORA RECURSOS",
         "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -147959,19 +148140,6 @@
         "rating_anterior": "MQ2.br",
         "rating_atual": "MQ1.br",
         "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+2"
-      },
-      {
-        "agencia": "S&P",
-        "emissor": "BANCO ORIGINAL",
-        "instrumento": "Escala Nacional Brasil de Longo Prazo",
-        "dt_acao": "2026-10-08",
-        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
-        "rating_anterior": "brBBB+",
-        "rating_atual": "brA",
-        "outlook_anterior": "Positiva",
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+2"
@@ -148004,10 +148172,10 @@
       },
       {
         "agencia": "Fitch",
-        "emissor": "QI SOCIEDADE CREDITO DIRETO",
+        "emissor": "QI PARTICIPACOES",
         "instrumento": "National Long Term Rating",
         "dt_acao": "2026-09-25",
-        "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
+        "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
         "rating_anterior": "AA-(bra)",
         "rating_atual": "AA(bra)",
         "outlook_anterior": "Positiva",
@@ -148017,10 +148185,10 @@
       },
       {
         "agencia": "Fitch",
-        "emissor": "QI PARTICIPACOES",
+        "emissor": "QI SOCIEDADE CREDITO DIRETO",
         "instrumento": "National Long Term Rating",
         "dt_acao": "2026-09-25",
-        "link": "https://www.fitchratings.com/entity/qi-participacoes-sa-97525815",
+        "link": "https://www.fitchratings.com/entity/qi-sociedade-de-credito-direto-sa-97480532",
         "rating_anterior": "AA-(bra)",
         "rating_atual": "AA(bra)",
         "outlook_anterior": "Positiva",
@@ -148032,16 +148200,16 @@
     "downgrades": [
       {
         "agencia": "S&P",
-        "emissor": "EVEN CONSTRUTORA INCORPORADORA",
+        "emissor": "VALE",
         "instrumento": "Escala Nacional Brasil de Longo Prazo",
-        "dt_acao": "2026-09-30",
-        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000453",
-        "rating_anterior": "brAA+",
-        "rating_atual": "brAA",
-        "outlook_anterior": "Negativa",
+        "dt_acao": "2026-06-03",
+        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001436",
+        "rating_anterior": "brAAA",
+        "rating_atual": "brAA-",
+        "outlook_anterior": "Estável",
         "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
+        "variacao_notches": "-3"
       },
       {
         "agencia": "Moody's",
@@ -148136,6 +148304,50 @@
       }
     ],
     "novos": [
+      {
+        "agencia": "S&P",
+        "emissor": "BANCO",
+        "instrumento": "Escala Nacional Brasil de Curto Prazo",
+        "dt_acao": "2026-10-08",
+        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
+        "rating_atual": "brA-1",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "S&P",
+        "emissor": "IN",
+        "instrumento": "Escala Nacional Brasil de Longo Prazo",
+        "dt_acao": "2026-09-30",
+        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000453",
+        "rating_atual": "brAA",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "S&P",
+        "emissor": "BANCO",
+        "instrumento": "Escala Nacional Brasil de Longo Prazo",
+        "dt_acao": "2026-10-08",
+        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1001381",
+        "rating_atual": "brA",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "S&P",
+        "emissor": "K",
+        "instrumento": "Escala Nacional Brasil de Longo Prazo",
+        "dt_acao": "2026-10-08",
+        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000918",
+        "rating_atual": "brAAA",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
       {
         "agencia": "Moody's",
         "emissor": "MOTIVA INFRAESTRUTURA MOBILIDADE",
@@ -148388,19 +148600,6 @@
         "variacao_notches": "+3"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brBBB",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+2"
-      },
-      {
         "agencia": "Moody's",
         "emissor": "OCEANPACT SERVICOS MARITIMOS",
         "instrumento": "6ª Emissão de Debêntures - Série Única",
@@ -148557,6 +148756,19 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-19"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB+",
+        "rating_atual": "brBBB-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
       },
       {
         "agencia": "Fitch",
@@ -149052,6 +149264,17 @@
         "agencia": "Fitch",
         "emissor": "NOVA TRANSPORTADORA SUDESTE",
         "instrumento": "13th Debenture - BRL 1.5 bln bond/note",
+        "dt_acao": "2026-09-21",
+        "link": "https://www.fitchratings.com/entity/nova-transportadora-do-sudeste-sa-nts-96606450#issues",
+        "rating_atual": "AAA(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "NOVA TRANSPORTADORA SUDESTE",
+        "instrumento": "13th Debenture - BRL 1.04 bln Floating IGP-DI (Brazil) bond/note 08-Oct-2033",
         "dt_acao": "2026-09-21",
         "link": "https://www.fitchratings.com/entity/nova-transportadora-do-sudeste-sa-nts-96606450#issues",
         "rating_atual": "AAA(bra)",
@@ -149716,6 +149939,19 @@
       }
     ],
     "retirados": [
+      {
+        "agencia": "Fitch",
+        "emissor": "ECO SECURITIZADORA 2022",
+        "instrumento": "securities ser 1,2,3",
+        "dt_acao": "2026-01-15",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "PIFsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
       {
         "agencia": "Fitch",
         "emissor": "OPEA SECURITIZADORA 2022",
