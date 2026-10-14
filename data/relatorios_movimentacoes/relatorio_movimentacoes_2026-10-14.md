@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 7 | 13 | **20** |
-| 🔴 **Downgrades (Rebaixamentos)** | 8 | 26 | **34** |
-| 🔵 **Novos Ratings** | 11 | 62 | **73** |
+| 🟢 **Upgrades (Elevações)** | 7 | 12 | **19** |
+| 🔴 **Downgrades (Rebaixamentos)** | 8 | 25 | **33** |
+| 🔵 **Novos Ratings** | 11 | 65 | **76** |
 | 🟡 **Mudanças de Perspectiva** | 6 | 10 | **16** |
-| ⚪ **Ratings Retirados / Liquidados** | 3 | 10 | **13** |
+| ⚪ **Ratings Retirados / Liquidados** | 3 | 11 | **14** |
 
-### 🟢 Elevações de Rating (Upgrades) — 20
+### 🟢 Elevações de Rating (Upgrades) — 19
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **LIGHT SERVICOS ELETRICIDADE** | Escala Nacional Brasil de Longo Prazo | `D` | **`brBB+`** | `+11` | Estável | 17/09/2026 |
@@ -25,7 +25,6 @@
 | Fitch | **QI PARTICIPACOES** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Liberum | **KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `BBB-` | **`BBB`** | `+1` | Estável | 17/09/2026 |
 | Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB-` | **`brBBB+`** | `+2` | Estável | 06/03/2024 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brBBB`** | `+3` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 7ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
@@ -37,7 +36,7 @@
 | Fitch | **CONCESSIONARIA BLOCO SUL** | BRL 2.5 bln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
 | Fitch | **AGUA VERMELHA TRANSMISSORA ENERGIA** | BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035 | `A-(bra)` | **`A(bra)`** | `+1` | Positiva | 09/10/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 34
+### 🔴 Rebaixamentos de Rating (Downgrades) — 33
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **VALE** | Escala Nacional Brasil de Longo Prazo | `brAAA` | **`brAA-`** | `-3` | Negativa | 03/06/2026 |
@@ -51,7 +50,6 @@
 | Liberum | **ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP4` | **`CP5`** | `-1` | Estável | 06/10/2026 |
 | Liberum | **LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `AA-` | **`A-`** | `-3` | Negativa | 22/09/2026 |
 | Liberum | **INTRABANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE ILIMITADA** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/09/2026 |
-| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
 | Moody's | **SLC AGRICOLA** | Cédula de Produto Rural com Liquidação Financeira - Nº 01/2025 | `AA.br` | **`AA-.br`** | `-1` | Estável | 17/09/2026 |
 | Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
 | Moody's | **GJA INDUSTRIAS** | 3ª Emissão de Debêntures - 1ª Série | `BBB+.br` | **`BB-.br`** | `-5` | Negativa | 14/09/2026 |
@@ -95,7 +93,7 @@
 | Fitch | **RIZA SECURITIZADORA 2019** | notes ser 1 | `A+sf(bra)` | Em Observação | **Estável** | 29/09/2026 |
 | Fitch | **PGE** | BRL 49 mln bond/note 15-Jul-2036 | `BBB+(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (73)
+### 🔵 Novos Ratings Atribuídos (76)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **BANCO** | Escala Nacional Brasil de Curto Prazo | **`brA-1`** | Estável | 08/10/2026 |
@@ -111,6 +109,7 @@
 | Fitch | **MERCADO LIVRE** | National Long Term Rating | **`AAA(bra)`** | Estável | 08/10/2026 |
 | Moody's | **SUL CONCESSOES PARTICIPACOES** | 3ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 24/09/2026 |
 | Moody's | **COMPANHIA AGUAS ITAPEMA** | 2ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 21/09/2026 |
+| Moody's | **CONCESSIONARIA SISTEMA ANHANGUERA** | 15ª Emissão de Debêntures -  Série Única | **`AAA.br`** | Estável | 13/10/2026 |
 | Moody's | **ARGO ENERGIA EMPREENDIMENTOS PARTICIPACOES** | 1ª Emissão de Debêntures - 1ª Série | **`AAA.br`** | Estável | 25/09/2026 |
 | Moody's | **ARGO ENERGIA EMPREENDIMENTOS PARTICIPACOES** | 1ª Emissão de Debêntures - 2ª Série | **`AAA.br`** | Estável | 25/09/2026 |
 | Moody's | **ARGO ENERGIA EMPREENDIMENTOS PARTICIPACOES** | 1ª Emissão de Debêntures - 3ª Série | **`AAA.br`** | Estável | 25/09/2026 |
@@ -126,16 +125,16 @@
 | Fitch | **NOVA TRANSPORTADORA SUDESTE** | 13th Debenture - BRL 1.5 bln bond/note | **`AAA(bra)`** | Estável | 21/09/2026 |
 | Fitch | **NOVA TRANSPORTADORA SUDESTE** | 13th Debenture - BRL 1.04 bln Floating IGP-DI (Brazil) bond/note 08-Oct-2033 | **`AAA(bra)`** | Estável | 21/09/2026 |
 | Moody's | **MOVIDA PARTICIPACOES** | 29ª Emissão de Debêntures - Série Única | **`AA+.br`** | Estável | 22/09/2026 |
-| Liberum | **LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | **`CP2`** | Negativa | 22/09/2026 |
 | Fitch | **COMPANHIA PAULISTA FORCA LUZ** | BRL 43 mln 5.05% bond/note 15-Sep-2027 | **`AAA(bra)`** | Estável | 22/09/2026 |
-| *...e mais 43 novos ratings.* | | | | | |
+| *...e mais 46 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (13)
+### ⚪ Ratings Retirados / Liquidados (14)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **ALLIANCA SAUDE PARTICIPACOES** | National Long Term Rating | `RD(bra)` | Estável | 15/09/2026 |
 | Fitch | **ACUCAREIRA QUATA** | National Long Term Rating | `A+(bra)` | Estável | 30/09/2026 |
 | Fitch | **MERCADOLIVRE. ATIVIDADES INTERNET** | National Long Term Rating | `AAA(bra)` | Estável | 08/10/2026 |
+| Fitch | **CSCF CARTOES CONSIGNADOS II 2023** | notes ser 2023-1 | `AAAsf(bra)` | Estável | 30/10/2023 |
 | Fitch | **RIZA SECURITIZADORA 2022** | securities ser 1 | `AA+sf(bra)` | Estável | 15/04/2026 |
 | Fitch | **OPEA SECURITIZADORA 2022** | notes ser 3 | `AAAsf(bra)` | Estável | 15/09/2026 |
 | Fitch | **HIDROVIAS** | 2nd Debentures Issuance BRL 500 mln bond/note 21-Jul-2029 | `AAA(bra)` | Estável | 18/09/2026 |
@@ -149,4 +148,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (13/10/2026 → 14/10/2026)
-*Total nas últimas 24h: 🟢 0 upgrades | 🔴 2 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 2 retirados.*
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 3 downgrades | 🔵 2 novos | 🟡 0 perspectivas | ⚪ 2 retirados.*

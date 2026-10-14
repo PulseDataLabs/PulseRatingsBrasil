@@ -1,43 +1,43 @@
 {
-  "timestamp": "2026-10-14T00:07:01.147444",
+  "timestamp": "2026-10-14T11:47:42.596121",
   "dt_atual": "2026-10-14",
   "dt_anterior": "2026-10-13",
   "resumo": {
     "upgrades_emissores": 7,
-    "upgrades_emissoes": 13,
-    "total_upgrades": 20,
+    "upgrades_emissoes": 12,
+    "total_upgrades": 19,
     "downgrades_emissores": 8,
-    "downgrades_emissoes": 26,
-    "total_downgrades": 34,
+    "downgrades_emissoes": 25,
+    "total_downgrades": 33,
     "novos_emissores": 11,
-    "novos_emissoes": 62,
-    "total_novos": 73,
+    "novos_emissoes": 65,
+    "total_novos": 76,
     "outlooks_emissores": 6,
     "outlooks_emissoes": 10,
     "total_outlooks": 16,
     "retirados_emissores": 3,
-    "retirados_emissoes": 10,
-    "total_retirados": 13
+    "retirados_emissoes": 11,
+    "total_retirados": 14
   },
   "periodo_recente": {
     "dt_atual": "2026-10-14",
     "dt_anterior": "2026-09-14",
     "resumo": {
       "upgrades_emissores": 7,
-      "upgrades_emissoes": 13,
-      "total_upgrades": 20,
+      "upgrades_emissoes": 12,
+      "total_upgrades": 19,
       "downgrades_emissores": 8,
-      "downgrades_emissoes": 26,
-      "total_downgrades": 34,
+      "downgrades_emissoes": 25,
+      "total_downgrades": 33,
       "novos_emissores": 11,
-      "novos_emissoes": 62,
-      "total_novos": 73,
+      "novos_emissoes": 65,
+      "total_novos": 76,
       "outlooks_emissores": 6,
       "outlooks_emissoes": 10,
       "total_outlooks": 16,
       "retirados_emissores": 3,
-      "retirados_emissoes": 10,
-      "total_retirados": 13
+      "retirados_emissoes": 11,
+      "total_retirados": 14
     },
     "emissores": {
       "tipo": "emissores",
@@ -513,19 +513,6 @@
           "variacao_notches": "+2"
         },
         {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB",
-          "rating_atual": "brBBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "ECO SECURITIZADORA 2025",
           "instrumento": "notes ser 4",
@@ -695,19 +682,6 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-3"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
         },
         {
           "agencia": "Moody's",
@@ -1021,6 +995,17 @@
         },
         {
           "agencia": "Moody's",
+          "emissor": "CONCESSIONARIA SISTEMA ANHANGUERA",
+          "instrumento": "15ª Emissão de Debêntures -  Série Única",
+          "dt_acao": "2026-10-13",
+          "link": "",
+          "rating_atual": "AAA.br",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Moody's",
           "emissor": "ARGO ENERGIA EMPREENDIMENTOS PARTICIPACOES",
           "instrumento": "1ª Emissão de Debêntures - 1ª Série",
           "dt_acao": "2026-09-25",
@@ -1185,17 +1170,6 @@
           "variacao_notches": "—"
         },
         {
-          "agencia": "Liberum",
-          "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-          "instrumento": "Senior - Curto prazo",
-          "dt_acao": "2026-09-22",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/29221",
-          "rating_atual": "CP2",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "COMPANHIA PAULISTA FORCA LUZ",
           "instrumento": "BRL 43 mln 5.05% bond/note 15-Sep-2027",
@@ -1225,6 +1199,17 @@
           "link": "https://www.fitchratings.com/entity/rge-sul-distribuidora-de-energia-sa-96554699#issues",
           "rating_atual": "AAA(bra)",
           "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+          "instrumento": "Senior - Curto prazo",
+          "dt_acao": "2026-09-22",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29221",
+          "rating_atual": "CP2",
+          "outlook_atual": "Negativa",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
         },
@@ -1504,61 +1489,6 @@
           "variacao_notches": "—"
         },
         {
-          "agencia": "Liberum",
-          "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "instrumento": "Subordinada - Longo prazo",
-          "dt_acao": "2026-10-08",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-          "rating_atual": "CCC",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Liberum",
-          "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "instrumento": "Mezanino - Longo prazo",
-          "dt_acao": "2026-10-08",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-          "rating_atual": "CCC",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Liberum",
-          "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "instrumento": "Mezanino - Curto prazo",
-          "dt_acao": "2026-10-08",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-          "rating_atual": "CP5",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Liberum",
-          "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "instrumento": "Senior - Curto prazo",
-          "dt_acao": "2026-10-08",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-          "rating_atual": "CP4",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Liberum",
-          "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "instrumento": "Senior - Longo prazo",
-          "dt_acao": "2026-10-08",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-          "rating_atual": "BB-",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "GDS SUBHOLDING",
           "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
@@ -1658,6 +1588,61 @@
           "variacao_notches": "—"
         },
         {
+          "agencia": "Liberum",
+          "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Subordinada - Longo prazo",
+          "dt_acao": "2026-10-08",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+          "rating_atual": "CCC",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Mezanino - Longo prazo",
+          "dt_acao": "2026-10-08",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+          "rating_atual": "CCC",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Mezanino - Curto prazo",
+          "dt_acao": "2026-10-08",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+          "rating_atual": "CP5",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Senior - Curto prazo",
+          "dt_acao": "2026-10-08",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+          "rating_atual": "CP4",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "instrumento": "Senior - Longo prazo",
+          "dt_acao": "2026-10-08",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+          "rating_atual": "BB-",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "SRBT SUBHOLDING",
           "instrumento": "BRL 1.46 mln Floating bond/note 15-Dec-2049",
@@ -1675,6 +1660,28 @@
           "dt_acao": "2026-10-13",
           "link": "https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261#issues",
           "rating_atual": "AAA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+          "instrumento": "Única - Longo prazo",
+          "dt_acao": "2026-10-14",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29239",
+          "rating_atual": "C",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+          "instrumento": "Única - Curto prazo",
+          "dt_acao": "2026-10-14",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29239",
+          "rating_atual": "CP5",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1803,6 +1810,19 @@
         }
       ],
       "retirados": [
+        {
+          "agencia": "Fitch",
+          "emissor": "CSCF CARTOES CONSIGNADOS II 2023",
+          "instrumento": "notes ser 2023-1",
+          "dt_acao": "2023-10-30",
+          "link": "https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2023-2-bmg5-97537359#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "NRsf",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
         {
           "agencia": "Fitch",
           "emissor": "RIZA SECURITIZADORA 2022",
@@ -1944,11 +1964,11 @@
       "upgrades_emissoes": 0,
       "total_upgrades": 0,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 2,
-      "total_downgrades": 2,
+      "downgrades_emissoes": 3,
+      "total_downgrades": 3,
       "novos_emissores": 0,
-      "novos_emissoes": 0,
-      "total_novos": 0,
+      "novos_emissoes": 2,
+      "total_novos": 2,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
@@ -1974,16 +1994,29 @@
       "downgrades": [
         {
           "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA",
+          "rating_atual": "brAA-",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
         },
         {
           "agencia": "Fitch",
@@ -1999,7 +2032,30 @@
           "variacao_notches": "-3"
         }
       ],
-      "novos": [],
+      "novos": [
+        {
+          "agencia": "Liberum",
+          "emissor": "LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+          "instrumento": "Única - Longo prazo",
+          "dt_acao": "2026-10-14",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29239",
+          "rating_atual": "C",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+          "instrumento": "Única - Curto prazo",
+          "dt_acao": "2026-10-14",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29239",
+          "rating_atual": "CP5",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        }
+      ],
       "outlooks": [],
       "retirados": [
         {
@@ -2032,6 +2088,48 @@
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Liberum",
+      "emissor": "LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "instrumento": "Única - Longo prazo",
+      "dt_acao": "2026-10-14",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29239",
+      "rating_atual": "C",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "instrumento": "Única - Curto prazo",
+      "dt_acao": "2026-10-14",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29239",
+      "rating_atual": "CP5",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "CONCESSIONARIA SISTEMA ANHANGUERA",
+      "instrumento": "15ª Emissão de Debêntures -  Série Única",
+      "dt_acao": "2026-10-13",
+      "link": "",
+      "rating_atual": "AAA.br",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-14"
+    },
     {
       "agencia": "Fitch",
       "emissor": "SRBT SUBHOLDING",
@@ -2194,76 +2292,6 @@
       "dt_captura": "2026-10-14"
     },
     {
-      "agencia": "Liberum",
-      "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "instrumento": "Subordinada - Longo prazo",
-      "dt_acao": "2026-10-08",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-      "rating_atual": "CCC",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-10-14"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "instrumento": "Mezanino - Longo prazo",
-      "dt_acao": "2026-10-08",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-      "rating_atual": "CCC",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-10-14"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "instrumento": "Mezanino - Curto prazo",
-      "dt_acao": "2026-10-08",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-      "rating_atual": "CP5",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-10-14"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "instrumento": "Senior - Curto prazo",
-      "dt_acao": "2026-10-08",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-      "rating_atual": "CP4",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-10-14"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "instrumento": "Senior - Longo prazo",
-      "dt_acao": "2026-10-08",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-      "rating_atual": "BB-",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-10-14"
-    },
-    {
       "agencia": "Fitch",
       "emissor": "GDS SUBHOLDING",
       "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
@@ -2382,6 +2410,76 @@
       "dt_acao": "2026-10-08",
       "link": "https://www.fitchratings.com/entity/companhia-de-aguas-e-esgotos-do-rio-grande-do-norte-97435040#issues",
       "rating_atual": "A+(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Subordinada - Longo prazo",
+      "dt_acao": "2026-10-08",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+      "rating_atual": "CCC",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Mezanino - Longo prazo",
+      "dt_acao": "2026-10-08",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+      "rating_atual": "CCC",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Mezanino - Curto prazo",
+      "dt_acao": "2026-10-08",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+      "rating_atual": "CP5",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Senior - Curto prazo",
+      "dt_acao": "2026-10-08",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+      "rating_atual": "CP4",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "instrumento": "Senior - Longo prazo",
+      "dt_acao": "2026-10-08",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+      "rating_atual": "BB-",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -3315,20 +3413,6 @@
       "dt_captura": "2026-10-14"
     },
     {
-      "agencia": "Liberum",
-      "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-      "instrumento": "Senior - Curto prazo",
-      "dt_acao": "2026-09-22",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29221",
-      "rating_atual": "CP2",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-10-14"
-    },
-    {
       "agencia": "Fitch",
       "emissor": "COMPANHIA PAULISTA FORCA LUZ",
       "instrumento": "BRL 43 mln 5.05% bond/note 15-Sep-2027",
@@ -3364,6 +3448,20 @@
       "link": "https://www.fitchratings.com/entity/rge-sul-distribuidora-de-energia-sa-96554699#issues",
       "rating_atual": "AAA(bra)",
       "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "instrumento": "Senior - Curto prazo",
+      "dt_acao": "2026-09-22",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29221",
+      "rating_atual": "CP2",
+      "outlook_atual": "Negativa",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
       "categoria": "Emissão",
@@ -4303,22 +4401,6 @@
       "dt_captura": "2026-10-14"
     },
     {
-      "agencia": "Austin",
-      "emissor": "FICTOR INVEST FIDC",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB",
-      "rating_atual": "brBBB",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+3",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-10-14"
-    },
-    {
       "agencia": "Moody's",
       "emissor": "IN",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -4331,22 +4413,6 @@
       "tipo_movimento": "DOWNGRADE",
       "variacao_notches": "-5",
       "categoria": "Emissor",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-14"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC IC SOMAPAY",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2024-08-12",
-      "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB+",
-      "rating_atual": "brB-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-5",
-      "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-14"
     },
@@ -4365,9 +4431,57 @@
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "CSCF CARTOES CONSIGNADOS II 2023",
+      "instrumento": "notes ser 2023-1",
+      "dt_acao": "2023-10-30",
+      "link": "https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2023-2-bmg5-97537359#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "NRsf",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-10-14"
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "Liberum",
+      "emissor": "LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "instrumento": "Única - Longo prazo",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "C",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-14",
+      "dt_captura": "2026-10-14",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29239"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "instrumento": "Única - Curto prazo",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "CP5",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-14",
+      "dt_captura": "2026-10-14",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29239"
+    },
     {
       "agencia": "Fitch",
       "emissor": "SRBT SUBHOLDING",
@@ -4399,6 +4513,22 @@
       "dt_acao": "2026-10-13",
       "dt_captura": "2026-10-14",
       "link": "https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261#issues"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "CONCESSIONARIA SISTEMA ANHANGUERA",
+      "instrumento": "15ª Emissão de Debêntures -  Série Única",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA.br",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-13",
+      "dt_captura": "2026-10-14",
+      "link": ""
     },
     {
       "agencia": "Fitch",
@@ -6783,6 +6913,22 @@
       "dt_acao": "2026-04-15",
       "dt_captura": "2026-10-14",
       "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "CSCF CARTOES CONSIGNADOS II 2023",
+      "instrumento": "notes ser 2023-1",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "NRsf",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2023-10-30",
+      "dt_captura": "2026-10-14",
+      "link": "https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2023-2-bmg5-97537359#issues"
     },
     {
       "agencia": "Fitch",
@@ -150827,19 +150973,6 @@
         "variacao_notches": "+2"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB",
-        "rating_atual": "brBBB",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+3"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "ECO SECURITIZADORA 2025",
         "instrumento": "notes ser 4",
@@ -151009,19 +151142,6 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-3"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FIDC IC SOMAPAY",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2024-08-12",
-        "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brB-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-5"
       },
       {
         "agencia": "Moody's",
@@ -151335,6 +151455,17 @@
       },
       {
         "agencia": "Moody's",
+        "emissor": "CONCESSIONARIA SISTEMA ANHANGUERA",
+        "instrumento": "15ª Emissão de Debêntures -  Série Única",
+        "dt_acao": "2026-10-13",
+        "link": "",
+        "rating_atual": "AAA.br",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Moody's",
         "emissor": "ARGO ENERGIA EMPREENDIMENTOS PARTICIPACOES",
         "instrumento": "1ª Emissão de Debêntures - 1ª Série",
         "dt_acao": "2026-09-25",
@@ -151499,17 +151630,6 @@
         "variacao_notches": "—"
       },
       {
-        "agencia": "Liberum",
-        "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-        "instrumento": "Senior - Curto prazo",
-        "dt_acao": "2026-09-22",
-        "link": "https://www.liberumratings.com.br/detalhes-ativo/29221",
-        "rating_atual": "CP2",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "COMPANHIA PAULISTA FORCA LUZ",
         "instrumento": "BRL 43 mln 5.05% bond/note 15-Sep-2027",
@@ -151539,6 +151659,17 @@
         "link": "https://www.fitchratings.com/entity/rge-sul-distribuidora-de-energia-sa-96554699#issues",
         "rating_atual": "AAA(bra)",
         "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "LARCA CONSIGNADO III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+        "instrumento": "Senior - Curto prazo",
+        "dt_acao": "2026-09-22",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29221",
+        "rating_atual": "CP2",
+        "outlook_atual": "Negativa",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
       },
@@ -151818,61 +151949,6 @@
         "variacao_notches": "—"
       },
       {
-        "agencia": "Liberum",
-        "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-        "instrumento": "Subordinada - Longo prazo",
-        "dt_acao": "2026-10-08",
-        "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-        "rating_atual": "CCC",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Liberum",
-        "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-        "instrumento": "Mezanino - Longo prazo",
-        "dt_acao": "2026-10-08",
-        "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-        "rating_atual": "CCC",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Liberum",
-        "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-        "instrumento": "Mezanino - Curto prazo",
-        "dt_acao": "2026-10-08",
-        "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-        "rating_atual": "CP5",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Liberum",
-        "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-        "instrumento": "Senior - Curto prazo",
-        "dt_acao": "2026-10-08",
-        "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-        "rating_atual": "CP4",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Liberum",
-        "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-        "instrumento": "Senior - Longo prazo",
-        "dt_acao": "2026-10-08",
-        "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
-        "rating_atual": "BB-",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "GDS SUBHOLDING",
         "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
@@ -151972,6 +152048,61 @@
         "variacao_notches": "—"
       },
       {
+        "agencia": "Liberum",
+        "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "instrumento": "Subordinada - Longo prazo",
+        "dt_acao": "2026-10-08",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+        "rating_atual": "CCC",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "instrumento": "Mezanino - Longo prazo",
+        "dt_acao": "2026-10-08",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+        "rating_atual": "CCC",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "instrumento": "Mezanino - Curto prazo",
+        "dt_acao": "2026-10-08",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+        "rating_atual": "CP5",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "instrumento": "Senior - Curto prazo",
+        "dt_acao": "2026-10-08",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+        "rating_atual": "CP4",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "INCOR CRED FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "instrumento": "Senior - Longo prazo",
+        "dt_acao": "2026-10-08",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
+        "rating_atual": "BB-",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "SRBT SUBHOLDING",
         "instrumento": "BRL 1.46 mln Floating bond/note 15-Dec-2049",
@@ -151989,6 +152120,28 @@
         "dt_acao": "2026-10-13",
         "link": "https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261#issues",
         "rating_atual": "AAA(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+        "instrumento": "Única - Longo prazo",
+        "dt_acao": "2026-10-14",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29239",
+        "rating_atual": "C",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+        "instrumento": "Única - Curto prazo",
+        "dt_acao": "2026-10-14",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29239",
+        "rating_atual": "CP5",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -152117,6 +152270,19 @@
       }
     ],
     "retirados": [
+      {
+        "agencia": "Fitch",
+        "emissor": "CSCF CARTOES CONSIGNADOS II 2023",
+        "instrumento": "notes ser 2023-1",
+        "dt_acao": "2023-10-30",
+        "link": "https://www.fitchratings.com/entity/companhia-securitizadora-de-creditos-financeiros-cartoes-consignados-ii-2023-2-bmg5-97537359#issues",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "NRsf",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
       {
         "agencia": "Fitch",
         "emissor": "RIZA SECURITIZADORA 2022",

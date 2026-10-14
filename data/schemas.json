@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-10-13"
+        "example": "2026-10-14"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "JC Diversificado III Fundo de Investimento em Direitos Creditórios Não-Padronizado"
+        "example": "SIGMA CREDIT FEEDER FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29234"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29240"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "JC Diversificado III Fundo de Investimento em Direitos Creditórios Não-Padronizado"
+        "example": "SIGMA CREDIT FEEDER FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29234"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29240"
       },
       {
         "name": "no_tipo_rating",
@@ -367,7 +367,7 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-10-13"
+        "example": "2026-10-14"
       },
       {
         "name": "de_acao_rating",
@@ -382,7 +382,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Única"
+        "example": "Subordinada"
       },
       {
         "name": "de_escala",
