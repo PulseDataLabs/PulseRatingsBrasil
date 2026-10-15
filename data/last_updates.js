@@ -33,7 +33,7 @@ window.PULSERATINGS_LAST_UPDATES = {
   },
   "moodys_ratings.csv": {
     "min": "2026-06-04",
-    "max": "2026-10-14"
+    "max": "2026-10-15"
   },
   "standard_and_poors_ratings.csv": {
     "min": "2026-06-10",
