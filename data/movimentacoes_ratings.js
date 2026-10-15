@@ -1,43 +1,43 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-14T16:33:32.712376",
+  "timestamp": "2026-10-14T23:34:32.525324",
   "dt_atual": "2026-10-14",
   "dt_anterior": "2026-10-13",
   "resumo": {
     "upgrades_emissores": 7,
-    "upgrades_emissoes": 12,
-    "total_upgrades": 19,
+    "upgrades_emissoes": 13,
+    "total_upgrades": 20,
     "downgrades_emissores": 8,
     "downgrades_emissoes": 29,
     "total_downgrades": 37,
     "novos_emissores": 11,
-    "novos_emissoes": 66,
-    "total_novos": 77,
+    "novos_emissoes": 67,
+    "total_novos": 78,
     "outlooks_emissores": 6,
     "outlooks_emissoes": 10,
     "total_outlooks": 16,
     "retirados_emissores": 3,
-    "retirados_emissoes": 10,
-    "total_retirados": 13
+    "retirados_emissoes": 9,
+    "total_retirados": 12
   },
   "periodo_recente": {
     "dt_atual": "2026-10-14",
     "dt_anterior": "2026-09-14",
     "resumo": {
       "upgrades_emissores": 7,
-      "upgrades_emissoes": 12,
-      "total_upgrades": 19,
+      "upgrades_emissoes": 13,
+      "total_upgrades": 20,
       "downgrades_emissores": 8,
       "downgrades_emissoes": 29,
       "total_downgrades": 37,
       "novos_emissores": 11,
-      "novos_emissoes": 66,
-      "total_novos": 77,
+      "novos_emissoes": 67,
+      "total_novos": 78,
       "outlooks_emissores": 6,
       "outlooks_emissoes": 10,
       "total_outlooks": 16,
       "retirados_emissores": 3,
-      "retirados_emissoes": 10,
-      "total_retirados": 13
+      "retirados_emissoes": 9,
+      "total_retirados": 12
     },
     "emissores": {
       "tipo": "emissores",
@@ -501,16 +501,29 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB-",
+          "rating_atual": "brBBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
+        },
+        {
+          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB",
-          "rating_atual": "brBBB",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
+          "variacao_notches": "+1"
         },
         {
           "agencia": "Fitch",
@@ -1718,6 +1731,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
+          "emissor": "C MODAS",
+          "instrumento": "BRL 250 mln Floating CDI (Brazil) bond/note",
+          "dt_acao": "2026-10-14",
+          "link": "https://www.fitchratings.com/entity/c-a-modas-sa-97131987#issues",
+          "rating_atual": "AA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "MC BRAZIL DOWNSTREAM TRADING R.L.",
           "instrumento": "USD bond/note",
           "dt_acao": "2026-10-14",
@@ -1875,19 +1899,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "OPEA SECURITIZADORA 2022",
           "instrumento": "notes ser 3",
           "dt_acao": "2026-09-15",
@@ -2014,17 +2025,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 0,
       "total_upgrades": 0,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 7,
-      "total_downgrades": 7,
+      "downgrades_emissoes": 6,
+      "total_downgrades": 6,
       "novos_emissores": 0,
-      "novos_emissoes": 3,
-      "total_novos": 3,
+      "novos_emissoes": 4,
+      "total_novos": 4,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 2,
-      "total_retirados": 2
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
@@ -2044,27 +2055,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "downgrades": [
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-2"
         },
@@ -2137,6 +2135,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "novos": [
         {
           "agencia": "Fitch",
+          "emissor": "C MODAS",
+          "instrumento": "BRL 250 mln Floating CDI (Brazil) bond/note",
+          "dt_acao": "2026-10-14",
+          "link": "https://www.fitchratings.com/entity/c-a-modas-sa-97131987#issues",
+          "rating_atual": "AA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "MC BRAZIL DOWNSTREAM TRADING R.L.",
           "instrumento": "USD bond/note",
           "dt_acao": "2026-10-14",
@@ -2170,34 +2179,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         }
       ],
       "outlooks": [],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2022",
-          "instrumento": "securities ser 1,2,3",
-          "dt_acao": "2026-01-15",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "retirados": []
     }
   },
   "movimentacoes": [
@@ -2263,6 +2245,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "-4",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "C MODAS",
+      "instrumento": "BRL 250 mln Floating CDI (Brazil) bond/note",
+      "dt_acao": "2026-10-14",
+      "link": "https://www.fitchratings.com/entity/c-a-modas-sa-97131987#issues",
+      "rating_atual": "AA(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
       "dt_captura": "2026-10-14"
     },
     {
@@ -4560,22 +4556,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-10-14"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "instrumento": "securities ser 1",
-      "dt_acao": "2026-04-15",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-10-14"
-    },
-    {
       "agencia": "Moody's",
       "emissor": "VINLAND CAPITAL MANAGEMENT CREDITO PRIVADO GESTORA RECURSOS",
       "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
@@ -4596,13 +4576,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBB",
-      "rating_atual": "brBBB",
+      "rating_atual": "brBB+",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+3",
+      "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-10-14"
@@ -4621,6 +4601,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "-5",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-14"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "HIGH YIELD YALEEH FIDC",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB-",
+      "rating_atual": "brBBB+",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+2",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
       "dt_captura": "2026-10-14"
     }
   ],
@@ -4736,6 +4732,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-14",
       "dt_captura": "2026-10-14",
       "link": "https://www.fitchratings.com/entity/mc-brazil-downstream-trading-sarl-97258479#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "C MODAS",
+      "instrumento": "BRL 250 mln Floating CDI (Brazil) bond/note",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AA(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-14",
+      "dt_captura": "2026-10-14",
+      "link": "https://www.fitchratings.com/entity/c-a-modas-sa-97131987#issues"
     },
     {
       "agencia": "Fitch",
@@ -151216,16 +151228,29 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Austin",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB-",
+        "rating_atual": "brBBB+",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+2"
+      },
+      {
+        "agencia": "Austin",
         "emissor": "FICTOR INVEST FIDC",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brBB",
-        "rating_atual": "brBBB",
+        "rating_atual": "brBB+",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+3"
+        "variacao_notches": "+1"
       },
       {
         "agencia": "Fitch",
@@ -152433,6 +152458,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
+        "emissor": "C MODAS",
+        "instrumento": "BRL 250 mln Floating CDI (Brazil) bond/note",
+        "dt_acao": "2026-10-14",
+        "link": "https://www.fitchratings.com/entity/c-a-modas-sa-97131987#issues",
+        "rating_atual": "AA(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
         "emissor": "MC BRAZIL DOWNSTREAM TRADING R.L.",
         "instrumento": "USD bond/note",
         "dt_acao": "2026-10-14",
@@ -152588,19 +152624,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "retirados": [
-      {
-        "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "instrumento": "securities ser 1",
-        "dt_acao": "2026-04-15",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-        "rating_anterior": "AA+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
       {
         "agencia": "Fitch",
         "emissor": "OPEA SECURITIZADORA 2022",

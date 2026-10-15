@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 7 | 12 | **19** |
+| 🟢 **Upgrades (Elevações)** | 7 | 13 | **20** |
 | 🔴 **Downgrades (Rebaixamentos)** | 8 | 29 | **37** |
-| 🔵 **Novos Ratings** | 11 | 66 | **77** |
+| 🔵 **Novos Ratings** | 11 | 67 | **78** |
 | 🟡 **Mudanças de Perspectiva** | 6 | 10 | **16** |
-| ⚪ **Ratings Retirados / Liquidados** | 3 | 10 | **13** |
+| ⚪ **Ratings Retirados / Liquidados** | 3 | 9 | **12** |
 
-### 🟢 Elevações de Rating (Upgrades) — 19
+### 🟢 Elevações de Rating (Upgrades) — 20
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **LIGHT SERVICOS ELETRICIDADE** | Escala Nacional Brasil de Longo Prazo | `D` | **`brBB+`** | `+11` | Estável | 17/09/2026 |
@@ -24,7 +24,8 @@
 | Fitch | **QI SOCIEDADE CREDITO DIRETO** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Fitch | **QI PARTICIPACOES** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Liberum | **KEYCASH HOME EQUITY FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `BBB-` | **`BBB`** | `+1` | Estável | 17/09/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brBBB`** | `+3` | Negativa | 09/10/2025 |
+| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB-` | **`brBBB+`** | `+2` | Estável | 06/03/2024 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brBB+`** | `+1` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 7ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
@@ -97,7 +98,7 @@
 | Fitch | **RIZA SECURITIZADORA 2019** | notes ser 1 | `A+sf(bra)` | Em Observação | **Estável** | 29/09/2026 |
 | Fitch | **PGE** | BRL 49 mln bond/note 15-Jul-2036 | `BBB+(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (77)
+### 🔵 Novos Ratings Atribuídos (78)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **BANCO** | Escala Nacional Brasil de Curto Prazo | **`brA-1`** | Estável | 08/10/2026 |
@@ -130,15 +131,14 @@
 | Fitch | **NOVA TRANSPORTADORA SUDESTE** | 13th Debenture - BRL 1.04 bln Floating IGP-DI (Brazil) bond/note 08-Oct-2033 | **`AAA(bra)`** | Estável | 21/09/2026 |
 | Moody's | **MOVIDA PARTICIPACOES** | 29ª Emissão de Debêntures - Série Única | **`AA+.br`** | Estável | 22/09/2026 |
 | Fitch | **COMPANHIA PAULISTA FORCA LUZ** | BRL 43 mln 5.05% bond/note 15-Sep-2027 | **`AAA(bra)`** | Estável | 22/09/2026 |
-| *...e mais 47 novos ratings.* | | | | | |
+| *...e mais 48 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (13)
+### ⚪ Ratings Retirados / Liquidados (12)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **ALLIANCA SAUDE PARTICIPACOES** | National Long Term Rating | `RD(bra)` | Estável | 15/09/2026 |
 | Fitch | **ACUCAREIRA QUATA** | National Long Term Rating | `A+(bra)` | Estável | 30/09/2026 |
 | Fitch | **MERCADOLIVRE. ATIVIDADES INTERNET** | National Long Term Rating | `AAA(bra)` | Estável | 08/10/2026 |
-| Fitch | **RIZA SECURITIZADORA 2022** | securities ser 1 | `AA+sf(bra)` | Estável | 15/04/2026 |
 | Fitch | **OPEA SECURITIZADORA 2022** | notes ser 3 | `AAAsf(bra)` | Estável | 15/09/2026 |
 | Fitch | **HIDROVIAS** | 2nd Debentures Issuance BRL 500 mln bond/note 21-Jul-2029 | `AAA(bra)` | Estável | 18/09/2026 |
 | Fitch | **ELETRORIVER** | BRL 805 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA(bra)` | Estável | 21/09/2026 |
@@ -151,4 +151,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (13/10/2026 → 14/10/2026)
-*Total nas últimas 24h: 🟢 0 upgrades | 🔴 7 downgrades | 🔵 3 novos | 🟡 0 perspectivas | ⚪ 2 retirados.*
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 6 downgrades | 🔵 4 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
