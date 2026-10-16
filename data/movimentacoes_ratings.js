@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-16T11:18:18.621143",
+  "timestamp": "2026-10-16T16:04:22.255199",
   "dt_atual": "2026-10-16",
   "dt_anterior": "2026-10-15",
   "resumo": {
@@ -10,14 +10,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "downgrades_emissoes": 14,
     "total_downgrades": 21,
     "novos_emissores": 11,
-    "novos_emissoes": 72,
-    "total_novos": 83,
+    "novos_emissoes": 74,
+    "total_novos": 85,
     "outlooks_emissores": 5,
     "outlooks_emissoes": 11,
     "total_outlooks": 16,
     "retirados_emissores": 2,
-    "retirados_emissoes": 13,
-    "total_retirados": 15
+    "retirados_emissoes": 12,
+    "total_retirados": 14
   },
   "periodo_recente": {
     "dt_atual": "2026-10-16",
@@ -30,14 +30,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "downgrades_emissoes": 14,
       "total_downgrades": 21,
       "novos_emissores": 11,
-      "novos_emissoes": 72,
-      "total_novos": 83,
+      "novos_emissoes": 74,
+      "total_novos": 85,
       "outlooks_emissores": 5,
       "outlooks_emissoes": 11,
       "total_outlooks": 16,
       "retirados_emissores": 2,
-      "retirados_emissoes": 13,
-      "total_retirados": 15
+      "retirados_emissoes": 12,
+      "total_retirados": 14
     },
     "emissores": {
       "tipo": "emissores",
@@ -687,6 +687,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "-1"
         },
         {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "ECO SECURITIZADORA 2022",
           "instrumento": "notes ser 2",
@@ -711,19 +724,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Positiva",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-3"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "GDS SUBHOLDING",
-          "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
-          "dt_acao": "2026-10-08",
-          "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
-          "rating_anterior": "AA(bra)",
-          "rating_atual": "BBB(bra)",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Em Observação",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-6"
         },
         {
           "agencia": "Fitch",
@@ -1331,6 +1331,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
+          "emissor": "IN",
+          "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
+          "dt_acao": "2026-10-08",
+          "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
+          "rating_atual": "BBB(bra)",
+          "outlook_atual": "Em Observação",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
           "instrumento": "7ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2031",
           "dt_acao": "2026-10-08",
@@ -1478,6 +1489,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.56% bond/note",
           "dt_acao": "2026-10-13",
           "link": "https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261#issues",
+          "rating_atual": "AAA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "IN",
+          "instrumento": "BRL 1.46 mln Floating bond/note 15-Dec-2049",
+          "dt_acao": "2026-10-13",
+          "link": "https://www.fitchratings.com/entity/srbt-subholding-sa-97824540#issues",
           "rating_atual": "AAA(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
@@ -1709,19 +1731,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "OPEA SECURITIZADORA 2022",
           "instrumento": "notes ser 3",
           "dt_acao": "2026-09-15",
@@ -1884,11 +1893,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-10-15",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 1,
-      "total_upgrades": 1,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 2,
-      "total_downgrades": 2,
+      "downgrades_emissoes": 3,
+      "total_downgrades": 3,
       "novos_emissores": 0,
       "novos_emissoes": 2,
       "total_novos": 2,
@@ -1896,8 +1905,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 2,
-      "total_retirados": 2
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
@@ -1926,6 +1935,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+2"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
         }
       ],
       "downgrades": [
@@ -1954,6 +1976,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-2"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
         }
       ],
       "novos": [
@@ -1981,34 +2016,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         }
       ],
       "outlooks": [],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2022",
-          "instrumento": "securities ser 1,2,3",
-          "dt_acao": "2026-01-15",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "retirados": []
     }
   },
   "movimentacoes": [
@@ -2345,6 +2353,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
+      "emissor": "IN",
+      "instrumento": "BRL 1.46 mln Floating bond/note 15-Dec-2049",
+      "dt_acao": "2026-10-13",
+      "link": "https://www.fitchratings.com/entity/srbt-subholding-sa-97824540#issues",
+      "rating_atual": "AAA(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-16"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "VIVARA PARTICIPACOES",
       "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.65% bond/note",
       "dt_acao": "2026-10-13",
@@ -2492,18 +2514,16 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "GDS SUBHOLDING",
+      "emissor": "IN",
       "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
       "dt_acao": "2026-10-08",
       "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
-      "rating_anterior": "AA(bra)",
       "rating_atual": "BBB(bra)",
-      "outlook_anterior": "Negativa",
       "outlook_atual": "Em Observação",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-6",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
       "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
+      "tipo": "NOVO",
       "dt_captura": "2026-10-16"
     },
     {
@@ -4233,19 +4253,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-10-16"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "instrumento": "securities ser 1",
-      "dt_acao": "2026-04-15",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
+      "agencia": "Austin",
+      "emissor": "FICTOR INVEST FIDC",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2025-10-09",
+      "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBBB",
+      "rating_atual": "brBB",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-3",
       "categoria": "Emissão",
-      "tipo": "RETIRADO",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-16"
     },
     {
@@ -4652,6 +4672,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
+      "emissor": "IN",
+      "instrumento": "BRL 1.46 mln Floating bond/note 15-Dec-2049",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-13",
+      "dt_captura": "2026-10-16",
+      "link": "https://www.fitchratings.com/entity/srbt-subholding-sa-97824540#issues"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "VESTE ESTILO",
       "instrumento": "National Long Term Rating",
       "categoria": "Emissor",
@@ -5017,6 +5053,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-08",
       "dt_captura": "2026-10-16",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29226"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "IN",
+      "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "BBB(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Em Observação",
+      "dt_acao": "2026-10-08",
+      "dt_captura": "2026-10-16",
+      "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues"
     },
     {
       "agencia": "Moody's",
@@ -156019,6 +156071,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "-1"
       },
       {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBBB",
+        "rating_atual": "brBB",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-3"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "ECO SECURITIZADORA 2022",
         "instrumento": "notes ser 2",
@@ -156043,19 +156108,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Positiva",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-3"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "GDS SUBHOLDING",
-        "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
-        "dt_acao": "2026-10-08",
-        "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
-        "rating_anterior": "AA(bra)",
-        "rating_atual": "BBB(bra)",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Em Observação",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-6"
       },
       {
         "agencia": "Fitch",
@@ -156663,6 +156715,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
+        "emissor": "IN",
+        "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
+        "dt_acao": "2026-10-08",
+        "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
+        "rating_atual": "BBB(bra)",
+        "outlook_atual": "Em Observação",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
         "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
         "instrumento": "7ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2031",
         "dt_acao": "2026-10-08",
@@ -156810,6 +156873,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.56% bond/note",
         "dt_acao": "2026-10-13",
         "link": "https://www.fitchratings.com/entity/vivara-participacoes-sa-97559261#issues",
+        "rating_atual": "AAA(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "IN",
+        "instrumento": "BRL 1.46 mln Floating bond/note 15-Dec-2049",
+        "dt_acao": "2026-10-13",
+        "link": "https://www.fitchratings.com/entity/srbt-subholding-sa-97824540#issues",
         "rating_atual": "AAA(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
@@ -157039,19 +157113,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "retirados": [
-      {
-        "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "instrumento": "securities ser 1",
-        "dt_acao": "2026-04-15",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-        "rating_anterior": "AA+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
       {
         "agencia": "Fitch",
         "emissor": "OPEA SECURITIZADORA 2022",
