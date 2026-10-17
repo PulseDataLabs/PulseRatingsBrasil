@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-16T16:04:22.255199",
+  "timestamp": "2026-10-16T23:41:24.714785",
   "dt_atual": "2026-10-16",
   "dt_anterior": "2026-10-15",
   "resumo": {
@@ -7,11 +7,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "upgrades_emissoes": 13,
     "total_upgrades": 18,
     "downgrades_emissores": 7,
-    "downgrades_emissoes": 14,
-    "total_downgrades": 21,
+    "downgrades_emissoes": 15,
+    "total_downgrades": 22,
     "novos_emissores": 11,
-    "novos_emissoes": 74,
-    "total_novos": 85,
+    "novos_emissoes": 73,
+    "total_novos": 84,
     "outlooks_emissores": 5,
     "outlooks_emissoes": 11,
     "total_outlooks": 16,
@@ -27,11 +27,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 13,
       "total_upgrades": 18,
       "downgrades_emissores": 7,
-      "downgrades_emissoes": 14,
-      "total_downgrades": 21,
+      "downgrades_emissoes": 15,
+      "total_downgrades": 22,
       "novos_emissores": 11,
-      "novos_emissoes": 74,
-      "total_novos": 85,
+      "novos_emissoes": 73,
+      "total_novos": 84,
       "outlooks_emissores": 5,
       "outlooks_emissoes": 11,
       "total_outlooks": 16,
@@ -727,6 +727,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
+          "emissor": "GDS SUBHOLDING",
+          "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
+          "dt_acao": "2026-10-08",
+          "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
+          "rating_anterior": "AA(bra)",
+          "rating_atual": "BBB(bra)",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Em Observação",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-6"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "RIZA SECURITIZADORA 2022",
           "instrumento": "notes ser 2022-1",
           "dt_acao": "2026-10-14",
@@ -1331,17 +1344,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "IN",
-          "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
-          "dt_acao": "2026-10-08",
-          "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
-          "rating_atual": "BBB(bra)",
-          "outlook_atual": "Em Observação",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
           "instrumento": "7ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2031",
           "dt_acao": "2026-10-08",
@@ -1496,17 +1498,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "IN",
-          "instrumento": "BRL 1.46 mln Floating bond/note 15-Dec-2049",
-          "dt_acao": "2026-10-13",
-          "link": "https://www.fitchratings.com/entity/srbt-subholding-sa-97824540#issues",
-          "rating_atual": "AAA(bra)",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "VIVARA PARTICIPACOES",
           "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.65% bond/note",
           "dt_acao": "2026-10-13",
@@ -1589,6 +1580,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "dt_acao": "2026-10-15",
           "link": "https://www.fitchratings.com/entity/sbf-comercio-de-produtos-esportivos-sa-97028200#issues",
           "rating_atual": "AA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "IN",
+          "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
+          "dt_acao": "2026-10-16",
+          "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues",
+          "rating_atual": "CCC+(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1899,8 +1901,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "downgrades_emissoes": 3,
       "total_downgrades": 3,
       "novos_emissores": 0,
-      "novos_emissoes": 2,
-      "total_novos": 2,
+      "novos_emissoes": 3,
+      "total_novos": 3,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
@@ -2013,6 +2015,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "IN",
+          "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
+          "dt_acao": "2026-10-16",
+          "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues",
+          "rating_atual": "CCC+(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
         }
       ],
       "outlooks": [],
@@ -2066,6 +2079,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "-2",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-16"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "IN",
+      "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
+      "dt_acao": "2026-10-16",
+      "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues",
+      "rating_atual": "CCC+(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
       "dt_captura": "2026-10-16"
     },
     {
@@ -2353,20 +2380,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "IN",
-      "instrumento": "BRL 1.46 mln Floating bond/note 15-Dec-2049",
-      "dt_acao": "2026-10-13",
-      "link": "https://www.fitchratings.com/entity/srbt-subholding-sa-97824540#issues",
-      "rating_atual": "AAA(bra)",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-10-16"
-    },
-    {
-      "agencia": "Fitch",
       "emissor": "VIVARA PARTICIPACOES",
       "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.65% bond/note",
       "dt_acao": "2026-10-13",
@@ -2514,16 +2527,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "IN",
+      "emissor": "GDS SUBHOLDING",
       "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
       "dt_acao": "2026-10-08",
       "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
+      "rating_anterior": "AA(bra)",
       "rating_atual": "BBB(bra)",
+      "outlook_anterior": "Negativa",
       "outlook_atual": "Em Observação",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-6",
       "categoria": "Emissão",
-      "tipo": "NOVO",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-16"
     },
     {
@@ -4349,6 +4364,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-16",
       "dt_captura": "2026-10-16",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29247"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "IN",
+      "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "CCC+(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-16",
+      "dt_captura": "2026-10-16",
+      "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues"
     },
     {
       "agencia": "Fitch",
@@ -156111,6 +156142,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
+        "emissor": "GDS SUBHOLDING",
+        "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
+        "dt_acao": "2026-10-08",
+        "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
+        "rating_anterior": "AA(bra)",
+        "rating_atual": "BBB(bra)",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Em Observação",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-6"
+      },
+      {
+        "agencia": "Fitch",
         "emissor": "RIZA SECURITIZADORA 2022",
         "instrumento": "notes ser 2022-1",
         "dt_acao": "2026-10-14",
@@ -156715,17 +156759,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "IN",
-        "instrumento": "BRL 376 mln bond/note 01-Sep-2043",
-        "dt_acao": "2026-10-08",
-        "link": "https://www.fitchratings.com/entity/gds-subholding-sa-97636738#issues",
-        "rating_atual": "BBB(bra)",
-        "outlook_atual": "Em Observação",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
         "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
         "instrumento": "7ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2031",
         "dt_acao": "2026-10-08",
@@ -156880,17 +156913,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "IN",
-        "instrumento": "BRL 1.46 mln Floating bond/note 15-Dec-2049",
-        "dt_acao": "2026-10-13",
-        "link": "https://www.fitchratings.com/entity/srbt-subholding-sa-97824540#issues",
-        "rating_atual": "AAA(bra)",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
         "emissor": "VIVARA PARTICIPACOES",
         "instrumento": "BRL 300 mln Floating CDI (Brazil) 0.65% bond/note",
         "dt_acao": "2026-10-13",
@@ -156973,6 +156995,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-15",
         "link": "https://www.fitchratings.com/entity/sbf-comercio-de-produtos-esportivos-sa-97028200#issues",
         "rating_atual": "AA(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "IN",
+        "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
+        "dt_acao": "2026-10-16",
+        "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues",
+        "rating_atual": "CCC+(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
