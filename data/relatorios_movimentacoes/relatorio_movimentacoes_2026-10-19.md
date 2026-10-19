@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 4 | 14 | **18** |
+| 🟢 **Upgrades (Elevações)** | 4 | 13 | **17** |
 | 🔴 **Downgrades (Rebaixamentos)** | 5 | 13 | **18** |
 | 🔵 **Novos Ratings** | 13 | 72 | **85** |
 | 🟡 **Mudanças de Perspectiva** | 4 | 10 | **14** |
 | ⚪ **Ratings Retirados / Liquidados** | 2 | 14 | **16** |
 
-### 🟢 Elevações de Rating (Upgrades) — 18
+### 🟢 Elevações de Rating (Upgrades) — 17
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Moody's | **VALID SOLUCOES** | Rating Corporativo | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
@@ -21,7 +21,6 @@
 | Fitch | **QI PARTICIPACOES** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Fitch | **QI SOCIEDADE CREDITO DIRETO** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Longo prazo | `BB` | **`BBB-`** | `+2` | Estável | 16/10/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB+` | **`brBBB`** | `+2` | Negativa | 09/10/2025 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
@@ -119,16 +118,16 @@
 | Fitch | **OPEA SECURITIZADORA 2022** | notes ser 3 | `AAAsf(bra)` | Estável | 15/09/2026 |
 | Fitch | **ELETRORIVER** | BRL 805 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA(bra)` | Estável | 21/09/2026 |
 | Fitch | **BSB ENERGETICA** | BRL 345 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA+(bra)` | Positiva | 21/09/2026 |
-| Fitch | **ICRED CHOPIN INSS FIDC** | certificates ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
 | Fitch | **ICRED INSS III FIDC** | notes ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
+| Fitch | **ICRED CHOPIN INSS FIDC** | certificates ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
 | Fitch | **MOTIVA INFRAESTRUTURA MOBILIDADE** | 18a debenture - BRL 1.32 bln bond/note 15-May-2030 | `AAA(bra)` | Estável | 28/09/2026 |
 | Fitch | **BANCO** | USD 750 mln 3.25% bond/note 30-Sep-2026 | `BB` | Estável | 30/09/2026 |
 | Fitch | **BRAZIL** | BRL 92 bln Zero treasury bills/notes/bonds 01-Oct-2026 | `BB` | Estável | 01/10/2026 |
 | Fitch | **LOCALIZA FLEET** | 9ª Debentures (Série Única) | `AAA(bra)` | Estável | 05/10/2026 |
-| Fitch | **MOVIDA PARTICIPACOES** | BRL 1 bln Floating bond/note 15-Oct-2026 | `AA(bra)` | Estável | 15/10/2026 |
 | Fitch | **UNIAO QUIMICA FARMACEUTICA NACIONAL** | BRL 600 mln Series 14 Floating bond/note 15-Oct-2026 | `AA-(bra)` | Estável | 15/10/2026 |
 | Fitch | **COPEL GERACAO TRANSMISSAO** | BRL 1.5 bln Floating CDI (Brazil) 1.38% bond/note 15-Oct-2026 | `AAA(bra)` | Estável | 15/10/2026 |
 | Fitch | **CONCESSIONARIA AEROPORTO INTERNACIONAL GUARULHOS** | 2a Emissão - Série Unica | `A+(bra)` | Estável | 15/10/2026 |
+| Fitch | **MOVIDA PARTICIPACOES** | BRL 1 bln Floating bond/note 15-Oct-2026 | `AA(bra)` | Estável | 15/10/2026 |
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (16/10/2026 → 19/10/2026)
