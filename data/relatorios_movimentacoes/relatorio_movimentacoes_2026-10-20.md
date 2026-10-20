@@ -21,8 +21,8 @@
 | Fitch | **QI PARTICIPACOES** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Fitch | **QI SOCIEDADE CREDITO DIRETO** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Longo prazo | `BB` | **`BBB-`** | `+2` | Estável | 16/10/2026 |
-| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA-` | **`brAA`** | `+1` | Estável | 27/09/2019 |
 | Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brB-` | **`brBB+`** | `+5` | Estável | 12/08/2024 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB+` | **`brBBB`** | `+2` | Negativa | 09/10/2025 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
@@ -132,4 +132,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (19/10/2026 → 20/10/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 1 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*

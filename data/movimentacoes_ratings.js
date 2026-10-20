@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-20T11:39:44.720103",
+  "timestamp": "2026-10-20T16:26:23.966409",
   "dt_atual": "2026-10-20",
   "dt_anterior": "2026-10-19",
   "resumo": {
@@ -410,19 +410,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA-",
-          "rating_atual": "brAA",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
-        },
-        {
-          "agencia": "Austin",
           "emissor": "FIDC IC SOMAPAY",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2024-08-12",
@@ -433,6 +420,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+5"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brBBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
         },
         {
           "agencia": "Moody's",
@@ -1856,8 +1856,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-10-19",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 2,
-      "total_upgrades": 2,
+      "upgrades_emissoes": 1,
+      "total_upgrades": 1,
       "downgrades_emissores": 0,
       "downgrades_emissoes": 0,
       "total_downgrades": 0,
@@ -1888,29 +1888,16 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades": [
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA-",
-          "rating_atual": "brAA",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
-        },
-        {
-          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
+          "variacao_notches": "+3"
         }
       ],
       "downgrades": [],
@@ -4124,6 +4111,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Austin",
+      "emissor": "FICTOR INVEST FIDC",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2025-10-09",
+      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBB+",
+      "rating_atual": "brBBB",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+2",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-20"
+    },
+    {
+      "agencia": "Austin",
       "emissor": "FIDC IC SOMAPAY",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2024-08-12",
@@ -4134,22 +4137,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlook_atual": "Estável",
       "tipo_movimento": "UPGRADE",
       "variacao_notches": "+5",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-10-20"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC CONSIGNADOS FEDERAIS",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2019-09-27",
-      "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brAA-",
-      "rating_atual": "brAA",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-10-20"
@@ -160464,19 +160451,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Austin",
-        "emissor": "FIDC CONSIGNADOS FEDERAIS",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2019-09-27",
-        "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brAA-",
-        "rating_atual": "brAA",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+1"
-      },
-      {
-        "agencia": "Austin",
         "emissor": "FIDC IC SOMAPAY",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2024-08-12",
@@ -160487,6 +160461,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+5"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBB+",
+        "rating_atual": "brBBB",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+2"
       },
       {
         "agencia": "Moody's",
