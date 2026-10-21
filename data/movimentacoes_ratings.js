@@ -1,43 +1,43 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-21T11:44:15.736347",
+  "timestamp": "2026-10-21T16:06:22.712665",
   "dt_atual": "2026-10-21",
   "dt_anterior": "2026-10-20",
   "resumo": {
     "upgrades_emissores": 4,
-    "upgrades_emissoes": 12,
-    "total_upgrades": 16,
-    "downgrades_emissores": 5,
-    "downgrades_emissoes": 15,
+    "upgrades_emissoes": 13,
+    "total_upgrades": 17,
+    "downgrades_emissores": 6,
+    "downgrades_emissoes": 14,
     "total_downgrades": 20,
     "novos_emissores": 13,
-    "novos_emissoes": 72,
-    "total_novos": 85,
+    "novos_emissoes": 73,
+    "total_novos": 86,
     "outlooks_emissores": 4,
     "outlooks_emissoes": 6,
     "total_outlooks": 10,
     "retirados_emissores": 2,
-    "retirados_emissoes": 15,
-    "total_retirados": 17
+    "retirados_emissoes": 14,
+    "total_retirados": 16
   },
   "periodo_recente": {
     "dt_atual": "2026-10-21",
     "dt_anterior": "2026-09-21",
     "resumo": {
       "upgrades_emissores": 4,
-      "upgrades_emissoes": 12,
-      "total_upgrades": 16,
-      "downgrades_emissores": 5,
-      "downgrades_emissoes": 15,
+      "upgrades_emissoes": 13,
+      "total_upgrades": 17,
+      "downgrades_emissores": 6,
+      "downgrades_emissoes": 14,
       "total_downgrades": 20,
       "novos_emissores": 13,
-      "novos_emissoes": 72,
-      "total_novos": 85,
+      "novos_emissoes": 73,
+      "total_novos": 86,
       "outlooks_emissores": 4,
       "outlooks_emissoes": 6,
       "total_outlooks": 10,
       "retirados_emissores": 2,
-      "retirados_emissoes": 15,
-      "total_retirados": 17
+      "retirados_emissoes": 14,
+      "total_retirados": 16
     },
     "emissores": {
       "tipo": "emissores",
@@ -162,6 +162,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-4"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "PBG",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-10-21",
+          "link": "https://www.fitchratings.com/entity/pbg-s-a-97027261",
+          "rating_anterior": "BBB(bra)",
+          "rating_atual": "RD(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-13"
         }
       ],
       "novos": [
@@ -422,6 +435,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+2"
         },
         {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        },
+        {
           "agencia": "Moody's",
           "emissor": "VALID SOLUCOES",
           "instrumento": "11ª Emissão de Debêntures - 1ª Série",
@@ -606,19 +632,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "-3"
         },
         {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
           "agencia": "Moody's",
           "emissor": "OPEA SECURITIZADORA",
           "instrumento": "Série Única da 196ª Emissão de CRAs",
@@ -636,13 +649,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB-",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-4"
+          "variacao_notches": "-2"
         },
         {
           "agencia": "Fitch",
@@ -1052,8 +1065,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "BSEC SECURITIZADORA 2011",
           "instrumento": "certificates",
           "dt_acao": "2026-10-01",
-          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
-          "rating_atual": "BBsf(bra)",
+          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
+          "rating_atual": "BBBsf(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1541,6 +1554,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "PBG",
+          "instrumento": "BRL 201 mln 3.65% bond/note 20-Dec-2028",
+          "dt_acao": "2026-10-21",
+          "link": "https://www.fitchratings.com/entity/pbg-s-a-97027261#issues",
+          "rating_atual": "RD(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
         }
       ],
       "outlooks": [
@@ -1620,19 +1644,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "OPEA SECURITIZADORA 2022",
           "instrumento": "notes ser 3",
           "dt_acao": "2026-09-15",
@@ -1672,10 +1683,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "ICRED INSS III FIDC",
-          "instrumento": "notes ser 4",
+          "emissor": "ICRED CHOPIN INSS FIDC",
+          "instrumento": "certificates ser 4",
           "dt_acao": "2026-09-25",
-          "link": "https://www.fitchratings.com/entity/icred-inss-iii-fidc-97870993#issues",
+          "link": "https://www.fitchratings.com/entity/icred-chopin-inss-fidc-97829083#issues",
           "rating_anterior": "AAA(EXP)sf(bra)",
           "rating_atual": "NRsf",
           "outlook_anterior": "Estável",
@@ -1685,10 +1696,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "ICRED CHOPIN INSS FIDC",
-          "instrumento": "certificates ser 4",
+          "emissor": "ICRED INSS III FIDC",
+          "instrumento": "notes ser 4",
           "dt_acao": "2026-09-25",
-          "link": "https://www.fitchratings.com/entity/icred-chopin-inss-fidc-97829083#issues",
+          "link": "https://www.fitchratings.com/entity/icred-inss-iii-fidc-97870993#issues",
           "rating_anterior": "AAA(EXP)sf(bra)",
           "rating_atual": "NRsf",
           "outlook_anterior": "Estável",
@@ -1750,6 +1761,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
+          "emissor": "MOVIDA PARTICIPACOES",
+          "instrumento": "BRL 1 bln Floating bond/note 15-Oct-2026",
+          "dt_acao": "2026-10-15",
+          "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-96487716#issues",
+          "rating_anterior": "AA(bra)",
+          "rating_atual": "NR",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "UNIAO QUIMICA FARMACEUTICA NACIONAL",
           "instrumento": "BRL 600 mln Series 14 Floating bond/note 15-Oct-2026",
           "dt_acao": "2026-10-15",
@@ -1789,19 +1813,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "MOVIDA PARTICIPACOES",
-          "instrumento": "BRL 1 bln Floating bond/note 15-Oct-2026",
-          "dt_acao": "2026-10-15",
-          "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-96487716#issues",
-          "rating_anterior": "AA(bra)",
-          "rating_atual": "NR",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "MRS LOGISTICA",
           "instrumento": "1ª Emissão Notas Promissórias",
           "dt_acao": "2026-10-21",
@@ -1821,11 +1832,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-10-20",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 0,
-      "total_upgrades": 0,
-      "downgrades_emissores": 0,
-      "downgrades_emissoes": 5,
-      "total_downgrades": 5,
+      "upgrades_emissoes": 1,
+      "total_upgrades": 1,
+      "downgrades_emissores": 1,
+      "downgrades_emissoes": 2,
+      "total_downgrades": 3,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -1833,15 +1844,29 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 2,
-      "total_retirados": 2
+      "retirados_emissoes": 1,
+      "total_retirados": 1
     },
     "emissores": {
       "tipo": "emissores",
       "dt_atual": "2026-10-21",
       "dt_anterior": "2026-10-20",
       "upgrades": [],
-      "downgrades": [],
+      "downgrades": [
+        {
+          "agencia": "Fitch",
+          "emissor": "PBG",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-10-21",
+          "link": "https://www.fitchratings.com/entity/pbg-s-a-97027261",
+          "rating_anterior": "BBB(bra)",
+          "rating_atual": "RD(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-13"
+        }
+      ],
       "novos": [],
       "outlooks": [],
       "retirados": []
@@ -1850,47 +1875,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "tipo": "emissoes",
       "dt_atual": "2026-10-21",
       "dt_anterior": "2026-10-20",
-      "upgrades": [],
-      "downgrades": [
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
-        },
+      "upgrades": [
         {
           "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB",
-          "rating_atual": "brBB-",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        }
+      ],
+      "downgrades": [
         {
           "agencia": "Fitch",
           "emissor": "ECO SECURITIZADORA 2022",
@@ -1906,34 +1906,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "BSEC SECURITIZADORA 2011",
-          "instrumento": "certificates",
-          "dt_acao": "2026-10-01",
-          "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
-          "rating_anterior": "BBBsf(bra)",
-          "rating_atual": "BBsf(bra)",
+          "emissor": "PBG",
+          "instrumento": "BRL 201 mln 3.65% bond/note 20-Dec-2028",
+          "dt_acao": "2026-10-21",
+          "link": "https://www.fitchratings.com/entity/pbg-s-a-97027261#issues",
+          "rating_anterior": "BBB(bra)",
+          "rating_atual": "RD(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-3"
+          "variacao_notches": "-13"
         }
       ],
       "novos": [],
       "outlooks": [],
       "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
         {
           "agencia": "Fitch",
           "emissor": "MRS LOGISTICA",
@@ -1951,6 +1938,36 @@ window.PULSERATINGS_MOVIMENTACOES = {
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Fitch",
+      "emissor": "PBG",
+      "instrumento": "National Long Term Rating",
+      "dt_acao": "2026-10-21",
+      "link": "https://www.fitchratings.com/entity/pbg-s-a-97027261",
+      "rating_anterior": "BBB(bra)",
+      "rating_atual": "RD(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-13",
+      "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-21"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "PBG",
+      "instrumento": "BRL 201 mln 3.65% bond/note 20-Dec-2028",
+      "dt_acao": "2026-10-21",
+      "link": "https://www.fitchratings.com/entity/pbg-s-a-97027261#issues",
+      "rating_atual": "RD(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-21"
+    },
     {
       "agencia": "Fitch",
       "emissor": "MRS LOGISTICA",
@@ -2238,6 +2255,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
+      "emissor": "MOVIDA PARTICIPACOES",
+      "instrumento": "BRL 1 bln Floating bond/note 15-Oct-2026",
+      "dt_acao": "2026-10-15",
+      "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-96487716#issues",
+      "rating_anterior": "AA(bra)",
+      "rating_atual": "NR",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-10-21"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "UNIAO QUIMICA FARMACEUTICA NACIONAL",
       "instrumento": "BRL 600 mln Series 14 Floating bond/note 15-Oct-2026",
       "dt_acao": "2026-10-15",
@@ -2275,22 +2308,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-15",
       "link": "https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291#issues",
       "rating_anterior": "A+(bra)",
-      "rating_atual": "NR",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-10-21"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "MOVIDA PARTICIPACOES",
-      "instrumento": "BRL 1 bln Floating bond/note 15-Oct-2026",
-      "dt_acao": "2026-10-15",
-      "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-96487716#issues",
-      "rating_anterior": "AA(bra)",
       "rating_atual": "NR",
       "outlook_anterior": "Estável",
       "outlook_atual": "Estável",
@@ -3274,8 +3291,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "BSEC SECURITIZADORA 2011",
       "instrumento": "certificates",
       "dt_acao": "2026-10-01",
-      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
-      "rating_atual": "BBsf(bra)",
+      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
+      "rating_atual": "BBBsf(bra)",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -3640,10 +3657,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "ICRED INSS III FIDC",
-      "instrumento": "notes ser 4",
+      "emissor": "ICRED CHOPIN INSS FIDC",
+      "instrumento": "certificates ser 4",
       "dt_acao": "2026-09-25",
-      "link": "https://www.fitchratings.com/entity/icred-inss-iii-fidc-97870993#issues",
+      "link": "https://www.fitchratings.com/entity/icred-chopin-inss-fidc-97829083#issues",
       "rating_anterior": "AAA(EXP)sf(bra)",
       "rating_atual": "NRsf",
       "outlook_anterior": "Estável",
@@ -3656,10 +3673,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "ICRED CHOPIN INSS FIDC",
-      "instrumento": "certificates ser 4",
+      "emissor": "ICRED INSS III FIDC",
+      "instrumento": "notes ser 4",
       "dt_acao": "2026-09-25",
-      "link": "https://www.fitchratings.com/entity/icred-chopin-inss-fidc-97829083#issues",
+      "link": "https://www.fitchratings.com/entity/icred-inss-iii-fidc-97870993#issues",
       "rating_anterior": "AAA(EXP)sf(bra)",
       "rating_atual": "NRsf",
       "outlook_anterior": "Estável",
@@ -4078,35 +4095,35 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-10-21"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "instrumento": "securities ser 1",
-      "dt_acao": "2026-04-15",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-10-21"
-    },
-    {
       "agencia": "Austin",
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBBB",
-      "rating_atual": "brBB-",
+      "rating_atual": "brBB+",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-4",
+      "variacao_notches": "-2",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-21"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FIDC IC SOMAPAY",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2024-08-12",
+      "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brB-",
+      "rating_atual": "brBB+",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+5",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
       "dt_captura": "2026-10-21"
     },
     {
@@ -4123,22 +4140,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "+2",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-10-21"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC CONSIGNADOS FEDERAIS",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2019-09-27",
-      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brAA",
-      "rating_atual": "brAA-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-21"
     }
   ],
@@ -4158,6 +4159,38 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-21",
       "dt_captura": "2026-10-21",
       "link": "https://www.fitchratings.com/entity/mrs-logistica-sa-mrs-80091464#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "PBG",
+      "instrumento": "National Long Term Rating",
+      "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "tipo_movimento": "DOWNGRADE",
+      "rating_anterior": "BBB(bra)",
+      "rating_atual": "RD(bra)",
+      "variacao_notches": "-13",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-21",
+      "dt_captura": "2026-10-21",
+      "link": "https://www.fitchratings.com/entity/pbg-s-a-97027261"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "PBG",
+      "instrumento": "BRL 201 mln 3.65% bond/note 20-Dec-2028",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "RD(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-21",
+      "dt_captura": "2026-10-21",
+      "link": "https://www.fitchratings.com/entity/pbg-s-a-97027261#issues"
     },
     {
       "agencia": "Fitch",
@@ -5630,6 +5663,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-01",
       "dt_captura": "2026-10-21",
       "link": "https://www.fitchratings.com/entity/brazil-80442191#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "BSEC SECURITIZADORA 2011",
+      "instrumento": "certificates",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "BBBsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-01",
+      "dt_captura": "2026-10-21",
+      "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues"
     },
     {
       "agencia": "S&P",
@@ -162523,6 +162572,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-4"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "PBG",
+        "instrumento": "National Long Term Rating",
+        "dt_acao": "2026-10-21",
+        "link": "https://www.fitchratings.com/entity/pbg-s-a-97027261",
+        "rating_anterior": "BBB(bra)",
+        "rating_atual": "RD(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-13"
       }
     ],
     "novos": [
@@ -162783,6 +162845,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+2"
       },
       {
+        "agencia": "Austin",
+        "emissor": "FIDC IC SOMAPAY",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2024-08-12",
+        "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brB-",
+        "rating_atual": "brBB+",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+5"
+      },
+      {
         "agencia": "Moody's",
         "emissor": "VALID SOLUCOES",
         "instrumento": "11ª Emissão de Debêntures - 1ª Série",
@@ -162967,19 +163042,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "-3"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FIDC CONSIGNADOS FEDERAIS",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2019-09-27",
-        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brAA",
-        "rating_atual": "brAA-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
-      },
-      {
         "agencia": "Moody's",
         "emissor": "OPEA SECURITIZADORA",
         "instrumento": "Série Única da 196ª Emissão de CRAs",
@@ -162997,13 +163059,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "emissor": "FICTOR INVEST FIDC",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brBBB",
-        "rating_atual": "brBB-",
+        "rating_atual": "brBB+",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-4"
+        "variacao_notches": "-2"
       },
       {
         "agencia": "Fitch",
@@ -163413,8 +163475,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "emissor": "BSEC SECURITIZADORA 2011",
         "instrumento": "certificates",
         "dt_acao": "2026-10-01",
-        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-235-97160427#issues",
-        "rating_atual": "BBsf(bra)",
+        "link": "https://www.fitchratings.com/entity/brazilian-securities-2011-269-97160436#issues",
+        "rating_atual": "BBBsf(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -163902,6 +163964,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "PBG",
+        "instrumento": "BRL 201 mln 3.65% bond/note 20-Dec-2028",
+        "dt_acao": "2026-10-21",
+        "link": "https://www.fitchratings.com/entity/pbg-s-a-97027261#issues",
+        "rating_atual": "RD(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
       }
     ],
     "outlooks": [
@@ -163981,19 +164054,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "retirados": [
       {
         "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "instrumento": "securities ser 1",
-        "dt_acao": "2026-04-15",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-        "rating_anterior": "AA+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
         "emissor": "OPEA SECURITIZADORA 2022",
         "instrumento": "notes ser 3",
         "dt_acao": "2026-09-15",
@@ -164033,10 +164093,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "ICRED INSS III FIDC",
-        "instrumento": "notes ser 4",
+        "emissor": "ICRED CHOPIN INSS FIDC",
+        "instrumento": "certificates ser 4",
         "dt_acao": "2026-09-25",
-        "link": "https://www.fitchratings.com/entity/icred-inss-iii-fidc-97870993#issues",
+        "link": "https://www.fitchratings.com/entity/icred-chopin-inss-fidc-97829083#issues",
         "rating_anterior": "AAA(EXP)sf(bra)",
         "rating_atual": "NRsf",
         "outlook_anterior": "Estável",
@@ -164046,10 +164106,10 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "ICRED CHOPIN INSS FIDC",
-        "instrumento": "certificates ser 4",
+        "emissor": "ICRED INSS III FIDC",
+        "instrumento": "notes ser 4",
         "dt_acao": "2026-09-25",
-        "link": "https://www.fitchratings.com/entity/icred-chopin-inss-fidc-97829083#issues",
+        "link": "https://www.fitchratings.com/entity/icred-inss-iii-fidc-97870993#issues",
         "rating_anterior": "AAA(EXP)sf(bra)",
         "rating_atual": "NRsf",
         "outlook_anterior": "Estável",
@@ -164111,6 +164171,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
+        "emissor": "MOVIDA PARTICIPACOES",
+        "instrumento": "BRL 1 bln Floating bond/note 15-Oct-2026",
+        "dt_acao": "2026-10-15",
+        "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-96487716#issues",
+        "rating_anterior": "AA(bra)",
+        "rating_atual": "NR",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
         "emissor": "UNIAO QUIMICA FARMACEUTICA NACIONAL",
         "instrumento": "BRL 600 mln Series 14 Floating bond/note 15-Oct-2026",
         "dt_acao": "2026-10-15",
@@ -164142,19 +164215,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-15",
         "link": "https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291#issues",
         "rating_anterior": "A+(bra)",
-        "rating_atual": "NR",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "MOVIDA PARTICIPACOES",
-        "instrumento": "BRL 1 bln Floating bond/note 15-Oct-2026",
-        "dt_acao": "2026-10-15",
-        "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-96487716#issues",
-        "rating_anterior": "AA(bra)",
         "rating_atual": "NR",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
