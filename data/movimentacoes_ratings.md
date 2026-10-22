@@ -1,32 +1,27 @@
-# 📊 Relatório de Movimentações de Ratings (21/10/2026)
+# 📊 Relatório de Movimentações de Ratings (22/10/2026)
 
 *Painel consolidado de **Upgrades**, **Downgrades**, **Novos Ratings** e **Alterações de Perspectiva**.*
 
-*Período monitorado: **21/09/2026** a **21/10/2026**.*
+*Período monitorado: **22/09/2026** a **22/10/2026**.*
 
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 4 | 13 | **17** |
-| 🔴 **Downgrades (Rebaixamentos)** | 6 | 12 | **18** |
-| 🔵 **Novos Ratings** | 13 | 74 | **87** |
-| 🟡 **Mudanças de Perspectiva** | 4 | 6 | **10** |
+| 🟢 **Upgrades (Elevações)** | 3 | 9 | **12** |
+| 🔴 **Downgrades (Rebaixamentos)** | 6 | 13 | **19** |
+| 🔵 **Novos Ratings** | 13 | 68 | **81** |
+| 🟡 **Mudanças de Perspectiva** | 4 | 14 | **18** |
 | ⚪ **Ratings Retirados / Liquidados** | 2 | 14 | **16** |
 
-### 🟢 Elevações de Rating (Upgrades) — 17
+### 🟢 Elevações de Rating (Upgrades) — 12
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Moody's | **VALID SOLUCOES** | Rating Corporativo | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
-| Moody's | **OCEANPACT SERVICOS MARITIMOS** | Rating de Emissor | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Fitch | **QI PARTICIPACOES** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Fitch | **QI SOCIEDADE CREDITO DIRETO** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Longo prazo | `BB` | **`BBB-`** | `+2` | Estável | 16/10/2026 |
-| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB-` | **`brBBB+`** | `+2` | Estável | 06/03/2024 |
-| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brB-` | **`brBB+`** | `+5` | Estável | 12/08/2024 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
-| Moody's | **OCEANPACT SERVICOS MARITIMOS** | 6ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
-| Moody's | **OCEANPACT SERVICOS MARITIMOS** | 7ª Emissão de Debêntures - Série Única | `A.br` | **`A+.br`** | `+1` | Positiva | 21/09/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Curto prazo | `CP3` | **`CP2`** | `+1` | Estável | 23/09/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | `BBB-` | **`A`** | `+4` | Estável | 23/09/2026 |
 | Fitch | **CONCESSIONARIA BLOCO CENTRAL** | BRL 800 mln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
@@ -34,7 +29,7 @@
 | Fitch | **CONCESSIONARIA BLOCO SUL** | BRL 2.5 bln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
 | Fitch | **AGUA VERMELHA TRANSMISSORA ENERGIA** | BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035 | `A-(bra)` | **`A(bra)`** | `+1` | Positiva | 09/10/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 18
+### 🔴 Rebaixamentos de Rating (Downgrades) — 19
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **VALE** | Escala Nacional Brasil de Longo Prazo | `brAAA` | **`brAA-`** | `-3` | Negativa | 03/06/2026 |
@@ -47,8 +42,9 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 16/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Longo prazo | `BBB` | **`BB+`** | `-2` | Negativa | 16/10/2026 |
 | Liberum | **INTRABANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE ILIMITADA** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/09/2026 |
-| Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB`** | `-3` | Negativa | 09/10/2025 |
+| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
+| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB+` | **`brB+`** | `-3` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `AAAsf(bra)` | **`Asf(bra)`** | `-5` | Estável | 24/06/2026 |
 | Fitch | **GDS SUBHOLDING** | BRL 376 mln bond/note 01-Sep-2043 | `AA(bra)` | **`BBB(bra)`** | `-6` | Em Observação | 08/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2021** | securities ser 378 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
@@ -56,13 +52,21 @@
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-1 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-2 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
 
-### 🟡 Mudanças de Perspectiva (Outlook) — 10
+### 🟡 Mudanças de Perspectiva (Outlook) — 18
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva Anterior | Nova Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | Moody's | **BANCO BMG** | Rating de Depósitos Bancários | `A-.br` | Positiva | **Estável** | 14/10/2026 |
 | Moody's | **BANCO BMG** | Rating de Emissor | `A-.br` | Positiva | **Estável** | 14/10/2026 |
 | Fitch | **COMPANHIA GAS ESTADO RIO GRANDE SUL** | National Long Term Rating | `AA(bra)` | Em Observação | **Negativa** | 23/09/2026 |
 | Fitch | **VESTE ESTILO** | National Long Term Rating | `BBB(bra)` | Negativa | **Estável** | 09/10/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS POUPACRED RESPONSABILIDADE ILIMITADA** | Mezanino - Longo prazo | `BBB+` | Negativa | **Estável** | 22/10/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS POUPACRED RESPONSABILIDADE ILIMITADA** | Mezanino - Curto prazo | `CP3` | Negativa | **Estável** | 22/10/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS POUPACRED RESPONSABILIDADE ILIMITADA** | Senior - Curto prazo | `CP1` | Negativa | **Estável** | 22/10/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS POUPACRED RESPONSABILIDADE ILIMITADA** | Senior - Longo prazo | `AA` | Negativa | **Estável** | 22/10/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONCREDITO II RESPONSABILIDADE LIMITADA** | Mezanino - Longo prazo | `BBB+` | Negativa | **Estável** | 22/10/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONCREDITO II RESPONSABILIDADE LIMITADA** | Mezanino - Curto prazo | `CP3` | Negativa | **Estável** | 22/10/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONCREDITO II RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | `AA` | Negativa | **Estável** | 22/10/2026 |
+| Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONCREDITO II RESPONSABILIDADE LIMITADA** | Senior - Curto prazo | `CP1` | Negativa | **Estável** | 22/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS ONIX PRIME** | Mezanino - Longo prazo | `BB+` | Estável | **Negativa** | 15/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS ONIX PRIME** | Mezanino - Curto prazo | `CP4` | Estável | **Negativa** | 15/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS ONIX PRIME** | Subordinada - Longo prazo | `B` | Estável | **Negativa** | 15/10/2026 |
@@ -70,7 +74,7 @@
 | Fitch | **CRI BARI SECURITIZADORA 2022** | BRL 39 mln bond/note 15-Jul-2036 | `BBB+sf(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 | Fitch | **PGE** | BRL 49 mln bond/note 15-Jul-2036 | `BBB+(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (87)
+### 🔵 Novos Ratings Atribuídos (81)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **BANCO** | Escala Nacional Brasil de Curto Prazo | **`brA-1`** | Estável | 08/10/2026 |
@@ -86,7 +90,6 @@
 | Fitch | **MERCADO LIVRE** | National Long Term Rating | **`AAA(bra)`** | Estável | 08/10/2026 |
 | Moody's | **BANCO MERCANTIL** | Rating de Depósitos Bancários | **`AA.br`** | Estável | 14/10/2026 |
 | Moody's | **BANCO MERCANTIL** | Rating de Emissor | **`AA.br`** | Estável | 14/10/2026 |
-| Moody's | **SUL CONCESSOES PARTICIPACOES** | 3ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 24/09/2026 |
 | Moody's | **CONCESSIONARIA SISTEMA ANHANGUERA** | 15ª Emissão de Debêntures -  Série Única | **`AAA.br`** | Estável | 13/10/2026 |
 | Moody's | **CIRANDA I HOLDING** | 2ª Emissão de Debêntures - Serie Única | **`AA-.br`** | Negativa | 14/10/2026 |
 | Moody's | **ARGO ENERGIA EMPREENDIMENTOS PARTICIPACOES** | 1ª Emissão de Debêntures - 1ª Série | **`AAA.br`** | Estável | 25/09/2026 |
@@ -96,14 +99,15 @@
 | Moody's | **IPIRANGA PRODUTOS PETROLEO** | 11ª Emissão de Debêntures - Série Única | **`AAA.br`** | Estável | 30/09/2026 |
 | Moody's | **IPIRANGA PRODUTOS PETROLEO** | 15ª Emissão de Debêntures - Série Única | **`AAA.br`** | Estável | 30/09/2026 |
 | Moody's | **IPIRANGA PRODUTOS PETROLEO** | 16ª Emissão de Debêntures - Série Única | **`AAA.br`** | Estável | 30/09/2026 |
-| Fitch | **NOVA TRANSPORTADORA SUDESTE** | 13th Debenture - BRL 1.5 bln bond/note | **`AAA(bra)`** | Estável | 21/09/2026 |
-| Fitch | **USINA TERMELETRICA PAMPA SUL** | BRL 55 mln Floating bond/note 30-Apr-2028 | **`AA(bra)`** | Negativa | 21/09/2026 |
-| Fitch | **USINA TERMELETRICA PAMPA SUL** | BRL 37 mln Floating bond/note 30-Apr-2028 | **`AA(bra)`** | Negativa | 21/09/2026 |
-| Fitch | **NOVA TRANSPORTADORA SUDESTE** | 13th Debenture - BRL 1.04 bln Floating IGP-DI (Brazil) bond/note 08-Oct-2033 | **`AAA(bra)`** | Estável | 21/09/2026 |
 | Moody's | **MOVIDA PARTICIPACOES** | 29ª Emissão de Debêntures - Série Única | **`AA+.br`** | Estável | 22/09/2026 |
 | Fitch | **RGE SUL DISTRIBUIDORA ENERGIA** | 21st Deb Issue 2nd tranche BRL 1103 mln Floating IPCA (Brazil) 5.9% IPCA bond/note 15-Mar-2036 | **`AAA(bra)`** | Estável | 22/09/2026 |
 | Moody's | **K** | 1a Série de Cotas Seniores | **`(P)AAA.br (sf)`** | Estável | 23/09/2026 |
-| *...e mais 57 novos ratings.* | | | | | |
+| Fitch | **AXIA ENERGIA** | 13th Deb Issue  BRL 1500 mln Floating CDI (Brazil) bond/note 15-Sep-2033 | **`AAA(bra)`** | Estável | 23/09/2026 |
+| Fitch | **UHE SAO SIMAO ENERGIA** | BRL 1.05 bln bond/note IPCA + 5,8198% | **`AAA(bra)`** | Estável | 23/09/2026 |
+| Fitch | **UHE SAO SIMAO ENERGIA** | BRL 1.05 bln Floating IPCA (Brazil) 5.82% bond/note 15-Oct-2036 | **`AAA(bra)`** | Estável | 23/09/2026 |
+| Fitch | **AXIA ENERGIA** | 13th Debenture - BRL 1.5 bln Floating CDI (Brazil) bond/note 15-Sep-2033 | **`AAA(bra)`** | Estável | 23/09/2026 |
+| Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA FLAGSHIP BTO RECEIVABLES** | 2ª Série de Cotas Seniores | **`AA-.br (sf)`** | Estável | 14/10/2026 |
+| *...e mais 51 novos ratings.* | | | | | |
 
 ### ⚪ Ratings Retirados / Liquidados (16)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
@@ -126,5 +130,5 @@
 | Fitch | **MRS LOGISTICA** | 1ª Emissão Notas Promissórias | `AAA(bra)` | Estável | 21/10/2026 |
 
 ---
-### ⚡ Movimentações da Última Captura Diária (20/10/2026 → 21/10/2026)
-*Total nas últimas 24h: 🟢 0 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 2 retirados.*
+### ⚡ Movimentações da Última Captura Diária (21/10/2026 → 22/10/2026)
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 8 perspectivas | ⚪ 0 retirados.*
