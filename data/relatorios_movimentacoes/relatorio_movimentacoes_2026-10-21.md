@@ -8,8 +8,8 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 4 | 13 | **17** |
-| 🔴 **Downgrades (Rebaixamentos)** | 6 | 14 | **20** |
-| 🔵 **Novos Ratings** | 13 | 73 | **86** |
+| 🔴 **Downgrades (Rebaixamentos)** | 6 | 12 | **18** |
+| 🔵 **Novos Ratings** | 13 | 74 | **87** |
 | 🟡 **Mudanças de Perspectiva** | 4 | 6 | **10** |
 | ⚪ **Ratings Retirados / Liquidados** | 2 | 14 | **16** |
 
@@ -34,7 +34,7 @@
 | Fitch | **CONCESSIONARIA BLOCO SUL** | BRL 2.5 bln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
 | Fitch | **AGUA VERMELHA TRANSMISSORA ENERGIA** | BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035 | `A-(bra)` | **`A(bra)`** | `+1` | Positiva | 09/10/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 20
+### 🔴 Rebaixamentos de Rating (Downgrades) — 18
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **VALE** | Escala Nacional Brasil de Longo Prazo | `brAAA` | **`brAA-`** | `-3` | Negativa | 03/06/2026 |
@@ -48,15 +48,13 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Longo prazo | `BBB` | **`BB+`** | `-2` | Negativa | 16/10/2026 |
 | Liberum | **INTRABANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE ILIMITADA** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/09/2026 |
 | Moody's | **OPEA SECURITIZADORA** | Série Única da 196ª Emissão de CRAs | `AA.br (sf)` | **`AA-.br (sf)`** | `-1` | Estável | 18/09/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB`** | `-3` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `AAAsf(bra)` | **`Asf(bra)`** | `-5` | Estável | 24/06/2026 |
-| Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Estável | 24/06/2026 |
 | Fitch | **GDS SUBHOLDING** | BRL 376 mln bond/note 01-Sep-2043 | `AA(bra)` | **`BBB(bra)`** | `-6` | Em Observação | 08/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2021** | securities ser 378 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-3 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-1 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-2 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
-| Fitch | **GY ENERGY HOLDING III** | BRL 85 mln bond/note 15-Nov-2040 | `A-(bra)` | **`CCC+(bra)`** | `-10` | Estável | 16/10/2026 |
 
 ### 🟡 Mudanças de Perspectiva (Outlook) — 10
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva Anterior | Nova Perspectiva | Data Ação |
@@ -72,7 +70,7 @@
 | Fitch | **CRI BARI SECURITIZADORA 2022** | BRL 39 mln bond/note 15-Jul-2036 | `BBB+sf(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 | Fitch | **PGE** | BRL 49 mln bond/note 15-Jul-2036 | `BBB+(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (86)
+### 🔵 Novos Ratings Atribuídos (87)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **BANCO** | Escala Nacional Brasil de Curto Prazo | **`brA-1`** | Estável | 08/10/2026 |
@@ -105,7 +103,7 @@
 | Moody's | **MOVIDA PARTICIPACOES** | 29ª Emissão de Debêntures - Série Única | **`AA+.br`** | Estável | 22/09/2026 |
 | Fitch | **RGE SUL DISTRIBUIDORA ENERGIA** | 21st Deb Issue 2nd tranche BRL 1103 mln Floating IPCA (Brazil) 5.9% IPCA bond/note 15-Mar-2036 | **`AAA(bra)`** | Estável | 22/09/2026 |
 | Moody's | **K** | 1a Série de Cotas Seniores | **`(P)AAA.br (sf)`** | Estável | 23/09/2026 |
-| *...e mais 56 novos ratings.* | | | | | |
+| *...e mais 57 novos ratings.* | | | | | |
 
 ### ⚪ Ratings Retirados / Liquidados (16)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
@@ -115,18 +113,18 @@
 | Fitch | **OPEA SECURITIZADORA 2022** | notes ser 3 | `AAAsf(bra)` | Estável | 15/09/2026 |
 | Fitch | **ELETRORIVER** | BRL 805 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA(bra)` | Estável | 21/09/2026 |
 | Fitch | **BSB ENERGETICA** | BRL 345 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA+(bra)` | Positiva | 21/09/2026 |
-| Fitch | **ICRED CHOPIN INSS FIDC** | certificates ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
 | Fitch | **ICRED INSS III FIDC** | notes ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
+| Fitch | **ICRED CHOPIN INSS FIDC** | certificates ser 4 | `AAA(EXP)sf(bra)` | Estável | 25/09/2026 |
 | Fitch | **MOTIVA INFRAESTRUTURA MOBILIDADE** | 18a debenture - BRL 1.32 bln bond/note 15-May-2030 | `AAA(bra)` | Estável | 28/09/2026 |
 | Fitch | **BANCO** | USD 750 mln 3.25% bond/note 30-Sep-2026 | `BB` | Estável | 30/09/2026 |
 | Fitch | **BRAZIL** | BRL 92 bln Zero treasury bills/notes/bonds 01-Oct-2026 | `BB` | Estável | 01/10/2026 |
 | Fitch | **LOCALIZA FLEET** | 9ª Debentures (Série Única) | `AAA(bra)` | Estável | 05/10/2026 |
-| Fitch | **MOVIDA PARTICIPACOES** | BRL 1 bln Floating bond/note 15-Oct-2026 | `AA(bra)` | Estável | 15/10/2026 |
 | Fitch | **UNIAO QUIMICA FARMACEUTICA NACIONAL** | BRL 600 mln Series 14 Floating bond/note 15-Oct-2026 | `AA-(bra)` | Estável | 15/10/2026 |
 | Fitch | **COPEL GERACAO TRANSMISSAO** | BRL 1.5 bln Floating CDI (Brazil) 1.38% bond/note 15-Oct-2026 | `AAA(bra)` | Estável | 15/10/2026 |
 | Fitch | **CONCESSIONARIA AEROPORTO INTERNACIONAL GUARULHOS** | 2a Emissão - Série Unica | `A+(bra)` | Estável | 15/10/2026 |
+| Fitch | **MOVIDA PARTICIPACOES** | BRL 1 bln Floating bond/note 15-Oct-2026 | `AA(bra)` | Estável | 15/10/2026 |
 | Fitch | **MRS LOGISTICA** | 1ª Emissão Notas Promissórias | `AAA(bra)` | Estável | 21/10/2026 |
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (20/10/2026 → 21/10/2026)
-*Total nas últimas 24h: 🟢 1 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 2 retirados.*

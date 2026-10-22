@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "PBG S/A"
+        "example": "Celesc Distribuicao S.A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/pbg-s-a-97027261"
+        "example": "https://www.fitchratings.com/entity/celesc-distribuicao-sa-90866490"
       },
       {
         "name": "no_tipo_rating",
@@ -74,7 +74,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "RD(bra)"
+        "example": "AA(bra)"
       },
       {
         "name": "dt_acao_rating",
@@ -84,12 +84,12 @@
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Downgrade"
+        "example": "Affirmed"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Rating Outlook Stable"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "PBG S/A"
+        "example": "Celesc Distribuicao S.A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/pbg-s-a-97027261"
+        "example": "https://www.fitchratings.com/entity/celesc-distribuicao-sa-90866490"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACCESS FIDC - SUBORDINADAS MEZANINO"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/2394/Access_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -298,12 +298,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-15"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11200"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "GPR FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "C3E CRÉDITOS JUDICIAIS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS DE RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29243"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29275"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "GPR FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
+        "example": "C3E CRÉDITOS JUDICIAIS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS DE RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29243"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29275"
       },
       {
         "name": "no_tipo_rating",
@@ -362,17 +362,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BBB-"
+        "example": "CP5"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-10-20"
+        "example": "2026-10-21"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Encerramento"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -387,7 +387,7 @@
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Longo prazo"
+        "example": "Curto prazo"
       }
     ]
   },
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACCESS FIDC"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACCESS FIDC - SUBORDINADAS MEZANINO"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "no_tipo_rating",
@@ -466,7 +466,7 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SUBORDINADAS MEZANINO"
+        "example": "SUBORDINADAS JÚNIOR"
       },
       {
         "name": "de_rating_br",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-15"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/2394/Access_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_devedor_vinculado",
