@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-10-22T11:29:28.722206",
+  "timestamp": "2026-10-22T16:09:12.637532",
   "dt_atual": "2026-10-22",
   "dt_anterior": "2026-10-21",
   "resumo": {
-    "upgrades_emissores": 3,
-    "upgrades_emissoes": 9,
-    "total_upgrades": 12,
+    "upgrades_emissores": 5,
+    "upgrades_emissoes": 10,
+    "total_upgrades": 15,
     "downgrades_emissores": 6,
-    "downgrades_emissoes": 13,
-    "total_downgrades": 19,
+    "downgrades_emissoes": 12,
+    "total_downgrades": 18,
     "novos_emissores": 13,
-    "novos_emissoes": 68,
-    "total_novos": 81,
+    "novos_emissoes": 67,
+    "total_novos": 80,
     "outlooks_emissores": 4,
     "outlooks_emissoes": 14,
     "total_outlooks": 18,
@@ -23,15 +23,15 @@
     "dt_atual": "2026-10-22",
     "dt_anterior": "2026-09-22",
     "resumo": {
-      "upgrades_emissores": 3,
-      "upgrades_emissoes": 9,
-      "total_upgrades": 12,
+      "upgrades_emissores": 5,
+      "upgrades_emissoes": 10,
+      "total_upgrades": 15,
       "downgrades_emissores": 6,
-      "downgrades_emissoes": 13,
-      "total_downgrades": 19,
+      "downgrades_emissoes": 12,
+      "total_downgrades": 18,
       "novos_emissores": 13,
-      "novos_emissoes": 68,
-      "total_novos": 81,
+      "novos_emissoes": 67,
+      "total_novos": 80,
       "outlooks_emissores": 4,
       "outlooks_emissoes": 14,
       "total_outlooks": 18,
@@ -44,6 +44,32 @@
       "dt_atual": "2026-10-22",
       "dt_anterior": "2026-09-22",
       "upgrades": [
+        {
+          "agencia": "Moody's",
+          "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
+          "instrumento": "Rating de Depósitos Bancários",
+          "dt_acao": "2026-10-21",
+          "link": "",
+          "rating_anterior": "A-.br",
+          "rating_atual": "A.br",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Moody's",
+          "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
+          "instrumento": "Rating de Emissor",
+          "dt_acao": "2026-10-21",
+          "link": "",
+          "rating_anterior": "A-.br",
+          "rating_atual": "A.br",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
         {
           "agencia": "Moody's",
           "emissor": "VALID SOLUCOES",
@@ -409,6 +435,19 @@
           "variacao_notches": "+2"
         },
         {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brBBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
+        },
+        {
           "agencia": "Moody's",
           "emissor": "VALID SOLUCOES",
           "instrumento": "11ª Emissão de Debêntures - 1ª Série",
@@ -568,19 +607,6 @@
         },
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
           "emissor": "FIDC IC SOMAPAY",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2024-08-12",
@@ -591,19 +617,6 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-5"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB+",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-3"
         },
         {
           "agencia": "Fitch",
@@ -682,6 +695,19 @@
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-4"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "GY ENERGY HOLDING III",
+          "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
+          "dt_acao": "2026-10-16",
+          "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues",
+          "rating_anterior": "A-(bra)",
+          "rating_atual": "CCC+(bra)",
+          "outlook_anterior": "Em Observação",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-10"
         }
       ],
       "novos": [
@@ -1292,7 +1318,7 @@
         },
         {
           "agencia": "Fitch",
-          "emissor": "IN",
+          "emissor": "MC BRAZIL DOWNSTREAM TRADING R.L.",
           "instrumento": "USD bond/note",
           "dt_acao": "2026-10-14",
           "link": "https://www.fitchratings.com/entity/mc-brazil-downstream-trading-sarl-97258479#issues",
@@ -1352,17 +1378,6 @@
           "dt_acao": "2026-10-15",
           "link": "https://www.fitchratings.com/entity/sbf-comercio-de-produtos-esportivos-sa-97028200#issues",
           "rating_atual": "AA(bra)",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "IN",
-          "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
-          "dt_acao": "2026-10-16",
-          "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues",
-          "rating_atual": "CCC+(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1794,12 +1809,12 @@
     "dt_atual": "2026-10-22",
     "dt_anterior": "2026-10-21",
     "resumo": {
-      "upgrades_emissores": 0,
-      "upgrades_emissoes": 0,
-      "total_upgrades": 0,
+      "upgrades_emissores": 2,
+      "upgrades_emissoes": 1,
+      "total_upgrades": 3,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 3,
-      "total_downgrades": 3,
+      "downgrades_emissoes": 1,
+      "total_downgrades": 1,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -1814,7 +1829,34 @@
       "tipo": "emissores",
       "dt_atual": "2026-10-22",
       "dt_anterior": "2026-10-21",
-      "upgrades": [],
+      "upgrades": [
+        {
+          "agencia": "Moody's",
+          "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
+          "instrumento": "Rating de Depósitos Bancários",
+          "dt_acao": "2026-10-21",
+          "link": "",
+          "rating_anterior": "A-.br",
+          "rating_atual": "A.br",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Moody's",
+          "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
+          "instrumento": "Rating de Emissor",
+          "dt_acao": "2026-10-21",
+          "link": "",
+          "rating_anterior": "A-.br",
+          "rating_atual": "A.br",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        }
+      ],
       "downgrades": [],
       "novos": [],
       "outlooks": [],
@@ -1824,21 +1866,22 @@
       "tipo": "emissoes",
       "dt_atual": "2026-10-22",
       "dt_anterior": "2026-10-21",
-      "upgrades": [],
-      "downgrades": [
+      "upgrades": [
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB",
+          "rating_atual": "brBBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+3"
+        }
+      ],
+      "downgrades": [
         {
           "agencia": "Austin",
           "emissor": "FIDC IC SOMAPAY",
@@ -1851,19 +1894,6 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-5"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB",
-          "rating_atual": "brB+",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
         }
       ],
       "novos": [],
@@ -2146,6 +2176,38 @@
       "dt_captura": "2026-10-22"
     },
     {
+      "agencia": "Moody's",
+      "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
+      "instrumento": "Rating de Depósitos Bancários",
+      "dt_acao": "2026-10-21",
+      "link": "",
+      "rating_anterior": "A-.br",
+      "rating_atual": "A.br",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Positiva",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-22"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
+      "instrumento": "Rating de Emissor",
+      "dt_acao": "2026-10-21",
+      "link": "",
+      "rating_anterior": "A-.br",
+      "rating_atual": "A.br",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Positiva",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-10-22"
+    },
+    {
       "agencia": "Fitch",
       "emissor": "PBG",
       "instrumento": "National Long Term Rating",
@@ -2311,16 +2373,18 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "IN",
+      "emissor": "GY ENERGY HOLDING III",
       "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
       "dt_acao": "2026-10-16",
       "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues",
+      "rating_anterior": "A-(bra)",
       "rating_atual": "CCC+(bra)",
+      "outlook_anterior": "Em Observação",
       "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-10",
       "categoria": "Emissão",
-      "tipo": "NOVO",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-22"
     },
     {
@@ -2702,7 +2766,7 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "IN",
+      "emissor": "MC BRAZIL DOWNSTREAM TRADING R.L.",
       "instrumento": "USD bond/note",
       "dt_acao": "2026-10-14",
       "link": "https://www.fitchratings.com/entity/mc-brazil-downstream-trading-sarl-97258479#issues",
@@ -4084,15 +4148,15 @@
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBB+",
-      "rating_atual": "brB+",
+      "rating_atual": "brBBB",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-3",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+2",
       "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
+      "tipo": "UPGRADE",
       "dt_captura": "2026-10-22"
     },
     {
@@ -4107,22 +4171,6 @@
       "outlook_atual": "Estável",
       "tipo_movimento": "DOWNGRADE",
       "variacao_notches": "-5",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-22"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC CONSIGNADOS FEDERAIS",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2019-09-27",
-      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brAA",
-      "rating_atual": "brAA-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-22"
@@ -4370,6 +4418,38 @@
       "link": "https://www.fitchratings.com/entity/mrs-logistica-sa-mrs-80091464#issues"
     },
     {
+      "agencia": "Moody's",
+      "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
+      "instrumento": "Rating de Depósitos Bancários",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "A-.br",
+      "rating_atual": "A.br",
+      "variacao_notches": "+1",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Positiva",
+      "dt_acao": "2026-10-21",
+      "dt_captura": "2026-10-22",
+      "link": ""
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
+      "instrumento": "Rating de Emissor",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "A-.br",
+      "rating_atual": "A.br",
+      "variacao_notches": "+1",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Positiva",
+      "dt_acao": "2026-10-21",
+      "dt_captura": "2026-10-22",
+      "link": ""
+    },
+    {
       "agencia": "Fitch",
       "emissor": "BRAZIL",
       "instrumento": "BRL 795.04 mln Zero treasury bills/notes/bonds 01-Dec-2032",
@@ -4508,6 +4588,22 @@
       "rating_atual": "CCC+(bra)",
       "variacao_notches": "—",
       "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-16",
+      "dt_captura": "2026-10-22",
+      "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "GY ENERGY HOLDING III",
+      "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "tipo_movimento": "DOWNGRADE",
+      "rating_anterior": "A-(bra)",
+      "rating_atual": "CCC+(bra)",
+      "variacao_notches": "-10",
+      "outlook_anterior": "Em Observação",
       "outlook_atual": "Estável",
       "dt_acao": "2026-10-16",
       "dt_captura": "2026-10-22",
@@ -4960,6 +5056,22 @@
       "dt_acao": "2026-10-14",
       "dt_captura": "2026-10-22",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29239"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "MC BRAZIL DOWNSTREAM TRADING R.L.",
+      "instrumento": "USD bond/note",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "BB-",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-14",
+      "dt_captura": "2026-10-22",
+      "link": "https://www.fitchratings.com/entity/mc-brazil-downstream-trading-sarl-97258479#issues"
     },
     {
       "agencia": "Moody's",
@@ -164761,6 +164873,32 @@
     "upgrades": [
       {
         "agencia": "Moody's",
+        "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
+        "instrumento": "Rating de Depósitos Bancários",
+        "dt_acao": "2026-10-21",
+        "link": "",
+        "rating_anterior": "A-.br",
+        "rating_atual": "A.br",
+        "outlook_anterior": "Positiva",
+        "outlook_atual": "Positiva",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Moody's",
+        "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
+        "instrumento": "Rating de Emissor",
+        "dt_acao": "2026-10-21",
+        "link": "",
+        "rating_anterior": "A-.br",
+        "rating_atual": "A.br",
+        "outlook_anterior": "Positiva",
+        "outlook_atual": "Positiva",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Moody's",
         "emissor": "VALID SOLUCOES",
         "instrumento": "Rating Corporativo",
         "dt_acao": "2026-10-15",
@@ -165124,6 +165262,19 @@
         "variacao_notches": "+2"
       },
       {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBB+",
+        "rating_atual": "brBBB",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+2"
+      },
+      {
         "agencia": "Moody's",
         "emissor": "VALID SOLUCOES",
         "instrumento": "11ª Emissão de Debêntures - 1ª Série",
@@ -165283,19 +165434,6 @@
       },
       {
         "agencia": "Austin",
-        "emissor": "FIDC CONSIGNADOS FEDERAIS",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2019-09-27",
-        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brAA",
-        "rating_atual": "brAA-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Austin",
         "emissor": "FIDC IC SOMAPAY",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2024-08-12",
@@ -165306,19 +165444,6 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-5"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brB+",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-3"
       },
       {
         "agencia": "Fitch",
@@ -165397,6 +165522,19 @@
         "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-4"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "GY ENERGY HOLDING III",
+        "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
+        "dt_acao": "2026-10-16",
+        "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues",
+        "rating_anterior": "A-(bra)",
+        "rating_atual": "CCC+(bra)",
+        "outlook_anterior": "Em Observação",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-10"
       }
     ],
     "novos": [
@@ -166007,7 +166145,7 @@
       },
       {
         "agencia": "Fitch",
-        "emissor": "IN",
+        "emissor": "MC BRAZIL DOWNSTREAM TRADING R.L.",
         "instrumento": "USD bond/note",
         "dt_acao": "2026-10-14",
         "link": "https://www.fitchratings.com/entity/mc-brazil-downstream-trading-sarl-97258479#issues",
@@ -166067,17 +166205,6 @@
         "dt_acao": "2026-10-15",
         "link": "https://www.fitchratings.com/entity/sbf-comercio-de-produtos-esportivos-sa-97028200#issues",
         "rating_atual": "AA(bra)",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "IN",
-        "instrumento": "BRL 85 mln bond/note 15-Nov-2040",
-        "dt_acao": "2026-10-16",
-        "link": "https://www.fitchratings.com/entity/gy-energy-holding-iii-sa-97658467#issues",
-        "rating_atual": "CCC+(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"

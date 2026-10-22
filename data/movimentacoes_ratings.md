@@ -7,19 +7,22 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 3 | 9 | **12** |
-| 🔴 **Downgrades (Rebaixamentos)** | 6 | 13 | **19** |
-| 🔵 **Novos Ratings** | 13 | 68 | **81** |
+| 🟢 **Upgrades (Elevações)** | 5 | 10 | **15** |
+| 🔴 **Downgrades (Rebaixamentos)** | 6 | 12 | **18** |
+| 🔵 **Novos Ratings** | 13 | 67 | **80** |
 | 🟡 **Mudanças de Perspectiva** | 4 | 14 | **18** |
 | ⚪ **Ratings Retirados / Liquidados** | 2 | 14 | **16** |
 
-### 🟢 Elevações de Rating (Upgrades) — 12
+### 🟢 Elevações de Rating (Upgrades) — 15
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
+| Moody's | **BANCO BARI INVESTIMENTOS FINANCIAMENTOS** | Rating de Depósitos Bancários | `A-.br` | **`A.br`** | `+1` | Positiva | 21/10/2026 |
+| Moody's | **BANCO BARI INVESTIMENTOS FINANCIAMENTOS** | Rating de Emissor | `A-.br` | **`A.br`** | `+1` | Positiva | 21/10/2026 |
 | Moody's | **VALID SOLUCOES** | Rating Corporativo | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Fitch | **QI PARTICIPACOES** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Fitch | **QI SOCIEDADE CREDITO DIRETO** | National Long Term Rating | `AA-(bra)` | **`AA(bra)`** | `+1` | Estável | 25/09/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Longo prazo | `BB` | **`BBB-`** | `+2` | Estável | 16/10/2026 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB+` | **`brBBB`** | `+2` | Negativa | 09/10/2025 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Liberum | **DAYCOVAL CONCREDITO CLT FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Curto prazo | `CP3` | **`CP2`** | `+1` | Estável | 23/09/2026 |
@@ -29,7 +32,7 @@
 | Fitch | **CONCESSIONARIA BLOCO SUL** | BRL 2.5 bln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
 | Fitch | **AGUA VERMELHA TRANSMISSORA ENERGIA** | BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035 | `A-(bra)` | **`A(bra)`** | `+1` | Positiva | 09/10/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 19
+### 🔴 Rebaixamentos de Rating (Downgrades) — 18
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **VALE** | Escala Nacional Brasil de Longo Prazo | `brAAA` | **`brAA-`** | `-3` | Negativa | 03/06/2026 |
@@ -42,15 +45,14 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 16/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Longo prazo | `BBB` | **`BB+`** | `-2` | Negativa | 16/10/2026 |
 | Liberum | **INTRABANK FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE ILIMITADA** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/09/2026 |
-| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
 | Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB+` | **`brB+`** | `-3` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `AAAsf(bra)` | **`Asf(bra)`** | `-5` | Estável | 24/06/2026 |
 | Fitch | **GDS SUBHOLDING** | BRL 376 mln bond/note 01-Sep-2043 | `AA(bra)` | **`BBB(bra)`** | `-6` | Em Observação | 08/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2021** | securities ser 378 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-3 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-1 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-2 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
+| Fitch | **GY ENERGY HOLDING III** | BRL 85 mln bond/note 15-Nov-2040 | `A-(bra)` | **`CCC+(bra)`** | `-10` | Estável | 16/10/2026 |
 
 ### 🟡 Mudanças de Perspectiva (Outlook) — 18
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva Anterior | Nova Perspectiva | Data Ação |
@@ -74,7 +76,7 @@
 | Fitch | **CRI BARI SECURITIZADORA 2022** | BRL 39 mln bond/note 15-Jul-2036 | `BBB+sf(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 | Fitch | **PGE** | BRL 49 mln bond/note 15-Jul-2036 | `BBB+(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (81)
+### 🔵 Novos Ratings Atribuídos (80)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **BANCO** | Escala Nacional Brasil de Curto Prazo | **`brA-1`** | Estável | 08/10/2026 |
@@ -107,7 +109,7 @@
 | Fitch | **UHE SAO SIMAO ENERGIA** | BRL 1.05 bln Floating IPCA (Brazil) 5.82% bond/note 15-Oct-2036 | **`AAA(bra)`** | Estável | 23/09/2026 |
 | Fitch | **AXIA ENERGIA** | 13th Debenture - BRL 1.5 bln Floating CDI (Brazil) bond/note 15-Sep-2033 | **`AAA(bra)`** | Estável | 23/09/2026 |
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA FLAGSHIP BTO RECEIVABLES** | 2ª Série de Cotas Seniores | **`AA-.br (sf)`** | Estável | 14/10/2026 |
-| *...e mais 51 novos ratings.* | | | | | |
+| *...e mais 50 novos ratings.* | | | | | |
 
 ### ⚪ Ratings Retirados / Liquidados (16)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
@@ -131,4 +133,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (21/10/2026 → 22/10/2026)
-*Total nas últimas 24h: 🟢 0 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 8 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 3 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 8 perspectivas | ⚪ 0 retirados.*
