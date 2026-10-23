@@ -8,10 +8,10 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 5 | 7 | **12** |
-| 🔴 **Downgrades (Rebaixamentos)** | 14 | 21 | **35** |
-| 🔵 **Novos Ratings** | 13 | 69 | **82** |
+| 🔴 **Downgrades (Rebaixamentos)** | 14 | 22 | **36** |
+| 🔵 **Novos Ratings** | 13 | 68 | **81** |
 | 🟡 **Mudanças de Perspectiva** | 3 | 14 | **17** |
-| ⚪ **Ratings Retirados / Liquidados** | 2 | 16 | **18** |
+| ⚪ **Ratings Retirados / Liquidados** | 2 | 15 | **17** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 12
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -29,7 +29,7 @@
 | Fitch | **CONCESSIONARIA BLOCO SUL** | BRL 2.5 bln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
 | Fitch | **AGUA VERMELHA TRANSMISSORA ENERGIA** | BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035 | `A-(bra)` | **`A(bra)`** | `+1` | Positiva | 09/10/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 35
+### 🔴 Rebaixamentos de Rating (Downgrades) — 36
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **VALE** | Escala Nacional Brasil de Longo Prazo | `brAAA` | **`brAA-`** | `-3` | Negativa | 03/06/2026 |
@@ -49,9 +49,10 @@
 | Liberum | **ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP4` | **`CP5`** | `-1` | Estável | 06/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 16/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Longo prazo | `BBB` | **`BB+`** | `-2` | Negativa | 16/10/2026 |
-| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
-| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
+| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB+` | **`brBBB-`** | `-2` | Estável | 06/03/2024 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `AAAsf(bra)` | **`Asf(bra)`** | `-5` | Estável | 24/06/2026 |
+| Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Estável | 24/06/2026 |
 | Fitch | **GDS SUBHOLDING** | BRL 376 mln bond/note 01-Sep-2043 | `AA(bra)` | **`BBB(bra)`** | `-6` | Em Observação | 08/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2021** | securities ser 378 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-3 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
@@ -89,7 +90,7 @@
 | Fitch | **CRI BARI SECURITIZADORA 2022** | BRL 39 mln bond/note 15-Jul-2036 | `BBB+sf(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 | Fitch | **PGE** | BRL 49 mln bond/note 15-Jul-2036 | `BBB+(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (82)
+### 🔵 Novos Ratings Atribuídos (81)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **BANCO** | Escala Nacional Brasil de Curto Prazo | **`brA-1`** | Estável | 08/10/2026 |
@@ -122,15 +123,14 @@
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA FLAGSHIP BTO RECEIVABLES** | 2ª Série de Cotas Seniores | **`AA-.br (sf)`** | Estável | 14/10/2026 |
 | Moody's | **MOTIVA INFRAESTRUTURA MOBILIDADE** | 14ª Emissão de Debêntures - 2ª Série | **`AAA.br`** | Estável | 25/09/2026 |
 | Moody's | **MERCADO CREDITO III FIDC SEGMENTO FINANCEIRO RESPONSABILIDADE LIMITADA** | Cotas Seniores | **`AAA.br (sf)`** | Estável | 25/09/2026 |
-| *...e mais 52 novos ratings.* | | | | | |
+| *...e mais 51 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (18)
+### ⚪ Ratings Retirados / Liquidados (17)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **ACUCAREIRA QUATA** | National Long Term Rating | `A+(bra)` | Estável | 30/09/2026 |
 | Fitch | **MERCADOLIVRE. ATIVIDADES INTERNET** | National Long Term Rating | `AAA(bra)` | Estável | 08/10/2026 |
 | Fitch | **PNEUCASH FIDC** | securities ser 6 | `A+sf(bra)` | Estável | 21/10/2026 |
-| Fitch | **ECO SECURITIZADORA 2022** | securities ser 1,2,3 | `AAAsf(bra)` | Estável | 15/01/2026 |
 | Fitch | **OPEA SECURITIZADORA 2022** | notes ser 3 | `AAAsf(bra)` | Estável | 15/09/2026 |
 | Fitch | **ELETRORIVER** | BRL 805 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA(bra)` | Estável | 21/09/2026 |
 | Fitch | **BSB ENERGETICA** | BRL 345 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA+(bra)` | Positiva | 21/09/2026 |
@@ -148,4 +148,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (22/10/2026 → 23/10/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 4 downgrades | 🔵 3 novos | 🟡 2 perspectivas | ⚪ 1 retirados.*
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 4 downgrades | 🔵 3 novos | 🟡 2 perspectivas | ⚪ 1 retirados.*
