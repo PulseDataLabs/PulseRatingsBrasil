@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-26T13:34:12.512078",
+  "timestamp": "2026-10-26T17:48:17.093875",
   "dt_atual": "2026-10-26",
   "dt_anterior": "2026-10-23",
   "resumo": {
@@ -7,11 +7,11 @@
     "upgrades_emissoes": 7,
     "total_upgrades": 13,
     "downgrades_emissores": 16,
-    "downgrades_emissoes": 23,
-    "total_downgrades": 39,
+    "downgrades_emissoes": 21,
+    "total_downgrades": 37,
     "novos_emissores": 11,
-    "novos_emissoes": 58,
-    "total_novos": 69,
+    "novos_emissoes": 59,
+    "total_novos": 70,
     "outlooks_emissores": 6,
     "outlooks_emissoes": 14,
     "total_outlooks": 20,
@@ -27,11 +27,11 @@
       "upgrades_emissoes": 7,
       "total_upgrades": 13,
       "downgrades_emissores": 16,
-      "downgrades_emissoes": 23,
-      "total_downgrades": 39,
+      "downgrades_emissoes": 21,
+      "total_downgrades": 37,
       "novos_emissores": 11,
-      "novos_emissoes": 58,
-      "total_novos": 69,
+      "novos_emissoes": 59,
+      "total_novos": 70,
       "outlooks_emissores": 6,
       "outlooks_emissoes": 14,
       "total_outlooks": 20,
@@ -705,32 +705,6 @@
           "rating_anterior": "BBB",
           "rating_atual": "BB+",
           "outlook_anterior": "Estável",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBBB",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-2"
@@ -1595,6 +1569,17 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
+          "instrumento": "BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050",
+          "dt_acao": "2026-10-23",
+          "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues",
+          "rating_atual": "AA-(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
         }
       ],
       "outlooks": [
@@ -1932,14 +1917,14 @@
     "dt_anterior": "2026-10-23",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 0,
-      "total_upgrades": 0,
+      "upgrades_emissoes": 1,
+      "total_upgrades": 1,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 3,
-      "total_downgrades": 3,
+      "downgrades_emissoes": 2,
+      "total_downgrades": 2,
       "novos_emissores": 0,
-      "novos_emissoes": 0,
-      "total_novos": 0,
+      "novos_emissoes": 1,
+      "total_novos": 1,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
@@ -1961,21 +1946,22 @@
       "tipo": "emissoes",
       "dt_atual": "2026-10-26",
       "dt_anterior": "2026-10-23",
-      "upgrades": [],
-      "downgrades": [
+      "upgrades": [
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brBBB",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
+        }
+      ],
+      "downgrades": [
         {
           "agencia": "Austin",
           "emissor": "HIGH YIELD YALEEH FIDC",
@@ -2003,7 +1989,19 @@
           "variacao_notches": "-3"
         }
       ],
-      "novos": [],
+      "novos": [
+        {
+          "agencia": "Fitch",
+          "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
+          "instrumento": "BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050",
+          "dt_acao": "2026-10-23",
+          "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues",
+          "rating_atual": "AA-(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        }
+      ],
       "outlooks": [],
       "retirados": []
     }
@@ -2057,6 +2055,20 @@
       "agencia": "Fitch",
       "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
       "instrumento": "BRL 2.51 bln bond/note",
+      "dt_acao": "2026-10-23",
+      "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues",
+      "rating_atual": "AA-(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-26"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
+      "instrumento": "BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050",
       "dt_acao": "2026-10-23",
       "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues",
       "rating_atual": "AA-(bra)",
@@ -4255,22 +4267,6 @@
       "dt_captura": "2026-10-26"
     },
     {
-      "agencia": "Austin",
-      "emissor": "FICTOR INVEST FIDC",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBBB",
-      "rating_atual": "brBB+",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-26"
-    },
-    {
       "agencia": "S&P",
       "emissor": "VERO",
       "instrumento": "Escala Nacional Brasil de Longo Prazo",
@@ -4283,22 +4279,6 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-10-26"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC CONSIGNADOS FEDERAIS",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2019-09-27",
-      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brAA",
-      "rating_atual": "brAA-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-26"
     },
     {
@@ -4385,6 +4365,22 @@
       "agencia": "Fitch",
       "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
       "instrumento": "BRL 2.51 bln bond/note",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AA-(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-23",
+      "dt_captura": "2026-10-26",
+      "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
+      "instrumento": "BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050",
       "categoria": "Emissão",
       "tipo": "NOVO",
       "tipo_movimento": "NOVO",
@@ -171245,32 +171241,6 @@
         "variacao_notches": "-2"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FIDC CONSIGNADOS FEDERAIS",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2019-09-27",
-        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brAA",
-        "rating_atual": "brAA-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBBB",
-        "rating_atual": "brBB+",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "ECO SECURITIZADORA 2025",
         "instrumento": "notes ser 4",
@@ -172124,6 +172094,17 @@
         "agencia": "Fitch",
         "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
         "instrumento": "BRL 2.51 bln bond/note",
+        "dt_acao": "2026-10-23",
+        "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues",
+        "rating_atual": "AA-(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
+        "instrumento": "BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050",
         "dt_acao": "2026-10-23",
         "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues",
         "rating_atual": "AA-(bra)",
