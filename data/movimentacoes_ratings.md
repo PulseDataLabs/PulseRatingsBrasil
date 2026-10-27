@@ -1,15 +1,15 @@
-# 📊 Relatório de Movimentações de Ratings (26/10/2026)
+# 📊 Relatório de Movimentações de Ratings (27/10/2026)
 
 *Painel consolidado de **Upgrades**, **Downgrades**, **Novos Ratings** e **Alterações de Perspectiva**.*
 
-*Período monitorado: **25/09/2026** a **26/10/2026**.*
+*Período monitorado: **25/09/2026** a **27/10/2026**.*
 
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 6 | 7 | **13** |
-| 🔴 **Downgrades (Rebaixamentos)** | 16 | 21 | **37** |
-| 🔵 **Novos Ratings** | 11 | 59 | **70** |
+| 🔴 **Downgrades (Rebaixamentos)** | 16 | 22 | **38** |
+| 🔵 **Novos Ratings** | 11 | 62 | **73** |
 | 🟡 **Mudanças de Perspectiva** | 6 | 14 | **20** |
 | ⚪ **Ratings Retirados / Liquidados** | 2 | 12 | **14** |
 
@@ -30,7 +30,7 @@
 | Fitch | **CONCESSIONARIA BLOCO SUL** | BRL 2.5 bln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
 | Fitch | **AGUA VERMELHA TRANSMISSORA ENERGIA** | BRL 23.5 mln Hybrid 6.619% bond/note 15-Nov-2035 | `A-(bra)` | **`A(bra)`** | `+1` | Positiva | 09/10/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 37
+### 🔴 Rebaixamentos de Rating (Downgrades) — 38
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **EVEN CONSTRUTORA INCORPORADORA** | Escala Nacional Brasil de Longo Prazo | `brAA+` | **`brAA`** | `-1` | Negativa | 30/09/2026 |
@@ -43,16 +43,17 @@
 | S&P | **CSN MINERACAO** | Escala Nacional Brasil de Longo Prazo | `brA-` | **`brBBB`** | `-2` | Negativa | 20/10/2026 |
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | National Long Term Rating | `AA+(bra)` | **`A(bra)`** | `-4` | Negativa | 08/10/2026 |
 | Fitch | **PBG** | National Long Term Rating | `BBB(bra)` | **`RD(bra)`** | `-13` | Estável | 21/10/2026 |
-| Fitch | **RAIZEN ENERGIA** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
-| Fitch | **RAIZEN ENERGIA** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
-| Fitch | **RAIZEN ENERGIA** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN ENERGIA** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN ENERGIA** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN ENERGIA** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Liberum | **ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP4` | **`CP5`** | `-1` | Estável | 06/10/2026 |
 | Liberum | **SATURNO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 16/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Longo prazo | `BBB` | **`BB+`** | `-2` | Negativa | 16/10/2026 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB-`** | `-4` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `AAAsf(bra)` | **`Asf(bra)`** | `-5` | Estável | 24/06/2026 |
 | Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Estável | 24/06/2026 |
 | Fitch | **GDS SUBHOLDING** | BRL 376 mln bond/note 01-Sep-2043 | `AA(bra)` | **`BBB(bra)`** | `-6` | Em Observação | 08/10/2026 |
@@ -95,7 +96,7 @@
 | Fitch | **CRI BARI SECURITIZADORA 2022** | BRL 39 mln bond/note 15-Jul-2036 | `BBB+sf(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 | Fitch | **PGE** | BRL 49 mln bond/note 15-Jul-2036 | `BBB+(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (70)
+### 🔵 Novos Ratings Atribuídos (73)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Moody's | **MOTIVA INFRAESTRUTURA MOBILIDADE** | Rating Corporativo | **`AAA.br`** | Estável | 25/09/2026 |
@@ -128,7 +129,7 @@
 | Fitch | **CRI BARI SECURITIZADORA 2022** | BRL 30 mln bond/note 15-Jul-2036 | **`BBB+sf(bra)`** | Em Observação | 05/10/2026 |
 | Fitch | **PGE** | BRL 48 mln bond/note 15-Jul-2036 | **`BBB+(bra)`** | Em Observação | 05/10/2026 |
 | Fitch | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CREDITAS AUTO XI** | notes ser 4 | **`A+sf(bra)`** | Estável | 05/10/2026 |
-| *...e mais 40 novos ratings.* | | | | | |
+| *...e mais 43 novos ratings.* | | | | | |
 
 ### ⚪ Ratings Retirados / Liquidados (14)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
@@ -149,5 +150,5 @@
 | Fitch | **MRS LOGISTICA** | 1ª Emissão Notas Promissórias | `AAA(bra)` | Estável | 21/10/2026 |
 
 ---
-### ⚡ Movimentações da Última Captura Diária (23/10/2026 → 26/10/2026)
-*Total nas últimas 24h: 🟢 1 upgrades | 🔴 2 downgrades | 🔵 1 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+### ⚡ Movimentações da Última Captura Diária (26/10/2026 → 27/10/2026)
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 1 downgrades | 🔵 2 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*

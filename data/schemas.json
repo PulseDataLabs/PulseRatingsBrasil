@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-10-23"
+        "example": "2026-10-26"
       }
     ]
   },
@@ -59,22 +59,22 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Oceanica Engenharia e Consultoria S.A."
+        "example": "Mercado Pago Instituicao de Pagamento Ltda."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/oceanica-engenharia-e-consultoria-sa-97617499"
+        "example": "https://www.fitchratings.com/entity/mercadopagocom-representacoes-ltda-97074397"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Long Term Issuer Default Rating"
+        "example": "National Long Term Rating"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "B-"
+        "example": "AAA(bra)"
       },
       {
         "name": "dt_acao_rating",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Oceanica Engenharia e Consultoria S.A."
+        "example": "Mercado Pago Instituicao de Pagamento Ltda."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/oceanica-engenharia-e-consultoria-sa-97617499"
+        "example": "https://www.fitchratings.com/entity/mercadopagocom-representacoes-ltda-97074397"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB-"
       },
       {
         "name": "de_rating_cp",
@@ -293,7 +293,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB-"
       },
       {
         "name": "dt_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11646"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11648"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "JC 4870 FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS - NÃO PADRONIZADO"
+        "example": "JC 4870 II FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS NÃO-PADRONIZADOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29296"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29299"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "JC 4870 FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS - NÃO PADRONIZADO"
+        "example": "JC 4870 II FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS NÃO-PADRONIZADOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29296"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29299"
       },
       {
         "name": "no_tipo_rating",
@@ -382,7 +382,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Única"
+        "example": "Subordinada"
       },
       {
         "name": "de_escala",
@@ -456,7 +456,7 @@
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
       },
       {
         "name": "no_tipo_rating",
@@ -466,12 +466,12 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SENIORES ÚNICA"
+        "example": "MEZANINO CLASSE A"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB-"
       },
       {
         "name": "de_outlook",
@@ -486,7 +486,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
       },
       {
         "name": "no_devedor_vinculado",
