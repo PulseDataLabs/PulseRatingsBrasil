@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-27T00:26:49.752589",
+  "timestamp": "2026-10-27T12:48:36.648341",
   "dt_atual": "2026-10-27",
   "dt_anterior": "2026-10-26",
   "resumo": {
@@ -7,8 +7,8 @@
     "upgrades_emissoes": 7,
     "total_upgrades": 13,
     "downgrades_emissores": 16,
-    "downgrades_emissoes": 22,
-    "total_downgrades": 38,
+    "downgrades_emissoes": 23,
+    "total_downgrades": 39,
     "novos_emissores": 11,
     "novos_emissoes": 62,
     "total_novos": 73,
@@ -27,8 +27,8 @@
       "upgrades_emissoes": 7,
       "total_upgrades": 13,
       "downgrades_emissores": 16,
-      "downgrades_emissoes": 22,
-      "total_downgrades": 38,
+      "downgrades_emissoes": 23,
+      "total_downgrades": 39,
       "novos_emissores": 11,
       "novos_emissoes": 62,
       "total_novos": 73,
@@ -711,16 +711,29 @@
         },
         {
           "agencia": "Austin",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA",
+          "rating_atual": "brAA-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB-",
+          "rating_atual": "brBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-4"
+          "variacao_notches": "-3"
         },
         {
           "agencia": "Fitch",
@@ -1171,7 +1184,7 @@
           "instrumento": "notes ser 3",
           "dt_acao": "2026-10-05",
           "link": "https://www.fitchratings.com/entity/seller-3-fundo-de-investimento-em-direitos-creditorios-segmento-meios-de-pagamento-de-resp-limitada-97967726#issues",
-          "rating_atual": "AAA(EXP)sf(bra)",
+          "rating_atual": "AAAsf(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1966,8 +1979,8 @@
       "upgrades_emissoes": 0,
       "total_upgrades": 0,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 1,
-      "total_downgrades": 1,
+      "downgrades_emissoes": 2,
+      "total_downgrades": 2,
       "novos_emissores": 0,
       "novos_emissoes": 2,
       "total_novos": 2,
@@ -1996,16 +2009,29 @@
       "downgrades": [
         {
           "agencia": "Austin",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA",
+          "rating_atual": "brAA-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB-",
+          "rating_atual": "brBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-4"
+          "variacao_notches": "-3"
         }
       ],
       "novos": [
@@ -3953,7 +3979,7 @@
       "instrumento": "notes ser 3",
       "dt_acao": "2026-10-05",
       "link": "https://www.fitchratings.com/entity/seller-3-fundo-de-investimento-em-direitos-creditorios-segmento-meios-de-pagamento-de-resp-limitada-97967726#issues",
-      "rating_atual": "AAA(EXP)sf(bra)",
+      "rating_atual": "AAAsf(bra)",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -4343,13 +4369,13 @@
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBBB",
-      "rating_atual": "brBB-",
+      "rating_atual": "brBB",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-4",
+      "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-27"
@@ -4367,6 +4393,22 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
+      "dt_captura": "2026-10-27"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FIDC CONSIGNADOS FEDERAIS",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2019-09-27",
+      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brAA",
+      "rating_atual": "brAA-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-1",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-10-27"
     },
     {
@@ -6512,6 +6554,22 @@
       "dt_acao": "2026-10-05",
       "dt_captura": "2026-10-27",
       "link": "https://www.fitchratings.com/entity/localiza-fleet-sa-96673245#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "SELLER 3 FUNDO INVESTIMENTO DIREITOS CREDITORIOS SEGMENTO MEIOS PAGAMENTO RESP LIMITADA",
+      "instrumento": "notes ser 3",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAAsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-05",
+      "dt_captura": "2026-10-27",
+      "link": "https://www.fitchratings.com/entity/seller-3-fundo-de-investimento-em-direitos-creditorios-segmento-meios-de-pagamento-de-resp-limitada-97967726#issues"
     },
     {
       "agencia": "Moody's",
@@ -173842,16 +173900,29 @@
       },
       {
         "agencia": "Austin",
+        "emissor": "FIDC CONSIGNADOS FEDERAIS",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2019-09-27",
+        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brAA",
+        "rating_atual": "brAA-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-1"
+      },
+      {
+        "agencia": "Austin",
         "emissor": "FICTOR INVEST FIDC",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brBBB",
-        "rating_atual": "brBB-",
+        "rating_atual": "brBB",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-4"
+        "variacao_notches": "-3"
       },
       {
         "agencia": "Fitch",
@@ -174302,7 +174373,7 @@
         "instrumento": "notes ser 3",
         "dt_acao": "2026-10-05",
         "link": "https://www.fitchratings.com/entity/seller-3-fundo-de-investimento-em-direitos-creditorios-segmento-meios-de-pagamento-de-resp-limitada-97967726#issues",
-        "rating_atual": "AAA(EXP)sf(bra)",
+        "rating_atual": "AAAsf(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
