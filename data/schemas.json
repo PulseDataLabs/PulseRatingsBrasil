@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACCESS FIDC - SENIORES ÚNICA"
+        "example": "ACCESS FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/2394/Access_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brCCC"
       },
       {
         "name": "de_rating_cp",
@@ -293,7 +293,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brCCC"
       },
       {
         "name": "dt_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11202"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11200"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "BINVEST PLUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA"
+        "example": "EMPRESARIAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29228"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29300"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "BINVEST PLUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA"
+        "example": "EMPRESARIAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29228"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29300"
       },
       {
         "name": "no_tipo_rating",
@@ -362,7 +362,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BBB-"
+        "example": "AA"
       },
       {
         "name": "dt_acao_rating",
@@ -372,7 +372,7 @@
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Atribuição"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -382,7 +382,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Mezanino"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
@@ -456,7 +456,7 @@
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACCESS FIDC - SENIORES ÚNICA"
+        "example": "ACCESS FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "no_tipo_rating",
@@ -466,12 +466,12 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SENIORES ÚNICA"
+        "example": "SUBORDINADAS MEZANINO"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brCCC"
       },
       {
         "name": "de_outlook",
@@ -486,7 +486,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/2394/Access_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_devedor_vinculado",
