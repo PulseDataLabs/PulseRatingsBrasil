@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACCESS FIDC - SUBORDINADAS MEZANINO"
+        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/2394/Access_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brCCC"
+        "example": "brBBB-"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brCCC"
+        "example": "brBBB-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-15"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11200"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11646"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "EMPRESARIAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
+        "example": "FAMA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29300"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29230"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "EMPRESARIAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
+        "example": "FAMA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29300"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29230"
       },
       {
         "name": "no_tipo_rating",
@@ -362,12 +362,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AA"
+        "example": "CCC"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-10-27"
+        "example": "2026-10-28"
       },
       {
         "name": "de_acao_rating",
@@ -382,7 +382,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": "Subordinada"
       },
       {
         "name": "de_escala",
@@ -451,12 +451,12 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACCESS FIDC"
+        "example": "FIDC TG REAL"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "ACCESS FIDC - SUBORDINADAS MEZANINO"
+        "example": "FIDC TG REAL - SUBORDINADAS MEZANINO"
       },
       {
         "name": "no_tipo_rating",
@@ -471,7 +471,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brCCC"
+        "example": "brBB-"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-15"
+        "example": "2024-07-01"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/2394/Access_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/4602/FIDC_TG_Real_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_devedor_vinculado",
