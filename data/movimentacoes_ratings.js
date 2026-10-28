@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-10-28T13:24:03.009564",
+  "timestamp": "2026-10-28T17:38:11.632338",
   "dt_atual": "2026-10-28",
   "dt_anterior": "2026-10-27",
   "resumo": {
@@ -10,14 +10,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "downgrades_emissoes": 23,
     "total_downgrades": 39,
     "novos_emissores": 10,
-    "novos_emissoes": 63,
-    "total_novos": 73,
+    "novos_emissoes": 64,
+    "total_novos": 74,
     "outlooks_emissores": 6,
     "outlooks_emissoes": 15,
     "total_outlooks": 21,
     "retirados_emissores": 2,
-    "retirados_emissoes": 11,
-    "total_retirados": 13
+    "retirados_emissoes": 12,
+    "total_retirados": 14
   },
   "periodo_recente": {
     "dt_atual": "2026-10-28",
@@ -30,14 +30,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "downgrades_emissoes": 23,
       "total_downgrades": 39,
       "novos_emissores": 10,
-      "novos_emissoes": 63,
-      "total_novos": 73,
+      "novos_emissoes": 64,
+      "total_novos": 74,
       "outlooks_emissores": 6,
       "outlooks_emissoes": 15,
       "total_outlooks": 21,
       "retirados_emissores": 2,
-      "retirados_emissoes": 11,
-      "total_retirados": 13
+      "retirados_emissoes": 12,
+      "total_retirados": 14
     },
     "emissores": {
       "tipo": "emissores",
@@ -256,45 +256,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "RAIZEN ENERGIA",
-          "instrumento": "Long Term Issuer Default Rating",
-          "dt_acao": "2026-10-22",
-          "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
-          "rating_anterior": "C",
-          "rating_atual": "RD",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "RAIZEN ENERGIA",
-          "instrumento": "National Long Term Rating",
-          "dt_acao": "2026-10-22",
-          "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
-          "rating_anterior": "C(bra)",
-          "rating_atual": "RD(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "RAIZEN ENERGIA",
-          "instrumento": "Local Currency Long Term Issuer Default Rating",
-          "dt_acao": "2026-10-22",
-          "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
-          "rating_anterior": "C",
-          "rating_atual": "RD",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "RAIZEN",
           "instrumento": "Long Term Issuer Default Rating",
           "dt_acao": "2026-10-22",
@@ -325,6 +286,45 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "instrumento": "Local Currency Long Term Issuer Default Rating",
           "dt_acao": "2026-10-22",
           "link": "https://www.fitchratings.com/entity/raizen-combustiveis-sa-91300899",
+          "rating_anterior": "C",
+          "rating_atual": "RD",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "RAIZEN ENERGIA",
+          "instrumento": "Long Term Issuer Default Rating",
+          "dt_acao": "2026-10-22",
+          "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
+          "rating_anterior": "C",
+          "rating_atual": "RD",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "RAIZEN ENERGIA",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-10-22",
+          "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
+          "rating_anterior": "C(bra)",
+          "rating_atual": "RD(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "RAIZEN ENERGIA",
+          "instrumento": "Local Currency Long Term Issuer Default Rating",
+          "dt_acao": "2026-10-22",
+          "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
           "rating_anterior": "C",
           "rating_atual": "RD",
           "outlook_anterior": "Estável",
@@ -568,16 +568,16 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
           "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB-",
-          "rating_atual": "brBBB+",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA-",
+          "rating_atual": "brAA",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
+          "variacao_notches": "+1"
         },
         {
           "agencia": "Moody's",
@@ -729,13 +729,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBB-",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "variacao_notches": "-4"
         },
         {
           "agencia": "Fitch",
@@ -1330,6 +1330,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "dt_acao": "2026-10-08",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
           "rating_atual": "BB-",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "VESTE ESTILO",
+          "instrumento": "BRL 86 mln Floating bond/note 27-Oct-2030",
+          "dt_acao": "2026-10-09",
+          "link": "https://www.fitchratings.com/entity/restoque-comercio-e-confeccoes-de-roupas-sa-93935490#issues",
+          "rating_atual": "BBB(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1979,6 +1990,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "RETIRADO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "BARI SECURITIZADORA 2024",
+          "instrumento": "notes ser 1",
+          "dt_acao": "2026-10-28",
+          "link": "https://www.fitchratings.com/entity/bari-securitizadora-2024-35-1-rni-97669954#issues",
+          "rating_anterior": "A-sf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
         }
       ]
     }
@@ -2000,8 +2024,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 0,
-      "total_retirados": 0
+      "retirados_emissoes": 1,
+      "total_retirados": 1
     },
     "emissores": {
       "tipo": "emissores",
@@ -2034,34 +2058,48 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "emissor": "HIGH YIELD YALEEH FIDC",
           "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
+          "variacao_notches": "-2"
         },
         {
           "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBB-",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "variacao_notches": "-4"
         }
       ],
       "novos": [],
       "outlooks": [],
-      "retirados": []
+      "retirados": [
+        {
+          "agencia": "Fitch",
+          "emissor": "BARI SECURITIZADORA 2024",
+          "instrumento": "notes ser 1",
+          "dt_acao": "2026-10-28",
+          "link": "https://www.fitchratings.com/entity/bari-securitizadora-2024-35-1-rni-97669954#issues",
+          "rating_anterior": "A-sf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        }
+      ]
     }
   },
   "movimentacoes": [
@@ -2079,6 +2117,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-28"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "BARI SECURITIZADORA 2024",
+      "instrumento": "notes ser 1",
+      "dt_acao": "2026-10-28",
+      "link": "https://www.fitchratings.com/entity/bari-securitizadora-2024-35-1-rni-97669954#issues",
+      "rating_anterior": "A-sf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
       "dt_captura": "2026-10-28"
     },
     {
@@ -2300,54 +2354,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "RAIZEN ENERGIA",
-      "instrumento": "Long Term Issuer Default Rating",
-      "dt_acao": "2026-10-22",
-      "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
-      "rating_anterior": "C",
-      "rating_atual": "RD",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
-      "categoria": "Emissor",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-28"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "RAIZEN ENERGIA",
-      "instrumento": "National Long Term Rating",
-      "dt_acao": "2026-10-22",
-      "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
-      "rating_anterior": "C(bra)",
-      "rating_atual": "RD(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
-      "categoria": "Emissor",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-28"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "RAIZEN ENERGIA",
-      "instrumento": "Local Currency Long Term Issuer Default Rating",
-      "dt_acao": "2026-10-22",
-      "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
-      "rating_anterior": "C",
-      "rating_atual": "RD",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
-      "categoria": "Emissor",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-28"
-    },
-    {
-      "agencia": "Fitch",
       "emissor": "RAIZEN",
       "instrumento": "Long Term Issuer Default Rating",
       "dt_acao": "2026-10-22",
@@ -2384,6 +2390,54 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "instrumento": "Local Currency Long Term Issuer Default Rating",
       "dt_acao": "2026-10-22",
       "link": "https://www.fitchratings.com/entity/raizen-combustiveis-sa-91300899",
+      "rating_anterior": "C",
+      "rating_atual": "RD",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-1",
+      "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-28"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "RAIZEN ENERGIA",
+      "instrumento": "Long Term Issuer Default Rating",
+      "dt_acao": "2026-10-22",
+      "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
+      "rating_anterior": "C",
+      "rating_atual": "RD",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-1",
+      "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-28"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "RAIZEN ENERGIA",
+      "instrumento": "National Long Term Rating",
+      "dt_acao": "2026-10-22",
+      "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
+      "rating_anterior": "C(bra)",
+      "rating_atual": "RD(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-1",
+      "categoria": "Emissor",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-10-28"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "RAIZEN ENERGIA",
+      "instrumento": "Local Currency Long Term Issuer Default Rating",
+      "dt_acao": "2026-10-22",
+      "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
       "rating_anterior": "C",
       "rating_atual": "RD",
       "outlook_anterior": "Estável",
@@ -3553,6 +3607,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-10-28"
     },
     {
+      "agencia": "Fitch",
+      "emissor": "VESTE ESTILO",
+      "instrumento": "BRL 86 mln Floating bond/note 27-Oct-2030",
+      "dt_acao": "2026-10-09",
+      "link": "https://www.fitchratings.com/entity/restoque-comercio-e-confeccoes-de-roupas-sa-93935490#issues",
+      "rating_atual": "BBB(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-10-28"
+    },
+    {
       "agencia": "S&P",
       "emissor": "BANCO ORIGINAL",
       "instrumento": "Escala Nacional Brasil de Curto Prazo",
@@ -4386,31 +4454,15 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBBB",
-      "rating_atual": "brBB+",
+      "rating_atual": "brBB-",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
+      "variacao_notches": "-4",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-10-28"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "HIGH YIELD YALEEH FIDC",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2024-03-06",
-      "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brBBB-",
-      "rating_atual": "brBBB+",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+2",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
       "dt_captura": "2026-10-28"
     },
     {
@@ -4426,6 +4478,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
+      "dt_captura": "2026-10-28"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FIDC CONSIGNADOS FEDERAIS",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2019-09-27",
+      "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brAA-",
+      "rating_atual": "brAA",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
       "dt_captura": "2026-10-28"
     },
     {
@@ -4475,6 +4543,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-28",
       "dt_captura": "2026-10-28",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29230"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "BARI SECURITIZADORA 2024",
+      "instrumento": "notes ser 1",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "A-sf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-28",
+      "dt_captura": "2026-10-28",
+      "link": "https://www.fitchratings.com/entity/bari-securitizadora-2024-35-1-rni-97669954#issues"
     },
     {
       "agencia": "Liberum",
@@ -6043,6 +6127,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-09",
       "dt_captura": "2026-10-28",
       "link": "https://www.fitchratings.com/entity/agua-vermelha-transmissora-de-energia-sa-97452675#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "VESTE ESTILO",
+      "instrumento": "BRL 86 mln Floating bond/note 27-Oct-2030",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "BBB(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-09",
+      "dt_captura": "2026-10-28",
+      "link": "https://www.fitchratings.com/entity/restoque-comercio-e-confeccoes-de-roupas-sa-93935490#issues"
     },
     {
       "agencia": "S&P",
@@ -176070,45 +176170,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "RAIZEN ENERGIA",
-        "instrumento": "Long Term Issuer Default Rating",
-        "dt_acao": "2026-10-22",
-        "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
-        "rating_anterior": "C",
-        "rating_atual": "RD",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "RAIZEN ENERGIA",
-        "instrumento": "National Long Term Rating",
-        "dt_acao": "2026-10-22",
-        "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
-        "rating_anterior": "C(bra)",
-        "rating_atual": "RD(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "RAIZEN ENERGIA",
-        "instrumento": "Local Currency Long Term Issuer Default Rating",
-        "dt_acao": "2026-10-22",
-        "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
-        "rating_anterior": "C",
-        "rating_atual": "RD",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Fitch",
         "emissor": "RAIZEN",
         "instrumento": "Long Term Issuer Default Rating",
         "dt_acao": "2026-10-22",
@@ -176139,6 +176200,45 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "instrumento": "Local Currency Long Term Issuer Default Rating",
         "dt_acao": "2026-10-22",
         "link": "https://www.fitchratings.com/entity/raizen-combustiveis-sa-91300899",
+        "rating_anterior": "C",
+        "rating_atual": "RD",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "RAIZEN ENERGIA",
+        "instrumento": "Long Term Issuer Default Rating",
+        "dt_acao": "2026-10-22",
+        "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
+        "rating_anterior": "C",
+        "rating_atual": "RD",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "RAIZEN ENERGIA",
+        "instrumento": "National Long Term Rating",
+        "dt_acao": "2026-10-22",
+        "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
+        "rating_anterior": "C(bra)",
+        "rating_atual": "RD(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "RAIZEN ENERGIA",
+        "instrumento": "Local Currency Long Term Issuer Default Rating",
+        "dt_acao": "2026-10-22",
+        "link": "https://www.fitchratings.com/entity/raizen-energia-s-a-91300896",
         "rating_anterior": "C",
         "rating_atual": "RD",
         "outlook_anterior": "Estável",
@@ -176382,16 +176482,16 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Austin",
-        "emissor": "HIGH YIELD YALEEH FIDC",
+        "emissor": "FIDC CONSIGNADOS FEDERAIS",
         "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2024-03-06",
-        "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brBBB-",
-        "rating_atual": "brBBB+",
+        "dt_acao": "2019-09-27",
+        "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brAA-",
+        "rating_atual": "brAA",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+2"
+        "variacao_notches": "+1"
       },
       {
         "agencia": "Moody's",
@@ -176543,13 +176643,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "emissor": "FICTOR INVEST FIDC",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brBBB",
-        "rating_atual": "brBB+",
+        "rating_atual": "brBB-",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
+        "variacao_notches": "-4"
       },
       {
         "agencia": "Fitch",
@@ -177144,6 +177244,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-08",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/29226",
         "rating_atual": "BB-",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "VESTE ESTILO",
+        "instrumento": "BRL 86 mln Floating bond/note 27-Oct-2030",
+        "dt_acao": "2026-10-09",
+        "link": "https://www.fitchratings.com/entity/restoque-comercio-e-confeccoes-de-roupas-sa-93935490#issues",
+        "rating_atual": "BBB(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -177789,6 +177900,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "link": "https://www.fitchratings.com/entity/mrs-logistica-sa-mrs-80091464#issues",
         "rating_anterior": "AAA(bra)",
         "rating_atual": "NR",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "BARI SECURITIZADORA 2024",
+        "instrumento": "notes ser 1",
+        "dt_acao": "2026-10-28",
+        "link": "https://www.fitchratings.com/entity/bari-securitizadora-2024-35-1-rni-97669954#issues",
+        "rating_anterior": "A-sf(bra)",
+        "rating_atual": "PIFsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "RETIRADO",

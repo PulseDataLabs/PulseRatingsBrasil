@@ -9,9 +9,9 @@
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 6 | 8 | **14** |
 | 🔴 **Downgrades (Rebaixamentos)** | 16 | 23 | **39** |
-| 🔵 **Novos Ratings** | 10 | 63 | **73** |
+| 🔵 **Novos Ratings** | 10 | 64 | **74** |
 | 🟡 **Mudanças de Perspectiva** | 6 | 15 | **21** |
-| ⚪ **Ratings Retirados / Liquidados** | 2 | 11 | **13** |
+| ⚪ **Ratings Retirados / Liquidados** | 2 | 12 | **14** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 14
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -23,7 +23,7 @@
 | Moody's | **BANCO BARI INVESTIMENTOS FINANCIAMENTOS** | Rating de Emissor | `A-.br` | **`A.br`** | `+1` | Positiva | 21/10/2026 |
 | Moody's | **VALID SOLUCOES** | Rating Corporativo | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Longo prazo | `BB` | **`BBB-`** | `+2` | Estável | 16/10/2026 |
-| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB-` | **`brBBB+`** | `+2` | Estável | 06/03/2024 |
+| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA-` | **`brAA`** | `+1` | Estável | 27/09/2019 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Fitch | **CONCESSIONARIA BLOCO CENTRAL** | BRL 800 mln bond/note 02-Oct-2047 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 06/10/2026 |
@@ -44,18 +44,18 @@
 | S&P | **CSN MINERACAO** | Escala Nacional Brasil de Longo Prazo | `brA-` | **`brBBB`** | `-2` | Negativa | 20/10/2026 |
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | National Long Term Rating | `AA+(bra)` | **`A(bra)`** | `-4` | Negativa | 08/10/2026 |
 | Fitch | **PBG** | National Long Term Rating | `BBB(bra)` | **`RD(bra)`** | `-13` | Estável | 21/10/2026 |
-| Fitch | **RAIZEN ENERGIA** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
-| Fitch | **RAIZEN ENERGIA** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
-| Fitch | **RAIZEN ENERGIA** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN ENERGIA** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN ENERGIA** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN ENERGIA** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Liberum | **ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP4` | **`CP5`** | `-1` | Estável | 06/10/2026 |
 | Liberum | **SATURNO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 16/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Longo prazo | `BBB` | **`BB+`** | `-2` | Negativa | 16/10/2026 |
 | Liberum | **FAMA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 28/10/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB-`** | `-4` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `AAAsf(bra)` | **`Asf(bra)`** | `-5` | Estável | 24/06/2026 |
 | Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Positiva | 24/06/2026 |
 | Fitch | **GDS SUBHOLDING** | BRL 376 mln bond/note 01-Sep-2043 | `AA(bra)` | **`BBB(bra)`** | `-6` | Em Observação | 08/10/2026 |
@@ -99,7 +99,7 @@
 | Fitch | **PGE** | BRL 49 mln bond/note 15-Jul-2036 | `BBB+(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (73)
+### 🔵 Novos Ratings Atribuídos (74)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Moody's | **ASTER MAQUINAS SOLUCOES INTEGRADAS** | Rating de Emissor | **`AA-.br`** | Estável | 28/09/2026 |
@@ -132,9 +132,9 @@
 | Fitch | **SELLER 3 FUNDO INVESTIMENTO DIREITOS CREDITORIOS SEGMENTO MEIOS PAGAMENTO RESP LIMITADA** | notes ser 3 | **`AAAsf(bra)`** | Estável | 05/10/2026 |
 | Moody's | **K** | 1ª Série de Cotas Seniores | **`(P)AAA.br (sf)`** | Estável | 06/10/2026 |
 | Fitch | **CONCESSIONARIA BLOCO CENTRAL** | BRL 798 mln bond/note 02-Oct-2047 | **`AAA(bra)`** | Estável | 06/10/2026 |
-| *...e mais 43 novos ratings.* | | | | | |
+| *...e mais 44 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (13)
+### ⚪ Ratings Retirados / Liquidados (14)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **ACUCAREIRA QUATA** | National Long Term Rating | `A+(bra)` | Estável | 30/09/2026 |
@@ -150,7 +150,8 @@
 | Fitch | **MOVIDA PARTICIPACOES** | BRL 1 bln Floating bond/note 15-Oct-2026 | `AA(bra)` | Estável | 15/10/2026 |
 | Fitch | **UNIAO QUIMICA FARMACEUTICA NACIONAL** | BRL 600 mln Series 14 Floating bond/note 15-Oct-2026 | `AA-(bra)` | Estável | 15/10/2026 |
 | Fitch | **MRS LOGISTICA** | 1ª Emissão Notas Promissórias | `AAA(bra)` | Estável | 21/10/2026 |
+| Fitch | **BARI SECURITIZADORA 2024** | notes ser 1 | `A-sf(bra)` | Estável | 28/10/2026 |
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (27/10/2026 → 28/10/2026)
-*Total nas últimas 24h: 🟢 0 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 0 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
