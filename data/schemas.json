@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-10-28"
+        "example": "2026-10-29"
       }
     ]
   },
@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Mercado Pago Instituicao de Pagamento Ltda."
+        "example": "Mercado Credito Sociedade de Credito, Financiamento e Investimento S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/mercadopagocom-representacoes-ltda-97074397"
+        "example": "https://www.fitchratings.com/entity/mercado-credito-sociedade-de-credito-financiamento-e-investimento-sa-97173030"
       },
       {
         "name": "no_tipo_rating",
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brBB-"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB"
+        "example": "brBB-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-08-13"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Inicial"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11204"
       }
     ]
   },
@@ -451,27 +451,27 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "ACO CEARENSE FIDC"
+        "example": "FORTESEC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "FORTESEC - RISCO SPE HOT BEACH (1ª EMISSÃO - SÉRIES SENIORES 287ª, 289ª, 293ª E 295ª)"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "FIDCs"
+        "example": "CRIs"
       },
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SUBORDINADAS MEZANINO"
+        "example": "RISCO SPE HOT BEACH (1ª EMISSÃO - SÉRIES SENIORES 287ª, 289ª, 293ª E 295ª)"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brBB+"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2020-02-19"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/3456/Fortesec_-_Risco_SPE_Hot_Beach_(1ª_Emissão_-_Séries_Seniores_287ª,_289ª,_293ª_e_295ª)"
       },
       {
         "name": "no_devedor_vinculado",
