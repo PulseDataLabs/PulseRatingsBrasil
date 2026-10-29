@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Mercado Credito Sociedade de Credito, Financiamento e Investimento S.A."
+        "example": "Itausa S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/mercado-credito-sociedade-de-credito-financiamento-e-investimento-sa-97173030"
+        "example": "https://www.fitchratings.com/entity/itausa-sa-97407242"
       },
       {
         "name": "no_tipo_rating",
@@ -79,7 +79,7 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-10-26"
+        "example": "2026-10-29"
       },
       {
         "name": "de_acao_rating",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Seller 3 Fundo de Investimento em Direitos Creditorios Segmento Meios de Pagamento de Resp Limitada"
+        "example": "RP Financeira S.A. - Sociedade de Credito, Financiamento e Investimento"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/seller-3-fundo-de-investimento-em-direitos-creditorios-segmento-meios-de-pagamento-de-resp-limitada-97967726"
+        "example": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ADJUD I FIDC NP  - SUBORDINADAS"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4791/Adjud_I_FIDC_NP__-_Subordinadas_"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB-"
+        "example": "brB"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBB-"
+        "example": "brB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-13"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11204"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FAMA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+        "example": "KEYCASH HOME EQUITY FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29230"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29303"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "FAMA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+        "example": "KEYCASH HOME EQUITY FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29230"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29303"
       },
       {
         "name": "no_tipo_rating",
@@ -362,12 +362,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CCC"
+        "example": "CP3"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-10-28"
+        "example": "2026-10-29"
       },
       {
         "name": "de_acao_rating",
@@ -382,12 +382,12 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Subordinada"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Longo prazo"
+        "example": "Curto prazo"
       }
     ]
   },
@@ -451,27 +451,27 @@
       {
         "name": "no_emissor_padronizado",
         "type": "str",
-        "example": "FORTESEC"
+        "example": "ACO CEARENSE FIDC"
       },
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "FORTESEC - RISCO SPE HOT BEACH (1ª EMISSÃO - SÉRIES SENIORES 287ª, 289ª, 293ª E 295ª)"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "CRIs"
+        "example": "FIDCs"
       },
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "RISCO SPE HOT BEACH (1ª EMISSÃO - SÉRIES SENIORES 287ª, 289ª, 293ª E 295ª)"
+        "example": "SUBORDINADAS MEZANINO"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBB+"
+        "example": "brB"
       },
       {
         "name": "de_outlook",
@@ -481,12 +481,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2020-02-19"
+        "example": "2026-06-18"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/3456/Fortesec_-_Risco_SPE_Hot_Beach_(1ª_Emissão_-_Séries_Seniores_287ª,_289ª,_293ª_e_295ª)"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_devedor_vinculado",
