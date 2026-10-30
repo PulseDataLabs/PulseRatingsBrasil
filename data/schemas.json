@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "RP Financeira S.A. - Sociedade de Credito, Financiamento e Investimento"
+        "example": "Itausa S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027"
+        "example": "https://www.fitchratings.com/entity/itausa-sa-97407242"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "de_rating_cp",
@@ -293,7 +293,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "dt_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "KEYCASH HOME EQUITY FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+        "example": "HUBCRED FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29303"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29309"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "KEYCASH HOME EQUITY FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+        "example": "HUBCRED FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29303"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29309"
       },
       {
         "name": "no_tipo_rating",
@@ -362,7 +362,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP3"
+        "example": "CCC"
       },
       {
         "name": "dt_acao_rating",
@@ -382,12 +382,12 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": "Única"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Curto prazo"
+        "example": "Longo prazo"
       }
     ]
   },
@@ -456,7 +456,7 @@
       {
         "name": "no_emissor_original",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "no_tipo_rating",
@@ -466,12 +466,12 @@
       {
         "name": "de_instrumento",
         "type": "str",
-        "example": "SUBORDINADAS MEZANINO"
+        "example": "SUBORDINADAS JÚNIOR"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "de_outlook",
@@ -486,7 +486,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_devedor_vinculado",
