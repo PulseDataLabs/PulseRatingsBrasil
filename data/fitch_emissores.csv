@@ -1,4 +1,5 @@
 dt_captura,no_emissor,link
+2026-10-30,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935
 2026-10-30,Itausa S.A.,https://www.fitchratings.com/entity/itausa-sa-97407242
 2026-10-30,"RP Financeira S.A. - Sociedade de Credito, Financiamento e Investimento",https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027
 2026-10-30,Eldorado Brasil Celulose S.A.,https://www.fitchratings.com/entity/eldorado-brasil-celulose-sa-96152344
@@ -98,7 +99,6 @@ dt_captura,no_emissor,link
 2026-10-30,FIDC Opea Agro Sumitomo Chemical,https://www.fitchratings.com/entity/fundo-de-investimento-em-direitos-creditorios-opea-agro-sumitomo-chemical-97384354
 2026-10-30,Oi S.A.,https://www.fitchratings.com/entity/oi-sa-80090797
 2026-10-30,Compass Gas e Energia S.A.,https://www.fitchratings.com/entity/compass-gas-e-energia-sa-97270144
-2026-10-30,TRSP - Terminal de Regaseificacao de GNL de Sao Paulo S.A,https://www.fitchratings.com/entity/trsp-terminal-de-regaseificacao-de-gnl-de-sao-paulo-sa-97692746
 2026-10-30,DMCard Securitizadora S.A.,https://www.fitchratings.com/entity/dmcard-securitizadora-sa-96858758
 2026-10-30,Embraer S.A.,https://www.fitchratings.com/entity/embraer-sa-94402890
 2026-10-30,LD Celulose S.A.,https://www.fitchratings.com/entity/ld-celulose-sa-97626283
@@ -301,10 +301,18 @@ dt_captura,no_emissor,link
 2026-10-30,Vert Cia Securitizadora 2019-30-1 (Klabin),https://www.fitchratings.com/entity/vert-companhia-securitizadora-96764451
 2026-10-30,Opea Securitizadora S.A. 2022-1-463 (Havan),https://www.fitchratings.com/entity/opea-securitizadora-sa-2022-463-havan-97344099
 2026-10-30,"Eco Securitizadora 2024-318-1,2,3 (Marfrig)",https://www.fitchratings.com/entity/eco-securitizadora-2024-318-1-2-3-marfrig-97586433
+2026-10-30,Opea Securitizadora S.A. 2022-49-3 (Cogna),https://www.fitchratings.com/entity/true-securitizadora-2022-3-cogna-97402940
+2026-10-30,"Opea Securitizadora S.A. 2022-83-1,2,3,4 (Rede D'Or)",https://www.fitchratings.com/entity/opea-securitizadora-2022-1-2-3-4-rede-d-or-97438680
+2026-10-30,Eco Securitizadora 2024-343-1 (Marfrig),https://www.fitchratings.com/entity/eco-securitizadora-2024-343-1-marfrig-97633970
+2026-10-30,Opea Securitizadora S.A. 2022-1-508 (Rede D'Or),https://www.fitchratings.com/entity/opea-securitizadora-sa-2022-508-rede-d-or-97370848
 2026-10-30,Riza Securitizadora 2021-25-1 (M. Dias Branco),https://www.fitchratings.com/entity/isec-securitizadora-2021-1-m-dias-branco-97123815
 2026-10-30,Opea Securitizadora S.A. 2021-1-397 (Rede D'Or),https://www.fitchratings.com/entity/rb-sec-companhia-de-securitizacao-2021-397-rede-d-or-97298488
 2026-10-30,"Riza Securitizadora 2023-182-1,2,3,4 (Norsa)",https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2023-1-2-3-4-norsa-97545488
 2026-10-30,"Eco Securitizadora 2025-403-1,2,3,4,5 (BRF)",https://www.fitchratings.com/entity/eco-securitizadora-2025-403-1-2-3-4-5-brf-97768689
+2026-10-30,Opea Securitizadora S.A. 2021-1-325 (VCSA),https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2021-325-vci-97136915
+2026-10-30,Vert Cia Securitizadora 2020-46-1 (BRF),https://www.fitchratings.com/entity/vert-companhia-securitizadora-2020-1-brf-97009515
+2026-10-30,"Eco Securitizadora 2025-434-1,2,3,5 (BRF)",https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988
+2026-10-30,Opea Securitizadora S.A. 2022-18-1 (Selmi),https://www.fitchratings.com/entity/true-securitizadora-2022-18-selmi-97329355
 2026-10-30,"Riza Securitizadora 2022-95-1,2,3 (Norsa)",https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2022-1-2-3-norsa-97354020
 2026-10-30,Eco Securitizadora 2022-188-2 (Armac),https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158
 2026-10-30,Opea Securitizadora S.A. 2022-1-509 (Rede D'Or),https://www.fitchratings.com/entity/opea-securitizadora-sa-2022-509-rede-d-or-97370854
@@ -315,9 +323,9 @@ dt_captura,no_emissor,link
 2026-10-30,Opea Securitizadora S.A. 2022-3-1 (Grupo Mateus),https://www.fitchratings.com/entity/true-securitizadora-2022-1-mateus-97381497
 2026-10-30,"Opea Securitizadora S.A. 2022-50-1,2,3 (Rede D'Or)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2022-1-2-3-rede-d-or-97412406
 2026-10-30,Opea Securitizadora S.A. 2022-31-1 (Dexco),https://www.fitchratings.com/entity/true-securitizadora-sa-2022-1-duratex-97396005
-2026-10-30,Opea Securitizadora S.A. 2022-1-508 (Rede D'Or),https://www.fitchratings.com/entity/opea-securitizadora-sa-2022-508-rede-d-or-97370848
-2026-10-30,"Opea Securitizadora S.A. 2022-52-1,2 (Mercado Livre)",https://www.fitchratings.com/entity/true-securitizadora-2022-2-mercado-livre-97410838
-2026-10-30,"Opea Securitizadora S.A. 2024-272-1,2,3 (Grupo Salta)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-272-1-2-3-grupo-salta-97593456
+2026-10-30,"Eco Securitizadora 2024-369-1,2,3,4 (Marfrig)",https://www.fitchratings.com/entity/eco-secutirizadora-2024-369-1-2-3-4-marfrig-97667697
+2026-10-30,"Opea Securitizadora S.A. 2025-416-1,2 (Iguatemi Shopping)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2025-416-1-2-iguatemi-shopping-97715042
+2026-10-30,Riza Securitizadora 2021-25-2 (M. Dias Branco),https://www.fitchratings.com/entity/isec-securitizadora-2021-2-m-dias-branco-97123816
 2026-10-30,"Opea Securitizadora S.A. 2023-176-1,2,3 (Rede D'Or)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2023-1-2-3-rede-d-or-97519281
 2026-10-30,"Eco Securitizadora 2024-319-1,2,3 (Lar)",https://www.fitchratings.com/entity/eco-securitizadora-2024-319-1-2-3-lar-97588422
 2026-10-30,"Opea Securitizadora S.A. 2024-262-1,2,3 (Allos)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637
@@ -325,14 +333,6 @@ dt_captura,no_emissor,link
 2026-10-30,"Riza Securitizadora 2024-188-1,2,3 (Zamp)",https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-97569652
 2026-10-30,"Riza Securitizadora 2023-123-1,2,3 (Multiplan)",https://www.fitchratings.com/entity/virgo-cia-de-securitizacao-2023-1-2-3-multiplan-97544009
 2026-10-30,Eco Securitizadora 2023-308-1 (Dexco),https://www.fitchratings.com/entity/eco-securitizadora-2023-308-1-dexco-97569197
-2026-10-30,"Eco Securitizadora 2024-369-1,2,3,4 (Marfrig)",https://www.fitchratings.com/entity/eco-secutirizadora-2024-369-1-2-3-4-marfrig-97667697
-2026-10-30,"Opea Securitizadora S.A. 2025-416-1,2 (Iguatemi Shopping)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2025-416-1-2-iguatemi-shopping-97715042
-2026-10-30,Riza Securitizadora 2021-25-2 (M. Dias Branco),https://www.fitchratings.com/entity/isec-securitizadora-2021-2-m-dias-branco-97123816
-2026-10-30,Opea Securitizadora S.A. 2021-1-325 (VCSA),https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2021-325-vci-97136915
-2026-10-30,Vert Cia Securitizadora 2020-46-1 (BRF),https://www.fitchratings.com/entity/vert-companhia-securitizadora-2020-1-brf-97009515
-2026-10-30,"Eco Securitizadora 2025-434-1,2,3,5 (BRF)",https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988
-2026-10-30,Opea Securitizadora S.A. 2022-18-1 (Selmi),https://www.fitchratings.com/entity/true-securitizadora-2022-18-selmi-97329355
-2026-10-30,"Riza Securitizadora 2022-56-1,2 (Smartfit)",https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829
 2026-10-30,"Opea Securitizadora S.A. 2021-1-428,429 (Assai)",https://www.fitchratings.com/entity/true-securitizadora-2021-428-429-assai-97278113
 2026-10-30,Opea Securitizadora S.A. 2022-49-2 (Cogna),https://www.fitchratings.com/entity/true-securitizadora-2022-2-cogna-97402939
 2026-10-30,"Eco Securitizadora 2022-153-1,2,3 (Marfrig)",https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669
@@ -340,9 +340,12 @@ dt_captura,no_emissor,link
 2026-10-30,"Opea Securitizadora S.A. 2023-190-1,2 (VCSA)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2023-1-2-vcsa-97533356
 2026-10-30,Eco Securitizadora 2022-188-1 (Armac),https://www.fitchratings.com/entity/eco-securitizadora-2022-1-armac-97396408
 2026-10-30,"Eco Securitizadora 2022-187-1,2 (Dexco)",https://www.fitchratings.com/entity/eco-securitizadora-de-direitos-creditorios-do-agronegocio-sa-2022-1-2-dexco-97396008
+2026-10-30,"Opea Securitizadora S.A. 2022-52-1,2 (Mercado Livre)",https://www.fitchratings.com/entity/true-securitizadora-2022-2-mercado-livre-97410838
+2026-10-30,"Opea Securitizadora S.A. 2024-272-1,2,3 (Grupo Salta)",https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-272-1-2-3-grupo-salta-97593456
 2026-10-30,Vert Cia Securitizadora 2021-60-1 (BRF),https://www.fitchratings.com/entity/vert-companhia-securitizadora-2021-1-brf-97228641
 2026-10-30,Opea Securitizadora S.A. 2019-1-233 (VCSA),https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579
 2026-10-30,Opea Securitizadora S.A. 2021-1-396 (Rede D'Or),https://www.fitchratings.com/entity/rb-sec-companhia-de-securitizacao-2021-396-rede-d-or-97297984
+2026-10-30,"Riza Securitizadora 2022-56-1,2 (Smartfit)",https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829
 2026-10-30,Vert Cia Securitizadora 2020-46-2 (BRF),https://www.fitchratings.com/entity/vert-companhia-securitizadora-2020-2-brf-97013158
 2026-10-30,Cooperativa Central de Credito Rural com Interacao Solidaria - Central Cresol Sicoper,https://www.fitchratings.com/entity/cooperativa-central-de-credito-rural-com-interacao-solidaria-central-cresol-sicoper-97361361
 2026-10-30,Cooperativa Central de Credito com Interacao Solidaria - Central Cresol Baser,https://www.fitchratings.com/entity/cooperativa-central-de-credito-com-interacao-solidaria-central-cresol-baser-97078781
@@ -353,8 +356,8 @@ dt_captura,no_emissor,link
 2026-10-30,Opea Securitizadora S.A. 2026-608-1 (Iguatemi),https://www.fitchratings.com/entity/opea-securitizadora-sa-2026-608-1-iguatemi-97904782
 2026-10-30,Banco Digimais S.A.,https://www.fitchratings.com/entity/banco-digimais-sa-89817862
 2026-10-30,Credito Universitario III FIDC,https://www.fitchratings.com/entity/credito-universitario-iii-fidc-97848777
-2026-10-30,Solar Bebidas S.A.,https://www.fitchratings.com/entity/solar-bebidas-sa-97327228
 2026-10-30,Norsa Refrigerantes S.A.,https://www.fitchratings.com/entity/norsa-refrigerantes-sa-96784265
+2026-10-30,Solar Bebidas S.A.,https://www.fitchratings.com/entity/solar-bebidas-sa-97327228
 2026-10-30,Equatorial Goias Distribuidora de Energia S.A,https://www.fitchratings.com/entity/celg-distribuicao-sa-95312890
 2026-10-30,Echoenergia Participacoes S.A.,https://www.fitchratings.com/entity/echoenergia-participacoes-sa-96662850
 2026-10-30,Barreiras Holding S.A.,https://www.fitchratings.com/entity/barreiras-holding-sa-97585626
@@ -375,14 +378,13 @@ dt_captura,no_emissor,link
 2026-10-30,Rodobens S.A.,https://www.fitchratings.com/entity/rodobens-sa-97239694
 2026-10-30,Aguas de Teresina Saneamento SPE S.A.,https://www.fitchratings.com/entity/aguas-de-teresina-saneamento-spe-sa-96568164
 2026-10-30,Companhia Riograndense de Saneamento Corsan,https://www.fitchratings.com/entity/companhia-riograndense-de-saneamento-corsan-97071542
+2026-10-30,Prolagos S.A. - Concessionaria de Servicos Publicos de Agua e Esgoto,https://www.fitchratings.com/entity/prolagos-sa-concessionaria-de-servicos-publicos-de-agua-e-esgoto-89867865
 2026-10-30,Aguas Guariroba S.A.,https://www.fitchratings.com/entity/aguas-guariroba-sa-89867861
 2026-10-30,Aegea Saneamento e Participacoes S.A.,https://www.fitchratings.com/entity/aegea-saneamento-e-participacoes-sa-91565696
-2026-10-30,Prolagos S.A. - Concessionaria de Servicos Publicos de Agua e Esgoto,https://www.fitchratings.com/entity/prolagos-sa-concessionaria-de-servicos-publicos-de-agua-e-esgoto-89867865
 2026-10-30,Blau Farmaceutica S.A.,https://www.fitchratings.com/entity/blau-farmaceutica-sa-96789775
 2026-10-30,Enel Green Power Volta Grande S.A.,https://www.fitchratings.com/entity/enel-green-power-volta-grande-sa-96819597
 2026-10-30,Transportadora Associada de Gas S.A. - TAG,https://www.fitchratings.com/entity/transportadora-associada-de-gas-sa-tag-96625934
 2026-10-30,"Sao Paulo, State of",https://www.fitchratings.com/entity/sao-paulo-state-of-90237272
-2026-10-30,Banco BOCOM BBM S.A.,https://www.fitchratings.com/entity/banco-bocom-bbm-sa-80732935
 2026-10-30,Companhia de Saneamento do Parana - SANEPAR,https://www.fitchratings.com/entity/companhia-de-saneamento-do-parana-sanepar-96358618
 2026-10-30,BR Partners Banco de Investimento S.A.,https://www.fitchratings.com/entity/br-partners-banco-de-investimento-sa-94195914
 2026-10-30,Banco ABC Brasil S.A.,https://www.fitchratings.com/entity/banco-abc-brasil-sa-80543393
@@ -598,6 +600,7 @@ dt_captura,no_emissor,link
 2026-10-30,Opea Securitizadora S.A. 2018-157 (Rede D'Or),https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizazco-2018-157-rede-d-or-96786349
 2026-10-30,General Shopping Investment Limited,https://www.fitchratings.com/entity/general-shopping-investment-limited-90748293
 2026-10-30,General Shopping Finance Limited (GSF),https://www.fitchratings.com/entity/general-shopping-finance-limited-gsf-89880061
+2026-10-30,Paranagua Saneamento S.A.,https://www.fitchratings.com/entity/paranagua-saneamento-sa-97944846
 2026-10-30,Enel Green Power Manicoba Eolica S.A.,https://www.fitchratings.com/entity/enel-green-power-manicoba-eolica-sa-96386802
 2026-10-30,Enel Green Power Damascena Eolica S.A.,https://www.fitchratings.com/entity/enel-green-power-damascena-eolica-sa-96386789
 2026-10-30,Cutia Empreendimentos Eolicos SA,https://www.fitchratings.com/entity/cutia-empreendimentos-eolicos-sa-96751593
@@ -700,8 +703,8 @@ dt_captura,no_emissor,link
 2026-10-30,Central Fotovoltaica Sao Pedro IV S.A.,https://www.fitchratings.com/entity/central-fotovoltaica-sao-pedro-iv-ltda-96836831
 2026-10-30,Entrevias Concessionaria de Rodovias S.A.,https://www.fitchratings.com/entity/entrevias-concessionaria-de-rodovias-sa-96579400
 2026-10-30,Concessionaria dos Aeroportos da Amazonia S.A,https://www.fitchratings.com/entity/concessionaria-dos-aeroportos-da-amazonia-sa-97418720
-2026-10-30,Concessionaria Ponte Rio-Niteroi S.A. - ECOPONTE,https://www.fitchratings.com/entity/concessionaria-ponte-rio-niteroi-sa-ecoponte-96735368
-2026-10-30,Ventos de Santo Estevao Holding S.A.,https://www.fitchratings.com/entity/ventos-de-santo-estevao-holding-sa-96568227
+2026-10-30,Rincao dos Albinos Energetica S.A.,https://www.fitchratings.com/entity/rincao-dos-albinos-energetica-sa-97007196
+2026-10-30,Mata de Santa Genebra Transmissao S.A.,https://www.fitchratings.com/entity/mata-de-santa-genebra-transmissao-sa-96675404
 2026-10-30,VDB F2 Geracao de Energia S.A.,https://www.fitchratings.com/entity/vdb-f2-geracao-de-energia-sa-96763362
 2026-10-30,GBS Participacoes S.A.,https://www.fitchratings.com/entity/gbs-participacoes-sa-97320752
 2026-10-30,Confluencia Energia S/A,https://www.fitchratings.com/entity/confluencia-energia-s-a-97273742
@@ -710,11 +713,8 @@ dt_captura,no_emissor,link
 2026-10-30,SE Vineyards Transmissao de Energia S.A.,https://www.fitchratings.com/entity/se-vineyards-transmissao-de-energia-sa-96798394
 2026-10-30,Ventos de Sao Lucio I Energias Renovaveis S.A.,https://www.fitchratings.com/entity/ventos-de-sao-lucio-i-energias-renovaveis-sa-97285099
 2026-10-30,Arcoverde Transmissao de Energia S.A.,https://www.fitchratings.com/entity/arcoverde-transmissao-de-energia-sa-96798294
-2026-10-30,Pirapora II Solar Holding S.A.,https://www.fitchratings.com/entity/pirapora-ii-solar-holding-sa-96808655
-2026-10-30,Salto do Guassupi Energetica S.A.,https://www.fitchratings.com/entity/salto-do-guassupi-energetica-sa-97007185
-2026-10-30,Belo Monte Transmissora de Energia SPE S.A.,https://www.fitchratings.com/entity/belo-monte-transmissora-de-energia-spe-sa-96563152
-2026-10-30,Eolica Serra das Vacas Holding II S.A.,https://www.fitchratings.com/entity/eolica-serra-das-vacas-holding-ii-sa-96558619
-2026-10-30,Eolica Serra das Vacas Holding S.A.,https://www.fitchratings.com/entity/eolica-serra-das-vacas-holding-sa-96337693
+2026-10-30,Solaris Transmissao de Energia S.A.,https://www.fitchratings.com/entity/solaris-transmissao-de-energia-sa-97273655
+2026-10-30,Ventos do Sul Energia S.A.,https://www.fitchratings.com/entity/ventos-do-sul-energia-sa-96780015
 2026-10-30,Parintins Amazonas Transmissora de Energia S.A.,https://www.fitchratings.com/entity/parintins-amazonas-transmissora-de-energia-sa-97071688
 2026-10-30,Itarema Geracao de Energia S.A.,https://www.fitchratings.com/entity/itarema-geracao-de-energia-sa-96274678
 2026-10-30,Matrincha Transmissora de Energia (TP Norte) S.A.,https://www.fitchratings.com/entity/matrincha-transmissora-de-energia-tp-norte-sa-96276320
@@ -725,29 +725,8 @@ dt_captura,no_emissor,link
 2026-10-30,Alianca Transmissora de Energia S.A.,https://www.fitchratings.com/entity/edp-transmissao-alianca-sc-sa-96706287
 2026-10-30,ETB - Empresa de Transmissao Baiana SA,https://www.fitchratings.com/entity/etb-empresa-de-transmissao-baiana-sa-96726939
 2026-10-30,Transmissora Jose Maria de Macedo de Eletricidade S.A.,https://www.fitchratings.com/entity/transmissora-jose-maria-de-macedo-de-eletricidade-sa-96635611
-2026-10-30,Ventos de Sao Tito Holding S.A.,https://www.fitchratings.com/entity/ventos-de-sao-tito-holding-sa-96203309
-2026-10-30,AZUL Investments LLP,https://www.fitchratings.com/entity/azul-investments-llp-96664012
-2026-10-30,Sobral I Solar Energia SPE S.A.,https://www.fitchratings.com/entity/sobral-i-solar-energia-spe-sa-96682699
-2026-10-30,Tibagi Energia SPE S.A.,https://www.fitchratings.com/entity/tibagi-energia-spe-sa-96795630
-2026-10-30,Serras Holding S.A.,https://www.fitchratings.com/entity/serras-holding-sa-96362577
-2026-10-30,Ventos de Sao Tome Holding S.A.,https://www.fitchratings.com/entity/ventos-de-sao-tome-holding-sa-95253890
-2026-10-30,ViaRondon Concessionaria de Rodovia S.A.,https://www.fitchratings.com/entity/viarondon-concessionaria-de-rodovia-sa-96366671
-2026-10-30,Sao Roque Energetica S.A.,https://www.fitchratings.com/entity/sao-roque-energetica-sa-97433578
-2026-10-30,Linhas de Taubate Transmissora de Energia S.A.,https://www.fitchratings.com/entity/linhas-de-taubate-transmissora-de-energia-sa-95105090
-2026-10-30,Central Fotovoltaica Sao Pedro II S.A.,https://www.fitchratings.com/entity/central-fotovoltaica-sao-pedro-ii-ltda-96836823
-2026-10-30,BRK Ambiental Manso S.A.,https://www.fitchratings.com/entity/brk-ambiental-manso-sa-94377892
-2026-10-30,Paranaiba Transmissora de Energia S.A.,https://www.fitchratings.com/entity/paranaiba-transmissora-de-energia-sa-96333699
-2026-10-30,Santa Vitoria do Palmar Energias Renovaveis S.A.,https://www.fitchratings.com/entity/santa-vitoria-do-palmar-energias-renovaveis-sa-96512668
-2026-10-30,Argo VI Transmissao de Energia S.A.,https://www.fitchratings.com/entity/esperanza-transmissora-de-energia-sa-96549959
-2026-10-30,Tiete Eolica S.A.,https://www.fitchratings.com/entity/aes-tiete-eolica-sa-95442890
-2026-10-30,Argo V Transmissao de Energia S.A.,https://www.fitchratings.com/entity/odoya-transmissora-de-energia-sa-96546310
-2026-10-30,Empresa de Energia Cachoeira Caldeirao S.A.,https://www.fitchratings.com/entity/empresa-de-energia-cachoeira-caldeirao-sa-95535290
-2026-10-30,Argo Transmissao de Energia S.A.,https://www.fitchratings.com/entity/argo-transmissao-de-energia-sa-96643713
-2026-10-30,Aeroportos Brasil Viracopos S.A.,https://www.fitchratings.com/entity/aeroportos-brasil-viracopos-sa-91565490
-2026-10-30,Ferreira Gomes Energia S.A.,https://www.fitchratings.com/entity/ferreira-gomes-energia-sa-91842691
-2026-10-30,TCC - Transmissora Caminho do Cafe S.A.,https://www.fitchratings.com/entity/tcc-transmissora-caminho-do-cafe-sa-96698895
-2026-10-30,Concessionaria do Aeroporto Internacional de Guarulhos SA,https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291
-2026-10-30,Concessionaria Rota das Bandeiras S.A.,https://www.fitchratings.com/entity/concessionaria-rota-das-bandeiras-sa-91868491
+2026-10-30,Concessionaria Ponte Rio-Niteroi S.A. - ECOPONTE,https://www.fitchratings.com/entity/concessionaria-ponte-rio-niteroi-sa-ecoponte-96735368
+2026-10-30,Ventos de Santo Estevao Holding S.A.,https://www.fitchratings.com/entity/ventos-de-santo-estevao-holding-sa-96568227
 2026-10-30,Oi Movel S.A.,https://www.fitchratings.com/entity/oi-movel-sa-97265603
 2026-10-30,Concessao Metroviaria do Rio de Janeiro S.A. - MetroRio,https://www.fitchratings.com/entity/concessao-metroviaria-do-rio-de-janeiro-sa-metrorio-91062690
 2026-10-30,Aquapolo Ambiental S.A.,https://www.fitchratings.com/entity/aquapolo-ambiental-sa-89478661
@@ -762,3 +741,31 @@ dt_captura,no_emissor,link
 2026-10-30,Ecorodovias Concessoes e Servicos S.A.,https://www.fitchratings.com/entity/ecorodovias-concessoes-e-servicos-sa-96637229
 2026-10-30,Guaraciaba Transmissora de Energia (TP Sul) S.A.,https://www.fitchratings.com/entity/guaraciaba-transmissora-de-energia-tp-sul-sa-96573863
 2026-10-30,Santo Antonio Energia S.A.,https://www.fitchratings.com/entity/santo-antonio-energia-sa-91718290
+2026-10-30,Tiete Eolica S.A.,https://www.fitchratings.com/entity/aes-tiete-eolica-sa-95442890
+2026-10-30,Argo V Transmissao de Energia S.A.,https://www.fitchratings.com/entity/odoya-transmissora-de-energia-sa-96546310
+2026-10-30,Empresa de Energia Cachoeira Caldeirao S.A.,https://www.fitchratings.com/entity/empresa-de-energia-cachoeira-caldeirao-sa-95535290
+2026-10-30,Argo Transmissao de Energia S.A.,https://www.fitchratings.com/entity/argo-transmissao-de-energia-sa-96643713
+2026-10-30,Aeroportos Brasil Viracopos S.A.,https://www.fitchratings.com/entity/aeroportos-brasil-viracopos-sa-91565490
+2026-10-30,Ferreira Gomes Energia S.A.,https://www.fitchratings.com/entity/ferreira-gomes-energia-sa-91842691
+2026-10-30,TCC - Transmissora Caminho do Cafe S.A.,https://www.fitchratings.com/entity/tcc-transmissora-caminho-do-cafe-sa-96698895
+2026-10-30,Concessionaria do Aeroporto Internacional de Guarulhos SA,https://www.fitchratings.com/entity/concessionaria-do-aeroporto-internacional-de-guarulhos-sa-91824291
+2026-10-30,Concessionaria Rota das Bandeiras S.A.,https://www.fitchratings.com/entity/concessionaria-rota-das-bandeiras-sa-91868491
+2026-10-30,Ventos de Sao Tito Holding S.A.,https://www.fitchratings.com/entity/ventos-de-sao-tito-holding-sa-96203309
+2026-10-30,AZUL Investments LLP,https://www.fitchratings.com/entity/azul-investments-llp-96664012
+2026-10-30,Sobral I Solar Energia SPE S.A.,https://www.fitchratings.com/entity/sobral-i-solar-energia-spe-sa-96682699
+2026-10-30,Tibagi Energia SPE S.A.,https://www.fitchratings.com/entity/tibagi-energia-spe-sa-96795630
+2026-10-30,Serras Holding S.A.,https://www.fitchratings.com/entity/serras-holding-sa-96362577
+2026-10-30,Ventos de Sao Tome Holding S.A.,https://www.fitchratings.com/entity/ventos-de-sao-tome-holding-sa-95253890
+2026-10-30,ViaRondon Concessionaria de Rodovia S.A.,https://www.fitchratings.com/entity/viarondon-concessionaria-de-rodovia-sa-96366671
+2026-10-30,Sao Roque Energetica S.A.,https://www.fitchratings.com/entity/sao-roque-energetica-sa-97433578
+2026-10-30,Linhas de Taubate Transmissora de Energia S.A.,https://www.fitchratings.com/entity/linhas-de-taubate-transmissora-de-energia-sa-95105090
+2026-10-30,Central Fotovoltaica Sao Pedro II S.A.,https://www.fitchratings.com/entity/central-fotovoltaica-sao-pedro-ii-ltda-96836823
+2026-10-30,BRK Ambiental Manso S.A.,https://www.fitchratings.com/entity/brk-ambiental-manso-sa-94377892
+2026-10-30,Paranaiba Transmissora de Energia S.A.,https://www.fitchratings.com/entity/paranaiba-transmissora-de-energia-sa-96333699
+2026-10-30,Santa Vitoria do Palmar Energias Renovaveis S.A.,https://www.fitchratings.com/entity/santa-vitoria-do-palmar-energias-renovaveis-sa-96512668
+2026-10-30,Argo VI Transmissao de Energia S.A.,https://www.fitchratings.com/entity/esperanza-transmissora-de-energia-sa-96549959
+2026-10-30,Pirapora II Solar Holding S.A.,https://www.fitchratings.com/entity/pirapora-ii-solar-holding-sa-96808655
+2026-10-30,Salto do Guassupi Energetica S.A.,https://www.fitchratings.com/entity/salto-do-guassupi-energetica-sa-97007185
+2026-10-30,Belo Monte Transmissora de Energia SPE S.A.,https://www.fitchratings.com/entity/belo-monte-transmissora-de-energia-spe-sa-96563152
+2026-10-30,Eolica Serra das Vacas Holding II S.A.,https://www.fitchratings.com/entity/eolica-serra-das-vacas-holding-ii-sa-96558619
+2026-10-30,Eolica Serra das Vacas Holding S.A.,https://www.fitchratings.com/entity/eolica-serra-das-vacas-holding-sa-96337693
