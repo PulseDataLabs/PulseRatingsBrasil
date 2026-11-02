@@ -1,43 +1,43 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-11-02T16:51:47.661565",
+  "timestamp": "2026-11-02T20:22:19.460270",
   "dt_atual": "2026-11-02",
   "dt_anterior": "2026-10-31",
   "resumo": {
-    "upgrades_emissores": 11,
-    "upgrades_emissoes": 11,
+    "upgrades_emissores": 12,
+    "upgrades_emissoes": 10,
     "total_upgrades": 22,
     "downgrades_emissores": 13,
-    "downgrades_emissoes": 24,
-    "total_downgrades": 37,
+    "downgrades_emissoes": 26,
+    "total_downgrades": 39,
     "novos_emissores": 11,
     "novos_emissoes": 63,
     "total_novos": 74,
-    "outlooks_emissores": 6,
-    "outlooks_emissoes": 14,
-    "total_outlooks": 20,
+    "outlooks_emissores": 7,
+    "outlooks_emissoes": 15,
+    "total_outlooks": 22,
     "retirados_emissores": 1,
-    "retirados_emissoes": 12,
-    "total_retirados": 13
+    "retirados_emissoes": 13,
+    "total_retirados": 14
   },
   "periodo_recente": {
     "dt_atual": "2026-11-02",
     "dt_anterior": "2026-10-03",
     "resumo": {
-      "upgrades_emissores": 11,
-      "upgrades_emissoes": 11,
+      "upgrades_emissores": 12,
+      "upgrades_emissoes": 10,
       "total_upgrades": 22,
       "downgrades_emissores": 13,
-      "downgrades_emissoes": 24,
-      "total_downgrades": 37,
+      "downgrades_emissoes": 26,
+      "total_downgrades": 39,
       "novos_emissores": 11,
       "novos_emissoes": 63,
       "total_novos": 74,
-      "outlooks_emissores": 6,
-      "outlooks_emissoes": 14,
-      "total_outlooks": 20,
+      "outlooks_emissores": 7,
+      "outlooks_emissoes": 15,
+      "total_outlooks": 22,
       "retirados_emissores": 1,
-      "retirados_emissoes": 12,
-      "total_retirados": 13
+      "retirados_emissoes": 13,
+      "total_retirados": 14
     },
     "emissores": {
       "tipo": "emissores",
@@ -82,6 +82,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+2"
+        },
+        {
+          "agencia": "Moody's",
+          "emissor": "CONCESSIONARIA RODOVIA LAGOS",
+          "instrumento": "Rating de Emissor",
+          "dt_acao": "2026-10-30",
+          "link": "",
+          "rating_anterior": "AA.br",
+          "rating_atual": "AA+.br",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
         },
         {
           "agencia": "Moody's",
@@ -521,6 +534,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Moody's",
+          "emissor": "RODOVIAS INTEGRADAS OESTE",
+          "instrumento": "Rating de Emissor",
+          "dt_acao": "2026-10-30",
+          "link": "",
+          "rating_atual": "AA.br",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        },
+        {
+          "agencia": "Moody's",
           "emissor": "BANCO BMG",
           "instrumento": "Rating de Depósitos Bancários",
           "dt_acao": "2026-10-14",
@@ -585,19 +610,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "link": "https://www.liberumratings.com.br/detalhes-ativo/29246",
           "rating_anterior": "BB",
           "rating_atual": "BBB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB-",
-          "rating_atual": "brBBB+",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
@@ -814,6 +826,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "-6"
         },
         {
+          "agencia": "Austin",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA",
+          "rating_atual": "brAA-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
           "instrumento": "notes",
@@ -823,6 +848,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "rating_atual": "AAsf(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-2"
         },
@@ -1864,6 +1902,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "0"
         },
         {
+          "agencia": "Moody's",
+          "emissor": "RODOVIAS INTEGRADAS OESTE",
+          "instrumento": "14ª Emissão de Debêntures - Série Única",
+          "dt_acao": "2026-10-30",
+          "link": "",
+          "rating_atual": "AA.br",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "CRI BARI SECURITIZADORA 2022",
           "instrumento": "BRL 39 mln bond/note 15-Jul-2036",
@@ -1908,6 +1958,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "dt_acao": "2026-10-21",
           "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
           "rating_anterior": "A+sf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "RIZA SECURITIZADORA 2022",
+          "instrumento": "securities ser 1",
+          "dt_acao": "2026-04-15",
+          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+          "rating_anterior": "AA+sf(bra)",
           "rating_atual": "PIFsf(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
@@ -2064,30 +2127,57 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_atual": "2026-11-02",
     "dt_anterior": "2026-10-31",
     "resumo": {
-      "upgrades_emissores": 0,
+      "upgrades_emissores": 1,
       "upgrades_emissoes": 2,
-      "total_upgrades": 2,
+      "total_upgrades": 3,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 0,
-      "total_downgrades": 0,
+      "downgrades_emissoes": 3,
+      "total_downgrades": 3,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
-      "outlooks_emissores": 0,
-      "outlooks_emissoes": 0,
-      "total_outlooks": 0,
+      "outlooks_emissores": 1,
+      "outlooks_emissoes": 1,
+      "total_outlooks": 2,
       "retirados_emissores": 0,
-      "retirados_emissoes": 0,
-      "total_retirados": 0
+      "retirados_emissoes": 2,
+      "total_retirados": 2
     },
     "emissores": {
       "tipo": "emissores",
       "dt_atual": "2026-11-02",
       "dt_anterior": "2026-10-31",
-      "upgrades": [],
+      "upgrades": [
+        {
+          "agencia": "Moody's",
+          "emissor": "CONCESSIONARIA RODOVIA LAGOS",
+          "instrumento": "Rating de Emissor",
+          "dt_acao": "2026-10-30",
+          "link": "",
+          "rating_anterior": "AA.br",
+          "rating_atual": "AA+.br",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        }
+      ],
       "downgrades": [],
       "novos": [],
-      "outlooks": [],
+      "outlooks": [
+        {
+          "agencia": "Moody's",
+          "emissor": "RODOVIAS INTEGRADAS OESTE",
+          "instrumento": "Rating de Emissor",
+          "dt_acao": "2026-10-30",
+          "link": "",
+          "rating_atual": "AA.br",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        }
+      ],
       "retirados": []
     },
     "emissoes": {
@@ -2122,13 +2212,109 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+3"
         }
       ],
-      "downgrades": [],
+      "downgrades": [
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA",
+          "rating_atual": "brAA-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        }
+      ],
       "novos": [],
-      "outlooks": [],
-      "retirados": []
+      "outlooks": [
+        {
+          "agencia": "Moody's",
+          "emissor": "RODOVIAS INTEGRADAS OESTE",
+          "instrumento": "14ª Emissão de Debêntures - Série Única",
+          "dt_acao": "2026-10-30",
+          "link": "",
+          "rating_atual": "AA.br",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        }
+      ],
+      "retirados": [
+        {
+          "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2019",
+          "instrumento": "notes ser 1",
+          "dt_acao": "2019-12-05",
+          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "WDsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "RIZA SECURITIZADORA 2022",
+          "instrumento": "securities ser 1",
+          "dt_acao": "2026-04-15",
+          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+          "rating_anterior": "AA+sf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        }
+      ]
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Moody's",
+      "emissor": "CONCESSIONARIA RODOVIA LAGOS",
+      "instrumento": "Rating de Emissor",
+      "dt_acao": "2026-10-30",
+      "link": "",
+      "rating_anterior": "AA.br",
+      "rating_atual": "AA+.br",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-11-02"
+    },
     {
       "agencia": "Fitch",
       "emissor": "BANCO BOCOM BBM",
@@ -2176,6 +2362,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-02"
     },
     {
+      "agencia": "Moody's",
+      "emissor": "RODOVIAS INTEGRADAS OESTE",
+      "instrumento": "Rating de Emissor",
+      "dt_acao": "2026-10-30",
+      "link": "",
+      "rating_atual": "AA.br",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Positiva",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-02"
+    },
+    {
       "agencia": "Liberum",
       "emissor": "GRIF CREDITO PULVERIZADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
       "instrumento": "Única - Longo prazo",
@@ -2203,6 +2404,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
+      "dt_captura": "2026-11-02"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "RODOVIAS INTEGRADAS OESTE",
+      "instrumento": "14ª Emissão de Debêntures - Série Única",
+      "dt_acao": "2026-10-30",
+      "link": "",
+      "rating_atual": "AA.br",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Positiva",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissão",
+      "tipo": "OUTLOOK",
       "dt_captura": "2026-11-02"
     },
     {
@@ -4541,19 +4757,35 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-02"
     },
     {
-      "agencia": "Austin",
-      "emissor": "HIGH YIELD YALEEH FIDC",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2024-03-06",
-      "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brBBB-",
-      "rating_atual": "brBBB+",
+      "agencia": "Fitch",
+      "emissor": "RIZA SECURITIZADORA 2022",
+      "instrumento": "securities ser 1",
+      "dt_acao": "2026-04-15",
+      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+      "rating_anterior": "AA+sf(bra)",
+      "rating_atual": "PIFsf(bra)",
       "outlook_anterior": "Estável",
       "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+2",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
       "categoria": "Emissão",
-      "tipo": "UPGRADE",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-11-02"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FICTOR INVEST FIDC",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2025-10-09",
+      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBBB",
+      "rating_atual": "brBB+",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-02"
     },
     {
@@ -4583,6 +4815,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlook_atual": "Estável",
       "tipo_movimento": "DOWNGRADE",
       "variacao_notches": "-6",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-02"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FIDC CONSIGNADOS FEDERAIS",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2019-09-27",
+      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brAA",
+      "rating_atual": "brAA-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-02"
@@ -4698,6 +4946,54 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-30",
       "dt_captura": "2026-11-02",
       "link": "https://www.fitchratings.com/entity/paranagua-saneamento-sa-97944846#issues"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "CONCESSIONARIA RODOVIA LAGOS",
+      "instrumento": "Rating de Emissor",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "AA.br",
+      "rating_atual": "AA+.br",
+      "variacao_notches": "+1",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-10-30",
+      "dt_captura": "2026-11-02",
+      "link": ""
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "RODOVIAS INTEGRADAS OESTE",
+      "instrumento": "Rating de Emissor",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "AA.br",
+      "variacao_notches": "0",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Positiva",
+      "dt_acao": "2026-10-30",
+      "dt_captura": "2026-11-02",
+      "link": ""
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "RODOVIAS INTEGRADAS OESTE",
+      "instrumento": "14ª Emissão de Debêntures - Série Única",
+      "categoria": "Emissão",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "AA.br",
+      "variacao_notches": "0",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Positiva",
+      "dt_acao": "2026-10-30",
+      "dt_captura": "2026-11-02",
+      "link": ""
     },
     {
       "agencia": "Fitch",
@@ -7194,6 +7490,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-06-24",
       "dt_captura": "2026-11-02",
       "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-272-1-2-3-grupo-salta-97593456#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "RIZA SECURITIZADORA 2022",
+      "instrumento": "securities ser 1",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AA+sf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-04-15",
+      "dt_captura": "2026-11-02",
+      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues"
     },
     {
       "agencia": "S&P",
@@ -187018,6 +187330,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Moody's",
+        "emissor": "CONCESSIONARIA RODOVIA LAGOS",
+        "instrumento": "Rating de Emissor",
+        "dt_acao": "2026-10-30",
+        "link": "",
+        "rating_anterior": "AA.br",
+        "rating_atual": "AA+.br",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Moody's",
         "emissor": "BANCO BARI INVESTIMENTOS FINANCIAMENTOS",
         "instrumento": "Rating de Depósitos Bancários",
         "dt_acao": "2026-10-21",
@@ -187454,6 +187779,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Moody's",
+        "emissor": "RODOVIAS INTEGRADAS OESTE",
+        "instrumento": "Rating de Emissor",
+        "dt_acao": "2026-10-30",
+        "link": "",
+        "rating_atual": "AA.br",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Positiva",
+        "tipo_movimento": "OUTLOOK",
+        "variacao_notches": "0"
+      },
+      {
+        "agencia": "Moody's",
         "emissor": "BANCO BMG",
         "instrumento": "Rating de Depósitos Bancários",
         "dt_acao": "2026-10-14",
@@ -187518,19 +187855,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "link": "https://www.liberumratings.com.br/detalhes-ativo/29246",
         "rating_anterior": "BB",
         "rating_atual": "BBB-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+2"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "HIGH YIELD YALEEH FIDC",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2024-03-06",
-        "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brBBB-",
-        "rating_atual": "brBBB+",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
@@ -187747,6 +188071,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "-6"
       },
       {
+        "agencia": "Austin",
+        "emissor": "FIDC CONSIGNADOS FEDERAIS",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2019-09-27",
+        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brAA",
+        "rating_atual": "brAA-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-1"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
         "instrumento": "notes",
@@ -187756,6 +188093,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "rating_atual": "AAsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBBB",
+        "rating_atual": "brBB+",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-2"
       },
@@ -188797,6 +189147,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "0"
       },
       {
+        "agencia": "Moody's",
+        "emissor": "RODOVIAS INTEGRADAS OESTE",
+        "instrumento": "14ª Emissão de Debêntures - Série Única",
+        "dt_acao": "2026-10-30",
+        "link": "",
+        "rating_atual": "AA.br",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Positiva",
+        "tipo_movimento": "OUTLOOK",
+        "variacao_notches": "0"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "CRI BARI SECURITIZADORA 2022",
         "instrumento": "BRL 39 mln bond/note 15-Jul-2036",
@@ -188841,6 +189203,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-21",
         "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
         "rating_anterior": "A+sf(bra)",
+        "rating_atual": "PIFsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "RIZA SECURITIZADORA 2022",
+        "instrumento": "securities ser 1",
+        "dt_acao": "2026-04-15",
+        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+        "rating_anterior": "AA+sf(bra)",
         "rating_atual": "PIFsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",

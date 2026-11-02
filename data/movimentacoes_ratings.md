@@ -7,11 +7,11 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 11 | 11 | **22** |
-| 🔴 **Downgrades (Rebaixamentos)** | 13 | 24 | **37** |
+| 🟢 **Upgrades (Elevações)** | 12 | 10 | **22** |
+| 🔴 **Downgrades (Rebaixamentos)** | 13 | 26 | **39** |
 | 🔵 **Novos Ratings** | 11 | 63 | **74** |
-| 🟡 **Mudanças de Perspectiva** | 6 | 14 | **20** |
-| ⚪ **Ratings Retirados / Liquidados** | 1 | 12 | **13** |
+| 🟡 **Mudanças de Perspectiva** | 7 | 15 | **22** |
+| ⚪ **Ratings Retirados / Liquidados** | 1 | 13 | **14** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 22
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -19,6 +19,7 @@
 | S&P | **BANCO ORIGINAL** | Escala Nacional Brasil de Curto Prazo | `brA-2` | **`brA-1`** | `+1` | Estável | 08/10/2026 |
 | S&P | **DESKTOP** | Escala Nacional Brasil de Longo Prazo | `brA+` | **`brAAA`** | `+4` | Estável | 08/10/2026 |
 | S&P | **BANCO ORIGINAL** | Escala Nacional Brasil de Longo Prazo | `brBBB+` | **`brA`** | `+2` | Estável | 08/10/2026 |
+| Moody's | **CONCESSIONARIA RODOVIA LAGOS** | Rating de Emissor | `AA.br` | **`AA+.br`** | `+1` | Estável | 30/10/2026 |
 | Moody's | **BANCO BARI INVESTIMENTOS FINANCIAMENTOS** | Rating de Depósitos Bancários | `A-.br` | **`A.br`** | `+1` | Positiva | 21/10/2026 |
 | Moody's | **BANCO BARI INVESTIMENTOS FINANCIAMENTOS** | Rating de Emissor | `A-.br` | **`A.br`** | `+1` | Positiva | 21/10/2026 |
 | Moody's | **VALID SOLUCOES** | Rating Corporativo | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
@@ -28,7 +29,6 @@
 | Fitch | **BANCO BOCOM BBM** | Long Term Issuer Default Rating (xgs) | `BB(xgs)` | **`BB+(xgs)`** | `+1` | Estável | 30/10/2026 |
 | Fitch | **BANCO BOCOM BBM** | Local Currency Long Term Issuer Default Rating (xgs) | `BB(xgs)` | **`BB+(xgs)`** | `+1` | Estável | 30/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Longo prazo | `BB` | **`BBB-`** | `+2` | Estável | 16/10/2026 |
-| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB-` | **`brBBB+`** | `+2` | Estável | 06/03/2024 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
@@ -39,7 +39,7 @@
 | Fitch | **ELDORADO CELULOSE** | BRL 1 bln 6.95% bond/note 15-Dec-2040 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 29/10/2026 |
 | Fitch | **ELDORADO CELULOSE** | BRL 1.5 bln bond/note 15-Oct-2035 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 29/10/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 37
+### 🔴 Rebaixamentos de Rating (Downgrades) — 39
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **BANCO SOFISA** | Escala Nacional Brasil de Longo Prazo | `brAA+` | **`brAA`** | `-1` | Estável | 14/10/2026 |
@@ -62,7 +62,9 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Longo prazo | `BBB` | **`BB+`** | `-2` | Negativa | 16/10/2026 |
 | Liberum | **FAMA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 28/10/2026 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brCC`** | `-6` | Estável | 23/02/2021 |
+| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | **`AAsf(bra)`** | `-2` | Estável | 25/06/2026 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
 | Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Positiva | 24/06/2026 |
 | Fitch | **GDS SUBHOLDING** | BRL 376 mln bond/note 01-Sep-2043 | `AA(bra)` | **`BBB(bra)`** | `-6` | Em Observação | 08/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-3 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
@@ -80,12 +82,13 @@
 | Fitch | **RIO+ SANEAMENTO BL3** | BRL 1.35 bln bond/note 01-Dec-2043 | `AAA(bra)` | **`AA(bra)`** | `-2` | Negativa | 22/10/2026 |
 | Fitch | **RIO+ SANEAMENTO BL3** | BRL 1.15 bln Floating bond/note 01-Dec-2052 | `AAA(bra)` | **`AA(bra)`** | `-2` | Negativa | 22/10/2026 |
 
-### 🟡 Mudanças de Perspectiva (Outlook) — 20
+### 🟡 Mudanças de Perspectiva (Outlook) — 22
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva Anterior | Nova Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | S&P | **AUSTRAL RESSEGURADORA** | Escala Nacional Brasil de Longo Prazo | `brAAA` | Estável | **Em Observação** | 11/07/2018 |
 | S&P | **AUSTRAL SEGURADORA** | Escala Nacional Brasil de Longo Prazo | `brAAA` | Estável | **Em Observação** | 11/07/2018 |
 | S&P | **VERO** | Escala Nacional Brasil de Longo Prazo | `brA+` | Estável | **Negativa** | 20/03/2023 |
+| Moody's | **RODOVIAS INTEGRADAS OESTE** | Rating de Emissor | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Moody's | **BANCO BMG** | Rating de Depósitos Bancários | `A-.br` | Positiva | **Estável** | 14/10/2026 |
 | Moody's | **BANCO BMG** | Rating de Emissor | `A-.br` | Positiva | **Estável** | 14/10/2026 |
 | Fitch | **VESTE ESTILO** | National Long Term Rating | `BBB(bra)` | Negativa | **Estável** | 09/10/2026 |
@@ -100,6 +103,7 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS ONIX PRIME** | Mezanino - Longo prazo | `BB+` | Estável | **Negativa** | 15/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS ONIX PRIME** | Mezanino - Curto prazo | `CP4` | Estável | **Negativa** | 15/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS ONIX PRIME** | Subordinada - Longo prazo | `B` | Estável | **Negativa** | 15/10/2026 |
+| Moody's | **RODOVIAS INTEGRADAS OESTE** | 14ª Emissão de Debêntures - Série Única | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Fitch | **CRI BARI SECURITIZADORA 2022** | BRL 39 mln bond/note 15-Jul-2036 | `BBB+sf(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 | Fitch | **PGE** | BRL 49 mln bond/note 15-Jul-2036 | `BBB+(bra)` | Negativa | **Em Observação** | 05/10/2026 |
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
@@ -139,11 +143,12 @@
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | 9ª Emissão de Debêntures de BRL1,5 bilhão e vencimento em 2032 | **`A(bra)`** | Estável | 08/10/2026 |
 | *...e mais 44 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (13)
+### ⚪ Ratings Retirados / Liquidados (14)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **MERCADOLIVRE. ATIVIDADES INTERNET** | National Long Term Rating | `AAA(bra)` | Estável | 08/10/2026 |
 | Fitch | **PNEUCASH FIDC** | securities ser 6 | `A+sf(bra)` | Estável | 21/10/2026 |
+| Fitch | **RIZA SECURITIZADORA 2022** | securities ser 1 | `AA+sf(bra)` | Estável | 15/04/2026 |
 | Fitch | **ELETRORIVER** | BRL 805 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA(bra)` | Estável | 21/09/2026 |
 | Fitch | **BSB ENERGETICA** | BRL 345 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA+(bra)` | Positiva | 21/09/2026 |
 | Fitch | **BSEC SECURITIZADORA 2011** | certificates | `BBBsf(bra)` | Estável | 20/10/2026 |
@@ -158,4 +163,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (31/10/2026 → 02/11/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 3 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 2 perspectivas | ⚪ 2 retirados.*
