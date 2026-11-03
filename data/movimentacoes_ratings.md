@@ -11,7 +11,7 @@
 | 🔴 **Downgrades (Rebaixamentos)** | 13 | 25 | **38** |
 | 🔵 **Novos Ratings** | 11 | 63 | **74** |
 | 🟡 **Mudanças de Perspectiva** | 7 | 15 | **22** |
-| ⚪ **Ratings Retirados / Liquidados** | 1 | 12 | **13** |
+| ⚪ **Ratings Retirados / Liquidados** | 1 | 11 | **12** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 22
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -49,12 +49,12 @@
 | S&P | **CSN MINERACAO** | Escala Nacional Brasil de Longo Prazo | `brA-` | **`brBBB`** | `-2` | Negativa | 20/10/2026 |
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | National Long Term Rating | `AA+(bra)` | **`A(bra)`** | `-4` | Negativa | 08/10/2026 |
 | Fitch | **PBG** | National Long Term Rating | `BBB(bra)` | **`RD(bra)`** | `-13` | Estável | 21/10/2026 |
-| Fitch | **RAIZEN ENERGIA** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
-| Fitch | **RAIZEN ENERGIA** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
-| Fitch | **RAIZEN ENERGIA** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN ENERGIA** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN ENERGIA** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN ENERGIA** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Liberum | **ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP4` | **`CP5`** | `-1` | Estável | 06/10/2026 |
 | Liberum | **SATURNO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/10/2026 |
 | Liberum | **GRIF CREDITO PULVERIZADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Única - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 30/10/2026 |
@@ -62,8 +62,8 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Longo prazo | `BBB` | **`BB+`** | `-2` | Negativa | 16/10/2026 |
 | Liberum | **FAMA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 28/10/2026 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brCC`** | `-6` | Estável | 23/02/2021 |
-| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | **`AAsf(bra)`** | `-2` | Estável | 25/06/2026 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
 | Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Positiva | 24/06/2026 |
 | Fitch | **GDS SUBHOLDING** | BRL 376 mln bond/note 01-Sep-2043 | `AA(bra)` | **`BBB(bra)`** | `-6` | Em Observação | 08/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-3 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
@@ -142,7 +142,7 @@
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | 9ª Emissão de Debêntures de BRL1,5 bilhão e vencimento em 2032 | **`A(bra)`** | Estável | 08/10/2026 |
 | *...e mais 44 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (13)
+### ⚪ Ratings Retirados / Liquidados (12)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **MERCADOLIVRE. ATIVIDADES INTERNET** | National Long Term Rating | `AAA(bra)` | Estável | 08/10/2026 |
@@ -152,7 +152,6 @@
 | Fitch | **BSEC SECURITIZADORA 2011** | certificates | `BBBsf(bra)` | Estável | 20/10/2026 |
 | Fitch | **LOCALIZA FLEET** | 9ª Debentures (Série Única) | `AAA(bra)` | Estável | 05/10/2026 |
 | Fitch | **UNIAO QUIMICA FARMACEUTICA NACIONAL** | BRL 600 mln Series 14 Floating bond/note 15-Oct-2026 | `AA-(bra)` | Estável | 15/10/2026 |
-| Fitch | **CONCESSIONARIA AEROPORTO INTERNACIONAL GUARULHOS** | 2a Emissão - Série Unica | `A+(bra)` | Estável | 15/10/2026 |
 | Fitch | **COPEL GERACAO TRANSMISSAO** | BRL 1.5 bln Floating CDI (Brazil) 1.38% bond/note 15-Oct-2026 | `AAA(bra)` | Estável | 15/10/2026 |
 | Fitch | **MOVIDA PARTICIPACOES** | BRL 1 bln Floating bond/note 15-Oct-2026 | `AA(bra)` | Estável | 15/10/2026 |
 | Fitch | **MRS LOGISTICA** | 1ª Emissão Notas Promissórias | `AAA(bra)` | Estável | 21/10/2026 |
@@ -161,4 +160,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (02/11/2026 → 03/11/2026)
-*Total nas últimas 24h: 🟢 1 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 7 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*

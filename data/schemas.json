@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-11-02"
+        "example": "2026-11-03"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACRE BG FIDC - SUBORDINADAS JÚNIOR"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4680/Acre_BG_FIDC_-_Subordinadas_Júnior_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "de_rating_cp",
@@ -293,17 +293,17 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-14"
+        "example": "2026-06-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Rating Inicial"
       },
       {
         "name": "de_outlook",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11069"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "BANFITA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MULTISSETORIAL"
+        "example": "LITUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29313"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29312"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "BANFITA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS MULTISSETORIAL"
+        "example": "LITUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29313"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29312"
       },
       {
         "name": "no_tipo_rating",
@@ -362,12 +362,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BBB+"
+        "example": "BBB-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-10-30"
+        "example": "2026-11-03"
       },
       {
         "name": "de_acao_rating",
