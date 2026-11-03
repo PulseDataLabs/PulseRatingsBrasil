@@ -1,17 +1,17 @@
-# 📊 Relatório de Movimentações de Ratings (02/11/2026)
+# 📊 Relatório de Movimentações de Ratings (03/11/2026)
 
 *Painel consolidado de **Upgrades**, **Downgrades**, **Novos Ratings** e **Alterações de Perspectiva**.*
 
-*Período monitorado: **03/10/2026** a **02/11/2026**.*
+*Período monitorado: **03/10/2026** a **03/11/2026**.*
 
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 12 | 10 | **22** |
-| 🔴 **Downgrades (Rebaixamentos)** | 13 | 26 | **39** |
+| 🔴 **Downgrades (Rebaixamentos)** | 13 | 25 | **38** |
 | 🔵 **Novos Ratings** | 11 | 63 | **74** |
 | 🟡 **Mudanças de Perspectiva** | 7 | 15 | **22** |
-| ⚪ **Ratings Retirados / Liquidados** | 1 | 13 | **14** |
+| ⚪ **Ratings Retirados / Liquidados** | 1 | 12 | **13** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 22
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -39,7 +39,7 @@
 | Fitch | **ELDORADO CELULOSE** | BRL 1 bln 6.95% bond/note 15-Dec-2040 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 29/10/2026 |
 | Fitch | **ELDORADO CELULOSE** | BRL 1.5 bln bond/note 15-Oct-2035 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 29/10/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 39
+### 🔴 Rebaixamentos de Rating (Downgrades) — 38
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **BANCO SOFISA** | Escala Nacional Brasil de Longo Prazo | `brAA+` | **`brAA`** | `-1` | Estável | 14/10/2026 |
@@ -49,12 +49,12 @@
 | S&P | **CSN MINERACAO** | Escala Nacional Brasil de Longo Prazo | `brA-` | **`brBBB`** | `-2` | Negativa | 20/10/2026 |
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | National Long Term Rating | `AA+(bra)` | **`A(bra)`** | `-4` | Negativa | 08/10/2026 |
 | Fitch | **PBG** | National Long Term Rating | `BBB(bra)` | **`RD(bra)`** | `-13` | Estável | 21/10/2026 |
-| Fitch | **RAIZEN** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
-| Fitch | **RAIZEN** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
-| Fitch | **RAIZEN** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN ENERGIA** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN ENERGIA** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN ENERGIA** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN** | Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN** | National Long Term Rating | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
+| Fitch | **RAIZEN** | Local Currency Long Term Issuer Default Rating | `C` | **`RD`** | `-1` | Estável | 22/10/2026 |
 | Liberum | **ACELERA VAREJO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP4` | **`CP5`** | `-1` | Estável | 06/10/2026 |
 | Liberum | **SATURNO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 23/10/2026 |
 | Liberum | **GRIF CREDITO PULVERIZADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Única - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 30/10/2026 |
@@ -64,7 +64,6 @@
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brCC`** | `-6` | Estável | 23/02/2021 |
 | Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | **`AAsf(bra)`** | `-2` | Estável | 25/06/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
 | Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Positiva | 24/06/2026 |
 | Fitch | **GDS SUBHOLDING** | BRL 376 mln bond/note 01-Sep-2043 | `AA(bra)` | **`BBB(bra)`** | `-6` | Em Observação | 08/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-3 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
@@ -143,12 +142,11 @@
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | 9ª Emissão de Debêntures de BRL1,5 bilhão e vencimento em 2032 | **`A(bra)`** | Estável | 08/10/2026 |
 | *...e mais 44 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (14)
+### ⚪ Ratings Retirados / Liquidados (13)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **MERCADOLIVRE. ATIVIDADES INTERNET** | National Long Term Rating | `AAA(bra)` | Estável | 08/10/2026 |
 | Fitch | **PNEUCASH FIDC** | securities ser 6 | `A+sf(bra)` | Estável | 21/10/2026 |
-| Fitch | **RIZA SECURITIZADORA 2022** | securities ser 1 | `AA+sf(bra)` | Estável | 15/04/2026 |
 | Fitch | **ELETRORIVER** | BRL 805 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA(bra)` | Estável | 21/09/2026 |
 | Fitch | **BSB ENERGETICA** | BRL 345 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA+(bra)` | Positiva | 21/09/2026 |
 | Fitch | **BSEC SECURITIZADORA 2011** | certificates | `BBBsf(bra)` | Estável | 20/10/2026 |
@@ -162,5 +160,5 @@
 | Fitch | **C MODAS** | BRL 495.96 mln Floating CDI (Brazil) 1.8% bond/note 15-Jul-2027 | `AA(bra)` | Estável | 29/10/2026 |
 
 ---
-### ⚡ Movimentações da Última Captura Diária (31/10/2026 → 02/11/2026)
-*Total nas últimas 24h: 🟢 3 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 2 perspectivas | ⚪ 2 retirados.*
+### ⚡ Movimentações da Última Captura Diária (02/11/2026 → 03/11/2026)
+*Total nas últimas 24h: 🟢 1 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
