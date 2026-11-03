@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "LITUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
+        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS CONCRÉDITO DE RESPONSABILIDADE ILIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29312"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29304"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "LITUS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
+        "example": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS CONCRÉDITO DE RESPONSABILIDADE ILIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29312"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29304"
       },
       {
         "name": "no_tipo_rating",
@@ -362,7 +362,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "BBB-"
+        "example": "CP3"
       },
       {
         "name": "dt_acao_rating",
@@ -382,12 +382,12 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": "Mezanino"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Longo prazo"
+        "example": "Curto prazo"
       }
     ]
   },
