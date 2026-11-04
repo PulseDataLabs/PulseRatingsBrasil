@@ -1,43 +1,43 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-11-04T14:06:10.133447",
+  "timestamp": "2026-11-04T18:33:14.102846",
   "dt_atual": "2026-11-04",
   "dt_anterior": "2026-11-03",
   "resumo": {
-    "upgrades_emissores": 13,
+    "upgrades_emissores": 16,
     "upgrades_emissoes": 11,
-    "total_upgrades": 24,
+    "total_upgrades": 27,
     "downgrades_emissores": 13,
-    "downgrades_emissoes": 26,
-    "total_downgrades": 39,
+    "downgrades_emissoes": 25,
+    "total_downgrades": 38,
     "novos_emissores": 11,
     "novos_emissoes": 63,
     "total_novos": 74,
-    "outlooks_emissores": 7,
+    "outlooks_emissores": 8,
     "outlooks_emissoes": 17,
-    "total_outlooks": 24,
+    "total_outlooks": 25,
     "retirados_emissores": 1,
-    "retirados_emissoes": 11,
-    "total_retirados": 12
+    "retirados_emissoes": 12,
+    "total_retirados": 13
   },
   "periodo_recente": {
     "dt_atual": "2026-11-04",
     "dt_anterior": "2026-10-05",
     "resumo": {
-      "upgrades_emissores": 13,
+      "upgrades_emissores": 16,
       "upgrades_emissoes": 11,
-      "total_upgrades": 24,
+      "total_upgrades": 27,
       "downgrades_emissores": 13,
-      "downgrades_emissoes": 26,
-      "total_downgrades": 39,
+      "downgrades_emissoes": 25,
+      "total_downgrades": 38,
       "novos_emissores": 11,
       "novos_emissoes": 63,
       "total_novos": 74,
-      "outlooks_emissores": 7,
+      "outlooks_emissores": 8,
       "outlooks_emissoes": 17,
-      "total_outlooks": 24,
+      "total_outlooks": 25,
       "retirados_emissores": 1,
-      "retirados_emissoes": 11,
-      "total_retirados": 12
+      "retirados_emissoes": 12,
+      "total_retirados": 13
     },
     "emissores": {
       "tipo": "emissores",
@@ -209,6 +209,45 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "rating_anterior": "bbb",
           "rating_atual": "bbb+",
           "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UNIDAS LOCACOES SERVICOS",
+          "instrumento": "Long Term Issuer Default Rating",
+          "dt_acao": "2026-11-04",
+          "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+          "rating_anterior": "BB-",
+          "rating_atual": "BB",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UNIDAS LOCACOES SERVICOS",
+          "instrumento": "Local Currency Long Term Issuer Default Rating",
+          "dt_acao": "2026-11-04",
+          "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+          "rating_anterior": "BB-",
+          "rating_atual": "BB",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UNIDAS LOCACOES SERVICOS",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-11-04",
+          "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+          "rating_anterior": "AA(bra)",
+          "rating_atual": "AA+(bra)",
+          "outlook_anterior": "Positiva",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
@@ -546,6 +585,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "0"
         },
         {
+          "agencia": "S&P",
+          "emissor": "BANCO FIBRA",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2025-08-18",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1000691",
+          "rating_atual": "brA-",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        },
+        {
           "agencia": "Moody's",
           "emissor": "RODOVIAS INTEGRADAS OESTE",
           "instrumento": "Rating de Emissor",
@@ -625,19 +676,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "rating_atual": "BBB-",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brBBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+2"
         },
@@ -757,6 +795,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UNIDAS LOCACOES SERVICOS",
+          "instrumento": "21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032",
+          "dt_acao": "2026-11-04",
+          "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059#issues",
+          "rating_anterior": "AA(bra)",
+          "rating_atual": "AA+(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
         }
       ],
       "downgrades": [
@@ -852,19 +903,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "-6"
         },
         {
-          "agencia": "Fitch",
-          "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-          "instrumento": "notes",
-          "dt_acao": "2026-06-25",
-          "link": "https://www.fitchratings.com/entity/credito-universitario-fundo-de-investimento-em-direitos-creditorios-96969819#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "AAsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
-        },
-        {
           "agencia": "Austin",
           "emissor": "HIGH YIELD YALEEH FIDC",
           "instrumento": "SUBORDINADAS PREFERENCIAIS",
@@ -879,16 +917,16 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
+          "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
+          "rating_atual": "brB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
+          "variacao_notches": "-3"
         },
         {
           "agencia": "Fitch",
@@ -2003,6 +2041,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
+          "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+          "instrumento": "notes",
+          "dt_acao": "2026-11-04",
+          "link": "https://www.fitchratings.com/entity/credito-universitario-fundo-de-investimento-em-direitos-creditorios-96969819#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "WDsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "PNEUCASH FIDC",
           "instrumento": "securities ser 6",
           "dt_acao": "2026-10-21",
@@ -2151,21 +2202,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_atual": "2026-11-04",
     "dt_anterior": "2026-11-03",
     "resumo": {
-      "upgrades_emissores": 1,
-      "upgrades_emissoes": 1,
-      "total_upgrades": 2,
+      "upgrades_emissores": 4,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 6,
       "downgrades_emissores": 0,
       "downgrades_emissoes": 2,
       "total_downgrades": 2,
       "novos_emissores": 0,
       "novos_emissoes": 3,
       "total_novos": 3,
-      "outlooks_emissores": 0,
+      "outlooks_emissores": 1,
       "outlooks_emissoes": 0,
-      "total_outlooks": 0,
+      "total_outlooks": 1,
       "retirados_emissores": 0,
-      "retirados_emissoes": 0,
-      "total_retirados": 0
+      "retirados_emissoes": 1,
+      "total_retirados": 1
     },
     "emissores": {
       "tipo": "emissores",
@@ -2184,11 +2235,63 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UNIDAS LOCACOES SERVICOS",
+          "instrumento": "Long Term Issuer Default Rating",
+          "dt_acao": "2026-11-04",
+          "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+          "rating_anterior": "BB-",
+          "rating_atual": "BB",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UNIDAS LOCACOES SERVICOS",
+          "instrumento": "Local Currency Long Term Issuer Default Rating",
+          "dt_acao": "2026-11-04",
+          "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+          "rating_anterior": "BB-",
+          "rating_atual": "BB",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UNIDAS LOCACOES SERVICOS",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-11-04",
+          "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+          "rating_anterior": "AA(bra)",
+          "rating_atual": "AA+(bra)",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
         }
       ],
       "downgrades": [],
       "novos": [],
-      "outlooks": [],
+      "outlooks": [
+        {
+          "agencia": "S&P",
+          "emissor": "BANCO FIBRA",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2025-08-18",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1000691",
+          "rating_atual": "brA-",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        }
+      ],
       "retirados": []
     },
     "emissoes": {
@@ -2204,6 +2307,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
           "rating_anterior": "brAA-",
           "rating_atual": "brAA",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UNIDAS LOCACOES SERVICOS",
+          "instrumento": "21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032",
+          "dt_acao": "2026-11-04",
+          "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059#issues",
+          "rating_anterior": "AA(bra)",
+          "rating_atual": "AA+(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
@@ -2226,14 +2342,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
+          "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-5"
         }
@@ -2274,10 +2390,104 @@ window.PULSERATINGS_MOVIMENTACOES = {
         }
       ],
       "outlooks": [],
-      "retirados": []
+      "retirados": [
+        {
+          "agencia": "Fitch",
+          "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+          "instrumento": "notes",
+          "dt_acao": "2026-11-04",
+          "link": "https://www.fitchratings.com/entity/credito-universitario-fundo-de-investimento-em-direitos-creditorios-96969819#issues",
+          "rating_anterior": "AAsf(bra)",
+          "rating_atual": "WDsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        }
+      ]
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Fitch",
+      "emissor": "UNIDAS LOCACOES SERVICOS",
+      "instrumento": "Long Term Issuer Default Rating",
+      "dt_acao": "2026-11-04",
+      "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+      "rating_anterior": "BB-",
+      "rating_atual": "BB",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-11-04"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UNIDAS LOCACOES SERVICOS",
+      "instrumento": "Local Currency Long Term Issuer Default Rating",
+      "dt_acao": "2026-11-04",
+      "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+      "rating_anterior": "BB-",
+      "rating_atual": "BB",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-11-04"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UNIDAS LOCACOES SERVICOS",
+      "instrumento": "National Long Term Rating",
+      "dt_acao": "2026-11-04",
+      "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+      "rating_anterior": "AA(bra)",
+      "rating_atual": "AA+(bra)",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-11-04"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UNIDAS LOCACOES SERVICOS",
+      "instrumento": "21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032",
+      "dt_acao": "2026-11-04",
+      "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059#issues",
+      "rating_anterior": "AA(bra)",
+      "rating_atual": "AA+(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-11-04"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "instrumento": "notes",
+      "dt_acao": "2026-11-04",
+      "link": "https://www.fitchratings.com/entity/credito-universitario-fundo-de-investimento-em-direitos-creditorios-96969819#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "WDsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-11-04"
+    },
     {
       "agencia": "Fitch",
       "emissor": "PETROLEO BRASILEIRO",
@@ -4719,22 +4929,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-      "instrumento": "notes",
-      "dt_acao": "2026-06-25",
-      "link": "https://www.fitchratings.com/entity/credito-universitario-fundo-de-investimento-em-direitos-creditorios-96969819#issues",
-      "rating_anterior": "AAAsf(bra)",
-      "rating_atual": "AAsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-04"
-    },
-    {
-      "agencia": "Fitch",
       "emissor": "ECO SECURITIZADORA 2022",
       "instrumento": "notes ser 2",
       "dt_acao": "2026-06-24",
@@ -4770,31 +4964,30 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBB+",
-      "rating_atual": "brBBB",
+      "rating_atual": "brB+",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+2",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-3",
       "categoria": "Emissão",
-      "tipo": "UPGRADE",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-04"
     },
     {
-      "agencia": "Austin",
-      "emissor": "FIDC IC SOMAPAY",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2024-08-12",
-      "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB+",
-      "rating_atual": "brB-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-5",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
+      "agencia": "S&P",
+      "emissor": "BANCO FIBRA",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "dt_acao": "2025-08-18",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1000691",
+      "rating_atual": "brA-",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
       "dt_captura": "2026-11-04"
     },
     {
@@ -4876,6 +5069,86 @@ window.PULSERATINGS_MOVIMENTACOES = {
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "Fitch",
+      "emissor": "UNIDAS LOCACOES SERVICOS",
+      "instrumento": "Long Term Issuer Default Rating",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "BB-",
+      "rating_atual": "BB",
+      "variacao_notches": "+1",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-04",
+      "dt_captura": "2026-11-04",
+      "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UNIDAS LOCACOES SERVICOS",
+      "instrumento": "Local Currency Long Term Issuer Default Rating",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "BB-",
+      "rating_atual": "BB",
+      "variacao_notches": "+1",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-04",
+      "dt_captura": "2026-11-04",
+      "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UNIDAS LOCACOES SERVICOS",
+      "instrumento": "National Long Term Rating",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "AA(bra)",
+      "rating_atual": "AA+(bra)",
+      "variacao_notches": "+1",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-04",
+      "dt_captura": "2026-11-04",
+      "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UNIDAS LOCACOES SERVICOS",
+      "instrumento": "21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "AA(bra)",
+      "rating_atual": "AA+(bra)",
+      "variacao_notches": "+1",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-04",
+      "dt_captura": "2026-11-04",
+      "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "instrumento": "notes",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "WDsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-04",
+      "dt_captura": "2026-11-04",
+      "link": "https://www.fitchratings.com/entity/credito-universitario-fundo-de-investimento-em-direitos-creditorios-96969819#issues"
+    },
     {
       "agencia": "Fitch",
       "emissor": "PETROLEO BRASILEIRO",
@@ -7547,6 +7820,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-04-15",
       "dt_captura": "2026-11-04",
       "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues"
+    },
+    {
+      "agencia": "S&P",
+      "emissor": "BANCO FIBRA",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "brA-",
+      "variacao_notches": "0",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Negativa",
+      "dt_acao": "2025-08-18",
+      "dt_captura": "2026-11-04",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1000691"
     },
     {
       "agencia": "S&P",
@@ -192938,6 +193227,45 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "UNIDAS LOCACOES SERVICOS",
+        "instrumento": "Long Term Issuer Default Rating",
+        "dt_acao": "2026-11-04",
+        "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+        "rating_anterior": "BB-",
+        "rating_atual": "BB",
+        "outlook_anterior": "Positiva",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "UNIDAS LOCACOES SERVICOS",
+        "instrumento": "Local Currency Long Term Issuer Default Rating",
+        "dt_acao": "2026-11-04",
+        "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+        "rating_anterior": "BB-",
+        "rating_atual": "BB",
+        "outlook_anterior": "Positiva",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "UNIDAS LOCACOES SERVICOS",
+        "instrumento": "National Long Term Rating",
+        "dt_acao": "2026-11-04",
+        "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059",
+        "rating_anterior": "AA(bra)",
+        "rating_atual": "AA+(bra)",
+        "outlook_anterior": "Positiva",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
       }
     ],
     "downgrades": [
@@ -193272,6 +193600,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "0"
       },
       {
+        "agencia": "S&P",
+        "emissor": "BANCO FIBRA",
+        "instrumento": "Escala Nacional Brasil de Longo Prazo",
+        "dt_acao": "2025-08-18",
+        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1000691",
+        "rating_atual": "brA-",
+        "outlook_anterior": "Positiva",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "OUTLOOK",
+        "variacao_notches": "0"
+      },
+      {
         "agencia": "Moody's",
         "emissor": "RODOVIAS INTEGRADAS OESTE",
         "instrumento": "Rating de Emissor",
@@ -193351,19 +193691,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "rating_atual": "BBB-",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+2"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brBBB",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+2"
       },
@@ -193483,6 +193810,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "UNIDAS LOCACOES SERVICOS",
+        "instrumento": "21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032",
+        "dt_acao": "2026-11-04",
+        "link": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059#issues",
+        "rating_anterior": "AA(bra)",
+        "rating_atual": "AA+(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
       }
     ],
     "downgrades": [
@@ -193578,19 +193918,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "-6"
       },
       {
-        "agencia": "Fitch",
-        "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-        "instrumento": "notes",
-        "dt_acao": "2026-06-25",
-        "link": "https://www.fitchratings.com/entity/credito-universitario-fundo-de-investimento-em-direitos-creditorios-96969819#issues",
-        "rating_anterior": "AAAsf(bra)",
-        "rating_atual": "AAsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
-      },
-      {
         "agencia": "Austin",
         "emissor": "HIGH YIELD YALEEH FIDC",
         "instrumento": "SUBORDINADAS PREFERENCIAIS",
@@ -193605,16 +193932,16 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Austin",
-        "emissor": "FIDC IC SOMAPAY",
+        "emissor": "FICTOR INVEST FIDC",
         "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2024-08-12",
-        "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brBB+",
-        "rating_atual": "brB-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
+        "rating_atual": "brB+",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-5"
+        "variacao_notches": "-3"
       },
       {
         "agencia": "Fitch",
@@ -194727,6 +195054,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "retirados": [
+      {
+        "agencia": "Fitch",
+        "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+        "instrumento": "notes",
+        "dt_acao": "2026-11-04",
+        "link": "https://www.fitchratings.com/entity/credito-universitario-fundo-de-investimento-em-direitos-creditorios-96969819#issues",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "WDsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
       {
         "agencia": "Fitch",
         "emissor": "PNEUCASH FIDC",

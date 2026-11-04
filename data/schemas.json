@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Petroleo Brasileiro S.A. (Petrobras)"
+        "example": "Unidas Locacoes E Servicos S/A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80090802"
+        "example": "https://www.fitchratings.com/entity/ouro-verde-locacao-e-servico-sa-88650059"
       },
       {
         "name": "no_tipo_rating",
@@ -79,12 +79,12 @@
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-11-03"
+        "example": "2026-11-04"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Affirmed"
+        "example": "Upgrade"
       },
       {
         "name": "de_outlook",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Petroleo Brasileiro S.A. (Petrobras)"
+        "example": "Credito Universitario Fundo de Investimento em Direitos Creditorios"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/petroleo-brasileiro-sa-petrobras-80090802"
+        "example": "https://www.fitchratings.com/entity/credito-universitario-fundo-de-investimento-em-direitos-creditorios-96969819"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
+        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB-"
       },
       {
         "name": "de_rating_cp",
@@ -293,7 +293,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brB-"
       },
       {
         "name": "dt_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11646"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11648"
       }
     ]
   },
