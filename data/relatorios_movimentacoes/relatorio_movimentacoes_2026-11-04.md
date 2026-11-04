@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 13 | 10 | **23** |
+| 🟢 **Upgrades (Elevações)** | 13 | 11 | **24** |
 | 🔴 **Downgrades (Rebaixamentos)** | 13 | 26 | **39** |
-| 🔵 **Novos Ratings** | 11 | 60 | **71** |
+| 🔵 **Novos Ratings** | 11 | 63 | **74** |
 | 🟡 **Mudanças de Perspectiva** | 7 | 17 | **24** |
-| ⚪ **Ratings Retirados / Liquidados** | 1 | 13 | **14** |
+| ⚪ **Ratings Retirados / Liquidados** | 1 | 11 | **12** |
 
-### 🟢 Elevações de Rating (Upgrades) — 23
+### 🟢 Elevações de Rating (Upgrades) — 24
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **BANCO ORIGINAL** | Escala Nacional Brasil de Curto Prazo | `brA-2` | **`brA-1`** | `+1` | Estável | 08/10/2026 |
@@ -30,6 +30,7 @@
 | Fitch | **BANCO BOCOM BBM** | Local Currency Long Term Issuer Default Rating (xgs) | `BB(xgs)` | **`BB+(xgs)`** | `+1` | Estável | 30/10/2026 |
 | Fitch | **PETROLEO BRASILEIRO** | Standalone Credit Profile | `bbb` | **`bbb+`** | `+1` | Estável | 03/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Longo prazo | `BB` | **`BBB-`** | `+2` | Estável | 16/10/2026 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB+` | **`brBBB`** | `+2` | Negativa | 09/10/2025 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
@@ -65,7 +66,7 @@
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brCC`** | `-6` | Estável | 23/02/2021 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | **`AAsf(bra)`** | `-2` | Estável | 25/06/2026 |
 | Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB+` | **`brBBB-`** | `-2` | Estável | 06/03/2024 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB+` | **`brB+`** | `-3` | Negativa | 09/10/2025 |
+| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
 | Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Positiva | 24/06/2026 |
 | Fitch | **GDS SUBHOLDING** | BRL 376 mln bond/note 01-Sep-2043 | `AA(bra)` | **`BBB(bra)`** | `-6` | Em Observação | 08/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-3 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
@@ -111,7 +112,7 @@
 | Moody's | **RODOVIAS INTEGRADAS OESTE** | 14ª Emissão de Debêntures - Série Única | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (71)
+### 🔵 Novos Ratings Atribuídos (74)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Moody's | **COMPANHIA GAS ESTADO RIO GRANDE SUL** | Rating de Emissor | **`AAA.br`** | Estável | 05/10/2026 |
@@ -144,15 +145,13 @@
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | 10ª Emissão de Debêntures de BRL3,65 bilhões e vencimento em 2033 | **`A(bra)`** | Estável | 08/10/2026 |
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | 6ª Emissão de Debêntures de BRL1,2 bilhão (cedidas da BCBF) e vencimento em 2027 | **`A(bra)`** | Estável | 08/10/2026 |
 | Fitch | **COMPANHIA AGUAS ESGOTOS RIO GRANDE NORTE** | BRL 179 mln Floating bond/note 19-Jan-2028 | **`A+(bra)`** | Estável | 08/10/2026 |
-| *...e mais 41 novos ratings.* | | | | | |
+| *...e mais 44 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (14)
+### ⚪ Ratings Retirados / Liquidados (12)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **MERCADOLIVRE. ATIVIDADES INTERNET** | National Long Term Rating | `AAA(bra)` | Estável | 08/10/2026 |
-| Fitch | **OPEA SECURITIZADORA 2019** | notes ser 1 | `AAAsf(bra)` | Estável | 05/12/2019 |
 | Fitch | **PNEUCASH FIDC** | securities ser 6 | `A+sf(bra)` | Estável | 21/10/2026 |
-| Fitch | **RIZA SECURITIZADORA 2022** | securities ser 1 | `AA+sf(bra)` | Estável | 15/04/2026 |
 | Fitch | **ELETRORIVER** | BRL 805 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA(bra)` | Estável | 21/09/2026 |
 | Fitch | **BSB ENERGETICA** | BRL 345 mln 7.04% Series 11 bond/note 15-Apr-2030 | `AA+(bra)` | Positiva | 21/09/2026 |
 | Fitch | **BSEC SECURITIZADORA 2011** | certificates | `BBsf(bra)` | Estável | 20/10/2026 |
@@ -166,4 +165,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (03/11/2026 → 04/11/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 2 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 2 retirados.*
+*Total nas últimas 24h: 🟢 2 upgrades | 🔴 2 downgrades | 🔵 3 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
