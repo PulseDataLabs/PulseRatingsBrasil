@@ -1,43 +1,43 @@
 {
-  "timestamp": "2026-11-05T01:38:00.425000",
+  "timestamp": "2026-11-05T14:39:34.968234",
   "dt_atual": "2026-11-05",
   "dt_anterior": "2026-11-04",
   "resumo": {
     "upgrades_emissores": 16,
-    "upgrades_emissoes": 12,
-    "total_upgrades": 28,
+    "upgrades_emissoes": 13,
+    "total_upgrades": 29,
     "downgrades_emissores": 13,
-    "downgrades_emissoes": 22,
-    "total_downgrades": 35,
+    "downgrades_emissoes": 23,
+    "total_downgrades": 36,
     "novos_emissores": 10,
     "novos_emissoes": 61,
     "total_novos": 71,
     "outlooks_emissores": 8,
     "outlooks_emissoes": 17,
     "total_outlooks": 25,
-    "retirados_emissores": 2,
-    "retirados_emissoes": 12,
-    "total_retirados": 14
+    "retirados_emissores": 3,
+    "retirados_emissoes": 15,
+    "total_retirados": 18
   },
   "periodo_recente": {
     "dt_atual": "2026-11-05",
     "dt_anterior": "2026-10-06",
     "resumo": {
       "upgrades_emissores": 16,
-      "upgrades_emissoes": 12,
-      "total_upgrades": 28,
+      "upgrades_emissoes": 13,
+      "total_upgrades": 29,
       "downgrades_emissores": 13,
-      "downgrades_emissoes": 22,
-      "total_downgrades": 35,
+      "downgrades_emissoes": 23,
+      "total_downgrades": 36,
       "novos_emissores": 10,
       "novos_emissoes": 61,
       "total_novos": 71,
       "outlooks_emissores": 8,
       "outlooks_emissoes": 17,
       "total_outlooks": 25,
-      "retirados_emissores": 2,
-      "retirados_emissoes": 12,
-      "total_retirados": 14
+      "retirados_emissores": 3,
+      "retirados_emissoes": 15,
+      "total_retirados": 18
     },
     "emissores": {
       "tipo": "emissores",
@@ -649,6 +649,19 @@
           "variacao_notches": "—"
         },
         {
+          "agencia": "Fitch",
+          "emissor": "COMPANHIA PARAIBANA GAS PBGAS",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.fitchratings.com/entity/companhia-paraibana-de-gas-pbgas-97518314",
+          "rating_anterior": "A(bra)",
+          "rating_atual": "WD(bra)",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
           "agencia": "Liberum",
           "emissor": "BANCO C6",
           "instrumento": "Finanças Públicas",
@@ -822,6 +835,19 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2025",
+          "instrumento": "notes ser 3",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.fitchratings.com/entity/opea-securitizadora-2025-192-1-2-3-eldorado-97787851#issues",
+          "rating_anterior": "AA+sf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
         }
       ],
       "downgrades": [
@@ -902,6 +928,19 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-6"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
         },
         {
           "agencia": "Austin",
@@ -1215,7 +1254,7 @@
         {
           "agencia": "Fitch",
           "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-          "instrumento": "5ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2030",
+          "instrumento": "8ª Emissão de Debêntures, 2ª Série, de BRL1,0 bilhão e vencimento em 2032",
           "dt_acao": "2026-10-08",
           "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
           "rating_atual": "A(bra)",
@@ -1226,7 +1265,7 @@
         {
           "agencia": "Fitch",
           "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-          "instrumento": "8ª Emissão de Debêntures, 2ª Série, de BRL1,0 bilhão e vencimento em 2032",
+          "instrumento": "5ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2030",
           "dt_acao": "2026-10-08",
           "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
           "rating_atual": "A(bra)",
@@ -1248,7 +1287,7 @@
         {
           "agencia": "Fitch",
           "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-          "instrumento": "9ª Emissão de Debêntures de BRL1,5 bilhão e vencimento em 2032",
+          "instrumento": "10ª Emissão de Debêntures de BRL3,65 bilhões e vencimento em 2033",
           "dt_acao": "2026-10-08",
           "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
           "rating_atual": "A(bra)",
@@ -1259,7 +1298,7 @@
         {
           "agencia": "Fitch",
           "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-          "instrumento": "10ª Emissão de Debêntures de BRL3,65 bilhões e vencimento em 2033",
+          "instrumento": "9ª Emissão de Debêntures de BRL1,5 bilhão e vencimento em 2032",
           "dt_acao": "2026-10-08",
           "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
           "rating_atual": "A(bra)",
@@ -1994,6 +2033,19 @@
       "retirados": [
         {
           "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2019",
+          "instrumento": "notes ser 1",
+          "dt_acao": "2019-12-05",
+          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "WDsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
           "instrumento": "notes",
           "dt_acao": "2026-11-04",
@@ -2012,6 +2064,19 @@
           "dt_acao": "2026-10-21",
           "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
           "rating_anterior": "A+sf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "RIZA SECURITIZADORA 2022",
+          "instrumento": "securities ser 1",
+          "dt_acao": "2026-04-15",
+          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+          "rating_anterior": "AA+sf(bra)",
           "rating_atual": "PIFsf(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
@@ -2147,6 +2212,19 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "RETIRADO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "EMPREENDIMENTOS PAGUE MENOS",
+          "instrumento": "BRL 100 mln / 6th debenture / tranche 1 / NOV.2026",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.fitchratings.com/entity/empreendimentos-pague-menos-sa-91480690#issues",
+          "rating_anterior": "AA-(bra)",
+          "rating_atual": "NR",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
         }
       ]
     }
@@ -2167,9 +2245,9 @@
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
-      "retirados_emissores": 0,
-      "retirados_emissoes": 0,
-      "total_retirados": 0
+      "retirados_emissores": 1,
+      "retirados_emissoes": 3,
+      "total_retirados": 4
     },
     "emissores": {
       "tipo": "emissores",
@@ -2179,26 +2257,27 @@
       "downgrades": [],
       "novos": [],
       "outlooks": [],
-      "retirados": []
+      "retirados": [
+        {
+          "agencia": "Fitch",
+          "emissor": "COMPANHIA PARAIBANA GAS PBGAS",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.fitchratings.com/entity/companhia-paraibana-de-gas-pbgas-97518314",
+          "rating_anterior": "A(bra)",
+          "rating_atual": "WD(bra)",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        }
+      ]
     },
     "emissoes": {
       "tipo": "emissoes",
       "dt_atual": "2026-11-05",
       "dt_anterior": "2026-11-04",
       "upgrades": [
-        {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB-",
-          "rating_atual": "brBBB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
         {
           "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
@@ -2211,6 +2290,19 @@
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+3"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2025",
+          "instrumento": "notes ser 3",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.fitchratings.com/entity/opea-securitizadora-2025-192-1-2-3-eldorado-97787851#issues",
+          "rating_anterior": "AA+sf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
         }
       ],
       "downgrades": [],
@@ -2228,10 +2320,98 @@
         }
       ],
       "outlooks": [],
-      "retirados": []
+      "retirados": [
+        {
+          "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2019",
+          "instrumento": "notes ser 1",
+          "dt_acao": "2019-12-05",
+          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "WDsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "RIZA SECURITIZADORA 2022",
+          "instrumento": "securities ser 1",
+          "dt_acao": "2026-04-15",
+          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+          "rating_anterior": "AA+sf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "EMPREENDIMENTOS PAGUE MENOS",
+          "instrumento": "BRL 100 mln / 6th debenture / tranche 1 / NOV.2026",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.fitchratings.com/entity/empreendimentos-pague-menos-sa-91480690#issues",
+          "rating_anterior": "AA-(bra)",
+          "rating_atual": "NR",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        }
+      ]
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Fitch",
+      "emissor": "COMPANHIA PARAIBANA GAS PBGAS",
+      "instrumento": "National Long Term Rating",
+      "dt_acao": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/companhia-paraibana-de-gas-pbgas-97518314",
+      "rating_anterior": "A(bra)",
+      "rating_atual": "WD(bra)",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissor",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-11-05"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2025",
+      "instrumento": "notes ser 3",
+      "dt_acao": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/opea-securitizadora-2025-192-1-2-3-eldorado-97787851#issues",
+      "rating_anterior": "AA+sf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-11-05"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "EMPREENDIMENTOS PAGUE MENOS",
+      "instrumento": "BRL 100 mln / 6th debenture / tranche 1 / NOV.2026",
+      "dt_acao": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/empreendimentos-pague-menos-sa-91480690#issues",
+      "rating_anterior": "AA-(bra)",
+      "rating_atual": "NR",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-11-05"
+    },
     {
       "agencia": "Fitch",
       "emissor": "UNIDAS LOCACOES SERVICOS",
@@ -4390,7 +4570,7 @@
     {
       "agencia": "Fitch",
       "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-      "instrumento": "5ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2030",
+      "instrumento": "8ª Emissão de Debêntures, 2ª Série, de BRL1,0 bilhão e vencimento em 2032",
       "dt_acao": "2026-10-08",
       "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
       "rating_atual": "A(bra)",
@@ -4404,7 +4584,7 @@
     {
       "agencia": "Fitch",
       "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-      "instrumento": "8ª Emissão de Debêntures, 2ª Série, de BRL1,0 bilhão e vencimento em 2032",
+      "instrumento": "5ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2030",
       "dt_acao": "2026-10-08",
       "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
       "rating_atual": "A(bra)",
@@ -4432,7 +4612,7 @@
     {
       "agencia": "Fitch",
       "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-      "instrumento": "9ª Emissão de Debêntures de BRL1,5 bilhão e vencimento em 2032",
+      "instrumento": "10ª Emissão de Debêntures de BRL3,65 bilhões e vencimento em 2033",
       "dt_acao": "2026-10-08",
       "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
       "rating_atual": "A(bra)",
@@ -4446,7 +4626,7 @@
     {
       "agencia": "Fitch",
       "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-      "instrumento": "10ª Emissão de Debêntures de BRL3,65 bilhões e vencimento em 2033",
+      "instrumento": "9ª Emissão de Debêntures de BRL1,5 bilhão e vencimento em 2032",
       "dt_acao": "2026-10-08",
       "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
       "rating_atual": "A(bra)",
@@ -4725,6 +4905,22 @@
       "dt_captura": "2026-11-05"
     },
     {
+      "agencia": "Fitch",
+      "emissor": "RIZA SECURITIZADORA 2022",
+      "instrumento": "securities ser 1",
+      "dt_acao": "2026-04-15",
+      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+      "rating_anterior": "AA+sf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-11-05"
+    },
+    {
       "agencia": "Austin",
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
@@ -4772,6 +4968,22 @@
       "dt_captura": "2026-11-05"
     },
     {
+      "agencia": "Austin",
+      "emissor": "HIGH YIELD YALEEH FIDC",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB+",
+      "rating_atual": "brBBB-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-05"
+    },
+    {
       "agencia": "S&P",
       "emissor": "VERO",
       "instrumento": "Escala Nacional Brasil de Longo Prazo",
@@ -4800,6 +5012,22 @@
       "variacao_notches": "-6",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-05"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2019",
+      "instrumento": "notes ser 1",
+      "dt_acao": "2019-12-05",
+      "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "WDsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
       "dt_captura": "2026-11-05"
     },
     {
@@ -4834,6 +5062,54 @@
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "Fitch",
+      "emissor": "COMPANHIA PARAIBANA GAS PBGAS",
+      "instrumento": "National Long Term Rating",
+      "categoria": "Emissor",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "A(bra)",
+      "rating_atual": "WD(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-05",
+      "dt_captura": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/companhia-paraibana-de-gas-pbgas-97518314"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2025",
+      "instrumento": "notes ser 3",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "AA+sf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "variacao_notches": "+1",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-05",
+      "dt_captura": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/opea-securitizadora-2025-192-1-2-3-eldorado-97787851#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "EMPREENDIMENTOS PAGUE MENOS",
+      "instrumento": "BRL 100 mln / 6th debenture / tranche 1 / NOV.2026",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AA-(bra)",
+      "rating_atual": "NR",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-05",
+      "dt_captura": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/empreendimentos-pague-menos-sa-91480690#issues"
+    },
     {
       "agencia": "Fitch",
       "emissor": "UNIDAS LOCACOES SERVICOS",
@@ -7491,6 +7767,22 @@
       "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-272-1-2-3-grupo-salta-97593456#issues"
     },
     {
+      "agencia": "Fitch",
+      "emissor": "RIZA SECURITIZADORA 2022",
+      "instrumento": "securities ser 1",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AA+sf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-04-15",
+      "dt_captura": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues"
+    },
+    {
       "agencia": "S&P",
       "emissor": "BANCO FIBRA",
       "instrumento": "Escala Nacional Brasil de Longo Prazo",
@@ -7521,6 +7813,22 @@
       "dt_acao": "2023-03-20",
       "dt_captura": "2026-11-05",
       "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000750"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2019",
+      "instrumento": "notes ser 1",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "tipo_movimento": "RETIRADO",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "WDsf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2019-12-05",
+      "dt_captura": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues"
     },
     {
       "agencia": "S&P",
@@ -196149,6 +196457,19 @@
         "variacao_notches": "—"
       },
       {
+        "agencia": "Fitch",
+        "emissor": "COMPANHIA PARAIBANA GAS PBGAS",
+        "instrumento": "National Long Term Rating",
+        "dt_acao": "2026-11-05",
+        "link": "https://www.fitchratings.com/entity/companhia-paraibana-de-gas-pbgas-97518314",
+        "rating_anterior": "A(bra)",
+        "rating_atual": "WD(bra)",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
         "agencia": "Liberum",
         "emissor": "BANCO C6",
         "instrumento": "Finanças Públicas",
@@ -196322,6 +196643,19 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+1"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "OPEA SECURITIZADORA 2025",
+        "instrumento": "notes ser 3",
+        "dt_acao": "2026-11-05",
+        "link": "https://www.fitchratings.com/entity/opea-securitizadora-2025-192-1-2-3-eldorado-97787851#issues",
+        "rating_anterior": "AA+sf(bra)",
+        "rating_atual": "AAAsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
       }
     ],
     "downgrades": [
@@ -196402,6 +196736,19 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-6"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB+",
+        "rating_atual": "brBBB-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
       },
       {
         "agencia": "Austin",
@@ -196715,7 +197062,7 @@
       {
         "agencia": "Fitch",
         "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-        "instrumento": "5ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2030",
+        "instrumento": "8ª Emissão de Debêntures, 2ª Série, de BRL1,0 bilhão e vencimento em 2032",
         "dt_acao": "2026-10-08",
         "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
         "rating_atual": "A(bra)",
@@ -196726,7 +197073,7 @@
       {
         "agencia": "Fitch",
         "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-        "instrumento": "8ª Emissão de Debêntures, 2ª Série, de BRL1,0 bilhão e vencimento em 2032",
+        "instrumento": "5ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2030",
         "dt_acao": "2026-10-08",
         "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
         "rating_atual": "A(bra)",
@@ -196748,7 +197095,7 @@
       {
         "agencia": "Fitch",
         "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-        "instrumento": "9ª Emissão de Debêntures de BRL1,5 bilhão e vencimento em 2032",
+        "instrumento": "10ª Emissão de Debêntures de BRL3,65 bilhões e vencimento em 2033",
         "dt_acao": "2026-10-08",
         "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
         "rating_atual": "A(bra)",
@@ -196759,7 +197106,7 @@
       {
         "agencia": "Fitch",
         "emissor": "HAPVIDA PARTICIPACOES INVESTIMENTOS",
-        "instrumento": "10ª Emissão de Debêntures de BRL3,65 bilhões e vencimento em 2033",
+        "instrumento": "9ª Emissão de Debêntures de BRL1,5 bilhão e vencimento em 2032",
         "dt_acao": "2026-10-08",
         "link": "https://www.fitchratings.com/entity/hapvida-participacoes-e-investimentos-sa-96783531#issues",
         "rating_atual": "A(bra)",
@@ -197494,6 +197841,19 @@
     "retirados": [
       {
         "agencia": "Fitch",
+        "emissor": "OPEA SECURITIZADORA 2019",
+        "instrumento": "notes ser 1",
+        "dt_acao": "2019-12-05",
+        "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "WDsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
         "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
         "instrumento": "notes",
         "dt_acao": "2026-11-04",
@@ -197512,6 +197872,19 @@
         "dt_acao": "2026-10-21",
         "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
         "rating_anterior": "A+sf(bra)",
+        "rating_atual": "PIFsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "RIZA SECURITIZADORA 2022",
+        "instrumento": "securities ser 1",
+        "dt_acao": "2026-04-15",
+        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+        "rating_anterior": "AA+sf(bra)",
         "rating_atual": "PIFsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
@@ -197643,6 +198016,19 @@
         "link": "https://www.fitchratings.com/entity/c-a-modas-sa-97131987#issues",
         "rating_anterior": "AA(bra)",
         "rating_atual": "WD(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "EMPREENDIMENTOS PAGUE MENOS",
+        "instrumento": "BRL 100 mln / 6th debenture / tranche 1 / NOV.2026",
+        "dt_acao": "2026-11-05",
+        "link": "https://www.fitchratings.com/entity/empreendimentos-pague-menos-sa-91480690#issues",
+        "rating_anterior": "AA-(bra)",
+        "rating_atual": "NR",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "RETIRADO",
