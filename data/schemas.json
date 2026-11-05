@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Opea Securitizadora S.A. 2025-192-1,2,3 (Eldorado)"
+        "example": "Companhia Paraibana de Gas PBGAS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/opea-securitizadora-2025-192-1-2-3-eldorado-97787851"
+        "example": "https://www.fitchratings.com/entity/companhia-paraibana-de-gas-pbgas-97518314"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
+        "example": "ADGM FIDC - SENIORES 3ª SÉRIE"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4595/ADGM_FIDC_-_Seniores_3ª_série"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brBBB+"
       },
       {
         "name": "de_rating_cp",
@@ -293,12 +293,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB-"
+        "example": "brBBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-06-18"
+        "example": "2024-07-10"
       },
       {
         "name": "de_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11646"
+        "example": "https://www.austin.com.br/Relatorio/Rating/ADGM_FIDC/10935"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "JC 4870 VI FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS NAO PADRONIZADOS FIDC-NP"
+        "example": "METROPOLITANA ATIVOS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISSETORIAL"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29249"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29327"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "JC 4870 VI FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS NAO PADRONIZADOS FIDC-NP"
+        "example": "METROPOLITANA ATIVOS FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISSETORIAL"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29249"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29327"
       },
       {
         "name": "no_tipo_rating",
@@ -372,7 +372,7 @@
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Atribuição"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",

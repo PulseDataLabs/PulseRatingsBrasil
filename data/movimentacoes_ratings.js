@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-11-05T14:39:34.968234",
+  "timestamp": "2026-11-05T18:44:24.550330",
   "dt_atual": "2026-11-05",
   "dt_anterior": "2026-11-04",
   "resumo": {
@@ -7,17 +7,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "upgrades_emissoes": 13,
     "total_upgrades": 29,
     "downgrades_emissores": 13,
-    "downgrades_emissoes": 23,
-    "total_downgrades": 36,
+    "downgrades_emissoes": 25,
+    "total_downgrades": 38,
     "novos_emissores": 10,
     "novos_emissoes": 61,
     "total_novos": 71,
-    "outlooks_emissores": 8,
+    "outlooks_emissores": 9,
     "outlooks_emissoes": 17,
-    "total_outlooks": 25,
+    "total_outlooks": 26,
     "retirados_emissores": 3,
-    "retirados_emissoes": 15,
-    "total_retirados": 18
+    "retirados_emissoes": 13,
+    "total_retirados": 16
   },
   "periodo_recente": {
     "dt_atual": "2026-11-05",
@@ -27,17 +27,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 13,
       "total_upgrades": 29,
       "downgrades_emissores": 13,
-      "downgrades_emissoes": 23,
-      "total_downgrades": 36,
+      "downgrades_emissoes": 25,
+      "total_downgrades": 38,
       "novos_emissores": 10,
       "novos_emissoes": 61,
       "total_novos": 71,
-      "outlooks_emissores": 8,
+      "outlooks_emissores": 9,
       "outlooks_emissoes": 17,
-      "total_outlooks": 25,
+      "total_outlooks": 26,
       "retirados_emissores": 3,
-      "retirados_emissoes": 15,
-      "total_retirados": 18
+      "retirados_emissoes": 13,
+      "total_retirados": 16
     },
     "emissores": {
       "tipo": "emissores",
@@ -575,6 +575,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "S&P",
+          "emissor": "ADAMI MADEIRAS",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2023-04-13",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001058",
+          "rating_atual": "brA+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        },
+        {
+          "agencia": "S&P",
           "emissor": "BANCO FIBRA",
           "instrumento": "Escala Nacional Brasil de Longo Prazo",
           "dt_acao": "2025-08-18",
@@ -947,13 +959,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBB-",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "variacao_notches": "-4"
         },
         {
           "agencia": "Fitch",
@@ -1149,6 +1161,32 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-2"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UTE GNA II GERACAO ENERGIA",
+          "instrumento": "1a serie - 2nd Debenture  BRL 375 mln bond/note 15-Dec-2045",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044#issues",
+          "rating_anterior": "AA-(bra)",
+          "rating_atual": "BBB-(bra)",
+          "outlook_anterior": "Em Observação",
+          "outlook_atual": "Em Observação",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-6"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UTE GNA II GERACAO ENERGIA",
+          "instrumento": "2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044#issues",
+          "rating_anterior": "AA-(bra)",
+          "rating_atual": "BBB-(bra)",
+          "outlook_anterior": "Em Observação",
+          "outlook_atual": "Em Observação",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-6"
         }
       ],
       "novos": [
@@ -1648,28 +1686,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "—"
         },
         {
-          "agencia": "Liberum",
-          "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
-          "instrumento": "Mezanino - Curto prazo",
-          "dt_acao": "2026-10-26",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
-          "rating_atual": "CP2",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Liberum",
-          "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
-          "instrumento": "Mezanino - Longo prazo",
-          "dt_acao": "2026-10-26",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
-          "rating_atual": "A-",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
           "agencia": "Moody's",
           "emissor": "LOCALIZA RENT CAR",
           "instrumento": "49ª Emissão de Debentures",
@@ -1819,6 +1835,28 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "dt_acao": "2026-11-04",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/29326",
           "rating_atual": "BBB+",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
+          "instrumento": "Mezanino - Curto prazo",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
+          "rating_atual": "CP2",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
+          "instrumento": "Mezanino - Longo prazo",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
+          "rating_atual": "A-",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -2033,19 +2071,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2019",
-          "instrumento": "notes ser 1",
-          "dt_acao": "2019-12-05",
-          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "WDsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
           "instrumento": "notes",
           "dt_acao": "2026-11-04",
@@ -2064,19 +2089,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "dt_acao": "2026-10-21",
           "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
           "rating_anterior": "A+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
           "rating_atual": "PIFsf(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
@@ -2237,17 +2249,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 2,
       "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 0,
-      "total_downgrades": 0,
+      "downgrades_emissoes": 2,
+      "total_downgrades": 2,
       "novos_emissores": 0,
       "novos_emissoes": 1,
       "total_novos": 1,
-      "outlooks_emissores": 0,
+      "outlooks_emissores": 1,
       "outlooks_emissoes": 0,
-      "total_outlooks": 0,
+      "total_outlooks": 1,
       "retirados_emissores": 1,
-      "retirados_emissoes": 3,
-      "total_retirados": 4
+      "retirados_emissoes": 1,
+      "total_retirados": 2
     },
     "emissores": {
       "tipo": "emissores",
@@ -2256,7 +2268,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades": [],
       "downgrades": [],
       "novos": [],
-      "outlooks": [],
+      "outlooks": [
+        {
+          "agencia": "S&P",
+          "emissor": "ADAMI MADEIRAS",
+          "instrumento": "Escala Nacional Brasil de Longo Prazo",
+          "dt_acao": "2023-04-13",
+          "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001058",
+          "rating_atual": "brA+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Positiva",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        }
+      ],
       "retirados": [
         {
           "agencia": "Fitch",
@@ -2283,13 +2308,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "emissor": "FICTOR INVEST FIDC",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brB+",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBB-",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
+          "variacao_notches": "+1"
         },
         {
           "agencia": "Fitch",
@@ -2305,7 +2330,34 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+1"
         }
       ],
-      "downgrades": [],
+      "downgrades": [
+        {
+          "agencia": "Fitch",
+          "emissor": "UTE GNA II GERACAO ENERGIA",
+          "instrumento": "1a serie - 2nd Debenture  BRL 375 mln bond/note 15-Dec-2045",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044#issues",
+          "rating_anterior": "AA-(bra)",
+          "rating_atual": "BBB-(bra)",
+          "outlook_anterior": "Em Observação",
+          "outlook_atual": "Em Observação",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-6"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UTE GNA II GERACAO ENERGIA",
+          "instrumento": "2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042",
+          "dt_acao": "2026-11-05",
+          "link": "https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044#issues",
+          "rating_anterior": "AA-(bra)",
+          "rating_atual": "BBB-(bra)",
+          "outlook_anterior": "Em Observação",
+          "outlook_atual": "Em Observação",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-6"
+        }
+      ],
       "novos": [
         {
           "agencia": "Liberum",
@@ -2321,32 +2373,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       ],
       "outlooks": [],
       "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2019",
-          "instrumento": "notes ser 1",
-          "dt_acao": "2019-12-05",
-          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "WDsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
         {
           "agencia": "Fitch",
           "emissor": "EMPREENDIMENTOS PAGUE MENOS",
@@ -2394,6 +2420,66 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
+      "dt_captura": "2026-11-05"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UTE GNA II GERACAO ENERGIA",
+      "instrumento": "1a serie - 2nd Debenture  BRL 375 mln bond/note 15-Dec-2045",
+      "dt_acao": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044#issues",
+      "rating_anterior": "AA-(bra)",
+      "rating_atual": "BBB-(bra)",
+      "outlook_anterior": "Em Observação",
+      "outlook_atual": "Em Observação",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-6",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-05"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UTE GNA II GERACAO ENERGIA",
+      "instrumento": "2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042",
+      "dt_acao": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044#issues",
+      "rating_anterior": "AA-(bra)",
+      "rating_atual": "BBB-(bra)",
+      "outlook_anterior": "Em Observação",
+      "outlook_atual": "Em Observação",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-6",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-05"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
+      "instrumento": "Mezanino - Curto prazo",
+      "dt_acao": "2026-11-05",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
+      "rating_atual": "CP2",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-05"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
+      "instrumento": "Mezanino - Longo prazo",
+      "dt_acao": "2026-11-05",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
+      "rating_atual": "A-",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
       "dt_captura": "2026-11-05"
     },
     {
@@ -3069,34 +3155,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-05"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
-      "instrumento": "Mezanino - Curto prazo",
-      "dt_acao": "2026-10-26",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
-      "rating_atual": "CP2",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-11-05"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
-      "instrumento": "Mezanino - Longo prazo",
-      "dt_acao": "2026-10-26",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
-      "rating_atual": "A-",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
       "dt_captura": "2026-11-05"
     },
     {
@@ -4905,33 +4963,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-05"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "instrumento": "securities ser 1",
-      "dt_acao": "2026-04-15",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-11-05"
-    },
-    {
       "agencia": "Austin",
       "emissor": "FICTOR INVEST FIDC",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBBB",
-      "rating_atual": "brBB+",
+      "rating_atual": "brBB-",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
+      "variacao_notches": "-4",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-05"
@@ -4985,6 +5027,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "S&P",
+      "emissor": "ADAMI MADEIRAS",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "dt_acao": "2023-04-13",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001058",
+      "rating_atual": "brA+",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Positiva",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-05"
+    },
+    {
+      "agencia": "S&P",
       "emissor": "VERO",
       "instrumento": "Escala Nacional Brasil de Longo Prazo",
       "dt_acao": "2023-03-20",
@@ -5012,22 +5069,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "-6",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-05"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "OPEA SECURITIZADORA 2019",
-      "instrumento": "notes ser 1",
-      "dt_acao": "2019-12-05",
-      "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-      "rating_anterior": "AAAsf(bra)",
-      "rating_atual": "WDsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
       "dt_captura": "2026-11-05"
     },
     {
@@ -5109,6 +5150,38 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-11-05",
       "dt_captura": "2026-11-05",
       "link": "https://www.fitchratings.com/entity/empreendimentos-pague-menos-sa-91480690#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UTE GNA II GERACAO ENERGIA",
+      "instrumento": "1a serie - 2nd Debenture  BRL 375 mln bond/note 15-Dec-2045",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "tipo_movimento": "DOWNGRADE",
+      "rating_anterior": "AA-(bra)",
+      "rating_atual": "BBB-(bra)",
+      "variacao_notches": "-6",
+      "outlook_anterior": "Em Observação",
+      "outlook_atual": "Em Observação",
+      "dt_acao": "2026-11-05",
+      "dt_captura": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UTE GNA II GERACAO ENERGIA",
+      "instrumento": "2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "tipo_movimento": "DOWNGRADE",
+      "rating_anterior": "AA-(bra)",
+      "rating_atual": "BBB-(bra)",
+      "variacao_notches": "-6",
+      "outlook_anterior": "Em Observação",
+      "outlook_atual": "Em Observação",
+      "dt_acao": "2026-11-05",
+      "dt_captura": "2026-11-05",
+      "link": "https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044#issues"
     },
     {
       "agencia": "Fitch",
@@ -7797,6 +7870,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2025-08-18",
       "dt_captura": "2026-11-05",
       "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1000691"
+    },
+    {
+      "agencia": "S&P",
+      "emissor": "ADAMI MADEIRAS",
+      "instrumento": "Escala Nacional Brasil de Longo Prazo",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "brA+",
+      "variacao_notches": "0",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Positiva",
+      "dt_acao": "2023-04-13",
+      "dt_captura": "2026-11-05",
+      "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001058"
     },
     {
       "agencia": "S&P",
@@ -196383,6 +196472,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "S&P",
+        "emissor": "ADAMI MADEIRAS",
+        "instrumento": "Escala Nacional Brasil de Longo Prazo",
+        "dt_acao": "2023-04-13",
+        "link": "https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001058",
+        "rating_atual": "brA+",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Positiva",
+        "tipo_movimento": "OUTLOOK",
+        "variacao_notches": "0"
+      },
+      {
+        "agencia": "S&P",
         "emissor": "BANCO FIBRA",
         "instrumento": "Escala Nacional Brasil de Longo Prazo",
         "dt_acao": "2025-08-18",
@@ -196755,13 +196856,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "emissor": "FICTOR INVEST FIDC",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5037/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brBBB",
-        "rating_atual": "brBB+",
+        "rating_atual": "brBB-",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
+        "variacao_notches": "-4"
       },
       {
         "agencia": "Fitch",
@@ -196957,6 +197058,32 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-2"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "UTE GNA II GERACAO ENERGIA",
+        "instrumento": "1a serie - 2nd Debenture  BRL 375 mln bond/note 15-Dec-2045",
+        "dt_acao": "2026-11-05",
+        "link": "https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044#issues",
+        "rating_anterior": "AA-(bra)",
+        "rating_atual": "BBB-(bra)",
+        "outlook_anterior": "Em Observação",
+        "outlook_atual": "Em Observação",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-6"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "UTE GNA II GERACAO ENERGIA",
+        "instrumento": "2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042",
+        "dt_acao": "2026-11-05",
+        "link": "https://www.fitchratings.com/entity/ute-gna-ii-geracao-de-energia-sa-97588044#issues",
+        "rating_anterior": "AA-(bra)",
+        "rating_atual": "BBB-(bra)",
+        "outlook_anterior": "Em Observação",
+        "outlook_atual": "Em Observação",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-6"
       }
     ],
     "novos": [
@@ -197456,28 +197583,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "—"
       },
       {
-        "agencia": "Liberum",
-        "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
-        "instrumento": "Mezanino - Curto prazo",
-        "dt_acao": "2026-10-26",
-        "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
-        "rating_atual": "CP2",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Liberum",
-        "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
-        "instrumento": "Mezanino - Longo prazo",
-        "dt_acao": "2026-10-26",
-        "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
-        "rating_atual": "A-",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
         "agencia": "Moody's",
         "emissor": "LOCALIZA RENT CAR",
         "instrumento": "49ª Emissão de Debentures",
@@ -197627,6 +197732,28 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-11-04",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/29326",
         "rating_atual": "BBB+",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
+        "instrumento": "Mezanino - Curto prazo",
+        "dt_acao": "2026-11-05",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
+        "rating_atual": "CP2",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Liberum",
+        "emissor": "FUNDO INVESTIMENTOS DIREITOS CREDITORIOS MULTISSETORIAL ONE7 LP",
+        "instrumento": "Mezanino - Longo prazo",
+        "dt_acao": "2026-11-05",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/29251",
+        "rating_atual": "A-",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -197841,19 +197968,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "retirados": [
       {
         "agencia": "Fitch",
-        "emissor": "OPEA SECURITIZADORA 2019",
-        "instrumento": "notes ser 1",
-        "dt_acao": "2019-12-05",
-        "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-        "rating_anterior": "AAAsf(bra)",
-        "rating_atual": "WDsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
         "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
         "instrumento": "notes",
         "dt_acao": "2026-11-04",
@@ -197872,19 +197986,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-21",
         "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
         "rating_anterior": "A+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "instrumento": "securities ser 1",
-        "dt_acao": "2026-04-15",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-        "rating_anterior": "AA+sf(bra)",
         "rating_atual": "PIFsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
