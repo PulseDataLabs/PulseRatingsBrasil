@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 16 | 10 | **26** |
-| 🔴 **Downgrades (Rebaixamentos)** | 13 | 31 | **44** |
-| 🔵 **Novos Ratings** | 10 | 52 | **62** |
+| 🟢 **Upgrades (Elevações)** | 16 | 9 | **25** |
+| 🔴 **Downgrades (Rebaixamentos)** | 13 | 32 | **45** |
+| 🔵 **Novos Ratings** | 10 | 53 | **63** |
 | 🟡 **Mudanças de Perspectiva** | 9 | 17 | **26** |
 | ⚪ **Ratings Retirados / Liquidados** | 2 | 13 | **15** |
 
-### 🟢 Elevações de Rating (Upgrades) — 26
+### 🟢 Elevações de Rating (Upgrades) — 25
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **BANCO ORIGINAL** | Escala Nacional Brasil de Curto Prazo | `brA-2` | **`brA-1`** | `+1` | Estável | 08/10/2026 |
@@ -33,7 +33,6 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | Local Currency Long Term Issuer Default Rating | `BB-` | **`BB`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **UNIDAS LOCACOES SERVICOS** | National Long Term Rating | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Longo prazo | `BB` | **`BBB-`** | `+2` | Estável | 16/10/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB+` | **`brBBB`** | `+2` | Negativa | 09/10/2025 |
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
@@ -43,7 +42,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 44
+### 🔴 Rebaixamentos de Rating (Downgrades) — 45
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **BANCO SOFISA** | Escala Nacional Brasil de Longo Prazo | `brAA+` | **`brAA`** | `-1` | Estável | 14/10/2026 |
@@ -64,8 +63,9 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 16/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONSIGNADO Q1** | Senior - Longo prazo | `BBB` | **`BB+`** | `-2` | Negativa | 16/10/2026 |
 | Liberum | **FAMA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Subordinada - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 28/10/2026 |
-| Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brCC`** | `-6` | Estável | 23/02/2021 |
-| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
+| Austin | **FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brB`** | `-3` | Estável | 22/02/2021 |
+| Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB+` | **`brBB-`** | `-2` | Negativa | 09/10/2025 |
 | Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Positiva | 24/06/2026 |
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | 7ª Emissão de Debêntures de BRL1,0 bilhão e vencimento em 2031 | `AA+(bra)` | **`A(bra)`** | `-4` | Estável | 08/10/2026 |
 | Fitch | **HAPVIDA PARTICIPACOES INVESTIMENTOS** | 8ª Emissão de Debêntures, 2ª Série, de BRL1,0 bilhão e vencimento em 2032 | `AA+(bra)` | **`A(bra)`** | `-4` | Estável | 08/10/2026 |
@@ -121,7 +121,7 @@
 | Moody's | **RODOVIAS INTEGRADAS OESTE** | 14ª Emissão de Debêntures - Série Única | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (62)
+### 🔵 Novos Ratings Atribuídos (63)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Moody's | **MOURA DUBEUX ENGENHARIA** | Rating de Emissor | **`AA+.br`** | Estável | 08/10/2026 |
@@ -154,7 +154,7 @@
 | Fitch | **MC BRAZIL DOWNSTREAM TRADING R.L.** | USD bond/note | **`BB-`** | Estável | 14/10/2026 |
 | Liberum | **LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Única - Longo prazo | **`C`** | Estável | 14/10/2026 |
 | Liberum | **LETO ESTRUTURADOS III FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Única - Curto prazo | **`CP5`** | Estável | 14/10/2026 |
-| *...e mais 32 novos ratings.* | | | | | |
+| *...e mais 33 novos ratings.* | | | | | |
 
 ### ⚪ Ratings Retirados / Liquidados (15)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
@@ -177,4 +177,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (05/11/2026 → 06/11/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 9 upgrades | 🔴 7 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
