@@ -9,6 +9,8 @@ from scripts.preencher_cnpj_cvm import (
     _limpar_cnpj,
     _carregar_lookup_cias,
     _carregar_lookup_fundos,
+    _carregar_lookup_fundos_canon,
+    canonical_fund,
     generate,
 )
 
@@ -262,3 +264,70 @@ def test_generate_com_trailing_comma(mock_get, consolidado_path, tmp_path):
         rows = list(csv.DictReader(f))
     assert rows[0]["cnpj_emissor"] == "00000000000191"
     assert rows[1]["cnpj_emissor"] == "11111111000111"
+
+
+# ── canonical_fund e matching de fundos / FIDCs ──────────────────────────────
+
+
+def test_canonical_fund():
+    assert (
+        canonical_fund(
+            "AÇO CEARENSE FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA"
+        )
+        == "ACO CEARENSE FIDC"
+    )
+    assert canonical_fund("ACO CEARENSE FIDC") == "ACO CEARENSE FIDC"
+    assert canonical_fund("XPTO FUNDO INVESTIMENTO IMOBILIARIO") == "XPTO FII"
+    assert canonical_fund("ALFA FUNDO INVESTIMENTO DIREITOS CREDITORIOS NAO PADRONIZADOS") == "ALFA FIDC NP"
+
+
+def test_lookup_fundos_canon(tmp_path):
+    path = tmp_path / "cad_fi.csv"
+    path.write_bytes(
+        (
+            "CNPJ_FUNDO;DENOM_SOCIAL;CNPJ_ADMIN;ADMIN;CPF_CNPJ_GESTOR;GESTOR\n"
+            "63.670.659/0001-75;AÇO CEARENSE FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA;;;;\n"
+        ).encode("latin-1")
+    )
+    canon = _carregar_lookup_fundos_canon(path)
+    assert canon["ACO CEARENSE FIDC"] == "63670659000175"
+
+
+@patch("scripts.preencher_cnpj_cvm.requests.get")
+def test_generate_preenche_fidc_canonico(mock_get, tmp_path):
+    consolidado_path = tmp_path / "emissores_consolidado.csv"
+    _escrever_csv(
+        consolidado_path,
+        [
+            {
+                "no_emissor_padronizado": "ACO CEARENSE FIDC",
+                "no_emissor_fitch": "",
+                "no_emissor_moodys": "",
+                "no_emissor_standard_and_poors": "",
+                "cnpj_emissor": "",
+            },
+        ],
+    )
+
+    fi_content = (
+        "CNPJ_FUNDO;DENOM_SOCIAL;CNPJ_ADMIN;ADMIN;CPF_CNPJ_GESTOR;GESTOR\n"
+        "63.670.659/0001-75;AÇO CEARENSE FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS RESPONSABILIDADE LIMITADA;;;;\n"
+    )
+
+    def side_effect(url, **kwargs):
+        if "cad_fi" in url:
+            return _mock_response(fi_content.encode("latin-1"))
+        return _mock_response(b"", 404)
+
+    mock_get.side_effect = side_effect
+
+    result = generate(
+        consolidado_path=consolidado_path,
+        cache_dir=tmp_path / "cvm_cache",
+    )
+
+    assert result["matched"] == 1
+    with open(consolidado_path, "r", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    assert rows[0]["cnpj_emissor"] == "63670659000175"
+

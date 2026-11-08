@@ -993,7 +993,7 @@ dt_captura,agencia,no_emissor_padronizado,cnpj_emissor,no_emissor_original,no_ti
 2026-11-07,Fitch,GRUPO SBF,13217485000111,Grupo SBF S.A.,National Long Term Rating,AA(bra),Rating Outlook Stable,2025-12-19,https://www.fitchratings.com/entity/grupo-sbf-sa-96660728
 2026-11-07,Fitch,FISIA COMERCIO PRODUTOS ESPORTIVOS,59546515000134,Fisia Comercio de Produtos Esportivos S.A.,National Long Term Rating,AA(bra),Rating Outlook Stable,2025-12-19,https://www.fitchratings.com/entity/fisia-comercio-de-produtos-esportivos-sa-97462128
 2026-11-07,Fitch,C MODAS,45242914000105,C&A Modas S.A.,National Long Term Rating,AA(bra),Rating Outlook Stable,2025-12-19,https://www.fitchratings.com/entity/c-a-modas-sa-97131987
-2026-11-07,Fitch,VINCI ENERGIA SUSTENTAVEL FUNDO INVESTIMENTO DIREITOS CREDITORIOS,,Vinci Energia Sustentavel Fundo de Investimento em Direitos Creditorios,National Fund Credit Quality Rating,AAf(bra),,2025-12-19,https://www.fitchratings.com/entity/vinci-energia-sustentavel-fundo-de-investimento-em-direitos-creditorios-96577741
+2026-11-07,Fitch,VINCI ENERGIA SUSTENTAVEL FUNDO INVESTIMENTO DIREITOS CREDITORIOS,28492719000106,Vinci Energia Sustentavel Fundo de Investimento em Direitos Creditorios,National Fund Credit Quality Rating,AAf(bra),,2025-12-19,https://www.fitchratings.com/entity/vinci-energia-sustentavel-fundo-de-investimento-em-direitos-creditorios-96577741
 2026-11-07,Fitch,VINCI CREDITO INFRA INSTITUCIONAL FUNDO INCENTIVADO INVESTIMENTO INFRAESTRUTURA RENDA FIXA,,Vinci Credito Infra Institucional Fundo Incentivado de Investimento em Infraestrutura Renda Fixa,National Fund Credit Quality Rating,AAf(bra),,2025-12-19,https://www.fitchratings.com/entity/vinci-credito-infra-institucional-fundo-incentivado-de-investimento-em-infraestrutura-renda-fixa-97432394
 2026-11-07,Fitch,PORTOSEG,,"Portoseg S.A. - Credito, Financiamento e Investimento",National Short Term Rating,F1+(bra),,2025-12-18,https://www.fitchratings.com/entity/portoseg-sa-credito-financiamento-e-investimento-96477909
 2026-11-07,Fitch,PORTOSEG,,"Portoseg S.A. - Credito, Financiamento e Investimento",National Long Term Rating,AAA(bra),Rating Outlook Stable,2025-12-18,https://www.fitchratings.com/entity/portoseg-sa-credito-financiamento-e-investimento-96477909
@@ -1539,9 +1539,9 @@ dt_captura,agencia,no_emissor_padronizado,cnpj_emissor,no_emissor_original,no_ti
 2026-11-07,Moody's,SWISS RE CORPORATE SOLUTIONS SEGUROS,72145931000199,Swiss Re Corporate Solutions Brasil Seguros S.A.,Rating de Força Financeira,AAA.br,Perspectiva estável,2025-11-12,
 2026-10-31,Moody's,TOKIO MARINE SEGURADORA,33164021000100,Tokio Marine Seguradora S.A.,Rating de Força Financeira,AAA.br,Perspectiva estável,2025-11-07,
 2026-11-07,Moody's,TRIGONO CAPITAL,28925400000127,Trígono Capital Ltda.,Avaliações de Qualidade de Gestor de Investimentos,MQ2.br,-,2026-05-14,
-2026-09-30,Moody's,RED,,Uniprime Pioneira Cooperativa de Crédito,Rating de Depósitos Bancários,ML A-3.br,-,2025-12-22,
-2026-09-30,Moody's,RED,,Uniprime Pioneira Cooperativa de Crédito,Rating de Depósitos Bancários,BBB-.br,Perspectiva estável,2025-12-22,
-2026-09-30,Moody's,RED,,Uniprime Pioneira Cooperativa de Crédito,Rating de Emissor,BBB-.br,Perspectiva estável,2025-12-22,
+2026-09-30,Moody's,RED,08632394000102,Uniprime Pioneira Cooperativa de Crédito,Rating de Depósitos Bancários,ML A-3.br,-,2025-12-22,
+2026-09-30,Moody's,RED,08632394000102,Uniprime Pioneira Cooperativa de Crédito,Rating de Depósitos Bancários,BBB-.br,Perspectiva estável,2025-12-22,
+2026-09-30,Moody's,RED,08632394000102,Uniprime Pioneira Cooperativa de Crédito,Rating de Emissor,BBB-.br,Perspectiva estável,2025-12-22,
 2026-10-22,Moody's,UNIPRIME IGUACU,01848322000158,"Uniprime do Iguaçu – Cooperativa de Crédito, Poupança e Investimento",Rating de Depósitos Bancários,ML A-3.br,-,2025-12-22,
 2026-10-22,Moody's,UNIPRIME IGUACU,01848322000158,"Uniprime do Iguaçu – Cooperativa de Crédito, Poupança e Investimento",Rating de Depósitos Bancários,BBB.br,Perspectiva estável,2025-12-22,
 2026-10-22,Moody's,UNIPRIME IGUACU,01848322000158,"Uniprime do Iguaçu – Cooperativa de Crédito, Poupança e Investimento",Rating de Emissor,BBB.br,Perspectiva estável,2025-12-22,
@@ -1663,7 +1663,7 @@ dt_captura,agencia,no_emissor_padronizado,cnpj_emissor,no_emissor_original,no_ti
 2026-11-07,Moody's,JSL,52548435000179,JSL S.A.,Rating de Emissor,AA+.br,Perspectiva estável,2026-09-08,
 2026-11-07,Moody's,GJA INDUSTRIAS,24682682000128,GJA Industrias S.A.,Rating de Emissor,BB-.br,Perspectiva negativa,2026-09-14,
 2026-11-07,Moody's,TRANSMISSORA ALIANCA ENERGIA ELETRICA,07859971000130,Transmissora Aliança de Energia Elétrica S.A. (TAESA),Rating Corporativo,AAA.br,Perspectiva estável,2026-09-11,
-2026-11-07,Moody's,RIO BRAVO RENDA VAREJO FUNDO INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA,,Rio Bravo Renda Varejo Fundo de Investimento Imobiliário de Responsabilidade Limitada,,REF-2.br,-,2026-09-11,
+2026-11-07,Moody's,RIO BRAVO RENDA VAREJO FUNDO INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA,15576907000170,Rio Bravo Renda Varejo Fundo de Investimento Imobiliário de Responsabilidade Limitada,,REF-2.br,-,2026-09-11,
 2026-11-07,Moody's,VINLAND CAPITAL MANAGEMENT CREDITO PRIVADO GESTORA RECURSOS,31846872000107,Vinland Capital Management Crédito Privado Gestora de Recursos Ltda.,Avaliações de Qualidade de Gestor de Investimentos,MQ1.br,-,2025-11-03,
 2026-11-07,Moody's,FRIGOL,68067446000681,Frigol S.A.,Rating de Emissor,A-.br,Perspectiva estável,2026-09-15,
 2026-11-07,Moody's,VAMOS LOCACAO CAMINHOES,23373000000132,"Vamos Locação de Caminhões, Máquinas e Equipamentos S.A.",Rating de Emissor,AA+.br,Perspectiva estável,2026-09-15,
@@ -1676,9 +1676,9 @@ dt_captura,agencia,no_emissor_padronizado,cnpj_emissor,no_emissor_original,no_ti
 2026-11-07,Moody's,ASTER MAQUINAS SOLUCOES INTEGRADAS,06220403000122,Áster Máquinas e Soluções Integradas Ltda.,Rating de Emissor,AA-.br,Perspectiva estável,2026-09-28,
 2026-11-07,Moody's,SOMMA INVESTIMENTOS,05563299000106,SOMMA Investimentos S.A.,Avaliações de Qualidade de Gestor de Investimentos,MQ2.br,-,2026-09-25,
 2026-11-07,Moody's,ULTRAPAR PARTICIPACOES,33256439000139,Ultrapar Participações S.A.,Rating Corporativo,AAA.br,Perspectiva estável,2026-09-30,
-2026-11-03,Moody's,RED,,Uniprime Pioneira Cooperativa de Crédito,Rating de Depósitos Bancários,ML B.br,-,2026-09-29,
-2026-11-03,Moody's,RED,,Uniprime Pioneira Cooperativa de Crédito,Rating de Depósitos Bancários,B.br,Perspectiva negativa,2026-09-29,
-2026-11-03,Moody's,RED,,Uniprime Pioneira Cooperativa de Crédito,Rating de Emissor,B.br,Perspectiva negativa,2026-09-29,
+2026-11-03,Moody's,RED,08632394000102,Uniprime Pioneira Cooperativa de Crédito,Rating de Depósitos Bancários,ML B.br,-,2026-09-29,
+2026-11-03,Moody's,RED,08632394000102,Uniprime Pioneira Cooperativa de Crédito,Rating de Depósitos Bancários,B.br,Perspectiva negativa,2026-09-29,
+2026-11-03,Moody's,RED,08632394000102,Uniprime Pioneira Cooperativa de Crédito,Rating de Emissor,B.br,Perspectiva negativa,2026-09-29,
 2026-11-07,Moody's,BRK AMBIENTAL PARTICIPACOES,24396489000120,BRK Ambiental Participações S.A.,Rating Corporativo,AA-.br,Perspectiva estável,2026-10-02,
 2026-11-07,Moody's,BRK AMBIENTAL REGIAO METROPOLITANA MACEIO,39580673000101,BRK Ambiental Região Metropolitana de Maceió S.A.,Rating de Emissor,AA-.br,Perspectiva estável,2026-10-02,
 2026-11-07,Moody's,CEMIG DISTRIBUICAO,06981180000116,CEMIG Distribuição S.A.,Rating de Emissor,AAA.br,Perspectiva estável,2026-10-02,
@@ -1898,7 +1898,7 @@ dt_captura,agencia,no_emissor_padronizado,cnpj_emissor,no_emissor_original,no_ti
 2026-11-06,S&P,IGUA SANEAMENTO,08159965000133,Igua Saneamento S.A.,Escala Nacional Brasil de Longo Prazo,brA,Stable,2024-05-28,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1001010
 2026-11-06,S&P,LOCALIZA RENT CAR,16670085000155,Localiza Rent a Car S.A.,Escala Nacional Brasil de Longo Prazo,brAAA,Stable,2017-08-16,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001190
 2026-11-06,S&P,LOJAS RENNER,92754738000162,Lojas Renner S.A.,Escala Nacional Brasil de Longo Prazo,brAAA,Stable,2017-08-16,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001461
-2026-11-06,S&P,MINAS GERAIS,,Minas Gerais (State of),Escala Nacional Brasil de Longo Prazo,brBB+,Positive,2025-10-22,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/GOVS/entityId/1000540
+2026-11-06,S&P,MINAS GERAIS,19492229000119,Minas Gerais (State of),Escala Nacional Brasil de Longo Prazo,brBB+,Positive,2025-10-22,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/GOVS/entityId/1000540
 2026-11-06,S&P,SUZANO,16404287000155,Suzano S.A.,Escala Nacional Brasil de Longo Prazo,brAAA,Stable,2017-08-16,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000164
 2026-11-06,S&P,BR PARTNERS BANCO INVESTIMENTO,13220493000117,BR Partners Banco de Investimento S.A.,Escala Nacional Brasil de Longo Prazo,brAA,Stable,2025-02-10,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1000296
 2026-11-06,S&P,BRK AMBIENTAL PARTICIPACOES,24396489000120,BRK Ambiental Participacoes S.A.,Escala Nacional Brasil de Longo Prazo,brA+,Negative,2026-07-10,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1001196
@@ -1979,7 +1979,7 @@ dt_captura,agencia,no_emissor_padronizado,cnpj_emissor,no_emissor_original,no_ti
 2026-11-06,S&P,TIVIO CAPITAL DTVM,,Tivio Capital DTVM S.A.,Classificação de Práticas de Administração de Recursos de Terceiros,brAMP1,,2025-10-28,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1000439
 2026-11-06,S&P,YDUQS PARTICIPACOES,08807432000110,YDUQS Participacoes S.A.,Escala Nacional Brasil de Longo Prazo,brAAA,Stable,2018-07-11,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000564
 2026-11-06,S&P,DIRECIONAL ENGENHARIA,16614075000100,Direcional Engenharia S.A.,Escala Nacional Brasil de Longo Prazo,brAAA,Stable,2021-03-16,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000780
-2026-11-06,S&P,HEDGE SHOPPING FUNDO INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA,,Hedge Brasil Shopping Fundo De Investimento Imobiliario De Responsabilidade Limitada,Escala Nacional Brasil de Longo Prazo,brAA+,Stable,2024-11-06,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001055
+2026-11-06,S&P,HEDGE SHOPPING FUNDO INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA,08431747000106,Hedge Brasil Shopping Fundo De Investimento Imobiliario De Responsabilidade Limitada,Escala Nacional Brasil de Longo Prazo,brAA+,Stable,2024-11-06,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1001055
 2026-11-06,S&P,IOCHPE,,Iochpe-Maxion S.A.,Escala Nacional Brasil de Longo Prazo,brAAA,Stable,2024-03-04,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/CORP/entityId/1000847
 2026-11-06,S&P,ORIZON VALORIZACAO RESIDUOS,11421994000136,Orizon Valorizacao de Residuos S.A.,Escala Nacional Brasil de Longo Prazo,brAA+,Stable,2022-10-17,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/UTIL/entityId/1000779
 2026-11-06,S&P,REDWOOD ADMINISTRACAO RECURSOS,10405423000145,Redwood Administracao de Recursos Ltda.,Classificação de Práticas de Administração de Recursos de Terceiros,brAMP3,,2025-10-28,https://brazil.ratings.spglobal.com/ratings/pt/regulatory/org-details/sectorCode/FI/entityId/1008743
