@@ -172,16 +172,21 @@ def main():
         logger.error(f"Arquivo {emissores_consolidado_path} não encontrado. Abortando.")
         sys.exit(1)
 
-    # 1. Carrega os emissores consolidados
+    # 1. Carrega os emissores consolidados e mapa de CNPJs
     consolidated_list = []
+    cnpj_map = {}
     with open(emissores_consolidado_path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             p = row.get("no_emissor_padronizado")
             if p:
-                consolidated_list.append(p.strip())
+                p_norm = p.strip()
+                consolidated_list.append(p_norm)
+                cnpj_val = (row.get("cnpj_emissor") or "").strip()
+                if cnpj_val:
+                    cnpj_map[p_norm] = cnpj_val
     consolidated_names = set(consolidated_list)
-    logger.info(f"Carregados {len(consolidated_names)} emissores consolidados de referência.")
+    logger.info(f"Carregados {len(consolidated_names)} emissores consolidados de referência ({len(cnpj_map)} com CNPJ).")
 
     # 2. Configurações dos caminhos das fontes
     fontes = {
@@ -290,23 +295,26 @@ def main():
                     is_emissao = True
                     de_instrumento = row.get("de_instrumento") or ""
 
-                # Mapeia emissor padronizado
+                # Mapeia emissor padronizado e CNPJ
                 lookup_nome = base_emissor if (agencia == "Austin" and is_emissao) else no_emissor_original
                 no_emissor_padronizado = find_matching_issuer(
                     lookup_nome, consolidated_names, consolidated_list
                 )
+                cnpj_emissor = cnpj_map.get(no_emissor_padronizado, "")
 
                 if is_emissao:
                     # Tenta extrair o devedor corporativo final se for um CRI/CRA ou FIDC securitizado
                     no_devedor_vinculado = extract_linked_debtor(
                         no_emissor_original, consolidated_names, consolidated_list
                     )
+                    cnpj_devedor_vinculado = cnpj_map.get(no_devedor_vinculado, "")
 
                     rows_emissoes.append(
                         {
                             "dt_captura": dt_captura,
                             "agencia": agencia,
                             "no_emissor_padronizado": no_emissor_padronizado,
+                            "cnpj_emissor": cnpj_emissor,
                             "no_emissor_original": no_emissor_original,
                             "no_tipo_rating": no_tipo_rating,
                             "de_instrumento": de_instrumento,
@@ -315,6 +323,7 @@ def main():
                             "dt_acao_rating": dt_acao_rating,
                             "link": link,
                             "no_devedor_vinculado": no_devedor_vinculado,
+                            "cnpj_devedor_vinculado": cnpj_devedor_vinculado,
                         }
                     )
                 else:
@@ -323,6 +332,7 @@ def main():
                             "dt_captura": dt_captura,
                             "agencia": agencia,
                             "no_emissor_padronizado": no_emissor_padronizado,
+                            "cnpj_emissor": cnpj_emissor,
                             "no_emissor_original": no_emissor_original,
                             "no_tipo_rating": no_tipo_rating,
                             "de_rating_br": de_rating_br,
@@ -337,6 +347,7 @@ def main():
         "dt_captura",
         "agencia",
         "no_emissor_padronizado",
+        "cnpj_emissor",
         "no_emissor_original",
         "no_tipo_rating",
         "de_rating_br",
@@ -348,6 +359,7 @@ def main():
         "dt_captura",
         "agencia",
         "no_emissor_padronizado",
+        "cnpj_emissor",
         "no_emissor_original",
         "no_tipo_rating",
         "de_instrumento",
@@ -356,6 +368,7 @@ def main():
         "dt_acao_rating",
         "link",
         "no_devedor_vinculado",
+        "cnpj_devedor_vinculado",
     ]
 
     out_emissores = data_dir / "ratings_emissores.csv"

@@ -262,6 +262,8 @@ def comparar_snapshots(
             or curr.get("no_emissor")
             or ""
         )
+        cnpj_emissor = curr.get("cnpj_emissor") or ""
+        cnpj_devedor = curr.get("cnpj_devedor_vinculado") or ""
         agencia = curr.get("agencia") or "N/A"
         instrumento = curr.get("de_instrumento") or curr.get("no_tipo_rating") or "Emissor"
         link = curr.get("link") or ""
@@ -269,10 +271,13 @@ def comparar_snapshots(
         base_info = {
             "agencia": agencia,
             "emissor": emissor_nome,
+            "cnpj_emissor": cnpj_emissor,
             "instrumento": instrumento,
             "dt_acao": curr.get("dt_acao_rating") or curr.get("dt_rating") or dt_atual,
             "link": link,
         }
+        if cnpj_devedor:
+            base_info["cnpj_devedor_vinculado"] = cnpj_devedor
 
         curr_dt_acao = str(curr.get("dt_acao_rating") or curr.get("dt_rating") or "")
 
@@ -381,22 +386,26 @@ def comparar_snapshots(
                 or prev.get("no_emissor")
                 or ""
             )
+            cnpj_emissor = prev.get("cnpj_emissor") or ""
+            cnpj_devedor = prev.get("cnpj_devedor_vinculado") or ""
             agencia = prev.get("agencia") or "N/A"
             instrumento = prev.get("de_instrumento") or prev.get("no_tipo_rating") or "Emissor"
-            retirados.append(
-                {
-                    "agencia": agencia,
-                    "emissor": emissor_nome,
-                    "instrumento": instrumento,
-                    "rating_anterior": p_raw,
-                    "rating_atual": "RETIRADO",
-                    "outlook_anterior": normalizar_outlook(prev.get("de_outlook")),
-                    "dt_acao": prev.get("dt_acao_rating") or prev.get("dt_rating") or dt_anterior,
-                    "link": prev.get("link") or "",
-                    "tipo_movimento": "RETIRADO",
-                    "variacao_notches": "—",
-                }
-            )
+            retirado_item = {
+                "agencia": agencia,
+                "emissor": emissor_nome,
+                "cnpj_emissor": cnpj_emissor,
+                "instrumento": instrumento,
+                "rating_anterior": p_raw,
+                "rating_atual": "RETIRADO",
+                "outlook_anterior": normalizar_outlook(prev.get("de_outlook")),
+                "dt_acao": prev.get("dt_acao_rating") or prev.get("dt_rating") or dt_anterior,
+                "link": prev.get("link") or "",
+                "tipo_movimento": "RETIRADO",
+                "variacao_notches": "—",
+            }
+            if cnpj_devedor:
+                retirado_item["cnpj_devedor_vinculado"] = cnpj_devedor
+            retirados.append(retirado_item)
 
     return {
         "tipo": tipo_dataset,
@@ -549,6 +558,7 @@ def salvar_historico_movimentacoes(data_dir: Path, novos_eventos: list[dict[str,
         "agencia",
         "categoria",
         "no_emissor_padronizado",
+        "cnpj_emissor",
         "no_emissor_original",
         "de_instrumento",
         "no_tipo_rating",
@@ -559,6 +569,7 @@ def salvar_historico_movimentacoes(data_dir: Path, novos_eventos: list[dict[str,
         "outlook_anterior",
         "outlook_atual",
         "link",
+        "cnpj_devedor_vinculado",
     ]
     existentes_raw = []
     if hist_file.exists():
@@ -605,6 +616,7 @@ def salvar_historico_movimentacoes(data_dir: Path, novos_eventos: list[dict[str,
             "agencia": ev.get("agencia") or "",
             "categoria": ev.get("categoria") or "Emissor",
             "no_emissor_padronizado": ev.get("no_emissor_padronizado") or ev.get("emissor") or "",
+            "cnpj_emissor": ev.get("cnpj_emissor") or "",
             "no_emissor_original": ev.get("no_emissor_original") or ev.get("emissor") or "",
             "de_instrumento": ev.get("de_instrumento") or ev.get("instrumento") or "",
             "no_tipo_rating": ev.get("no_tipo_rating") or ev.get("instrumento") or "",
@@ -615,6 +627,7 @@ def salvar_historico_movimentacoes(data_dir: Path, novos_eventos: list[dict[str,
             "outlook_anterior": ev.get("outlook_anterior") or "",
             "outlook_atual": ev.get("outlook_atual") or "",
             "link": ev.get("link") or "",
+            "cnpj_devedor_vinculado": ev.get("cnpj_devedor_vinculado") or "",
         }
 
         k = _event_identity(item_row)
@@ -890,6 +903,8 @@ def generate() -> dict[str, Any]:
                 hist_completo.append({
                     "agencia": r.get("agencia"),
                     "emissor": r.get("no_emissor_padronizado"),
+                    "cnpj_emissor": r.get("cnpj_emissor") or "",
+                    "cnpj_devedor_vinculado": r.get("cnpj_devedor_vinculado") or "",
                     "instrumento": r.get("de_instrumento"),
                     "categoria": r.get("categoria"),
                     "tipo": r.get("tipo_movimento"),

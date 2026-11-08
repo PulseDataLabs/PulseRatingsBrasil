@@ -407,6 +407,11 @@
         "example": "IN"
       },
       {
+        "name": "cnpj_emissor",
+        "type": "str",
+        "example": "05208211001703"
+      },
+      {
         "name": "no_emissor_original",
         "type": "str",
         "example": "COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DE FUNCIONÁRIOS DE INSTITUIÇÕES FINANCEIRAS PÚBLICAS FEDERAIS LTDA. – COOPERFORTE"
@@ -454,6 +459,11 @@
         "example": "FIDC"
       },
       {
+        "name": "cnpj_emissor",
+        "type": "str",
+        "example": "00822299000160"
+      },
+      {
         "name": "no_emissor_original",
         "type": "str",
         "example": "ACTIVA FIDC - SUBORDINADAS JÚNIOR"
@@ -490,6 +500,11 @@
       },
       {
         "name": "no_devedor_vinculado",
+        "type": "str",
+        "example": ""
+      },
+      {
+        "name": "cnpj_devedor_vinculado",
         "type": "str",
         "example": ""
       }
