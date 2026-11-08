@@ -30,9 +30,10 @@ jobs:
           cp index.html consulta.html /tmp/web_deploy/
           if [ -d assets ]; then cp -r assets /tmp/web_deploy/; fi
           
-          # Copia pasta de dados completa
+          # Copia pasta de dados (excluindo diretórios internos de snapshots e caches)
           mkdir -p /tmp/web_deploy/data
           cp -r data/* /tmp/web_deploy/data/
+          rm -rf /tmp/web_deploy/data/snapshots /tmp/web_deploy/data/relatorios_movimentacoes /tmp/web_deploy/data/cvm_cache /tmp/web_deploy/data/rfb_cache
           
           # Atualiza links no datasets.json e páginas para o repositório público
           sed -i 's|PulseRatingsBrasil/main/data|PulseRatingsBrasil-web/main/data|g' /tmp/web_deploy/data/datasets.json

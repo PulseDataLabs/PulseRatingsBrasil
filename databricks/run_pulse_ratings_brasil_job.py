@@ -156,6 +156,11 @@ def main():
         help="Ignora a gravação e persistência no banco de dados Oracle",
     )
     parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Simula a execução do pipeline sem coletar ou gravar dados",
+    )
+    parser.add_argument(
         "--generate-catalog",
         action="store_true",
         help="Gera e atualiza apenas o arquivo data/datasets.json a partir dos scrapers",
@@ -203,9 +208,9 @@ def main():
     else:
         logger.info("Nenhum segredo específico carregado do Secret Scope ou variáveis.")
 
-    if args.skip_db:
+    if args.skip_db or args.dry_run:
         os.environ["SKIP_ORACLE_DB"] = "1"
-        logger.info("Persistência em banco Oracle desabilitada (--skip-db).")
+        logger.info("Persistência em banco Oracle desabilitada (--skip-db / --dry-run).")
 
     # Importa módulos do projeto agora que sys.path e variáveis estão estabelecidos
     from utils.paths import get_data_dir
@@ -231,6 +236,7 @@ def main():
             scraper=args.scraper,
             parallel=args.parallel,
             max_workers=args.max_workers,
+            dry_run=args.dry_run,
         )
     except SystemExit as se:
         if se.code != 0:
@@ -239,6 +245,10 @@ def main():
     except Exception as e:
         logger.error(f"Erro fatal durante a execução do pipeline: {e}", exc_info=True)
         sys.exit(1)
+
+    if args.dry_run:
+        logger.info("✔ [DRY-RUN] Job Databricks validado com sucesso.")
+        return
 
     # Em execuções completas (sem filtro), executa scripts complementares do ciclo
     if not args.group and not args.scraper:

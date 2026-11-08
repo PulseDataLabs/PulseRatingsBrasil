@@ -14,6 +14,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.utils.base import BaseScraper
 from scripts.utils import print_done, print_fail, print_start
+from utils import agora_brt
 
 
 class MoodysEmissoresScraper(BaseScraper):
@@ -53,7 +54,7 @@ class MoodysEmissoresScraper(BaseScraper):
         df.rename(columns={"Emissor": "no_emissor"}, inplace=True)
         df.drop_duplicates(subset=["no_emissor"], inplace=True)
 
-        today_str = datetime.date.today().strftime("%Y-%m-%d")
+        today_str, _ = agora_brt()
         df.insert(0, "dt_captura", today_str)
         df["link"] = ""
 

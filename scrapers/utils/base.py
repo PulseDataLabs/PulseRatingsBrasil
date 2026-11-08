@@ -40,8 +40,9 @@ class BaseScraper:
         try:
             df = self.fetch()
             if df is None or (isinstance(df, pd.DataFrame) and df.empty):
-                self.logger.warning("Nenhum dado retornado para salvar.")
-                return
+                msg = f"Nenhum dado retornado para salvar pelo scraper {self.name}."
+                self.logger.error(msg)
+                raise RuntimeError(msg)
 
             # Certifica de que a coluna de data de captura existe
             if "dt_captura" not in df.columns:

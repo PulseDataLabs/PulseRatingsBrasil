@@ -15,7 +15,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from scrapers.utils.base import BaseScraper
 from scripts.utils import print_done, print_fail, print_info, print_start, print_warn
-from utils import get_logger, limpar
+from utils import agora_brt, get_logger, limpar
 
 log = get_logger("fitch_emissores")
 
@@ -54,7 +54,7 @@ def _obter_emissores_fitch_real() -> list[dict]:
     """Obtém emissores brasileiras da Fitch via GraphQL API com paginação."""
     from curl_cffi import requests as crequests
 
-    today_str = datetime.date.today().strftime("%Y-%m-%d")
+    today_str, _ = agora_brt()
     entities = {}
     offset = 0
     total = None
@@ -127,7 +127,7 @@ class FitchEmissoresScraper(BaseScraper):
     chaves_dedup = ["link"]
 
     # Catálogo de Metadados
-    title = "Fitch — Ratings"
+    title = "Fitch — Emissores"
     description = "Emissores brasileiros com rating de crédito ativo atribuído pela Fitch Ratings."
     icon = "F"
     icon_class = "icon-fitch"

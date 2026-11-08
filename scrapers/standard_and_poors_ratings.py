@@ -14,6 +14,8 @@ import os
 import sys
 import time
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
@@ -29,6 +31,8 @@ from scripts.utils import (
     print_warn,
     progress_bar,
 )
+from utils import agora_brt
+from utils.paths import get_data_dir
 
 HEADERS = {
     "User-Agent": (
@@ -171,12 +175,10 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
     source = "S&P"
 
     def fetch(self) -> pd.DataFrame:
-        emissores_csv = os.path.join(
-            os.path.dirname(os.path.dirname(__file__)),
-            "data",
-            "standard_and_poors_emissores.csv",
-        )
-        if not os.path.exists(emissores_csv):
+        from curl_cffi import requests as crequests
+
+        emissores_csv = get_data_dir() / "standard_and_poors_emissores.csv"
+        if not emissores_csv.exists():
             self.logger.warning(
                 f"Arquivo de emissores não encontrado: {emissores_csv}. "
                 "Execute standard_and_poors_emissores.py antes."
@@ -190,41 +192,46 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
             print_fail("Coluna 'link' não encontrada no CSV")
             return pd.DataFrame()
 
-        session = requests.Session()
+        emissores_list = df_emissores.to_dict(orient="records")
         frames = []
-        total = len(df_emissores)
+        total = len(emissores_list)
 
-        print_start(f"Processando {total} emissores da S&P...")
+        print_start(f"Processando {total} emissores da S&P concorrentemente...")
 
-        for i, row in df_emissores.iterrows():
-            nome = row.get("no_emissor", "")
-            link = row.get("link", "")
-            self.logger.info(f"[{i + 1}/{total}] {nome}")
-            bar = progress_bar(i + 1, total)
-            print(f"  {bar}  {dim(nome[:72])}", end="\r" if IS_TTY else "\n")
-
+        def _fetch_emissor(em: dict) -> pd.DataFrame | None:
+            nome = em.get("no_emissor", "")
+            link = em.get("link", "")
+            if not link:
+                return None
             try:
-                resp = session.get(link, headers=HEADERS, timeout=30)
+                resp = crequests.get(link, headers=HEADERS, impersonate="chrome", timeout=30)
                 if resp.status_code == 403:
-                    self.logger.warning(f"Acesso bloqueado (403) para {nome}.")
-                    continue
+                    resp = requests.get(link, headers=HEADERS, timeout=30)
                 if resp.status_code != 200:
-                    self.logger.warning(f"Status {resp.status_code} para {link}")
-                    continue
-
+                    return None
                 ratings_list = _parse_ratings_next_data(resp.text)
                 if not ratings_list:
-                    self.logger.warning(f"Nenhum rating ou estrutura __NEXT_DATA__ encontrada para {nome}")
-                    continue
-
+                    return None
                 df_table = pd.DataFrame(ratings_list)
                 df_table["no_emissor"] = nome
                 df_table["link"] = link
-                frames.append(df_table)
-
-                time.sleep(0.1)  # delay para não sobrecarregar
+                return df_table
             except Exception as e:
-                self.logger.warning(f"Erro em {link}: {e}")
+                self.logger.debug(f"Erro em {link}: {e}")
+                return None
+
+        completed = 0
+        with ThreadPoolExecutor(max_workers=8) as executor:
+            future_to_em = {executor.submit(_fetch_emissor, em): em for em in emissores_list}
+            for future in as_completed(future_to_em):
+                em = future_to_em[future]
+                nome = str(em.get("no_emissor", ""))
+                completed += 1
+                bar = progress_bar(completed, total)
+                print(f"  {bar}  {dim(nome[:72])}", end="\r" if IS_TTY else "\n")
+                res_df = future.result()
+                if res_df is not None and not res_df.empty:
+                    frames.append(res_df)
 
         if not frames:
             self.logger.warning("Nenhum rating capturado.")
@@ -232,7 +239,8 @@ class StandardAndPoorsRatingsScraper(BaseScraper):
             return pd.DataFrame()
 
         df = pd.concat(frames, ignore_index=True)
-        df.insert(0, "dt_captura", datetime.date.today().strftime("%Y-%m-%d"))
+        today_str, _ = agora_brt()
+        df.insert(0, "dt_captura", today_str)
         col_order = [
             "dt_captura",
             "no_emissor",

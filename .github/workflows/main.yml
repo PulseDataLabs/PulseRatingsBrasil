@@ -47,19 +47,16 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    # Executa o script que vai atualizar ou criar os CSVs dentro de ./data
+    # Executa o pipeline completo (scrapers + catálogo + consolidação + relatórios + JSON de consulta)
     - name: Executar script de processamento
-      # O "|| true" força o terminal a entender que a execução terminou com sucesso mesmo se o Python falhar
       run: python run_all.py --skip-db || true
 
-    # Gera o JSON consolidado com todos os ratings para a tela de consulta
-    - name: Gerar JSON de consulta
-      run: python scripts/gerar_consulta_json.py
-
-    # Gera relatório de movimentações de ratings e anexa no Step Summary do GitHub Actions
+    # Anexa o relatório de movimentações de ratings no Step Summary do GitHub Actions
     - name: Publicar Relatório de Movimentações de Ratings
       run: |
-        python scripts/gerar_relatorio_mudancas.py || true
+        if [ ! -f data/movimentacoes_ratings.md ]; then
+          python scripts/gerar_relatorio_mudancas.py || true
+        fi
         if [ -f data/movimentacoes_ratings.md ]; then
           cat data/movimentacoes_ratings.md >> $GITHUB_STEP_SUMMARY
         fi
@@ -94,6 +91,7 @@ jobs:
         if [ -d assets ]; then cp -r assets /tmp/web_deploy/; fi
         mkdir -p /tmp/web_deploy/data
         cp -r data/* /tmp/web_deploy/data/
+        rm -rf /tmp/web_deploy/data/snapshots /tmp/web_deploy/data/relatorios_movimentacoes /tmp/web_deploy/data/cvm_cache /tmp/web_deploy/data/rfb_cache
         sed -i 's|PulseRatingsBrasil/main/data|PulseRatingsBrasil-web/main/data|g' /tmp/web_deploy/data/datasets.json
         sed -i 's|PulseRatingsBrasil/consulta.html|PulseRatingsBrasil-web/consulta.html|g' /tmp/web_deploy/consulta.html
         sed -i 's|PulseRatingsBrasil/|PulseRatingsBrasil-web/|g' /tmp/web_deploy/index.html

@@ -18,6 +18,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.utils.base import BaseScraper
 from scripts.utils import print_done, print_fail, print_start
+from utils import agora_brt
 
 RENAME_MAP = {
     "Setor": "no_setor",
@@ -37,6 +38,15 @@ class MoodysRatingsScraper(BaseScraper):
     enabled = True
     phase = 2
     accumulate = True
+    chaves_dedup = [
+        "no_emissor",
+        "no_tipo_rating",
+        "de_instrumento",
+        "de_objeto",
+        "de_rating_br",
+        "de_outlook",
+        "dt_rating",
+    ]
 
     # Catálogo de Metadados
     title = "Moody's — Ratings"
@@ -67,7 +77,8 @@ class MoodysRatingsScraper(BaseScraper):
         print_done(f"{len(data_rows)} ratings extraídos")
 
         df = pd.DataFrame(data_rows, columns=headers)
-        df["dh_atu_arquivo"] = file_date or datetime.date.today().strftime("%Y-%m-%d")
+        today_brt, _ = agora_brt()
+        df["dh_atu_arquivo"] = file_date or today_brt
         df.rename(columns=RENAME_MAP, inplace=True)
 
         # Filtra apenas as colunas configuradas em RENAME_MAP mais a data de atualização

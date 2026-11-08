@@ -361,6 +361,36 @@ def main():
     out_emissores = data_dir / "ratings_emissores.csv"
     out_emissoes = data_dir / "ratings_emissoes.csv"
 
+    # Deduplica mantendo a captura mais recente para cada registro idêntico
+    dedup_emissores: dict[tuple, dict] = {}
+    for r in rows_emissores:
+        key = (
+            r["agencia"],
+            r["no_emissor_original"],
+            r["no_tipo_rating"],
+            r["de_rating_br"],
+            r["de_outlook"],
+            r["dt_acao_rating"],
+        )
+        if key not in dedup_emissores or r["dt_captura"] >= dedup_emissores[key]["dt_captura"]:
+            dedup_emissores[key] = r
+    rows_emissores = list(dedup_emissores.values())
+
+    dedup_emissoes: dict[tuple, dict] = {}
+    for r in rows_emissoes:
+        key = (
+            r["agencia"],
+            r["no_emissor_original"],
+            r["no_tipo_rating"],
+            r["de_instrumento"],
+            r["de_rating_br"],
+            r["de_outlook"],
+            r["dt_acao_rating"],
+        )
+        if key not in dedup_emissoes or r["dt_captura"] >= dedup_emissoes[key]["dt_captura"]:
+            dedup_emissoes[key] = r
+    rows_emissoes = list(dedup_emissoes.values())
+
     logger.info(f"Salvando {len(rows_emissores)} ratings de emissores...")
     salvar_csv(
         arquivo=out_emissores,

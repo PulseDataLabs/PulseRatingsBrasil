@@ -23,6 +23,7 @@ from dotenv import load_dotenv
 
 from scrapers.utils.base import BaseScraper
 from scripts.utils import IS_TTY, print_done, print_fail, print_start, print_warn, progress_bar
+from utils import agora_brt
 
 load_dotenv()
 
@@ -76,7 +77,16 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
         self.logger.info("Buscando API Key de forma dinâmica da página pública...")
         print_start("Obtendo API Key da S&P...")
         try:
-            r = requests.get(BASE_URL, headers={"User-Agent": HEADERS_BASE["User-Agent"]}, timeout=30)
+            from curl_cffi import requests as crequests
+
+            r = crequests.get(
+                BASE_URL,
+                headers={"User-Agent": HEADERS_BASE["User-Agent"]},
+                impersonate="chrome",
+                timeout=30,
+            )
+            if r.status_code != 200:
+                r = requests.get(BASE_URL, headers={"User-Agent": HEADERS_BASE["User-Agent"]}, timeout=30)
             if r.status_code == 200:
                 match = re.search(r'"NEXT_PUBLIC_API_KEY"\s*:\s*"([^"]+)"', r.text)
                 if match:
@@ -92,7 +102,9 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
         return ""
 
     def fetch(self) -> pd.DataFrame:
-        session = requests.Session()
+        from curl_cffi import requests as crequests
+
+        session = crequests.Session(impersonate="chrome")
 
         api_key = self._get_api_key()
         if not api_key:
@@ -194,7 +206,7 @@ class StandardAndPoorsEmissoresScraper(BaseScraper):
 
         # Converte para DataFrame no formato esperado
         rows = []
-        today_str = datetime.date.today().strftime("%Y-%m-%d")
+        today_str, _ = agora_brt()
         for link, nome in resultados.items():
             rows.append({"dt_captura": today_str, "no_emissor": nome, "link": link})
 

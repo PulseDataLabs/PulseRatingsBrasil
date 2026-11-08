@@ -27,6 +27,7 @@ from scripts.utils import (
     print_warn,
     progress_bar,
 )
+from utils import agora_brt
 from utils.paths import get_data_dir
 
 BASE_URL = "https://www.austin.com.br"
@@ -190,7 +191,8 @@ class AustinRatingsScraper(BaseScraper):
             return pd.DataFrame()
 
         df = pd.DataFrame(all_ratings)
-        df.insert(0, "dt_captura", datetime.date.today().strftime("%Y-%m-%d"))
+        today_str, _ = agora_brt()
+        df.insert(0, "dt_captura", today_str)
 
         # Ordenação de colunas padrão
         col_order = [

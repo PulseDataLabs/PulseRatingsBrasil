@@ -98,6 +98,22 @@
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/ratings_emissoes.csv"
   },
   {
+    "title": "Fitch — Emissores",
+    "file": "fitch_emissores.csv",
+    "description": "Emissores brasileiros com rating de crédito ativo atribuído pela Fitch Ratings.",
+    "icon": "F",
+    "iconClass": "icon-fitch",
+    "badge": "Diário",
+    "badgeClass": "badge-daily",
+    "tags": [
+      "ratings",
+      "fitch",
+      "emissores"
+    ],
+    "source": "Fitch",
+    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_emissores.csv"
+  },
+  {
     "title": "Fitch — Ratings",
     "file": "fitch_ratings.csv",
     "description": "Ratings de crédito de longo e curto prazo atribuídos pela Fitch Ratings a emissores corporativos, financeiros e soberanos no Brasil.",
@@ -112,22 +128,6 @@
     ],
     "source": "Fitch",
     "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_ratings.csv"
-  },
-  {
-    "title": "Fitch — Ratings",
-    "file": "fitch_emissores.csv",
-    "description": "Emissores brasileiros com rating de crédito ativo atribuído pela Fitch Ratings.",
-    "icon": "F",
-    "iconClass": "icon-fitch",
-    "badge": "Diário",
-    "badgeClass": "badge-daily",
-    "tags": [
-      "ratings",
-      "fitch",
-      "emissores"
-    ],
-    "source": "Fitch",
-    "url": "https://raw.githubusercontent.com/PulseDataLabs/PulseRatingsBrasil/main/data/fitch_emissores.csv"
   },
   {
     "title": "Liberum — Emissores",

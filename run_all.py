@@ -167,7 +167,11 @@ def save_pipeline_status(results: dict[str, tuple[bool, float, str | None]], tot
                 loaded = json.load(f)
                 if isinstance(loaded, dict):
                     if isinstance(loaded.get("scrapers"), dict):
-                        status_data["scrapers"] = loaded["scrapers"]
+                        status_data["scrapers"] = {
+                            k: v
+                            for k, v in loaded["scrapers"].items()
+                            if k in active_scrapers or k in results
+                        }
                     if isinstance(loaded.get("drifts"), dict):
                         status_data["drifts"] = loaded["drifts"]
         except Exception as e:
@@ -240,7 +244,11 @@ def save_pipeline_status(results: dict[str, tuple[bool, float, str | None]], tot
 
 
 def main(
-    group: str | None = None, scraper: str | None = None, parallel: bool = True, max_workers: int = 4
+    group: str | None = None,
+    scraper: str | None = None,
+    parallel: bool = True,
+    max_workers: int = 4,
+    dry_run: bool = False,
 ) -> None:
     start_time = time.time()
 
@@ -266,6 +274,15 @@ def main(
 
     phase1_targets = [name for name, info in targets.items() if info["phase"] == 1]
     phase2_targets = [name for name, info in targets.items() if info["phase"] == 2]
+
+    if dry_run:
+        logger.info("[DRY-RUN] Simulando execução do pipeline sem coletar ou gravar dados.")
+        if phase1_targets:
+            logger.info(f"[DRY-RUN] Fase 1 ({len(phase1_targets)}): {', '.join(phase1_targets)}")
+        if phase2_targets:
+            logger.info(f"[DRY-RUN] Fase 2 ({len(phase2_targets)}): {', '.join(phase2_targets)}")
+        print_done(f"[DRY-RUN] {len(targets)} scraper(s) validados: {', '.join(targets.keys())}")
+        return
 
     results: dict[str, tuple[bool, float, str | None]] = {}
 
@@ -380,6 +397,19 @@ def main(
             print_warn(f"Geração de relatório de movimentações falhou: {e}")
             logger.warning(f"Geração de relatório de movimentações falhou: {e}")
 
+    # ── JSON de Consulta Consolidado ─────────────────────────────────
+    if not group and not scraper:
+        try:
+            section("JSON de Consulta", "gear")
+            print_start("Gerando data/emissores_rating.json...")
+            from scripts.gerar_consulta_json import main as generate_consulta_json
+
+            generate_consulta_json()
+            print_done("JSON de consulta atualizado")
+        except Exception as e:
+            print_warn(f"Geração do JSON de consulta falhou: {e}")
+            logger.warning(f"Geração do JSON de consulta falhou: {e}")
+
     # ── Resumo final ─────────────────────────────────────────────────
     ok = [n for n, r in results.items() if r[0]]
     fail = [n for n, r in results.items() if not r[0]]
@@ -443,9 +473,14 @@ if __name__ == "__main__":
         action="store_true",
         help="Ignora a gravação e persistência no banco de dados Oracle",
     )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Simula a execução do pipeline e valida os scrapers sem gravar dados",
+    )
     args = parser.parse_args()
 
-    if args.skip_db:
+    if args.skip_db or args.dry_run:
         import os
 
         os.environ["SKIP_ORACLE_DB"] = "1"
@@ -456,4 +491,10 @@ if __name__ == "__main__":
         generate()
         sys.exit(0)
 
-    main(group=args.group, scraper=args.scraper, parallel=args.parallel, max_workers=args.max_workers)
+    main(
+        group=args.group,
+        scraper=args.scraper,
+        parallel=args.parallel,
+        max_workers=args.max_workers,
+        dry_run=args.dry_run,
+    )

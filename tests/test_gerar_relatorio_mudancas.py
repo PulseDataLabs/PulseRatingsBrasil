@@ -9,6 +9,7 @@ from scripts.gerar_relatorio_mudancas import (
     comparar_snapshots,
     carregar_snapshot_anterior,
     salvar_snapshots,
+    salvar_historico_movimentacoes,
     gerar_markdown,
 )
 
@@ -359,3 +360,28 @@ def test_tranches_distintas_austin_nao_colidem():
     ]
     vigentes = extrair_ratings_vigentes(rows, ["agencia", "no_emissor_padronizado", "de_instrumento"])
     assert len(vigentes) == 2, "Tranches Senior e Subordinada devem coexistir sem sobrescrita"
+
+
+def test_salvar_historico_movimentacoes_nao_duplica_por_dt_captura(tmp_path):
+    import csv
+
+    evento_base = {
+        "agencia": "Fitch",
+        "categoria": "Emissor",
+        "emissor": "PETROBRAS",
+        "instrumento": "Corporativo",
+        "tipo_movimento": "UPGRADE",
+        "rating_anterior": "AA(bra)",
+        "rating_atual": "AAA(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "dt_acao": "2026-10-15",
+    }
+    salvar_historico_movimentacoes(tmp_path, [{**evento_base, "dt_captura": "2026-10-15"}])
+    salvar_historico_movimentacoes(tmp_path, [{**evento_base, "dt_captura": "2026-10-16"}])
+
+    with open(tmp_path / "historico_movimentacoes.csv", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+
+    assert len(rows) == 1
+    assert rows[0]["dt_captura"] == "2026-10-15"

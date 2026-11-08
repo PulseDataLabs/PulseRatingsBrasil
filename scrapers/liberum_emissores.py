@@ -47,82 +47,30 @@ class LiberumEmissoresScraper(BaseScraper):
     source = "Liberum"
 
     def fetch(self) -> pd.DataFrame:
-        from curl_cffi import requests
+        from scrapers.utils.liberum_helper import get_liberum_raw_items
 
         self.logger.info("Iniciando busca de emissores Liberum...")
         print_start("Acessando API Liberum Ratings para listar emissores...")
 
+        items = get_liberum_raw_items(self.logger)
         emissores = {}
-        page = 1
-        items_per_page = 40  # Reduzido de 100 para 40 para evitar timeouts
-        total_pages = 1
-        max_retries = 3
 
-        while page <= total_pages:
-            self.logger.info(f"Buscando página {page}/{total_pages}...")
-            params = {
-                "page": page,
-                "itemsPerPage": items_per_page,
-                "category": "",
-                "lastro": "",
-                "quota": "",
-                "ratingFilter": "",
-                "instituitionName": "",
-            }
+        for item in items:
+            nome = (item.get("ativo") or "").strip()
+            id_relatorio = item.get("id_relatorio")
+            categoria = (item.get("categoria") or "").strip()
 
-            data_json = None
-            for attempt in range(max_retries):
-                try:
-                    resp = requests.get(
-                        f"{BASE_API_URL}/getRatings",
-                        params=params,
-                        headers=HEADERS,
-                        impersonate="chrome",
-                        timeout=45,  # 45s de timeout
-                    )
-                    resp.raise_for_status()
-                    data_json = resp.json()
-                    break
-                except Exception as e:
-                    self.logger.warning(f"Tentativa {attempt + 1} falhou para a página {page}: {e}")
-                    if attempt == max_retries - 1:
-                        self.logger.error(f"Erro persistente na página {page}: {e}")
-                        print_fail(f"Erro ao acessar API Liberum na página {page}: {e}")
-                        break
-                    time.sleep(2**attempt)
+            if not nome or not id_relatorio:
+                continue
 
-            if data_json is None:
-                # Interrompe o loop se não conseguimos recuperar a página mesmo após retentativas
-                break
+            link_detalhes = f"https://www.liberumratings.com.br/detalhes-ativo/{id_relatorio}"
 
-            if page == 1:
-                total_pages = data_json.get("pages", 1)
-                self.logger.info(f"Total de páginas a buscar: {total_pages}")
-
-            items = data_json.get("data", [])
-            if not items:
-                self.logger.info("Página vazia. Fim da paginação.")
-                break
-
-            for item in items:
-                nome = (item.get("ativo") or "").strip()
-                id_relatorio = item.get("id_relatorio")
-                categoria = (item.get("categoria") or "").strip()
-
-                if not nome or not id_relatorio:
-                    continue
-
-                link_detalhes = f"https://www.liberumratings.com.br/detalhes-ativo/{id_relatorio}"
-
-                if link_detalhes not in emissores:
-                    emissores[link_detalhes] = {
-                        "no_emissor": nome,
-                        "no_setor": categoria,
-                        "link": link_detalhes,
-                    }
-
-            page += 1
-            time.sleep(0.3)
+            if link_detalhes not in emissores:
+                emissores[link_detalhes] = {
+                    "no_emissor": nome,
+                    "no_setor": categoria,
+                    "link": link_detalhes,
+                }
 
         rows = list(emissores.values())
         df = pd.DataFrame(rows)

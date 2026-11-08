@@ -483,8 +483,9 @@ def salvar_snapshots(
     dt_atual: str,
     vigentes_emissores: dict[str, dict[str, Any]],
     vigentes_emissoes: dict[str, dict[str, Any]],
+    max_retention_days: int = 45,
 ) -> None:
-    """Persiste o snapshot atual em arquivo diário e snapshot_latest.json."""
+    """Persiste o snapshot atual em arquivo diário e snapshot_latest.json, aplicando retenção máxima."""
     snapshot_dir.mkdir(parents=True, exist_ok=True)
 
     data = {
@@ -514,6 +515,26 @@ def salvar_snapshots(
     with open(latest_file, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
+    # Retenção automática: mantém apenas snapshots dentro da janela de max_retention_days
+    if max_retention_days > 0:
+        try:
+            cutoff_dt = (datetime.strptime(dt_atual, "%Y-%m-%d") - timedelta(days=max_retention_days)).strftime(
+                "%Y-%m-%d"
+            )
+            dated_files = []
+            for sf in sorted(snapshot_dir.glob("snapshot_*.json")):
+                m = re.match(r"^snapshot_(\d{4}-\d{2}-\d{2})\.json$", sf.name)
+                if m:
+                    dated_files.append((m.group(1), sf))
+            # Garante preservar pelo menos 2 snapshots históricos caso haja poucos arquivos
+            if len(dated_files) > 5:
+                for s_date, sf in dated_files[:-2]:
+                    if s_date < cutoff_dt:
+                        sf.unlink(missing_ok=True)
+                        logger.info(f"Snapshot antigo removido por política de retenção: {sf.name}")
+        except Exception as e:
+            logger.warning(f"Aviso ao aplicar retenção de snapshots: {e}")
+
     logger.info(f"Snapshots salvos com sucesso em {snapshot_dir}")
 
 
@@ -539,24 +560,37 @@ def salvar_historico_movimentacoes(data_dir: Path, novos_eventos: list[dict[str,
         "outlook_atual",
         "link",
     ]
-    existentes = []
+    existentes_raw = []
     if hist_file.exists():
         with open(hist_file, encoding="utf-8") as f:
-            existentes = list(csv.DictReader(f))
+            existentes_raw = list(csv.DictReader(f))
 
-    seen = {
-        (
-            r.get("dt_captura"),
-            r.get("agencia"),
-            r.get("categoria"),
-            r.get("no_emissor_padronizado"),
-            r.get("de_instrumento"),
-            r.get("tipo_movimento"),
-            r.get("rating_anterior"),
-            r.get("rating_atual"),
+    def _event_identity(r: dict[str, Any]) -> tuple:
+        return (
+            str(r.get("dt_acao_rating") or "").strip(),
+            str(r.get("agencia") or "").strip(),
+            str(r.get("categoria") or "").strip(),
+            str(r.get("no_emissor_padronizado") or "").strip(),
+            str(r.get("de_instrumento") or "").strip(),
+            str(r.get("tipo_movimento") or "").strip(),
+            str(r.get("rating_anterior") or "").strip(),
+            str(r.get("rating_atual") or "").strip(),
+            str(r.get("outlook_anterior") or "").strip(),
+            str(r.get("outlook_atual") or "").strip(),
         )
-        for r in existentes
-    }
+
+    # Deduplica passivo existente preservando a primeira captura em que o evento foi detectado
+    existentes_Input_sorted = sorted(
+        existentes_raw,
+        key=lambda e: (str(e.get("dt_captura") or ""), str(e.get("dt_acao_rating") or "")),
+    )
+    existentes = []
+    seen = set()
+    for r in existentes_Input_sorted:
+        k = _event_identity(r)
+        if k not in seen:
+            seen.add(k)
+            existentes.append(r)
 
     adicionados = 0
     for ev in novos_eventos:
@@ -583,16 +617,7 @@ def salvar_historico_movimentacoes(data_dir: Path, novos_eventos: list[dict[str,
             "link": ev.get("link") or "",
         }
 
-        k = (
-            item_row["dt_captura"],
-            item_row["agencia"],
-            item_row["categoria"],
-            item_row["no_emissor_padronizado"],
-            item_row["de_instrumento"],
-            item_row["tipo_movimento"],
-            item_row["rating_anterior"],
-            item_row["rating_atual"],
-        )
+        k = _event_identity(item_row)
         if k not in seen:
             seen.add(k)
             existentes.append(item_row)

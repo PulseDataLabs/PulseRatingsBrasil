@@ -62,101 +62,50 @@ class LiberumRatingsScraper(BaseScraper):
     source = "Liberum"
 
     def fetch(self) -> pd.DataFrame:
-        from curl_cffi import requests
+        from scrapers.utils.liberum_helper import get_liberum_raw_items
 
         self.logger.info("Iniciando busca de ratings Liberum...")
         print_start("Acessando API Liberum Ratings para listar classificações...")
 
+        items = get_liberum_raw_items(self.logger)
         rows = []
-        page = 1
-        items_per_page = 40  # Reduzido para evitar timeouts
-        total_pages = 1
-        max_retries = 3
 
-        while page <= total_pages:
-            self.logger.info(f"Buscando página {page}/{total_pages}...")
-            params = {
-                "page": page,
-                "itemsPerPage": items_per_page,
-                "category": "",
-                "lastro": "",
-                "quota": "",
-                "ratingFilter": "",
-                "instituitionName": "",
-            }
+        for item in items:
+            nome = (item.get("ativo") or "").strip()
+            id_relatorio = item.get("id_relatorio")
+            categoria = (item.get("categoria") or "").strip()
+            data_classificacao = item.get("data_classificacao") or ""
+            dt_acao_rating = data_classificacao[:10] if len(data_classificacao) >= 10 else ""
 
-            data_json = None
-            for attempt in range(max_retries):
-                try:
-                    resp = requests.get(
-                        f"{BASE_API_URL}/getRatings",
-                        params=params,
-                        headers=HEADERS,
-                        impersonate="chrome",
-                        timeout=45,
-                    )
-                    resp.raise_for_status()
-                    data_json = resp.json()
-                    break
-                except Exception as e:
-                    self.logger.warning(f"Tentativa {attempt + 1} falhou para a página {page}: {e}")
-                    if attempt == max_retries - 1:
-                        self.logger.error(f"Erro persistente na página {page}: {e}")
-                        print_fail(f"Erro ao acessar API Liberum na página {page}: {e}")
-                        break
-                    time.sleep(2**attempt)
+            if not nome or not id_relatorio:
+                continue
 
-            if data_json is None:
-                break
+            link_detalhes = f"https://www.liberumratings.com.br/detalhes-ativo/{id_relatorio}"
+            interno = item.get("interno") or []
 
-            if page == 1:
-                total_pages = data_json.get("pages", 1)
-                self.logger.info(f"Total de páginas a buscar: {total_pages}")
+            for sub in interno:
+                classe = (sub.get("classe") or "").strip()
+                acao = (sub.get("acao") or "").strip()
+                nota = (sub.get("nota") or "").strip()
+                escala = (sub.get("escala") or "").strip()
+                perspectiva = (sub.get("perspectiva") or "").strip()
 
-            items = data_json.get("data", [])
-            if not items:
-                self.logger.info("Página vazia. Fim da paginação.")
-                break
-
-            for item in items:
-                nome = (item.get("ativo") or "").strip()
-                id_relatorio = item.get("id_relatorio")
-                categoria = (item.get("categoria") or "").strip()
-                data_classificacao = item.get("data_classificacao") or ""
-                dt_acao_rating = data_classificacao[:10] if len(data_classificacao) >= 10 else ""
-
-                if not nome or not id_relatorio:
+                if not nota:
                     continue
 
-                link_detalhes = f"https://www.liberumratings.com.br/detalhes-ativo/{id_relatorio}"
-                interno = item.get("interno") or []
-
-                for sub in interno:
-                    classe = (sub.get("classe") or "").strip()
-                    acao = (sub.get("acao") or "").strip()
-                    nota = (sub.get("nota") or "").strip()
-                    escala = (sub.get("escala") or "").strip()
-                    perspectiva = (sub.get("perspectiva") or "").strip()
-
-                    if not nota:
-                        continue
-
-                    rows.append(
-                        {
-                            "no_emissor": nome,
-                            "link": link_detalhes,
-                            "no_tipo_rating": categoria,
-                            "de_rating_br": nota,
-                            "dt_acao_rating": dt_acao_rating,
-                            "de_acao_rating": acao,
-                            "de_outlook": perspectiva,
-                            "de_classe": classe,
-                            "de_escala": escala,
-                        }
-                    )
-
-            page += 1
-            time.sleep(0.3)
+                rows.append(
+                    {
+                        "no_emissor": nome,
+                        "link": link_detalhes,
+                        "no_tipo_rating": categoria,
+                        "de_rating_br": nota,
+                        "dt_acao_rating": dt_acao_rating,
+                        "de_acao_rating": acao,
+                        "de_outlook": perspectiva,
+                        "de_classe": classe,
+                        "de_escala": escala,
+                    }
+                )
 
         df = pd.DataFrame(rows)
         self.logger.info(f"Total de {len(df)} ratings extraídos da Liberum.")
