@@ -7,17 +7,17 @@
       {
         "name": "no_setor",
         "type": "str",
-        "example": "Empresas Não-Financeiras"
+        "example": ""
       },
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AMBEV S.A."
+        "example": "Avla Seguros Brasil S.A."
       },
       {
         "name": "no_tipo_rating",
         "type": "str",
-        "example": "Rating de Emissor"
+        "example": "Rating de Força Financeira"
       },
       {
         "name": "de_instrumento",
@@ -27,12 +27,12 @@
       {
         "name": "de_objeto",
         "type": "str",
-        "example": "Rating de Emissor"
+        "example": "Rating de Força Financeira"
       },
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AAA.br"
+        "example": "A-.br"
       },
       {
         "name": "de_outlook",
@@ -42,12 +42,12 @@
       {
         "name": "dt_rating",
         "type": "date",
-        "example": "2026-03-17"
+        "example": "2026-08-07"
       },
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-11-06"
+        "example": "2026-11-09"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Basso Fundo de Investimento em Direitos Creditórios"
+        "example": "VECTOR FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISSETORIAL"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29329"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29331"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Basso Fundo de Investimento em Direitos Creditórios"
+        "example": "VECTOR FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISSETORIAL"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29329"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29331"
       },
       {
         "name": "no_tipo_rating",
@@ -362,12 +362,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP2"
+        "example": "CP3"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-11-06"
+        "example": "2026-11-09"
       },
       {
         "name": "de_acao_rating",
