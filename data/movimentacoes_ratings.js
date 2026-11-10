@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-11-10T14:04:19.210450",
+  "timestamp": "2026-11-10T18:10:22.054150",
   "dt_atual": "2026-11-10",
   "dt_anterior": "2026-11-09",
   "resumo": {
@@ -10,14 +10,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "downgrades_emissoes": 30,
     "total_downgrades": 43,
     "novos_emissores": 11,
-    "novos_emissoes": 51,
-    "total_novos": 62,
+    "novos_emissoes": 52,
+    "total_novos": 63,
     "outlooks_emissores": 8,
     "outlooks_emissoes": 21,
     "total_outlooks": 29,
     "retirados_emissores": 1,
-    "retirados_emissoes": 12,
-    "total_retirados": 13
+    "retirados_emissoes": 11,
+    "total_retirados": 12
   },
   "periodo_recente": {
     "dt_atual": "2026-11-10",
@@ -30,14 +30,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "downgrades_emissoes": 30,
       "total_downgrades": 43,
       "novos_emissores": 11,
-      "novos_emissoes": 51,
-      "total_novos": 62,
+      "novos_emissoes": 52,
+      "total_novos": 63,
       "outlooks_emissores": 8,
       "outlooks_emissoes": 21,
       "total_outlooks": 29,
       "retirados_emissores": 1,
-      "retirados_emissoes": 12,
-      "total_retirados": 13
+      "retirados_emissoes": 11,
+      "total_retirados": 12
     },
     "emissores": {
       "tipo": "emissores",
@@ -918,34 +918,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Liberum",
-          "emissor": "ESTIMULO FUNDO INVESTIMENTO DIREITOS CREDITORIOS IS RESPONSABILIDADE LIMITADA",
-          "cnpj_emissor": "42336359000184",
-          "instrumento": "Senior - Curto prazo",
-          "dt_acao": "2026-11-10",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/27977",
-          "rating_anterior": "CP3",
-          "rating_atual": "CP4",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Liberum",
-          "emissor": "ESTIMULO FUNDO INVESTIMENTO DIREITOS CREDITORIOS IS RESPONSABILIDADE LIMITADA",
-          "cnpj_emissor": "42336359000184",
-          "instrumento": "Senior - Longo prazo",
-          "dt_acao": "2026-11-10",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/27977",
-          "rating_anterior": "BBB",
-          "rating_atual": "BB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
-        },
-        {
-          "agencia": "Liberum",
           "emissor": "FAMA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
           "cnpj_emissor": "19503125000162",
           "instrumento": "Subordinada - Longo prazo",
@@ -1015,18 +987,46 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "-1"
         },
         {
+          "agencia": "Liberum",
+          "emissor": "IN",
+          "cnpj_emissor": "05208211001703",
+          "instrumento": "Subordinada - Longo prazo",
+          "dt_acao": "2023-03-08",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/25606",
+          "rating_anterior": "B",
+          "rating_atual": "CCC",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
+        {
           "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "cnpj_emissor": "12536691000121",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "variacao_notches": "-3"
         },
         {
           "agencia": "Fitch",
@@ -1041,6 +1041,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-3"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "RIZA SECURITIZADORA 2022",
+          "cnpj_emissor": "08.769.451/0001-08",
+          "instrumento": "notes ser 2022-1",
+          "dt_acao": "2026-10-14",
+          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-bcbf-97435461#issues",
+          "cnpj_devedor_vinculado": "05197443000138",
+          "rating_anterior": "AA+sf(bra)",
+          "rating_atual": "Asf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-4"
         },
         {
           "agencia": "Fitch",
@@ -1079,21 +1094,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "instrumento": "notes ser 2022-3",
           "dt_acao": "2026-10-14",
           "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-3-bcbf-97435474#issues",
-          "cnpj_devedor_vinculado": "05197443000138",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "Asf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-4"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "cnpj_emissor": "08.769.451/0001-08",
-          "instrumento": "notes ser 2022-1",
-          "dt_acao": "2026-10-14",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-bcbf-97435461#issues",
           "cnpj_devedor_vinculado": "05197443000138",
           "rating_anterior": "AA+sf(bra)",
           "rating_atual": "Asf(bra)",
@@ -1884,6 +1884,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "PARINTINS AMAZONAS TRANSMISSORA ENERGIA",
+          "cnpj_emissor": "",
+          "instrumento": "BRL 210 mln Floating bond/note 15-Apr-2046",
+          "dt_acao": "2026-11-10",
+          "link": "https://www.fitchratings.com/entity/parintins-amazonas-transmissora-de-energia-sa-97071688#issues",
+          "rating_atual": "AAA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
         }
       ],
       "outlooks": [
@@ -2192,21 +2204,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "cnpj_emissor": "08.769.451/0001-08",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "cnpj_devedor_vinculado": "07594978000178",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "BSEC SECURITIZADORA 2011",
           "cnpj_emissor": "",
           "instrumento": "certificates",
@@ -2340,11 +2337,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-11-09",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 2,
-      "total_upgrades": 2,
+      "upgrades_emissoes": 4,
+      "total_upgrades": 4,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 2,
-      "total_downgrades": 2,
+      "downgrades_emissoes": 3,
+      "total_downgrades": 3,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2352,8 +2349,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 1,
-      "total_retirados": 1
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
@@ -2370,6 +2367,34 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_atual": "2026-11-10",
       "dt_anterior": "2026-11-09",
       "upgrades": [
+        {
+          "agencia": "Liberum",
+          "emissor": "ESTIMULO FUNDO INVESTIMENTO DIREITOS CREDITORIOS IS RESPONSABILIDADE LIMITADA",
+          "cnpj_emissor": "42336359000184",
+          "instrumento": "Senior - Curto prazo",
+          "dt_acao": "2026-11-10",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29330",
+          "rating_anterior": "CP4",
+          "rating_atual": "CP3",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
+          "agencia": "Liberum",
+          "emissor": "ESTIMULO FUNDO INVESTIMENTO DIREITOS CREDITORIOS IS RESPONSABILIDADE LIMITADA",
+          "cnpj_emissor": "42336359000184",
+          "instrumento": "Senior - Longo prazo",
+          "dt_acao": "2026-11-10",
+          "link": "https://www.liberumratings.com.br/detalhes-ativo/29330",
+          "rating_anterior": "BB+",
+          "rating_atual": "BBB",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
+        },
         {
           "agencia": "Austin",
           "emissor": "FIDC IC SOMAPAY",
@@ -2403,17 +2428,31 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "downgrades": [
         {
           "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
+        {
+          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "cnpj_emissor": "12536691000121",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB+",
+          "rating_atual": "brBB",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "variacao_notches": "-3"
         },
         {
           "agencia": "Fitch",
@@ -2433,23 +2472,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       ],
       "novos": [],
       "outlooks": [],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "cnpj_emissor": "08.769.451/0001-08",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "cnpj_devedor_vinculado": "07594978000178",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "retirados": []
     }
   },
   "movimentacoes": [
@@ -2471,37 +2494,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-10"
     },
     {
-      "agencia": "Liberum",
-      "emissor": "ESTIMULO FUNDO INVESTIMENTO DIREITOS CREDITORIOS IS RESPONSABILIDADE LIMITADA",
-      "cnpj_emissor": "42336359000184",
-      "instrumento": "Senior - Curto prazo",
+      "agencia": "Fitch",
+      "emissor": "PARINTINS AMAZONAS TRANSMISSORA ENERGIA",
+      "cnpj_emissor": "",
+      "instrumento": "BRL 210 mln Floating bond/note 15-Apr-2046",
       "dt_acao": "2026-11-10",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/27977",
-      "rating_anterior": "CP3",
-      "rating_atual": "CP4",
-      "outlook_anterior": "Estável",
+      "link": "https://www.fitchratings.com/entity/parintins-amazonas-transmissora-de-energia-sa-97071688#issues",
+      "rating_atual": "AAA(bra)",
       "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
       "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-10"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "ESTIMULO FUNDO INVESTIMENTO DIREITOS CREDITORIOS IS RESPONSABILIDADE LIMITADA",
-      "cnpj_emissor": "42336359000184",
-      "instrumento": "Senior - Longo prazo",
-      "dt_acao": "2026-11-10",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/27977",
-      "rating_anterior": "BBB",
-      "rating_atual": "BB+",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
+      "tipo": "NOVO",
       "dt_captura": "2026-11-10"
     },
     {
@@ -4740,6 +4744,24 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
+      "emissor": "RIZA SECURITIZADORA 2022",
+      "cnpj_emissor": "08.769.451/0001-08",
+      "instrumento": "notes ser 2022-1",
+      "dt_acao": "2026-10-14",
+      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-bcbf-97435461#issues",
+      "cnpj_devedor_vinculado": "05197443000138",
+      "rating_anterior": "AA+sf(bra)",
+      "rating_atual": "Asf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-4",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-10"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "RIZA SECURITIZADORA 2021",
       "cnpj_emissor": "08.769.451/0001-08",
       "instrumento": "securities ser 378",
@@ -4781,24 +4803,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "instrumento": "notes ser 2022-3",
       "dt_acao": "2026-10-14",
       "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-3-bcbf-97435474#issues",
-      "cnpj_devedor_vinculado": "05197443000138",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "Asf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-4",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-10"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "cnpj_emissor": "08.769.451/0001-08",
-      "instrumento": "notes ser 2022-1",
-      "dt_acao": "2026-10-14",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-bcbf-97435461#issues",
       "cnpj_devedor_vinculado": "05197443000138",
       "rating_anterior": "AA+sf(bra)",
       "rating_atual": "Asf(bra)",
@@ -5052,36 +5056,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-10"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "cnpj_emissor": "08.769.451/0001-08",
-      "instrumento": "securities ser 1",
-      "dt_acao": "2026-04-15",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-      "cnpj_devedor_vinculado": "07594978000178",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-11-10"
-    },
-    {
       "agencia": "Austin",
       "emissor": "FICTOR INVEST FIDC",
       "cnpj_emissor": "12536691000121",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBBB",
-      "rating_atual": "brBB+",
+      "rating_atual": "brBB",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
+      "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-10"
@@ -5120,6 +5106,23 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-10"
     },
     {
+      "agencia": "Austin",
+      "emissor": "HIGH YIELD YALEEH FIDC",
+      "cnpj_emissor": "",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB+",
+      "rating_atual": "brBBB-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-10"
+    },
+    {
       "agencia": "S&P",
       "emissor": "ADAMI MADEIRAS",
       "cnpj_emissor": "87790606000156",
@@ -5149,6 +5152,23 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-10"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "IN",
+      "cnpj_emissor": "05208211001703",
+      "instrumento": "Subordinada - Longo prazo",
+      "dt_acao": "2023-03-08",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/25606",
+      "rating_anterior": "B",
+      "rating_atual": "CCC",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-3",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-10"
     },
     {
@@ -5361,6 +5381,24 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-11-10",
       "dt_captura": "2026-11-10",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/27202"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "PARINTINS AMAZONAS TRANSMISSORA ENERGIA",
+      "cnpj_emissor": "",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "BRL 210 mln Floating bond/note 15-Apr-2046",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-10",
+      "dt_captura": "2026-11-10",
+      "link": "https://www.fitchratings.com/entity/parintins-amazonas-transmissora-de-energia-sa-97071688#issues"
     },
     {
       "agencia": "Liberum",
@@ -109850,34 +109888,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Liberum",
-        "emissor": "ESTIMULO FUNDO INVESTIMENTO DIREITOS CREDITORIOS IS RESPONSABILIDADE LIMITADA",
-        "cnpj_emissor": "42336359000184",
-        "instrumento": "Senior - Curto prazo",
-        "dt_acao": "2026-11-10",
-        "link": "https://www.liberumratings.com.br/detalhes-ativo/27977",
-        "rating_anterior": "CP3",
-        "rating_atual": "CP4",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Liberum",
-        "emissor": "ESTIMULO FUNDO INVESTIMENTO DIREITOS CREDITORIOS IS RESPONSABILIDADE LIMITADA",
-        "cnpj_emissor": "42336359000184",
-        "instrumento": "Senior - Longo prazo",
-        "dt_acao": "2026-11-10",
-        "link": "https://www.liberumratings.com.br/detalhes-ativo/27977",
-        "rating_anterior": "BBB",
-        "rating_atual": "BB+",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
-      },
-      {
-        "agencia": "Liberum",
         "emissor": "FAMA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
         "cnpj_emissor": "19503125000162",
         "instrumento": "Subordinada - Longo prazo",
@@ -109947,18 +109957,46 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "-1"
       },
       {
+        "agencia": "Liberum",
+        "emissor": "IN",
+        "cnpj_emissor": "05208211001703",
+        "instrumento": "Subordinada - Longo prazo",
+        "dt_acao": "2023-03-08",
+        "link": "https://www.liberumratings.com.br/detalhes-ativo/25606",
+        "rating_anterior": "B",
+        "rating_atual": "CCC",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-3"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "cnpj_emissor": "",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB+",
+        "rating_atual": "brBBB-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
+      },
+      {
         "agencia": "Austin",
         "emissor": "FICTOR INVEST FIDC",
         "cnpj_emissor": "12536691000121",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brBBB",
-        "rating_atual": "brBB+",
+        "rating_atual": "brBB",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
+        "variacao_notches": "-3"
       },
       {
         "agencia": "Fitch",
@@ -109973,6 +110011,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-3"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "RIZA SECURITIZADORA 2022",
+        "cnpj_emissor": "08.769.451/0001-08",
+        "instrumento": "notes ser 2022-1",
+        "dt_acao": "2026-10-14",
+        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-bcbf-97435461#issues",
+        "cnpj_devedor_vinculado": "05197443000138",
+        "rating_anterior": "AA+sf(bra)",
+        "rating_atual": "Asf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-4"
       },
       {
         "agencia": "Fitch",
@@ -110011,21 +110064,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "instrumento": "notes ser 2022-3",
         "dt_acao": "2026-10-14",
         "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-3-bcbf-97435474#issues",
-        "cnpj_devedor_vinculado": "05197443000138",
-        "rating_anterior": "AA+sf(bra)",
-        "rating_atual": "Asf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-4"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "cnpj_emissor": "08.769.451/0001-08",
-        "instrumento": "notes ser 2022-1",
-        "dt_acao": "2026-10-14",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-bcbf-97435461#issues",
         "cnpj_devedor_vinculado": "05197443000138",
         "rating_anterior": "AA+sf(bra)",
         "rating_atual": "Asf(bra)",
@@ -110816,6 +110854,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "PARINTINS AMAZONAS TRANSMISSORA ENERGIA",
+        "cnpj_emissor": "",
+        "instrumento": "BRL 210 mln Floating bond/note 15-Apr-2046",
+        "dt_acao": "2026-11-10",
+        "link": "https://www.fitchratings.com/entity/parintins-amazonas-transmissora-de-energia-sa-97071688#issues",
+        "rating_atual": "AAA(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
       }
     ],
     "outlooks": [
@@ -111116,21 +111166,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-21",
         "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
         "rating_anterior": "A+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "cnpj_emissor": "08.769.451/0001-08",
-        "instrumento": "securities ser 1",
-        "dt_acao": "2026-04-15",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-        "cnpj_devedor_vinculado": "07594978000178",
-        "rating_anterior": "AA+sf(bra)",
         "rating_atual": "PIFsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
