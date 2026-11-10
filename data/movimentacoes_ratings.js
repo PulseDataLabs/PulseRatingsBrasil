@@ -1,14 +1,14 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-11-10T02:21:48.805876",
+  "timestamp": "2026-11-10T14:04:19.210450",
   "dt_atual": "2026-11-10",
   "dt_anterior": "2026-11-09",
   "resumo": {
     "upgrades_emissores": 13,
-    "upgrades_emissoes": 11,
-    "total_upgrades": 24,
+    "upgrades_emissoes": 12,
+    "total_upgrades": 25,
     "downgrades_emissores": 13,
-    "downgrades_emissoes": 29,
-    "total_downgrades": 42,
+    "downgrades_emissoes": 30,
+    "total_downgrades": 43,
     "novos_emissores": 11,
     "novos_emissoes": 51,
     "total_novos": 62,
@@ -16,19 +16,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "outlooks_emissoes": 21,
     "total_outlooks": 29,
     "retirados_emissores": 1,
-    "retirados_emissoes": 11,
-    "total_retirados": 12
+    "retirados_emissoes": 12,
+    "total_retirados": 13
   },
   "periodo_recente": {
     "dt_atual": "2026-11-10",
     "dt_anterior": "2026-10-10",
     "resumo": {
       "upgrades_emissores": 13,
-      "upgrades_emissoes": 11,
-      "total_upgrades": 24,
+      "upgrades_emissoes": 12,
+      "total_upgrades": 25,
       "downgrades_emissores": 13,
-      "downgrades_emissoes": 29,
-      "total_downgrades": 42,
+      "downgrades_emissoes": 30,
+      "total_downgrades": 43,
       "novos_emissores": 11,
       "novos_emissoes": 51,
       "total_novos": 62,
@@ -36,8 +36,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 21,
       "total_outlooks": 29,
       "retirados_emissores": 1,
-      "retirados_emissoes": 11,
-      "total_retirados": 12
+      "retirados_emissoes": 12,
+      "total_retirados": 13
     },
     "emissores": {
       "tipo": "emissores",
@@ -702,6 +702,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+4"
         },
         {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "ECO SECURITIZADORA 2025",
           "cnpj_emissor": "10.753.164/0001-43",
@@ -999,6 +1013,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "cnpj_emissor": "12536691000121",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
         },
         {
           "agencia": "Fitch",
@@ -1848,7 +1876,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         {
           "agencia": "Fitch",
           "emissor": "BURITI TRANSMISSAO ENERGIA",
-          "cnpj_emissor": "",
+          "cnpj_emissor": "47290852000124",
           "instrumento": "BRL bond/note",
           "dt_acao": "2026-11-09",
           "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -2164,6 +2192,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
+          "emissor": "RIZA SECURITIZADORA 2022",
+          "cnpj_emissor": "08.769.451/0001-08",
+          "instrumento": "securities ser 1",
+          "dt_acao": "2026-04-15",
+          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+          "cnpj_devedor_vinculado": "07594978000178",
+          "rating_anterior": "AA+sf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "BSEC SECURITIZADORA 2011",
           "cnpj_emissor": "",
           "instrumento": "certificates",
@@ -2297,11 +2340,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-11-09",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 1,
-      "total_upgrades": 1,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 1,
-      "total_downgrades": 1,
+      "downgrades_emissoes": 2,
+      "total_downgrades": 2,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2309,8 +2352,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 0,
-      "total_retirados": 0
+      "retirados_emissoes": 1,
+      "total_retirados": 1
     },
     "emissores": {
       "tipo": "emissores",
@@ -2327,6 +2370,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_atual": "2026-11-10",
       "dt_anterior": "2026-11-09",
       "upgrades": [
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        },
         {
           "agencia": "Fitch",
           "emissor": "ECO SECURITIZADORA 2025",
@@ -2345,6 +2402,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       ],
       "downgrades": [
         {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "cnpj_emissor": "12536691000121",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "OPEA SECURITIZADORA 2024",
           "cnpj_emissor": "02.773.542/0001-22",
@@ -2362,7 +2433,23 @@ window.PULSERATINGS_MOVIMENTACOES = {
       ],
       "novos": [],
       "outlooks": [],
-      "retirados": []
+      "retirados": [
+        {
+          "agencia": "Fitch",
+          "emissor": "RIZA SECURITIZADORA 2022",
+          "cnpj_emissor": "08.769.451/0001-08",
+          "instrumento": "securities ser 1",
+          "dt_acao": "2026-04-15",
+          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+          "cnpj_devedor_vinculado": "07594978000178",
+          "rating_anterior": "AA+sf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        }
+      ]
     }
   },
   "movimentacoes": [
@@ -2514,7 +2601,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
     {
       "agencia": "Fitch",
       "emissor": "BURITI TRANSMISSAO ENERGIA",
-      "cnpj_emissor": "",
+      "cnpj_emissor": "47290852000124",
       "instrumento": "BRL bond/note",
       "dt_acao": "2026-11-09",
       "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -4965,6 +5052,41 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-10"
     },
     {
+      "agencia": "Fitch",
+      "emissor": "RIZA SECURITIZADORA 2022",
+      "cnpj_emissor": "08.769.451/0001-08",
+      "instrumento": "securities ser 1",
+      "dt_acao": "2026-04-15",
+      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+      "cnpj_devedor_vinculado": "07594978000178",
+      "rating_anterior": "AA+sf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-11-10"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FICTOR INVEST FIDC",
+      "cnpj_emissor": "12536691000121",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2025-10-09",
+      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBBB",
+      "rating_atual": "brBB+",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-10"
+    },
+    {
       "agencia": "S&P",
       "emissor": "BANCO FIBRA",
       "cnpj_emissor": "05722758000157",
@@ -4978,6 +5100,23 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-10"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FIDC IC SOMAPAY",
+      "cnpj_emissor": "",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2024-08-12",
+      "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brB-",
+      "rating_atual": "brBB+",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+5",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
       "dt_captura": "2026-11-10"
     },
     {
@@ -109495,6 +109634,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+4"
       },
       {
+        "agencia": "Austin",
+        "emissor": "FIDC IC SOMAPAY",
+        "cnpj_emissor": "",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2024-08-12",
+        "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brB-",
+        "rating_atual": "brBB+",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+5"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "ECO SECURITIZADORA 2025",
         "cnpj_emissor": "10.753.164/0001-43",
@@ -109792,6 +109945,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-1"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "cnpj_emissor": "12536691000121",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBBB",
+        "rating_atual": "brBB+",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
       },
       {
         "agencia": "Fitch",
@@ -110641,7 +110808,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       {
         "agencia": "Fitch",
         "emissor": "BURITI TRANSMISSAO ENERGIA",
-        "cnpj_emissor": "",
+        "cnpj_emissor": "47290852000124",
         "instrumento": "BRL bond/note",
         "dt_acao": "2026-11-09",
         "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -110949,6 +111116,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-21",
         "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
         "rating_anterior": "A+sf(bra)",
+        "rating_atual": "PIFsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "RIZA SECURITIZADORA 2022",
+        "cnpj_emissor": "08.769.451/0001-08",
+        "instrumento": "securities ser 1",
+        "dt_acao": "2026-04-15",
+        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+        "cnpj_devedor_vinculado": "07594978000178",
+        "rating_anterior": "AA+sf(bra)",
         "rating_atual": "PIFsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
