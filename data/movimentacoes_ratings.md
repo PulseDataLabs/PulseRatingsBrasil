@@ -8,10 +8,10 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 13 | 12 | **25** |
-| 🔴 **Downgrades (Rebaixamentos)** | 13 | 28 | **41** |
-| 🔵 **Novos Ratings** | 11 | 56 | **67** |
+| 🔴 **Downgrades (Rebaixamentos)** | 13 | 27 | **40** |
+| 🔵 **Novos Ratings** | 11 | 57 | **68** |
 | 🟡 **Mudanças de Perspectiva** | 8 | 22 | **30** |
-| ⚪ **Ratings Retirados / Liquidados** | 1 | 11 | **12** |
+| ⚪ **Ratings Retirados / Liquidados** | 1 | 10 | **11** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 25
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -31,7 +31,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | National Long Term Rating | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Liberum | **VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL** | Mezanino - Curto prazo | `CP5` | **`CP3`** | `+2` | Negativa | 11/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Longo prazo | `BB-` | **`BBB`** | `+4` | Negativa | 12/08/2026 |
-| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA-` | **`brAA`** | `+1` | Estável | 27/09/2019 |
+| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB-` | **`brBBB+`** | `+2` | Estável | 06/03/2024 |
 | Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brBBB`** | `+3` | Negativa | 09/10/2025 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
@@ -42,7 +42,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 41
+### 🔴 Rebaixamentos de Rating (Downgrades) — 40
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Liberum | **ESTADO ISRAEL** | Finanças Públicas | `AAA` | **`A`** | `-5` | Estável | 06/10/2026 |
@@ -67,7 +67,6 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 12/08/2026 |
 | Austin | **FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brB`** | `-3` | Estável | 22/02/2021 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
-| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
 | Fitch | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CREDITAS AUTO XII** | notes ser 9 | `AA-sf(bra)` | **`A-sf(bra)`** | `-3` | Estável | 07/05/2026 |
 | Fitch | **RIZA SECURITIZADORA 2021** | securities ser 378 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
 | Fitch | **RIZA SECURITIZADORA 2022** | notes ser 2022-2 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
@@ -121,7 +120,7 @@
 | Moody's | **RODOVIAS INTEGRADAS OESTE** | 14ª Emissão de Debêntures - Série Única | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (67)
+### 🔵 Novos Ratings Atribuídos (68)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Moody's | **BANCO MERCANTIL** | Rating de Depósitos Bancários | **`AA.br`** | Estável | 14/10/2026 |
@@ -140,6 +139,7 @@
 | Moody's | **AXS ENERGIA UNIDADE 08** | 1ª Emissão de Debêntures - Série Única | **`BBB.br`** | Negativa | 22/10/2026 |
 | Moody's | **AXS ENERGIA UFV GOIAS SPE** | 1ª Emissão de Debêntures - Série Única | **`BBB.br`** | Negativa | 22/10/2026 |
 | Fitch | **BSEC COMPANHIA SECURITIZACAO 2013** | certificates | **`AAAsf(bra)`** | Estável | 29/10/2026 |
+| Fitch | **VERT CIA SECURITIZADORA 2026** | notes | **`AAA(EXP)sf(bra)`** | Estável | 11/11/2026 |
 | Fitch | **VIVARA PARTICIPACOES** | BRL 300 mln Floating CDI (Brazil) 0.56% bond/note | **`AAA(bra)`** | Estável | 13/10/2026 |
 | Fitch | **VIVARA PARTICIPACOES** | BRL 300 mln Floating CDI (Brazil) 0.65% bond/note | **`AAA(bra)`** | Estável | 13/10/2026 |
 | Fitch | **C MODAS** | BRL 250 mln Floating CDI (Brazil) bond/note | **`AA(bra)`** | Estável | 14/10/2026 |
@@ -153,16 +153,14 @@
 | Fitch | **BRAZIL** | BRL 795.04 mln Zero treasury bills/notes/bonds 01-Dec-2032 | **`BB`** | Estável | 19/10/2026 |
 | Fitch | **BRAZIL** | BRL 817 mln Zero treasury bills/notes/bonds 01-Dec-2032 | **`BB`** | Estável | 19/10/2026 |
 | Fitch | **BRAZIL** | BRL 35 bln Zero treasury bills/notes/bonds 01-Dec-2032 | **`BB`** | Estável | 19/10/2026 |
-| Liberum | **YELLOW CAPITAL FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | **`BB`** | Estável | 19/10/2026 |
-| *...e mais 37 novos ratings.* | | | | | |
+| *...e mais 38 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (12)
+### ⚪ Ratings Retirados / Liquidados (11)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **COMPANHIA PARAIBANA GAS PBGAS** | National Long Term Rating | `A(bra)` | Negativa | 05/11/2026 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | Estável | 04/11/2026 |
 | Fitch | **PNEUCASH FIDC** | securities ser 6 | `A+sf(bra)` | Estável | 21/10/2026 |
-| Fitch | **RIZA SECURITIZADORA 2022** | securities ser 1 | `AA+sf(bra)` | Estável | 15/04/2026 |
 | Fitch | **BSEC SECURITIZADORA 2011** | certificates | `BBBsf(bra)` | Estável | 20/10/2026 |
 | Fitch | **UNIAO QUIMICA FARMACEUTICA NACIONAL** | BRL 600 mln Series 14 Floating bond/note 15-Oct-2026 | `AA-(bra)` | Estável | 15/10/2026 |
 | Fitch | **COPEL GERACAO TRANSMISSAO** | BRL 1.5 bln Floating CDI (Brazil) 1.38% bond/note 15-Oct-2026 | `AAA(bra)` | Estável | 15/10/2026 |
@@ -174,4 +172,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (10/11/2026 → 11/11/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 2 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
+*Total nas últimas 24h: 🟢 2 upgrades | 🔴 1 downgrades | 🔵 1 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*

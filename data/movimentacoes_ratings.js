@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-11-11T14:27:46.741909",
+  "timestamp": "2026-11-11T18:44:27.058440",
   "dt_atual": "2026-11-11",
   "dt_anterior": "2026-11-10",
   "resumo": {
@@ -7,17 +7,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "upgrades_emissoes": 12,
     "total_upgrades": 25,
     "downgrades_emissores": 13,
-    "downgrades_emissoes": 28,
-    "total_downgrades": 41,
+    "downgrades_emissoes": 27,
+    "total_downgrades": 40,
     "novos_emissores": 11,
-    "novos_emissoes": 56,
-    "total_novos": 67,
+    "novos_emissoes": 57,
+    "total_novos": 68,
     "outlooks_emissores": 8,
     "outlooks_emissoes": 22,
     "total_outlooks": 30,
     "retirados_emissores": 1,
-    "retirados_emissoes": 11,
-    "total_retirados": 12
+    "retirados_emissoes": 10,
+    "total_retirados": 11
   },
   "periodo_recente": {
     "dt_atual": "2026-11-11",
@@ -27,17 +27,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 12,
       "total_upgrades": 25,
       "downgrades_emissores": 13,
-      "downgrades_emissoes": 28,
-      "total_downgrades": 41,
+      "downgrades_emissoes": 27,
+      "total_downgrades": 40,
       "novos_emissores": 11,
-      "novos_emissoes": 56,
-      "total_novos": 67,
+      "novos_emissoes": 57,
+      "total_novos": 68,
       "outlooks_emissores": 8,
       "outlooks_emissoes": 22,
       "total_outlooks": 30,
       "retirados_emissores": 1,
-      "retirados_emissoes": 11,
-      "total_retirados": 12
+      "retirados_emissoes": 10,
+      "total_retirados": 11
     },
     "emissores": {
       "tipo": "emissores",
@@ -703,17 +703,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "cnpj_emissor": "33536066000150",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "cnpj_emissor": "",
           "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA-",
-          "rating_atual": "brAA",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB-",
+          "rating_atual": "brBBB+",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
+          "variacao_notches": "+2"
         },
         {
           "agencia": "Austin",
@@ -970,20 +970,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-7"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "cnpj_emissor": "",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
         },
         {
           "agencia": "Fitch",
@@ -1300,6 +1286,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "link": "https://www.fitchratings.com/entity/brazilian-securities-2013-302-303-304-petrobras-97435578#issues",
           "cnpj_devedor_vinculado": "33000167000101",
           "rating_atual": "AAAsf(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "VERT CIA SECURITIZADORA 2026",
+          "cnpj_emissor": "43737117000165",
+          "instrumento": "notes",
+          "dt_acao": "2026-11-11",
+          "link": "https://www.fitchratings.com/entity/vert-cia-securitizadora-2026-51-1-2-3-4-5-j-f-97992391#issues",
+          "rating_anterior": "NRsf",
+          "rating_atual": "AAA(EXP)sf(bra)",
+          "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -2236,21 +2236,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "cnpj_emissor": "08.769.451/0001-08",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "cnpj_devedor_vinculado": "07594978000178",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "BSEC SECURITIZADORA 2011",
           "cnpj_emissor": "",
           "instrumento": "certificates",
@@ -2373,17 +2358,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 2,
       "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 2,
-      "total_downgrades": 2,
+      "downgrades_emissoes": 1,
+      "total_downgrades": 1,
       "novos_emissores": 0,
-      "novos_emissoes": 0,
-      "total_novos": 0,
+      "novos_emissoes": 1,
+      "total_novos": 1,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 1,
-      "total_retirados": 1
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
@@ -2402,17 +2387,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades": [
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "cnpj_emissor": "33536066000150",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "cnpj_emissor": "",
           "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA-",
-          "rating_atual": "brAA",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB-",
+          "rating_atual": "brBBB+",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
+          "variacao_notches": "+2"
         },
         {
           "agencia": "Austin",
@@ -2431,20 +2416,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       ],
       "downgrades": [
         {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "cnpj_emissor": "",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "VIA MT 320 CONCESSIONARIA RODOVIAS",
           "cnpj_emissor": "",
@@ -2459,25 +2430,24 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "-6"
         }
       ],
-      "novos": [],
-      "outlooks": [],
-      "retirados": [
+      "novos": [
         {
           "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "cnpj_emissor": "08.769.451/0001-08",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "cnpj_devedor_vinculado": "07594978000178",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
+          "emissor": "VERT CIA SECURITIZADORA 2026",
+          "cnpj_emissor": "43737117000165",
+          "instrumento": "notes",
+          "dt_acao": "2026-11-11",
+          "link": "https://www.fitchratings.com/entity/vert-cia-securitizadora-2026-51-1-2-3-4-5-j-f-97992391#issues",
+          "rating_anterior": "NRsf",
+          "rating_atual": "AAA(EXP)sf(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
+          "tipo_movimento": "NOVO",
           "variacao_notches": "—"
         }
-      ]
+      ],
+      "outlooks": [],
+      "retirados": []
     }
   },
   "movimentacoes": [
@@ -2496,6 +2466,23 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "+2",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
+      "dt_captura": "2026-11-11"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "VERT CIA SECURITIZADORA 2026",
+      "cnpj_emissor": "43737117000165",
+      "instrumento": "notes",
+      "dt_acao": "2026-11-11",
+      "link": "https://www.fitchratings.com/entity/vert-cia-securitizadora-2026-51-1-2-3-4-5-j-f-97992391#issues",
+      "rating_anterior": "NRsf",
+      "rating_atual": "AAA(EXP)sf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
       "dt_captura": "2026-11-11"
     },
     {
@@ -5119,24 +5106,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-11"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "cnpj_emissor": "08.769.451/0001-08",
-      "instrumento": "securities ser 1",
-      "dt_acao": "2026-04-15",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-      "cnpj_devedor_vinculado": "07594978000178",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-11-11"
-    },
-    {
       "agencia": "Austin",
       "emissor": "FICTOR INVEST FIDC",
       "cnpj_emissor": "12536691000121",
@@ -5171,19 +5140,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Austin",
-      "emissor": "FIDC IC SOMAPAY",
+      "emissor": "HIGH YIELD YALEEH FIDC",
       "cnpj_emissor": "",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2024-08-12",
-      "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB+",
-      "rating_atual": "brB-",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB-",
+      "rating_atual": "brBBB+",
       "outlook_anterior": "Estável",
       "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-5",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+2",
       "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
+      "tipo": "UPGRADE",
       "dt_captura": "2026-11-11"
     },
     {
@@ -5250,23 +5219,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-11"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC CONSIGNADOS FEDERAIS",
-      "cnpj_emissor": "33536066000150",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2019-09-27",
-      "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brAA-",
-      "rating_atual": "brAA",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+1",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
       "dt_captura": "2026-11-11"
     },
     {
@@ -5392,6 +5344,24 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-11-11",
       "dt_captura": "2026-11-11",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/27202"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "VERT CIA SECURITIZADORA 2026",
+      "cnpj_emissor": "43737117000165",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "notes",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "NRsf",
+      "rating_atual": "AAA(EXP)sf(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-11",
+      "dt_captura": "2026-11-11",
+      "link": "https://www.fitchratings.com/entity/vert-cia-securitizadora-2026-51-1-2-3-4-5-j-f-97992391#issues"
     },
     {
       "agencia": "Fitch",
@@ -109936,17 +109906,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Austin",
-        "emissor": "FIDC CONSIGNADOS FEDERAIS",
-        "cnpj_emissor": "33536066000150",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "cnpj_emissor": "",
         "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2019-09-27",
-        "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brAA-",
-        "rating_atual": "brAA",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB-",
+        "rating_atual": "brBBB+",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+1"
+        "variacao_notches": "+2"
       },
       {
         "agencia": "Austin",
@@ -110203,20 +110173,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-7"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FIDC IC SOMAPAY",
-        "cnpj_emissor": "",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2024-08-12",
-        "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brB-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-5"
       },
       {
         "agencia": "Fitch",
@@ -110533,6 +110489,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "link": "https://www.fitchratings.com/entity/brazilian-securities-2013-302-303-304-petrobras-97435578#issues",
         "cnpj_devedor_vinculado": "33000167000101",
         "rating_atual": "AAAsf(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "VERT CIA SECURITIZADORA 2026",
+        "cnpj_emissor": "43737117000165",
+        "instrumento": "notes",
+        "dt_acao": "2026-11-11",
+        "link": "https://www.fitchratings.com/entity/vert-cia-securitizadora-2026-51-1-2-3-4-5-j-f-97992391#issues",
+        "rating_anterior": "NRsf",
+        "rating_atual": "AAA(EXP)sf(bra)",
+        "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -111461,21 +111431,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-21",
         "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
         "rating_anterior": "A+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "cnpj_emissor": "08.769.451/0001-08",
-        "instrumento": "securities ser 1",
-        "dt_acao": "2026-04-15",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-        "cnpj_devedor_vinculado": "07594978000178",
-        "rating_anterior": "AA+sf(bra)",
         "rating_atual": "PIFsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
