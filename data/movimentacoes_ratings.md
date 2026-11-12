@@ -8,10 +8,10 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 14 | 12 | **26** |
-| 🔴 **Downgrades (Rebaixamentos)** | 13 | 27 | **40** |
-| 🔵 **Novos Ratings** | 11 | 58 | **69** |
+| 🔴 **Downgrades (Rebaixamentos)** | 13 | 28 | **41** |
+| 🔵 **Novos Ratings** | 11 | 60 | **71** |
 | 🟡 **Mudanças de Perspectiva** | 7 | 22 | **29** |
-| ⚪ **Ratings Retirados / Liquidados** | 2 | 12 | **14** |
+| ⚪ **Ratings Retirados / Liquidados** | 2 | 11 | **13** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 26
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -43,7 +43,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 40
+### 🔴 Rebaixamentos de Rating (Downgrades) — 41
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Liberum | **ESTADO ISRAEL** | Finanças Públicas | `AAA` | **`A`** | `-5` | Estável | 06/10/2026 |
@@ -68,6 +68,7 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 12/11/2026 |
 | Austin | **FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brB`** | `-3` | Estável | 22/02/2021 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB`** | `-3` | Negativa | 09/10/2025 |
 | Fitch | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CREDITAS AUTO XII** | notes ser 9 | `AA-sf(bra)` | **`A-sf(bra)`** | `-3` | Estável | 07/05/2026 |
 | Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Positiva | 24/06/2026 |
 | Fitch | **RIZA SECURITIZADORA 2021** | securities ser 378 | `AA+sf(bra)` | **`Asf(bra)`** | `-4` | Negativa | 14/10/2026 |
@@ -120,7 +121,7 @@
 | Moody's | **RODOVIAS INTEGRADAS OESTE** | 14ª Emissão de Debêntures - Série Única | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
 
-### 🔵 Novos Ratings Atribuídos (69)
+### 🔵 Novos Ratings Atribuídos (71)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Moody's | **BANCO MERCANTIL** | Rating de Depósitos Bancários | **`AA.br`** | Estável | 14/10/2026 |
@@ -153,16 +154,15 @@
 | Fitch | **GY ENERGY HOLDING III** | BRL 85 mln bond/note 15-Nov-2040 | **`CCC+(bra)`** | Estável | 16/10/2026 |
 | Fitch | **BRAZIL** | BRL 795.04 mln Zero treasury bills/notes/bonds 01-Dec-2032 | **`BB`** | Estável | 19/10/2026 |
 | Fitch | **BRAZIL** | BRL 817 mln Zero treasury bills/notes/bonds 01-Dec-2032 | **`BB`** | Estável | 19/10/2026 |
-| *...e mais 39 novos ratings.* | | | | | |
+| *...e mais 41 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (14)
+### ⚪ Ratings Retirados / Liquidados (13)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **IN** | Escala Nacional Brasil de Longo Prazo | `brAA` | Negativa | 08/09/2026 |
 | Fitch | **COMPANHIA PARAIBANA GAS PBGAS** | National Long Term Rating | `A(bra)` | Negativa | 05/11/2026 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | Estável | 04/11/2026 |
 | Fitch | **PNEUCASH FIDC** | securities ser 6 | `A+sf(bra)` | Estável | 21/10/2026 |
-| Fitch | **RIZA SECURITIZADORA 2022** | securities ser 1 | `AA+sf(bra)` | Estável | 15/04/2026 |
 | Fitch | **BSEC SECURITIZADORA 2011** | certificates | `BBBsf(bra)` | Estável | 20/10/2026 |
 | Fitch | **CONCESSIONARIA AEROPORTO INTERNACIONAL GUARULHOS** | 2a Emissão - Série Unica | `A+(bra)` | Estável | 15/10/2026 |
 | Fitch | **UNIAO QUIMICA FARMACEUTICA NACIONAL** | BRL 600 mln Series 14 Floating bond/note 15-Oct-2026 | `AA-(bra)` | Estável | 15/10/2026 |
@@ -175,4 +175,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (11/11/2026 → 12/11/2026)
-*Total nas últimas 24h: 🟢 3 upgrades | 🔴 0 downgrades | 🔵 1 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
+*Total nas últimas 24h: 🟢 3 upgrades | 🔴 1 downgrades | 🔵 1 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
