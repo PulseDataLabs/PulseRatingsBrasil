@@ -1,14 +1,14 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-11-13T14:19:10.579647",
+  "timestamp": "2026-11-13T18:12:58.477311",
   "dt_atual": "2026-11-13",
   "dt_anterior": "2026-11-12",
   "resumo": {
-    "upgrades_emissores": 14,
+    "upgrades_emissores": 15,
     "upgrades_emissoes": 13,
-    "total_upgrades": 27,
+    "total_upgrades": 28,
     "downgrades_emissores": 13,
-    "downgrades_emissoes": 25,
-    "total_downgrades": 38,
+    "downgrades_emissoes": 23,
+    "total_downgrades": 36,
     "novos_emissores": 11,
     "novos_emissoes": 54,
     "total_novos": 65,
@@ -16,19 +16,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "outlooks_emissoes": 22,
     "total_outlooks": 29,
     "retirados_emissores": 2,
-    "retirados_emissoes": 12,
-    "total_retirados": 14
+    "retirados_emissoes": 11,
+    "total_retirados": 13
   },
   "periodo_recente": {
     "dt_atual": "2026-11-13",
     "dt_anterior": "2026-10-14",
     "resumo": {
-      "upgrades_emissores": 14,
+      "upgrades_emissores": 15,
       "upgrades_emissoes": 13,
-      "total_upgrades": 27,
+      "total_upgrades": 28,
       "downgrades_emissores": 13,
-      "downgrades_emissoes": 25,
-      "total_downgrades": 38,
+      "downgrades_emissoes": 23,
+      "total_downgrades": 36,
       "novos_emissores": 11,
       "novos_emissoes": 54,
       "total_novos": 65,
@@ -36,8 +36,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 22,
       "total_outlooks": 29,
       "retirados_emissores": 2,
-      "retirados_emissoes": 12,
-      "total_retirados": 14
+      "retirados_emissoes": 11,
+      "total_retirados": 13
     },
     "emissores": {
       "tipo": "emissores",
@@ -54,6 +54,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "rating_anterior": "brAA-",
           "rating_atual": "brAAA",
           "outlook_anterior": "Negativa",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+3"
+        },
+        {
+          "agencia": "Moody's",
+          "emissor": "IN",
+          "cnpj_emissor": "05208211001703",
+          "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
+          "dt_acao": "2026-05-14",
+          "link": "",
+          "rating_anterior": "MQ3.br",
+          "rating_atual": "MQ2.br",
+          "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+3"
@@ -745,6 +759,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "+4"
         },
         {
+          "agencia": "Fitch",
+          "emissor": "CSCF CARTOES CONSIGNADOS II 2025",
+          "cnpj_emissor": "",
+          "instrumento": "notes ser 1,2,3",
+          "dt_acao": "2026-04-29",
+          "link": "https://www.fitchratings.com/entity/cscf-cartoes-consignados-ii-2025-4-1-2-3-bmg-8-97745508#issues",
+          "rating_anterior": "AAsf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
+        },
+        {
           "agencia": "Moody's",
           "emissor": "VALID SOLUCOES",
           "cnpj_emissor": "33113309000147",
@@ -771,20 +799,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+1"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "VERT CSCF 2024",
-          "cnpj_emissor": "",
-          "instrumento": "bonds ser 2024-1,2,3",
-          "dt_acao": "2026-04-29",
-          "link": "https://www.fitchratings.com/entity/vert-cscf-2024-1-2-3-bmg-6-97613555#issues",
-          "rating_anterior": "AA-sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
         },
         {
           "agencia": "Fitch",
@@ -999,34 +1013,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-7"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "cnpj_emissor": "12536691000121",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB+",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-3"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2025",
-          "cnpj_emissor": "10.753.164/0001-43",
-          "instrumento": "notes ser 4",
-          "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-405-1-2-3-4-lar-97771682#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "Asf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
         },
         {
           "agencia": "Fitch",
@@ -2197,21 +2183,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2023",
-          "cnpj_emissor": "02.773.542/0001-22",
-          "instrumento": "certificates ser 3",
-          "dt_acao": "2026-06-15",
-          "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-          "cnpj_devedor_vinculado": "21314559000166",
-          "rating_anterior": "AAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "BSEC SECURITIZADORA 2011",
           "cnpj_emissor": "",
           "instrumento": "certificates",
@@ -2344,12 +2315,12 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_atual": "2026-11-13",
     "dt_anterior": "2026-11-12",
     "resumo": {
-      "upgrades_emissores": 0,
-      "upgrades_emissoes": 1,
-      "total_upgrades": 1,
+      "upgrades_emissores": 1,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 3,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 2,
-      "total_downgrades": 2,
+      "downgrades_emissoes": 0,
+      "total_downgrades": 0,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2357,14 +2328,29 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 1,
-      "total_retirados": 1
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
       "dt_atual": "2026-11-13",
       "dt_anterior": "2026-11-12",
-      "upgrades": [],
+      "upgrades": [
+        {
+          "agencia": "Moody's",
+          "emissor": "IN",
+          "cnpj_emissor": "05208211001703",
+          "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
+          "dt_acao": "2026-05-14",
+          "link": "",
+          "rating_anterior": "MQ3.br",
+          "rating_atual": "MQ2.br",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+3"
+        }
+      ],
       "downgrades": [],
       "novos": [],
       "outlooks": [],
@@ -2377,68 +2363,37 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades": [
         {
           "agencia": "Fitch",
-          "emissor": "VERT CSCF 2024",
+          "emissor": "CSCF CARTOES CONSIGNADOS II 2025",
           "cnpj_emissor": "",
-          "instrumento": "bonds ser 2024-1,2,3",
+          "instrumento": "notes ser 1,2,3",
           "dt_acao": "2026-04-29",
-          "link": "https://www.fitchratings.com/entity/vert-cscf-2024-1-2-3-bmg-6-97613555#issues",
-          "rating_anterior": "AA-sf(bra)",
+          "link": "https://www.fitchratings.com/entity/cscf-cartoes-consignados-ii-2025-4-1-2-3-bmg-8-97745508#issues",
+          "rating_anterior": "AAsf(bra)",
           "rating_atual": "AAAsf(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
-        }
-      ],
-      "downgrades": [
+          "variacao_notches": "+2"
+        },
         {
           "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "cnpj_emissor": "12536691000121",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB",
-          "rating_atual": "brB+",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2025",
-          "cnpj_emissor": "10.753.164/0001-43",
-          "instrumento": "notes ser 4",
-          "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-405-1-2-3-4-lar-97771682#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "Asf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
         }
       ],
+      "downgrades": [],
       "novos": [],
       "outlooks": [],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2023",
-          "cnpj_emissor": "02.773.542/0001-22",
-          "instrumento": "certificates ser 3",
-          "dt_acao": "2026-06-15",
-          "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-          "cnpj_devedor_vinculado": "21314559000166",
-          "rating_anterior": "AAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "retirados": []
     }
   },
   "movimentacoes": [
@@ -5031,38 +4986,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-13"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "ECO SECURITIZADORA 2025",
-      "cnpj_emissor": "10.753.164/0001-43",
-      "instrumento": "notes ser 4",
-      "dt_acao": "2026-06-24",
-      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-405-1-2-3-4-lar-97771682#issues",
-      "rating_anterior": "AAAsf(bra)",
-      "rating_atual": "Asf(bra)",
+      "agencia": "Moody's",
+      "emissor": "IN",
+      "cnpj_emissor": "05208211001703",
+      "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
+      "dt_acao": "2026-05-14",
+      "link": "",
+      "rating_anterior": "MQ3.br",
+      "rating_atual": "MQ2.br",
       "outlook_anterior": "Estável",
       "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-5",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-13"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "OPEA SECURITIZADORA 2023",
-      "cnpj_emissor": "02.773.542/0001-22",
-      "instrumento": "certificates ser 3",
-      "dt_acao": "2026-06-15",
-      "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-      "cnpj_devedor_vinculado": "21314559000166",
-      "rating_anterior": "AAsf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+3",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
       "dt_captura": "2026-11-13"
     },
     {
@@ -5084,36 +5021,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "VERT CSCF 2024",
+      "emissor": "CSCF CARTOES CONSIGNADOS II 2025",
       "cnpj_emissor": "",
-      "instrumento": "bonds ser 2024-1,2,3",
+      "instrumento": "notes ser 1,2,3",
       "dt_acao": "2026-04-29",
-      "link": "https://www.fitchratings.com/entity/vert-cscf-2024-1-2-3-bmg-6-97613555#issues",
-      "rating_anterior": "AA-sf(bra)",
+      "link": "https://www.fitchratings.com/entity/cscf-cartoes-consignados-ii-2025-4-1-2-3-bmg-8-97745508#issues",
+      "rating_anterior": "AAsf(bra)",
       "rating_atual": "AAAsf(bra)",
       "outlook_anterior": "Estável",
       "outlook_atual": "Estável",
       "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+3",
+      "variacao_notches": "+2",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-13"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FICTOR INVEST FIDC",
-      "cnpj_emissor": "12536691000121",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB+",
-      "rating_atual": "brB+",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-3",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-13"
     },
     {
@@ -5342,6 +5262,24 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "link": ""
     },
     {
+      "agencia": "Moody's",
+      "emissor": "IN",
+      "cnpj_emissor": "05208211001703",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
+      "categoria": "Emissor",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "MQ3.br",
+      "rating_atual": "MQ2.br",
+      "variacao_notches": "+3",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-05-14",
+      "dt_captura": "2026-11-13",
+      "link": ""
+    },
+    {
       "agencia": "Fitch",
       "emissor": "VERT CSCF 2024",
       "cnpj_emissor": "",
@@ -5358,6 +5296,24 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-04-29",
       "dt_captura": "2026-11-13",
       "link": "https://www.fitchratings.com/entity/vert-cscf-2024-1-2-3-bmg-6-97613555#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "CSCF CARTOES CONSIGNADOS II 2025",
+      "cnpj_emissor": "",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "notes ser 1,2,3",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "AAsf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "variacao_notches": "+2",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-04-29",
+      "dt_captura": "2026-11-13",
+      "link": "https://www.fitchratings.com/entity/cscf-cartoes-consignados-ii-2025-4-1-2-3-bmg-8-97745508#issues"
     },
     {
       "agencia": "Liberum",
@@ -109637,6 +109593,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Moody's",
+        "emissor": "IN",
+        "cnpj_emissor": "05208211001703",
+        "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
+        "dt_acao": "2026-05-14",
+        "link": "",
+        "rating_anterior": "MQ3.br",
+        "rating_atual": "MQ2.br",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+3"
+      },
+      {
+        "agencia": "Moody's",
         "emissor": "CONCESSIONARIA RODOVIA LAGOS",
         "cnpj_emissor": "01612234000152",
         "instrumento": "Rating de Emissor",
@@ -110322,6 +110292,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "+4"
       },
       {
+        "agencia": "Fitch",
+        "emissor": "CSCF CARTOES CONSIGNADOS II 2025",
+        "cnpj_emissor": "",
+        "instrumento": "notes ser 1,2,3",
+        "dt_acao": "2026-04-29",
+        "link": "https://www.fitchratings.com/entity/cscf-cartoes-consignados-ii-2025-4-1-2-3-bmg-8-97745508#issues",
+        "rating_anterior": "AAsf(bra)",
+        "rating_atual": "AAAsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+2"
+      },
+      {
         "agencia": "Moody's",
         "emissor": "VALID SOLUCOES",
         "cnpj_emissor": "33113309000147",
@@ -110348,20 +110332,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+1"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "VERT CSCF 2024",
-        "cnpj_emissor": "",
-        "instrumento": "bonds ser 2024-1,2,3",
-        "dt_acao": "2026-04-29",
-        "link": "https://www.fitchratings.com/entity/vert-cscf-2024-1-2-3-bmg-6-97613555#issues",
-        "rating_anterior": "AA-sf(bra)",
-        "rating_atual": "AAAsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+3"
       },
       {
         "agencia": "Fitch",
@@ -110576,34 +110546,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-7"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "cnpj_emissor": "12536691000121",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5038/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brB+",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-3"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "ECO SECURITIZADORA 2025",
-        "cnpj_emissor": "10.753.164/0001-43",
-        "instrumento": "notes ser 4",
-        "dt_acao": "2026-06-24",
-        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-405-1-2-3-4-lar-97771682#issues",
-        "rating_anterior": "AAAsf(bra)",
-        "rating_atual": "Asf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-5"
       },
       {
         "agencia": "Fitch",
@@ -111766,21 +111708,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-21",
         "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
         "rating_anterior": "A+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "OPEA SECURITIZADORA 2023",
-        "cnpj_emissor": "02.773.542/0001-22",
-        "instrumento": "certificates ser 3",
-        "dt_acao": "2026-06-15",
-        "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-        "cnpj_devedor_vinculado": "21314559000166",
-        "rating_anterior": "AAsf(bra)",
         "rating_atual": "PIFsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",

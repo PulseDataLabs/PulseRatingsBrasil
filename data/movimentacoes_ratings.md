@@ -7,16 +7,17 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 14 | 13 | **27** |
-| 🔴 **Downgrades (Rebaixamentos)** | 13 | 25 | **38** |
+| 🟢 **Upgrades (Elevações)** | 15 | 13 | **28** |
+| 🔴 **Downgrades (Rebaixamentos)** | 13 | 23 | **36** |
 | 🔵 **Novos Ratings** | 11 | 54 | **65** |
 | 🟡 **Mudanças de Perspectiva** | 7 | 22 | **29** |
-| ⚪ **Ratings Retirados / Liquidados** | 2 | 12 | **14** |
+| ⚪ **Ratings Retirados / Liquidados** | 2 | 11 | **13** |
 
-### 🟢 Elevações de Rating (Upgrades) — 27
+### 🟢 Elevações de Rating (Upgrades) — 28
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | S&P | **VALE** | Escala Nacional Brasil de Longo Prazo | `brAA-` | **`brAAA`** | `+3` | Estável | 16/11/2006 |
+| Moody's | **IN** | Avaliações de Qualidade de Gestor de Investimentos | `MQ3.br` | **`MQ2.br`** | `+3` | Estável | 14/05/2026 |
 | Moody's | **CONCESSIONARIA RODOVIA LAGOS** | Rating de Emissor | `AA.br` | **`AA+.br`** | `+1` | Estável | 30/10/2026 |
 | Moody's | **BANCO BARI INVESTIMENTOS FINANCIAMENTOS** | Rating de Depósitos Bancários | `A-.br` | **`A.br`** | `+1` | Positiva | 21/10/2026 |
 | Moody's | **BANCO BARI INVESTIMENTOS FINANCIAMENTOS** | Rating de Emissor | `A-.br` | **`A.br`** | `+1` | Positiva | 21/10/2026 |
@@ -34,9 +35,9 @@
 | Liberum | **REALINVEST FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP4` | **`CP3`** | `+1` | Estável | 12/11/2026 |
 | Liberum | **REALINVEST FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `BB` | **`BBB-`** | `+2` | Estável | 12/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Longo prazo | `BB-` | **`BBB`** | `+4` | Negativa | 12/11/2026 |
+| Fitch | **CSCF CARTOES CONSIGNADOS II 2025** | notes ser 1,2,3 | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 29/04/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
-| Fitch | **VERT CSCF 2024** | bonds ser 2024-1,2,3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
 | Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
 | Fitch | **FIDC CREDITAS AUTO X** | notes ser 4 | `A+sf(bra)` | **`AAsf(bra)`** | `+2` | Estável | 05/10/2026 |
 | Fitch | **ELDORADO CELULOSE** | BRL 1 bln 6.95% bond/note 15-Dec-2040 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 29/10/2026 |
@@ -44,7 +45,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 38
+### 🔴 Rebaixamentos de Rating (Downgrades) — 36
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Liberum | **ESTADO ISRAEL** | Finanças Públicas | `AAA` | **`A`** | `-5` | Estável | 06/10/2026 |
@@ -69,8 +70,6 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 12/11/2026 |
 | Austin | **FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brB`** | `-3` | Estável | 22/02/2021 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB+` | **`brB+`** | `-3` | Negativa | 09/10/2025 |
-| Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `AAAsf(bra)` | **`Asf(bra)`** | `-5` | Estável | 24/06/2026 |
 | Fitch | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CREDITAS AUTO XII** | notes ser 9 | `AA-sf(bra)` | **`A-sf(bra)`** | `-3` | Estável | 07/05/2026 |
 | Fitch | **GY ENERGY HOLDING III** | BRL 85 mln bond/note 15-Nov-2040 | `A-(bra)` | **`CCC+(bra)`** | `-10` | Estável | 16/10/2026 |
 | Fitch | **RAIZEN ENERGIA** | 4a Debentures (Serie Unica) BRL 900 mln 3.539% Series 14 bond/note 15-Nov-2029 | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
@@ -154,14 +153,13 @@
 | Fitch | **PBG** | BRL 201 mln 3.65% bond/note 20-Dec-2028 | **`RD(bra)`** | Estável | 21/10/2026 |
 | *...e mais 35 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (14)
+### ⚪ Ratings Retirados / Liquidados (13)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **IN** | Escala Nacional Brasil de Longo Prazo | `brAA` | Negativa | 08/09/2026 |
 | Fitch | **COMPANHIA PARAIBANA GAS PBGAS** | National Long Term Rating | `A(bra)` | Negativa | 05/11/2026 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | Estável | 04/11/2026 |
 | Fitch | **PNEUCASH FIDC** | securities ser 6 | `A+sf(bra)` | Estável | 21/10/2026 |
-| Fitch | **OPEA SECURITIZADORA 2023** | certificates ser 3 | `AAsf(bra)` | Estável | 15/06/2026 |
 | Fitch | **BSEC SECURITIZADORA 2011** | certificates | `BBBsf(bra)` | Estável | 20/10/2026 |
 | Fitch | **UNIAO QUIMICA FARMACEUTICA NACIONAL** | BRL 600 mln Series 14 Floating bond/note 15-Oct-2026 | `AA-(bra)` | Estável | 15/10/2026 |
 | Fitch | **CONCESSIONARIA AEROPORTO INTERNACIONAL GUARULHOS** | 2a Emissão - Série Unica | `A+(bra)` | Estável | 15/10/2026 |
@@ -174,4 +172,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (12/11/2026 → 13/11/2026)
-*Total nas últimas 24h: 🟢 1 upgrades | 🔴 2 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
+*Total nas últimas 24h: 🟢 3 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
