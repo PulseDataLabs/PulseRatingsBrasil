@@ -1,6 +1,6 @@
 window.PULSERATINGS_PIPELINE_STATUS = {
-  "timestamp": "2026-11-12T18:54:50.873572",
-  "elapsed_seconds": 835.8859553337097,
+  "timestamp": "2026-11-13T01:26:42.852234",
+  "elapsed_seconds": 819.4649429321289,
   "status": "error",
   "summary": {
     "total": 10,
@@ -11,63 +11,63 @@ window.PULSERATINGS_PIPELINE_STATUS = {
   "scrapers": {
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 11.621966123580933,
+      "elapsed_seconds": 11.234862089157104,
       "error": null,
-      "timestamp": "2026-11-12T18:54:50.873671"
+      "timestamp": "2026-11-13T01:26:42.852324"
     },
     "standard_and_poors_emissores": {
       "status": "error",
-      "elapsed_seconds": 31.24121618270874,
+      "elapsed_seconds": 31.20669412612915,
       "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/run_all.py\", line 87, in run_scraper\n    scraper.run()\n    ~~~~~~~~~~~^^\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 118, in run\n    raise e\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 45, in run\n    raise RuntimeError(msg)\nRuntimeError: Nenhum dado retornado para salvar pelo scraper standard_and_poors_emissores.\n",
-      "timestamp": "2026-11-12T18:54:50.873669"
+      "timestamp": "2026-11-13T01:26:42.852322"
     },
     "moodys_emissores": {
       "status": "success",
-      "elapsed_seconds": 784.3582935333252,
+      "elapsed_seconds": 773.8971319198608,
       "error": null,
-      "timestamp": "2026-11-12T18:54:50.873676"
+      "timestamp": "2026-11-13T01:26:42.852328"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 41.2945442199707,
+      "elapsed_seconds": 44.57748579978943,
       "error": null,
-      "timestamp": "2026-11-12T18:54:50.873680"
+      "timestamp": "2026-11-13T01:26:42.852332"
     },
     "moodys_ratings": {
       "status": "success",
-      "elapsed_seconds": 50.15532922744751,
+      "elapsed_seconds": 41.04860258102417,
       "error": null,
-      "timestamp": "2026-11-12T18:54:50.873682"
+      "timestamp": "2026-11-13T01:26:42.852331"
     },
     "standard_and_poors_ratings": {
       "status": "error",
-      "elapsed_seconds": 29.05767560005188,
+      "elapsed_seconds": 27.54819631576538,
       "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/run_all.py\", line 87, in run_scraper\n    scraper.run()\n    ~~~~~~~~~~~^^\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 118, in run\n    raise e\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 45, in run\n    raise RuntimeError(msg)\nRuntimeError: Nenhum dado retornado para salvar pelo scraper standard_and_poors_ratings.\n",
-      "timestamp": "2026-11-12T18:54:50.873679"
+      "timestamp": "2026-11-13T01:26:42.852330"
     },
     "austin_emissores": {
       "status": "success",
-      "elapsed_seconds": 1.369476318359375,
+      "elapsed_seconds": 0.9858875274658203,
       "error": null,
-      "timestamp": "2026-11-12T18:54:50.873664"
+      "timestamp": "2026-11-13T01:26:42.852320"
     },
     "austin_ratings": {
       "status": "success",
-      "elapsed_seconds": 18.42590641975403,
+      "elapsed_seconds": 14.90933632850647,
       "error": null,
-      "timestamp": "2026-11-12T18:54:50.873677"
+      "timestamp": "2026-11-13T01:26:42.852329"
     },
     "liberum_emissores": {
       "status": "success",
-      "elapsed_seconds": 56.35973405838013,
+      "elapsed_seconds": 48.07850503921509,
       "error": null,
-      "timestamp": "2026-11-12T18:54:50.873673"
+      "timestamp": "2026-11-13T01:26:42.852326"
     },
     "liberum_ratings": {
       "status": "success",
-      "elapsed_seconds": 56.40899848937988,
+      "elapsed_seconds": 48.11657381057739,
       "error": null,
-      "timestamp": "2026-11-12T18:54:50.873675"
+      "timestamp": "2026-11-13T01:26:42.852327"
     }
   },
   "drifts": {}
