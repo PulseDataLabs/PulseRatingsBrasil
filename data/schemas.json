@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-11-12"
+        "example": "2026-11-13"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
+        "example": "ACCESS FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/2394/Access_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brA"
+        "example": "brCCC"
       },
       {
         "name": "de_rating_cp",
@@ -293,81 +293,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brA"
+        "example": "brCCC"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-04-01"
-      },
-      {
-        "name": "de_acao_rating",
-        "type": "str",
-        "example": "Rating Preliminar"
-      },
-      {
-        "name": "de_outlook",
-        "type": "str",
-        "example": ""
-      },
-      {
-        "name": "link_relatorio",
-        "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
-      }
-    ]
-  },
-  {
-    "title": "Liberum Emissores — Emissores",
-    "files": "liberum_emissores.csv",
-    "source": "liberum",
-    "fields": [
-      {
-        "name": "no_emissor",
-        "type": "str",
-        "example": "REALINVEST FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
-      },
-      {
-        "name": "no_setor",
-        "type": "str",
-        "example": "FIDC"
-      },
-      {
-        "name": "link",
-        "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29338"
-      }
-    ]
-  },
-  {
-    "title": "Liberum Ratings — Ratings",
-    "files": "liberum_ratings.csv",
-    "source": "liberum",
-    "fields": [
-      {
-        "name": "no_emissor",
-        "type": "str",
-        "example": "REALINVEST FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
-      },
-      {
-        "name": "link",
-        "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29338"
-      },
-      {
-        "name": "no_tipo_rating",
-        "type": "str",
-        "example": "FIDC"
-      },
-      {
-        "name": "de_rating_br",
-        "type": "str",
-        "example": "B"
-      },
-      {
-        "name": "dt_acao_rating",
-        "type": "date",
-        "example": "2026-11-12"
+        "example": "2024-08-15"
       },
       {
         "name": "de_acao_rating",
@@ -380,9 +311,78 @@
         "example": "Estável"
       },
       {
+        "name": "link_relatorio",
+        "type": "str",
+        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11200"
+      }
+    ]
+  },
+  {
+    "title": "Liberum Emissores — Emissores",
+    "files": "liberum_emissores.csv",
+    "source": "liberum",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "HARPIA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS – RESPONSABILIDADE LIMITADA"
+      },
+      {
+        "name": "no_setor",
+        "type": "str",
+        "example": "FIDC"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29348"
+      }
+    ]
+  },
+  {
+    "title": "Liberum Ratings — Ratings",
+    "files": "liberum_ratings.csv",
+    "source": "liberum",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "HARPIA FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS – RESPONSABILIDADE LIMITADA"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29348"
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "FIDC"
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "BBB+"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2026-11-13"
+      },
+      {
+        "name": "de_acao_rating",
+        "type": "str",
+        "example": "Atribuição"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": "Estável"
+      },
+      {
         "name": "de_classe",
         "type": "str",
-        "example": "Subordinada"
+        "example": "Mezanino"
       },
       {
         "name": "de_escala",
