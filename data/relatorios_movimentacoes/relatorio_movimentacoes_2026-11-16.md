@@ -8,10 +8,10 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 15 | 19 | **34** |
-| 🔴 **Downgrades (Rebaixamentos)** | 13 | 22 | **35** |
+| 🔴 **Downgrades (Rebaixamentos)** | 13 | 23 | **36** |
 | 🔵 **Novos Ratings** | 9 | 53 | **62** |
-| 🟡 **Mudanças de Perspectiva** | 7 | 20 | **27** |
-| ⚪ **Ratings Retirados / Liquidados** | 2 | 12 | **14** |
+| 🟡 **Mudanças de Perspectiva** | 8 | 21 | **29** |
+| ⚪ **Ratings Retirados / Liquidados** | 2 | 9 | **11** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 34
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -51,7 +51,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 35
+### 🔴 Rebaixamentos de Rating (Downgrades) — 36
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Liberum | **ESTADO ISRAEL** | Finanças Públicas | `AAA` | **`A`** | `-5` | Estável | 06/10/2026 |
@@ -75,6 +75,7 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 12/11/2026 |
 | Austin | **FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brB`** | `-3` | Estável | 22/02/2021 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
+| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
 | Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB+` | **`brBBB-`** | `-2` | Estável | 06/03/2024 |
 | Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
 | Fitch | **RAIZEN ENERGIA** | 5a Debentures (Serie 2) BRL 169.5 mln Floating IPCA (Brazil) 2.05% bond/note 15-Jun-2030 | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
@@ -90,7 +91,7 @@
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042 | `AA-(bra)` | **`BBB-(bra)`** | `-6` | Em Observação | 05/11/2026 |
 | Fitch | **VIA MT 320 CONCESSIONARIA RODOVIAS** | BRL 135 mln bond/note 15-Dec-2036 | `BB(bra)` | **`CCC(bra)`** | `-6` | Estável | 10/11/2026 |
 
-### 🟡 Mudanças de Perspectiva (Outlook) — 27
+### 🟡 Mudanças de Perspectiva (Outlook) — 29
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva Anterior | Nova Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | S&P | **AUSTRAL RESSEGURADORA** | Escala Nacional Brasil de Longo Prazo | `brAAA` | Estável | **Em Observação** | 11/07/2018 |
@@ -100,6 +101,7 @@
 | Moody's | **RODOVIAS INTEGRADAS OESTE** | Rating de Emissor | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Moody's | **BANCO BMG** | Rating de Depósitos Bancários | `A-.br` | Positiva | **Estável** | 14/10/2026 |
 | Moody's | **BANCO BMG** | Rating de Emissor | `A-.br` | Positiva | **Estável** | 14/10/2026 |
+| Fitch | **GSH PARTICIPACOES** | National Long Term Rating | `A+(bra)` | Estável | **Negativa** | 16/11/2026 |
 | Liberum | **CREDIT PARTNERS FUNDO INVESTIMENTO DIREITO CREDITORIOS** | Subordinada - Longo prazo | `CCC` | Negativa | **Estável** | 16/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS POUPACRED RESPONSABILIDADE ILIMITADA** | Mezanino - Longo prazo | `BBB+` | Negativa | **Estável** | 22/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS POUPACRED RESPONSABILIDADE ILIMITADA** | Mezanino - Curto prazo | `CP3` | Negativa | **Estável** | 22/10/2026 |
@@ -120,6 +122,7 @@
 | Moody's | **CIRANDA I HOLDING** | 2ª Emissão de Debêntures - Serie Única | `AA-.br` | Estável | **Negativa** | 14/10/2026 |
 | Moody's | **RODOVIAS INTEGRADAS OESTE** | 14ª Emissão de Debêntures - Série Única | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
+| Fitch | **GSH PARTICIPACOES** | BRL 13.78 mln bond/note | `A(bra)` | Em Observação | **Estável** | 16/11/2026 |
 
 ### 🔵 Novos Ratings Atribuídos (62)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
@@ -156,17 +159,14 @@
 | Fitch | **CONCESSIONARIA RODOVIA BR 262 MG** | BRL 2.51 bln bond/note | **`AA-(bra)`** | Estável | 23/10/2026 |
 | *...e mais 32 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (14)
+### ⚪ Ratings Retirados / Liquidados (11)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **IN** | Escala Nacional Brasil de Longo Prazo | `brAA` | Negativa | 08/09/2026 |
 | Fitch | **COMPANHIA PARAIBANA GAS PBGAS** | National Long Term Rating | `A(bra)` | Negativa | 05/11/2026 |
+| Fitch | **OPEA SECURITIZADORA 2019** | notes ser 1 | `AAAsf(bra)` | Estável | 05/12/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | Estável | 04/11/2026 |
-| Fitch | **CSCF CARTOES CONSIGNADOS II 2022** | bonds ser 2 | `AAAsf(bra)` | Estável | 09/09/2022 |
-| Fitch | **CSCF CARTOES CONSIGNADOS II 2023** | notes ser 2023-1 | `AAAsf(bra)` | Estável | 30/10/2023 |
 | Fitch | **PNEUCASH FIDC** | securities ser 6 | `A+sf(bra)` | Estável | 21/10/2026 |
-| Fitch | **ECO SECURITIZADORA 2022** | securities ser 1,2,3 | `AAAsf(bra)` | Estável | 15/01/2026 |
-| Fitch | **RIZA SECURITIZADORA 2022** | securities ser 1 | `AA+sf(bra)` | Estável | 15/04/2026 |
 | Fitch | **BSEC SECURITIZADORA 2011** | certificates | `BBBsf(bra)` | Estável | 20/10/2026 |
 | Fitch | **MRS LOGISTICA** | 1ª Emissão Notas Promissórias | `AAA(bra)` | Estável | 21/10/2026 |
 | Fitch | **BARI SECURITIZADORA 2024** | notes ser 1 | `A-sf(bra)` | Estável | 28/10/2026 |
@@ -176,4 +176,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (14/11/2026 → 16/11/2026)
-*Total nas últimas 24h: 🟢 9 upgrades | 🔴 3 downgrades | 🔵 2 novos | 🟡 1 perspectivas | ⚪ 5 retirados.*
+*Total nas últimas 24h: 🟢 9 upgrades | 🔴 4 downgrades | 🔵 2 novos | 🟡 3 perspectivas | ⚪ 2 retirados.*
