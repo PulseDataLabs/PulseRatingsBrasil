@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-11-16T20:38:52.525869",
-  "dt_atual": "2026-11-16",
-  "dt_anterior": "2026-11-14",
+  "timestamp": "2026-11-17T03:21:50.885147",
+  "dt_atual": "2026-11-17",
+  "dt_anterior": "2026-11-16",
   "resumo": {
     "upgrades_emissores": 15,
     "upgrades_emissoes": 19,
     "total_upgrades": 34,
     "downgrades_emissores": 13,
-    "downgrades_emissoes": 23,
-    "total_downgrades": 36,
+    "downgrades_emissoes": 20,
+    "total_downgrades": 33,
     "novos_emissores": 9,
     "novos_emissoes": 53,
     "total_novos": 62,
@@ -20,15 +20,15 @@
     "total_retirados": 11
   },
   "periodo_recente": {
-    "dt_atual": "2026-11-16",
+    "dt_atual": "2026-11-17",
     "dt_anterior": "2026-10-16",
     "resumo": {
       "upgrades_emissores": 15,
       "upgrades_emissoes": 19,
       "total_upgrades": 34,
       "downgrades_emissores": 13,
-      "downgrades_emissoes": 23,
-      "total_downgrades": 36,
+      "downgrades_emissoes": 20,
+      "total_downgrades": 33,
       "novos_emissores": 9,
       "novos_emissoes": 53,
       "total_novos": 62,
@@ -41,7 +41,7 @@
     },
     "emissores": {
       "tipo": "emissores",
-      "dt_atual": "2026-11-16",
+      "dt_atual": "2026-11-17",
       "dt_anterior": "2026-10-16",
       "upgrades": [
         {
@@ -465,6 +465,18 @@
           "variacao_notches": "—"
         },
         {
+          "agencia": "Moody's",
+          "emissor": "FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO",
+          "cnpj_emissor": "",
+          "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
+          "dt_acao": "2026-10-29",
+          "link": "",
+          "rating_atual": "MQ2.br",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "RP FINANCEIRA",
           "cnpj_emissor": "",
@@ -484,18 +496,6 @@
           "dt_acao": "2026-10-29",
           "link": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027",
           "rating_atual": "F2(bra)",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Moody's",
-          "emissor": "FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO",
-          "cnpj_emissor": "",
-          "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
-          "dt_acao": "2026-10-29",
-          "link": "",
-          "rating_atual": "MQ2.br",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -688,7 +688,7 @@
     },
     "emissoes": {
       "tipo": "emissoes",
-      "dt_atual": "2026-11-16",
+      "dt_atual": "2026-11-17",
       "dt_anterior": "2026-10-16",
       "upgrades": [
         {
@@ -696,7 +696,7 @@
           "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
           "cnpj_emissor": "",
           "instrumento": "Mezanino - Curto prazo",
-          "dt_acao": "2026-11-16",
+          "dt_acao": "2026-11-17",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/27213",
           "rating_anterior": "CP5",
           "rating_atual": "CP3",
@@ -1072,48 +1072,6 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-7"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "cnpj_emissor": "33536066000150",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "cnpj_emissor": "",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "cnpj_emissor": "",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
         },
         {
           "agencia": "Fitch",
@@ -1541,6 +1499,18 @@
           "variacao_notches": "—"
         },
         {
+          "agencia": "Moody's",
+          "emissor": "PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "cnpj_emissor": "69003946000108",
+          "instrumento": "1ª Série de Cotas Seniores",
+          "dt_acao": "2026-10-23",
+          "link": "",
+          "rating_atual": "AAA.br (sf)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
           "cnpj_emissor": "",
@@ -1554,12 +1524,12 @@
         },
         {
           "agencia": "Moody's",
-          "emissor": "PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "cnpj_emissor": "69003946000108",
-          "instrumento": "1ª Série de Cotas Seniores",
-          "dt_acao": "2026-10-23",
+          "emissor": "LOCALIZA RENT CAR",
+          "cnpj_emissor": "16670085000155",
+          "instrumento": "49ª Emissão de Debentures",
+          "dt_acao": "2026-10-27",
           "link": "",
-          "rating_atual": "AAA.br (sf)",
+          "rating_atual": "AAA.br",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1608,18 +1578,6 @@
           "dt_acao": "2026-10-27",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
           "rating_atual": "A",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Moody's",
-          "emissor": "LOCALIZA RENT CAR",
-          "cnpj_emissor": "16670085000155",
-          "instrumento": "49ª Emissão de Debentures",
-          "dt_acao": "2026-10-27",
-          "link": "",
-          "rating_atual": "AAA.br",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -2100,7 +2058,7 @@
           "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
           "cnpj_emissor": "",
           "instrumento": "Subordinada - Longo prazo",
-          "dt_acao": "2026-11-16",
+          "dt_acao": "2026-11-17",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/27926",
           "rating_atual": "CCC",
           "outlook_anterior": "Negativa",
@@ -2113,7 +2071,7 @@
           "emissor": "CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
           "cnpj_emissor": "29109383000112",
           "instrumento": "Senior - Longo prazo",
-          "dt_acao": "2026-11-16",
+          "dt_acao": "2026-11-17",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/27775",
           "rating_atual": "BBB+",
           "outlook_anterior": "Estável",
@@ -2126,7 +2084,7 @@
           "emissor": "CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
           "cnpj_emissor": "29109383000112",
           "instrumento": "Senior - Curto prazo",
-          "dt_acao": "2026-11-16",
+          "dt_acao": "2026-11-17",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/27775",
           "rating_atual": "CP3",
           "outlook_anterior": "Estável",
@@ -2139,7 +2097,7 @@
           "emissor": "ARGENTA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
           "cnpj_emissor": "45931917000148",
           "instrumento": "Senior - Curto prazo",
-          "dt_acao": "2026-11-16",
+          "dt_acao": "2026-11-17",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/27202",
           "rating_atual": "CP3",
           "outlook_anterior": "Estável",
@@ -2331,196 +2289,53 @@
     }
   },
   "diario": {
-    "dt_atual": "2026-11-16",
-    "dt_anterior": "2026-11-14",
+    "dt_atual": "2026-11-17",
+    "dt_anterior": "2026-11-16",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 9,
-      "total_upgrades": 9,
+      "upgrades_emissoes": 3,
+      "total_upgrades": 3,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 4,
-      "total_downgrades": 4,
+      "downgrades_emissoes": 0,
+      "total_downgrades": 0,
       "novos_emissores": 0,
-      "novos_emissoes": 2,
-      "total_novos": 2,
-      "outlooks_emissores": 1,
-      "outlooks_emissoes": 2,
-      "total_outlooks": 3,
+      "novos_emissoes": 0,
+      "total_novos": 0,
+      "outlooks_emissores": 0,
+      "outlooks_emissoes": 0,
+      "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 2,
-      "total_retirados": 2
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
-      "dt_atual": "2026-11-16",
-      "dt_anterior": "2026-11-14",
+      "dt_atual": "2026-11-17",
+      "dt_anterior": "2026-11-16",
       "upgrades": [],
       "downgrades": [],
       "novos": [],
-      "outlooks": [
-        {
-          "agencia": "Fitch",
-          "emissor": "GSH PARTICIPACOES",
-          "cnpj_emissor": "08397078000101",
-          "instrumento": "National Long Term Rating",
-          "dt_acao": "2026-11-16",
-          "link": "https://www.fitchratings.com/entity/gsh-corp-participacoes-sa-97344983",
-          "rating_atual": "A+(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "OUTLOOK",
-          "variacao_notches": "0"
-        }
-      ],
+      "outlooks": [],
       "retirados": []
     },
     "emissoes": {
       "tipo": "emissoes",
-      "dt_atual": "2026-11-16",
-      "dt_anterior": "2026-11-14",
+      "dt_atual": "2026-11-17",
+      "dt_anterior": "2026-11-16",
       "upgrades": [
-        {
-          "agencia": "Fitch",
-          "emissor": "FACTA INSS CB FIDC",
-          "cnpj_emissor": "35946113000169",
-          "instrumento": "bonds ser 2022-1,2,3",
-          "dt_acao": "2026-06-12",
-          "link": "https://www.fitchratings.com/entity/facta-inss-cb-fidc-97441991#issues",
-          "rating_anterior": "CCsf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Em Observação",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+19"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "IS GREEN SOLFACIL III FIDC",
-          "cnpj_emissor": "49920525000134",
-          "instrumento": "notes ser 2022",
-          "dt_acao": "2026-01-28",
-          "link": "https://www.fitchratings.com/entity/green-solfacil-iii-fundo-de-investimento-em-direitos-creditorios-97346867#issues",
-          "rating_anterior": "BBB+sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+7"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "CSCF CARTOES CONSIGNADOS II 2025",
-          "cnpj_emissor": "",
-          "instrumento": "notes ser 1,2,3",
-          "dt_acao": "2026-04-29",
-          "link": "https://www.fitchratings.com/entity/cscf-cartoes-consignados-ii-2025-4-1-2-3-bmg-8-97745508#issues",
-          "rating_anterior": "AAsf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "cnpj_emissor": "12536691000121",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB",
-          "rating_atual": "brBBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2025",
-          "cnpj_emissor": "10.753.164/0001-43",
-          "instrumento": "notes ser 4",
-          "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues",
-          "cnpj_devedor_vinculado": "00451283000198",
-          "rating_anterior": "Asf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+5"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "VERT CSCF 2024",
-          "cnpj_emissor": "",
-          "instrumento": "bonds ser 2024-1,2,3",
-          "dt_acao": "2026-04-29",
-          "link": "https://www.fitchratings.com/entity/vert-cscf-2024-1-2-3-bmg-6-97613555#issues",
-          "rating_anterior": "AA-sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS CREDITAS AUTO XII",
-          "cnpj_emissor": "59929098000109",
-          "instrumento": "notes ser 9",
-          "dt_acao": "2026-05-07",
-          "link": "https://www.fitchratings.com/entity/fundo-de-investimento-em-direitos-creditorios-creditas-auto-xii-97832556#issues",
-          "rating_anterior": "A-sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+6"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "MULTIPLIKE SECURITIZADORA 2024",
-          "cnpj_emissor": "14955141000172",
-          "instrumento": "notes ser 3",
-          "dt_acao": "2026-07-10",
-          "link": "https://www.fitchratings.com/entity/multiplike-securitizadora-sa-2024-15-1-2-3-97681046#issues",
-          "rating_anterior": "A-sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Positiva",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+6"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "FUNDO INVESTIMENTO DIREITOS CREDITORIOS CREDITAS AUTO XI",
-          "cnpj_emissor": "58035124000192",
-          "instrumento": "notes ser 4",
-          "dt_acao": "2026-10-05",
-          "link": "https://www.fitchratings.com/entity/fundo-de-investimento-em-direitos-creditorios-creditas-auto-xi-97901782#issues",
-          "rating_anterior": "A+sf(bra)",
-          "rating_atual": "AA+sf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
-        }
-      ],
-      "downgrades": [
         {
           "agencia": "Austin",
           "emissor": "FIDC CONSIGNADOS FEDERAIS",
           "cnpj_emissor": "33536066000150",
           "instrumento": "SUBORDINADAS PREFERENCIAIS",
           "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
+          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA-",
+          "rating_atual": "brAA",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
         },
         {
           "agencia": "Austin",
@@ -2528,13 +2343,13 @@
           "cnpj_emissor": "",
           "instrumento": "SUBORDINADAS PREFERENCIAIS",
           "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
+          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB-",
+          "rating_atual": "brBBB+",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
         },
         {
           "agencia": "Austin",
@@ -2542,116 +2357,103 @@
           "cnpj_emissor": "",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
+          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brB-",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "FIDC CREDITAS AUTO X",
-          "cnpj_emissor": "53095241000128",
-          "instrumento": "notes ser 4",
-          "dt_acao": "2026-10-05",
-          "link": "https://www.fitchratings.com/entity/fidc-creditas-auto-x-97901036#issues",
-          "rating_anterior": "AAsf(bra)",
-          "rating_atual": "A+sf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
         }
       ],
-      "novos": [
-        {
-          "agencia": "Moody's",
-          "emissor": "IS GREEN SOLFACIL II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "cnpj_emissor": "",
-          "instrumento": "1ª Série de Cotas Seniores",
-          "dt_acao": "2026-11-16",
-          "link": "",
-          "rating_atual": "AAA.br (sf)",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Moody's",
-          "emissor": "IS GREEN SOLFACIL II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "cnpj_emissor": "",
-          "instrumento": "2ª Série de Cotas Seniores",
-          "dt_acao": "2026-11-16",
-          "link": "",
-          "rating_atual": "AAA.br (sf)",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        }
-      ],
-      "outlooks": [
-        {
-          "agencia": "Liberum",
-          "emissor": "CREDIT PARTNERS FUNDO INVESTIMENTO DIREITO CREDITORIOS",
-          "cnpj_emissor": "32274874000123",
-          "instrumento": "Subordinada - Longo prazo",
-          "dt_acao": "2026-11-16",
-          "link": "https://www.liberumratings.com.br/detalhes-ativo/29346",
-          "rating_atual": "CCC",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "OUTLOOK",
-          "variacao_notches": "0"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "GSH PARTICIPACOES",
-          "cnpj_emissor": "08397078000101",
-          "instrumento": "BRL 13.78 mln bond/note",
-          "dt_acao": "2026-11-16",
-          "link": "https://www.fitchratings.com/entity/gsh-corp-participacoes-sa-97344983#issues",
-          "rating_atual": "A(bra)",
-          "outlook_anterior": "Em Observação",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "OUTLOOK",
-          "variacao_notches": "0"
-        }
-      ],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2019",
-          "cnpj_emissor": "02.773.542/0001-22",
-          "instrumento": "notes ser 1",
-          "dt_acao": "2019-12-05",
-          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "WDsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "ICRED INSS IV FIDC",
-          "cnpj_emissor": "69395941000178",
-          "instrumento": "notes ser 4",
-          "dt_acao": "2026-10-21",
-          "link": "https://www.fitchratings.com/entity/icred-inss-iv-fidc-97975420#issues",
-          "rating_anterior": "AAA(EXP)sf(bra)",
-          "rating_atual": "NR(EXP)sf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "downgrades": [],
+      "novos": [],
+      "outlooks": [],
+      "retirados": []
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Liberum",
+      "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
+      "cnpj_emissor": "",
+      "instrumento": "Mezanino - Curto prazo",
+      "dt_acao": "2026-11-17",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/27213",
+      "rating_anterior": "CP5",
+      "rating_atual": "CP3",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+2",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
+      "cnpj_emissor": "",
+      "instrumento": "Subordinada - Longo prazo",
+      "dt_acao": "2026-11-17",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/27926",
+      "rating_atual": "CCC",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissão",
+      "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "cnpj_emissor": "29109383000112",
+      "instrumento": "Senior - Longo prazo",
+      "dt_acao": "2026-11-17",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/27775",
+      "rating_atual": "BBB+",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissão",
+      "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "cnpj_emissor": "29109383000112",
+      "instrumento": "Senior - Curto prazo",
+      "dt_acao": "2026-11-17",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/27775",
+      "rating_atual": "CP3",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissão",
+      "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "ARGENTA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "cnpj_emissor": "45931917000148",
+      "instrumento": "Senior - Curto prazo",
+      "dt_acao": "2026-11-17",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/27202",
+      "rating_atual": "CP3",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissão",
+      "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-17"
+    },
     {
       "agencia": "Fitch",
       "emissor": "GSH PARTICIPACOES",
@@ -2666,24 +2468,7 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-      "cnpj_emissor": "",
-      "instrumento": "Mezanino - Curto prazo",
-      "dt_acao": "2026-11-16",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/27213",
-      "rating_anterior": "CP5",
-      "rating_atual": "CP3",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+2",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -2698,7 +2483,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -2713,7 +2498,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -2729,71 +2514,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
-      "cnpj_emissor": "",
-      "instrumento": "Subordinada - Longo prazo",
-      "dt_acao": "2026-11-16",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/27926",
-      "rating_atual": "CCC",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "OUTLOOK",
-      "variacao_notches": "0",
-      "categoria": "Emissão",
-      "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-      "cnpj_emissor": "29109383000112",
-      "instrumento": "Senior - Longo prazo",
-      "dt_acao": "2026-11-16",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/27775",
-      "rating_atual": "BBB+",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "OUTLOOK",
-      "variacao_notches": "0",
-      "categoria": "Emissão",
-      "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-      "cnpj_emissor": "29109383000112",
-      "instrumento": "Senior - Curto prazo",
-      "dt_acao": "2026-11-16",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/27775",
-      "rating_atual": "CP3",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "OUTLOOK",
-      "variacao_notches": "0",
-      "categoria": "Emissão",
-      "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "ARGENTA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
-      "cnpj_emissor": "45931917000148",
-      "instrumento": "Senior - Curto prazo",
-      "dt_acao": "2026-11-16",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/27202",
-      "rating_atual": "CP3",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "OUTLOOK",
-      "variacao_notches": "0",
-      "categoria": "Emissão",
-      "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -2809,7 +2530,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -2824,7 +2545,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -2841,7 +2562,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -2858,7 +2579,7 @@
       "variacao_notches": "+2",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -2875,7 +2596,7 @@
       "variacao_notches": "+4",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -2892,7 +2613,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -2907,7 +2628,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -2924,7 +2645,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -2939,7 +2660,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -2954,7 +2675,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -2971,7 +2692,7 @@
       "variacao_notches": "-6",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -2986,7 +2707,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3001,7 +2722,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3016,7 +2737,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3031,7 +2752,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3046,7 +2767,7 @@
       "variacao_notches": "—",
       "categoria": "Emissor",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3061,7 +2782,7 @@
       "variacao_notches": "—",
       "categoria": "Emissor",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3076,7 +2797,7 @@
       "variacao_notches": "—",
       "categoria": "Emissor",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3091,7 +2812,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3106,7 +2827,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3121,7 +2842,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3136,7 +2857,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3151,7 +2872,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3166,7 +2887,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3183,7 +2904,7 @@
       "variacao_notches": "—",
       "categoria": "Emissor",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3201,7 +2922,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3218,7 +2939,7 @@
       "variacao_notches": "-6",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3235,7 +2956,7 @@
       "variacao_notches": "-6",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -3250,7 +2971,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -3265,7 +2986,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3282,7 +3003,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3299,7 +3020,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3316,7 +3037,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3333,7 +3054,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3350,7 +3071,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -3365,7 +3086,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3382,7 +3103,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3399,7 +3120,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3414,7 +3135,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3429,7 +3150,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3444,7 +3165,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -3460,7 +3181,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -3476,7 +3197,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -3492,7 +3213,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -3508,7 +3229,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3525,7 +3246,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3542,7 +3263,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3559,7 +3280,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3574,7 +3295,7 @@
       "variacao_notches": "—",
       "categoria": "Emissor",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3590,7 +3311,7 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -3607,7 +3328,7 @@
       "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3622,7 +3343,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3637,7 +3358,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3653,7 +3374,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3670,7 +3391,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3687,7 +3408,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3704,37 +3425,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "RP FINANCEIRA",
-      "cnpj_emissor": "",
-      "instrumento": "National Long Term Rating",
-      "dt_acao": "2026-10-29",
-      "link": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027",
-      "rating_atual": "A-(bra)",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissor",
-      "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "RP FINANCEIRA",
-      "cnpj_emissor": "",
-      "instrumento": "National Short Term Rating",
-      "dt_acao": "2026-10-29",
-      "link": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027",
-      "rating_atual": "F2(bra)",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissor",
-      "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3749,7 +3440,37 @@
       "variacao_notches": "—",
       "categoria": "Emissor",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "RP FINANCEIRA",
+      "cnpj_emissor": "",
+      "instrumento": "National Long Term Rating",
+      "dt_acao": "2026-10-29",
+      "link": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027",
+      "rating_atual": "A-(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "RP FINANCEIRA",
+      "cnpj_emissor": "",
+      "instrumento": "National Short Term Rating",
+      "dt_acao": "2026-10-29",
+      "link": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027",
+      "rating_atual": "F2(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3766,7 +3487,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3783,7 +3504,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3799,7 +3520,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3814,7 +3535,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3829,7 +3550,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3846,7 +3567,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -3863,7 +3584,7 @@
       "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3878,7 +3599,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3893,7 +3614,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -3911,67 +3632,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "cnpj_emissor": "68979059000107",
-      "instrumento": "Mezanino - Longo prazo",
-      "dt_acao": "2026-10-27",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
-      "rating_atual": "BB+",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "cnpj_emissor": "68979059000107",
-      "instrumento": "Mezanino - Curto prazo",
-      "dt_acao": "2026-10-27",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
-      "rating_atual": "CP4",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "cnpj_emissor": "68979059000107",
-      "instrumento": "Senior - Curto prazo",
-      "dt_acao": "2026-10-27",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
-      "rating_atual": "CP2",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Liberum",
-      "emissor": "BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "cnpj_emissor": "68979059000107",
-      "instrumento": "Senior - Longo prazo",
-      "dt_acao": "2026-10-27",
-      "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
-      "rating_atual": "A",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -3986,7 +3647,67 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "cnpj_emissor": "68979059000107",
+      "instrumento": "Mezanino - Longo prazo",
+      "dt_acao": "2026-10-27",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
+      "rating_atual": "BB+",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "cnpj_emissor": "68979059000107",
+      "instrumento": "Mezanino - Curto prazo",
+      "dt_acao": "2026-10-27",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
+      "rating_atual": "CP4",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "cnpj_emissor": "68979059000107",
+      "instrumento": "Senior - Curto prazo",
+      "dt_acao": "2026-10-27",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
+      "rating_atual": "CP2",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "cnpj_emissor": "68979059000107",
+      "instrumento": "Senior - Longo prazo",
+      "dt_acao": "2026-10-27",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
+      "rating_atual": "A",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4002,7 +3723,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4017,7 +3738,7 @@
       "variacao_notches": "—",
       "categoria": "Emissor",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4032,7 +3753,7 @@
       "variacao_notches": "—",
       "categoria": "Emissor",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4049,7 +3770,7 @@
       "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4064,22 +3785,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
-      "cnpj_emissor": "",
-      "instrumento": "BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050",
-      "dt_acao": "2026-10-23",
-      "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues",
-      "rating_atual": "AA-(bra)",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4094,7 +3800,22 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
+      "cnpj_emissor": "",
+      "instrumento": "BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050",
+      "dt_acao": "2026-10-23",
+      "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues",
+      "rating_atual": "AA-(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4111,7 +3832,7 @@
       "variacao_notches": "-4",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4128,7 +3849,7 @@
       "variacao_notches": "-4",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4145,7 +3866,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4162,7 +3883,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4179,7 +3900,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4196,7 +3917,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4213,7 +3934,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4230,7 +3951,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4247,7 +3968,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4264,7 +3985,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4281,7 +4002,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4298,7 +4019,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4315,7 +4036,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4332,7 +4053,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4349,7 +4070,7 @@
       "variacao_notches": "-2",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4366,7 +4087,7 @@
       "variacao_notches": "-2",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4383,7 +4104,7 @@
       "variacao_notches": "-2",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4398,7 +4119,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4413,7 +4134,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4428,7 +4149,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4443,7 +4164,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4458,7 +4179,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4474,7 +4195,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4490,7 +4211,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4506,7 +4227,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4522,7 +4243,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4538,7 +4259,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4554,7 +4275,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4570,7 +4291,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4586,7 +4307,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4603,7 +4324,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4620,7 +4341,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4637,7 +4358,7 @@
       "variacao_notches": "-13",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4652,7 +4373,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4667,7 +4388,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4684,7 +4405,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4701,7 +4422,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "S&P",
@@ -4718,7 +4439,7 @@
       "variacao_notches": "-2",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "S&P",
@@ -4735,7 +4456,7 @@
       "variacao_notches": "-2",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4752,7 +4473,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4767,7 +4488,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4782,7 +4503,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4797,7 +4518,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4812,7 +4533,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4827,7 +4548,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4842,7 +4563,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4857,7 +4578,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4874,7 +4595,7 @@
       "variacao_notches": "-2",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -4891,7 +4612,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4906,7 +4627,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "NOVO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -4922,7 +4643,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4939,7 +4660,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4956,7 +4677,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -4973,7 +4694,7 @@
       "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "S&P",
@@ -4990,7 +4711,7 @@
       "variacao_notches": "-1",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -5006,7 +4727,7 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -5022,7 +4743,7 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -5038,7 +4759,7 @@
       "variacao_notches": "0",
       "categoria": "Emissão",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Liberum",
@@ -5055,7 +4776,7 @@
       "variacao_notches": "-5",
       "categoria": "Emissor",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -5072,7 +4793,7 @@
       "variacao_notches": "+3",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "S&P",
@@ -5089,7 +4810,7 @@
       "variacao_notches": "—",
       "categoria": "Emissor",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -5106,7 +4827,7 @@
       "variacao_notches": "+6",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -5124,7 +4845,7 @@
       "variacao_notches": "+3",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -5141,7 +4862,7 @@
       "variacao_notches": "+19",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Moody's",
@@ -5158,7 +4879,7 @@
       "variacao_notches": "+3",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -5175,7 +4896,7 @@
       "variacao_notches": "+3",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -5192,7 +4913,7 @@
       "variacao_notches": "+2",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -5209,7 +4930,7 @@
       "variacao_notches": "+3",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -5226,7 +4947,7 @@
       "variacao_notches": "+7",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Austin",
@@ -5243,7 +4964,7 @@
       "variacao_notches": "+3",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "S&P",
@@ -5259,41 +4980,7 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC IC SOMAPAY",
-      "cnpj_emissor": "",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2024-08-12",
-      "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB+",
-      "rating_atual": "brB-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-5",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "HIGH YIELD YALEEH FIDC",
-      "cnpj_emissor": "",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2024-03-06",
-      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brBBB+",
-      "rating_atual": "brBBB-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "S&P",
@@ -5309,7 +4996,7 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Austin",
@@ -5326,7 +5013,7 @@
       "variacao_notches": "-7",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Austin",
@@ -5343,7 +5030,7 @@
       "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "Fitch",
@@ -5360,24 +5047,7 @@
       "variacao_notches": "—",
       "categoria": "Emissão",
       "tipo": "RETIRADO",
-      "dt_captura": "2026-11-16"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC CONSIGNADOS FEDERAIS",
-      "cnpj_emissor": "33536066000150",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2019-09-27",
-      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brAA",
-      "rating_atual": "brAA-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "S&P",
@@ -5393,7 +5063,7 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "S&P",
@@ -5409,7 +5079,7 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     },
     {
       "agencia": "S&P",
@@ -5426,10 +5096,100 @@
       "variacao_notches": "+3",
       "categoria": "Emissor",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-16"
+      "dt_captura": "2026-11-17"
     }
   ],
   "historico_completo": [
+    {
+      "agencia": "Liberum",
+      "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
+      "cnpj_emissor": "",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "Mezanino - Curto prazo",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "tipo_movimento": "UPGRADE",
+      "rating_anterior": "CP5",
+      "rating_atual": "CP3",
+      "variacao_notches": "+2",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "dt_acao": "2026-11-17",
+      "dt_captura": "2026-11-17",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/27213"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
+      "cnpj_emissor": "",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "Subordinada - Longo prazo",
+      "categoria": "Emissão",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "CCC",
+      "variacao_notches": "0",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-17",
+      "dt_captura": "2026-11-17",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/27926"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "cnpj_emissor": "29109383000112",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "Senior - Longo prazo",
+      "categoria": "Emissão",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "BBB+",
+      "variacao_notches": "0",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Negativa",
+      "dt_acao": "2026-11-17",
+      "dt_captura": "2026-11-17",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/27775"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "cnpj_emissor": "29109383000112",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "Senior - Curto prazo",
+      "categoria": "Emissão",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "CP3",
+      "variacao_notches": "0",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Negativa",
+      "dt_acao": "2026-11-17",
+      "dt_captura": "2026-11-17",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/27775"
+    },
+    {
+      "agencia": "Liberum",
+      "emissor": "ARGENTA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
+      "cnpj_emissor": "45931917000148",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "Senior - Curto prazo",
+      "categoria": "Emissão",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "CP3",
+      "variacao_notches": "0",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Negativa",
+      "dt_acao": "2026-11-17",
+      "dt_captura": "2026-11-17",
+      "link": "https://www.liberumratings.com.br/detalhes-ativo/27202"
+    },
     {
       "agencia": "Liberum",
       "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
@@ -110337,7 +110097,7 @@
   ],
   "emissores": {
     "tipo": "emissores",
-    "dt_atual": "2026-11-16",
+    "dt_atual": "2026-11-17",
     "dt_anterior": "2026-10-16",
     "upgrades": [
       {
@@ -110761,6 +110521,18 @@
         "variacao_notches": "—"
       },
       {
+        "agencia": "Moody's",
+        "emissor": "FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO",
+        "cnpj_emissor": "",
+        "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
+        "dt_acao": "2026-10-29",
+        "link": "",
+        "rating_atual": "MQ2.br",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "RP FINANCEIRA",
         "cnpj_emissor": "",
@@ -110780,18 +110552,6 @@
         "dt_acao": "2026-10-29",
         "link": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027",
         "rating_atual": "F2(bra)",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Moody's",
-        "emissor": "FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO",
-        "cnpj_emissor": "",
-        "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
-        "dt_acao": "2026-10-29",
-        "link": "",
-        "rating_atual": "MQ2.br",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -110984,7 +110744,7 @@
   },
   "emissoes": {
     "tipo": "emissoes",
-    "dt_atual": "2026-11-16",
+    "dt_atual": "2026-11-17",
     "dt_anterior": "2026-10-16",
     "upgrades": [
       {
@@ -110992,7 +110752,7 @@
         "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
         "cnpj_emissor": "",
         "instrumento": "Mezanino - Curto prazo",
-        "dt_acao": "2026-11-16",
+        "dt_acao": "2026-11-17",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/27213",
         "rating_anterior": "CP5",
         "rating_atual": "CP3",
@@ -111368,48 +111128,6 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-7"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FIDC CONSIGNADOS FEDERAIS",
-        "cnpj_emissor": "33536066000150",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2019-09-27",
-        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brAA",
-        "rating_atual": "brAA-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "HIGH YIELD YALEEH FIDC",
-        "cnpj_emissor": "",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2024-03-06",
-        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brBBB+",
-        "rating_atual": "brBBB-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FIDC IC SOMAPAY",
-        "cnpj_emissor": "",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2024-08-12",
-        "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brB-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-5"
       },
       {
         "agencia": "Fitch",
@@ -111837,6 +111555,18 @@
         "variacao_notches": "—"
       },
       {
+        "agencia": "Moody's",
+        "emissor": "PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "cnpj_emissor": "69003946000108",
+        "instrumento": "1ª Série de Cotas Seniores",
+        "dt_acao": "2026-10-23",
+        "link": "",
+        "rating_atual": "AAA.br (sf)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
         "cnpj_emissor": "",
@@ -111850,12 +111580,12 @@
       },
       {
         "agencia": "Moody's",
-        "emissor": "PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-        "cnpj_emissor": "69003946000108",
-        "instrumento": "1ª Série de Cotas Seniores",
-        "dt_acao": "2026-10-23",
+        "emissor": "LOCALIZA RENT CAR",
+        "cnpj_emissor": "16670085000155",
+        "instrumento": "49ª Emissão de Debentures",
+        "dt_acao": "2026-10-27",
         "link": "",
-        "rating_atual": "AAA.br (sf)",
+        "rating_atual": "AAA.br",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -111904,18 +111634,6 @@
         "dt_acao": "2026-10-27",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
         "rating_atual": "A",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Moody's",
-        "emissor": "LOCALIZA RENT CAR",
-        "cnpj_emissor": "16670085000155",
-        "instrumento": "49ª Emissão de Debentures",
-        "dt_acao": "2026-10-27",
-        "link": "",
-        "rating_atual": "AAA.br",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -112396,7 +112114,7 @@
         "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
         "cnpj_emissor": "",
         "instrumento": "Subordinada - Longo prazo",
-        "dt_acao": "2026-11-16",
+        "dt_acao": "2026-11-17",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/27926",
         "rating_atual": "CCC",
         "outlook_anterior": "Negativa",
@@ -112409,7 +112127,7 @@
         "emissor": "CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
         "cnpj_emissor": "29109383000112",
         "instrumento": "Senior - Longo prazo",
-        "dt_acao": "2026-11-16",
+        "dt_acao": "2026-11-17",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/27775",
         "rating_atual": "BBB+",
         "outlook_anterior": "Estável",
@@ -112422,7 +112140,7 @@
         "emissor": "CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
         "cnpj_emissor": "29109383000112",
         "instrumento": "Senior - Curto prazo",
-        "dt_acao": "2026-11-16",
+        "dt_acao": "2026-11-17",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/27775",
         "rating_atual": "CP3",
         "outlook_anterior": "Estável",
@@ -112435,7 +112153,7 @@
         "emissor": "ARGENTA FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
         "cnpj_emissor": "45931917000148",
         "instrumento": "Senior - Curto prazo",
-        "dt_acao": "2026-11-16",
+        "dt_acao": "2026-11-17",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/27202",
         "rating_atual": "CP3",
         "outlook_anterior": "Estável",
