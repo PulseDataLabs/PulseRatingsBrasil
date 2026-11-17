@@ -1,73 +1,73 @@
 window.PULSERATINGS_PIPELINE_STATUS = {
-  "timestamp": "2026-11-17T15:54:15.546970",
-  "elapsed_seconds": 2220.1776220798492,
+  "timestamp": "2026-11-17T19:58:46.216414",
+  "elapsed_seconds": 807.0412530899048,
   "status": "error",
   "summary": {
     "total": 10,
-    "success": 6,
-    "failed": 4,
+    "success": 7,
+    "failed": 3,
     "drifts": 0
   },
   "scrapers": {
     "fitch_emissores": {
       "status": "success",
-      "elapsed_seconds": 13.609159708023071,
+      "elapsed_seconds": 9.990703105926514,
       "error": null,
-      "timestamp": "2026-11-17T15:54:15.547181"
+      "timestamp": "2026-11-17T19:58:46.216540"
     },
     "standard_and_poors_emissores": {
       "status": "error",
-      "elapsed_seconds": 31.443912267684937,
+      "elapsed_seconds": 30.742555856704712,
       "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/run_all.py\", line 87, in run_scraper\n    scraper.run()\n    ~~~~~~~~~~~^^\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 118, in run\n    raise e\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 45, in run\n    raise RuntimeError(msg)\nRuntimeError: Nenhum dado retornado para salvar pelo scraper standard_and_poors_emissores.\n",
-      "timestamp": "2026-11-17T15:54:15.547184"
+      "timestamp": "2026-11-17T19:58:46.216538"
     },
     "moodys_emissores": {
       "status": "error",
-      "elapsed_seconds": 1017.4568457603455,
+      "elapsed_seconds": 732.0268573760986,
       "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/run_all.py\", line 87, in run_scraper\n    scraper.run()\n    ~~~~~~~~~~~^^\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 118, in run\n    raise e\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 45, in run\n    raise RuntimeError(msg)\nRuntimeError: Nenhum dado retornado para salvar pelo scraper moodys_emissores.\n",
-      "timestamp": "2026-11-17T15:54:15.547190"
+      "timestamp": "2026-11-17T19:58:46.216542"
     },
     "fitch_ratings": {
       "status": "success",
-      "elapsed_seconds": 41.64355230331421,
+      "elapsed_seconds": 37.76622653007507,
       "error": null,
-      "timestamp": "2026-11-17T15:54:15.547196"
+      "timestamp": "2026-11-17T19:58:46.216547"
     },
     "moodys_ratings": {
-      "status": "error",
-      "elapsed_seconds": 1202.7175645828247,
-      "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/run_all.py\", line 87, in run_scraper\n    scraper.run()\n    ~~~~~~~~~~~^^\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 118, in run\n    raise e\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 45, in run\n    raise RuntimeError(msg)\nRuntimeError: Nenhum dado retornado para salvar pelo scraper moodys_ratings.\n",
-      "timestamp": "2026-11-17T15:54:15.547198"
+      "status": "success",
+      "elapsed_seconds": 73.21390795707703,
+      "error": null,
+      "timestamp": "2026-11-17T19:58:46.216549"
     },
     "standard_and_poors_ratings": {
       "status": "error",
-      "elapsed_seconds": 23.52181887626648,
+      "elapsed_seconds": 23.948381185531616,
       "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/run_all.py\", line 87, in run_scraper\n    scraper.run()\n    ~~~~~~~~~~~^^\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 118, in run\n    raise e\n  File \"/home/runner/work/PulseRatingsBrasil/PulseRatingsBrasil/scrapers/utils/base.py\", line 45, in run\n    raise RuntimeError(msg)\nRuntimeError: Nenhum dado retornado para salvar pelo scraper standard_and_poors_ratings.\n",
-      "timestamp": "2026-11-17T15:54:15.547194"
+      "timestamp": "2026-11-17T19:58:46.216544"
     },
     "austin_emissores": {
       "status": "success",
-      "elapsed_seconds": 1.7974460124969482,
+      "elapsed_seconds": 1.7965660095214844,
       "error": null,
-      "timestamp": "2026-11-17T15:54:15.547175"
+      "timestamp": "2026-11-17T19:58:46.216528"
     },
     "austin_ratings": {
       "status": "success",
-      "elapsed_seconds": 13.549351453781128,
+      "elapsed_seconds": 29.433764934539795,
       "error": null,
-      "timestamp": "2026-11-17T15:54:15.547192"
+      "timestamp": "2026-11-17T19:58:46.216546"
     },
     "liberum_emissores": {
       "status": "success",
-      "elapsed_seconds": 57.675533056259155,
+      "elapsed_seconds": 30.608315467834473,
       "error": null,
-      "timestamp": "2026-11-17T15:54:15.547186"
+      "timestamp": "2026-11-17T19:58:46.216533"
     },
     "liberum_ratings": {
       "status": "success",
-      "elapsed_seconds": 59.48052144050598,
+      "elapsed_seconds": 30.67975616455078,
       "error": null,
-      "timestamp": "2026-11-17T15:54:15.547188"
+      "timestamp": "2026-11-17T19:58:46.216536"
     }
   },
   "drifts": {}
