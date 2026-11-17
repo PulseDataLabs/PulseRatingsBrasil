@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACP BIOENERGIA DESENVOLVE SP FIDC - SENIORES ÚNICA"
+        "example": "ADJUD I FIDC NP  - SENIORES ÚNICA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/4951/ACP_Bioenergia_Desenvolve_SP_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4790/Adjud_I_FIDC_NP__-_Seniores_Única"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brA"
+        "example": "brBBB-"
       },
       {
         "name": "de_rating_cp",
@@ -293,27 +293,27 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brA"
+        "example": "brBBB-"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2025-04-01"
+        "example": "2024-08-13"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rating Preliminar"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": ""
+        "example": "Estável"
       },
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/ACP_Bioenergia_Desenvolve_SP_FIDC/11363"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Adjud_I_FIDC_NP_/11203"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "SINAI CONSIG FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA"
+        "example": "K2 FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29302"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29359"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "SINAI CONSIG FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA"
+        "example": "K2 FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29302"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29359"
       },
       {
         "name": "no_tipo_rating",
@@ -362,12 +362,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP2"
+        "example": "BBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-11-16"
+        "example": "2026-11-17"
       },
       {
         "name": "de_acao_rating",
@@ -382,12 +382,12 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Senior"
+        "example": "Mezanino"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Curto prazo"
+        "example": "Longo prazo"
       }
     ]
   },

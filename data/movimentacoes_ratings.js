@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-11-17T03:21:50.885147",
+  "timestamp": "2026-11-17T15:54:17.681845",
   "dt_atual": "2026-11-17",
   "dt_anterior": "2026-11-16",
   "resumo": {
@@ -7,17 +7,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "upgrades_emissoes": 19,
     "total_upgrades": 34,
     "downgrades_emissores": 13,
-    "downgrades_emissoes": 20,
-    "total_downgrades": 33,
+    "downgrades_emissoes": 21,
+    "total_downgrades": 34,
     "novos_emissores": 9,
-    "novos_emissoes": 53,
-    "total_novos": 62,
+    "novos_emissoes": 54,
+    "total_novos": 63,
     "outlooks_emissores": 8,
     "outlooks_emissoes": 21,
     "total_outlooks": 29,
     "retirados_emissores": 2,
-    "retirados_emissoes": 9,
-    "total_retirados": 11
+    "retirados_emissoes": 8,
+    "total_retirados": 10
   },
   "periodo_recente": {
     "dt_atual": "2026-11-17",
@@ -27,17 +27,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 19,
       "total_upgrades": 34,
       "downgrades_emissores": 13,
-      "downgrades_emissoes": 20,
-      "total_downgrades": 33,
+      "downgrades_emissoes": 21,
+      "total_downgrades": 34,
       "novos_emissores": 9,
-      "novos_emissoes": 53,
-      "total_novos": 62,
+      "novos_emissoes": 54,
+      "total_novos": 63,
       "outlooks_emissores": 8,
       "outlooks_emissoes": 21,
       "total_outlooks": 29,
       "retirados_emissores": 2,
-      "retirados_emissoes": 9,
-      "total_retirados": 11
+      "retirados_emissoes": 8,
+      "total_retirados": 10
     },
     "emissores": {
       "tipo": "emissores",
@@ -795,13 +795,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "cnpj_emissor": "12536691000121",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB",
-          "rating_atual": "brBBB",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
+          "variacao_notches": "+1"
         },
         {
           "agencia": "Moody's",
@@ -1072,6 +1072,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-7"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-5"
         },
         {
           "agencia": "Fitch",
@@ -1861,7 +1875,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         {
           "agencia": "Moody's",
           "emissor": "IS GREEN SOLFACIL II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "cnpj_emissor": "",
+          "cnpj_emissor": "42462306000100",
           "instrumento": "1ª Série de Cotas Seniores",
           "dt_acao": "2026-11-16",
           "link": "",
@@ -1873,11 +1887,23 @@ window.PULSERATINGS_MOVIMENTACOES = {
         {
           "agencia": "Moody's",
           "emissor": "IS GREEN SOLFACIL II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "cnpj_emissor": "",
+          "cnpj_emissor": "42462306000100",
           "instrumento": "2ª Série de Cotas Seniores",
           "dt_acao": "2026-11-16",
           "link": "",
           "rating_atual": "AAA.br (sf)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "URBIA CATARATAS",
+          "cnpj_emissor": "",
+          "instrumento": "BRL 632 mln N/A 8.42% bond/note 15-Feb-2041",
+          "dt_acao": "2026-11-17",
+          "link": "https://www.fitchratings.com/entity/urbia-cataratas-sa-97953728#issues",
+          "rating_atual": "AA(bra)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -2161,20 +2187,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2019",
-          "cnpj_emissor": "02.773.542/0001-22",
-          "instrumento": "notes ser 1",
-          "dt_acao": "2019-12-05",
-          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "WDsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
           "cnpj_emissor": "08417544000165",
           "instrumento": "notes",
@@ -2293,14 +2305,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-11-16",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 3,
-      "total_upgrades": 3,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 0,
-      "total_downgrades": 0,
+      "downgrades_emissoes": 1,
+      "total_downgrades": 1,
       "novos_emissores": 0,
-      "novos_emissoes": 0,
-      "total_novos": 0,
+      "novos_emissoes": 1,
+      "total_novos": 1,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
@@ -2350,24 +2362,38 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+2"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "cnpj_emissor": "",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4693/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brB-",
-          "rating_atual": "brBB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+5"
         }
       ],
-      "downgrades": [],
-      "novos": [],
+      "downgrades": [
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "cnpj_emissor": "12536691000121",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        }
+      ],
+      "novos": [
+        {
+          "agencia": "Fitch",
+          "emissor": "URBIA CATARATAS",
+          "cnpj_emissor": "",
+          "instrumento": "BRL 632 mln N/A 8.42% bond/note 15-Feb-2041",
+          "dt_acao": "2026-11-17",
+          "link": "https://www.fitchratings.com/entity/urbia-cataratas-sa-97953728#issues",
+          "rating_atual": "AA(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        }
+      ],
       "outlooks": [],
       "retirados": []
     }
@@ -2388,6 +2414,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "+2",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "URBIA CATARATAS",
+      "cnpj_emissor": "",
+      "instrumento": "BRL 632 mln N/A 8.42% bond/note 15-Feb-2041",
+      "dt_acao": "2026-11-17",
+      "link": "https://www.fitchratings.com/entity/urbia-cataratas-sa-97953728#issues",
+      "rating_atual": "AA(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
       "dt_captura": "2026-11-17"
     },
     {
@@ -2473,7 +2514,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
     {
       "agencia": "Moody's",
       "emissor": "IS GREEN SOLFACIL II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "cnpj_emissor": "",
+      "cnpj_emissor": "42462306000100",
       "instrumento": "1ª Série de Cotas Seniores",
       "dt_acao": "2026-11-16",
       "link": "",
@@ -2488,7 +2529,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
     {
       "agencia": "Moody's",
       "emissor": "IS GREEN SOLFACIL II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "cnpj_emissor": "",
+      "cnpj_emissor": "42462306000100",
       "instrumento": "2ª Série de Cotas Seniores",
       "dt_acao": "2026-11-16",
       "link": "",
@@ -4955,13 +4996,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "cnpj_emissor": "12536691000121",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBB",
-      "rating_atual": "brBBB",
+      "rating_atual": "brBB+",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+3",
+      "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-11-17"
@@ -4980,6 +5021,23 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-17"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FIDC IC SOMAPAY",
+      "cnpj_emissor": "",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2024-08-12",
+      "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBB+",
+      "rating_atual": "brB-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-5",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-17"
     },
     {
@@ -5030,23 +5088,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-17"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "OPEA SECURITIZADORA 2019",
-      "cnpj_emissor": "02.773.542/0001-22",
-      "instrumento": "notes ser 1",
-      "dt_acao": "2019-12-05",
-      "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-      "rating_anterior": "AAAsf(bra)",
-      "rating_atual": "WDsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
       "dt_captura": "2026-11-17"
     },
     {
@@ -5189,6 +5230,24 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-11-17",
       "dt_captura": "2026-11-17",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/27202"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "URBIA CATARATAS",
+      "cnpj_emissor": "",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "BRL 632 mln N/A 8.42% bond/note 15-Feb-2041",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AA(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-17",
+      "dt_captura": "2026-11-17",
+      "link": "https://www.fitchratings.com/entity/urbia-cataratas-sa-97953728#issues"
     },
     {
       "agencia": "Liberum",
@@ -110851,13 +110910,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "cnpj_emissor": "12536691000121",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brBB",
-        "rating_atual": "brBBB",
+        "rating_atual": "brBB+",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+3"
+        "variacao_notches": "+1"
       },
       {
         "agencia": "Moody's",
@@ -111128,6 +111187,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-7"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FIDC IC SOMAPAY",
+        "cnpj_emissor": "",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2024-08-12",
+        "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBB+",
+        "rating_atual": "brB-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-5"
       },
       {
         "agencia": "Fitch",
@@ -111917,7 +111990,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       {
         "agencia": "Moody's",
         "emissor": "IS GREEN SOLFACIL II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-        "cnpj_emissor": "",
+        "cnpj_emissor": "42462306000100",
         "instrumento": "1ª Série de Cotas Seniores",
         "dt_acao": "2026-11-16",
         "link": "",
@@ -111929,11 +112002,23 @@ window.PULSERATINGS_MOVIMENTACOES = {
       {
         "agencia": "Moody's",
         "emissor": "IS GREEN SOLFACIL II FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-        "cnpj_emissor": "",
+        "cnpj_emissor": "42462306000100",
         "instrumento": "2ª Série de Cotas Seniores",
         "dt_acao": "2026-11-16",
         "link": "",
         "rating_atual": "AAA.br (sf)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "URBIA CATARATAS",
+        "cnpj_emissor": "",
+        "instrumento": "BRL 632 mln N/A 8.42% bond/note 15-Feb-2041",
+        "dt_acao": "2026-11-17",
+        "link": "https://www.fitchratings.com/entity/urbia-cataratas-sa-97953728#issues",
+        "rating_atual": "AA(bra)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -112215,20 +112300,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "retirados": [
-      {
-        "agencia": "Fitch",
-        "emissor": "OPEA SECURITIZADORA 2019",
-        "cnpj_emissor": "02.773.542/0001-22",
-        "instrumento": "notes ser 1",
-        "dt_acao": "2019-12-05",
-        "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
-        "rating_anterior": "AAAsf(bra)",
-        "rating_atual": "WDsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
       {
         "agencia": "Fitch",
         "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",

@@ -8,10 +8,10 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 15 | 19 | **34** |
-| 🔴 **Downgrades (Rebaixamentos)** | 13 | 20 | **33** |
-| 🔵 **Novos Ratings** | 9 | 53 | **62** |
+| 🔴 **Downgrades (Rebaixamentos)** | 13 | 21 | **34** |
+| 🔵 **Novos Ratings** | 9 | 54 | **63** |
 | 🟡 **Mudanças de Perspectiva** | 8 | 21 | **29** |
-| ⚪ **Ratings Retirados / Liquidados** | 2 | 9 | **11** |
+| ⚪ **Ratings Retirados / Liquidados** | 2 | 8 | **10** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 34
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -38,7 +38,7 @@
 | Fitch | **FACTA INSS CB FIDC** | bonds ser 2022-1,2,3 | `CCsf(bra)` | **`AAAsf(bra)`** | `+19` | Em Observação | 12/06/2026 |
 | Fitch | **IS GREEN SOLFACIL III FIDC** | notes ser 2022 | `BBB+sf(bra)` | **`AAAsf(bra)`** | `+7` | Estável | 28/01/2026 |
 | Fitch | **CSCF CARTOES CONSIGNADOS II 2025** | notes ser 1,2,3 | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 29/04/2026 |
-| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brBBB`** | `+3` | Negativa | 09/10/2025 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brBB+`** | `+1` | Negativa | 09/10/2025 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 1ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Moody's | **VALID SOLUCOES** | 11ª Emissão de Debêntures - 2ª Série | `AA.br` | **`AA+.br`** | `+1` | Estável | 15/10/2026 |
 | Fitch | **VERT CSCF 2024** | bonds ser 2024-1,2,3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
@@ -51,7 +51,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 33
+### 🔴 Rebaixamentos de Rating (Downgrades) — 34
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Liberum | **ESTADO ISRAEL** | Finanças Públicas | `AAA` | **`A`** | `-5` | Estável | 06/10/2026 |
@@ -75,6 +75,7 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 12/11/2026 |
 | Austin | **FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brB`** | `-3` | Estável | 22/02/2021 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
+| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
 | Fitch | **RAIZEN ENERGIA** | 5a Debentures (Serie 2) BRL 169.5 mln Floating IPCA (Brazil) 2.05% bond/note 15-Jun-2030 | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN ENERGIA** | 4a Debentures (Serie Unica) BRL 900 mln 3.539% Series 14 bond/note 15-Nov-2029 | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | 3a debentures (primeira serie) BRL 871 mln Series 13 due 15-Sep-2034 | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
@@ -121,7 +122,7 @@
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
 | Fitch | **GSH PARTICIPACOES** | BRL 13.78 mln bond/note | `A(bra)` | Em Observação | **Estável** | 16/11/2026 |
 
-### 🔵 Novos Ratings Atribuídos (62)
+### 🔵 Novos Ratings Atribuídos (63)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **OPEA HOLDING** | National Long Term Rating | **`A+(bra)`** | Estável | 23/10/2026 |
@@ -154,14 +155,13 @@
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CLIENTES BRF III** | Cotas Subordinadas Mezanino A | **`AA.br (sf)`** | Estável | 22/10/2026 |
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CLIENTES BRF III** | Cotas Subordinadas Mezanino B | **`BB.br (sf)`** | Estável | 22/10/2026 |
 | Fitch | **CONCESSIONARIA RODOVIA BR 262 MG** | BRL 2.51 bln bond/note | **`AA-(bra)`** | Estável | 23/10/2026 |
-| *...e mais 32 novos ratings.* | | | | | |
+| *...e mais 33 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (11)
+### ⚪ Ratings Retirados / Liquidados (10)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **IN** | Escala Nacional Brasil de Longo Prazo | `brAA` | Negativa | 08/09/2026 |
 | Fitch | **COMPANHIA PARAIBANA GAS PBGAS** | National Long Term Rating | `A(bra)` | Negativa | 05/11/2026 |
-| Fitch | **OPEA SECURITIZADORA 2019** | notes ser 1 | `AAAsf(bra)` | Estável | 05/12/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | Estável | 04/11/2026 |
 | Fitch | **PNEUCASH FIDC** | securities ser 6 | `A+sf(bra)` | Estável | 21/10/2026 |
 | Fitch | **BSEC SECURITIZADORA 2011** | certificates | `BBBsf(bra)` | Estável | 20/10/2026 |
@@ -173,4 +173,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (16/11/2026 → 17/11/2026)
-*Total nas últimas 24h: 🟢 3 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 2 upgrades | 🔴 1 downgrades | 🔵 1 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
