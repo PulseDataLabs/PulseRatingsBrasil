@@ -8,10 +8,10 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 14 | 19 | **33** |
-| 🔴 **Downgrades (Rebaixamentos)** | 13 | 21 | **34** |
-| 🔵 **Novos Ratings** | 13 | 51 | **64** |
+| 🔴 **Downgrades (Rebaixamentos)** | 13 | 22 | **35** |
+| 🔵 **Novos Ratings** | 13 | 52 | **65** |
 | 🟡 **Mudanças de Perspectiva** | 7 | 22 | **29** |
-| ⚪ **Ratings Retirados / Liquidados** | 2 | 7 | **9** |
+| ⚪ **Ratings Retirados / Liquidados** | 2 | 8 | **10** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 33
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -50,7 +50,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 34
+### 🔴 Rebaixamentos de Rating (Downgrades) — 35
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Liberum | **ESTADO ISRAEL** | Finanças Públicas | `AAA` | **`A`** | `-5` | Estável | 06/10/2026 |
@@ -75,6 +75,7 @@
 | Austin | **FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brB`** | `-3` | Estável | 22/02/2021 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
 | Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
+| Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AAAsf(bra)` | **`AA-sf(bra)`** | `-3` | Estável | 24/06/2026 |
 | Fitch | **RAIZEN ENERGIA** | 5a Debentures (Serie 2) BRL 169.5 mln Floating IPCA (Brazil) 2.05% bond/note 15-Jun-2030 | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN ENERGIA** | 4a Debentures (Serie Unica) BRL 900 mln 3.539% Series 14 bond/note 15-Nov-2029 | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
 | Fitch | **RAIZEN** | 3a debentures (primeira serie) BRL 871 mln Series 13 due 15-Sep-2034 | `C(bra)` | **`RD(bra)`** | `-1` | Estável | 22/10/2026 |
@@ -121,7 +122,7 @@
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
 | Fitch | **GSH PARTICIPACOES** | BRL 13.78 mln bond/note | `A(bra)` | Em Observação | **Estável** | 16/11/2026 |
 
-### 🔵 Novos Ratings Atribuídos (64)
+### 🔵 Novos Ratings Atribuídos (65)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **OPEA HOLDING** | National Long Term Rating | **`A+(bra)`** | Estável | 23/10/2026 |
@@ -141,7 +142,8 @@
 | Moody's | **CONCESSIONARIA LINHAS 8 9 SISTEMA TRENS METROPOLITANOS SAO PAULO** | 4ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 06/11/2026 |
 | Fitch | **BSEC COMPANHIA SECURITIZACAO 2013** | certificates | **`AAAsf(bra)`** | Estável | 29/10/2026 |
 | Moody's | **OURINHOS SANEAMENTO** | 2ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 11/11/2026 |
-| Fitch | **VERT CIA SECURITIZADORA 2026** | notes | **`AAA(EXP)sf(bra)`** | Estável | 11/11/2026 |
+| Fitch | **ER 2030 FIDC** | notes ser 4 | **`AAAsf(bra)`** | Estável | 18/11/2026 |
+| Fitch | **VERT CIA SECURITIZADORA 2026** | notes | **`AAAsf(bra)`** | Estável | 18/11/2026 |
 | Fitch | **BRAZIL** | BRL 817 mln Zero treasury bills/notes/bonds 01-Dec-2032 | **`BB`** | Estável | 19/10/2026 |
 | Fitch | **BRAZIL** | BRL 35 bln Zero treasury bills/notes/bonds 01-Dec-2032 | **`BB`** | Estável | 19/10/2026 |
 | Fitch | **BRAZIL** | BRL 41 bln Zero treasury bills/notes/bonds 01-Dec-2032 | **`BB`** | Estável | 19/10/2026 |
@@ -153,16 +155,16 @@
 | Fitch | **CONCESSIONARIA RODOVIA BR 262 MG** | BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050 | **`AA-(bra)`** | Estável | 23/10/2026 |
 | Moody's | **PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | 1ª Série de Cotas Seniores | **`AAA.br (sf)`** | Estável | 23/10/2026 |
 | Liberum | **BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Mezanino - Longo prazo | **`BB+`** | Estável | 27/10/2026 |
-| Liberum | **BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Mezanino - Curto prazo | **`CP4`** | Estável | 27/10/2026 |
-| *...e mais 34 novos ratings.* | | | | | |
+| *...e mais 35 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (9)
+### ⚪ Ratings Retirados / Liquidados (10)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | S&P | **IN** | Escala Nacional Brasil de Longo Prazo | `brAA` | Negativa | 08/09/2026 |
 | Fitch | **COMPANHIA PARAIBANA GAS PBGAS** | National Long Term Rating | `A(bra)` | Negativa | 05/11/2026 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | Estável | 04/11/2026 |
 | Fitch | **PNEUCASH FIDC** | securities ser 6 | `A+sf(bra)` | Estável | 21/10/2026 |
+| Fitch | **BEFLY FIDC** | notes ser 2 | `AAAsf(bra)` | Em Observação | 18/11/2026 |
 | Fitch | **BSEC SECURITIZADORA 2011** | certificates | `BBBsf(bra)` | Estável | 20/10/2026 |
 | Fitch | **MRS LOGISTICA** | 1ª Emissão Notas Promissórias | `AAA(bra)` | Estável | 21/10/2026 |
 | Fitch | **BARI SECURITIZADORA 2024** | notes ser 1 | `A-sf(bra)` | Estável | 28/10/2026 |
@@ -171,4 +173,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (17/11/2026 → 18/11/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 2 downgrades | 🔵 3 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 1 upgrades | 🔴 2 downgrades | 🔵 4 novos | 🟡 0 perspectivas | ⚪ 1 retirados.*
