@@ -1,43 +1,43 @@
 {
-  "timestamp": "2026-11-18T02:16:00.428989",
+  "timestamp": "2026-11-18T15:27:08.591001",
   "dt_atual": "2026-11-18",
   "dt_anterior": "2026-11-17",
   "resumo": {
     "upgrades_emissores": 14,
-    "upgrades_emissoes": 17,
-    "total_upgrades": 31,
+    "upgrades_emissoes": 19,
+    "total_upgrades": 33,
     "downgrades_emissores": 13,
-    "downgrades_emissoes": 20,
-    "total_downgrades": 33,
-    "novos_emissores": 12,
+    "downgrades_emissoes": 21,
+    "total_downgrades": 34,
+    "novos_emissores": 13,
     "novos_emissoes": 51,
-    "total_novos": 63,
+    "total_novos": 64,
     "outlooks_emissores": 7,
     "outlooks_emissoes": 22,
     "total_outlooks": 29,
     "retirados_emissores": 2,
-    "retirados_emissoes": 8,
-    "total_retirados": 10
+    "retirados_emissoes": 7,
+    "total_retirados": 9
   },
   "periodo_recente": {
     "dt_atual": "2026-11-18",
     "dt_anterior": "2026-10-19",
     "resumo": {
       "upgrades_emissores": 14,
-      "upgrades_emissoes": 17,
-      "total_upgrades": 31,
+      "upgrades_emissoes": 19,
+      "total_upgrades": 33,
       "downgrades_emissores": 13,
-      "downgrades_emissoes": 20,
-      "total_downgrades": 33,
-      "novos_emissores": 12,
+      "downgrades_emissoes": 21,
+      "total_downgrades": 34,
+      "novos_emissores": 13,
       "novos_emissoes": 51,
-      "total_novos": 63,
+      "total_novos": 64,
       "outlooks_emissores": 7,
       "outlooks_emissoes": 22,
       "total_outlooks": 29,
       "retirados_emissores": 2,
-      "retirados_emissoes": 8,
-      "total_retirados": 10
+      "retirados_emissoes": 7,
+      "total_retirados": 9
     },
     "emissores": {
       "tipo": "emissores",
@@ -569,6 +569,18 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "USINA CORURIPE ACUCAR ALCOOL",
+          "cnpj_emissor": "",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-11-18",
+          "link": "https://www.fitchratings.com/entity/sa-usina-coruripe-acucar-e-alcool-96376225",
+          "rating_atual": "BBB(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
         }
       ],
       "outlooks": [
@@ -757,6 +769,20 @@
           "variacao_notches": "+4"
         },
         {
+          "agencia": "Austin",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "cnpj_emissor": "33536066000150",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA-",
+          "rating_atual": "brAA",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
+        },
+        {
           "agencia": "Fitch",
           "emissor": "FACTA INSS CB FIDC",
           "cnpj_emissor": "35946113000169",
@@ -811,6 +837,20 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+2"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "cnpj_emissor": "12536691000121",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+1"
         },
         {
           "agencia": "Fitch",
@@ -1053,6 +1093,20 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-7"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC IC SOMAPAY",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-5"
         },
         {
           "agencia": "Fitch",
@@ -2159,21 +2213,6 @@
         },
         {
           "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "cnpj_emissor": "08.769.451/0001-08",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "cnpj_devedor_vinculado": "07594978000178",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "BSEC SECURITIZADORA 2011",
           "cnpj_emissor": "",
           "instrumento": "certificates",
@@ -2256,15 +2295,15 @@
       "downgrades_emissores": 0,
       "downgrades_emissoes": 2,
       "total_downgrades": 2,
-      "novos_emissores": 0,
+      "novos_emissores": 1,
       "novos_emissoes": 2,
-      "total_novos": 2,
+      "total_novos": 3,
       "outlooks_emissores": 0,
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 2,
-      "total_retirados": 2
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
@@ -2272,7 +2311,20 @@
       "dt_anterior": "2026-11-17",
       "upgrades": [],
       "downgrades": [],
-      "novos": [],
+      "novos": [
+        {
+          "agencia": "Fitch",
+          "emissor": "USINA CORURIPE ACUCAR ALCOOL",
+          "cnpj_emissor": "",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-11-18",
+          "link": "https://www.fitchratings.com/entity/sa-usina-coruripe-acucar-e-alcool-96376225",
+          "rating_atual": "BBB(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        }
+      ],
       "outlooks": [],
       "retirados": []
     },
@@ -2314,17 +2366,17 @@
       "downgrades": [
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "cnpj_emissor": "33536066000150",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
+          "emissor": "FIDC IC SOMAPAY",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2024-08-12",
+          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBB+",
+          "rating_atual": "brB-",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
+          "variacao_notches": "-5"
         },
         {
           "agencia": "Austin",
@@ -2332,13 +2384,13 @@
           "cnpj_emissor": "12536691000121",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBBB",
-          "rating_atual": "brBB",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-3"
+          "variacao_notches": "-2"
         }
       ],
       "novos": [
@@ -2368,41 +2420,25 @@
         }
       ],
       "outlooks": [],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "ECO SECURITIZADORA 2022",
-          "cnpj_emissor": "10.753.164/0001-43",
-          "instrumento": "securities ser 1,2,3",
-          "dt_acao": "2026-01-15",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-1-2-3-97343669#issues",
-          "cnpj_devedor_vinculado": "03853896000140",
-          "rating_anterior": "AAAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "cnpj_emissor": "08.769.451/0001-08",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "cnpj_devedor_vinculado": "07594978000178",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "retirados": []
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Fitch",
+      "emissor": "USINA CORURIPE ACUCAR ALCOOL",
+      "cnpj_emissor": "",
+      "instrumento": "National Long Term Rating",
+      "dt_acao": "2026-11-18",
+      "link": "https://www.fitchratings.com/entity/sa-usina-coruripe-acucar-e-alcool-96376225",
+      "rating_atual": "BBB(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-18"
+    },
     {
       "agencia": "Liberum",
       "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
@@ -4912,24 +4948,6 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "cnpj_emissor": "08.769.451/0001-08",
-      "instrumento": "securities ser 1",
-      "dt_acao": "2026-04-15",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-      "cnpj_devedor_vinculado": "07594978000178",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-11-18"
-    },
-    {
-      "agencia": "Fitch",
       "emissor": "IS GREEN SOLFACIL III FIDC",
       "cnpj_emissor": "49920525000134",
       "instrumento": "notes ser 2022",
@@ -4941,6 +4959,23 @@
       "outlook_atual": "Estável",
       "tipo_movimento": "UPGRADE",
       "variacao_notches": "+7",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-11-18"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FICTOR INVEST FIDC",
+      "cnpj_emissor": "12536691000121",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2025-10-09",
+      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBB",
+      "rating_atual": "brBB+",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-11-18"
@@ -4959,6 +4994,23 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-18"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FIDC IC SOMAPAY",
+      "cnpj_emissor": "",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2024-08-12",
+      "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBB+",
+      "rating_atual": "brB-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-5",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-18"
     },
     {
@@ -5026,6 +5078,23 @@
       "variacao_notches": "-3",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-18"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FIDC CONSIGNADOS FEDERAIS",
+      "cnpj_emissor": "33536066000150",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2019-09-27",
+      "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brAA-",
+      "rating_atual": "brAA",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+1",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
       "dt_captura": "2026-11-18"
     },
     {
@@ -5204,6 +5273,24 @@
       "dt_acao": "2026-11-18",
       "dt_captura": "2026-11-18",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/27202"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "USINA CORURIPE ACUCAR ALCOOL",
+      "cnpj_emissor": "",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "National Long Term Rating",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "BBB(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-18",
+      "dt_captura": "2026-11-18",
+      "link": "https://www.fitchratings.com/entity/sa-usina-coruripe-acucar-e-alcool-96376225"
     },
     {
       "agencia": "Moody's",
@@ -110928,6 +111015,18 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "USINA CORURIPE ACUCAR ALCOOL",
+        "cnpj_emissor": "",
+        "instrumento": "National Long Term Rating",
+        "dt_acao": "2026-11-18",
+        "link": "https://www.fitchratings.com/entity/sa-usina-coruripe-acucar-e-alcool-96376225",
+        "rating_atual": "BBB(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
       }
     ],
     "outlooks": [
@@ -111116,6 +111215,20 @@
         "variacao_notches": "+4"
       },
       {
+        "agencia": "Austin",
+        "emissor": "FIDC CONSIGNADOS FEDERAIS",
+        "cnpj_emissor": "33536066000150",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2019-09-27",
+        "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brAA-",
+        "rating_atual": "brAA",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
+      },
+      {
         "agencia": "Fitch",
         "emissor": "FACTA INSS CB FIDC",
         "cnpj_emissor": "35946113000169",
@@ -111170,6 +111283,20 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+2"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "cnpj_emissor": "12536691000121",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBB",
+        "rating_atual": "brBB+",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+1"
       },
       {
         "agencia": "Fitch",
@@ -111412,6 +111539,20 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-7"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FIDC IC SOMAPAY",
+        "cnpj_emissor": "",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2024-08-12",
+        "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBB+",
+        "rating_atual": "brB-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-5"
       },
       {
         "agencia": "Fitch",
@@ -112510,21 +112651,6 @@
         "dt_acao": "2026-10-21",
         "link": "https://www.fitchratings.com/entity/pneucash-fidc-97689835#issues",
         "rating_anterior": "A+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "cnpj_emissor": "08.769.451/0001-08",
-        "instrumento": "securities ser 1",
-        "dt_acao": "2026-04-15",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-        "cnpj_devedor_vinculado": "07594978000178",
-        "rating_anterior": "AA+sf(bra)",
         "rating_atual": "PIFsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",

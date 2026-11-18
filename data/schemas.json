@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Origem Energia S.A"
+        "example": "SA Usina Coruripe Acucar E Alcool"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/origem-energia-sa-97554715"
+        "example": "https://www.fitchratings.com/entity/sa-usina-coruripe-acucar-e-alcool-96376225"
       },
       {
         "name": "no_tipo_rating",
@@ -74,22 +74,22 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "A(bra)"
+        "example": "BBB(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-11-17"
+        "example": "2026-11-18"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Affirmed"
+        "example": "New Rating"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Positive"
+        "example": "Rating Outlook Stable"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Origem Energia S.A"
+        "example": "SA Usina Coruripe Acucar E Alcool"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/origem-energia-sa-97554715"
+        "example": "https://www.fitchratings.com/entity/sa-usina-coruripe-acucar-e-alcool-96376225"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ACCESS FIDC - SENIORES ÚNICA"
+        "example": "ACRE BG FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
+        "example": "https://www.austin.com.br/Historico-Rating/4680/Acre_BG_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brB"
       },
       {
         "name": "de_rating_cp",
@@ -293,12 +293,12 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brBBB+"
+        "example": "brB"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2024-08-15"
+        "example": "2024-08-14"
       },
       {
         "name": "de_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Access_FIDC/11202"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Acre_BG_FIDC/11069"
       }
     ]
   },
