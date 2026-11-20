@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-20T14:52:33.951628",
+  "timestamp": "2026-11-20T19:06:08.307381",
   "dt_atual": "2026-11-20",
   "dt_anterior": "2026-11-19",
   "resumo": {
@@ -16,8 +16,8 @@
     "outlooks_emissoes": 22,
     "total_outlooks": 31,
     "retirados_emissores": 2,
-    "retirados_emissoes": 8,
-    "total_retirados": 10
+    "retirados_emissoes": 7,
+    "total_retirados": 9
   },
   "periodo_recente": {
     "dt_atual": "2026-11-20",
@@ -36,8 +36,8 @@
       "outlooks_emissoes": 22,
       "total_outlooks": 31,
       "retirados_emissores": 2,
-      "retirados_emissoes": 8,
-      "total_retirados": 10
+      "retirados_emissoes": 7,
+      "total_retirados": 9
     },
     "emissores": {
       "tipo": "emissores",
@@ -1177,18 +1177,19 @@
           "variacao_notches": "-7"
         },
         {
-          "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "cnpj_emissor": "",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB+",
-          "rating_atual": "brBBB-",
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "cnpj_emissor": "10.753.164/0001-43",
+          "instrumento": "notes ser 2",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158#issues",
+          "cnpj_devedor_vinculado": "00242184000104",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "AA-sf(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-2"
+          "variacao_notches": "-3"
         },
         {
           "agencia": "Fitch",
@@ -2693,21 +2694,6 @@
         },
         {
           "agencia": "Fitch",
-          "emissor": "RIZA SECURITIZADORA 2022",
-          "cnpj_emissor": "08.769.451/0001-08",
-          "instrumento": "securities ser 1",
-          "dt_acao": "2026-04-15",
-          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-          "cnpj_devedor_vinculado": "07594978000178",
-          "rating_anterior": "AA+sf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        },
-        {
-          "agencia": "Fitch",
           "emissor": "BSEC SECURITIZADORA 2011",
           "cnpj_emissor": "",
           "instrumento": "certificates",
@@ -2771,11 +2757,11 @@
     "dt_anterior": "2026-11-19",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 1,
-      "total_upgrades": 1,
+      "upgrades_emissoes": 2,
+      "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 0,
-      "total_downgrades": 0,
+      "downgrades_emissoes": 1,
+      "total_downgrades": 1,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2803,6 +2789,20 @@
       "upgrades": [
         {
           "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB-",
+          "rating_atual": "brBBB+",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+2"
+        },
+        {
+          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "cnpj_emissor": "12536691000121",
           "instrumento": "SUBORDINADAS MEZANINO",
@@ -2816,7 +2816,23 @@
           "variacao_notches": "+2"
         }
       ],
-      "downgrades": [],
+      "downgrades": [
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2022",
+          "cnpj_emissor": "10.753.164/0001-43",
+          "instrumento": "notes ser 2",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158#issues",
+          "cnpj_devedor_vinculado": "00242184000104",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "AA-sf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-3"
+        }
+      ],
       "novos": [],
       "outlooks": [],
       "retirados": []
@@ -5864,6 +5880,24 @@
     },
     {
       "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2022",
+      "cnpj_emissor": "10.753.164/0001-43",
+      "instrumento": "notes ser 2",
+      "dt_acao": "2026-06-24",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158#issues",
+      "cnpj_devedor_vinculado": "00242184000104",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "AA-sf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-3",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-20"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "FACTA INSS CB FIDC",
       "cnpj_emissor": "35946113000169",
       "instrumento": "bonds ser 2022-1,2,3",
@@ -5949,24 +5983,6 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "RIZA SECURITIZADORA 2022",
-      "cnpj_emissor": "08.769.451/0001-08",
-      "instrumento": "securities ser 1",
-      "dt_acao": "2026-04-15",
-      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-      "cnpj_devedor_vinculado": "07594978000178",
-      "rating_anterior": "AA+sf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
-      "dt_captura": "2026-11-20"
-    },
-    {
-      "agencia": "Fitch",
       "emissor": "IS GREEN SOLFACIL III FIDC",
       "cnpj_emissor": "49920525000134",
       "instrumento": "notes ser 2022",
@@ -6013,23 +6029,6 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-20"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "HIGH YIELD YALEEH FIDC",
-      "cnpj_emissor": "",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2024-03-06",
-      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brBBB+",
-      "rating_atual": "brBBB-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-2",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-20"
     },
     {
@@ -113562,18 +113561,19 @@
         "variacao_notches": "-7"
       },
       {
-        "agencia": "Austin",
-        "emissor": "HIGH YIELD YALEEH FIDC",
-        "cnpj_emissor": "",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2024-03-06",
-        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brBBB+",
-        "rating_atual": "brBBB-",
+        "agencia": "Fitch",
+        "emissor": "ECO SECURITIZADORA 2022",
+        "cnpj_emissor": "10.753.164/0001-43",
+        "instrumento": "notes ser 2",
+        "dt_acao": "2026-06-24",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2022-2-armac-97398158#issues",
+        "cnpj_devedor_vinculado": "00242184000104",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "AA-sf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-2"
+        "variacao_notches": "-3"
       },
       {
         "agencia": "Fitch",
@@ -115072,21 +115072,6 @@
         "rating_anterior": "AAAsf(bra)",
         "rating_atual": "WDsf(bra)",
         "outlook_anterior": "Em Observação",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "RETIRADO",
-        "variacao_notches": "—"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "RIZA SECURITIZADORA 2022",
-        "cnpj_emissor": "08.769.451/0001-08",
-        "instrumento": "securities ser 1",
-        "dt_acao": "2026-04-15",
-        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
-        "cnpj_devedor_vinculado": "07594978000178",
-        "rating_anterior": "AA+sf(bra)",
-        "rating_atual": "PIFsf(bra)",
-        "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "RETIRADO",
         "variacao_notches": "—"
