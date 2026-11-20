@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-20T02:03:32.711083",
+  "timestamp": "2026-11-20T14:52:33.951628",
   "dt_atual": "2026-11-20",
   "dt_anterior": "2026-11-19",
   "resumo": {
@@ -7,8 +7,8 @@
     "upgrades_emissoes": 17,
     "total_upgrades": 32,
     "downgrades_emissores": 18,
-    "downgrades_emissoes": 43,
-    "total_downgrades": 61,
+    "downgrades_emissoes": 44,
+    "total_downgrades": 62,
     "novos_emissores": 13,
     "novos_emissoes": 56,
     "total_novos": 69,
@@ -27,8 +27,8 @@
       "upgrades_emissoes": 17,
       "total_upgrades": 32,
       "downgrades_emissores": 18,
-      "downgrades_emissoes": 43,
-      "total_downgrades": 61,
+      "downgrades_emissoes": 44,
+      "total_downgrades": 62,
       "novos_emissores": 13,
       "novos_emissoes": 56,
       "total_novos": 69,
@@ -940,7 +940,7 @@
           "cnpj_emissor": "10.753.164/0001-43",
           "instrumento": "notes ser 4",
           "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
           "cnpj_devedor_vinculado": "00451283000198",
           "rating_anterior": "Asf(bra)",
           "rating_atual": "AAAsf(bra)",
@@ -1175,6 +1175,20 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-7"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
         },
         {
           "agencia": "Fitch",
@@ -2288,7 +2302,7 @@
         {
           "agencia": "Liberum",
           "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-          "cnpj_emissor": "",
+          "cnpj_emissor": "28849641000134",
           "instrumento": "Mezanino - Curto prazo",
           "dt_acao": "2026-11-19",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -2300,7 +2314,7 @@
         {
           "agencia": "Liberum",
           "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-          "cnpj_emissor": "",
+          "cnpj_emissor": "28849641000134",
           "instrumento": "Mezanino - Longo prazo",
           "dt_acao": "2026-11-19",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -2312,7 +2326,7 @@
         {
           "agencia": "Liberum",
           "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-          "cnpj_emissor": "",
+          "cnpj_emissor": "28849641000134",
           "instrumento": "Senior - Longo prazo",
           "dt_acao": "2026-11-19",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -2324,7 +2338,7 @@
         {
           "agencia": "Liberum",
           "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-          "cnpj_emissor": "",
+          "cnpj_emissor": "28849641000134",
           "instrumento": "Senior - Curto prazo",
           "dt_acao": "2026-11-19",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -2336,7 +2350,7 @@
         {
           "agencia": "Liberum",
           "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-          "cnpj_emissor": "",
+          "cnpj_emissor": "28849641000134",
           "instrumento": "Subordinada - Longo prazo",
           "dt_acao": "2026-11-19",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -2679,13 +2693,13 @@
         },
         {
           "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2023",
-          "cnpj_emissor": "02.773.542/0001-22",
-          "instrumento": "certificates ser 3",
-          "dt_acao": "2026-06-15",
-          "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-          "cnpj_devedor_vinculado": "21314559000166",
-          "rating_anterior": "AAsf(bra)",
+          "emissor": "RIZA SECURITIZADORA 2022",
+          "cnpj_emissor": "08.769.451/0001-08",
+          "instrumento": "securities ser 1",
+          "dt_acao": "2026-04-15",
+          "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+          "cnpj_devedor_vinculado": "07594978000178",
+          "rating_anterior": "AA+sf(bra)",
           "rating_atual": "PIFsf(bra)",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
@@ -2757,8 +2771,8 @@
     "dt_anterior": "2026-11-19",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 2,
-      "total_upgrades": 2,
+      "upgrades_emissoes": 1,
+      "total_upgrades": 1,
       "downgrades_emissores": 0,
       "downgrades_emissoes": 0,
       "total_downgrades": 0,
@@ -2769,8 +2783,8 @@
       "outlooks_emissoes": 0,
       "total_outlooks": 0,
       "retirados_emissores": 0,
-      "retirados_emissoes": 1,
-      "total_retirados": 1
+      "retirados_emissoes": 0,
+      "total_retirados": 0
     },
     "emissores": {
       "tipo": "emissores",
@@ -2789,20 +2803,6 @@
       "upgrades": [
         {
           "agencia": "Austin",
-          "emissor": "HIGH YIELD YALEEH FIDC",
-          "cnpj_emissor": "",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2024-03-06",
-          "link": "https://www.austin.com.br/Historico-Rating/4432/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brBBB-",
-          "rating_atual": "brBBB+",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
-        {
-          "agencia": "Austin",
           "emissor": "FICTOR INVEST FIDC",
           "cnpj_emissor": "12536691000121",
           "instrumento": "SUBORDINADAS MEZANINO",
@@ -2819,23 +2819,7 @@
       "downgrades": [],
       "novos": [],
       "outlooks": [],
-      "retirados": [
-        {
-          "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2023",
-          "cnpj_emissor": "02.773.542/0001-22",
-          "instrumento": "certificates ser 3",
-          "dt_acao": "2026-06-15",
-          "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-          "cnpj_devedor_vinculado": "21314559000166",
-          "rating_anterior": "AAsf(bra)",
-          "rating_atual": "PIFsf(bra)",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "RETIRADO",
-          "variacao_notches": "—"
-        }
-      ]
+      "retirados": []
     }
   },
   "movimentacoes": [
@@ -3495,7 +3479,7 @@
     {
       "agencia": "Liberum",
       "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-      "cnpj_emissor": "",
+      "cnpj_emissor": "28849641000134",
       "instrumento": "Mezanino - Curto prazo",
       "dt_acao": "2026-11-19",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -3510,7 +3494,7 @@
     {
       "agencia": "Liberum",
       "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-      "cnpj_emissor": "",
+      "cnpj_emissor": "28849641000134",
       "instrumento": "Mezanino - Longo prazo",
       "dt_acao": "2026-11-19",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -3525,7 +3509,7 @@
     {
       "agencia": "Liberum",
       "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-      "cnpj_emissor": "",
+      "cnpj_emissor": "28849641000134",
       "instrumento": "Senior - Longo prazo",
       "dt_acao": "2026-11-19",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -3540,7 +3524,7 @@
     {
       "agencia": "Liberum",
       "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-      "cnpj_emissor": "",
+      "cnpj_emissor": "28849641000134",
       "instrumento": "Senior - Curto prazo",
       "dt_acao": "2026-11-19",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -3555,7 +3539,7 @@
     {
       "agencia": "Liberum",
       "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-      "cnpj_emissor": "",
+      "cnpj_emissor": "28849641000134",
       "instrumento": "Subordinada - Longo prazo",
       "dt_acao": "2026-11-19",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -5866,7 +5850,7 @@
       "cnpj_emissor": "10.753.164/0001-43",
       "instrumento": "notes ser 4",
       "dt_acao": "2026-06-24",
-      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
       "cnpj_devedor_vinculado": "00451283000198",
       "rating_anterior": "Asf(bra)",
       "rating_atual": "AAAsf(bra)",
@@ -5876,24 +5860,6 @@
       "variacao_notches": "+5",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
-      "dt_captura": "2026-11-20"
-    },
-    {
-      "agencia": "Fitch",
-      "emissor": "OPEA SECURITIZADORA 2023",
-      "cnpj_emissor": "02.773.542/0001-22",
-      "instrumento": "certificates ser 3",
-      "dt_acao": "2026-06-15",
-      "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-      "cnpj_devedor_vinculado": "21314559000166",
-      "rating_anterior": "AAsf(bra)",
-      "rating_atual": "PIFsf(bra)",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "RETIRADO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "RETIRADO",
       "dt_captura": "2026-11-20"
     },
     {
@@ -5983,6 +5949,24 @@
     },
     {
       "agencia": "Fitch",
+      "emissor": "RIZA SECURITIZADORA 2022",
+      "cnpj_emissor": "08.769.451/0001-08",
+      "instrumento": "securities ser 1",
+      "dt_acao": "2026-04-15",
+      "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+      "cnpj_devedor_vinculado": "07594978000178",
+      "rating_anterior": "AA+sf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-11-20"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "IS GREEN SOLFACIL III FIDC",
       "cnpj_emissor": "49920525000134",
       "instrumento": "notes ser 2022",
@@ -6029,6 +6013,23 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-20"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "HIGH YIELD YALEEH FIDC",
+      "cnpj_emissor": "",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB+",
+      "rating_atual": "brBBB-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-20"
     },
     {
@@ -113324,7 +113325,7 @@
         "cnpj_emissor": "10.753.164/0001-43",
         "instrumento": "notes ser 4",
         "dt_acao": "2026-06-24",
-        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-390-1-2-3-4-brf-97725128#issues",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
         "cnpj_devedor_vinculado": "00451283000198",
         "rating_anterior": "Asf(bra)",
         "rating_atual": "AAAsf(bra)",
@@ -113559,6 +113560,20 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-7"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "cnpj_emissor": "",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB+",
+        "rating_atual": "brBBB-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
       },
       {
         "agencia": "Fitch",
@@ -114672,7 +114687,7 @@
       {
         "agencia": "Liberum",
         "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-        "cnpj_emissor": "",
+        "cnpj_emissor": "28849641000134",
         "instrumento": "Mezanino - Curto prazo",
         "dt_acao": "2026-11-19",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -114684,7 +114699,7 @@
       {
         "agencia": "Liberum",
         "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-        "cnpj_emissor": "",
+        "cnpj_emissor": "28849641000134",
         "instrumento": "Mezanino - Longo prazo",
         "dt_acao": "2026-11-19",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -114696,7 +114711,7 @@
       {
         "agencia": "Liberum",
         "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-        "cnpj_emissor": "",
+        "cnpj_emissor": "28849641000134",
         "instrumento": "Senior - Longo prazo",
         "dt_acao": "2026-11-19",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -114708,7 +114723,7 @@
       {
         "agencia": "Liberum",
         "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-        "cnpj_emissor": "",
+        "cnpj_emissor": "28849641000134",
         "instrumento": "Senior - Curto prazo",
         "dt_acao": "2026-11-19",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -114720,7 +114735,7 @@
       {
         "agencia": "Liberum",
         "emissor": "AGUIA FUNDO INVESTIMENTO DIRETOS CREDITORIOS",
-        "cnpj_emissor": "",
+        "cnpj_emissor": "28849641000134",
         "instrumento": "Subordinada - Longo prazo",
         "dt_acao": "2026-11-19",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/29370",
@@ -115063,13 +115078,13 @@
       },
       {
         "agencia": "Fitch",
-        "emissor": "OPEA SECURITIZADORA 2023",
-        "cnpj_emissor": "02.773.542/0001-22",
-        "instrumento": "certificates ser 3",
-        "dt_acao": "2026-06-15",
-        "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
-        "cnpj_devedor_vinculado": "21314559000166",
-        "rating_anterior": "AAsf(bra)",
+        "emissor": "RIZA SECURITIZADORA 2022",
+        "cnpj_emissor": "08.769.451/0001-08",
+        "instrumento": "securities ser 1",
+        "dt_acao": "2026-04-15",
+        "link": "https://www.fitchratings.com/entity/virgo-companhia-de-securitizacao-2022-1-2-smartfit-97430829#issues",
+        "cnpj_devedor_vinculado": "07594978000178",
+        "rating_anterior": "AA+sf(bra)",
         "rating_atual": "PIFsf(bra)",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
