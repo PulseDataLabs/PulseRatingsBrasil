@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-11-19"
+        "example": "2026-11-23"
       }
     ]
   },
@@ -59,12 +59,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Enel Brasil S.A."
+        "example": "Agrolend Sociedade de Credito, Financiamento e Investimento S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/enel-brasil-sa-96574575"
+        "example": "https://www.fitchratings.com/entity/agrolend-sociedade-de-credito-financiamento-e-investimento-sa-97966406"
       },
       {
         "name": "no_tipo_rating",
@@ -74,22 +74,22 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AA(bra)"
+        "example": "A-(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-11-19"
+        "example": "2026-11-23"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Downgrade"
+        "example": "New Rating"
       },
       {
         "name": "de_outlook",
         "type": "str",
-        "example": "Rating Outlook Negative"
+        "example": "Rating Outlook Positive"
       },
       {
         "name": "de_instrumento",
@@ -197,12 +197,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Enel Brasil S.A."
+        "example": "Agrolend Sociedade de Credito, Financiamento e Investimento S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/enel-brasil-sa-96574575"
+        "example": "https://www.fitchratings.com/entity/agrolend-sociedade-de-credito-financiamento-e-investimento-sa-97966406"
       }
     ]
   },
@@ -268,12 +268,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS JÚNIOR"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
+        "example": "https://www.austin.com.br/Historico-Rating/5241/Aço_Cearense_FIDC_-_Subordinadas_Júnior_"
       },
       {
         "name": "no_tipo_rating",
@@ -283,7 +283,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "de_rating_cp",
@@ -293,7 +293,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB"
+        "example": "brCCC"
       },
       {
         "name": "dt_acao_rating",
@@ -313,7 +313,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11649"
       }
     ]
   },
@@ -325,7 +325,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AGUIA FUNDO DE INVESTIMENTO EM DIRETOS CREDITÓRIOS"
+        "example": "COOPERA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "no_setor",
@@ -335,7 +335,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29370"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29364"
       }
     ]
   },
@@ -347,12 +347,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AGUIA FUNDO DE INVESTIMENTO EM DIRETOS CREDITÓRIOS"
+        "example": "COOPERA FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29370"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29364"
       },
       {
         "name": "no_tipo_rating",
@@ -362,17 +362,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "CP5"
+        "example": "BBB+"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-11-19"
+        "example": "2026-11-23"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Rebaixamento"
+        "example": "Confirmação"
       },
       {
         "name": "de_outlook",
@@ -382,12 +382,12 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Mezanino"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
         "type": "str",
-        "example": "Curto prazo"
+        "example": "Longo prazo"
       }
     ]
   },
