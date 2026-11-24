@@ -7,13 +7,13 @@
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 12 | 15 | **27** |
-| 🔴 **Downgrades (Rebaixamentos)** | 7 | 36 | **43** |
-| 🔵 **Novos Ratings** | 13 | 54 | **67** |
+| 🟢 **Upgrades (Elevações)** | 12 | 16 | **28** |
+| 🔴 **Downgrades (Rebaixamentos)** | 7 | 38 | **45** |
+| 🔵 **Novos Ratings** | 13 | 55 | **68** |
 | 🟡 **Mudanças de Perspectiva** | 9 | 12 | **21** |
-| ⚪ **Ratings Retirados / Liquidados** | 1 | 5 | **6** |
+| ⚪ **Ratings Retirados / Liquidados** | 1 | 6 | **7** |
 
-### 🟢 Elevações de Rating (Upgrades) — 27
+### 🟢 Elevações de Rating (Upgrades) — 28
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Moody's | **IN** | Avaliações de Qualidade de Gestor de Investimentos | `MQ3.br` | **`MQ2.br`** | `+3` | Estável | 14/05/2026 |
@@ -35,6 +35,7 @@
 | Fitch | **FACTA INSS CB FIDC** | bonds ser 2022-1,2,3 | `CCsf(bra)` | **`AAAsf(bra)`** | `+19` | Em Observação | 12/06/2026 |
 | Fitch | **IS GREEN SOLFACIL III FIDC** | notes ser 2022 | `BBB+sf(bra)` | **`AAAsf(bra)`** | `+7` | Estável | 28/01/2026 |
 | Fitch | **CSCF CARTOES CONSIGNADOS II 2025** | notes ser 1,2,3 | `AAsf(bra)` | **`AAAsf(bra)`** | `+2` | Estável | 29/04/2026 |
+| Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
 | Fitch | **VERT CSCF 2024** | bonds ser 2024-1,2,3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
 | Fitch | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CREDITAS AUTO XII** | notes ser 9 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 07/05/2026 |
 | Fitch | **MULTIPLIKE SECURITIZADORA 2024** | notes ser 3 | `A-sf(bra)` | **`AAAsf(bra)`** | `+6` | Estável | 10/07/2026 |
@@ -44,7 +45,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 43
+### 🔴 Rebaixamentos de Rating (Downgrades) — 45
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Liberum | **ESTADO ISRAEL** | Finanças Públicas | `AAA` | **`A`** | `-5` | Estável | 06/10/2026 |
@@ -61,6 +62,8 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 12/11/2026 |
 | Austin | **FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brB`** | `-3` | Estável | 22/02/2021 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
+| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
+| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB+` | **`brBBB-`** | `-2` | Estável | 06/03/2024 |
 | Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 1a serie - 2nd Debenture  BRL 375 mln bond/note 15-Dec-2045 | `AA-(bra)` | **`BBB-(bra)`** | `-6` | Em Observação | 05/11/2026 |
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042 | `AA-(bra)` | **`BBB-(bra)`** | `-6` | Em Observação | 05/11/2026 |
@@ -116,12 +119,12 @@
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
 | Fitch | **GSH PARTICIPACOES** | BRL 13.78 mln bond/note | `A(bra)` | Em Observação | **Estável** | 16/11/2026 |
 
-### 🔵 Novos Ratings Atribuídos (67)
+### 🔵 Novos Ratings Atribuídos (68)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
-| Moody's | **FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO** | Avaliações de Qualidade de Gestor de Investimentos | **`MQ2.br`** | Estável | 29/10/2026 |
 | Fitch | **RP FINANCEIRA** | National Long Term Rating | **`A-(bra)`** | Estável | 29/10/2026 |
 | Fitch | **RP FINANCEIRA** | National Short Term Rating | **`F2(bra)`** | Estável | 29/10/2026 |
+| Moody's | **FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO** | Avaliações de Qualidade de Gestor de Investimentos | **`MQ2.br`** | Estável | 29/10/2026 |
 | Fitch | **PARANAGUA SANEAMENTO** | National Long Term Rating | **`A+(bra)`** | Estável | 30/10/2026 |
 | Moody's | **GUARARAPES CONFECCOES** | Rating de Emissor | **`AA-.br`** | Estável | 06/11/2026 |
 | Moody's | **MIDWAY** | Rating de Depósitos Bancários | **`A+.br`** | Estável | 06/11/2026 |
@@ -138,23 +141,24 @@
 | Moody's | **OURINHOS SANEAMENTO** | 2ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 11/11/2026 |
 | Fitch | **ER 2030 FIDC** | notes ser 4 | **`AAAsf(bra)`** | Estável | 18/11/2026 |
 | Fitch | **VERT CIA SECURITIZADORA 2026** | notes | **`AAAsf(bra)`** | Estável | 18/11/2026 |
-| Moody's | **PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | 1ª Série de Cotas Seniores | **`AAA.br (sf)`** | Estável | 23/10/2026 |
 | Fitch | **CONCESSIONARIA RODOVIA BR 262 MG** | BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050 | **`AA-(bra)`** | Estável | 23/10/2026 |
-| Moody's | **LOCALIZA RENT CAR** | 49ª Emissão de Debentures | **`AAA.br`** | Estável | 27/10/2026 |
+| Moody's | **PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | 1ª Série de Cotas Seniores | **`AAA.br (sf)`** | Estável | 23/10/2026 |
 | Austin | **CONSIGNADOS XIII FIDC** | SENIORES ÚNICA | **`brA`** | Estável | 27/10/2026 |
 | Liberum | **BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Mezanino - Longo prazo | **`BB+`** | Estável | 27/10/2026 |
 | Liberum | **BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Mezanino - Curto prazo | **`CP4`** | Estável | 27/10/2026 |
 | Liberum | **BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Curto prazo | **`CP2`** | Estável | 27/10/2026 |
 | Liberum | **BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Senior - Longo prazo | **`A`** | Estável | 27/10/2026 |
+| Moody's | **LOCALIZA RENT CAR** | 49ª Emissão de Debentures | **`AAA.br`** | Estável | 27/10/2026 |
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS COBUCCIO INSS** | 1a Série de Cotas Seniores | **`AAA.br (sf)`** | Estável | 28/10/2026 |
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS COBUCCIO INSS** | 2a Série de Cotas Seniores | **`AAA.br (sf)`** | Estável | 28/10/2026 |
 | Moody's | **DTB TOWERS INFRA FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Rating da Classe Sênior - 1ª Série | **`AA-.br (sf)`** | Estável | 29/10/2026 |
-| *...e mais 37 novos ratings.* | | | | | |
+| *...e mais 38 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (6)
+### ⚪ Ratings Retirados / Liquidados (7)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **COMPANHIA PARAIBANA GAS PBGAS** | National Long Term Rating | `A(bra)` | Negativa | 05/11/2026 |
+| Fitch | **OPEA SECURITIZADORA 2019** | notes ser 1 | `AAAsf(bra)` | Estável | 05/12/2019 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | Estável | 04/11/2026 |
 | Fitch | **BEFLY FIDC** | notes ser 2 | `AAAsf(bra)` | Em Observação | 18/11/2026 |
 | Fitch | **BARI SECURITIZADORA 2024** | notes ser 1 | `A-sf(bra)` | Estável | 28/10/2026 |
@@ -163,4 +167,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (23/11/2026 → 24/11/2026)
-*Total nas últimas 24h: 🟢 0 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 2 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 1 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 2 perspectivas | ⚪ 1 retirados.*

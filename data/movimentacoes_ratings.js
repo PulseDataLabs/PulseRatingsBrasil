@@ -1,43 +1,43 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-11-24T17:37:02.736874",
+  "timestamp": "2026-11-24T20:45:36.873335",
   "dt_atual": "2026-11-24",
   "dt_anterior": "2026-11-23",
   "resumo": {
     "upgrades_emissores": 12,
-    "upgrades_emissoes": 15,
-    "total_upgrades": 27,
+    "upgrades_emissoes": 16,
+    "total_upgrades": 28,
     "downgrades_emissores": 7,
-    "downgrades_emissoes": 36,
-    "total_downgrades": 43,
+    "downgrades_emissoes": 38,
+    "total_downgrades": 45,
     "novos_emissores": 13,
-    "novos_emissoes": 54,
-    "total_novos": 67,
+    "novos_emissoes": 55,
+    "total_novos": 68,
     "outlooks_emissores": 9,
     "outlooks_emissoes": 12,
     "total_outlooks": 21,
     "retirados_emissores": 1,
-    "retirados_emissoes": 5,
-    "total_retirados": 6
+    "retirados_emissoes": 6,
+    "total_retirados": 7
   },
   "periodo_recente": {
     "dt_atual": "2026-11-24",
     "dt_anterior": "2026-10-23",
     "resumo": {
       "upgrades_emissores": 12,
-      "upgrades_emissoes": 15,
-      "total_upgrades": 27,
+      "upgrades_emissoes": 16,
+      "total_upgrades": 28,
       "downgrades_emissores": 7,
-      "downgrades_emissoes": 36,
-      "total_downgrades": 43,
+      "downgrades_emissoes": 38,
+      "total_downgrades": 45,
       "novos_emissores": 13,
-      "novos_emissoes": 54,
-      "total_novos": 67,
+      "novos_emissoes": 55,
+      "total_novos": 68,
       "outlooks_emissores": 9,
       "outlooks_emissoes": 12,
       "total_outlooks": 21,
       "retirados_emissores": 1,
-      "retirados_emissoes": 5,
-      "total_retirados": 6
+      "retirados_emissoes": 6,
+      "total_retirados": 7
     },
     "emissores": {
       "tipo": "emissores",
@@ -315,18 +315,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       ],
       "novos": [
         {
-          "agencia": "Moody's",
-          "emissor": "FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO",
-          "cnpj_emissor": "",
-          "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
-          "dt_acao": "2026-10-29",
-          "link": "",
-          "rating_atual": "MQ2.br",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "RP FINANCEIRA",
           "cnpj_emissor": "",
@@ -346,6 +334,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "dt_acao": "2026-10-29",
           "link": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027",
           "rating_atual": "F2(bra)",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Moody's",
+          "emissor": "FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO",
+          "cnpj_emissor": "",
+          "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
+          "dt_acao": "2026-10-29",
+          "link": "",
+          "rating_atual": "MQ2.br",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -712,6 +712,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2025",
+          "cnpj_emissor": "10.753.164/0001-43",
+          "instrumento": "notes ser 4",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+          "cnpj_devedor_vinculado": "00451283000198",
+          "rating_anterior": "Asf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "VERT CSCF 2024",
           "cnpj_emissor": "",
           "instrumento": "bonds ser 2024-1,2,3",
@@ -922,6 +937,34 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-7"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "cnpj_emissor": "33536066000150",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA",
+          "rating_atual": "brAA-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
         },
         {
           "agencia": "Austin",
@@ -1409,18 +1452,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "variacao_notches": "—"
         },
         {
-          "agencia": "Moody's",
-          "emissor": "PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-          "cnpj_emissor": "69003946000108",
-          "instrumento": "1ª Série de Cotas Seniores",
-          "dt_acao": "2026-10-23",
-          "link": "",
-          "rating_atual": "AAA.br (sf)",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "NOVO",
-          "variacao_notches": "—"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
           "cnpj_emissor": "",
@@ -1434,12 +1465,12 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Moody's",
-          "emissor": "LOCALIZA RENT CAR",
-          "cnpj_emissor": "16670085000155",
-          "instrumento": "49ª Emissão de Debentures",
-          "dt_acao": "2026-10-27",
+          "emissor": "PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+          "cnpj_emissor": "69003946000108",
+          "instrumento": "1ª Série de Cotas Seniores",
+          "dt_acao": "2026-10-23",
           "link": "",
-          "rating_atual": "AAA.br",
+          "rating_atual": "AAA.br (sf)",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1500,6 +1531,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "dt_acao": "2026-10-27",
           "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
           "rating_atual": "A",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Moody's",
+          "emissor": "LOCALIZA RENT CAR",
+          "cnpj_emissor": "16670085000155",
+          "instrumento": "49ª Emissão de Debentures",
+          "dt_acao": "2026-10-27",
+          "link": "",
+          "rating_atual": "AAA.br",
           "outlook_atual": "Estável",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
@@ -1699,7 +1742,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         {
           "agencia": "Fitch",
           "emissor": "BURITI TRANSMISSAO ENERGIA",
-          "cnpj_emissor": "47290852000124",
+          "cnpj_emissor": "",
           "instrumento": "BRL bond/note",
           "dt_acao": "2026-11-09",
           "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -1710,8 +1753,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "VERDE TRANSMISSAO ENERGIA",
-          "cnpj_emissor": "",
+          "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+          "cnpj_emissor": "28008887000183",
           "instrumento": "Debentures 3rd Issuance",
           "dt_acao": "2026-11-09",
           "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -1722,8 +1765,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "VERDE TRANSMISSAO ENERGIA",
-          "cnpj_emissor": "",
+          "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+          "cnpj_emissor": "28008887000183",
           "instrumento": "Debentures 2nd Issuance",
           "dt_acao": "2026-11-09",
           "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -1735,7 +1778,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         {
           "agencia": "Fitch",
           "emissor": "BURITI TRANSMISSAO ENERGIA",
-          "cnpj_emissor": "47290852000124",
+          "cnpj_emissor": "",
           "instrumento": "BRL 618 mln Floating IPCA (Brazil) 7.01% bond/note 15-Mar-2050",
           "dt_acao": "2026-11-09",
           "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -1897,6 +1940,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "link": "https://www.fitchratings.com/entity/ampla-energia-e-servicos-sa-96591706#issues",
           "rating_atual": "F1+(bra)",
           "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "IN",
+          "cnpj_emissor": "05208211001703",
+          "instrumento": "BRL 44 mln bond/note 10-Jan-2034",
+          "dt_acao": "2026-11-19",
+          "link": "https://www.fitchratings.com/entity/engie-solucoes-cidades-inteligentes-e-infraestrutura-de-uberlandia-sa-97335775#issues",
+          "rating_atual": "AAA(bra)",
+          "outlook_atual": "Negativa",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
         },
@@ -2146,6 +2201,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "retirados": [
         {
           "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2019",
+          "cnpj_emissor": "02.773.542/0001-22",
+          "instrumento": "notes ser 1",
+          "dt_acao": "2019-12-05",
+          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "WDsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
           "cnpj_emissor": "08417544000165",
           "instrumento": "notes",
@@ -2223,11 +2292,11 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "dt_anterior": "2026-11-23",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 0,
-      "total_upgrades": 0,
+      "upgrades_emissoes": 1,
+      "total_upgrades": 1,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 1,
-      "total_downgrades": 1,
+      "downgrades_emissoes": 3,
+      "total_downgrades": 3,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2235,8 +2304,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlooks_emissoes": 0,
       "total_outlooks": 2,
       "retirados_emissores": 0,
-      "retirados_emissoes": 0,
-      "total_retirados": 0
+      "retirados_emissoes": 1,
+      "total_retirados": 1
     },
     "emissores": {
       "tipo": "emissores",
@@ -2279,8 +2348,52 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "tipo": "emissoes",
       "dt_atual": "2026-11-24",
       "dt_anterior": "2026-11-23",
-      "upgrades": [],
+      "upgrades": [
+        {
+          "agencia": "Fitch",
+          "emissor": "ECO SECURITIZADORA 2025",
+          "cnpj_emissor": "10.753.164/0001-43",
+          "instrumento": "notes ser 4",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+          "cnpj_devedor_vinculado": "00451283000198",
+          "rating_anterior": "Asf(bra)",
+          "rating_atual": "AAAsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "UPGRADE",
+          "variacao_notches": "+5"
+        }
+      ],
       "downgrades": [
+        {
+          "agencia": "Austin",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "cnpj_emissor": "33536066000150",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA",
+          "rating_atual": "brAA-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-1"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "HIGH YIELD YALEEH FIDC",
+          "cnpj_emissor": "",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2024-03-06",
+          "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brBBB+",
+          "rating_atual": "brBBB-",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
         {
           "agencia": "Fitch",
           "emissor": "OPEA SECURITIZADORA 2024",
@@ -2299,7 +2412,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
       ],
       "novos": [],
       "outlooks": [],
-      "retirados": []
+      "retirados": [
+        {
+          "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2019",
+          "cnpj_emissor": "02.773.542/0001-22",
+          "instrumento": "notes ser 1",
+          "dt_acao": "2019-12-05",
+          "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "WDsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        }
+      ]
     }
   },
   "movimentacoes": [
@@ -3054,6 +3182,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
+      "emissor": "IN",
+      "cnpj_emissor": "05208211001703",
+      "instrumento": "BRL 44 mln bond/note 10-Jan-2034",
+      "dt_acao": "2026-11-19",
+      "link": "https://www.fitchratings.com/entity/engie-solucoes-cidades-inteligentes-e-infraestrutura-de-uberlandia-sa-97335775#issues",
+      "rating_atual": "AAA(bra)",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-24"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "VLI MULTIMODAL",
       "cnpj_emissor": "42276907000128",
       "instrumento": "10a Debentures (Serie Unica)",
@@ -3600,7 +3743,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
     {
       "agencia": "Fitch",
       "emissor": "BURITI TRANSMISSAO ENERGIA",
-      "cnpj_emissor": "47290852000124",
+      "cnpj_emissor": "",
       "instrumento": "BRL bond/note",
       "dt_acao": "2026-11-09",
       "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -3614,8 +3757,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "VERDE TRANSMISSAO ENERGIA",
-      "cnpj_emissor": "",
+      "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+      "cnpj_emissor": "28008887000183",
       "instrumento": "Debentures 3rd Issuance",
       "dt_acao": "2026-11-09",
       "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -3629,8 +3772,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "VERDE TRANSMISSAO ENERGIA",
-      "cnpj_emissor": "",
+      "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+      "cnpj_emissor": "28008887000183",
       "instrumento": "Debentures 2nd Issuance",
       "dt_acao": "2026-11-09",
       "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -3645,7 +3788,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
     {
       "agencia": "Fitch",
       "emissor": "BURITI TRANSMISSAO ENERGIA",
-      "cnpj_emissor": "47290852000124",
+      "cnpj_emissor": "",
       "instrumento": "BRL 618 mln Floating IPCA (Brazil) 7.01% bond/note 15-Mar-2050",
       "dt_acao": "2026-11-09",
       "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -4331,21 +4474,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-24"
     },
     {
-      "agencia": "Moody's",
-      "emissor": "FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO",
-      "cnpj_emissor": "",
-      "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
-      "dt_acao": "2026-10-29",
-      "link": "",
-      "rating_atual": "MQ2.br",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissor",
-      "tipo": "NOVO",
-      "dt_captura": "2026-11-24"
-    },
-    {
       "agencia": "Fitch",
       "emissor": "RP FINANCEIRA",
       "cnpj_emissor": "",
@@ -4368,6 +4496,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-10-29",
       "link": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027",
       "rating_atual": "F2(bra)",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissor",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-24"
+    },
+    {
+      "agencia": "Moody's",
+      "emissor": "FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO",
+      "cnpj_emissor": "",
+      "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
+      "dt_acao": "2026-10-29",
+      "link": "",
+      "rating_atual": "MQ2.br",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -4538,21 +4681,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-24"
     },
     {
-      "agencia": "Moody's",
-      "emissor": "LOCALIZA RENT CAR",
-      "cnpj_emissor": "16670085000155",
-      "instrumento": "49ª Emissão de Debentures",
-      "dt_acao": "2026-10-27",
-      "link": "",
-      "rating_atual": "AAA.br",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "NOVO",
-      "variacao_notches": "—",
-      "categoria": "Emissão",
-      "tipo": "NOVO",
-      "dt_captura": "2026-11-24"
-    },
-    {
       "agencia": "Austin",
       "emissor": "CONSIGNADOS XIII FIDC",
       "cnpj_emissor": "63802702000109",
@@ -4628,6 +4756,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-24"
     },
     {
+      "agencia": "Moody's",
+      "emissor": "LOCALIZA RENT CAR",
+      "cnpj_emissor": "16670085000155",
+      "instrumento": "49ª Emissão de Debentures",
+      "dt_acao": "2026-10-27",
+      "link": "",
+      "rating_atual": "AAA.br",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-24"
+    },
+    {
       "agencia": "Fitch",
       "emissor": "DELTA 3 ENERGIA",
       "cnpj_emissor": "",
@@ -4644,13 +4787,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-24"
     },
     {
-      "agencia": "Moody's",
-      "emissor": "PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-      "cnpj_emissor": "69003946000108",
-      "instrumento": "1ª Série de Cotas Seniores",
+      "agencia": "Fitch",
+      "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
+      "cnpj_emissor": "",
+      "instrumento": "BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050",
       "dt_acao": "2026-10-23",
-      "link": "",
-      "rating_atual": "AAA.br (sf)",
+      "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues",
+      "rating_atual": "AA-(bra)",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -4659,13 +4802,13 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-24"
     },
     {
-      "agencia": "Fitch",
-      "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
-      "cnpj_emissor": "",
-      "instrumento": "BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050",
+      "agencia": "Moody's",
+      "emissor": "PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+      "cnpj_emissor": "69003946000108",
+      "instrumento": "1ª Série de Cotas Seniores",
       "dt_acao": "2026-10-23",
-      "link": "https://www.fitchratings.com/entity/concessionaria-da-rodovia-br-262-mg-sa-97935991#issues",
-      "rating_atual": "AA-(bra)",
+      "link": "",
+      "rating_atual": "AAA.br (sf)",
       "outlook_atual": "Estável",
       "tipo_movimento": "NOVO",
       "variacao_notches": "—",
@@ -4754,6 +4897,24 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlook_atual": "Estável",
       "tipo_movimento": "UPGRADE",
       "variacao_notches": "+6",
+      "categoria": "Emissão",
+      "tipo": "UPGRADE",
+      "dt_captura": "2026-11-24"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "ECO SECURITIZADORA 2025",
+      "cnpj_emissor": "10.753.164/0001-43",
+      "instrumento": "notes ser 4",
+      "dt_acao": "2026-06-24",
+      "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+      "cnpj_devedor_vinculado": "00451283000198",
+      "rating_anterior": "Asf(bra)",
+      "rating_atual": "AAAsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "UPGRADE",
+      "variacao_notches": "+5",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-11-24"
@@ -4894,6 +5055,23 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_captura": "2026-11-24"
     },
     {
+      "agencia": "Austin",
+      "emissor": "HIGH YIELD YALEEH FIDC",
+      "cnpj_emissor": "",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2024-03-06",
+      "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brBBB+",
+      "rating_atual": "brBBB-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-24"
+    },
+    {
       "agencia": "S&P",
       "emissor": "ADAMI MADEIRAS",
       "cnpj_emissor": "87790606000156",
@@ -4939,6 +5117,40 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "outlook_atual": "Estável",
       "tipo_movimento": "DOWNGRADE",
       "variacao_notches": "-3",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-24"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2019",
+      "cnpj_emissor": "02.773.542/0001-22",
+      "instrumento": "notes ser 1",
+      "dt_acao": "2019-12-05",
+      "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+      "rating_anterior": "AAAsf(bra)",
+      "rating_atual": "WDsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-11-24"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FIDC CONSIGNADOS FEDERAIS",
+      "cnpj_emissor": "33536066000150",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2019-09-27",
+      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brAA",
+      "rating_atual": "brAA-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-24"
@@ -5070,6 +5282,60 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-11-24",
       "dt_captura": "2026-11-24",
       "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "IN",
+      "cnpj_emissor": "05208211001703",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "BRL 44 mln bond/note 10-Jan-2034",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Negativa",
+      "dt_acao": "2026-11-19",
+      "dt_captura": "2026-11-24",
+      "link": "https://www.fitchratings.com/entity/engie-solucoes-cidades-inteligentes-e-infraestrutura-de-uberlandia-sa-97335775#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+      "cnpj_emissor": "28008887000183",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "Debentures 3rd Issuance",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-09",
+      "dt_captura": "2026-11-24",
+      "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+      "cnpj_emissor": "28008887000183",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "Debentures 2nd Issuance",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "tipo_movimento": "NOVO",
+      "rating_anterior": "",
+      "rating_atual": "AAA(bra)",
+      "variacao_notches": "—",
+      "outlook_anterior": "",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-09",
+      "dt_captura": "2026-11-24",
+      "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues"
     },
     {
       "agencia": "Fitch",
@@ -112034,18 +112300,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
     ],
     "novos": [
       {
-        "agencia": "Moody's",
-        "emissor": "FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO",
-        "cnpj_emissor": "",
-        "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
-        "dt_acao": "2026-10-29",
-        "link": "",
-        "rating_atual": "MQ2.br",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "RP FINANCEIRA",
         "cnpj_emissor": "",
@@ -112065,6 +112319,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-29",
         "link": "https://www.fitchratings.com/entity/rp-financeira-sa-sociedade-de-credito-financiamento-e-investimento-97936027",
         "rating_atual": "F2(bra)",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Moody's",
+        "emissor": "FUNDACAO PREVIDENCIA COMPLEMENTAR SERVIDOR PUBLICO FEDERAL PODER EXECUTIVO",
+        "cnpj_emissor": "",
+        "instrumento": "Avaliações de Qualidade de Gestor de Investimentos",
+        "dt_acao": "2026-10-29",
+        "link": "",
+        "rating_atual": "MQ2.br",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -112431,6 +112697,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
+        "emissor": "ECO SECURITIZADORA 2025",
+        "cnpj_emissor": "10.753.164/0001-43",
+        "instrumento": "notes ser 4",
+        "dt_acao": "2026-06-24",
+        "link": "https://www.fitchratings.com/entity/eco-securitizadora-2025-434-1-2-3-4-5-brf-97825988#issues",
+        "cnpj_devedor_vinculado": "00451283000198",
+        "rating_anterior": "Asf(bra)",
+        "rating_atual": "AAAsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "UPGRADE",
+        "variacao_notches": "+5"
+      },
+      {
+        "agencia": "Fitch",
         "emissor": "VERT CSCF 2024",
         "cnpj_emissor": "",
         "instrumento": "bonds ser 2024-1,2,3",
@@ -112641,6 +112922,34 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-7"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FIDC CONSIGNADOS FEDERAIS",
+        "cnpj_emissor": "33536066000150",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2019-09-27",
+        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brAA",
+        "rating_atual": "brAA-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-1"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "HIGH YIELD YALEEH FIDC",
+        "cnpj_emissor": "",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2024-03-06",
+        "link": "https://www.austin.com.br/Historico-Rating/4433/High_Yield_do_Yaleeh_FIDC_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brBBB+",
+        "rating_atual": "brBBB-",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
       },
       {
         "agencia": "Austin",
@@ -113128,18 +113437,6 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "variacao_notches": "—"
       },
       {
-        "agencia": "Moody's",
-        "emissor": "PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
-        "cnpj_emissor": "69003946000108",
-        "instrumento": "1ª Série de Cotas Seniores",
-        "dt_acao": "2026-10-23",
-        "link": "",
-        "rating_atual": "AAA.br (sf)",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "NOVO",
-        "variacao_notches": "—"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "CONCESSIONARIA RODOVIA BR 262 MG",
         "cnpj_emissor": "",
@@ -113153,12 +113450,12 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Moody's",
-        "emissor": "LOCALIZA RENT CAR",
-        "cnpj_emissor": "16670085000155",
-        "instrumento": "49ª Emissão de Debentures",
-        "dt_acao": "2026-10-27",
+        "emissor": "PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA",
+        "cnpj_emissor": "69003946000108",
+        "instrumento": "1ª Série de Cotas Seniores",
+        "dt_acao": "2026-10-23",
         "link": "",
-        "rating_atual": "AAA.br",
+        "rating_atual": "AAA.br (sf)",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -113219,6 +113516,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "dt_acao": "2026-10-27",
         "link": "https://www.liberumratings.com.br/detalhes-ativo/29228",
         "rating_atual": "A",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Moody's",
+        "emissor": "LOCALIZA RENT CAR",
+        "cnpj_emissor": "16670085000155",
+        "instrumento": "49ª Emissão de Debentures",
+        "dt_acao": "2026-10-27",
+        "link": "",
+        "rating_atual": "AAA.br",
         "outlook_atual": "Estável",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
@@ -113418,7 +113727,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       {
         "agencia": "Fitch",
         "emissor": "BURITI TRANSMISSAO ENERGIA",
-        "cnpj_emissor": "47290852000124",
+        "cnpj_emissor": "",
         "instrumento": "BRL bond/note",
         "dt_acao": "2026-11-09",
         "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -113429,8 +113738,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "VERDE TRANSMISSAO ENERGIA",
-        "cnpj_emissor": "",
+        "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+        "cnpj_emissor": "28008887000183",
         "instrumento": "Debentures 3rd Issuance",
         "dt_acao": "2026-11-09",
         "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -113441,8 +113750,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "VERDE TRANSMISSAO ENERGIA",
-        "cnpj_emissor": "",
+        "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+        "cnpj_emissor": "28008887000183",
         "instrumento": "Debentures 2nd Issuance",
         "dt_acao": "2026-11-09",
         "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -113454,7 +113763,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       {
         "agencia": "Fitch",
         "emissor": "BURITI TRANSMISSAO ENERGIA",
-        "cnpj_emissor": "47290852000124",
+        "cnpj_emissor": "",
         "instrumento": "BRL 618 mln Floating IPCA (Brazil) 7.01% bond/note 15-Mar-2050",
         "dt_acao": "2026-11-09",
         "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -113616,6 +113925,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "link": "https://www.fitchratings.com/entity/ampla-energia-e-servicos-sa-96591706#issues",
         "rating_atual": "F1+(bra)",
         "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "IN",
+        "cnpj_emissor": "05208211001703",
+        "instrumento": "BRL 44 mln bond/note 10-Jan-2034",
+        "dt_acao": "2026-11-19",
+        "link": "https://www.fitchratings.com/entity/engie-solucoes-cidades-inteligentes-e-infraestrutura-de-uberlandia-sa-97335775#issues",
+        "rating_atual": "AAA(bra)",
+        "outlook_atual": "Negativa",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
       },
@@ -113863,6 +114184,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
       }
     ],
     "retirados": [
+      {
+        "agencia": "Fitch",
+        "emissor": "OPEA SECURITIZADORA 2019",
+        "cnpj_emissor": "02.773.542/0001-22",
+        "instrumento": "notes ser 1",
+        "dt_acao": "2019-12-05",
+        "link": "https://www.fitchratings.com/entity/rb-capital-companhia-de-securitizacao-2019-232-233-vci-96808579#issues",
+        "rating_anterior": "AAAsf(bra)",
+        "rating_atual": "WDsf(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
       {
         "agencia": "Fitch",
         "emissor": "CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS",
