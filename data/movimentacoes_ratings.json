@@ -1,20 +1,20 @@
 {
-  "timestamp": "2026-11-24T05:14:30.088873",
+  "timestamp": "2026-11-24T17:37:02.736874",
   "dt_atual": "2026-11-24",
   "dt_anterior": "2026-11-23",
   "resumo": {
     "upgrades_emissores": 12,
-    "upgrades_emissoes": 17,
-    "total_upgrades": 29,
+    "upgrades_emissoes": 15,
+    "total_upgrades": 27,
     "downgrades_emissores": 7,
-    "downgrades_emissoes": 37,
-    "total_downgrades": 44,
+    "downgrades_emissoes": 36,
+    "total_downgrades": 43,
     "novos_emissores": 13,
     "novos_emissoes": 54,
     "total_novos": 67,
-    "outlooks_emissores": 7,
+    "outlooks_emissores": 9,
     "outlooks_emissoes": 12,
-    "total_outlooks": 19,
+    "total_outlooks": 21,
     "retirados_emissores": 1,
     "retirados_emissoes": 5,
     "total_retirados": 6
@@ -24,17 +24,17 @@
     "dt_anterior": "2026-10-23",
     "resumo": {
       "upgrades_emissores": 12,
-      "upgrades_emissoes": 17,
-      "total_upgrades": 29,
+      "upgrades_emissoes": 15,
+      "total_upgrades": 27,
       "downgrades_emissores": 7,
-      "downgrades_emissoes": 37,
-      "total_downgrades": 44,
+      "downgrades_emissoes": 36,
+      "total_downgrades": 43,
       "novos_emissores": 13,
       "novos_emissoes": 54,
       "total_novos": 67,
-      "outlooks_emissores": 7,
+      "outlooks_emissores": 9,
       "outlooks_emissoes": 12,
-      "total_outlooks": 19,
+      "total_outlooks": 21,
       "retirados_emissores": 1,
       "retirados_emissoes": 5,
       "total_retirados": 6
@@ -562,6 +562,32 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "OUTLOOK",
           "variacao_notches": "0"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "NOVO BANCO CONTINENTAL",
+          "cnpj_emissor": "05985814000146",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-11-24",
+          "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767",
+          "rating_atual": "AAA(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Em Observação",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "NOVO BANCO CONTINENTAL",
+          "cnpj_emissor": "05985814000146",
+          "instrumento": "National Short Term Rating",
+          "dt_acao": "2026-11-24",
+          "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767",
+          "rating_atual": "F1+(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Em Observação",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
         }
       ],
       "retirados": [
@@ -685,20 +711,6 @@
           "variacao_notches": "+2"
         },
         {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "cnpj_emissor": "12536691000121",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brBBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        },
-        {
           "agencia": "Fitch",
           "emissor": "VERT CSCF 2024",
           "cnpj_emissor": "",
@@ -722,21 +734,6 @@
           "rating_anterior": "AA-sf(bra)",
           "rating_atual": "AAAsf(bra)",
           "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+3"
-        },
-        {
-          "agencia": "Fitch",
-          "emissor": "OPEA SECURITIZADORA 2024",
-          "cnpj_emissor": "02.773.542/0001-22",
-          "instrumento": "notes ser 3",
-          "dt_acao": "2026-06-24",
-          "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
-          "cnpj_devedor_vinculado": "05878397000132",
-          "rating_anterior": "AA-sf(bra)",
-          "rating_atual": "AAAsf(bra)",
-          "outlook_anterior": "Positiva",
           "outlook_atual": "Estável",
           "tipo_movimento": "UPGRADE",
           "variacao_notches": "+3"
@@ -925,20 +922,6 @@
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-7"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "cnpj_emissor": "33536066000150",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
         },
         {
           "agencia": "Austin",
@@ -1464,7 +1447,7 @@
         {
           "agencia": "Austin",
           "emissor": "CONSIGNADOS XIII FIDC",
-          "cnpj_emissor": "",
+          "cnpj_emissor": "63802702000109",
           "instrumento": "SENIORES ÚNICA",
           "dt_acao": "2026-10-27",
           "link": "https://www.austin.com.br/Historico-Rating/5292/Consignados_XIII_FIDC_-_Seniores_Única",
@@ -2240,17 +2223,17 @@
     "dt_anterior": "2026-11-23",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 1,
-      "total_upgrades": 1,
+      "upgrades_emissoes": 0,
+      "total_upgrades": 0,
       "downgrades_emissores": 0,
       "downgrades_emissoes": 1,
       "total_downgrades": 1,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
-      "outlooks_emissores": 0,
+      "outlooks_emissores": 2,
       "outlooks_emissoes": 0,
-      "total_outlooks": 0,
+      "total_outlooks": 2,
       "retirados_emissores": 0,
       "retirados_emissoes": 0,
       "total_retirados": 0
@@ -2262,43 +2245,56 @@
       "upgrades": [],
       "downgrades": [],
       "novos": [],
-      "outlooks": [],
+      "outlooks": [
+        {
+          "agencia": "Fitch",
+          "emissor": "NOVO BANCO CONTINENTAL",
+          "cnpj_emissor": "05985814000146",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-11-24",
+          "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767",
+          "rating_atual": "AAA(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Em Observação",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "NOVO BANCO CONTINENTAL",
+          "cnpj_emissor": "05985814000146",
+          "instrumento": "National Short Term Rating",
+          "dt_acao": "2026-11-24",
+          "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767",
+          "rating_atual": "F1+(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Em Observação",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        }
+      ],
       "retirados": []
     },
     "emissoes": {
       "tipo": "emissoes",
       "dt_atual": "2026-11-24",
       "dt_anterior": "2026-11-23",
-      "upgrades": [
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "cnpj_emissor": "12536691000121",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brBBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+2"
-        }
-      ],
+      "upgrades": [],
       "downgrades": [
         {
-          "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "cnpj_emissor": "33536066000150",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA",
-          "rating_atual": "brAA-",
+          "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2024",
+          "cnpj_emissor": "02.773.542/0001-22",
+          "instrumento": "notes ser 3",
+          "dt_acao": "2026-06-24",
+          "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-272-1-2-3-grupo-salta-97593456#issues",
+          "cnpj_devedor_vinculado": "17765891000170",
+          "rating_anterior": "AAAsf(bra)",
+          "rating_atual": "AA-sf(bra)",
           "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
+          "outlook_atual": "Positiva",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
+          "variacao_notches": "-3"
         }
       ],
       "novos": [],
@@ -2307,6 +2303,38 @@
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Fitch",
+      "emissor": "NOVO BANCO CONTINENTAL",
+      "cnpj_emissor": "05985814000146",
+      "instrumento": "National Long Term Rating",
+      "dt_acao": "2026-11-24",
+      "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767",
+      "rating_atual": "AAA(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Em Observação",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-24"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "NOVO BANCO CONTINENTAL",
+      "cnpj_emissor": "05985814000146",
+      "instrumento": "National Short Term Rating",
+      "dt_acao": "2026-11-24",
+      "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767",
+      "rating_atual": "F1+(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Em Observação",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-24"
+    },
     {
       "agencia": "Liberum",
       "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
@@ -4527,7 +4555,7 @@
     {
       "agencia": "Austin",
       "emissor": "CONSIGNADOS XIII FIDC",
-      "cnpj_emissor": "",
+      "cnpj_emissor": "63802702000109",
       "instrumento": "SENIORES ÚNICA",
       "dt_acao": "2026-10-27",
       "link": "https://www.austin.com.br/Historico-Rating/5292/Consignados_XIII_FIDC_-_Seniores_Única",
@@ -4732,24 +4760,6 @@
     },
     {
       "agencia": "Fitch",
-      "emissor": "OPEA SECURITIZADORA 2024",
-      "cnpj_emissor": "02.773.542/0001-22",
-      "instrumento": "notes ser 3",
-      "dt_acao": "2026-06-24",
-      "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
-      "cnpj_devedor_vinculado": "05878397000132",
-      "rating_anterior": "AA-sf(bra)",
-      "rating_atual": "AAAsf(bra)",
-      "outlook_anterior": "Positiva",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+3",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-11-24"
-    },
-    {
-      "agencia": "Fitch",
       "emissor": "FACTA INSS CB FIDC",
       "cnpj_emissor": "35946113000169",
       "instrumento": "bonds ser 2022-1,2,3",
@@ -4851,23 +4861,6 @@
       "dt_captura": "2026-11-24"
     },
     {
-      "agencia": "Austin",
-      "emissor": "FICTOR INVEST FIDC",
-      "cnpj_emissor": "12536691000121",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB+",
-      "rating_atual": "brBBB",
-      "outlook_anterior": "Negativa",
-      "outlook_atual": "Negativa",
-      "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+2",
-      "categoria": "Emissão",
-      "tipo": "UPGRADE",
-      "dt_captura": "2026-11-24"
-    },
-    {
       "agencia": "S&P",
       "emissor": "BANCO FIBRA",
       "cnpj_emissor": "05722758000157",
@@ -4946,23 +4939,6 @@
       "outlook_atual": "Estável",
       "tipo_movimento": "DOWNGRADE",
       "variacao_notches": "-3",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
-      "dt_captura": "2026-11-24"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC CONSIGNADOS FEDERAIS",
-      "cnpj_emissor": "33536066000150",
-      "instrumento": "SUBORDINADAS PREFERENCIAIS",
-      "dt_acao": "2019-09-27",
-      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-      "rating_anterior": "brAA",
-      "rating_atual": "brAA-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-24"
@@ -5058,6 +5034,42 @@
       "dt_acao": "2026-11-24",
       "dt_captura": "2026-11-24",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/27202"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "NOVO BANCO CONTINENTAL",
+      "cnpj_emissor": "05985814000146",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "National Long Term Rating",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "AAA(bra)",
+      "variacao_notches": "0",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Em Observação",
+      "dt_acao": "2026-11-24",
+      "dt_captura": "2026-11-24",
+      "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "NOVO BANCO CONTINENTAL",
+      "cnpj_emissor": "05985814000146",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "National Short Term Rating",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "F1+(bra)",
+      "variacao_notches": "0",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Em Observação",
+      "dt_acao": "2026-11-24",
+      "dt_captura": "2026-11-24",
+      "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767"
     },
     {
       "agencia": "Fitch",
@@ -112269,6 +112281,32 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "OUTLOOK",
         "variacao_notches": "0"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "NOVO BANCO CONTINENTAL",
+        "cnpj_emissor": "05985814000146",
+        "instrumento": "National Long Term Rating",
+        "dt_acao": "2026-11-24",
+        "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767",
+        "rating_atual": "AAA(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Em Observação",
+        "tipo_movimento": "OUTLOOK",
+        "variacao_notches": "0"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "NOVO BANCO CONTINENTAL",
+        "cnpj_emissor": "05985814000146",
+        "instrumento": "National Short Term Rating",
+        "dt_acao": "2026-11-24",
+        "link": "https://www.fitchratings.com/entity/novo-banco-continental-sa-banco-multiplo-97135767",
+        "rating_atual": "F1+(bra)",
+        "outlook_anterior": "Estável",
+        "outlook_atual": "Em Observação",
+        "tipo_movimento": "OUTLOOK",
+        "variacao_notches": "0"
       }
     ],
     "retirados": [
@@ -112392,20 +112430,6 @@
         "variacao_notches": "+2"
       },
       {
-        "agencia": "Austin",
-        "emissor": "FICTOR INVEST FIDC",
-        "cnpj_emissor": "12536691000121",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5034/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brBBB",
-        "outlook_anterior": "Negativa",
-        "outlook_atual": "Negativa",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+2"
-      },
-      {
         "agencia": "Fitch",
         "emissor": "VERT CSCF 2024",
         "cnpj_emissor": "",
@@ -112429,21 +112453,6 @@
         "rating_anterior": "AA-sf(bra)",
         "rating_atual": "AAAsf(bra)",
         "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+3"
-      },
-      {
-        "agencia": "Fitch",
-        "emissor": "OPEA SECURITIZADORA 2024",
-        "cnpj_emissor": "02.773.542/0001-22",
-        "instrumento": "notes ser 3",
-        "dt_acao": "2026-06-24",
-        "link": "https://www.fitchratings.com/entity/opea-securitizadora-sa-2024-262-1-2-3-allos-97585637#issues",
-        "cnpj_devedor_vinculado": "05878397000132",
-        "rating_anterior": "AA-sf(bra)",
-        "rating_atual": "AAAsf(bra)",
-        "outlook_anterior": "Positiva",
         "outlook_atual": "Estável",
         "tipo_movimento": "UPGRADE",
         "variacao_notches": "+3"
@@ -112632,20 +112641,6 @@
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-7"
-      },
-      {
-        "agencia": "Austin",
-        "emissor": "FIDC CONSIGNADOS FEDERAIS",
-        "cnpj_emissor": "33536066000150",
-        "instrumento": "SUBORDINADAS PREFERENCIAIS",
-        "dt_acao": "2019-09-27",
-        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-        "rating_anterior": "brAA",
-        "rating_atual": "brAA-",
-        "outlook_anterior": "Estável",
-        "outlook_atual": "Estável",
-        "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-1"
       },
       {
         "agencia": "Austin",
@@ -113171,7 +113166,7 @@
       {
         "agencia": "Austin",
         "emissor": "CONSIGNADOS XIII FIDC",
-        "cnpj_emissor": "",
+        "cnpj_emissor": "63802702000109",
         "instrumento": "SENIORES ÚNICA",
         "dt_acao": "2026-10-27",
         "link": "https://www.austin.com.br/Historico-Rating/5292/Consignados_XIII_FIDC_-_Seniores_Única",
