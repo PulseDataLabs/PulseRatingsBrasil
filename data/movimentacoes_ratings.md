@@ -1,19 +1,19 @@
-# 📊 Relatório de Movimentações de Ratings (24/11/2026)
+# 📊 Relatório de Movimentações de Ratings (25/11/2026)
 
 *Painel consolidado de **Upgrades**, **Downgrades**, **Novos Ratings** e **Alterações de Perspectiva**.*
 
-*Período monitorado: **23/10/2026** a **24/11/2026**.*
+*Período monitorado: **26/10/2026** a **25/11/2026**.*
 
 ### 📈 Resumo Geral do Período Monitorado
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
-| 🟢 **Upgrades (Elevações)** | 12 | 16 | **28** |
-| 🔴 **Downgrades (Rebaixamentos)** | 7 | 38 | **45** |
-| 🔵 **Novos Ratings** | 13 | 55 | **68** |
+| 🟢 **Upgrades (Elevações)** | 12 | 18 | **30** |
+| 🔴 **Downgrades (Rebaixamentos)** | 7 | 36 | **43** |
+| 🔵 **Novos Ratings** | 13 | 53 | **66** |
 | 🟡 **Mudanças de Perspectiva** | 9 | 12 | **21** |
 | ⚪ **Ratings Retirados / Liquidados** | 1 | 6 | **7** |
 
-### 🟢 Elevações de Rating (Upgrades) — 28
+### 🟢 Elevações de Rating (Upgrades) — 30
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Moody's | **IN** | Avaliações de Qualidade de Gestor de Investimentos | `MQ3.br` | **`MQ2.br`** | `+3` | Estável | 14/05/2026 |
@@ -28,7 +28,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | Local Currency Long Term Issuer Default Rating | `BB-` | **`BB`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **UNIDAS LOCACOES SERVICOS** | National Long Term Rating | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **VERTERA HOLDING** | National Long Term Rating | `A+(bra)` | **`AA-(bra)`** | `+1` | Estável | 19/11/2026 |
-| Liberum | **VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL** | Mezanino - Curto prazo | `CP5` | **`CP3`** | `+2` | Negativa | 24/11/2026 |
+| Liberum | **VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL** | Mezanino - Curto prazo | `CP5` | **`CP3`** | `+2` | Negativa | 25/11/2026 |
 | Liberum | **REALINVEST FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP4` | **`CP3`** | `+1` | Estável | 12/11/2026 |
 | Liberum | **REALINVEST FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `BB` | **`BBB-`** | `+2` | Estável | 12/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Longo prazo | `BB-` | **`BBB`** | `+4` | Negativa | 12/11/2026 |
@@ -38,6 +38,8 @@
 | Fitch | **ECO SECURITIZADORA 2025** | notes ser 4 | `Asf(bra)` | **`AAAsf(bra)`** | `+5` | Estável | 24/06/2026 |
 | Fitch | **VERT CSCF 2024** | bonds ser 2024-1,2,3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 29/04/2026 |
 | Fitch | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CREDITAS AUTO XII** | notes ser 9 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 07/05/2026 |
+| Fitch | **OPEA SECURITIZADORA 2024** | notes ser 3 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
+| Fitch | **ECO SECURITIZADORA 2022** | notes ser 2 | `AA-sf(bra)` | **`AAAsf(bra)`** | `+3` | Estável | 24/06/2026 |
 | Fitch | **MULTIPLIKE SECURITIZADORA 2024** | notes ser 3 | `A-sf(bra)` | **`AAAsf(bra)`** | `+6` | Estável | 10/07/2026 |
 | Fitch | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CREDITAS AUTO XI** | notes ser 4 | `A+sf(bra)` | **`AA+sf(bra)`** | `+3` | Estável | 05/10/2026 |
 | Fitch | **ELDORADO CELULOSE** | BRL 1 bln 6.95% bond/note 15-Dec-2040 | `AA+(bra)` | **`AAA(bra)`** | `+1` | Estável | 29/10/2026 |
@@ -45,15 +47,15 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 45
+### 🔴 Rebaixamentos de Rating (Downgrades) — 43
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Liberum | **ESTADO ISRAEL** | Finanças Públicas | `AAA` | **`A`** | `-5` | Estável | 06/10/2026 |
-| Fitch | **ELETROPAULO METROPOLITANA ELETRICIDADE SAO PAULO** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
-| Fitch | **COMPANHIA ENERGETICA CEARA** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
-| Fitch | **AMPLA ENERGIA SERVICOS** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
-| Fitch | **ENEL** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
 | Fitch | **ENEL GREEN POWER VOLTA GRANDE** | National Long Term Rating | `AAA(bra)` | **`AA+(bra)`** | `-1` | Negativa | 19/11/2026 |
+| Fitch | **ENEL** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
+| Fitch | **AMPLA ENERGIA SERVICOS** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
+| Fitch | **COMPANHIA ENERGETICA CEARA** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
+| Fitch | **ELETROPAULO METROPOLITANA ELETRICIDADE SAO PAULO** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
 | Fitch | **NOVA TRANSPORTADORA SUDESTE** | National Long Term Rating | `AAA(bra)` | **`AA+(bra)`** | `-1` | Negativa | 19/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Longo prazo | `BBB-` | **`BB`** | `-2` | Estável | 16/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Curto prazo | `CP3` | **`CP4`** | `-1` | Estável | 16/10/2026 |
@@ -62,9 +64,7 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 12/11/2026 |
 | Austin | **FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brB`** | `-3` | Estável | 22/02/2021 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
-| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
-| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB+` | **`brBBB-`** | `-2` | Estável | 06/03/2024 |
-| Austin | **FIDC IC SOMAPAY** | SUBORDINADAS MEZANINO | `brBB+` | **`brB-`** | `-5` | Estável | 12/08/2024 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB`** | `-3` | Negativa | 09/10/2025 |
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 1a serie - 2nd Debenture  BRL 375 mln bond/note 15-Dec-2045 | `AA-(bra)` | **`BBB-(bra)`** | `-6` | Em Observação | 05/11/2026 |
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042 | `AA-(bra)` | **`BBB-(bra)`** | `-6` | Em Observação | 05/11/2026 |
 | Fitch | **VIA MT 320 CONCESSIONARIA RODOVIAS** | BRL 135 mln bond/note 15-Dec-2036 | `BB(bra)` | **`CCC(bra)`** | `-6` | Estável | 10/11/2026 |
@@ -111,15 +111,15 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONCREDITO RESPONSABILIDADE ILIMITADA** | Mezanino - Longo prazo | `BBB+` | Negativa | **Estável** | 03/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONCREDITO RESPONSABILIDADE ILIMITADA** | Senior - Longo prazo | `AA` | Negativa | **Estável** | 03/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONCREDITO RESPONSABILIDADE ILIMITADA** | Senior - Curto prazo | `CP1` | Negativa | **Estável** | 03/11/2026 |
-| Liberum | **VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL** | Subordinada - Longo prazo | `CCC` | Negativa | **Estável** | 24/11/2026 |
-| Liberum | **CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `BBB+` | Estável | **Negativa** | 24/11/2026 |
-| Liberum | **CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP3` | Estável | **Negativa** | 24/11/2026 |
-| Liberum | **ARGENTA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP3` | Estável | **Negativa** | 24/11/2026 |
+| Liberum | **VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL** | Subordinada - Longo prazo | `CCC` | Negativa | **Estável** | 25/11/2026 |
+| Liberum | **CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `BBB+` | Estável | **Negativa** | 25/11/2026 |
+| Liberum | **CAPITAL FINANCAS FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP3` | Estável | **Negativa** | 25/11/2026 |
+| Liberum | **ARGENTA FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP3` | Estável | **Negativa** | 25/11/2026 |
 | Moody's | **RODOVIAS INTEGRADAS OESTE** | 14ª Emissão de Debêntures - Série Única | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Fitch | **DELTA 3 ENERGIA** | BRL 92 mln Floating bond/note 30-Sep-2029 | `AA+(bra)` | Negativa | **Estável** | 27/10/2026 |
 | Fitch | **GSH PARTICIPACOES** | BRL 13.78 mln bond/note | `A(bra)` | Em Observação | **Estável** | 16/11/2026 |
 
-### 🔵 Novos Ratings Atribuídos (68)
+### 🔵 Novos Ratings Atribuídos (66)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **RP FINANCEIRA** | National Long Term Rating | **`A-(bra)`** | Estável | 29/10/2026 |
@@ -141,8 +141,6 @@
 | Moody's | **OURINHOS SANEAMENTO** | 2ª Emissão de Debêntures - Série Única | **`AA.br`** | Estável | 11/11/2026 |
 | Fitch | **ER 2030 FIDC** | notes ser 4 | **`AAAsf(bra)`** | Estável | 18/11/2026 |
 | Fitch | **VERT CIA SECURITIZADORA 2026** | notes | **`AAAsf(bra)`** | Estável | 18/11/2026 |
-| Fitch | **CONCESSIONARIA RODOVIA BR 262 MG** | BRL 2.51 bln Floating IPCA (Brazil) bond/note 15-Mar-2050 | **`AA-(bra)`** | Estável | 23/10/2026 |
-| Moody's | **PERIPLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | 1ª Série de Cotas Seniores | **`AAA.br (sf)`** | Estável | 23/10/2026 |
 | Austin | **CONSIGNADOS XIII FIDC** | SENIORES ÚNICA | **`brA`** | Estável | 27/10/2026 |
 | Liberum | **BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Mezanino - Longo prazo | **`BB+`** | Estável | 27/10/2026 |
 | Liberum | **BINVEST PLUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Mezanino - Curto prazo | **`CP4`** | Estável | 27/10/2026 |
@@ -152,7 +150,9 @@
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS COBUCCIO INSS** | 1a Série de Cotas Seniores | **`AAA.br (sf)`** | Estável | 28/10/2026 |
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS COBUCCIO INSS** | 2a Série de Cotas Seniores | **`AAA.br (sf)`** | Estável | 28/10/2026 |
 | Moody's | **DTB TOWERS INFRA FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Rating da Classe Sênior - 1ª Série | **`AA-.br (sf)`** | Estável | 29/10/2026 |
-| *...e mais 38 novos ratings.* | | | | | |
+| Moody's | **DTB TOWERS INFRA FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Rating da Classe Sênior - 2ª Série | **`AA-.br (sf)`** | Estável | 29/10/2026 |
+| Fitch | **PARANAGUA SANEAMENTO** | 2nd debenture - BRL 259.8 mln Floating IPCA (Brazil) 6.1% bond/note 15-Jul-2030 | **`A+(bra)`** | Estável | 30/10/2026 |
+| *...e mais 36 novos ratings.* | | | | | |
 
 ### ⚪ Ratings Retirados / Liquidados (7)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
@@ -166,5 +166,5 @@
 | Fitch | **EMPREENDIMENTOS PAGUE MENOS** | BRL 100 mln / 6th debenture / tranche 1 / NOV.2026 | `AA-(bra)` | Estável | 05/11/2026 |
 
 ---
-### ⚡ Movimentações da Última Captura Diária (23/11/2026 → 24/11/2026)
-*Total nas últimas 24h: 🟢 1 upgrades | 🔴 3 downgrades | 🔵 0 novos | 🟡 2 perspectivas | ⚪ 1 retirados.*
+### ⚡ Movimentações da Última Captura Diária (24/11/2026 → 25/11/2026)
+*Total nas últimas 24h: 🟢 3 upgrades | 🔴 1 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
