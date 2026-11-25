@@ -169,5 +169,227 @@
         "example": ""
       }
     ]
+  },
+  {
+    "title": "Fitch — Emissores",
+    "files": "fitch_emissores.csv",
+    "source": "fitch",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "Bradespar S.A."
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.fitchratings.com/entity/bradespar-sa-87072170"
+      }
+    ]
+  },
+  {
+    "title": "Austin — Emissores",
+    "files": "austin_emissores.csv",
+    "source": "austin",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "ACCESS FIDC - SENIORES ÚNICA"
+      },
+      {
+        "name": "no_setor",
+        "type": "str",
+        "example": "FIDCs"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.austin.com.br/Historico-Rating/3103/Access_FIDC_-_Seniores_Única"
+      }
+    ]
+  },
+  {
+    "title": "Liberum — Emissores",
+    "files": "liberum_emissores.csv",
+    "source": "liberum",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "ÁRTICO MIDDLE CORPORATE FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+      },
+      {
+        "name": "no_setor",
+        "type": "str",
+        "example": "FIDC"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29369"
+      }
+    ]
+  },
+  {
+    "title": "Liberum — Ratings",
+    "files": "liberum_ratings.csv",
+    "source": "liberum",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "ÁRTICO MIDDLE CORPORATE FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29369"
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "FIDC"
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "B"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2026-11-24"
+      },
+      {
+        "name": "de_acao_rating",
+        "type": "str",
+        "example": "Confirmação"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": "Estável"
+      },
+      {
+        "name": "de_classe",
+        "type": "str",
+        "example": "Subordinada"
+      },
+      {
+        "name": "de_escala",
+        "type": "str",
+        "example": "Longo prazo"
+      }
+    ]
+  },
+  {
+    "title": "Austin — Ratings",
+    "files": "austin_ratings.csv",
+    "source": "austin",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "AÇO CEARENSE FIDC - SENIORES ÚNICA"
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.austin.com.br/Historico-Rating/5237/Aço_Cearense_FIDC_-_Seniores_Única"
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "FIDCs"
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "brBBB-"
+      },
+      {
+        "name": "de_rating_cp",
+        "type": "str",
+        "example": ""
+      },
+      {
+        "name": "de_rating_lp",
+        "type": "str",
+        "example": "brBBB-"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2026-06-18"
+      },
+      {
+        "name": "de_acao_rating",
+        "type": "str",
+        "example": "Rating Inicial"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": "Estável"
+      },
+      {
+        "name": "link_relatorio",
+        "type": "str",
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11646"
+      }
+    ]
+  },
+  {
+    "title": "Fitch — Ratings",
+    "files": "fitch_ratings.csv",
+    "source": "fitch",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "Bradespar S.A."
+      },
+      {
+        "name": "link",
+        "type": "str",
+        "example": "https://www.fitchratings.com/entity/bradespar-sa-87072170"
+      },
+      {
+        "name": "no_tipo_rating",
+        "type": "str",
+        "example": "National Long Term Rating"
+      },
+      {
+        "name": "de_rating_br",
+        "type": "str",
+        "example": "AAA(bra)"
+      },
+      {
+        "name": "dt_acao_rating",
+        "type": "date",
+        "example": "2026-11-25"
+      },
+      {
+        "name": "de_acao_rating",
+        "type": "str",
+        "example": "Affirmed"
+      },
+      {
+        "name": "de_outlook",
+        "type": "str",
+        "example": "Rating Outlook Stable"
+      },
+      {
+        "name": "de_instrumento",
+        "type": "str",
+        "example": ""
+      },
+      {
+        "name": "de_isin",
+        "type": "str",
+        "example": ""
+      }
+    ]
   }
 ]
