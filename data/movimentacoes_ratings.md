@@ -8,10 +8,10 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 12 | 17 | **29** |
-| 🔴 **Downgrades (Rebaixamentos)** | 7 | 42 | **49** |
-| 🔵 **Novos Ratings** | 13 | 49 | **62** |
-| 🟡 **Mudanças de Perspectiva** | 10 | 11 | **21** |
-| ⚪ **Ratings Retirados / Liquidados** | 1 | 5 | **6** |
+| 🔴 **Downgrades (Rebaixamentos)** | 7 | 43 | **50** |
+| 🔵 **Novos Ratings** | 13 | 50 | **63** |
+| 🟡 **Mudanças de Perspectiva** | 11 | 11 | **22** |
+| ⚪ **Ratings Retirados / Liquidados** | 1 | 6 | **7** |
 
 ### 🟢 Elevações de Rating (Upgrades) — 29
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
@@ -46,7 +46,7 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 49
+### 🔴 Rebaixamentos de Rating (Downgrades) — 50
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Liberum | **ESTADO ISRAEL** | Finanças Públicas | `AAA` | **`A`** | `-5` | Estável | 06/10/2026 |
@@ -69,6 +69,7 @@
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
 | Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
 | Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB+` | **`brBBB-`** | `-2` | Estável | 06/03/2024 |
+| Austin | **FICTOR INVEST FIDC** | SUBORDINADAS MEZANINO | `brBBB` | **`brBB+`** | `-2` | Negativa | 09/10/2025 |
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 1a serie - 2nd Debenture  BRL 375 mln bond/note 15-Dec-2045 | `AA-(bra)` | **`BBB-(bra)`** | `-6` | Em Observação | 05/11/2026 |
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042 | `AA-(bra)` | **`BBB-(bra)`** | `-6` | Em Observação | 05/11/2026 |
 | Fitch | **VIA MT 320 CONCESSIONARIA RODOVIAS** | BRL 135 mln bond/note 15-Dec-2036 | `BB(bra)` | **`CCC(bra)`** | `-6` | Estável | 10/11/2026 |
@@ -99,7 +100,7 @@
 | Fitch | **MIRANTE ENERGETICA** | BRL 100 mln bond/note 15-Feb-2035 | `A+(bra)` | **`A(bra)`** | `-1` | Negativa | 23/11/2026 |
 | Fitch | **APIUNA PARTICIPACOES** | BRL 370 mln 8.896% bond/note 15-Dec-2043 | `AA+(bra)` | **`A+(bra)`** | `-3` | Negativa | 25/11/2026 |
 
-### 🟡 Mudanças de Perspectiva (Outlook) — 21
+### 🟡 Mudanças de Perspectiva (Outlook) — 22
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva Anterior | Nova Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | S&P | **ADAMI MADEIRAS** | Escala Nacional Brasil de Longo Prazo | `brA+` | Estável | **Positiva** | 13/04/2023 |
@@ -112,6 +113,7 @@
 | Fitch | **NOVO BANCO CONTINENTAL** | National Long Term Rating | `AAA(bra)` | Estável | **Em Observação** | 24/11/2026 |
 | Fitch | **NOVO BANCO CONTINENTAL** | National Short Term Rating | `F1+(bra)` | Estável | **Em Observação** | 24/11/2026 |
 | Fitch | **LAR COOPERATIVA AGROINDUSTRIAL** | National Long Term Rating | `A(bra)` | Estável | **Positiva** | 25/11/2026 |
+| Fitch | **UNIPAR CARBOCLORO** | National Long Term Rating | `AA+(bra)` | Positiva | **Estável** | 26/11/2026 |
 | Liberum | **CREDIT PARTNERS FUNDO INVESTIMENTO DIREITO CREDITORIOS** | Subordinada - Longo prazo | `CCC` | Negativa | **Estável** | 16/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONCREDITO RESPONSABILIDADE ILIMITADA** | Mezanino - Curto prazo | `CP3` | Negativa | **Estável** | 03/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS CONCREDITO RESPONSABILIDADE ILIMITADA** | Mezanino - Longo prazo | `BBB+` | Negativa | **Estável** | 03/11/2026 |
@@ -124,7 +126,7 @@
 | Moody's | **RODOVIAS INTEGRADAS OESTE** | 14ª Emissão de Debêntures - Série Única | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Fitch | **GSH PARTICIPACOES** | BRL 13.78 mln bond/note | `A(bra)` | Em Observação | **Estável** | 16/11/2026 |
 
-### 🔵 Novos Ratings Atribuídos (62)
+### 🔵 Novos Ratings Atribuídos (63)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **RP FINANCEIRA** | National Long Term Rating | **`A-(bra)`** | Estável | 29/10/2026 |
@@ -157,18 +159,19 @@
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS BV AUTO IV SEGMENTO FINANCEIRO** | Cotas Seniores da 1ª Série | **`(P)AAA.br (sf)`** | Estável | 03/11/2026 |
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS BV AUTO IV SEGMENTO FINANCEIRO** | Cotas Subordinadas Mezanino A | **`(P)AA.br (sf)`** | Estável | 03/11/2026 |
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS BV AUTO IV SEGMENTO FINANCEIRO** | Cotas Subordinadas Mezanino B | **`(P)BBB-.br (sf)`** | Estável | 03/11/2026 |
-| *...e mais 32 novos ratings.* | | | | | |
+| *...e mais 33 novos ratings.* | | | | | |
 
-### ⚪ Ratings Retirados / Liquidados (6)
+### ⚪ Ratings Retirados / Liquidados (7)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **COMPANHIA PARAIBANA GAS PBGAS** | National Long Term Rating | `A(bra)` | Negativa | 05/11/2026 |
 | Fitch | **CREDITO UNIVERSITARIO FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | notes | `AAAsf(bra)` | Estável | 04/11/2026 |
 | Fitch | **BEFLY FIDC** | notes ser 2 | `AAAsf(bra)` | Em Observação | 18/11/2026 |
+| Fitch | **OPEA SECURITIZADORA 2023** | certificates ser 3 | `AAsf(bra)` | Estável | 15/06/2026 |
 | Fitch | **BARI SECURITIZADORA 2024** | notes ser 1 | `A-sf(bra)` | Estável | 28/10/2026 |
 | Fitch | **C MODAS** | BRL 495.96 mln Floating CDI (Brazil) 1.8% bond/note 15-Jul-2027 | `AA(bra)` | Estável | 29/10/2026 |
 | Fitch | **EMPREENDIMENTOS PAGUE MENOS** | BRL 100 mln / 6th debenture / tranche 1 / NOV.2026 | `AA-(bra)` | Estável | 05/11/2026 |
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (25/11/2026 → 26/11/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 6 downgrades | 🔵 3 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 2 upgrades | 🔴 7 downgrades | 🔵 3 novos | 🟡 1 perspectivas | ⚪ 0 retirados.*

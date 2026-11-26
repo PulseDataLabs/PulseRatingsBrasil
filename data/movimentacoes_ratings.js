@@ -1,5 +1,5 @@
 window.PULSERATINGS_MOVIMENTACOES = {
-  "timestamp": "2026-11-26T15:54:48.020510",
+  "timestamp": "2026-11-26T20:28:08.433354",
   "dt_atual": "2026-11-26",
   "dt_anterior": "2026-11-25",
   "resumo": {
@@ -7,17 +7,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
     "upgrades_emissoes": 17,
     "total_upgrades": 29,
     "downgrades_emissores": 7,
-    "downgrades_emissoes": 42,
-    "total_downgrades": 49,
+    "downgrades_emissoes": 43,
+    "total_downgrades": 50,
     "novos_emissores": 13,
-    "novos_emissoes": 49,
-    "total_novos": 62,
-    "outlooks_emissores": 10,
+    "novos_emissoes": 50,
+    "total_novos": 63,
+    "outlooks_emissores": 11,
     "outlooks_emissoes": 11,
-    "total_outlooks": 21,
+    "total_outlooks": 22,
     "retirados_emissores": 1,
-    "retirados_emissoes": 5,
-    "total_retirados": 6
+    "retirados_emissoes": 6,
+    "total_retirados": 7
   },
   "periodo_recente": {
     "dt_atual": "2026-11-26",
@@ -27,17 +27,17 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 17,
       "total_upgrades": 29,
       "downgrades_emissores": 7,
-      "downgrades_emissoes": 42,
-      "total_downgrades": 49,
+      "downgrades_emissoes": 43,
+      "total_downgrades": 50,
       "novos_emissores": 13,
-      "novos_emissoes": 49,
-      "total_novos": 62,
-      "outlooks_emissores": 10,
+      "novos_emissoes": 50,
+      "total_novos": 63,
+      "outlooks_emissores": 11,
       "outlooks_emissoes": 11,
-      "total_outlooks": 21,
+      "total_outlooks": 22,
       "retirados_emissores": 1,
-      "retirados_emissoes": 5,
-      "total_retirados": 6
+      "retirados_emissoes": 6,
+      "total_retirados": 7
     },
     "emissores": {
       "tipo": "emissores",
@@ -601,6 +601,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Positiva",
           "tipo_movimento": "OUTLOOK",
           "variacao_notches": "0"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "UNIPAR CARBOCLORO",
+          "cnpj_emissor": "33958695000178",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-11-26",
+          "link": "https://www.fitchratings.com/entity/unipar-carbocloro-sa-96594045",
+          "rating_atual": "AA+(bra)",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
         }
       ],
       "retirados": [
@@ -1047,6 +1060,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "rating_atual": "brBBB-",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "cnpj_emissor": "12536691000121",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-2"
         },
@@ -1730,7 +1757,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         {
           "agencia": "Fitch",
           "emissor": "BURITI TRANSMISSAO ENERGIA",
-          "cnpj_emissor": "47290852000124",
+          "cnpj_emissor": "",
           "instrumento": "BRL bond/note",
           "dt_acao": "2026-11-09",
           "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -1741,8 +1768,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "VERDE TRANSMISSAO ENERGIA",
-          "cnpj_emissor": "",
+          "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+          "cnpj_emissor": "28008887000183",
           "instrumento": "Debentures 3rd Issuance",
           "dt_acao": "2026-11-09",
           "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -1753,8 +1780,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
-          "emissor": "VERDE TRANSMISSAO ENERGIA",
-          "cnpj_emissor": "",
+          "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+          "cnpj_emissor": "28008887000183",
           "instrumento": "Debentures 2nd Issuance",
           "dt_acao": "2026-11-09",
           "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -1766,7 +1793,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
         {
           "agencia": "Fitch",
           "emissor": "BURITI TRANSMISSAO ENERGIA",
-          "cnpj_emissor": "47290852000124",
+          "cnpj_emissor": "",
           "instrumento": "BRL 618 mln Floating IPCA (Brazil) 7.01% bond/note 15-Mar-2050",
           "dt_acao": "2026-11-09",
           "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -1928,6 +1955,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "link": "https://www.fitchratings.com/entity/ampla-energia-e-servicos-sa-96591706#issues",
           "rating_atual": "F1+(bra)",
           "outlook_atual": "Estável",
+          "tipo_movimento": "NOVO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
+          "emissor": "IN",
+          "cnpj_emissor": "05208211001703",
+          "instrumento": "BRL 44 mln bond/note 10-Jan-2034",
+          "dt_acao": "2026-11-19",
+          "link": "https://www.fitchratings.com/entity/engie-solucoes-cidades-inteligentes-e-infraestrutura-de-uberlandia-sa-97335775#issues",
+          "rating_atual": "AAA(bra)",
+          "outlook_atual": "Negativa",
           "tipo_movimento": "NOVO",
           "variacao_notches": "—"
         },
@@ -2228,6 +2267,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
         },
         {
           "agencia": "Fitch",
+          "emissor": "OPEA SECURITIZADORA 2023",
+          "cnpj_emissor": "02.773.542/0001-22",
+          "instrumento": "certificates ser 3",
+          "dt_acao": "2026-06-15",
+          "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
+          "cnpj_devedor_vinculado": "21314559000166",
+          "rating_anterior": "AAsf(bra)",
+          "rating_atual": "PIFsf(bra)",
+          "outlook_anterior": "Estável",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "RETIRADO",
+          "variacao_notches": "—"
+        },
+        {
+          "agencia": "Fitch",
           "emissor": "BARI SECURITIZADORA 2024",
           "cnpj_emissor": "10608405000160",
           "instrumento": "notes ser 1",
@@ -2280,14 +2334,14 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades_emissoes": 2,
       "total_upgrades": 2,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 6,
-      "total_downgrades": 6,
+      "downgrades_emissoes": 7,
+      "total_downgrades": 7,
       "novos_emissores": 0,
       "novos_emissoes": 3,
       "total_novos": 3,
-      "outlooks_emissores": 0,
+      "outlooks_emissores": 1,
       "outlooks_emissoes": 0,
-      "total_outlooks": 0,
+      "total_outlooks": 1,
       "retirados_emissores": 0,
       "retirados_emissoes": 0,
       "total_retirados": 0
@@ -2299,7 +2353,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "upgrades": [],
       "downgrades": [],
       "novos": [],
-      "outlooks": [],
+      "outlooks": [
+        {
+          "agencia": "Fitch",
+          "emissor": "UNIPAR CARBOCLORO",
+          "cnpj_emissor": "33958695000178",
+          "instrumento": "National Long Term Rating",
+          "dt_acao": "2026-11-26",
+          "link": "https://www.fitchratings.com/entity/unipar-carbocloro-sa-96594045",
+          "rating_atual": "AA+(bra)",
+          "outlook_anterior": "Positiva",
+          "outlook_atual": "Estável",
+          "tipo_movimento": "OUTLOOK",
+          "variacao_notches": "0"
+        }
+      ],
       "retirados": []
     },
     "emissoes": {
@@ -2421,6 +2489,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
           "variacao_notches": "-2"
+        },
+        {
+          "agencia": "Austin",
+          "emissor": "FICTOR INVEST FIDC",
+          "cnpj_emissor": "12536691000121",
+          "instrumento": "SUBORDINADAS MEZANINO",
+          "dt_acao": "2025-10-09",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "rating_anterior": "brBBB",
+          "rating_atual": "brBB+",
+          "outlook_anterior": "Negativa",
+          "outlook_atual": "Negativa",
+          "tipo_movimento": "DOWNGRADE",
+          "variacao_notches": "-2"
         }
       ],
       "novos": [
@@ -2466,6 +2548,22 @@ window.PULSERATINGS_MOVIMENTACOES = {
     }
   },
   "movimentacoes": [
+    {
+      "agencia": "Fitch",
+      "emissor": "UNIPAR CARBOCLORO",
+      "cnpj_emissor": "33958695000178",
+      "instrumento": "National Long Term Rating",
+      "dt_acao": "2026-11-26",
+      "link": "https://www.fitchratings.com/entity/unipar-carbocloro-sa-96594045",
+      "rating_atual": "AA+(bra)",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "OUTLOOK",
+      "variacao_notches": "0",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "dt_captura": "2026-11-26"
+    },
     {
       "agencia": "Liberum",
       "emissor": "VIA CAPITAL ARTEMUS FUNDO INVESTIMENTO DIREITOS CREDITORIOS MULTISSETORIAL",
@@ -3363,6 +3461,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
+      "emissor": "IN",
+      "cnpj_emissor": "05208211001703",
+      "instrumento": "BRL 44 mln bond/note 10-Jan-2034",
+      "dt_acao": "2026-11-19",
+      "link": "https://www.fitchratings.com/entity/engie-solucoes-cidades-inteligentes-e-infraestrutura-de-uberlandia-sa-97335775#issues",
+      "rating_atual": "AAA(bra)",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "NOVO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "NOVO",
+      "dt_captura": "2026-11-26"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "VLI MULTIMODAL",
       "cnpj_emissor": "42276907000128",
       "instrumento": "10a Debentures (Serie Unica)",
@@ -3909,7 +4022,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
     {
       "agencia": "Fitch",
       "emissor": "BURITI TRANSMISSAO ENERGIA",
-      "cnpj_emissor": "47290852000124",
+      "cnpj_emissor": "",
       "instrumento": "BRL bond/note",
       "dt_acao": "2026-11-09",
       "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -3923,8 +4036,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "VERDE TRANSMISSAO ENERGIA",
-      "cnpj_emissor": "",
+      "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+      "cnpj_emissor": "28008887000183",
       "instrumento": "Debentures 3rd Issuance",
       "dt_acao": "2026-11-09",
       "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -3938,8 +4051,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
-      "emissor": "VERDE TRANSMISSAO ENERGIA",
-      "cnpj_emissor": "",
+      "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+      "cnpj_emissor": "28008887000183",
       "instrumento": "Debentures 2nd Issuance",
       "dt_acao": "2026-11-09",
       "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -3954,7 +4067,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
     {
       "agencia": "Fitch",
       "emissor": "BURITI TRANSMISSAO ENERGIA",
-      "cnpj_emissor": "47290852000124",
+      "cnpj_emissor": "",
       "instrumento": "BRL 618 mln Floating IPCA (Brazil) 7.01% bond/note 15-Mar-2050",
       "dt_acao": "2026-11-09",
       "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -4969,6 +5082,24 @@ window.PULSERATINGS_MOVIMENTACOES = {
     },
     {
       "agencia": "Fitch",
+      "emissor": "OPEA SECURITIZADORA 2023",
+      "cnpj_emissor": "02.773.542/0001-22",
+      "instrumento": "certificates ser 3",
+      "dt_acao": "2026-06-15",
+      "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
+      "cnpj_devedor_vinculado": "21314559000166",
+      "rating_anterior": "AAsf(bra)",
+      "rating_atual": "PIFsf(bra)",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "RETIRADO",
+      "variacao_notches": "—",
+      "categoria": "Emissão",
+      "tipo": "RETIRADO",
+      "dt_captura": "2026-11-26"
+    },
+    {
+      "agencia": "Fitch",
       "emissor": "FACTA INSS CB FIDC",
       "cnpj_emissor": "35946113000169",
       "instrumento": "bonds ser 2022-1,2,3",
@@ -5067,6 +5198,23 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "variacao_notches": "+7",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
+      "dt_captura": "2026-11-26"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FICTOR INVEST FIDC",
+      "cnpj_emissor": "12536691000121",
+      "instrumento": "SUBORDINADAS MEZANINO",
+      "dt_acao": "2025-10-09",
+      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "rating_anterior": "brBBB",
+      "rating_atual": "brBB+",
+      "outlook_anterior": "Negativa",
+      "outlook_atual": "Negativa",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-2",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-26"
     },
     {
@@ -5368,6 +5516,24 @@ window.PULSERATINGS_MOVIMENTACOES = {
       "dt_acao": "2026-11-26",
       "dt_captura": "2026-11-26",
       "link": "https://www.liberumratings.com.br/detalhes-ativo/29374"
+    },
+    {
+      "agencia": "Fitch",
+      "emissor": "UNIPAR CARBOCLORO",
+      "cnpj_emissor": "33958695000178",
+      "cnpj_devedor_vinculado": "",
+      "instrumento": "National Long Term Rating",
+      "categoria": "Emissor",
+      "tipo": "OUTLOOK",
+      "tipo_movimento": "OUTLOOK",
+      "rating_anterior": "",
+      "rating_atual": "AA+(bra)",
+      "variacao_notches": "0",
+      "outlook_anterior": "Positiva",
+      "outlook_atual": "Estável",
+      "dt_acao": "2026-11-26",
+      "dt_captura": "2026-11-26",
+      "link": "https://www.fitchratings.com/entity/unipar-carbocloro-sa-96594045"
     },
     {
       "agencia": "Moody's",
@@ -112942,6 +113108,19 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "outlook_atual": "Positiva",
         "tipo_movimento": "OUTLOOK",
         "variacao_notches": "0"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "UNIPAR CARBOCLORO",
+        "cnpj_emissor": "33958695000178",
+        "instrumento": "National Long Term Rating",
+        "dt_acao": "2026-11-26",
+        "link": "https://www.fitchratings.com/entity/unipar-carbocloro-sa-96594045",
+        "rating_atual": "AA+(bra)",
+        "outlook_anterior": "Positiva",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "OUTLOOK",
+        "variacao_notches": "0"
       }
     ],
     "retirados": [
@@ -113388,6 +113567,20 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "rating_atual": "brBBB-",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
+        "tipo_movimento": "DOWNGRADE",
+        "variacao_notches": "-2"
+      },
+      {
+        "agencia": "Austin",
+        "emissor": "FICTOR INVEST FIDC",
+        "cnpj_emissor": "12536691000121",
+        "instrumento": "SUBORDINADAS MEZANINO",
+        "dt_acao": "2025-10-09",
+        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "rating_anterior": "brBBB",
+        "rating_atual": "brBB+",
+        "outlook_anterior": "Negativa",
+        "outlook_atual": "Negativa",
         "tipo_movimento": "DOWNGRADE",
         "variacao_notches": "-2"
       },
@@ -114071,7 +114264,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       {
         "agencia": "Fitch",
         "emissor": "BURITI TRANSMISSAO ENERGIA",
-        "cnpj_emissor": "47290852000124",
+        "cnpj_emissor": "",
         "instrumento": "BRL bond/note",
         "dt_acao": "2026-11-09",
         "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -114082,8 +114275,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "VERDE TRANSMISSAO ENERGIA",
-        "cnpj_emissor": "",
+        "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+        "cnpj_emissor": "28008887000183",
         "instrumento": "Debentures 3rd Issuance",
         "dt_acao": "2026-11-09",
         "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -114094,8 +114287,8 @@ window.PULSERATINGS_MOVIMENTACOES = {
       },
       {
         "agencia": "Fitch",
-        "emissor": "VERDE TRANSMISSAO ENERGIA",
-        "cnpj_emissor": "",
+        "emissor": "ARCOVERDE TRANSMISSAO ENERGIA",
+        "cnpj_emissor": "28008887000183",
         "instrumento": "Debentures 2nd Issuance",
         "dt_acao": "2026-11-09",
         "link": "https://www.fitchratings.com/entity/verde-transmissao-de-energia-sa-97966028#issues",
@@ -114107,7 +114300,7 @@ window.PULSERATINGS_MOVIMENTACOES = {
       {
         "agencia": "Fitch",
         "emissor": "BURITI TRANSMISSAO ENERGIA",
-        "cnpj_emissor": "47290852000124",
+        "cnpj_emissor": "",
         "instrumento": "BRL 618 mln Floating IPCA (Brazil) 7.01% bond/note 15-Mar-2050",
         "dt_acao": "2026-11-09",
         "link": "https://www.fitchratings.com/entity/buriti-transmissao-de-energia-sa-97965586#issues",
@@ -114269,6 +114462,18 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "link": "https://www.fitchratings.com/entity/ampla-energia-e-servicos-sa-96591706#issues",
         "rating_atual": "F1+(bra)",
         "outlook_atual": "Estável",
+        "tipo_movimento": "NOVO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "IN",
+        "cnpj_emissor": "05208211001703",
+        "instrumento": "BRL 44 mln bond/note 10-Jan-2034",
+        "dt_acao": "2026-11-19",
+        "link": "https://www.fitchratings.com/entity/engie-solucoes-cidades-inteligentes-e-infraestrutura-de-uberlandia-sa-97335775#issues",
+        "rating_atual": "AAA(bra)",
+        "outlook_atual": "Negativa",
         "tipo_movimento": "NOVO",
         "variacao_notches": "—"
       },
@@ -114563,6 +114768,21 @@ window.PULSERATINGS_MOVIMENTACOES = {
         "rating_anterior": "AAAsf(bra)",
         "rating_atual": "WDsf(bra)",
         "outlook_anterior": "Em Observação",
+        "outlook_atual": "Estável",
+        "tipo_movimento": "RETIRADO",
+        "variacao_notches": "—"
+      },
+      {
+        "agencia": "Fitch",
+        "emissor": "OPEA SECURITIZADORA 2023",
+        "cnpj_emissor": "02.773.542/0001-22",
+        "instrumento": "certificates ser 3",
+        "dt_acao": "2026-06-15",
+        "link": "https://www.fitchratings.com/entity/movida-participacoes-sa-97502173#issues",
+        "cnpj_devedor_vinculado": "21314559000166",
+        "rating_anterior": "AAsf(bra)",
+        "rating_atual": "PIFsf(bra)",
+        "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "RETIRADO",
         "variacao_notches": "—"
