@@ -8,8 +8,8 @@
 | Categoria | Emissores | Emissões | Total |
 | :--- | :---: | :---: | :---: |
 | 🟢 **Upgrades (Elevações)** | 12 | 17 | **29** |
-| 🔴 **Downgrades (Rebaixamentos)** | 7 | 36 | **43** |
-| 🔵 **Novos Ratings** | 13 | 46 | **59** |
+| 🔴 **Downgrades (Rebaixamentos)** | 7 | 42 | **49** |
+| 🔵 **Novos Ratings** | 13 | 49 | **62** |
 | 🟡 **Mudanças de Perspectiva** | 10 | 11 | **21** |
 | ⚪ **Ratings Retirados / Liquidados** | 1 | 5 | **6** |
 
@@ -46,16 +46,20 @@
 | Fitch | **UNIDAS LOCACOES SERVICOS** | 21st Debentures Issuance - BRL 1 bln Floating CDI (Brazil) 2.35% bond/note 05-Jan-2032 | `AA(bra)` | **`AA+(bra)`** | `+1` | Estável | 04/11/2026 |
 | Fitch | **OPEA SECURITIZADORA 2025** | notes ser 3 | `AA+sf(bra)` | **`AAAsf(bra)`** | `+1` | Estável | 05/11/2026 |
 
-### 🔴 Rebaixamentos de Rating (Downgrades) — 43
+### 🔴 Rebaixamentos de Rating (Downgrades) — 49
 | Agência | Emissor | Instrumento / Tipo | Anterior | Novo Rating | Variação | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: |
 | Liberum | **ESTADO ISRAEL** | Finanças Públicas | `AAA` | **`A`** | `-5` | Estável | 06/10/2026 |
-| Fitch | **ENEL GREEN POWER VOLTA GRANDE** | National Long Term Rating | `AAA(bra)` | **`AA+(bra)`** | `-1` | Negativa | 19/11/2026 |
-| Fitch | **ENEL** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
-| Fitch | **AMPLA ENERGIA SERVICOS** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
-| Fitch | **COMPANHIA ENERGETICA CEARA** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
 | Fitch | **ELETROPAULO METROPOLITANA ELETRICIDADE SAO PAULO** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
+| Fitch | **COMPANHIA ENERGETICA CEARA** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
+| Fitch | **AMPLA ENERGIA SERVICOS** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
+| Fitch | **ENEL** | National Long Term Rating | `AA+(bra)` | **`AA(bra)`** | `-1` | Negativa | 19/11/2026 |
+| Fitch | **ENEL GREEN POWER VOLTA GRANDE** | National Long Term Rating | `AAA(bra)` | **`AA+(bra)`** | `-1` | Negativa | 19/11/2026 |
 | Fitch | **NOVA TRANSPORTADORA SUDESTE** | National Long Term Rating | `AAA(bra)` | **`AA+(bra)`** | `-1` | Negativa | 19/11/2026 |
+| Liberum | **LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Mezanino - Longo prazo | `B+` | **`CCC`** | `-4` | Negativa | 26/11/2026 |
+| Liberum | **LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Longo prazo | `BB` | **`B-`** | `-4` | Negativa | 26/11/2026 |
+| Liberum | **LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Senior - Curto prazo | `CP4` | **`CP5`** | `-1` | Negativa | 26/11/2026 |
+| Liberum | **LGX FUNDO INVESTIMENTO DIREITOS CREDITORIOS** | Subordinada - Longo prazo | `CCC` | **`C`** | `-3` | Estável | 26/11/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Longo prazo | `BBB-` | **`BB`** | `-2` | Estável | 16/10/2026 |
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA MEZZO SAUDE** | Mezanino - Curto prazo | `CP3` | **`CP4`** | `-1` | Estável | 16/10/2026 |
 | Liberum | **GRIF CREDITO PULVERIZADO FUNDO INVESTIMENTO DIREITOS CREDITORIOS RESPONSABILIDADE LIMITADA** | Única - Longo prazo | `B` | **`CCC`** | `-3` | Estável | 30/10/2026 |
@@ -63,6 +67,8 @@
 | Liberum | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS EMPIRICA OPORTUNA PRECATORIOS FEDERAIS** | Mezanino - Curto prazo | `CP3` | **`CP4`** | `-1` | Negativa | 12/11/2026 |
 | Austin | **FIDC** | SUBORDINADAS MEZANINO | `brBB` | **`brB`** | `-3` | Estável | 22/02/2021 |
 | Austin | **FIDC** | SUBORDINADAS JÚNIOR | `brB+` | **`brC`** | `-7` | Estável | 09/09/2022 |
+| Austin | **FIDC CONSIGNADOS FEDERAIS** | SUBORDINADAS PREFERENCIAIS | `brAA` | **`brAA-`** | `-1` | Estável | 27/09/2019 |
+| Austin | **HIGH YIELD YALEEH FIDC** | SUBORDINADAS PREFERENCIAIS | `brBBB+` | **`brBBB-`** | `-2` | Estável | 06/03/2024 |
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 1a serie - 2nd Debenture  BRL 375 mln bond/note 15-Dec-2045 | `AA-(bra)` | **`BBB-(bra)`** | `-6` | Em Observação | 05/11/2026 |
 | Fitch | **UTE GNA II GERACAO ENERGIA** | 2a serie - 2nd Debenture  BRL 375 mln bond/note 01-Dec-2042 | `AA-(bra)` | **`BBB-(bra)`** | `-6` | Em Observação | 05/11/2026 |
 | Fitch | **VIA MT 320 CONCESSIONARIA RODOVIAS** | BRL 135 mln bond/note 15-Dec-2036 | `BB(bra)` | **`CCC(bra)`** | `-6` | Estável | 10/11/2026 |
@@ -118,7 +124,7 @@
 | Moody's | **RODOVIAS INTEGRADAS OESTE** | 14ª Emissão de Debêntures - Série Única | `AA.br` | Estável | **Positiva** | 30/10/2026 |
 | Fitch | **GSH PARTICIPACOES** | BRL 13.78 mln bond/note | `A(bra)` | Em Observação | **Estável** | 16/11/2026 |
 
-### 🔵 Novos Ratings Atribuídos (59)
+### 🔵 Novos Ratings Atribuídos (62)
 | Agência | Emissor | Instrumento / Tipo | Rating | Perspectiva | Data Ação |
 | :--- | :--- | :--- | :---: | :--- | :---: |
 | Fitch | **RP FINANCEIRA** | National Long Term Rating | **`A-(bra)`** | Estável | 29/10/2026 |
@@ -151,7 +157,7 @@
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS BV AUTO IV SEGMENTO FINANCEIRO** | Cotas Seniores da 1ª Série | **`(P)AAA.br (sf)`** | Estável | 03/11/2026 |
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS BV AUTO IV SEGMENTO FINANCEIRO** | Cotas Subordinadas Mezanino A | **`(P)AA.br (sf)`** | Estável | 03/11/2026 |
 | Moody's | **FUNDO INVESTIMENTO DIREITOS CREDITORIOS BV AUTO IV SEGMENTO FINANCEIRO** | Cotas Subordinadas Mezanino B | **`(P)BBB-.br (sf)`** | Estável | 03/11/2026 |
-| *...e mais 29 novos ratings.* | | | | | |
+| *...e mais 32 novos ratings.* | | | | | |
 
 ### ⚪ Ratings Retirados / Liquidados (6)
 | Agência | Emissor | Instrumento / Tipo | Último Rating | Perspectiva | Data |
@@ -165,4 +171,4 @@
 
 ---
 ### ⚡ Movimentações da Última Captura Diária (25/11/2026 → 26/11/2026)
-*Total nas últimas 24h: 🟢 2 upgrades | 🔴 0 downgrades | 🔵 0 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*
+*Total nas últimas 24h: 🟢 2 upgrades | 🔴 6 downgrades | 🔵 3 novos | 🟡 0 perspectivas | ⚪ 0 retirados.*

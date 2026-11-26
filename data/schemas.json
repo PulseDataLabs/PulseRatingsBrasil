@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-11-25"
+        "example": "2026-11-26"
       }
     ]
   },
@@ -178,12 +178,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Bradespar S.A."
+        "example": "Investcred Fundo de Investimento em Direitos Creditorios"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/bradespar-sa-87072170"
+        "example": "https://www.fitchratings.com/entity/investcred-fundo-de-investimento-em-direitos-creditorios-97418715"
       }
     ]
   },
@@ -217,7 +217,7 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ÁRTICO MIDDLE CORPORATE FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+        "example": "R&G FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
       },
       {
         "name": "no_setor",
@@ -227,7 +227,7 @@
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29369"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29376"
       }
     ]
   },
@@ -239,12 +239,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "ÁRTICO MIDDLE CORPORATE FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+        "example": "R&G FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS MULTISEGMENTOS"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.liberumratings.com.br/detalhes-ativo/29369"
+        "example": "https://www.liberumratings.com.br/detalhes-ativo/29376"
       },
       {
         "name": "no_tipo_rating",
@@ -254,17 +254,17 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "B"
+        "example": "A"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-11-24"
+        "example": "2026-11-26"
       },
       {
         "name": "de_acao_rating",
         "type": "str",
-        "example": "Confirmação"
+        "example": "Encerramento"
       },
       {
         "name": "de_outlook",
@@ -274,7 +274,7 @@
       {
         "name": "de_classe",
         "type": "str",
-        "example": "Subordinada"
+        "example": "Senior"
       },
       {
         "name": "de_escala",
@@ -348,12 +348,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Bradespar S.A."
+        "example": "Saneamento de Goias S.A. (Saneago)"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/bradespar-sa-87072170"
+        "example": "https://www.fitchratings.com/entity/saneamento-de-goias-sa-saneago-80361245"
       },
       {
         "name": "no_tipo_rating",
@@ -363,12 +363,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AAA(bra)"
+        "example": "AA(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-11-25"
+        "example": "2026-11-26"
       },
       {
         "name": "de_acao_rating",
@@ -387,6 +387,23 @@
       },
       {
         "name": "de_isin",
+        "type": "str",
+        "example": ""
+      }
+    ]
+  },
+  {
+    "title": "Moody's — Emissores",
+    "files": "moodys_emissores.csv",
+    "source": "moodys",
+    "fields": [
+      {
+        "name": "no_emissor",
+        "type": "str",
+        "example": "Avla Seguros Brasil S.A."
+      },
+      {
+        "name": "link",
         "type": "str",
         "example": ""
       }
