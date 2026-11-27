@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27T15:46:41.113479",
+  "timestamp": "2026-11-27T20:10:18.797786",
   "dt_atual": "2026-11-27",
   "dt_anterior": "2026-11-26",
   "resumo": {
@@ -756,13 +756,13 @@
           "cnpj_emissor": "12536691000121",
           "instrumento": "SUBORDINADAS MEZANINO",
           "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+          "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
           "rating_anterior": "brBB-",
-          "rating_atual": "brBB",
+          "rating_atual": "brBB+",
           "outlook_anterior": "Negativa",
           "outlook_atual": "Negativa",
           "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
+          "variacao_notches": "+2"
         },
         {
           "agencia": "Fitch",
@@ -1021,17 +1021,17 @@
         },
         {
           "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "cnpj_emissor": "",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
+          "emissor": "FIDC CONSIGNADOS FEDERAIS",
+          "cnpj_emissor": "33536066000150",
+          "instrumento": "SUBORDINADAS PREFERENCIAIS",
+          "dt_acao": "2019-09-27",
+          "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+          "rating_anterior": "brAA",
+          "rating_atual": "brAA-",
           "outlook_anterior": "Estável",
           "outlook_atual": "Estável",
           "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
+          "variacao_notches": "-1"
         },
         {
           "agencia": "Fitch",
@@ -2262,11 +2262,11 @@
     "dt_anterior": "2026-11-26",
     "resumo": {
       "upgrades_emissores": 0,
-      "upgrades_emissoes": 2,
-      "total_upgrades": 2,
+      "upgrades_emissoes": 1,
+      "total_upgrades": 1,
       "downgrades_emissores": 0,
-      "downgrades_emissoes": 5,
-      "total_downgrades": 5,
+      "downgrades_emissoes": 3,
+      "total_downgrades": 3,
       "novos_emissores": 0,
       "novos_emissoes": 0,
       "total_novos": 0,
@@ -2294,20 +2294,6 @@
       "upgrades": [
         {
           "agencia": "Austin",
-          "emissor": "FIDC CONSIGNADOS FEDERAIS",
-          "cnpj_emissor": "33536066000150",
-          "instrumento": "SUBORDINADAS PREFERENCIAIS",
-          "dt_acao": "2019-09-27",
-          "link": "https://www.austin.com.br/Historico-Rating/3347/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
-          "rating_anterior": "brAA-",
-          "rating_atual": "brAA",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "UPGRADE",
-          "variacao_notches": "+1"
-        },
-        {
-          "agencia": "Austin",
           "emissor": "HIGH YIELD YALEEH FIDC",
           "cnpj_emissor": "",
           "instrumento": "SUBORDINADAS PREFERENCIAIS",
@@ -2322,34 +2308,6 @@
         }
       ],
       "downgrades": [
-        {
-          "agencia": "Austin",
-          "emissor": "FIDC IC SOMAPAY",
-          "cnpj_emissor": "",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2024-08-12",
-          "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brB-",
-          "outlook_anterior": "Estável",
-          "outlook_atual": "Estável",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-5"
-        },
-        {
-          "agencia": "Austin",
-          "emissor": "FICTOR INVEST FIDC",
-          "cnpj_emissor": "12536691000121",
-          "instrumento": "SUBORDINADAS MEZANINO",
-          "dt_acao": "2025-10-09",
-          "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
-          "rating_anterior": "brBB+",
-          "rating_atual": "brBB",
-          "outlook_anterior": "Negativa",
-          "outlook_atual": "Negativa",
-          "tipo_movimento": "DOWNGRADE",
-          "variacao_notches": "-1"
-        },
         {
           "agencia": "Fitch",
           "emissor": "ECO SECURITIZADORA 2022",
@@ -5004,13 +4962,13 @@
       "cnpj_emissor": "12536691000121",
       "instrumento": "SUBORDINADAS MEZANINO",
       "dt_acao": "2025-10-09",
-      "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+      "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
       "rating_anterior": "brBB-",
-      "rating_atual": "brBB",
+      "rating_atual": "brBB+",
       "outlook_anterior": "Negativa",
       "outlook_atual": "Negativa",
       "tipo_movimento": "UPGRADE",
-      "variacao_notches": "+1",
+      "variacao_notches": "+2",
       "categoria": "Emissão",
       "tipo": "UPGRADE",
       "dt_captura": "2026-11-27"
@@ -5029,23 +4987,6 @@
       "variacao_notches": "0",
       "categoria": "Emissor",
       "tipo": "OUTLOOK",
-      "dt_captura": "2026-11-27"
-    },
-    {
-      "agencia": "Austin",
-      "emissor": "FIDC IC SOMAPAY",
-      "cnpj_emissor": "",
-      "instrumento": "SUBORDINADAS MEZANINO",
-      "dt_acao": "2024-08-12",
-      "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-      "rating_anterior": "brBB+",
-      "rating_atual": "brB-",
-      "outlook_anterior": "Estável",
-      "outlook_atual": "Estável",
-      "tipo_movimento": "DOWNGRADE",
-      "variacao_notches": "-5",
-      "categoria": "Emissão",
-      "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-27"
     },
     {
@@ -5111,6 +5052,23 @@
       "outlook_atual": "Estável",
       "tipo_movimento": "DOWNGRADE",
       "variacao_notches": "-3",
+      "categoria": "Emissão",
+      "tipo": "DOWNGRADE",
+      "dt_captura": "2026-11-27"
+    },
+    {
+      "agencia": "Austin",
+      "emissor": "FIDC CONSIGNADOS FEDERAIS",
+      "cnpj_emissor": "33536066000150",
+      "instrumento": "SUBORDINADAS PREFERENCIAIS",
+      "dt_acao": "2019-09-27",
+      "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+      "rating_anterior": "brAA",
+      "rating_atual": "brAA-",
+      "outlook_anterior": "Estável",
+      "outlook_atual": "Estável",
+      "tipo_movimento": "DOWNGRADE",
+      "variacao_notches": "-1",
       "categoria": "Emissão",
       "tipo": "DOWNGRADE",
       "dt_captura": "2026-11-27"
@@ -113205,13 +113163,13 @@
         "cnpj_emissor": "12536691000121",
         "instrumento": "SUBORDINADAS MEZANINO",
         "dt_acao": "2025-10-09",
-        "link": "https://www.austin.com.br/Historico-Rating/5036/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
+        "link": "https://www.austin.com.br/Historico-Rating/5035/Fictor_Invest_FIDC_-_Subordinadas_Mezanino_",
         "rating_anterior": "brBB-",
-        "rating_atual": "brBB",
+        "rating_atual": "brBB+",
         "outlook_anterior": "Negativa",
         "outlook_atual": "Negativa",
         "tipo_movimento": "UPGRADE",
-        "variacao_notches": "+1"
+        "variacao_notches": "+2"
       },
       {
         "agencia": "Fitch",
@@ -113470,17 +113428,17 @@
       },
       {
         "agencia": "Austin",
-        "emissor": "FIDC IC SOMAPAY",
-        "cnpj_emissor": "",
-        "instrumento": "SUBORDINADAS MEZANINO",
-        "dt_acao": "2024-08-12",
-        "link": "https://www.austin.com.br/Historico-Rating/4694/FIDC_IC_Somapay_-_Subordinadas_Mezanino_",
-        "rating_anterior": "brBB+",
-        "rating_atual": "brB-",
+        "emissor": "FIDC CONSIGNADOS FEDERAIS",
+        "cnpj_emissor": "33536066000150",
+        "instrumento": "SUBORDINADAS PREFERENCIAIS",
+        "dt_acao": "2019-09-27",
+        "link": "https://www.austin.com.br/Historico-Rating/3348/FIDC_Consignados_Federais_-_Subordinadas_Preferenciais_",
+        "rating_anterior": "brAA",
+        "rating_atual": "brAA-",
         "outlook_anterior": "Estável",
         "outlook_atual": "Estável",
         "tipo_movimento": "DOWNGRADE",
-        "variacao_notches": "-5"
+        "variacao_notches": "-1"
       },
       {
         "agencia": "Fitch",
