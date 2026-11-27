@@ -47,7 +47,7 @@
       {
         "name": "dh_atu_arquivo",
         "type": "str",
-        "example": "2026-11-26"
+        "example": "2026-11-27"
       }
     ]
   },
@@ -178,12 +178,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Unipar Carbocloro S.A."
+        "example": "Verene Transmissao Subholding S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/unipar-carbocloro-sa-96594045"
+        "example": "https://www.fitchratings.com/entity/equatorial-transmissao-sa-97153792"
       }
     ]
   },
@@ -291,12 +291,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "AÇO CEARENSE FIDC - MEZANINO CLASSE A"
+        "example": "AÇO CEARENSE FIDC - SUBORDINADAS MEZANINO"
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.austin.com.br/Historico-Rating/5240/Aço_Cearense_FIDC_-_Mezanino_Classe_A_"
+        "example": "https://www.austin.com.br/Historico-Rating/5239/Aço_Cearense_FIDC_-_Subordinadas_Mezanino_"
       },
       {
         "name": "no_tipo_rating",
@@ -306,7 +306,7 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "brB-"
+        "example": "brB"
       },
       {
         "name": "de_rating_cp",
@@ -316,7 +316,7 @@
       {
         "name": "de_rating_lp",
         "type": "str",
-        "example": "brB-"
+        "example": "brB"
       },
       {
         "name": "dt_acao_rating",
@@ -336,7 +336,7 @@
       {
         "name": "link_relatorio",
         "type": "str",
-        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11648"
+        "example": "https://www.austin.com.br/Relatorio/Rating/Aço_Cearense_FIDC/11647"
       }
     ]
   },
@@ -348,12 +348,12 @@
       {
         "name": "no_emissor",
         "type": "str",
-        "example": "Unipar Carbocloro S.A."
+        "example": "Verene Transmissao Subholding S.A."
       },
       {
         "name": "link",
         "type": "str",
-        "example": "https://www.fitchratings.com/entity/unipar-carbocloro-sa-96594045"
+        "example": "https://www.fitchratings.com/entity/equatorial-transmissao-sa-97153792"
       },
       {
         "name": "no_tipo_rating",
@@ -363,12 +363,12 @@
       {
         "name": "de_rating_br",
         "type": "str",
-        "example": "AA+(bra)"
+        "example": "AAA(bra)"
       },
       {
         "name": "dt_acao_rating",
         "type": "date",
-        "example": "2026-11-26"
+        "example": "2026-11-27"
       },
       {
         "name": "de_acao_rating",
